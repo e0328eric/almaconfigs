@@ -14,23 +14,23 @@ SRCS := $(notdir $(wildcard $(SRC_DIR)/*.c))
 OBJS = $(SRCS:.c=.o)
 OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(OBJS))
 
-RUN_SRCS := $(notdir $(wildcard $(SRC_DIR)/*.c))
-RUN_OBJS = $(RUN_SRCS:.c=.o)
-RUN_OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(RUN_OBJS))
-
 DEPS = $(RUN_OBJECTS:.o=.d)
 
-all: main
+all: | mkObjDir main
+
+mkObjDir:
+	mkdir -p ./obj
 
 $(OBJECTS): $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $^ -o $@ -MD $(LDFLAGS)
 
-main : $(RUN_OBJECTS)
-	$(CC) $(CFLAGS) $(RUN_OBJECTS) -o $(TARGET) $(LDFLAGS)
+main : $(OBJECTS)
+	$(CC) $(CFLAGS) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
 
 .PHONY: clean all
 clean:
-	rm -f $(RUN_OBJECTS) $(DEPS) $(TARGET) $(TEST_TARGET)
+	rm -f $(OBJECTS) $(DEPS) $(TARGET)
+	rm -rf $(OBJ_DIR)
 
 -include $(DEPS)
 endsnippet
@@ -67,7 +67,10 @@ TEST_OBJECTS = $(patsubst %.o,$(OBJ_DIR)/%.o,$(TEST_OBJS))
 DEPS = $(RUN_OBJECTS:.o=.d)
 DEPS += $(TEST_OBJECTS:.o=.d)
 
-all: main
+all: | mkObjDir main
+
+mkObjDir:
+	mkdir -p ./obj
 
 $(OBJECTS): $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $^ -o $@ -MD $(LDFLAGS)
@@ -88,6 +91,7 @@ test : $(TEST_OBJECTS)
 clean:
 	rm -f $(RUN_OBJECTS) $(DEPS) $(TARGET) $(TEST_TARGET)
 	rm -f $(TEST_OBJECTS) $(DEPS) $(TARGET) $(TEST_TARGET)
+	rm -rf $(OBJ_DIR)
 
 -include $(DEPS)
 endsnippet

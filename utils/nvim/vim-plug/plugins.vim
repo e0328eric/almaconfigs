@@ -48,7 +48,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nbouscal/vim-stylish-haskell'
     "C++
     Plug 'cdelledonne/vim-cmake'
-    Plug 'octol/vim-cpp-enhanced-highlight'
+    Plug 'bfrg/vim-cpp-modern'
     "Nim
     Plug 'alaviss/nim.nvim'
     " Sneak

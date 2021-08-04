@@ -13,7 +13,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -35,6 +34,7 @@ export PATH="/Users/almagest/.flutter/bin:$PATH"
 export PATH="/Users/almagest/.npm-global/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/Cellar/gcc/11.1.0_1/bin:$PATH"
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 export VISUAL=nvim
