@@ -45,6 +45,7 @@ set guifont=Fira\ Code\ Nerd\ Font
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufRead,BufNewFile *.ves set filetype=vesti
 au BufRead,BufNewFile *.glasm set filetype=glasm
+au BufRead,BufNewFile *.asm set filetype=nasm
 filetype plugin indent on
 
 " You can't stop me

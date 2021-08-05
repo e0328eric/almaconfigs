@@ -22,8 +22,7 @@ source $ZSH/oh-my-zsh.sh
 export GOROOT=/usr/local/go
 export GOPATH=~/.go
 
-export PATH="$PATH:/usr/local/texlive/2019/bin/x86_64-linux"
-export PATH="$PATH:/usr/local/texlive/2020/bin/x86_64-darwin"
+export PATH="$PATH:/usr/local/texlive/2021/bin/universal-darwin"
 export PATH="/Users/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH="/Users/almagest/.local/bin:$PATH"
 export PATH="/Users/almagest/.cargo/bin:$PATH"
