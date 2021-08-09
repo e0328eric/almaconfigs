@@ -8,7 +8,7 @@
 ;; clients, file templates and snippets.
 (setq user-full-name "Sungbae Jeong"
       user-mail-address "almagest0328@gmail.com"
-      doom-font (font-spec :family "D2Coding ligature" :size 18 :weight 'medium)
+      doom-font (font-spec :family "Fira Code" :size 15 :weight 'medium)
       doom-variable-pitch-font (font-spec :family "Hack Nerd Font" :size 16)
       doom-theme 'doom-gruvbox
       default-directory "~/"
@@ -25,6 +25,8 @@
 (menu-bar-mode t)
 
 (setq-default tab-width 4)
+
+(setq-default flycheck-disabled-checkers '(c/c++-gcc c/c++-clang c/c++-cppcheck))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -71,3 +73,5 @@
 (autoload 'asy-insinuate-latex "asy-mode.el" "Asymptote insinuate LaTeX." t)
 (add-to-list 'auto-mode-alist '("\\.asy$" . asy-mode))
 
+(require 'haskell-mode)
+(setq haskell-interactive-popup-errors nil)

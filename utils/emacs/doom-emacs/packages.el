@@ -49,5 +49,5 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 (package! go-imports)
-(package! irony-mode)
+(package! irony)
 (package! cmake-ide)

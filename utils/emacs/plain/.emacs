@@ -35,10 +35,28 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; undo-tree mode
+;; undo-tree mode settings
 (require 'undo-tree)
 (global-undo-tree-mode)
 (global-set-key (kbd "C-x C-/") 'undo-tree-redo)
+
+;; yasnippet mode settings
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+(setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/mySnippets"))
+(define-key yas-minor-mode-map (kbd "TAB") nil)
+
+;; multiple-cursor mode
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; transpose-frame mode settings
+(require 'transpose-frame)
 
 ;; haskell-mode settings
 (require 'haskell-interactive-mode)
@@ -49,6 +67,7 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(global-set-key (kbd "C-f") 'query-replace)
 
 ;; which key settings
 (require 'which-key)
@@ -56,8 +75,10 @@
 (which-key-setup-side-window-bottom)
 
 ;; define new keybindings
-(global-set-key (kbd "C-c SPC") 'set-mark-command)
+(global-set-key (kbd "C-x C-x") 'set-mark-command)
+(global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
+(global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 
 ;; emacs theme settings
 (custom-set-variables
@@ -68,7 +89,7 @@
  '(ansi-color-names-vector
    ["#2d2a2e" "#ff6188" "#a9dc76" "#ffd866" "#78dce8" "#ab9df2" "#a1efe4" "#fcfcfa"])
  '(ansi-term-color-vector
-   [unspecified "#2d2a2e" "#ff6188" "#a9dc76" "#ffd866" "#78dce8" "#ab9df2" "#a1efe4" "#fcfcfa"])
+   [unspecified "#2d2a2e" "#ff6188" "#a9dc76" "#ffd866" "#78dce8" "#ab9df2" "#a1efe4" "#fcfcfa"] t)
  '(compilation-message-face 'default)
  '(custom-enabled-themes '(gruvbox-dark-medium))
  '(custom-safe-themes
@@ -86,7 +107,7 @@
 	 ("#3C3D37" . 100)))
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
-   '(monokai-pro-theme monokai-theme exec-path-from-shell yasnippet undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode rustic gruvbox-theme smex))
+   '(multiple-cursors hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode rustic gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
