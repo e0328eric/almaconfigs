@@ -75,3 +75,9 @@
 
 (require 'haskell-mode)
 (setq haskell-interactive-popup-errors nil)
+
+;; Key Bindings
+(map! :desc "evil-mc-make-cursor-move-prev-line"
+      "<C-M-up>" #'evil-mc-make-cursor-move-prev-line)
+(map! :desc "evil-mc-make-cursor-move-next-line"
+      "<C-M-down>" #'evil-mc-make-cursor-move-next-line)
