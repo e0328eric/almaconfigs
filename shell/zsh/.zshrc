@@ -1,3 +1,5 @@
+export CC=/usr/local/bin/gcc-11
+export LD=/usr/local/bin/gcc-11
 export EDITOR=nvim
 export VISUAL=nvim
 export LC_CTYPE=en_US.UTF-8

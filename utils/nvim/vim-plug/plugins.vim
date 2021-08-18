@@ -45,7 +45,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     " Haskell
     Plug 'neovimhaskell/haskell-vim'
-    Plug 'nbouscal/vim-stylish-haskell'
+    Plug 'meck/vim-brittany'
     "C++
     Plug 'cdelledonne/vim-cmake'
     Plug 'bfrg/vim-cpp-modern'
@@ -71,9 +71,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'alvan/vim-closetag'
     " Themes
     " Plug 'christianchiarulli/nvcode.vim'
-    " Plug 'mhartington/oceanic-next'
+    Plug 'mhartington/oceanic-next'
     Plug 'morhetz/gruvbox'
-    " Plug 'phanviet/vim-monokai-pro'
+    Plug 'phanviet/vim-monokai-pro'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'morhetz/gruvbox'
     Plug 'vim-airline/vim-airline-themes'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}

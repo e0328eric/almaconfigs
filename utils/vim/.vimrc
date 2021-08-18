@@ -253,6 +253,8 @@ nmap <leader>bd :bp <BAR> bd #<CR>
 " ls
 nmap <leader>ls :ls<CR>
 
+" replace Q into another key
+
 " Window configs
 nmap <leader>wv <C-w>v
 nmap <leader>ws <C-w>S
@@ -277,7 +279,7 @@ inoremap <C-Right> <C-o>l
 inoremap <C-S-t> <C-o>zt
 
 " Fix Delete key
-"inoremap [P <Del>
+inoremap [P <Del>
 
 " Navigate around splits with a single key combo.
 nnoremap <C-l> <C-w><C-l>

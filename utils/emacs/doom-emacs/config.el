@@ -10,7 +10,7 @@
       user-mail-address "almagest0328@gmail.com"
       doom-font (font-spec :family "Fira Code" :size 15 :weight 'medium)
       doom-variable-pitch-font (font-spec :family "Hack Nerd Font" :size 16)
-      doom-theme 'doom-gruvbox
+      doom-theme 'doom-moonlight
       default-directory "~/"
       org-directory "~/Document/org/"
       display-line-numbers-type 'relative)
@@ -48,6 +48,9 @@
 (map! :leader
       :desc "Open treemacs"
       "\\" #'treemacs)
+
+(require 'nasm-mode)
+(electric-indent-local-mode -1)
 
 ;; Settings
 (defun my-go-mode-hook ()

@@ -51,3 +51,7 @@
 (package! go-imports)
 (package! irony)
 (package! cmake-ide)
+(package! nasm-mode)
+(package! hindent)
+(package! clang-format)
+(package! cargo-mode)
