@@ -35,7 +35,6 @@
     "python",
     "java"
     ],
-    "coc.preferences.hoverTarget": "float",
 
     // python config
     "python.linting.enabled": false,
@@ -57,7 +56,7 @@
     "explorer.width": 30,
     "explorer.icon.enableNerdfont": true,
     "explorer.previewAction.onHover": false,
-    "explorer.icon.enableVimDevicons": false,
+    "explorer.icon.source": "vim-devicons",
     "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"

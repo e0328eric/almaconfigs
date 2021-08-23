@@ -4,6 +4,32 @@
 	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
+;; Install Packages
+
+(setq packages-to-install '(
+	evil
+	evil-multiedit
+	exec-path-from-shell
+	flycheck
+	gruvbox-theme
+	haskell-mode
+	nlinum-relative
+	lsp-mode
+	rust-mode
+	rustic
+	smex
+	transpose-frame
+	undo-tree
+	which-key
+	yasnippet
+))
+
+(while packages-to-install
+  (setq pkg (car packages-to-install))
+  (setq packages-to-install (cdr packages-to-install))
+  (unless (package-installed-p pkg)
+    (package-install pkg)))
+
 ;; default emacs settings
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
@@ -19,6 +45,27 @@
 (setq-default tab-width 4)
 (setq interactive-haskell-mode t)
 (exec-path-from-shell-initialize)
+
+;; evil mode
+(require 'evil)
+(evil-mode 1)
+
+;; evil multiedit
+(require 'evil-multiedit)
+(define-key evil-visual-state-map "R" 'evil-multiedit-match-all)
+(define-key evil-normal-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-visual-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-insert-state-map (kbd "M-d") 'evil-multiedit-toggle-marker-here)
+(define-key evil-normal-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+(define-key evil-visual-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+(define-key evil-visual-state-map (kbd "C-M-D") 'evil-multiedit-restore)
+(define-key evil-multiedit-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
+(define-key evil-motion-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
+(define-key evil-multiedit-state-map (kbd "C-n") 'evil-multiedit-next)
+(define-key evil-multiedit-state-map (kbd "C-p") 'evil-multiedit-prev)
+(define-key evil-multiedit-insert-state-map (kbd "C-n") 'evil-multiedit-next)
+(define-key evil-multiedit-insert-state-map (kbd "C-p") 'evil-multiedit-prev)
+(evil-ex-define-cmd "ie[dit]" 'evil-multiedit-ex-match)
 
 ;; relative line numbering
 (require 'nlinum-relative)
@@ -48,13 +95,6 @@
 (setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/mySnippets"))
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 
-;; multiple-cursor mode
-(require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
-
 ;; transpose-frame mode settings
 (require 'transpose-frame)
 
@@ -64,6 +104,7 @@
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
 ;; smex keybinding
+(require 'smex)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
@@ -95,6 +136,9 @@
  '(custom-safe-themes
    '("fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
+ '(haskell-mode-stylish-haskell-path "brittany")
+ '(haskell-stylish-on-save t)
+ '(haskell-tags-on-save nil)
  '(highlight-changes-colors '("#FD5FF0" "#AE81FF"))
  '(highlight-tail-colors
    '(("#3C3D37" . 0)
@@ -107,7 +151,7 @@
 	 ("#3C3D37" . 100)))
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
-   '(multiple-cursors hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode rustic gruvbox-theme smex))
+   '(hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode rustic gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
