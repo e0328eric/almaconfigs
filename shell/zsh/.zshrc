@@ -1,5 +1,3 @@
-export CC=/usr/local/bin/gcc-11
-export LD=/usr/local/bin/gcc-11
 export EDITOR=nvim
 export VISUAL=nvim
 export LC_CTYPE=en_US.UTF-8
@@ -59,6 +57,7 @@ alias t='tmux'
 alias hexdump='hexyl'
 alias doom='~/.emacs.d/bin/doom'
 alias ls='exa'
+alias s='ls'
 alias gcc='gcc-11'
 # alias vols='amixer -D pulse sset Master'
 alias getmusic='youtube-dl -x --audio-format m4a'

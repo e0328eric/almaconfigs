@@ -33,7 +33,8 @@
     "yaml",
     "json",
     "python",
-    "java"
+    "java",
+    "haskell"
     ],
 
     // python config
@@ -81,7 +82,12 @@
             "cabal.project",
             "package.yaml"
         ],
-        "filetypes": ["haskell", "lhaskell"]
+        "filetypes": ["haskell", "lhaskell"],
+        "initializationOptions": {
+            "languageServerHaskell": {
+                "formattingProvider": "brittany"
+            }
+        }
     },
 
     "nim": {

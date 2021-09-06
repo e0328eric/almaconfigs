@@ -45,7 +45,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     " Haskell
     Plug 'neovimhaskell/haskell-vim'
-    Plug 'meck/vim-brittany'
     "C++
     Plug 'cdelledonne/vim-cmake'
     Plug 'bfrg/vim-cpp-modern'
