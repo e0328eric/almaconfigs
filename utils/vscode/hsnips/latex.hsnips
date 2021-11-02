@@ -1,0 +1,103 @@
+snippet MK "math mode" iA
+$${1}$$0
+endsnippet
+
+snippet be
+$$
+    $1
+$$
+$0
+endsnippet
+
+snippet sum "sumation" i
+\sum_{$1}^{$2}$0
+endsnippet
+
+snippet prod "Product" i
+\prod_{$1}^{$2}$0
+endsnippet
+
+snippet bcup "Bigcup" i
+\bigcup_{$1}^{$2}$0
+endsnippet
+
+snippet bcap "Bigcap" i
+\bigcap_{$1}^{$2}$0
+endsnippet
+
+snippet int "Int" i
+\int_{$1}^{$2}$0
+endsnippet
+
+snippet lim "limit" i
+\lim_{$1\to ${2}}$0
+endsnippet
+
+snippet lims "limit supremum" i
+\limsup_{$1\to ${2}}$0
+endsnippet
+
+snippet limi "limit infimum" i
+\liminf_{$1\to ${2}}$0
+endsnippet
+
+snippet sup "supremum" i
+\sup_{$1}$0
+endsnippet
+
+snippet inf "infimum" i
+\inf_{$1}$0
+endsnippet
+
+snippet lrl "bracket" iA
+\{$1\}$0
+endsnippet
+
+snippet lrr "bracket" iA
+($1)$0
+endsnippet
+
+snippet LRR "bracket" iA
+\left($1\right)$0
+endsnippet
+
+snippet lrb "bracket" iA
+\\{$1\\}$0
+endsnippet
+
+snippet LRB "bracket" iA
+\left\\{$1\right\\}$0
+endsnippet
+
+snippet lrs "bracket" iA
+[$1]$0
+endsnippet
+
+snippet LRS "bracket" iA
+\left[$1\right]$0
+endsnippet
+
+snippet lra "bracket" i
+\langle $1\rangle
+endsnippet
+
+snippet LRA "bracket" iA
+\left\langle $1\right\rangle
+endsnippet
+
+snippet abs "bracket" i
+|$1|$0
+endsnippet
+
+snippet ABS "bracket" iA
+\left|$1\right|$0
+endsnippet
+
+snippet lp "Lp space" i
+\\|$1\\|_{$2}^{$3}$0
+endsnippet
+
+snippet oo "infty" i
+\infty
+endsnippet
+

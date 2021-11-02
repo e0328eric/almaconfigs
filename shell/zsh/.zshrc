@@ -59,6 +59,7 @@ alias doom='~/.emacs.d/bin/doom'
 alias ls='exa'
 alias s='ls'
 alias gcc='gcc-11'
+alias wez='wezterm'
 # alias vols='amixer -D pulse sset Master'
 alias getmusic='youtube-dl -x --audio-format m4a'
 alias hakwon='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents/Hakwon'
@@ -72,6 +73,7 @@ alias hakwon='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents
 # alias installstack="curl -sSL https://get.haskellstack.org/ | sh"
 alias autohaskell="stack exec ghcid"
 alias gitall="git add --all && git commit -m"
+alias tmux="tmux -2"
 # alias emptytrash="rm -rf ~/.local/share/Trash && rm -rf ~/.local/share/vifm/Trash"
 
 # Load Configures
