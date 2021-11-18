@@ -133,8 +133,8 @@ let &statusline = s:statusline_expr()
 " Color settings
 " -----------------------------------------------------------------------------
 
+set termguicolors
 colorscheme gruvbox
-set t_Co=256
 
 " For Gruvbox to look correct in terminal Vim you'll want to source a palette
 " script that comes with the Gruvbox plugin.

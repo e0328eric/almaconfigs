@@ -1,1 +1,1 @@
-/Users/almagest/Github/vesti-rust/syntax/vesti.vim
+/Users/almagest/Github/vesti/syntax/vesti.vim

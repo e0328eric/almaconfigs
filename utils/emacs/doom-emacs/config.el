@@ -25,7 +25,6 @@
 (menu-bar-mode t)
 
 (setq-default tab-width 4)
-
 (setq-default flycheck-disabled-checkers '(c/c++-gcc c/c++-clang c/c++-cppcheck))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
@@ -84,3 +83,7 @@
       "<C-M-up>" #'evil-mc-make-cursor-move-prev-line)
 (map! :desc "evil-mc-make-cursor-move-next-line"
       "<C-M-down>" #'evil-mc-make-cursor-move-next-line)
+
+(use-package doom-snippets
+  :load-path "~/.doom.d/snippets"
+  :after yasnippet)
