@@ -6,11 +6,12 @@
 
 ;; Install Packages
 
-(setq packages-to-install '(
+(setq package-list '(
 	auto-complete
 	clang-format
 	company
 	evil
+	evil-leader
 	evil-multiedit
 	evil-smartparens
 	exec-path-from-shell
@@ -34,11 +35,12 @@
 	yasnippet
 ))
 
-(while packages-to-install
-  (setq pkg (car packages-to-install))
-  (setq packages-to-install (cdr packages-to-install))
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
 ;; default emacs settings
 (setq inhibit-startup-screen t)
@@ -56,26 +58,30 @@
 (setq interactive-haskell-mode t)
 (exec-path-from-shell-initialize)
 
+;; define new keybindings
+(global-set-key (kbd "C-x C-x") 'set-mark-command)
+(global-set-key (kbd "C-x .") 'find-file)
+(global-set-key (kbd "C-x C-f") 'set-fill-prefix)
+(global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
+(global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
+
 ;; evil mode
 (require 'evil)
 (evil-mode 1)
 
+;; evil-leader mode
+(require 'evil-leader)
+(global-evil-leader-mode)
+(evil-leader/set-leader "<SPC>")
+(evil-leader/set-key
+  "b d" 'kill-buffer
+  "f r" 'recentf-open-files
+  "." 'find-file)
+
 ;; evil multiedit
 (require 'evil-multiedit)
-(define-key evil-visual-state-map "R" 'evil-multiedit-match-all)
-(define-key evil-normal-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
-(define-key evil-visual-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
-(define-key evil-insert-state-map (kbd "M-d") 'evil-multiedit-toggle-marker-here)
-(define-key evil-normal-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
-(define-key evil-visual-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
-(define-key evil-visual-state-map (kbd "C-M-D") 'evil-multiedit-restore)
-(define-key evil-multiedit-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
-(define-key evil-motion-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
-(define-key evil-multiedit-state-map (kbd "C-n") 'evil-multiedit-next)
-(define-key evil-multiedit-state-map (kbd "C-p") 'evil-multiedit-prev)
-(define-key evil-multiedit-insert-state-map (kbd "C-n") 'evil-multiedit-next)
-(define-key evil-multiedit-insert-state-map (kbd "C-p") 'evil-multiedit-prev)
-(evil-ex-define-cmd "ie[dit]" 'evil-multiedit-ex-match)
+(evil-multiedit-default-keybinds)
 
 ;; relative line numbering
 (require 'nlinum-relative)
@@ -155,14 +161,6 @@
 (require 'which-key)
 (which-key-mode)
 (which-key-setup-side-window-bottom)
-
-;; define new keybindings
-(global-set-key (kbd "C-x C-x") 'set-mark-command)
-(global-set-key (kbd "C-x .") 'find-file)
-(global-set-key (kbd "C-x C-f") 'set-fill-prefix)
-(global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
-(global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 
 ;; treemacs settings
 (use-package treemacs

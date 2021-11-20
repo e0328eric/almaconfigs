@@ -55,3 +55,5 @@
 (package! hindent)
 (package! clang-format)
 (package! cargo-mode)
+(package! vimish-fold)
+(package! evil-vimish-fold)
