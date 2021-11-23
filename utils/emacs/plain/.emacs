@@ -57,7 +57,6 @@
 (setq-default tab-width 4)
 (setq interactive-haskell-mode t)
 (setq help-window-select t)
-(define-key global-map [remap kill-buffer] 'kill-buffer-and-its-windows)
 (exec-path-from-shell-initialize)
 
 ;; define new keybindings
@@ -77,7 +76,7 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
-  "b d" 'kill-buffer
+  "b d" 'kill-buffer-and-window
   "f r" 'recentf-open-files
   "o t" 'vterm-other-window
   "o T" 'vterm
