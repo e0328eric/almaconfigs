@@ -17,14 +17,14 @@
 	exec-path-from-shell
 	flycheck
 	gruvbox-theme
-	haskell-mode
+	melancholy-theme
 	monokai-pro-theme
-	multiple-cursors
+	haskell-mode
 	nlinum-relative
 	lsp-mode
 	lsp-haskell
 	popup
-	rustic
+	rust-mode
 	smex
 	treemacs
 	transpose-frame
@@ -56,6 +56,8 @@
 (setq indent-tab-mode nil)
 (setq-default tab-width 4)
 (setq interactive-haskell-mode t)
+(setq help-window-select t)
+(define-key global-map [remap kill-buffer] 'kill-buffer-and-its-windows)
 (exec-path-from-shell-initialize)
 
 ;; define new keybindings
@@ -77,6 +79,8 @@
 (evil-leader/set-key
   "b d" 'kill-buffer
   "f r" 'recentf-open-files
+  "o t" 'vterm-other-window
+  "o T" 'vterm
   "." 'find-file)
 
 ;; evil multiedit
@@ -88,7 +92,7 @@
 (add-hook 'prog-mode-hook 'nlinum-relative-mode)
 (add-hook 'prog-mode-hook 'nlinum-relative-mode)
 (setq nlinum-relative-redisplay-delay 0)
-(setq nlinum-relative-current-symbol "->")
+;;(setq nlinum-relative-current-symbol "->")
 (setq nlinum-relative-offset 0)
 
 ;; Backup and Autosave Directories
@@ -110,37 +114,6 @@
 (yas-global-mode 1)
 (setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/mySnippets"))
 (define-key yas-minor-mode-map (kbd "TAB") nil)
-
-;; rustic mode settings
-(use-package rustic
-  :ensure
-  :bind (:map rustic-mode-map
-			  ("M-j" . lsp-ui-menu)
-			  ("M-?" . lsp-find-reference)
-			  ("C-c C-c l" . flycheck-list-errors)
-              ("C-c C-c a" . lsp-execute-code-action)
-              ("C-c C-c r" . lsp-rename)
-              ("C-c C-c q" . lsp-workspace-restart)
-              ("C-c C-c Q" . lsp-workspace-shutdown)
-              ("C-c C-c s" . lsp-rust-analyzer-status))
-  :config
-  (setq rustic-format-on-save t)
-  (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
-
-(defun rk/rustic-mode-hook ()
-  ;; so that run C-c C-c C-r works without having to confirm, but don't try to
-  ;; save rust buffers that are not file visiting. Once
-  ;; https://github.com/brotzeit/rustic/issues/253 has been resolved this should
-  ;; no longer be necessary.
-  (when buffer-file-name
-    (setq-local buffer-save-without-query t)))
-
-;; multiple-cursor mode
-(require 'multiple-cursors)
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; transpose-frame mode settings
 (require 'transpose-frame)
@@ -278,9 +251,9 @@
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(monokai-pro-spectrum))
+ '(custom-enabled-themes '(melancholy))
  '(custom-safe-themes
-   '("c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+   '("d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
  '(haskell-hoogle-command nil)
  '(haskell-mode-stylish-haskell-path "ormolu")
@@ -299,7 +272,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(lsp-haskell zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode rustic gruvbox-theme smex))
+   '(lsp-haskell zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode haskell-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
