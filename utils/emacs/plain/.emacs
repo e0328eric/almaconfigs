@@ -83,6 +83,7 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
+  "a c" 'auto-complete
   "b d" 'kill-buffer-and-window
   "f r" 'recentf-open-files
   "o t" 'vterm-other-window
@@ -107,7 +108,16 @@
 (use-package doom-modeline
   :ensure
   :init
-	(doom-modeline-mode 1))
+  (doom-modeline-mode 1))
+
+;; rainbow-delimiters
+(require 'rainbow-delimiters)
+(add-hook 'c-mode #'rainbow-delimiters-mode)
+(add-hook 'c++-mode #'rainbow-delimiters-mode)
+(add-hook 'python-mode #'rainbow-delimiters-mode)
+(add-hook 'go-mode #'rainbow-delimiters-mode)
+(add-hook 'haskell-mode #'rainbow-delimiters-mode)
+(add-hook 'rust-mode #'rainbow-delimiters-mode)
 
 ;; relative line numbering
 (require 'nlinum-relative)
