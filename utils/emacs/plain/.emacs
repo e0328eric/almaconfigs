@@ -74,6 +74,10 @@
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 
+;; auto-complete mode
+(require 'auto-complete)
+(add-hook 'prog-mode-hook 'auto-complete-mode)
+
 ;; evil mode
 (require 'evil)
 (evil-mode 1)
@@ -83,7 +87,6 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
-  "a c" 'auto-complete
   "b d" 'kill-buffer-and-window
   "f r" 'recentf-open-files
   "o t" 'vterm-other-window
@@ -112,16 +115,10 @@
 
 ;; rainbow-delimiters
 (require 'rainbow-delimiters)
-(add-hook 'c-mode #'rainbow-delimiters-mode)
-(add-hook 'c++-mode #'rainbow-delimiters-mode)
-(add-hook 'python-mode #'rainbow-delimiters-mode)
-(add-hook 'go-mode #'rainbow-delimiters-mode)
-(add-hook 'haskell-mode #'rainbow-delimiters-mode)
-(add-hook 'rust-mode #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 ;; relative line numbering
 (require 'nlinum-relative)
-(add-hook 'prog-mode-hook 'nlinum-relative-mode)
 (add-hook 'prog-mode-hook 'nlinum-relative-mode)
 (setq nlinum-relative-redisplay-delay 0)
 ;;(setq nlinum-relative-current-symbol "->")
@@ -276,7 +273,7 @@
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(ayu-dark))
+ '(custom-enabled-themes '(monokai-pro-spectrum))
  '(custom-safe-themes
    '("6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
