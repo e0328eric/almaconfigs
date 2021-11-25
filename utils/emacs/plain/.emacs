@@ -55,9 +55,15 @@
 (setq recentf-max-saved-items 25)
 (setq indent-tab-mode nil)
 (setq-default tab-width 4)
-(setq interactive-haskell-mode t)
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
+
+;; Backup and Autosave Directories
+(setq temporary-file-directory "~/.tmp/")
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 ;; define new keybindings
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
@@ -86,6 +92,16 @@
 (require 'evil-multiedit)
 (evil-multiedit-default-keybinds)
 
+;; hasekll-mode
+(require 'haskell-mode)
+(setq interactive-haskell-mode t)
+
+;; rust-mode
+(use-package rust-mode
+  :ensure t
+  :config
+  (setq rust-format-on-save t))
+
 ;; doom-modeline
 (use-package doom-modeline
   :ensure
@@ -99,13 +115,6 @@
 (setq nlinum-relative-redisplay-delay 0)
 ;;(setq nlinum-relative-current-symbol "->")
 (setq nlinum-relative-offset 0)
-
-;; Backup and Autosave Directories
-(setq temporary-file-directory "~/.tmp/")
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
 
 ;; undo-tree mode settings
 (require 'undo-tree)
