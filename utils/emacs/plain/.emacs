@@ -5,33 +5,33 @@
 (package-initialize)
 
 ;; Install Packages
-(setq package-list '(
-	auto-complete
-	ayu-theme
-	clang-format
-	company
-	doom-modeline
-	exec-path-from-shell
-	flycheck
-	gruvbox-theme
-	haskell-mode
-	magit
-	melancholy-theme
-	monokai-pro-theme
-	multiple-cursors
-	nlinum-relative
-	popup
-	rainbow-delimiters
-	rust-mode
-	smex
-	transpose-frame
-	treemacs
-	undo-tree
-	use-package
-	vterm
-	which-key
-	yasnippet
-))
+(setq package-list
+	  '(ace-window					 
+		auto-complete
+		ayu-theme
+		clang-format
+		company
+		doom-modeline
+		exec-path-from-shell
+		flycheck
+		gruvbox-theme
+		haskell-mode
+		magit
+		melancholy-theme
+		monokai-pro-theme
+		multiple-cursors
+		nlinum-relative
+		popup
+		rainbow-delimiters
+		rust-mode
+		smex
+		transpose-frame
+		treemacs
+		undo-tree
+		use-package
+		vterm
+		which-key
+		yasnippet))
 
 (unless package-archive-contents
   (package-refresh-contents))
@@ -88,12 +88,23 @@
 (global-set-key (kbd "C-z") 'universal-argument)
 
 ;; define new keybindings
+(global-set-key (kbd "<C-return>") (lambda ()
+									 (interactive)
+									 (end-of-line)
+									 (newline-and-indent)))
+(global-set-key (kbd "<C-S-return>") (lambda ()
+									   (interactive)
+									   (beginning-of-line)
+									   (newline-and-indent)
+									   (previous-line)))
+(global-set-key (kbd "M-W") 'kill-region)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "C-x .") 'find-file)
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
+(global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
 (global-set-key (kbd "C-%") 'quoted-insert)
