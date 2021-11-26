@@ -92,7 +92,7 @@
 									 (interactive)
 									 (end-of-line)
 									 (newline-and-indent)))
-(global-set-key (kbd "<C-S-return>") (lambda ()
+(global-set-key (kbd "<M-return>") (lambda ()
 									   (interactive)
 									   (beginning-of-line)
 									   (newline-and-indent)
