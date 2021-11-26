@@ -11,7 +11,6 @@
 	clang-format
 	company
 	doom-modeline
-	evil-leader
 	exec-path-from-shell
 	flycheck
 	gruvbox-theme
@@ -67,6 +66,27 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;;;;;;;;;;;;;;;;;;;;;;;
+;; Basic Keybindings ;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;; Unbound Keys
+(global-unset-key (kbd "C-o"))
+(global-unset-key (kbd "C-q"))
+(global-unset-key (kbd "C-v"))
+(global-unset-key (kbd "C-x C-o"))
+(global-unset-key (kbd "C-SPC"))
+
+;; Cursor Movements
+(global-set-key (kbd "<C-down>") 'scroll-up-command)
+(global-set-key (kbd "<C-up>") 'scroll-down-command)
+(global-set-key (kbd "<C-left>") 'move-beginning-of-line)
+(global-set-key (kbd "<C-right>") 'move-end-of-line)
+(global-set-key (kbd "<M-left>") 'backward-word)
+(global-set-key (kbd "<M-right>") 'forward-word)
+
+;; Change C-u to C-z for convenience
+(global-set-key (kbd "C-z") 'universal-argument)
+
 ;; define new keybindings
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "C-x .") 'find-file)
@@ -74,21 +94,17 @@
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-x C-r") 'recentf-open-files)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
+(global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
+(global-set-key (kbd "C-x C-o C-v") 'vterm)
+(global-set-key (kbd "C-%") 'quoted-insert)
+(global-set-key (kbd "C-q r") 'query-replace)
+(global-set-key (kbd "C-q a") 'query-replace-read-args)
+(global-set-key (kbd "C-q e") 'query-replace-regexp)
+(global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
 
 ;; auto-complete mode
 (require 'auto-complete)
 (add-hook 'prog-mode-hook 'auto-complete-mode)
-
-;; evil-leader mode
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
-(evil-leader/set-key
-  "b d" 'kill-buffer-and-window
-  "f r" 'recentf-open-files
-  "o t" 'vterm-other-window
-  "o T" 'vterm
-  "." 'find-file)
 
 ;; hasekll-mode
 (require 'haskell-mode)
@@ -146,7 +162,6 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-(global-set-key (kbd "C-f") 'query-replace)
 
 ;; which key settings
 (require 'which-key)
