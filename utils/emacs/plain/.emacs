@@ -11,10 +11,7 @@
 	clang-format
 	company
 	doom-modeline
-	evil
 	evil-leader
-	evil-multiedit
-	evil-smartparens
 	exec-path-from-shell
 	flycheck
 	gruvbox-theme
@@ -22,6 +19,7 @@
 	magit
 	melancholy-theme
 	monokai-pro-theme
+	multiple-cursors
 	nlinum-relative
 	popup
 	rainbow-delimiters
@@ -59,6 +57,9 @@
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
 
+;; take out CR from C-m key
+(define-key input-decode-map [?\C-m] [C-m])
+
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
 (setq backup-directory-alist
@@ -78,10 +79,6 @@
 (require 'auto-complete)
 (add-hook 'prog-mode-hook 'auto-complete-mode)
 
-;; evil mode
-(require 'evil)
-(evil-mode 1)
-
 ;; evil-leader mode
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -93,10 +90,6 @@
   "o T" 'vterm
   "." 'find-file)
 
-;; evil multiedit
-(require 'evil-multiedit)
-(evil-multiedit-default-keybinds)
-
 ;; hasekll-mode
 (require 'haskell-mode)
 (setq interactive-haskell-mode t)
@@ -106,6 +99,13 @@
   :ensure t
   :config
   (setq rust-format-on-save t))
+
+;; multiple-cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
+(global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 
 ;; doom-modeline
 (use-package doom-modeline
@@ -121,7 +121,6 @@
 (require 'nlinum-relative)
 (add-hook 'prog-mode-hook 'nlinum-relative-mode)
 (setq nlinum-relative-redisplay-delay 0)
-;;(setq nlinum-relative-current-symbol "->")
 (setq nlinum-relative-offset 0)
 
 ;; undo-tree mode settings
@@ -136,9 +135,6 @@
 (yas-global-mode 1)
 (setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/mySnippets"))
 (define-key yas-minor-mode-map (kbd "TAB") nil)
-
-;; transpose-frame mode settings
-(require 'transpose-frame)
 
 ;; haskell-mode settings
 (require 'haskell-interactive-mode)
