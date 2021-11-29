@@ -18,10 +18,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-export GOROOT=/usr/local/go
-export GOPATH=~/.go
-
 export PATH="$PATH:/usr/local/texlive/2021/bin/universal-darwin"
 export PATH="/Users/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH="/Users/almagest/.local/bin:$PATH"
@@ -63,17 +59,13 @@ alias wez='wezterm'
 # alias vols='amixer -D pulse sset Master'
 alias getmusic='youtube-dl -x --audio-format m4a'
 alias hakwon='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents/Hakwon'
-# alias gsync='cd ~/GDrive && grive'
-# alias dynamix='google-chrome-stable --disable-web-security --allow-file-access-from-files --allow-file-access --allow-cross-origin-auth-prompt ~/GDrive/Dynamix/index.html'
-# alias plpdfs="wget -A pdf -m -p -E -k -K -np http://prl.korea.ac.kr/\~pronto/home/courses/cose212/2019/ && cp -r ~/prl.korea.ac.kr/~pronto/home/courses/cose212/2019 ~/GDrive/Haskell/PL/ && rm -r ~/prl.korea.ac.kr"
-# alias checkclass="xprop | grep WM_CLASS"
-# alias conph="kdeconnect-cli -n 'Samsung SM-A810S'"
-# alias kakaotalk="wine ~/.wine/drive_c/Program\ Files/Kakao/KakaoTalk/KakaoTalk.exe"
-# alias mahjong="wine ~/.wine/drive_c/Program\ Files/SEGA/MJ_Mahjong/MJ_Launcher.exe"
-# alias installstack="curl -sSL https://get.haskellstack.org/ | sh"
 alias autohaskell="stack exec ghcid"
 alias gitall="git add --all && git commit -m"
 alias tmux="tmux -2"
+
+# This command can be run while .clang-format is in the .config directory
+alias cfmtcp='cp ~/.config/.clang-format .'
+
 # alias emptytrash="rm -rf ~/.local/share/Trash && rm -rf ~/.local/share/vifm/Trash"
 
 # Load Configures
@@ -86,7 +78,4 @@ alias vimcfg='vim ~/.vimrc'
 
 eval $(thefuck --alias)
 eval "$(starship init zsh)"
-
-bindkey -v
-[ -f "/home/almagest//.ghcup/env" ] && source "/home/almagest//.ghcup/env" # ghcup-env
 

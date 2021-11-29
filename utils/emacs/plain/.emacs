@@ -66,37 +66,48 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Function Declarations ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun add-newline-at-top ()
+  (interactive)
+  (beginning-of-line)
+  (newline-and-indent)
+  (previous-line))
+
+(defun add-newline-at-bottom ()
+  (interactive)
+  (end-of-line)
+  (newline-and-indent))
+
+(defun copy-clang-format-to-current-dir ()
+  (interactive)
+  (shell-command "cp ~/.config/.clang-format ."))
+
+(require 'clang-format)
+(defun clang-format-and-save-buffer ()
+  (interactive)
+  (clang-format-buffer)
+  (save-buffer))
+
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic Keybindings ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; Unbound Keys
-(global-unset-key (kbd "C-o"))
 (global-unset-key (kbd "C-q"))
-(global-unset-key (kbd "C-v"))
 (global-unset-key (kbd "C-x C-o"))
 (global-unset-key (kbd "C-SPC"))
 
-;; Cursor Movements
-(global-set-key (kbd "<C-down>") 'scroll-up-command)
-(global-set-key (kbd "<C-up>") 'scroll-down-command)
+;; movement keys
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
 (global-set-key (kbd "<C-right>") 'move-end-of-line)
-(global-set-key (kbd "<M-left>") 'backward-word)
-(global-set-key (kbd "<M-right>") 'forward-word)
 
 ;; Change C-u to C-z for convenience
 (global-set-key (kbd "C-z") 'universal-argument)
 
 ;; define new keybindings
-(global-set-key (kbd "<C-return>") (lambda ()
-									 (interactive)
-									 (end-of-line)
-									 (newline-and-indent)))
-(global-set-key (kbd "<M-return>") (lambda ()
-									   (interactive)
-									   (beginning-of-line)
-									   (newline-and-indent)
-									   (previous-line)))
+(global-set-key (kbd "<C-return>") 'add-newline-at-top)
+(global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
 (global-set-key (kbd "M-W") 'kill-region)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "C-x .") 'find-file)
@@ -112,6 +123,17 @@
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
 (global-set-key (kbd "C-q e") 'query-replace-regexp)
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
+
+;; C++ specific keybindings
+(add-hook 'c++-mode-hook
+		  (lambda ()
+			(local-set-key (kbd "C-c <C-m> C-f") 'copy-clang-format-to-current-dir)
+			(local-set-key (kbd "C-c C-f") 'clang-format-and-save-buffer)
+		  ))
+
+;; finished keybindings
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;; auto-complete mode
 (require 'auto-complete)
@@ -131,8 +153,8 @@
 (require 'multiple-cursors)
 (global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
 (global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "<C-S-down>") 'mc/mark-next-like-this)
+(global-set-key (kbd "<C-S-up>") 'mc/mark-previous-like-this)
 
 ;; doom-modeline
 (use-package doom-modeline
@@ -316,7 +338,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
