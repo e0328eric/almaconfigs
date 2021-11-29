@@ -201,6 +201,15 @@
 (which-key-mode)
 (which-key-setup-side-window-bottom)
 
+;; transpose-frame
+(use-package transpose-frame
+  :bind (("<C-m> C-t t" .  'transpose-frame)
+		 ("<C-m> C-t f" .  'flip-frame)
+		 ("<C-m> C-t F" .  'flop-frame)
+		 ("<C-m> C-t C-r" .  'rotate-frame)
+		 ("<C-m> C-t r" .  'rotate-frame-anti-clockwise)
+		 ("<C-m> C-t R" .  'rotate-frame-clockwise)))
+
 ;; treemacs settings
 (use-package treemacs
   :ensure t

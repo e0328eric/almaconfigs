@@ -1,0 +1,40 @@
+#! /usr/local/bin/python
+
+import sys
+import os
+
+CXX_COMPILER = "g++-11"
+CXX_STD = "-std=c++20"
+CXX_COMP_MODULE="-fmodules-ts"
+CXX_OPTIONS = "-O3 -Wall -Wextra -Wpedantic -Wconversion -Werror=return-type"
+
+TARGET = "foo"
+
+SRCS = [
+    "./foo.cc",
+    "./main.cc",
+]
+
+OBJS = ""
+
+for src_file in SRCS:
+    pre, ext = os.path.splitext(src_file)
+    OBJS += " " + pre + ".o"
+
+def run_with(list):
+    return os.system(" ".join(list))
+
+# Main Building Part
+
+if len(sys.argv) > 1:
+    if sys.argv[1] == "build":
+        run_with([CXX_COMPILER, CXX_STD, CXX_COMP_MODULE, "-xc++-system-header", "iostream"])
+
+        for src_file in SRCS:
+            run_with([CXX_COMPILER, CXX_STD, CXX_COMP_MODULE, "-c", CXX_OPTIONS, src_file])
+
+        run_with([CXX_COMPILER, OBJS, "-o", TARGET])
+        
+    elif sys.argv[1] == "clean":
+        run_with(["rm", "-r", OBJS, TARGET, "gcm.cache"])
+
