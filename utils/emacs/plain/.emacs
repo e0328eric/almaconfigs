@@ -105,9 +105,6 @@
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
 (global-set-key (kbd "<C-right>") 'move-end-of-line)
 
-;; Change C-u to C-z for convenience
-(global-set-key (kbd "C-z") 'universal-argument)
-
 ;; define new keybindings
 (global-set-key (kbd "<C-return>") 'add-newline-at-top)
 (global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
