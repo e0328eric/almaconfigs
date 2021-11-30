@@ -1,0 +1,89 @@
+#! /usr/local/bin/python
+
+import sys
+import os
+
+CXX_COMPILER = "g++-11"
+CXX_STD = "-std=c++20"
+CXX_OPTIONS = [
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror=return-type",
+]
+
+LIBS = [
+    "./lua-5.4.3/src/liblua.a",
+]
+LIBS_PKG_CFGS = []
+INCLUDES = [
+    "-Ilua-5.4.3/src",
+]
+
+TARGET = "testlua"
+
+SRCS = [
+    "./main.cc",
+]
+
+OBJS = ""
+
+
+def cat_to_str(list):
+    return " ".join(list)
+
+
+def run_with(list):
+    return os.system(" ".join(list))
+
+
+def obj_from_src(src_filename):
+    pre, ext = os.path.splitext(src_filename)
+    return pre + ".o"
+
+
+for src_file in SRCS:
+    OBJS += " " + obj_from_src(src_file)
+
+# Main Building Part
+
+if len(sys.argv) > 1:
+    if sys.argv[1] == "build" or sys.argv[1] == "b":
+        # building lua makefile
+        run_with(["make -C ./lua-5.4.3"])
+
+        # building main C++ functions
+        for src_file in SRCS:
+            run_with(
+                [
+                    CXX_COMPILER,
+                    CXX_STD,
+                    cat_to_str(CXX_OPTIONS),
+                    "-c",
+                    src_file,
+                    cat_to_str(INCLUDES),
+                    "-o",
+                    obj_from_src(src_file),
+                ]
+            )
+        run_with(
+            [
+                CXX_COMPILER,
+                OBJS,
+                cat_to_str(LIBS),
+                cat_to_str(LIBS_PKG_CFGS),
+                "-o",
+                TARGET,
+            ]
+        )
+
+    elif sys.argv[1] == "clean":
+        run_with(["make -C ./lua-5.4.3 clean"])
+        run_with(["rm", "-r", OBJS, TARGET])
+else:
+    print("Usage: ./cpp-build [subcommands]")
+    print()
+    print("SubCommands:")
+    print("build    build the project")
+    print("clean    clean the object and execute files")
