@@ -12,6 +12,8 @@
 		clang-format
 		company
 		doom-modeline
+		evil
+		evil-leader
 		exec-path-from-shell
 		flycheck
 		gruvbox-theme
@@ -51,8 +53,9 @@
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
-(setq indent-tab-mode nil)
-(setq-default tab-width 4)
+(setq-default indent-tab-mode nil)
+(custom-set-variables '(tab-width 4))
+(setq-default c-basic-offset 4)
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
 
@@ -124,16 +127,33 @@
 (global-set-key (kbd "C-q e") 'query-replace-regexp)
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
 
-;; C++ specific keybindings
-(add-hook 'c++-mode-hook
-		  (lambda ()
-			(local-set-key (kbd "C-c <C-m> C-f") 'copy-clang-format-to-current-dir)
-			(local-set-key (kbd "C-c C-f") 'clang-format-and-save-buffer)
-		  ))
+(defun declare-c-cpp-fmt-key ()
+	(local-set-key (kbd "C-c <C-m> C-f") 'copy-clang-format-to-current-dir)
+	(local-set-key (kbd "C-c C-f") 'clang-format-and-save-buffer))
+
+(add-hook 'c-mode-hook 'declare-c-cpp-fmt-key)
+(add-hook 'c++-mode-hook 'declare-c-cpp-fmt-key)
 
 ;; finished keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; evil mode
+(require 'evil)
+(evil-mode 1)
+
+;; evil-leader mode
+(use-package evil-leader
+  :ensure t
+  :config
+  (global-evil-leader-mode)
+  (evil-leader/set-leader "<SPC>")
+  (evil-leader/set-key
+	"." 'ido-find-file
+	"q" 'quit-window
+	"f r" 'recentf-open-files
+	"b d" 'ido-kill-buffer
+	"b l" 'ido-switch-buffer
+	"b L" 'list-buffers))
 
 ;; auto-complete mode
 (require 'auto-complete)
@@ -347,7 +367,7 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
