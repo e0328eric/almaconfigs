@@ -8,6 +8,7 @@
 (setq package-list
 	  '(ace-window					 
 		auto-complete
+		ample-theme
 		ayu-theme
 		clang-format
 		company
@@ -49,12 +50,11 @@
 (toggle-scroll-bar 0)
 (ido-mode 1)
 (recentf-mode 1)
-(set-frame-font "Fira Code 15" nil t)
+(set-frame-font "Fira Code 14" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 (setq-default indent-tab-mode nil)
-(custom-set-variables '(tab-width 4))
 (setq-default c-basic-offset 4)
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
@@ -100,6 +100,12 @@
 (global-unset-key (kbd "C-q"))
 (global-unset-key (kbd "C-x C-o"))
 (global-unset-key (kbd "C-SPC"))
+(global-unset-key [wheel-right])
+(global-unset-key [wheel-left])
+(global-unset-key [double-wheel-right])
+(global-unset-key [double-wheel-left])
+(global-unset-key [triple-wheel-right])
+(global-unset-key [triple-wheel-left])
 
 ;; movement keys
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
@@ -118,21 +124,31 @@
 (global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
+(global-set-key (kbd "C-c C-c C-c") 'compile)
+(global-set-key (kbd "C-c C-c M-c") 'recompile)
 (global-set-key (kbd "C-%") 'quoted-insert)
 (global-set-key (kbd "C-q r") 'query-replace)
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
 (global-set-key (kbd "C-q e") 'query-replace-regexp)
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
 
-(defun declare-c-cpp-fmt-key ()
+;; finished keybindings
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Config for each mode ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun c-cpp-configs ()
+    (setq c-syntactic-indentation nil)
 	(local-set-key (kbd "C-c <C-m> C-f") 'copy-clang-format-to-current-dir)
 	(local-set-key (kbd "C-c C-f") 'clang-format-and-save-buffer))
 
-(add-hook 'c-mode-hook 'declare-c-cpp-fmt-key)
-(add-hook 'c++-mode-hook 'declare-c-cpp-fmt-key)
+(setq c-default-style '((java-mode . "java")
+                        (awk-mode . "awk")
+                        (other . "linux")))
 
-;; finished keybindings
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'c-mode-hook 'c-cpp-configs)
+(add-hook 'c++-mode-hook 'c-cpp-configs)
 
 ;; evil mode
 (require 'evil)
@@ -150,11 +166,18 @@
 	"f r" 'recentf-open-files
 	"b d" 'ido-kill-buffer
 	"b l" 'ido-switch-buffer
-	"b L" 'list-buffers))
+	"b L" 'list-buffers
+	"c c" 'compile))
 
 ;; auto-complete mode
 (require 'auto-complete)
 (add-hook 'prog-mode-hook 'auto-complete-mode)
+
+;; ace-window mode
+(use-package ace-window
+    :init
+    (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+    (setq aw-background nil))
 
 ;; hasekll-mode
 (require 'haskell-mode)
@@ -199,7 +222,7 @@
               "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/mySnippets"))
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 
 ;; haskell-mode settings
@@ -343,9 +366,9 @@
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(monokai-pro-spectrum))
+ '(custom-enabled-themes '(gruvbox-dark-medium))
  '(custom-safe-themes
-   '("6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+   '("83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
  '(haskell-hoogle-command nil)
  '(haskell-mode-stylish-haskell-path "ormolu")
@@ -364,10 +387,11 @@
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
+ '(tab-width 4)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    '((20 . "#F92672")
@@ -397,4 +421,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
