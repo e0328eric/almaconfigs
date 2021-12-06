@@ -1,0 +1,127 @@
+#! /usr/local/bin/python
+
+import sys
+import os
+
+CXX_COMPILER = "clang++"
+CXX_STD = "-std=c++20"
+CXX_OPTIONS = [
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Werror=return-type",
+]
+
+LIBS = []
+LIB_DIRS = []
+INCLUDES = [
+    "-Ibuild/install/include"
+]
+
+TARGET = "isworking"
+
+SRCS = [
+    "./src/foo.cc",
+]
+
+MAIN_SRC = "./src/main.cc"
+
+STD_LIBS = []
+
+
+def cat_to_str(list):
+    return " ".join(list)
+
+
+def run_with(*args):
+    argument = ""
+    for arg in args:
+        argument += arg
+        argument += " "
+    print("[INFO] " + argument)
+    return os.system(argument)
+
+
+def change_extension(filename, extension):
+    pre, oldext = os.path.splitext(filename)
+    return pre + extension
+
+def change_file_location(filename, location):
+    basename = os.path.basename(filename)
+    if location[-1] == "/":
+        return location + basename
+    else:
+        return location + "/" + basename
+
+######################
+# Main Building Part #
+######################
+if len(sys.argv) > 1:
+    if sys.argv[1] == "build" or sys.argv[1] == "b":
+        # compile lua source code
+        run_with("mkdir -p ./build")
+        run_with("make -C ./lib/lua-5.4.3") 
+        run_with("make local -C ./lib/lua-5.4.3")
+        run_with("mv ./lib/lua-5.4.3/install ./build")
+
+        # Make a precompiled files (.pcm)
+        pcm_list = []
+        run_with("mkdir -p ./build/pcm")
+        for src in SRCS:
+            pcm_list.append(change_file_location(change_extension(src, ".pcm"), "./build/pcm"))
+            run_with(
+                CXX_COMPILER,
+                CXX_STD,
+                cat_to_str(CXX_OPTIONS),
+                "-fmodules-ts",
+                "--precompile",
+                "-x",
+                "c++-module",
+                src,
+                cat_to_str(INCLUDES),
+                "-o",
+                pcm_list[-1],
+            )
+
+        # compiles an object file from .pcm
+        objs_list = []
+        run_with("mkdir -p ./build/obj")
+        for pcm in pcm_list:
+            objs_list.append(change_file_location(change_extension(pcm, ".o"), "./build/obj"))
+            run_with(
+                CXX_COMPILER,
+                CXX_STD,
+                cat_to_str(CXX_OPTIONS),
+                "-fmodules-ts",
+                cat_to_str(LIBS),
+                cat_to_str(LIB_DIRS),
+                "-c",
+                pcm,
+                "-o",
+                objs_list[-1],
+            )
+        # compile main and linking other object files
+        run_with(
+            CXX_COMPILER,
+            CXX_STD,
+            cat_to_str(CXX_OPTIONS),
+            "-fmodules-ts",
+            "-fprebuilt-module-path=./build/pcm", # TODO
+            cat_to_str(INCLUDES),
+            cat_to_str(LIBS),
+            cat_to_str(LIB_DIRS),
+            cat_to_str(objs_list),
+            MAIN_SRC,
+            "-o",
+            TARGET,
+        )
+
+    elif sys.argv[1] == "clean" or sys.argv[1] == "c":
+        run_with("rm", "-r", "./build", TARGET)
+else:
+    print("Usage: ./cpp-build [subcommands]")
+    print()
+    print("SubCommands:")
+    print("build    build the project")
+    print("clean    clean the object and execute files")

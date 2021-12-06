@@ -1,5 +1,7 @@
 #! /usr/local/bin/python
 
+# This code is somewhat example one
+
 import sys
 import os
 
