@@ -13,8 +13,8 @@
 		clang-format
 		company
 		doom-modeline
-		evil
-		evil-leader
+		;;evil
+		;;evil-leader
 		exec-path-from-shell
 		flycheck
 		gruvbox-theme
@@ -52,6 +52,7 @@
 (recentf-mode 1)
 (set-frame-font "Fira Code 14" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
+(setq-default cursor-type 'bar)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 (setq-default indent-tab-mode nil)
@@ -124,8 +125,8 @@
 (global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
-(global-set-key (kbd "C-c C-c C-c") 'compile)
-(global-set-key (kbd "C-c C-c M-c") 'recompile)
+(global-set-key (kbd "C-c <C-m> C-c") 'compile)
+(global-set-key (kbd "C-c <C-m> M-c") 'recompile)
 (global-set-key (kbd "C-%") 'quoted-insert)
 (global-set-key (kbd "C-q r") 'query-replace)
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
@@ -150,24 +151,34 @@
 (add-hook 'c-mode-hook 'c-cpp-configs)
 (add-hook 'c++-mode-hook 'c-cpp-configs)
 
+(defun tex-configs ()
+  (local-set-key (kbd "<C-S-return>") 'tex-feed-input)
+  (local-set-key (kbd "<C-return>") 'add-newline-at-top)
+  (local-set-key (kbd "<M-return>") 'add-newline-at-bottom))
+
+(add-hook 'tex-mode 'tex-configs)
+
+(add-to-list 'load-path "~/.emacs.local/")
+(require 'glasm-mode)
+
 ;; evil mode
-(require 'evil)
-(evil-mode 1)
+;;(require 'evil)
+;;(evil-mode 1)
 
 ;; evil-leader mode
-(use-package evil-leader
-  :ensure t
-  :config
-  (global-evil-leader-mode)
-  (evil-leader/set-leader "<SPC>")
-  (evil-leader/set-key
-	"." 'ido-find-file
-	"q" 'quit-window
-	"f r" 'recentf-open-files
-	"b d" 'ido-kill-buffer
-	"b l" 'ido-switch-buffer
-	"b L" 'list-buffers
-	"c c" 'compile))
+;; (use-package evil-leader
+;;   :ensure t
+;;   :config
+;;   (global-evil-leader-mode)
+;;   (evil-leader/set-leader "<SPC>")
+;;   (evil-leader/set-key
+;; 	"." 'ido-find-file
+;; 	"q" 'quit-window
+;; 	"f r" 'recentf-open-files
+;; 	"b d" 'ido-kill-buffer
+;; 	"b l" 'ido-switch-buffer
+;; 	"b L" 'list-buffers
+;; 	"c c" 'compile))
 
 ;; auto-complete mode
 (require 'auto-complete)
@@ -330,9 +341,9 @@
         ("C-x t C-t" . treemacs-find-file)
         ("C-x t M-t" . treemacs-find-tag)))
 
-(use-package treemacs-evil
-  :after (treemacs evil)
-  :ensure t)
+;; (use-package treemacs-evil
+;;   :after (treemacs evil)
+;;   :ensure t)
 
 (use-package treemacs-projectile
   :after (treemacs projectile)
