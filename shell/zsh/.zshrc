@@ -67,6 +67,9 @@ alias tmux="tmux -2"
 # This command can be run while .clang-format is in the .config directory
 alias cfmtcp='cp ~/.config/.clang-format .'
 
+# copy cb file
+alias mkcb='cp ~/Github/arch-almagest/script/cpp-bootstrap/cb .'
+
 # alias emptytrash="rm -rf ~/.local/share/Trash && rm -rf ~/.local/share/vifm/Trash"
 
 # Load Configures

@@ -13,8 +13,6 @@
 		clang-format
 		company
 		doom-modeline
-		;;evil
-		;;evil-leader
 		exec-path-from-shell
 		flycheck
 		gruvbox-theme
@@ -52,16 +50,13 @@
 (recentf-mode 1)
 (set-frame-font "Fira Code 14" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
-(setq-default cursor-type 'bar)
+;;(setq-default cursor-type 'bar)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 (setq-default indent-tab-mode nil)
 (setq-default c-basic-offset 4)
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
-
-;; take out CR from C-m key
-(define-key input-decode-map [?\C-m] [C-m])
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
@@ -99,14 +94,38 @@
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; Unbound Keys
 (global-unset-key (kbd "C-q"))
+(global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-o"))
 (global-unset-key (kbd "C-SPC"))
-(global-unset-key [wheel-right])
-(global-unset-key [wheel-left])
-(global-unset-key [double-wheel-right])
-(global-unset-key [double-wheel-left])
-(global-unset-key [triple-wheel-right])
-(global-unset-key [triple-wheel-left])
+
+;; copied this function from here:
+;; https://emacsredux.com/blog/2013/05/22/smarter-navigation-to-the-beginning-of-a-line/
+(defun smarter-move-beginning-of-line (arg)
+  "Move point back to indentation of beginning of line.
+
+Move point to the first non-whitespace character on this line.
+If point is already there, move to the beginning of the line.
+Effectively toggle between the first non-whitespace character and
+the beginning of the line.
+
+If ARG is not nil or 1, move forward ARG - 1 lines first.  If
+point reaches the beginning or end of the buffer, stop there."
+  (interactive "^p")
+  (setq arg (or arg 1))
+
+  ;; Move lines first
+  (when (/= arg 1)
+    (let ((line-move-visual nil))
+      (forward-line (1- arg))))
+
+  (let ((orig-point (point)))
+    (back-to-indentation)
+    (when (= orig-point (point))
+      (move-beginning-of-line 1))))
+
+;; remap C-a to `smarter-move-beginning-of-line'
+(global-set-key [remap move-beginning-of-line]
+                'smarter-move-beginning-of-line)
 
 ;; movement keys
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
@@ -115,6 +134,7 @@
 ;; define new keybindings
 (global-set-key (kbd "<C-return>") 'add-newline-at-top)
 (global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
+(global-set-key (kbd "C-S-s") 'isearch-backward)
 (global-set-key (kbd "M-W") 'kill-region)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "C-x .") 'find-file)
@@ -125,8 +145,8 @@
 (global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
-(global-set-key (kbd "C-c <C-m> C-c") 'compile)
-(global-set-key (kbd "C-c <C-m> M-c") 'recompile)
+(global-set-key (kbd "C-z c") 'compile)
+(global-set-key (kbd "C-z C-c") 'recompile)
 (global-set-key (kbd "C-%") 'quoted-insert)
 (global-set-key (kbd "C-q r") 'query-replace)
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
@@ -141,8 +161,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun c-cpp-configs ()
     (setq c-syntactic-indentation nil)
-	(local-set-key (kbd "C-c <C-m> C-f") 'copy-clang-format-to-current-dir)
-	(local-set-key (kbd "C-c C-f") 'clang-format-and-save-buffer))
+	(local-set-key (kbd "C-z C-f C-c") 'copy-clang-format-to-current-dir)
+	(local-set-key (kbd "C-z C-f C-s") 'clang-format-and-save-buffer))
 
 (setq c-default-style '((java-mode . "java")
                         (awk-mode . "awk")
@@ -160,25 +180,6 @@
 
 (add-to-list 'load-path "~/.emacs.local/")
 (require 'glasm-mode)
-
-;; evil mode
-;;(require 'evil)
-;;(evil-mode 1)
-
-;; evil-leader mode
-;; (use-package evil-leader
-;;   :ensure t
-;;   :config
-;;   (global-evil-leader-mode)
-;;   (evil-leader/set-leader "<SPC>")
-;;   (evil-leader/set-key
-;; 	"." 'ido-find-file
-;; 	"q" 'quit-window
-;; 	"f r" 'recentf-open-files
-;; 	"b d" 'ido-kill-buffer
-;; 	"b l" 'ido-switch-buffer
-;; 	"b L" 'list-buffers
-;; 	"c c" 'compile))
 
 ;; auto-complete mode
 (require 'auto-complete)
@@ -267,7 +268,7 @@
   :defer t
   :init
   (with-eval-after-load 'winum
-    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+    (define-key winum-keymap (kbd "C-z t 0") #'treemacs-select-window))
   :config
   (progn
     (setq treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
@@ -334,12 +335,12 @@
     (treemacs-hide-gitignored-files-mode nil))
   :bind
   (:map global-map
-        ("M-0"       . treemacs-select-window)
-        ("C-x t 1"   . treemacs-delete-other-windows)
-        ("C-x t t"   . treemacs)
-        ("C-x t B"   . treemacs-bookmark)
-        ("C-x t C-t" . treemacs-find-file)
-        ("C-x t M-t" . treemacs-find-tag)))
+        ("C-z t 0"   . treemacs-select-window)
+        ("C-z t 1"   . treemacs-delete-other-windows)
+        ("C-z t t"   . treemacs)
+        ("C-z t B"   . treemacs-bookmark)
+        ("C-z t C-t" . treemacs-find-file)
+        ("C-z t M-t" . treemacs-find-tag)))
 
 ;; (use-package treemacs-evil
 ;;   :after (treemacs evil)
