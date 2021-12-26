@@ -96,7 +96,8 @@
 (global-unset-key (kbd "C-q"))
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-o"))
-(global-unset-key (kbd "C-SPC"))
+(global-unset-key (kbd "<C-escape>"))
+(global-unset-key (kbd "<M-escape>"))
 
 ;; copied this function from here:
 ;; https://emacsredux.com/blog/2013/05/22/smarter-navigation-to-the-beginning-of-a-line/
@@ -136,17 +137,19 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
 (global-set-key (kbd "C-S-s") 'isearch-backward)
 (global-set-key (kbd "M-W") 'kill-region)
+(global-set-key (kbd "C-x x") 'mark-word)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "C-x .") 'find-file)
+(global-set-key (kbd "C-x C-.") 'recentf-open-files)
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
-(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 (global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
 (global-set-key (kbd "C-z c") 'compile)
 (global-set-key (kbd "C-z C-c") 'recompile)
+(global-set-key (kbd "C-z e") 'eval-expression)
 (global-set-key (kbd "C-%") 'quoted-insert)
 (global-set-key (kbd "C-q r") 'query-replace)
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
@@ -255,12 +258,12 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; transpose-frame
 (use-package transpose-frame
-  :bind (("<C-m> C-t t" .  'transpose-frame)
-		 ("<C-m> C-t f" .  'flip-frame)
-		 ("<C-m> C-t F" .  'flop-frame)
-		 ("<C-m> C-t C-r" .  'rotate-frame)
-		 ("<C-m> C-t r" .  'rotate-frame-anti-clockwise)
-		 ("<C-m> C-t R" .  'rotate-frame-clockwise)))
+  :bind (("C-z C-t t" .  'transpose-frame)
+		 ("C-z C-t f" .  'flip-frame)
+		 ("C-z C-t F" .  'flop-frame)
+		 ("C-z C-t C-r" .  'rotate-frame)
+		 ("C-z C-t r" .  'rotate-frame-anti-clockwise)
+		 ("C-z C-t R" .  'rotate-frame-clockwise)))
 
 ;; treemacs settings
 (use-package treemacs
@@ -268,7 +271,7 @@ point reaches the beginning or end of the buffer, stop there."
   :defer t
   :init
   (with-eval-after-load 'winum
-    (define-key winum-keymap (kbd "C-z t 0") #'treemacs-select-window))
+    (define-key winum-keymap (kbd "<M-escape> e") #'treemacs-select-window))
   :config
   (progn
     (setq treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
@@ -303,7 +306,7 @@ point reaches the beginning or end of the buffer, stop there."
           treemacs-recenter-after-project-expand   'on-distance
           treemacs-litter-directories              '("/node_modules" "/.venv" "/.cask")
           treemacs-show-cursor                     nil
-          treemacs-show-hidden-files               t
+          treemacs-show-hidden-files               nil
           treemacs-silent-filewatch                nil
           treemacs-silent-refresh                  nil
           treemacs-sorting                         'alphabetic-asc
@@ -335,12 +338,12 @@ point reaches the beginning or end of the buffer, stop there."
     (treemacs-hide-gitignored-files-mode nil))
   :bind
   (:map global-map
-        ("C-z t 0"   . treemacs-select-window)
-        ("C-z t 1"   . treemacs-delete-other-windows)
-        ("C-z t t"   . treemacs)
-        ("C-z t B"   . treemacs-bookmark)
-        ("C-z t C-t" . treemacs-find-file)
-        ("C-z t M-t" . treemacs-find-tag)))
+        ("<M-escape> t 0"   . treemacs-select-window)
+        ("<M-escape> t 1"   . treemacs-delete-other-windows)
+        ("<M-escape> t t"   . treemacs)
+        ("<M-escape> t B"   . treemacs-bookmark)
+        ("<M-escape> t C-t" . treemacs-find-file)
+        ("<M-escape> t M-t" . treemacs-find-tag)))
 
 ;; (use-package treemacs-evil
 ;;   :after (treemacs evil)

@@ -62,7 +62,6 @@ alias getmusic='youtube-dl -x --audio-format m4a'
 alias hakwon='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents/Hakwon'
 alias autohaskell="stack exec ghcid"
 alias gitall="git add --all && git commit -m"
-alias tmux="tmux -2"
 
 # This command can be run while .clang-format is in the .config directory
 alias cfmtcp='cp ~/.config/.clang-format .'
