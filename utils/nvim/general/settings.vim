@@ -36,6 +36,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set scrolloff=3
 set guifont=Fira\ Code\ Nerd\ Font
+set termguicolors
 " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " set mmp=1300
 " set autochdir                           " Your working directory will always be the same as your working directory

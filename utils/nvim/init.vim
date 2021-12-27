@@ -16,7 +16,7 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 
 " Themes
 source $HOME/.config/nvim/themes/syntax.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/themes/base16.vim
 source $HOME/.config/nvim/themes/airline.vim
 
 " Plugin Configuration
