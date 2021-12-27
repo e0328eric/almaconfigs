@@ -33,6 +33,8 @@ Plug 'google/vim-codefmt'
 " Also add Glaive, which is used to configure codefmt's maktaba flags. See
 " `:help :Glaive` for usage.
 Plug 'google/vim-glaive'
+" Python
+Plug 'psf/black', { 'branch': 'stable' }
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-crates'
@@ -53,6 +55,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-eunuch'
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
+" org mode for vim
+Plug 'jceb/vim-orgmode'
 " auto set indent settings
 Plug 'tpope/vim-sleuth'
 " Better Syntax Support

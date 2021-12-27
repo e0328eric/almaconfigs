@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: header initialization
 # uuid: header-init
-# key: header
+# key: hdr
 # condition: t
 # --
 #ifndef $1
