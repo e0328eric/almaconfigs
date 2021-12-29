@@ -50,6 +50,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c='clear'
 alias v='nvim'
+alias view='nvim -R'
 alias e='emacs -nw'
 alias t='tmux'
 alias hexdump='hexyl'

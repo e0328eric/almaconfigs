@@ -63,8 +63,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 " Cool Icons
 Plug 'ryanoasis/vim-devicons'
-" Auto pairs for '(' '[' '{'
-Plug 'jiangmiao/auto-pairs'
 " Closetags
 Plug 'alvan/vim-closetag'
 " Themes

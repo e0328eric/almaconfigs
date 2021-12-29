@@ -1,4 +1,4 @@
-" This config is based to ChristianChiarulli / nvim
+" This config is based to ChristianChiarulli / nvim 
 "    ____      _ __        _
 "   /  _/___  (_) /__   __(_)___ ___
 "   / // __ \/ / __/ | / / / __ `__ \

@@ -6,7 +6,6 @@
     \ 'coc-lists',
     \ 'coc-emmet',
     \ 'coc-tasks',
-    \ 'coc-pairs',
     \ 'coc-tsserver',
     \ 'coc-floaterm',
     \ 'coc-html',
@@ -14,7 +13,7 @@
     \ 'coc-emoji',
     \ 'coc-cssmodules',
     \ 'coc-yaml',
-    \ 'coc-rls',
+    \ 'coc-rust-analyzer',
     \ 'coc-explorer',
     \ 'coc-svg',
     \ 'coc-prettier',
@@ -23,9 +22,9 @@
     \ 'coc-yank',
     \ 'coc-json',
     \ 'coc-marketplace',
+    \ 'coc-tabnine',
+    \ 'coc-highlight',
     \ ]
-    " \ 'coc-tabnine',
-    " \ 'coc-highlight',
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <C-]>
