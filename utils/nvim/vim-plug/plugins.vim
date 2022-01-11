@@ -42,6 +42,7 @@ Plug 'mhinz/vim-crates'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
 "C++
 Plug 'cdelledonne/vim-cmake'
 Plug 'bfrg/vim-cpp-modern'
@@ -87,6 +88,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'rhysd/git-messenger.vim'
+Plug 'jreybert/vimagit'
 " Terminal
 Plug 'voldikss/vim-floaterm'
 " Start Screen

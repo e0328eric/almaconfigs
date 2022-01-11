@@ -132,6 +132,10 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
 (global-set-key (kbd "<C-right>") 'move-end-of-line)
 
+(require 'multiple-cursors)
+(global-unset-key (kbd "M-<down-mouse-1>"))
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+
 ;; define new keybindings
 (global-set-key (kbd "<C-return>") 'add-newline-at-top)
 (global-set-key (kbd "<M-return>") 'add-newline-at-bottom)

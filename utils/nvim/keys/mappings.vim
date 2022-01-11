@@ -50,6 +50,10 @@ else
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
 
+  nnoremap <C-O> O
+  inoremap <C-O> <C-[>O
+
+
   " Terminal window navigation
   tnoremap <C-h> <C-\><C-N><C-w>h
   tnoremap <C-j> <C-\><C-N><C-w>j
@@ -68,6 +72,8 @@ else
   nnoremap <silent> <M-l>    :vertical resize +2<CR>
 
 endif
+
+
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
