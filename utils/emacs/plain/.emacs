@@ -96,6 +96,7 @@
 (global-unset-key (kbd "C-q"))
 (global-unset-key (kbd "C-z"))
 (global-unset-key (kbd "C-x C-o"))
+(global-unset-key (kbd "<escape>"))
 (global-unset-key (kbd "<C-escape>"))
 (global-unset-key (kbd "<M-escape>"))
 
@@ -159,6 +160,9 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-q a") 'query-replace-read-args)
 (global-set-key (kbd "C-q e") 'query-replace-regexp)
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
+
+;; define C-ESC related keybinds
+(global-set-key (kbd "<C-escape> e") 'eval-expression)
 
 ;; finished keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -275,7 +279,7 @@ point reaches the beginning or end of the buffer, stop there."
   :defer t
   :init
   (with-eval-after-load 'winum
-    (define-key winum-keymap (kbd "<M-escape> e") #'treemacs-select-window))
+    (define-key winum-keymap (kbd "<escape> e") #'treemacs-select-window))
   :config
   (progn
     (setq treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
@@ -342,12 +346,12 @@ point reaches the beginning or end of the buffer, stop there."
     (treemacs-hide-gitignored-files-mode nil))
   :bind
   (:map global-map
-        ("<M-escape> t 0"   . treemacs-select-window)
-        ("<M-escape> t 1"   . treemacs-delete-other-windows)
-        ("<M-escape> t t"   . treemacs)
-        ("<M-escape> t B"   . treemacs-bookmark)
-        ("<M-escape> t C-t" . treemacs-find-file)
-        ("<M-escape> t M-t" . treemacs-find-tag)))
+        ("<escape> t 0"   . treemacs-select-window)
+        ("<escape> t 1"   . treemacs-delete-other-windows)
+        ("<escape> t t"   . treemacs)
+        ("<escape> t B"   . treemacs-bookmark)
+        ("<escape> t C-t" . treemacs-find-file)
+        ("<escape> t M-t" . treemacs-find-tag)))
 
 ;; (use-package treemacs-evil
 ;;   :after (treemacs evil)
@@ -406,7 +410,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
