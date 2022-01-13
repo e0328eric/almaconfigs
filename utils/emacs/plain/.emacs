@@ -18,7 +18,6 @@
 		gruvbox-theme
 		haskell-mode
 		magit
-		melancholy-theme
 		monokai-pro-theme
 		multiple-cursors
 		nlinum-relative
@@ -57,6 +56,8 @@
 (setq-default c-basic-offset 4)
 (setq help-window-select t)
 (exec-path-from-shell-initialize)
+(if (eq system-type 'darwin)
+	(setq mac-command-modifier 'meta))
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
@@ -189,8 +190,8 @@ point reaches the beginning or end of the buffer, stop there."
 
 (add-hook 'tex-mode 'tex-configs)
 
-(add-to-list 'load-path "~/.emacs.local/")
-(require 'glasm-mode)
+;;(add-to-list 'load-path "~/.emacs.local/")
+;;(require 'glasm-mode)
 
 ;; auto-complete mode
 (require 'auto-complete)
