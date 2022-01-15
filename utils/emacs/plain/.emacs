@@ -145,8 +145,8 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "M-W") 'kill-region)
 (global-set-key (kbd "C-x x") 'mark-word)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
-(global-set-key (kbd "C-x .") 'find-file)
-(global-set-key (kbd "C-x C-.") 'recentf-open-files)
+(global-set-key (kbd "C-x C-.") 'find-file)
+(global-set-key (kbd "C-x .") 'recentf-open-files)
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
@@ -162,7 +162,10 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-q e") 'query-replace-regexp)
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
 
-;; define C-ESC related keybinds
+;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
+(global-set-key (kbd "<escape> o") 'overwrite-mode)
+
+;; define C-ESC related keybindings
 (global-set-key (kbd "<C-escape> e") 'eval-expression)
 
 ;; finished keybindings
