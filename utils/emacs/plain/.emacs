@@ -3,42 +3,9 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
-
-;; Install Packages
-(setq package-list
-	  '(ace-window					 
-		auto-complete
-		ample-theme
-		ayu-theme
-		clang-format
-		company
-		doom-modeline
-		exec-path-from-shell
-		flycheck
-		gruvbox-theme
-		haskell-mode
-		magit
-		monokai-pro-theme
-		multiple-cursors
-		nlinum-relative
-		popup
-		rainbow-delimiters
-		rust-mode
-		smex
-		transpose-frame
-		treemacs
-		undo-tree
-		use-package
-		vterm
-		which-key
-		yasnippet))
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(dolist (package package-list)
-  (unless (package-installed-p package)
-    (package-install package)))
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 ;; default emacs settings
 (setq inhibit-startup-screen t)
@@ -55,9 +22,19 @@
 (setq-default indent-tab-mode nil)
 (setq-default c-basic-offset 4)
 (setq help-window-select t)
-(exec-path-from-shell-initialize)
 (if (eq system-type 'darwin)
-	(setq mac-command-modifier 'meta))
+    (setq mac-command-modifier 'meta))
+
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
+
+;; Install Fonts
+(use-package monokai-theme
+  :ensure t
+  :init
+  (load-theme 'monokai t))
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
@@ -80,15 +57,29 @@
   (end-of-line)
   (newline-and-indent))
 
+(defun forward-chunk ()
+  "Forward to the end of the 'word at point' (vim-like)."
+  (interactive)
+  (skip-syntax-forward "-")
+  (skip-syntax-forward "^-"))
+
+(defun backward-chunk ()
+  "Backward to the start of the 'word at point' (vim-like)."
+  (interactive)
+  (skip-syntax-backward "-")
+  (skip-syntax-backward "^-"))
+
 (defun copy-clang-format-to-current-dir ()
   (interactive)
   (shell-command "cp ~/.config/.clang-format ."))
 
-(require 'clang-format)
-(defun clang-format-and-save-buffer ()
-  (interactive)
-  (clang-format-buffer)
-  (save-buffer))
+(use-package clang-format
+  :ensure t
+  :config
+  (defun clang-format-and-save-buffer ()
+    (interactive)
+    (clang-format-buffer)
+    (save-buffer)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic Keybindings ;;
@@ -131,12 +122,14 @@ point reaches the beginning or end of the buffer, stop there."
                 'smarter-move-beginning-of-line)
 
 ;; movement keys
+(global-set-key (kbd "<M-left>") 'left-word)
+(global-set-key (kbd "<M-right>") 'right-word)
+(global-set-key (kbd "<M-up>") 'backward-list)
+(global-set-key (kbd "<M-down>") 'forward-list)
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
 (global-set-key (kbd "<C-right>") 'move-end-of-line)
-
-(require 'multiple-cursors)
-(global-unset-key (kbd "M-<down-mouse-1>"))
-(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "<M-S-left>") 'backward-chunk)
+(global-set-key (kbd "<M-S-right>") 'forward-chunk)
 
 ;; define new keybindings
 (global-set-key (kbd "<C-return>") 'add-newline-at-top)
@@ -193,22 +186,27 @@ point reaches the beginning or end of the buffer, stop there."
 
 (add-hook 'tex-mode 'tex-configs)
 
-;;(add-to-list 'load-path "~/.emacs.local/")
-;;(require 'glasm-mode)
+(add-to-list 'load-path "~/.emacs.local/")
+(require 'glasm-mode)
+(require 'texmathp)
 
 ;; auto-complete mode
-(require 'auto-complete)
-(add-hook 'prog-mode-hook 'auto-complete-mode)
+(use-package auto-complete
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook 'auto-complete-mode))
 
 ;; ace-window mode
 (use-package ace-window
-    :init
-    (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
-    (setq aw-background nil))
+  :init
+  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+  (setq aw-background nil))
 
 ;; hasekll-mode
-(require 'haskell-mode)
-(setq interactive-haskell-mode t)
+(use-package haskell-mode
+  :ensure t
+  :config
+  (setq interactive-haskell-mode t))
 
 ;; rust-mode
 (use-package rust-mode
@@ -216,66 +214,108 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (setq rust-format-on-save t))
 
+;; rustic-mode
+(use-package rustic
+  :ensure t
+  :config
+  (setq rustic-format-on-save t))
+
+;;  auto-activating-snippets
+(use-package aas
+  :ensure t
+  :hook (latex-mode . aas-activate-for-major-mode)
+  :hook (tex-mode . aas-activate-for-major-mode)
+  :config
+  (aas-set-snippets 'tex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0")))
+  (aas-set-snippets 'latex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "\\frac{$1}{$2}$0")))
+  ;; disable snippets by redefining them with a nil expansion
+  (aas-set-snippets 'latex-mode
+    "supp" nil))
+
 ;; multiple-cursors
-(require 'multiple-cursors)
-(global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
-(global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
-(global-set-key (kbd "<C-S-down>") 'mc/mark-next-like-this)
-(global-set-key (kbd "<C-S-up>") 'mc/mark-previous-like-this)
+(use-package multiple-cursors
+  :ensure t
+  :config
+  (global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
+  (global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
+  (global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
+  (global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
+  (global-unset-key (kbd "M-<down-mouse-1>"))
+  (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click))
 
 ;; doom-modeline
 (use-package doom-modeline
-  :ensure
+  :ensure t
   :init
+  (unless (package-installed-p 'doom-modeline)
+	(all-the-icons-install-fonts))
   (doom-modeline-mode 1))
 
 ;; rainbow-delimiters
-(require 'rainbow-delimiters)
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+(use-package rainbow-delimiters
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
 
 ;; relative line numbering
-(require 'nlinum-relative)
-(add-hook 'prog-mode-hook 'nlinum-relative-mode)
-(setq nlinum-relative-redisplay-delay 0)
-(setq nlinum-relative-offset 0)
+(use-package nlinum-relative
+  :ensure t
+  :config
+  (add-hook 'prog-mode-hook 'nlinum-relative-mode)
+  (setq nlinum-relative-redisplay-delay 0)
+  (setq nlinum-relative-offset 0))
 
 ;; undo-tree mode settings
-(require 'undo-tree)
-(global-undo-tree-mode)
-(global-set-key (kbd "C-x C-/") 'undo-tree-redo)
+(use-package undo-tree
+  :ensure t
+  :config
+  (global-undo-tree-mode)
+  :bind
+  ("C-x C-/" . 'undo-tree-redo))
 
 ;; yasnippet mode settings
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-
-;; haskell-mode settings
-(require 'haskell-interactive-mode)
-(require 'haskell-process)
-(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1)
+  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  (define-key yas-minor-mode-map (kbd "TAB") nil))
 
 ;; smex keybinding
-(require 'smex)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+(use-package smex
+  :ensure t
+  :bind
+  (("M-x" . 'smex)
+   ("M-X" . 'smex-major-mode-commands)
+   ("C-c C-c M-x" . 'execute-extended-command)))
 
 ;; which key settings
-(require 'which-key)
-(which-key-mode)
-(which-key-setup-side-window-bottom)
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  (which-key-setup-side-window-bottom))
 
 ;; transpose-frame
 (use-package transpose-frame
-  :bind (("C-z C-t t" .  'transpose-frame)
-		 ("C-z C-t f" .  'flip-frame)
-		 ("C-z C-t F" .  'flop-frame)
-		 ("C-z C-t C-r" .  'rotate-frame)
-		 ("C-z C-t r" .  'rotate-frame-anti-clockwise)
-		 ("C-z C-t R" .  'rotate-frame-clockwise)))
+  :ensure t
+  :bind
+  (("C-z C-t t" .  'transpose-frame)
+   ("C-z C-t f" .  'flip-frame)
+   ("C-z C-t F" .  'flop-frame)
+   ("C-z C-t C-r" .  'rotate-frame)
+   ("C-z C-t r" .  'rotate-frame-anti-clockwise)
+   ("C-z C-t R" .  'rotate-frame-clockwise)))
 
 ;; treemacs settings
 (use-package treemacs
@@ -393,13 +433,10 @@ point reaches the beginning or end of the buffer, stop there."
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(monokai-pro-octagon))
+ '(custom-enabled-themes '(monokai))
  '(custom-safe-themes
    '("83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
- '(haskell-hoogle-command nil)
- '(haskell-mode-stylish-haskell-path "ormolu")
- '(haskell-stylish-on-save t)
  '(highlight-changes-colors '("#FD5FF0" "#AE81FF"))
  '(highlight-tail-colors
    '(("#3C3D37" . 0)
@@ -414,7 +451,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
