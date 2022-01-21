@@ -36,6 +36,14 @@
   :init
   (load-theme 'monokai t))
 
+;; ace-window
+(use-package ace-window
+  :ensure t)
+
+;; company mode
+(use-package company
+  :ensure t)
+
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
 (setq backup-directory-alist
@@ -138,8 +146,8 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "M-W") 'kill-region)
 (global-set-key (kbd "C-x x") 'mark-word)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
-(global-set-key (kbd "C-x C-.") 'find-file)
-(global-set-key (kbd "C-x .") 'recentf-open-files)
+(global-set-key (kbd "C-x .") 'find-file)
+(global-set-key (kbd "C-x C-.") 'recentf-open-files)
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
@@ -156,10 +164,12 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
+(global-set-key (kbd "<escape> c") 'compile)
+(global-set-key (kbd "<escape> e") 'eval-expression)
 (global-set-key (kbd "<escape> o") 'overwrite-mode)
 
 ;; define C-ESC related keybindings
-(global-set-key (kbd "<C-escape> e") 'eval-expression)
+(global-set-key (kbd "<C-escape>") 'universal-argument)
 
 ;; finished keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -188,6 +198,7 @@ point reaches the beginning or end of the buffer, stop there."
 
 (add-to-list 'load-path "~/.emacs.local/")
 (require 'glasm-mode)
+(require 'asy-mode)
 (require 'texmathp)
 
 ;; auto-complete mode
@@ -203,10 +214,20 @@ point reaches the beginning or end of the buffer, stop there."
   (setq aw-background nil))
 
 ;; hasekll-mode
-(use-package haskell-mode
+(use-package lsp-mode
+  :ensure t
+  :hook (haskell-mode . lsp)
+  :commands lsp)
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
+(use-package lsp-haskell
   :ensure t
   :config
-  (setq interactive-haskell-mode t))
+ (setq lsp-haskell-server-path "haskell-language-server-wrapper")
+ (setq lsp-haskell-server-args ())
+   ;; Comment/uncomment this line to see interactions between lsp client/server.
+  (setq lsp-log-io t))
 
 ;; rust-mode
 (use-package rust-mode
@@ -228,7 +249,11 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (aas-set-snippets 'tex-mode
 	"MK"  (lambda () (interactive)
-		    (yas-expand-snippet "\\$$1\\$$0")))
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "{$1 \\over $2}$0")))
   (aas-set-snippets 'latex-mode
 	"MK"  (lambda () (interactive)
 		    (yas-expand-snippet "\\$$1\\$$0"))
@@ -451,7 +476,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")

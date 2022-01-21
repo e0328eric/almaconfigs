@@ -38,6 +38,7 @@ Plug 'psf/black', { 'branch': 'stable' }
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-crates'
+Plug 'arzg/vim-rust-syntax-ext'
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Haskell
@@ -68,11 +69,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'alvan/vim-closetag'
 " Themes
 " Plug 'christianchiarulli/nvcode.vim'
-Plug 'mhartington/oceanic-next'
-Plug 'morhetz/gruvbox'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
 Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline-themes'
 " Intellisense
