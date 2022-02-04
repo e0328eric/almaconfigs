@@ -16,6 +16,7 @@
 (recentf-mode 1)
 (set-frame-font "Fira Code 16" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
+(setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
@@ -33,13 +34,12 @@
   (exec-path-from-shell-initialize))
 
 ;; Install Theme
-;; (use-package monokai-theme
-;;   :ensure t
-;;   :init
-;;   (load-theme 'monokai t))
-
-(require 'xcode-dark-theme)
-(load-theme 'xcode-dark t)
+(use-package monokai-theme
+  :ensure t)
+(use-package gruvbox-theme
+  :ensure t)
+(use-package nord-theme
+   :ensure t)
 
 ;; ace-window
 (use-package ace-window
@@ -154,6 +154,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-x .") 'find-file)
 (global-set-key (kbd "C-x C-.") 'recentf-open-files)
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
+(global-set-key (kbd "C-x t l") 'tab-list)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
 (global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 (global-set-key (kbd "C-x o") 'ace-window)
@@ -232,7 +233,17 @@ point reaches the beginning or end of the buffer, stop there."
  (setq lsp-haskell-server-path "haskell-language-server-wrapper")
  (setq lsp-haskell-server-args ())
    ;; Comment/uncomment this line to see interactions between lsp client/server.
-  (setq lsp-log-io t))
+ (setq lsp-log-io t))
+
+;; cmake-ide
+(use-package rtags
+  :ensure t)
+(use-package cmake-mode
+  :ensure t)
+(use-package cmake-ide
+  :ensure t
+  :init
+  (cmake-ide-setup))
 
 ;; rust-mode
 (use-package rust-mode
@@ -456,6 +467,8 @@ point reaches the beginning or end of the buffer, stop there."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#2d2a2e" "#ff6188" "#a9dc76" "#ffd866" "#78dce8" "#ab9df2" "#a1efe4" "#fcfcfa"])
  '(ansi-term-color-vector
@@ -463,9 +476,9 @@ point reaches the beginning or end of the buffer, stop there."
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(monokai))
+ '(custom-enabled-themes '(gruvbox-dark-medium))
  '(custom-safe-themes
-   '("4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+   '("37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "73312750a0ce791489cad7fe2579d8582ea44d6dfcde274cb07c763277706a22" "4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(fci-rule-color "#3C3D37")
  '(highlight-changes-colors '("#FD5FF0" "#AE81FF"))
  '(highlight-tail-colors
@@ -481,7 +494,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(lice python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(cmake-mode nord-theme lice python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
