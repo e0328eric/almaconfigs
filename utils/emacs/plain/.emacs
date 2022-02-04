@@ -236,14 +236,8 @@ point reaches the beginning or end of the buffer, stop there."
  (setq lsp-log-io t))
 
 ;; cmake-ide
-(use-package rtags
-  :ensure t)
 (use-package cmake-mode
   :ensure t)
-(use-package cmake-ide
-  :ensure t
-  :init
-  (cmake-ide-setup))
 
 ;; rust-mode
 (use-package rust-mode
