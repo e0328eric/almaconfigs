@@ -30,23 +30,23 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['/'] = [ ':call Comment()'                    , 'comment' ]
-let g:which_key_map['.'] = [ ':Files'                             , 'fzf files' ]
-let g:which_key_map[';'] = [ ':Commands'                          , 'commands' ]
-let g:which_key_map['='] = [ '<C-W>='                             , 'balance windows' ]
-let g:which_key_map[' '] = [ ':let @/=""'                         , 'clear search highlights' ]
-let g:which_key_map['d'] = [ ':Bdelete'                           , 'delete buffer']
-let g:which_key_map['e'] = [ ':CocCommand explorer'               , 'explorer' ]
+let g:which_key_map['/'] = [ ':call Comment()'                   , 'comment' ]
+let g:which_key_map['.'] = [ ':Files'                            , 'fzf files' ]
+let g:which_key_map[';'] = [ ':Commands'                         , 'commands' ]
+let g:which_key_map['='] = [ '<C-W>='                            , 'balance windows' ]
+let g:which_key_map[' '] = [ ':let @/=""'                        , 'clear search highlights' ]
+let g:which_key_map['d'] = [ ':Bdelete'                          , 'delete buffer']
+let g:which_key_map['e'] = [ ':CocCommand explorer'              , 'explorer' ]
 " let g:which_key_map['f'] = [ ':Farr'                              , 'find and replace' ]
-let g:which_key_map['h'] = [ '<C-W>s'                             , 'split below']
-let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()'  , 'move window' ]
-let g:which_key_map['p'] = [ ':Files'                             , 'search files' ]
-let g:which_key_map['q'] = [ 'q'                                  , 'quit' ]
-let g:which_key_map['r'] = [ ':RnvimrToggle'                      , 'ranger' ]
-let g:which_key_map['u'] = [ ':UndotreeToggle'                    , 'undo tree']
-let g:which_key_map['v'] = [ '<C-W>v'                             , 'split right']
-let g:which_key_map['W'] = [ 'w'                                  , 'write' ]
-let g:which_key_map['z'] = [ 'Goyo'                               , 'zen' ]
+let g:which_key_map['h'] = [ '<C-W>s'                            , 'split below']
+let g:which_key_map['m'] = [ ':call WindowSwap#EasyWindowSwap()' , 'move window' ]
+let g:which_key_map['p'] = [ ':Files'                            , 'search files' ]
+let g:which_key_map['q'] = [ 'q'                                 , 'quit' ]
+let g:which_key_map['r'] = [ ':RnvimrToggle'                     , 'ranger' ]
+let g:which_key_map['u'] = [ ':UndotreeToggle'                   , 'undo tree']
+let g:which_key_map['v'] = [ '<C-W>v'                            , 'split right']
+let g:which_key_map['W'] = [ 'w'                                 , 'write' ]
+let g:which_key_map['z'] = [ 'Goyo'                              , 'zen' ]
 
 " Group mappings
 
@@ -139,11 +139,11 @@ let g:which_key_map.s = {
 
 let g:which_key_map.S = {
       \ 'name' : '+Session' ,
-      \ 'c' : [':SClose'          , 'Close Session']  ,
-      \ 'd' : [':SDelete'         , 'Delete Session'] ,
-      \ 'l' : [':SLoad'           , 'Load Session']     ,
-      \ 's' : [':Startify'        , 'Start Page']     ,
-      \ 'S' : [':SSave'           , 'Save Session']   ,
+      \ 'c' : [':SClose'   , 'Close Session'],
+      \ 'd' : [':SDelete'  , 'Delete Session'],
+      \ 'l' : [':SLoad'    , 'Load Session'],
+      \ 's' : [':Startify' , 'Start Page'],
+      \ 'S' : [':SSave'    , 'Save Session'],
       \ }
 
 " g is for git
@@ -178,15 +178,15 @@ let g:which_key_map.g = {
 
 let g:which_key_map.G = {
       \ 'name' : '+gist' ,
-      \ 'a' : [':Gist -a'                          , 'post gist anon'],
-      \ 'b' : [':Gist -b'                          , 'post gist browser'],
-      \ 'd' : [':Gist -d'                          , 'delete gist'],
-      \ 'e' : [':Gist -e'                          , 'edit gist'],
-      \ 'l' : [':Gist -l'                          , 'list public gists'],
-      \ 's' : [':Gist -ls'                         , 'list starred gists'],
-      \ 'm' : [':Gist -m'                          , 'post gist all buffers'],
-      \ 'p' : [':Gist -P'                          , 'post public gist '],
-      \ 'P' : [':Gist -p'                          , 'post private gist '],
+      \ 'a' : [':Gist -a'  , 'post gist anon'],
+      \ 'b' : [':Gist -b'  , 'post gist browser'],
+      \ 'd' : [':Gist -d'  , 'delete gist'],
+      \ 'e' : [':Gist -e'  , 'edit gist'],
+      \ 'l' : [':Gist -l'  , 'list public gists'],
+      \ 's' : [':Gist -ls' , 'list starred gists'],
+      \ 'm' : [':Gist -m'  , 'post gist all buffers'],
+      \ 'p' : [':Gist -P'  , 'post public gist '],
+      \ 'P' : [':Gist -p'  , 'post private gist '],
       \ }
 
 " l is for language server protocol
@@ -231,57 +231,57 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
-      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
-      \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
+      \ ';' : [':FloatermNew --wintype=popup --height=6' , 'terminal'],
+      \ 'f' : [':FloatermNew fzf'                        , 'fzf'],
+      \ 'g' : [':FloatermNew lazygit'                    , 'git'],
+      \ 'd' : [':FloatermNew lazydocker'                 , 'docker'],
+      \ 'n' : [':FloatermNew node'                       , 'node'],
+      \ 'N' : [':FloatermNew nnn'                        , 'nnn'],
+      \ 'p' : [':FloatermNew python'                     , 'python'],
+      \ 'm' : [':FloatermNew lazynpm'                    , 'npm'],
+      \ 'r' : [':FloatermNew ranger'                     , 'ranger'],
+      \ 't' : [':FloatermToggle'                         , 'toggle'],
+      \ 'y' : [':FloatermNew ytop'                       , 'ytop'],
+      \ 's' : [':FloatermNew ncdu'                       , 'ncdu'],
       \ }
 
 " T is for terminal
 let g:which_key_map.T = {
       \ 'name' : '+tabline' ,
-      \ 'b' : [':XTabListBuffers'         , 'list buffers'],
-      \ 'd' : [':XTabCloseBuffer'         , 'close buffer'],
-      \ 'D' : [':XTabDeleteTab'           , 'close tab'],
-      \ 'h' : [':XTabHideBuffer'          , 'hide buffer'],
-      \ 'i' : [':XTabInfo'                , 'info'],
-      \ 'l' : [':XTabLock'                , 'lock tab'],
-      \ 'm' : [':XTabMode'                , 'toggle mode'],
-      \ 'n' : [':tabNext'                 , 'next tab'],
-      \ 'N' : [':XTabMoveBufferNext'      , 'buffer->'],
-      \ 't' : [':tabnew'                  , 'new tab'],
-      \ 'p' : [':tabprevious'             , 'prev tab'],
-      \ 'P' : [':XTabMoveBufferPrev'      , '<-buffer'],
-      \ 'x' : [':XTabPinBuffer'           , 'pin buffer'],
+      \ 'b' : [':XTabListBuffers'    , 'list buffers'],
+      \ 'd' : [':XTabCloseBuffer'    , 'close buffer'],
+      \ 'D' : [':XTabDeleteTab'      , 'close tab'],
+      \ 'h' : [':XTabHideBuffer'     , 'hide buffer'],
+      \ 'i' : [':XTabInfo'           , 'info'],
+      \ 'l' : [':XTabLock'           , 'lock tab'],
+      \ 'm' : [':XTabMode'           , 'toggle mode'],
+      \ 'n' : [':tabNext'            , 'next tab'],
+      \ 'N' : [':XTabMoveBufferNext' , 'buffer->'],
+      \ 't' : [':tabnew'             , 'new tab'],
+      \ 'p' : [':tabprevious'        , 'prev tab'],
+      \ 'P' : [':XTabMoveBufferPrev' , '<-buffer'],
+      \ 'x' : [':XTabPinBuffer'      , 'pin buffer'],
       \ }
 
 " w is for wiki
 let g:which_key_map.w = {
       \ 'name' : '+wiki' ,
-      \ 'w' : ['<Plug>VimwikiIndex'                              , 'ncdu'],
-      \ 'n' : ['<plug>(wiki-open)'                              , 'ncdu'],
-      \ 'j' : ['<plug>(wiki-journal)'                              , 'ncdu'],
-      \ 'R' : ['<plug>(wiki-reload)'                              , 'ncdu'],
-      \ 'c' : ['<plug>(wiki-code-run)'                              , 'ncdu'],
-      \ 'b' : ['<plug>(wiki-graph-find-backlinks)'                              , 'ncdu'],
-      \ 'g' : ['<plug>(wiki-graph-in)'                              , 'ncdu'],
-      \ 'G' : ['<plug>(wiki-graph-out)'                              , 'ncdu'],
-      \ 'l' : ['<plug>(wiki-link-toggle)'                              , 'ncdu'],
-      \ 'd' : ['<plug>(wiki-page-delete)'                              , 'ncdu'],
-      \ 'r' : ['<plug>(wiki-page-rename)'                              , 'ncdu'],
-      \ 't' : ['<plug>(wiki-page-toc)'                              , 'ncdu'],
-      \ 'T' : ['<plug>(wiki-page-toc-local)'                              , 'ncdu'],
-      \ 'e' : ['<plug>(wiki-export)'                              , 'ncdu'],
-      \ 'u' : ['<plug>(wiki-list-uniq)'                              , 'ncdu'],
-      \ 'U' : ['<plug>(wiki-list-uniq-local)'                              , 'ncdu'],
+      \ 'w' : ['<Plug>VimwikiIndex'                , 'ncdu'],
+      \ 'n' : ['<plug>(wiki-open)'                 , 'ncdu'],
+      \ 'j' : ['<plug>(wiki-journal)'              , 'ncdu'],
+      \ 'R' : ['<plug>(wiki-reload)'               , 'ncdu'],
+      \ 'c' : ['<plug>(wiki-code-run)'             , 'ncdu'],
+      \ 'b' : ['<plug>(wiki-graph-find-backlinks)' , 'ncdu'],
+      \ 'g' : ['<plug>(wiki-graph-in)'             , 'ncdu'],
+      \ 'G' : ['<plug>(wiki-graph-out)'            , 'ncdu'],
+      \ 'l' : ['<plug>(wiki-link-toggle)'          , 'ncdu'],
+      \ 'd' : ['<plug>(wiki-page-delete)'          , 'ncdu'],
+      \ 'r' : ['<plug>(wiki-page-rename)'          , 'ncdu'],
+      \ 't' : ['<plug>(wiki-page-toc)'             , 'ncdu'],
+      \ 'T' : ['<plug>(wiki-page-toc-local)'       , 'ncdu'],
+      \ 'e' : ['<plug>(wiki-export)'               , 'ncdu'],
+      \ 'u' : ['<plug>(wiki-list-uniq)'            , 'ncdu'],
+      \ 'U' : ['<plug>(wiki-list-uniq-local)'      , 'ncdu'],
       \ }
 
 " Global

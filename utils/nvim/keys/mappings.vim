@@ -50,10 +50,9 @@ else
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
 
-  nnoremap <C-O> O
-  inoremap <C-O> <C-[>O
-
-
+  nnoremap <C-\> O
+  inoremap <C-\> <C-[>O
+  
   " Terminal window navigation
   tnoremap <C-h> <C-\><C-N><C-w>h
   tnoremap <C-j> <C-\><C-N><C-w>j
@@ -81,5 +80,11 @@ inoremap <expr> <c-k> ("\<C-p>")
 
 " Move text top while in insert mode
 inoremap <C-S-t> <C-o>zt
+
+" easy align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+nmap iga <Plug>(LiveEasyAlign)
+xmap iga <Plug>(LiveEasyAlign)
 
 nmap Q gq

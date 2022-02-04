@@ -1,3 +1,4 @@
+# set fish shell
 set fish_color_normal normal
 set fish_color_command 99cc99
 set fish_color_quote ffcc66
@@ -26,30 +27,61 @@ set fish_color_match 1EB176
 set pure_color_info cyan
 set pure_color_success 268BD2
 set pure_color_primary 6699CC
-set PATH $PATH ~/.local/bin
-set PATH $PATH ~/.cabal/bin
-set PATH $PATH ~/.ghcup/bin
-set PATH $PATH ~/.ghcup/env
-set PATH $PATH ~/.cargo/bin
-set --universal -x GOPATH ~/.go
-set PATH $PATH $GOROOT/bin:$GOPATH/bin
-set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
 
-function emptytrash
-    rm -rf /home/almagest/.local/share/Trash
-    rm -rf /home/almagest/.local/share/vifm/Trash
+# Path Definitions
+switch (uname)
+    case Linux
+        set PATH $PATH ~/.local/bin
+        set PATH $PATH ~/.cabal/bin
+        set PATH $PATH ~/.ghcup/bin
+        set PATH $PATH ~/.ghcup/env
+        set PATH $PATH ~/.cargo/bin
+        set --universal -x GOPATH ~/.go
+        set PATH $PATH $GOROOT/bin:$GOPATH/bin
+        set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
+
+        function emptytrash
+            rm -rf /home/almagest/.local/share/Trash
+            rm -rf /home/almagest/.local/share/vifm/Trash
+        end
+
+    case Darwin
+        set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
+        set PATH $PATH /Users/almagest/.local/bin
+        set PATH $PATH /Users/almagest/.cargo/bin
+        set PATH $PATH /Users/almagest/.go/bin
+        set PATH $PATH /Users/almagest/.ghcup/bin
+        set PATH $PATH /Users/almagest/.cabal/bin
+        set PATH $PATH /Users/almagest/.nimble/bin
+        set PATH $PATH /Users/almagest/.flutter/bin
+        set PATH $PATH /Users/almagest/.npm-global/bin
+        set PATH $PATH /usr/local/opt/qt/bin
+        set PATH $PATH /usr/local/bin
+        set PATH $PATH /usr/local/opt/llvm/bin
+        set PATH $PATH /usr/local/Cellar/gcc/11.1.0_1/bin
+        set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
+        set --universal -x GOPATH ~/.go
+        set PATH $PATH $GOROOT/bin:/$GOPATH/bin
+end
+
+function c
+    clear
 end
 
 function v
     nvim $argv
 end
 
-function doom
-  ~/.emacs.d/bin/doom $argv
+function l
+    ls -al $argv
+end
+
+function view
+    nvim -R $argv
 end
 
 function ls
-    lsd $argv
+    exa $argv
 end
 
 function vimcfg
@@ -60,6 +92,10 @@ function fishcfg
     nvim ~/.config/fish/config.fish
 end
 
+function reloadfish
+    source ~/.config/fish/config.fish
+end
+
 function getmusic
     youtube-dl -x --audio-format m4a $argv
 end
@@ -67,6 +103,25 @@ end
 function gitall
     git add . && git commit -m $argv && git push origin master
 end
+
+function s
+    ls $argv
+end
+
+function hakwon
+    switch (uname)
+        case Linux
+            echo "*.*"
+
+        case Darwin
+            cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents/Hakwon
+    end
+end
+
+function cfmtcp
+    cp ~/Github/arch-almagest/.clang-format .
+end
+
 
 starship init fish | source
 

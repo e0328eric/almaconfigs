@@ -26,6 +26,12 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Generating license
 Plug 'antoyo/vim-licenses'
 
+" ale
+Plug 'dense-analysis/ale'
+
+" Easy align
+Plug 'junegunn/vim-easy-align'
+
 " Add maktaba and codefmt to the runtimepath.
 " (The latter must be installed before it can be used.)
 Plug 'google/vim-maktaba'
@@ -33,12 +39,9 @@ Plug 'google/vim-codefmt'
 " Also add Glaive, which is used to configure codefmt's maktaba flags. See
 " `:help :Glaive` for usage.
 Plug 'google/vim-glaive'
-" Python
-Plug 'psf/black', { 'branch': 'stable' }
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-crates'
-Plug 'arzg/vim-rust-syntax-ext'
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Haskell
@@ -70,6 +73,7 @@ Plug 'alvan/vim-closetag'
 " Themes
 " Plug 'christianchiarulli/nvcode.vim'
 Plug 'chriskempson/base16-vim'
+Plug 'arzg/vim-colors-xcode'
 Plug 'vim-airline/vim-airline-themes'
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}

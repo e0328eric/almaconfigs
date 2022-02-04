@@ -49,11 +49,14 @@ au BufRead,BufNewFile *.glasm set filetype=glasm
 au BufRead,BufNewFile *.asm set filetype=nasm
 filetype plugin indent on
 
-" augroup remember_folds
-"   autocmd!
-"   autocmd BufWinLeave *.* mkview
-"   autocmd BufWinEnter *.* silent! loadview
-" augroup END
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave *.* mkview
+  autocmd BufWinEnter *.* silent! loadview
+augroup END
+
+" ignore ale warnings for tex and latex
+autocmd BufEnter *.tex ALEDisable
 
 " You can't stop me
 cmap w!! w !sudo tee %

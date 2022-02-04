@@ -17,6 +17,7 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 " Themes
 source $HOME/.config/nvim/themes/syntax.vim
 source $HOME/.config/nvim/themes/base16.vim
+" source $HOME/.config/nvim/themes/xcode.vim
 source $HOME/.config/nvim/themes/airline.vim
 
 " Plugin Configuration
@@ -67,9 +68,6 @@ augroup project
   autocmd!
   autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
-
-" Python autosave
-autocmd BufWritePre *.py execute ':Black'
 
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
