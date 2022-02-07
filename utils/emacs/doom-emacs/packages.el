@@ -4,6 +4,7 @@
 (package! cargo-mode)
 (package! clang-format)
 (package! cmake-ide)
+(package! doom-snippets)
 (package! evil-vimish-fold)
 (package! go-imports)
 (package! hindent)

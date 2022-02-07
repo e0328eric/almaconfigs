@@ -24,7 +24,7 @@
 (menu-bar-mode t)
 
 (setq-default tab-width 4)
-(setq-default flycheck-disabled-checkers '(c/c++-gcc c/c++-clang c/c++-cppcheck))
+(setq-default flycheck-disabled-checkers '(c/c++-gcc c/c++-clang c/c++-cppcheck tex-chktex))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Function Declarations ;;
@@ -57,12 +57,17 @@
   (shell-command "cp ~/.config/.clang-format ."))
 
 (use-package! clang-format
-  :ensure t
   :config
   (defun clang-format-and-save-buffer ()
     (interactive)
     (clang-format-buffer)
     (save-buffer)))
+
+(defun my-yas-try-expanding-auto-snippets ()
+    (when (and (boundp 'yas-minor-mode) yas-minor-mode)
+        (let ((yas-buffer-local-condition ''(require-snippet-condition . auto)))
+        (yas-expand))))
+(add-hook 'post-command-hook #'my-yas-try-expanding-auto-snippets)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Import Local Modes ;;
@@ -111,32 +116,9 @@
 ;;;;;;;;;;;;;;
 ;; Packages ;;
 ;;;;;;;;;;;;;;
-(use-package! aas
-  :ensure t
-  :hook (latex-mode . aas-activate-for-major-mode)
-  :hook (tex-mode . aas-activate-for-major-mode)
-  :config
-  (aas-set-snippets 'tex-mode
-	"MK"  (lambda () (interactive)
-		    (yas-expand-snippet "\\$$1\\$$0"))
-	:cond #'texmathp ; expand only while in math
-    ;; bind to functions!
-    "//" (lambda () (interactive)
-           (yas-expand-snippet "{$1 \\over $2}$0")))
-  (aas-set-snippets 'latex-mode
-	"MK"  (lambda () (interactive)
-		    (yas-expand-snippet "\\$$1\\$$0"))
-	:cond #'texmathp ; expand only while in math
-    ;; bind to functions!
-    "//" (lambda () (interactive)
-           (yas-expand-snippet "\\frac{$1}{$2}$0")))
-  ;; disable snippets by redefining them with a nil expansion
-  (aas-set-snippets 'latex-mode
-    "supp" nil))
 
 ;; multiple-cursors
 (use-package! multiple-cursors
-  :ensure t
   :config
   ;;(global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
   ;;(global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
@@ -151,11 +133,9 @@
 
 ;; evil-vimish-fold
 (use-package! vimish-fold
-  :ensure
   :after evil)
 
 (use-package! evil-vimish-fold
-  :ensure
   :after vimish-fold
   :init
   (setq evil-vimish-fold-mode-lighter "  ")
