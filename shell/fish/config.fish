@@ -62,6 +62,11 @@ switch (uname)
         set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:/$GOPATH/bin
+        set CC /usr/local/bin/clang
+        set CXX /usr/local/bin/clang++
+        fish_add_path /usr/local/opt/llvm/bin
+        set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
+        set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
 end
 
 function c

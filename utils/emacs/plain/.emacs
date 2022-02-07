@@ -12,7 +12,6 @@
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
-(ido-mode 1)
 (recentf-mode 1)
 (set-frame-font "Fira Code 16" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
@@ -32,6 +31,14 @@
   :ensure t
   :config
   (exec-path-from-shell-initialize))
+
+;; alternative to ido mode
+(use-package ivy
+  :ensure t
+  :init
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t)
+  (setq ivy-count-format "[%d/%d] "))
 
 ;; Install Theme
 (use-package monokai-theme
@@ -156,7 +163,6 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-x C-f") 'set-fill-prefix)
 (global-set-key (kbd "C-x t l") 'tab-list)
 (global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
-(global-set-key (kbd "C-M-x C-M-r") 'revert-buffer)
 (global-set-key (kbd "C-x o") 'ace-window)
 (global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
 (global-set-key (kbd "C-x C-o C-v") 'vterm)
@@ -173,6 +179,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> c") 'compile)
 (global-set-key (kbd "<escape> e") 'eval-expression)
 (global-set-key (kbd "<escape> o") 'overwrite-mode)
+(global-set-key (kbd "<escape> b r") 'revert-buffer)
 
 ;; define C-ESC related keybindings
 (global-set-key (kbd "<C-escape>") 'universal-argument)
@@ -235,7 +242,22 @@ point reaches the beginning or end of the buffer, stop there."
    ;; Comment/uncomment this line to see interactions between lsp client/server.
  (setq lsp-log-io t))
 
-;; cmake-ide
+;; c++-mode
+(use-package lsp-mode
+  :ensure t
+  :commands lsp)
+(use-package lsp-ui :commands lsp-ui-mode)
+(use-package company-lsp :commands company-lsp)
+(use-package eglot :ensure t)
+
+(defun projectile-project-find-function (dir)
+  (let* ((root (projectile-project-root dir)))
+    (and root (cons 'transient root))))
+
+(with-eval-after-load 'project
+  (add-to-list 'project-find-functions 'projectile-project-find-function))
+;;(setq company-transformers nil)
+
 (use-package cmake-mode
   :ensure t)
 
@@ -488,7 +510,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(package-selected-packages
-   '(cmake-mode nord-theme lice python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")

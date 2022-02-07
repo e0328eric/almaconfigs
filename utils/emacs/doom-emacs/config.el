@@ -1,99 +1,160 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
-;; Place your private configuration here! Remember, you do not need to run 'doom
-;; sync' after modifying this file!
-
-
-;; Some functionality uses this to identify you, e.g. GPG configuration, email
-;; clients, file templates and snippets.
+;; Default Settings
 (setq user-full-name "Sungbae Jeong"
       user-mail-address "almagest0328@gmail.com"
       doom-font (font-spec :family "Fira Code" :size 15 :weight 'medium)
-      doom-variable-pitch-font (font-spec :family "Hack Nerd Font" :size 16)
+      ;;doom-variable-pitch-font (font-spec :family "Hack Nerd Font" :size 16)
       doom-theme 'doom-moonlight
       default-directory "~/"
       org-directory "~/Document/org/"
       display-line-numbers-type 'relative)
 
-;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(setq temporary-file-directory "~/.tmp/")
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 (cond (IS-MAC
        (setq mac-command-modifier      'meta
              mac-option-modifier       'alt
              mac-right-option-modifier 'super)))
-
 
 (menu-bar-mode t)
 
 (setq-default tab-width 4)
 (setq-default flycheck-disabled-checkers '(c/c++-gcc c/c++-clang c/c++-cppcheck))
 
-;; Here are some additional functions/macros that could help you configure Doom:
-;;
-;; - `load!' for loading external *.el files relative to this one
-;; - `use-package!' for configuring packages
-;; - `after!' for running code after a package has loaded
-;; - `add-load-path!' for adding directories to the `load-path', relative to
-;;   this file. Emacs searches the `load-path' when you load packages with
-;;   `require' or `use-package'.
-;; - `map!' for binding new keys
-;;
-;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
-;; This will open documentation for it, including demos of how they are used.
-;;
-;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
-;; they are implemented.
-;; Key Mappings
-(map! :leader
-      :desc "Open treemacs"
-      "\\" #'treemacs)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Function Declarations ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun add-newline-at-top ()
+  (interactive)
+  (beginning-of-line)
+  (newline-and-indent)
+  (previous-line))
 
-(require 'nasm-mode)
-(electric-indent-local-mode -1)
+(defun add-newline-at-bottom ()
+  (interactive)
+  (end-of-line)
+  (newline-and-indent))
 
-;; Settings
-(defun my-go-mode-hook ()
-  ; Use goimports instead of go-fmt
-  (setq gofmt-command "goimports")
-  ; Call Gofmt before saving
-  (add-hook 'before-save-hook 'gofmt-before-save)
-  ; Customize compile command to run go build
-  (if (not (string-match "go" compile-command))
-      (set (make-local-variable 'compile-command)
-           "go build -v && go test -v && go vet"))
-  ; Godef jump key binding
-  (local-set-key (kbd "M-.") 'godef-jump)
-  (local-set-key (kbd "M-*") 'pop-tag-mark)
-)
-(add-hook 'go-mode-hook 'my-go-mode-hook)
-(add-to-list 'exec-path "~/.go/bin")
-(add-hook 'before-save-hook 'gofmt-before-save)
+(defun forward-chunk ()
+  "Forward to the end of the 'word at point' (vim-like)."
+  (interactive)
+  (skip-syntax-forward "-")
+  (skip-syntax-forward "^-"))
 
-(add-to-list 'load-path "~/.doom.d")
-(autoload 'asy-mode "asy-mode.el" "Asymptote major mode." t)
-(autoload 'lasy-mode "asy-mode.el" "hybrid Asymptote/Latex major mode." t)
-(autoload 'asy-insinuate-latex "asy-mode.el" "Asymptote insinuate LaTeX." t)
-(add-to-list 'auto-mode-alist '("\\.asy$" . asy-mode))
+(defun backward-chunk ()
+  "Backward to the start of the 'word at point' (vim-like)."
+  (interactive)
+  (skip-syntax-backward "-")
+  (skip-syntax-backward "^-"))
 
-(require 'haskell-mode)
-(setq haskell-interactive-popup-errors nil)
+(defun copy-clang-format-to-current-dir ()
+  (interactive)
+  (shell-command "cp ~/.config/.clang-format ."))
 
-;; Key Bindings
-(map! :desc "evil-mc-make-cursor-move-prev-line"
-      "<C-M-up>" #'evil-mc-make-cursor-move-prev-line)
-(map! :desc "evil-mc-make-cursor-move-next-line"
-      "<C-M-down>" #'evil-mc-make-cursor-move-next-line)
+(use-package! clang-format
+  :ensure t
+  :config
+  (defun clang-format-and-save-buffer ()
+    (interactive)
+    (clang-format-buffer)
+    (save-buffer)))
 
-(use-package doom-snippets
+;;;;;;;;;;;;;;;;;;;;;;;;
+;; Import Local Modes ;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.local/")
+(require 'glasm-mode)
+(require 'asy-mode)
+(require 'texmathp)
+
+;;;;;;;;;;;;;;;;;
+;; Keybindings ;;
+;;;;;;;;;;;;;;;;;
+(global-unset-key (kbd "C-q"))
+
+(defun c-cpp-configs ()
+    (setq c-syntactic-indentation nil)
+	(local-set-key (kbd "C-z C-f C-c") 'copy-clang-format-to-current-dir)
+	(local-set-key (kbd "C-z C-f C-s") 'clang-format-and-save-buffer))
+
+(setq c-default-style '((java-mode . "java")
+                        (awk-mode . "awk")
+                        (other . "linux")))
+
+(add-hook 'c-mode-hook 'c-cpp-configs)
+(add-hook 'c++-mode-hook 'c-cpp-configs)
+
+(map! :desc "Find files" :n "C-x ." #'find-file)
+(map! :desc "Recent files" :n "C-x C-." #'consult-recent-file)
+(map! :leader :desc "Open treemacs" "\\" #'treemacs)
+(global-set-key (kbd "<M-left>") 'left-word)
+(global-set-key (kbd "<M-right>") 'right-word)
+(global-set-key (kbd "<M-up>") 'backward-list)
+(global-set-key (kbd "<M-down>") 'forward-list)
+(global-set-key (kbd "<C-left>") 'move-beginning-of-line)
+(global-set-key (kbd "<C-right>") 'move-end-of-line)
+(global-set-key (kbd "<M-S-left>") 'backward-chunk)
+(global-set-key (kbd "<M-S-right>") 'forward-chunk)
+(global-set-key (kbd "<C-return>") 'add-newline-at-top)
+(global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
+(global-set-key (kbd "C-x t l") 'tab-list)
+(global-set-key (kbd "C-q r") 'query-replace)
+(global-set-key (kbd "C-q a") 'query-replace-read-args)
+(global-set-key (kbd "C-q e") 'query-replace-regexp)
+(global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
+
+;;;;;;;;;;;;;;
+;; Packages ;;
+;;;;;;;;;;;;;;
+(use-package! aas
+  :ensure t
+  :hook (latex-mode . aas-activate-for-major-mode)
+  :hook (tex-mode . aas-activate-for-major-mode)
+  :config
+  (aas-set-snippets 'tex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "{$1 \\over $2}$0")))
+  (aas-set-snippets 'latex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "\\frac{$1}{$2}$0")))
+  ;; disable snippets by redefining them with a nil expansion
+  (aas-set-snippets 'latex-mode
+    "supp" nil))
+
+;; multiple-cursors
+(use-package! multiple-cursors
+  :ensure t
+  :config
+  ;;(global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
+  ;;(global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
+  (global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
+  (global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
+  (global-unset-key (kbd "M-<down-mouse-1>"))
+  (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click))
+
+(use-package! doom-snippets
   :load-path "~/.doom.d/snippets"
   :after yasnippet)
 
 ;; evil-vimish-fold
-(use-package vimish-fold
+(use-package! vimish-fold
   :ensure
   :after evil)
 
-(use-package evil-vimish-fold
+(use-package! evil-vimish-fold
   :ensure
   :after vimish-fold
   :init
