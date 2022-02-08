@@ -9,6 +9,5 @@
 (package! go-imports)
 (package! hindent)
 (package! irony)
-(package! multiple-cursors)
 (package! nasm-mode)
 (package! vimish-fold)

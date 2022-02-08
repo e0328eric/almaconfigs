@@ -83,9 +83,9 @@
 (global-unset-key (kbd "C-q"))
 
 (defun c-cpp-configs ()
-    (setq c-syntactic-indentation nil)
-	(local-set-key (kbd "C-z C-f C-c") 'copy-clang-format-to-current-dir)
-	(local-set-key (kbd "C-z C-f C-s") 'clang-format-and-save-buffer))
+  (setq c-syntactic-indentation nil)
+        (map! :leader :desc "Copy .clang-format file" :n "c F" #'copy-clang-format-to-current-dir)
+        (map! :leader :desc "clang-format save buffer" :n "c f" #'clang-format-and-save-buffer))
 
 (setq c-default-style '((java-mode . "java")
                         (awk-mode . "awk")
@@ -96,6 +96,7 @@
 
 (map! :desc "Find files" :n "C-x ." #'find-file)
 (map! :desc "Recent files" :n "C-x C-." #'consult-recent-file)
+(map! :desc "Make Cursor Here" :n "g z c" #'evil-mc-make-cursor-here)
 (map! :leader :desc "Open treemacs" "\\" #'treemacs)
 (global-set-key (kbd "<M-left>") 'left-word)
 (global-set-key (kbd "<M-right>") 'right-word)
@@ -103,6 +104,8 @@
 (global-set-key (kbd "<M-down>") 'forward-list)
 (global-set-key (kbd "<C-left>") 'move-beginning-of-line)
 (global-set-key (kbd "<C-right>") 'move-end-of-line)
+(global-set-key (kbd "<C-up>") 'evil-mc-make-cursor-move-prev-line)
+(global-set-key (kbd "<C-down>") 'evil-mc-make-cursor-move-next-line)
 (global-set-key (kbd "<M-S-left>") 'backward-chunk)
 (global-set-key (kbd "<M-S-right>") 'forward-chunk)
 (global-set-key (kbd "<C-return>") 'add-newline-at-top)
@@ -116,17 +119,6 @@
 ;;;;;;;;;;;;;;
 ;; Packages ;;
 ;;;;;;;;;;;;;;
-
-;; multiple-cursors
-(use-package! multiple-cursors
-  :config
-  ;;(global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
-  ;;(global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
-  (global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
-  (global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
-  (global-unset-key (kbd "M-<down-mouse-1>"))
-  (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click))
-
 (use-package! doom-snippets
   :load-path "~/.doom.d/snippets"
   :after yasnippet)

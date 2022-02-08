@@ -25,8 +25,6 @@
 (if (eq system-type 'darwin)
     (setq mac-command-modifier 'meta))
 
-(add-to-list 'load-path "~/.emacs.local/xcode-theme")
-
 (use-package exec-path-from-shell
   :ensure t
   :config
@@ -41,12 +39,23 @@
   (setq ivy-count-format "[%d/%d] "))
 
 ;; Install Theme
-(use-package monokai-theme
-  :ensure t)
-(use-package gruvbox-theme
-  :ensure t)
-(use-package nord-theme
-   :ensure t)
+(use-package doom-themes
+  :ensure t
+  :config
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-moonlight t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
+  (doom-themes-treemacs-config)
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
 
 ;; ace-window
 (use-package ace-window
@@ -142,44 +151,44 @@ point reaches the beginning or end of the buffer, stop there."
                 'smarter-move-beginning-of-line)
 
 ;; movement keys
-(global-set-key (kbd "<M-left>") 'left-word)
-(global-set-key (kbd "<M-right>") 'right-word)
-(global-set-key (kbd "<M-up>") 'backward-list)
-(global-set-key (kbd "<M-down>") 'forward-list)
-(global-set-key (kbd "<C-left>") 'move-beginning-of-line)
-(global-set-key (kbd "<C-right>") 'move-end-of-line)
-(global-set-key (kbd "<M-S-left>") 'backward-chunk)
-(global-set-key (kbd "<M-S-right>") 'forward-chunk)
+(global-set-key (kbd "<M-left>")		'left-word)
+(global-set-key (kbd "<M-right>")		'right-word)
+(global-set-key (kbd "<M-up>")			'backward-list)
+(global-set-key (kbd "<M-down>")		'forward-list)
+(global-set-key (kbd "<C-left>")		'move-beginning-of-line)
+(global-set-key (kbd "<C-right>")		'move-end-of-line)
+(global-set-key (kbd "<M-S-left>")		'backward-chunk)
+(global-set-key (kbd "<M-S-right>")		'forward-chunk)
 
 ;; define new keybindings
-(global-set-key (kbd "<C-return>") 'add-newline-at-top)
-(global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
-(global-set-key (kbd "C-S-s") 'isearch-backward)
-(global-set-key (kbd "M-W") 'kill-region)
-(global-set-key (kbd "C-x x") 'mark-word)
-(global-set-key (kbd "C-x C-x") 'set-mark-command)
-(global-set-key (kbd "C-x .") 'find-file)
-(global-set-key (kbd "C-x C-.") 'recentf-open-files)
-(global-set-key (kbd "C-x C-f") 'set-fill-prefix)
-(global-set-key (kbd "C-x t l") 'tab-list)
-(global-set-key (kbd "C-c SPC") 'exchange-point-and-mark)
-(global-set-key (kbd "C-x o") 'ace-window)
-(global-set-key (kbd "C-x C-o C-t") 'vterm-other-window)
-(global-set-key (kbd "C-x C-o C-v") 'vterm)
-(global-set-key (kbd "C-z c") 'compile)
-(global-set-key (kbd "C-z C-c") 'recompile)
-(global-set-key (kbd "C-z e") 'eval-expression)
-(global-set-key (kbd "C-%") 'quoted-insert)
-(global-set-key (kbd "C-q r") 'query-replace)
-(global-set-key (kbd "C-q a") 'query-replace-read-args)
-(global-set-key (kbd "C-q e") 'query-replace-regexp)
-(global-set-key (kbd "C-q C-e") 'query-replace-regexp-eval)
+(global-set-key (kbd "<C-return>")		'add-newline-at-top)
+(global-set-key (kbd "<M-return>")		'add-newline-at-bottom)
+(global-set-key (kbd "C-S-s")			'isearch-backward)
+(global-set-key (kbd "M-W")				'kill-region)
+(global-set-key (kbd "C-x x")			'mark-word)
+(global-set-key (kbd "C-x C-x")			'set-mark-command)
+(global-set-key (kbd "C-x .")			'find-file)
+(global-set-key (kbd "C-x C-.")			'recentf-open-files)
+(global-set-key (kbd "C-x C-f")			'set-fill-prefix)
+(global-set-key (kbd "C-x t l")			'tab-list)
+(global-set-key (kbd "C-c SPC")			'exchange-point-and-mark)
+(global-set-key (kbd "C-x o")			'ace-window)
+(global-set-key (kbd "C-x C-o C-t")		'vterm-other-window)
+(global-set-key (kbd "C-x C-o C-v")		'vterm)
+(global-set-key (kbd "C-z c")			'compile)
+(global-set-key (kbd "C-z C-c")			'recompile)
+(global-set-key (kbd "C-z e")			'eval-expression)
+(global-set-key (kbd "C-%")				'quoted-insert)
+(global-set-key (kbd "C-q r")			'query-replace)
+(global-set-key (kbd "C-q a")			'query-replace-read-args)
+(global-set-key (kbd "C-q e")			'query-replace-regexp)
+(global-set-key (kbd "C-q C-e")			'query-replace-regexp-eval)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
-(global-set-key (kbd "<escape> c") 'compile)
-(global-set-key (kbd "<escape> e") 'eval-expression)
-(global-set-key (kbd "<escape> o") 'overwrite-mode)
-(global-set-key (kbd "<escape> b r") 'revert-buffer)
+(global-set-key (kbd "<escape> c")		'compile)
+(global-set-key (kbd "<escape> e")		'eval-expression)
+(global-set-key (kbd "<escape> o")		'overwrite-mode)
+(global-set-key (kbd "<escape> b r")	'revert-buffer)
 
 ;; define C-ESC related keybindings
 (global-set-key (kbd "<C-escape>") 'universal-argument)
@@ -203,9 +212,9 @@ point reaches the beginning or end of the buffer, stop there."
 (add-hook 'c++-mode-hook 'c-cpp-configs)
 
 (defun tex-configs ()
-  (local-set-key (kbd "<C-S-return>") 'tex-feed-input)
-  (local-set-key (kbd "<C-return>") 'add-newline-at-top)
-  (local-set-key (kbd "<M-return>") 'add-newline-at-bottom))
+  (local-set-key (kbd "<C-S-return>")	'tex-feed-input)
+  (local-set-key (kbd "<C-return>")		'add-newline-at-top)
+  (local-set-key (kbd "<M-return>")		'add-newline-at-bottom))
 
 (add-hook 'tex-mode 'tex-configs)
 
@@ -250,14 +259,6 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package company-lsp :commands company-lsp)
 (use-package eglot :ensure t)
 
-(defun projectile-project-find-function (dir)
-  (let* ((root (projectile-project-root dir)))
-    (and root (cons 'transient root))))
-
-(with-eval-after-load 'project
-  (add-to-list 'project-find-functions 'projectile-project-find-function))
-;;(setq company-transformers nil)
-
 (use-package cmake-mode
   :ensure t)
 
@@ -267,17 +268,11 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (setq rust-format-on-save t))
 
-;; rustic-mode
-(use-package rustic
-  :ensure t
-  :config
-  (setq rustic-format-on-save t))
-
 ;;  auto-activating-snippets
 (use-package aas
   :ensure t
-  :hook (latex-mode . aas-activate-for-major-mode)
-  :hook (tex-mode . aas-activate-for-major-mode)
+  :hook (latex-mode .	aas-activate-for-major-mode)
+  :hook (tex-mode	.	aas-activate-for-major-mode)
   :config
   (aas-set-snippets 'tex-mode
 	"MK"  (lambda () (interactive)
@@ -345,16 +340,16 @@ point reaches the beginning or end of the buffer, stop there."
   :ensure t
   :config
   (yas-global-mode 1)
-  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  (setq yas-snippet-dirs '("~/.emacs.local/snippets"))
   (define-key yas-minor-mode-map (kbd "TAB") nil))
 
 ;; smex keybinding
 (use-package smex
   :ensure t
   :bind
-  (("M-x" . 'smex)
-   ("M-X" . 'smex-major-mode-commands)
-   ("C-c C-c M-x" . 'execute-extended-command)))
+  (("M-x"			.	'smex)
+   ("M-X"			.	'smex-major-mode-commands)
+   ("C-c C-c M-x"	.	'execute-extended-command)))
 
 ;; which key settings
 (use-package which-key
@@ -367,12 +362,12 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package transpose-frame
   :ensure t
   :bind
-  (("C-z C-t t" .  'transpose-frame)
-   ("C-z C-t f" .  'flip-frame)
-   ("C-z C-t F" .  'flop-frame)
-   ("C-z C-t C-r" .  'rotate-frame)
-   ("C-z C-t r" .  'rotate-frame-anti-clockwise)
-   ("C-z C-t R" .  'rotate-frame-clockwise)))
+  (("C-z C-t t"		.	'transpose-frame)
+   ("C-z C-t f"		.	'flip-frame)
+   ("C-z C-t F"		.	'flop-frame)
+   ("C-z C-t C-r"	.	'rotate-frame)
+   ("C-z C-t r"		.	'rotate-frame-anti-clockwise)
+   ("C-z C-t R"		.	'rotate-frame-clockwise)))
 
 ;; treemacs settings
 (use-package treemacs
@@ -380,7 +375,7 @@ point reaches the beginning or end of the buffer, stop there."
   :defer t
   :init
   (with-eval-after-load 'winum
-    (define-key winum-keymap (kbd "<escape> e") #'treemacs-select-window))
+    (define-key winum-keymap (kbd "C-x \\") #'treemacs-select-window))
   :config
   (progn
     (setq treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
@@ -447,12 +442,13 @@ point reaches the beginning or end of the buffer, stop there."
     (treemacs-hide-gitignored-files-mode nil))
   :bind
   (:map global-map
-        ("<escape> t 0"   . treemacs-select-window)
-        ("<escape> t 1"   . treemacs-delete-other-windows)
-        ("<escape> t t"   . treemacs)
-        ("<escape> t B"   . treemacs-bookmark)
-        ("<escape> t C-t" . treemacs-find-file)
-        ("<escape> t M-t" . treemacs-find-tag)))
+        ("<escape> t 0"		.	treemacs-select-window)
+        ("<escape> t 1"		.	treemacs-delete-other-windows)
+        ("<escape> t t"		.	treemacs)
+		("C-x \\"			.	treemacs)
+        ("<escape> t B"		.	treemacs-bookmark)
+        ("<escape> t C-t"	.	treemacs-find-file)
+        ("<escape> t M-t"	.	treemacs-find-tag)))
 
 ;; (use-package treemacs-evil
 ;;   :after (treemacs evil)
@@ -492,9 +488,11 @@ point reaches the beginning or end of the buffer, stop there."
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(gruvbox-dark-medium))
+ '(custom-enabled-themes '(doom-tokyo-night))
  '(custom-safe-themes
-   '("37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "73312750a0ce791489cad7fe2579d8582ea44d6dfcde274cb07c763277706a22" "4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+   '("8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" "a6e620c9decbea9cac46ea47541b31b3e20804a4646ca6da4cce105ee03e8d0e" "f7fed1aadf1967523c120c4c82ea48442a51ac65074ba544a5aefc5af490893b" "4699e3a86b1863bbc695236036158d175a81f0f3ea504e2b7c71f8f7025e19e3" "835868dcd17131ba8b9619d14c67c127aa18b90a82438c8613586331129dda63" "1bddd01e6851f5c4336f7d16c56934513d41cc3d0233863760d1798e74809b4b" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" "3d47380bf5aa650e7b8e049e7ae54cdada54d0637e7bac39e4cc6afb44e8463b" "47db50ff66e35d3a440485357fb6acb767c100e135ccdf459060407f8baea7b2" "353ffc8e6b53a91ac87b7e86bebc6796877a0b76ddfc15793e4d7880976132ae" "745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "73312750a0ce791489cad7fe2579d8582ea44d6dfcde274cb07c763277706a22" "4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+ '(doom-modeline-mode t)
+ '(exwm-floating-border-color "#141519")
  '(fci-rule-color "#3C3D37")
  '(highlight-changes-colors '("#FD5FF0" "#AE81FF"))
  '(highlight-tail-colors
@@ -506,14 +504,20 @@ point reaches the beginning or end of the buffer, stop there."
 	 ("#A75B00" . 70)
 	 ("#F309DF" . 85)
 	 ("#3C3D37" . 100)))
+ '(jdee-db-active-breakpoint-face-colors (cons "#222228" "#819cd6"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#222228" "#5b94ab"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#222228" "#515462"))
  '(magit-diff-use-overlays nil)
  '(nrepl-message-colors
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
+ '(objed-cursor-color "#e1c1ee")
  '(package-selected-packages
-   '(cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas rustic nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
+ '(rustic-ansi-faces
+   ["#282b33" "#e1c1ee" "#5b94ab" "#cfcf9c" "#819cd6" "#a6c1e0" "#7289bc" "#c6c6c6"])
  '(tab-width 4)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
