@@ -13,7 +13,7 @@
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
 (recentf-mode 1)
-(set-frame-font "Fira Code 16" nil t)
+(set-frame-font "Fira Code 15" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
@@ -58,12 +58,10 @@
   (doom-themes-org-config))
 
 ;; ace-window
-(use-package ace-window
-  :ensure t)
+(use-package ace-window :ensure t)
 
 ;; company mode
-(use-package company
-  :ensure t)
+(use-package company :ensure t)
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
@@ -168,6 +166,9 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-x x")			'mark-word)
 (global-set-key (kbd "C-x C-x")			'set-mark-command)
 (global-set-key (kbd "C-x .")			'find-file)
+(global-set-key (kbd "C-x /")			'comment-line)
+(global-set-key (kbd "C-x C-/ /")		'comment-region)
+(global-set-key (kbd "C-x C-/ i")		'comment-indent)
 (global-set-key (kbd "C-x C-.")			'recentf-open-files)
 (global-set-key (kbd "C-x C-f")			'set-fill-prefix)
 (global-set-key (kbd "C-x t l")			'tab-list)
@@ -193,6 +194,12 @@ point reaches the beginning or end of the buffer, stop there."
 ;; define C-ESC related keybindings
 (global-set-key (kbd "<C-escape>") 'universal-argument)
 
+;; reset key in tex mode
+(eval-after-load "tex"
+  '(define-key tex-mode-map (kbd "<C-return>")	'add-newline-at-top))
+(eval-after-load "tex"
+  '(define-key tex-mode-map (kbd "<M-return>")	'add-newline-at-bottom))
+
 ;; finished keybindings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -202,7 +209,7 @@ point reaches the beginning or end of the buffer, stop there."
 (defun c-cpp-configs ()
     (setq c-syntactic-indentation nil)
 	(local-set-key (kbd "C-z C-f C-c") 'copy-clang-format-to-current-dir)
-	(local-set-key (kbd "C-z C-f C-s") 'clang-format-and-save-buffer))
+	(local-set-key (kbd "C-x C-s") 'clang-format-and-save-buffer))
 
 (setq c-default-style '((java-mode . "java")
                         (awk-mode . "awk")
@@ -218,10 +225,12 @@ point reaches the beginning or end of the buffer, stop there."
 
 (add-hook 'tex-mode 'tex-configs)
 
-(add-to-list 'load-path "~/.emacs.local/")
+(add-to-list 'load-path (expand-file-name "~/.emacs.local/"))
 (require 'glasm-mode)
 (require 'asy-mode)
 (require 'texmathp)
+(require 'make-regexp)
+(require 'bison-mode)
 
 ;; auto-complete mode
 (use-package auto-complete
@@ -252,15 +261,12 @@ point reaches the beginning or end of the buffer, stop there."
  (setq lsp-log-io t))
 
 ;; c++-mode
-(use-package lsp-mode
-  :ensure t
-  :commands lsp)
-(use-package lsp-ui :commands lsp-ui-mode)
 (use-package company-lsp :commands company-lsp)
+(use-package cmake-mode :ensure t)
 (use-package eglot :ensure t)
 
-(use-package cmake-mode
-  :ensure t)
+;; kotlin-mode
+(use-package kotlin-mode :ensure t)
 
 ;; rust-mode
 (use-package rust-mode
@@ -488,9 +494,9 @@ point reaches the beginning or end of the buffer, stop there."
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
  '(compilation-message-face 'default)
- '(custom-enabled-themes '(doom-tokyo-night))
+ '(custom-enabled-themes '(doom-gruvbox))
  '(custom-safe-themes
-   '("8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" "a6e620c9decbea9cac46ea47541b31b3e20804a4646ca6da4cce105ee03e8d0e" "f7fed1aadf1967523c120c4c82ea48442a51ac65074ba544a5aefc5af490893b" "4699e3a86b1863bbc695236036158d175a81f0f3ea504e2b7c71f8f7025e19e3" "835868dcd17131ba8b9619d14c67c127aa18b90a82438c8613586331129dda63" "1bddd01e6851f5c4336f7d16c56934513d41cc3d0233863760d1798e74809b4b" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" "3d47380bf5aa650e7b8e049e7ae54cdada54d0637e7bac39e4cc6afb44e8463b" "47db50ff66e35d3a440485357fb6acb767c100e135ccdf459060407f8baea7b2" "353ffc8e6b53a91ac87b7e86bebc6796877a0b76ddfc15793e4d7880976132ae" "745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "73312750a0ce791489cad7fe2579d8582ea44d6dfcde274cb07c763277706a22" "4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
+   '("c4063322b5011829f7fdd7509979b5823e8eea2abf1fe5572ec4b7af1dd78519" "7a7b1d475b42c1a0b61f3b1d1225dd249ffa1abb1b7f726aec59ac7ca3bf4dae" "e6f3a4a582ffb5de0471c9b640a5f0212ccf258a987ba421ae2659f1eaa39b09" "1704976a1797342a1b4ea7a75bdbb3be1569f4619134341bd5a4c1cfb16abad4" "da186cce19b5aed3f6a2316845583dbee76aea9255ea0da857d1c058ff003546" "d47f868fd34613bd1fc11721fe055f26fd163426a299d45ce69bef1f109e1e71" "6f4421bf31387397f6710b6f6381c448d1a71944d9e9da4e0057b3fe5d6f2fad" "8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" "a6e620c9decbea9cac46ea47541b31b3e20804a4646ca6da4cce105ee03e8d0e" "f7fed1aadf1967523c120c4c82ea48442a51ac65074ba544a5aefc5af490893b" "4699e3a86b1863bbc695236036158d175a81f0f3ea504e2b7c71f8f7025e19e3" "835868dcd17131ba8b9619d14c67c127aa18b90a82438c8613586331129dda63" "1bddd01e6851f5c4336f7d16c56934513d41cc3d0233863760d1798e74809b4b" "234dbb732ef054b109a9e5ee5b499632c63cc24f7c2383a849815dacc1727cb6" "3d47380bf5aa650e7b8e049e7ae54cdada54d0637e7bac39e4cc6afb44e8463b" "47db50ff66e35d3a440485357fb6acb767c100e135ccdf459060407f8baea7b2" "353ffc8e6b53a91ac87b7e86bebc6796877a0b76ddfc15793e4d7880976132ae" "745d03d647c4b118f671c49214420639cb3af7152e81f132478ed1c649d4597d" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "73312750a0ce791489cad7fe2579d8582ea44d6dfcde274cb07c763277706a22" "4ad8e0bac03a34fdaf4a4f1e2d8bbca999d4d83410949b7e67335d2eac628b85" "83e0376b5df8d6a3fbdfffb9fb0e8cf41a11799d9471293a810deb7586c131e6" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "78c4238956c3000f977300c8a079a3a8a8d4d9fee2e68bad91123b58a4aa8588" "6b5c518d1c250a8ce17463b7e435e9e20faa84f3f7defba8b579d4f5925f60c1" "3325e2c49c8cc81a8cc94b0d57f1975e6562858db5de840b03338529c64f58d1" "d0ebd553aa00983952185f9d0e1a004967614d7c75fc8547f1b9af1f26b77dfc" "c8b83e7692e77f3e2e46c08177b673da6e41b307805cd1982da9e2ea2e90e6d7" "3b8284e207ff93dfc5e5ada8b7b00a3305351a3fb222782d8033a400a48eca48" "fb83a50c80de36f23aea5919e50e1bccd565ca5bb646af95729dc8c5f926cbf3" "e3a1b1fb50e3908e80514de38acbac74be2eb2777fc896e44b54ce44308e5330" "b02eae4d22362a941751f690032ea30c7c78d8ca8a1212fdae9eecad28a3587f" "d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "b6269b0356ed8d9ed55b0dcea10b4e13227b89fd2af4452eee19ac88297b0f99" "24168c7e083ca0bbc87c68d3139ef39f072488703dcdd82343b8cab71c0f62a7" "7661b762556018a44a29477b84757994d8386d6edee909409fabe0631952dad9" default))
  '(doom-modeline-mode t)
  '(exwm-floating-border-color "#141519")
  '(fci-rule-color "#3C3D37")
@@ -512,7 +518,7 @@ point reaches the beginning or end of the buffer, stop there."
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(objed-cursor-color "#e1c1ee")
  '(package-selected-packages
-   '(cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode vterm go-mode gruvbox-theme smex))
+   '(cmake-ide doom-modeline pdf-tools vterm license-templates pest-mode cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")

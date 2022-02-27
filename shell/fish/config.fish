@@ -119,7 +119,7 @@ function hakwon
             echo "*.*"
 
         case Darwin
-            cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/TeX_Documents/Hakwon
+            cd ~/pCloud/TeX_Documents/Hakwon
     end
 end
 
@@ -131,3 +131,4 @@ end
 starship init fish | source
 
 thefuck --alias | source
+fish_add_path /usr/local/opt/bison/bin
