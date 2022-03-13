@@ -19,13 +19,13 @@ BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel: false
   AfterClass: true
-  AfterControlStatement: Never
+  AfterControlStatement: Always
   AfterEnum: true
-  AfterFunction: false
-  AfterNamespace: false
+  AfterFunction: true
+  AfterNamespace: true
   AfterUnion: true
-  BeforeCatch: false
-  BeforeElse: false
+  BeforeCatch: true
+  BeforeElse: true
   IndentBraces: false
   SplitEmptyFunction: false
   SplitEmptyRecord: true
