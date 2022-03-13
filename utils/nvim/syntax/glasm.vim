@@ -1,1 +1,1 @@
-/Users/almagest/Github/glosso-lang/syntax/glasm.vim
+/Users/almagest/Github/glosso-rust/syntax/glasm.vim

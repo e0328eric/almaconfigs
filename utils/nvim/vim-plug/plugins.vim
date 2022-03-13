@@ -26,9 +26,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Generating license
 Plug 'antoyo/vim-licenses'
 
-" ale
-Plug 'dense-analysis/ale'
-
 " Easy align
 Plug 'junegunn/vim-easy-align'
 
@@ -126,9 +123,6 @@ Plug 'mattn/webapi-vim'
 Plug 'norcalli/nvim-colorizer.lua'
 " Rainbow brackets
 Plug 'luochen1990/rainbow'
-" Async Linting Engine
-" TODO make sure to add ale config before plugin
-" Plug 'dense-analysis/ale'
 " Better Whitespace
 Plug 'ntpeters/vim-better-whitespace'
 " Multiple Cursors
