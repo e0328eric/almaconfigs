@@ -113,6 +113,10 @@ function s
     ls $argv
 end
 
+function shtobat
+    npx bash-converter $argv
+end
+
 function hakwon
     switch (uname)
         case Linux
