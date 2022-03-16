@@ -55,9 +55,6 @@ augroup remember_folds
   autocmd BufWinEnter *.* silent! loadview
 augroup END
 
-" ignore ale warnings for tex and latex
-autocmd BufEnter *.tex ALEDisable
-
 " You can't stop me
 cmap w!! w !sudo tee %
 

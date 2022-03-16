@@ -518,7 +518,7 @@ point reaches the beginning or end of the buffer, stop there."
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(objed-cursor-color "#e1c1ee")
  '(package-selected-packages
-   '(cmake-ide doom-modeline pdf-tools vterm license-templates pest-mode cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode go-mode gruvbox-theme smex))
+   '(rustic cmake-ide doom-modeline pdf-tools vterm license-templates pest-mode cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
