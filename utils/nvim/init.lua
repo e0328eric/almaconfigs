@@ -30,13 +30,14 @@ require('packer').startup(
     use 'onsails/lspkind-nvim'
     use 'David-Kunz/cmp-npm'
     use 'ggandor/lightspeed.nvim'
-    use 'morhetz/gruvbox'
     use 'mfussenegger/nvim-dap'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use 'voldikss/vim-floaterm'
     use 'mg979/vim-visual-multi'
     use 'SirVer/ultisnips'
+    use 'luochen1990/rainbow'
+    use 'chriskempson/base16-vim'
   end
 )
 
@@ -54,6 +55,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.incsearch = true
 opt.relativenumber = true
+opt.termguicolors = true
 -- set diffopt+=vertical " starts diff mode in vertical split
 opt.cmdheight = 1
 -- set shortmess+=c " don't need to press enter so often
@@ -77,6 +79,9 @@ filetype plugin indent on
 -- opt.path:append({ "**" })
 vim.cmd([[set path=$PWD/**]])
 
+vim.cmd('let base16colorspace=256')
+vim.cmd('colorscheme base16-gruvbox-dark-hard')
+
 local function map(mode, lhs, rhs, opts)
   local options = {noremap = true}
   if opts then options = vim.tbl_extend('force', options, opts) end
@@ -90,7 +95,7 @@ end
 -- end
 
 map('n', '<leader>v', ':e $MYVIMRC<CR>')
-
+map('n', '<C-\\>', 'O')
 
 
 -- lewis6991/gitsigns.nvim
@@ -129,41 +134,6 @@ require('gitsigns').setup({
     map('x', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
   end
 })
-
--- hoob3rt/lualine.nvim
--- require('lualine').setup({
---   options = {
---     -- theme = "vscode",
---     -- theme = "nord",
---     theme = "material-nvim",
---     component_separators = {'', ''},
---     section_separators = {'', ''},
---   },
---   sections = {
---     lualine_a = {{'filename', path = 2}},
---     lualine_b = {'branch', {
---       'diff',
---       -- color_added = 'green',
---       -- color_modified = 'yellow',
---       -- color_removed = 'red'
---     }},
---     lualine_c = {},
---     lualine_x = {},
---     lualine_y = {},
---     lualine_z = {}
---   },
--- })
-
--- kassio/neoterm
--- g.neoterm_default_mod = 'vertical'
--- g.neoterm_autoinsert = true
--- g.neoterm_autoscroll = true
--- g.neoterm_term_per_tab = true
--- map('n', '<c-y>', ':Ttoggle<CR>')
--- map('i', '<c-y>', '<Esc>:Ttoggle<CR>')
--- map('t', '<c-y>', '<c-\\><c-n>:Ttoggle<CR>')
--- map('n', '<leader>x', ':TREPLSendLine<CR>')
--- map('v', '<leader>x', ':TREPLSendSelection<CR>')
 
 -- sbdchd/neoformat
 map('n', '<leader>F', ':Format<CR>')
@@ -228,16 +198,6 @@ require('telescope').setup {
 		live_grep = fixfolds,
 		oldfiles = fixfolds,
 	},
-   -- extensions = {
-   --  file_browser = {
-   --    mappings = {
-   --      ["n"] = {
-   --        h = fb_actions.goto_parent_dir,
-   --        l = actions.select_default
-   --      }
-   --    }
-   --  }
-  -- }
 }
 
 -- nvim-telescope/telescope.nvim
@@ -274,19 +234,6 @@ map('n', '<leader>fs', ':Telescope lsp_document_symbols<CR>')
 map('n', '<leader>ff', ':Telescope live_grep<CR>')
 map('n', '<leader>FF', ':Telescope grep_string<CR>')
 
--- without cmp:
--- local nvim_lsp = require'lspconfig'
--- local on_attach = function(client, bufnr)
---     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
---     buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
--- end
--- local servers = { 'tsserver' }
--- for _, lsp in ipairs(servers) do
---   nvim_lsp[lsp].setup {
---     on_attach = on_attach
---   }
--- end
-
 
 -- David-Kunz/cmp-npm
 require('cmp-npm').setup({ ignore = {"beta", "rc"} })
@@ -318,9 +265,6 @@ vim.g.floaterm_width = 0.95
 vim.g.floaterm_height = 0.95
 map('n', '<leader>gi', ':FloatermNew lazygit<CR>')
 map('n', '<leader>gg', ':Telescope git_status<CR>')
-
-
-vim.cmd ('colorscheme gruvbox')
 
 
 cmd('set foldmethod=expr')
@@ -549,9 +493,9 @@ map('n', '<c-o>', '<c-o>zz')
 map('n', '<c-i>', '<c-i>zz')
 
 -- 'SirVer/ultisnips'
-g.UltiSnipsExpandTrigger = '<TAB>'
-g.UltiSnipsJumpForwardTrigger = '<TAB>'
-g.UltiSnipsJumpBackwardTrigger = '<S-TAB>'
+g.UltiSnipsExpandTrigger = '<C-]>'
+g.UltiSnipsJumpForwardTrigger = '<C-]>'
+g.UltiSnipsJumpBackwardTrigger = '<C-S-]>'
 g.UltiSnipsUsePythonVersion = 3
 g.UltiSnipsSnippetDirectories = { '~/.config/nvim/snips' }
 
