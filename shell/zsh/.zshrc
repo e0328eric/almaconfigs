@@ -43,6 +43,7 @@ export LDFLAGS="-L/usr/local/opt/qt/lib:$LDFLAGS"
 export LDFLAGS="-L/usr/local/opt/llvm/lib:$LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/qt/include:$CPPFLAGS"
 export CPPFLAGS="-I/usr/local/opt/llvm/include:$CPPFLAGS"
+export VCPKG_ROO="/Users/almagest/vcpkg"
 export PKG_CONFIG_PATH="/usr/local/opt/qt/lib/pkgconfig"
 
 # Define aliases

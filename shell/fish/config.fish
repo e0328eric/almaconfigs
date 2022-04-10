@@ -55,18 +55,19 @@ switch (uname)
         set PATH $PATH /Users/almagest/.nimble/bin
         set PATH $PATH /Users/almagest/.flutter/bin
         set PATH $PATH /Users/almagest/.npm-global/bin
-        set PATH $PATH /usr/local/opt/qt/bin
         set PATH $PATH /usr/local/bin
+        set PATH $PATH /usr/local/opt/qt/bin
         set PATH $PATH /usr/local/opt/llvm/bin
         set PATH $PATH /usr/local/Cellar/gcc/11.1.0_1/bin
         set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:/$GOPATH/bin
-        set CC /usr/local/bin/clang
-        set CXX /usr/local/bin/clang++
+        set CC /usr/local/bin/gcc-11
+        set CXX /usr/local/bin/g++-11
         fish_add_path /usr/local/opt/llvm/bin
         set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
         set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
+        set VCPKG_ROOT $HOME/vcpkg
 end
 
 function c
@@ -75,6 +76,10 @@ end
 
 function v
     nvim $argv
+end
+
+function t
+    tmux $argv
 end
 
 function l
