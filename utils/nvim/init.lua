@@ -48,8 +48,8 @@ opt.mouse = 'a'
 opt.splitright = true
 opt.splitbelow = true
 opt.expandtab = true
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.number = true
 opt.ignorecase = true
 opt.smartcase = true
@@ -96,6 +96,7 @@ end
 
 map('n', '<leader>v', ':e $MYVIMRC<CR>')
 map('n', '<C-\\>', 'O')
+map('i', '<C-\\>', '<C-[>O')
 
 
 -- lewis6991/gitsigns.nvim
