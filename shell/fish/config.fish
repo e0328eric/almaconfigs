@@ -86,6 +86,10 @@ function l
     ls -al $argv
 end
 
+function lg
+    lazygit $argv
+end
+
 function view
     nvim -R $argv
 end

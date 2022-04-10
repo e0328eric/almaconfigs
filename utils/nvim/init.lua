@@ -494,9 +494,9 @@ map('n', '<c-o>', '<c-o>zz')
 map('n', '<c-i>', '<c-i>zz')
 
 -- 'SirVer/ultisnips'
-g.UltiSnipsExpandTrigger = '<C-]>'
-g.UltiSnipsJumpForwardTrigger = '<C-]>'
-g.UltiSnipsJumpBackwardTrigger = '<C-S-]>'
+g.UltiSnipsExpandTrigger = '<TAB>'
+g.UltiSnipsJumpForwardTrigger = '<TAB>'
+g.UltiSnipsJumpBackwardTrigger = '<S-TAB>'
 g.UltiSnipsUsePythonVersion = 3
 g.UltiSnipsSnippetDirectories = { '~/.config/nvim/snips' }
 
@@ -527,7 +527,7 @@ cmp.setup({
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
       }),
-      ["<Tab>"] = cmp.mapping(function(fallback)
+      ["<C-]>"] = cmp.mapping(function(fallback)
         if cmp.visible() then
           cmp.select_next_item()
         elseif vim.fn["vsnip#available"](1) == 1 then
@@ -539,7 +539,7 @@ cmp.setup({
         end
       end, { "i", "s" }),
 
-      ["<S-Tab>"] = cmp.mapping(function()
+      ["<C-S-]>"] = cmp.mapping(function()
         if cmp.visible() then
           cmp.select_prev_item()
         elseif vim.fn["vsnip#jumpable"](-1) == 1 then
@@ -549,7 +549,7 @@ cmp.setup({
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
     sources = cmp.config.sources({
-      { name = 'nvim_lsp' },
+      --{ name = 'nvim_lsp' },
       { name = 'ultisnips' },
     }, {
       { name = 'buffer' },
