@@ -38,6 +38,8 @@ require('packer').startup(
     use 'SirVer/ultisnips'
     use 'luochen1990/rainbow'
     use 'chriskempson/base16-vim'
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
   end
 )
 
@@ -95,6 +97,9 @@ end
 -- end
 
 map('n', '<leader>v', ':e $MYVIMRC<CR>')
+map('n', '<leader>bd', ':$bd<CR>')
+map('n', '<leader>bp', ':bprevious<CR>')
+map('n', '<leader>bn', ':bnext<CR>')
 map('n', '<C-\\>', 'O')
 map('i', '<C-\\>', '<C-[>O')
 
@@ -584,3 +589,11 @@ vim.api.nvim_set_keymap('s', '<c-k>', 'v:lua.expand_back()', { expr = true })
 
 map('n', '<leader>ls', '<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<CR>')
 
+-- 'vim-airline/vim-airline'
+cmd([[
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+]])
+g.airline_theme = 'base16_gruvbox_dark_pale'
