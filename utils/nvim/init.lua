@@ -97,7 +97,7 @@ end
 -- end
 
 map('n', '<leader>v', ':e $MYVIMRC<CR>')
-map('n', '<leader>bd', ':$bd<CR>')
+map('n', '<leader>bd', ':bd<CR>')
 map('n', '<leader>bp', ':bprevious<CR>')
 map('n', '<leader>bn', ':bnext<CR>')
 map('n', '<C-\\>', 'O')
