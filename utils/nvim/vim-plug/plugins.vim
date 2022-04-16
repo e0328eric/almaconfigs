@@ -1,0 +1,156 @@
+" auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  "autocmd VimEnter * PlugInstall
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
+call plug#begin('~/.config/nvim/autoload/plugged')
+
+" Better Comments
+Plug 'tpope/vim-commentary'
+" Change dates fast
+Plug 'tpope/vim-speeddating'
+" Convert binary, hex, etc..
+Plug 'glts/vim-radical'
+" Repeat stuff
+Plug 'tpope/vim-repeat'
+" Text Navigation
+Plug 'unblevable/quick-scope'
+" Useful for React Commenting
+Plug 'suy/vim-context-commentstring'
+" highlight all matches under cursor
+Plug 'RRethy/vim-illuminate'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Generating license
+Plug 'antoyo/vim-licenses'
+
+" Easy align
+Plug 'junegunn/vim-easy-align'
+
+" Add maktaba and codefmt to the runtimepath.
+" (The latter must be installed before it can be used.)
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plug 'google/vim-glaive'
+" Rust
+Plug 'rust-lang/rust.vim'
+Plug 'mhinz/vim-crates'
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Haskell
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
+"C++
+Plug 'cdelledonne/vim-cmake'
+Plug 'bfrg/vim-cpp-modern'
+"Nim
+Plug 'alaviss/nim.nvim'
+" Sneak
+Plug 'justinmk/vim-sneak'
+" Surround
+Plug 'tpope/vim-surround'
+" Files
+Plug 'tpope/vim-eunuch'
+" Have the file system follow you around
+Plug 'airblade/vim-rooter'
+" org mode for vim
+Plug 'jceb/vim-orgmode'
+" auto set indent settings
+Plug 'tpope/vim-sleuth'
+" Better Syntax Support
+Plug 'sheerun/vim-polyglot'
+" Cool Icons
+Plug 'ryanoasis/vim-devicons'
+" Closetags
+Plug 'alvan/vim-closetag'
+" Themes
+" Plug 'christianchiarulli/nvcode.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'arzg/vim-colors-xcode'
+Plug 'vim-airline/vim-airline-themes'
+" Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
+" Status Line
+Plug 'vim-airline/vim-airline'
+" FZF
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+Plug 'rhysd/git-messenger.vim'
+Plug 'jreybert/vimagit'
+" Terminal
+Plug 'voldikss/vim-floaterm'
+" Start Screen
+Plug 'mhinz/vim-startify'
+" See what keys do like in emacs
+Plug 'liuchengxu/vim-which-key'
+" Zen mode
+Plug 'junegunn/goyo.vim'
+" Snippets
+Plug 'SirVer/ultisnips'
+" Interactive code
+Plug 'metakirby5/codi.vim'
+" Better tabline
+"Plug 'mg979/vim-xtabline'
+" undo time travel
+Plug 'mbbill/undotree'
+" Find and replace
+Plug 'ChristianChiarulli/far.vim'
+" Plug 'brooth/far.vim'
+" Auto change html tags
+Plug 'AndrewRadev/tagalong.vim'
+" live server
+Plug 'turbio/bracey.vim'
+" Smooth scroll
+Plug 'psliwka/vim-smoothie'
+" async tasks
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
+" Swap windows
+Plug 'wesQ3/vim-windowswap'
+" Easily Create Gists
+Plug 'mattn/vim-gist'
+Plug 'mattn/webapi-vim'
+" Colorizer
+Plug 'norcalli/nvim-colorizer.lua'
+" Rainbow brackets
+Plug 'luochen1990/rainbow'
+" Better Whitespace
+Plug 'ntpeters/vim-better-whitespace'
+" Multiple Cursors
+" TODO add this back in change from C-n
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'moll/vim-bbye'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'jelera/vim-javascript-syntax'
+" assuming you're using vim-plug: https://github.com/junegunn/vim-plug
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+
+call plug#end()
+
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
