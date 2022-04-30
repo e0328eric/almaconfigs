@@ -39,6 +39,8 @@ Plug 'google/vim-glaive'
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mhinz/vim-crates'
+" Zig
+Plug 'ziglang/zig.vim'
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Haskell

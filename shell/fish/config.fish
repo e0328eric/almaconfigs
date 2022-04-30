@@ -60,6 +60,8 @@ switch (uname)
         set PATH $PATH /usr/local/opt/llvm/bin
         set PATH $PATH /usr/local/Cellar/gcc/11.1.0_1/bin
         set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
+        set PATH $PATH /opt/local/bin
+        set PATH $PATH /opt/local/sbin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:/$GOPATH/bin
         set CC /usr/local/bin/gcc-11
