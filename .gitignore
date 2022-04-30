@@ -1,1 +1,2 @@
-script/battery-low/target/
+/script/battery-low/target/
+/utils/nvim/autoload
