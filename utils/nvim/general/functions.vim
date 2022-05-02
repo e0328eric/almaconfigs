@@ -56,3 +56,15 @@ function! s:Hex2dec(line1, line2, arg) range
     echo (a:arg =~? '^0x') ? a:arg + 0 : ('0x'.a:arg) + 0
   endif
 endfunction
+
+function! s:WriteCreatingDirs()
+  let l:file=expand("%")
+  if empty(getbufvar(bufname("%"), '&buftype')) && l:file !~# '\v^\w+\:\/'
+    let dir=fnamemodify(l:file, ':h')
+    if !isdirectory(dir)
+      call mkdir(dir, 'p')
+    endif
+  endif
+  write
+endfunction
+command! W call s:WriteCreatingDirs()
