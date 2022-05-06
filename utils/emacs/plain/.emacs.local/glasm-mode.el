@@ -1,1 +1,0 @@
-/Users/almagest/Github/glosso-lang/syntax/glasm-mode.el

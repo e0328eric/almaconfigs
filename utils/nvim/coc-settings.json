@@ -44,6 +44,10 @@
   "coc.source.emoji.filetypes": [
     "markdown"
   ],
+  "zig.enabled": true,
+  "zig.startUpMessage": true,
+  "zig.path": "zls",
+  "zig.debugLog": false,
   "languageserver": {
     "ccls": {
       "command": "ccls",
@@ -68,7 +72,7 @@
       }
     },
     "zls": {
-      "command": "~/.local/bin/zls",
+      "command": "zls",
       "filetypes": ["zig"]
     },
     "haskell": {

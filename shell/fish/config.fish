@@ -64,6 +64,7 @@ switch (uname)
         set PATH $PATH /opt/local/sbin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:/$GOPATH/bin
+        set CPATH $CPATH /opt/homebrew/include
         set CC /usr/local/bin/gcc-11
         set CXX /usr/local/bin/g++-11
         fish_add_path /usr/local/opt/llvm/bin

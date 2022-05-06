@@ -226,7 +226,6 @@ point reaches the beginning or end of the buffer, stop there."
 (add-hook 'tex-mode 'tex-configs)
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.local/"))
-(require 'glasm-mode)
 (require 'asy-mode)
 (require 'texmathp)
 (require 'make-regexp)
