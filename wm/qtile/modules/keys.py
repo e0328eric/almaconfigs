@@ -13,27 +13,27 @@ browser = "firefox"
 
 keys = [
     # Switch between windows
-    Key("M-a", lazy.layout.left(), desc="Move focus to left"),
-    Key("M-d", lazy.layout.right(), desc="Move focus to right"),
-    Key("M-s", lazy.layout.down(), desc="Move focus down"),
-    Key("M-w", lazy.layout.up(), desc="Move focus up"),
+    Key("M-<Left>", lazy.layout.left(), desc="Move focus to left"),
+    Key("M-<Right>", lazy.layout.right(), desc="Move focus to right"),
+    Key("M-<Up>", lazy.layout.up(), desc="Move focus up"),
+    Key("M-<Down>", lazy.layout.down(), desc="Move focus down"),
     Key("M-<space>", lazy.layout.next(), desc="Move window focus to other window"),
 
     Key("M-r", lazy.spawn("rofi -show combi"), desc="spawn rofi"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key("M-S-a", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key("M-S-d", lazy.layout.shuffle_right(), desc="Move window to the right"),
-    Key("M-S-s", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key("M-S-w", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key("M-S-<Left>", lazy.layout.shuffle_left(), desc="Move window to the left"),
+    Key("M-S-<Right>", lazy.layout.shuffle_right(), desc="Move window to the right"),
+    Key("M-S-<Up>", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key("M-S-<Down>", lazy.layout.shuffle_down(), desc="Move window down"),
 
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key("M-A-a", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key("M-A-d", lazy.layout.grow_right(), desc="Grow window to the right"),
-    Key("M-A-s", lazy.layout.grow_down(), desc="Grow window down"),
-    Key("M-A-w", lazy.layout.grow_up(), desc="Grow window up"),
+    Key("M-A-<Left>", lazy.layout.grow_left(), desc="Grow window to the left"),
+    Key("M-A-<Right>", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key("M-A-<Up>", lazy.layout.grow_up(), desc="Grow window up"),
+    Key("M-A-<Down>", lazy.layout.grow_down(), desc="Grow window down"),
     Key("M-n", lazy.layout.normalize(), desc="Reset all window sizes"),
     Key("M-f", lazy.window.toggle_floating(), desc="Toggle/Detoogle floating"),
 
@@ -60,6 +60,8 @@ keys = [
     Key("<XF86AudioRaiseVolume>", lazy.spawn("amixer set Master 3%+")),
     Key("<XF86AudioLowerVolume>", lazy.spawn("amixer set Master 3%-")),
     Key("<XF86AudioMute>", lazy.spawn("amixer set Master toggle")),
-    Key("<XF86MonBrightnessDown>", lazy.spawn("xrandr --output eDP --brightness 0.3")),
-    Key("<XF86MonBrightnessUp>", lazy.spawn("xrandr --output eDP --brightness 0.6")),
+    Key("<XF86MonBrightnessDown>", lazy.spawn("xrandr --output eDP-1 --brightness 0.3")),
+    Key("<XF86MonBrightnessUp>", lazy.spawn("xrandr --output eDP-1 --brightness 0.6")),
+    Key("<XF86KbdBrightnessDown>", lazy.spawn("brightnessctl --device'apple::kbd_backlight' set 40")),
+    Key("<XF86KbdBrightnessUp>", lazy.spawn("brightnessctl --device'apple::kbd_backlight' set 0")),
 ]

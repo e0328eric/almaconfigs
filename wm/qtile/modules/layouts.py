@@ -2,18 +2,28 @@ from libqtile import layout
 from libqtile.config import Match
 
 layouts = [
-    layout.MonadTall(margin=8, border_focus='#5294e2',
-                     border_normal='#2c5380'),
-    #layout.Columns(border_focus_stack='#d75f5f'),
+    layout.Tile(
+        margin=10,
+        border_width=5,
+        border_focus='#5294e2',
+        border_normal='#2c5380'
+    ),
     layout.Max(),
-    # Try more layouts by unleashing below layouts.
-    layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    layout.Matrix(),
+    layout.Bsp(
+        margin=10,
+        border_width=5,
+        border_focus='#5294e2',
+        border_normal='#2c5380'
+    ),
+    layout.Matrix(
+        margin=10,
+        border_width=5,
+        border_focus='#5294e2',
+        border_normal='#2c5380'
+    ),
     # layout.MonadTall(),
     # layout.MonadWide(),
     # layout.RatioTile(),
-    # layout.Tile(),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),

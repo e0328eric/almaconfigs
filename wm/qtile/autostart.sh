@@ -1,5 +1,5 @@
 #!/bin/sh
-nitrogen & disown
+# nitrogen & disown
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 light-locker & disown
 
