@@ -2,14 +2,14 @@ from libqtile import layout
 from libqtile.config import Match
 
 layouts = [
-    layout.Tile(
+    layout.Bsp(
         margin=10,
         border_width=5,
         border_focus='#5294e2',
         border_normal='#2c5380'
     ),
     layout.Max(),
-    layout.Bsp(
+    layout.Tile(
         margin=10,
         border_width=5,
         border_focus='#5294e2',

@@ -20,6 +20,7 @@ keys = [
     Key("M-<space>", lazy.layout.next(), desc="Move window focus to other window"),
 
     Key("M-r", lazy.spawn("rofi -show combi"), desc="spawn rofi"),
+    Key("M-C-s", lazy.spawn("rofi -show file-browser-extended"), desc="spawn rofi filebrowser"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
@@ -30,10 +31,10 @@ keys = [
 
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key("M-A-<Left>", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key("M-A-<Right>", lazy.layout.grow_right(), desc="Grow window to the right"),
-    Key("M-A-<Up>", lazy.layout.grow_up(), desc="Grow window up"),
-    Key("M-A-<Down>", lazy.layout.grow_down(), desc="Grow window down"),
+    Key("M-C-<Left>", lazy.layout.grow_left(), desc="Grow window to the left"),
+    Key("M-C-<Right>", lazy.layout.grow_right(), desc="Grow window to the right"),
+    Key("M-C-<Up>", lazy.layout.grow_up(), desc="Grow window up"),
+    Key("M-C-<Down>", lazy.layout.grow_down(), desc="Grow window down"),
     Key("M-n", lazy.layout.normalize(), desc="Reset all window sizes"),
     Key("M-f", lazy.window.toggle_floating(), desc="Toggle/Detoogle floating"),
 
