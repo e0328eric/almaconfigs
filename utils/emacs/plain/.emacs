@@ -273,6 +273,14 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (setq rust-format-on-save t))
 
+;; zig-mode
+(use-package zig-mode
+  :ensure t)
+
+;; vterm
+(use-package vterm
+  :ensure t)
+
 ;;  auto-activating-snippets
 (use-package aas
   :ensure t
