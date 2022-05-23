@@ -13,7 +13,7 @@
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
 (recentf-mode 1)
-(set-frame-font "Fira Code 15" nil t)
+(set-frame-font "JetBrainsMono Nerd Font 15" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
@@ -45,7 +45,7 @@
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-moonlight t)
+  (load-theme 'doom-outrun-electric t)
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
@@ -244,6 +244,7 @@ point reaches the beginning or end of the buffer, stop there."
   (setq aw-background nil))
 
 ;; hasekll-mode
+(use-package haskell-mode :ensure t)
 (use-package lsp-mode
   :ensure t
   :hook (haskell-mode . lsp)
@@ -525,7 +526,7 @@ point reaches the beginning or end of the buffer, stop there."
    '("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3"))
  '(objed-cursor-color "#e1c1ee")
  '(package-selected-packages
-   '(zig-mode rustic cmake-ide doom-modeline pdf-tools vterm license-templates pest-mode cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode go-mode gruvbox-theme smex))
+   '(haskell-mode zig-mode rustic cmake-ide doom-modeline pdf-tools vterm license-templates pest-mode cargo cmake-mode nord-theme lice python-black company ace-window texmathp aas nasm-mode ample-theme lua-mode irony yaml-mode rainbow-delimiters ayu-theme magit zenburn-theme clang-format hindent transpose-frame monokai-pro-theme monokai-theme exec-path-from-shell undo-tree which-key nlinum-relative lsp-mode go-mode gruvbox-theme smex))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#FFFACE")
  '(pos-tip-foreground-color "#272822")
