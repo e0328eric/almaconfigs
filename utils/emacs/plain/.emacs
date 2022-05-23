@@ -25,6 +25,9 @@
 (if (eq system-type 'darwin)
     (setq mac-command-modifier 'meta))
 
+;; Let TAB acts like vim does (a normal tab)
+(global-set-key (kbd "TAB") 'tab-to-tab-stop)
+
 (use-package exec-path-from-shell
   :ensure t
   :config
@@ -179,6 +182,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-z c")			'compile)
 (global-set-key (kbd "C-z C-c")			'recompile)
 (global-set-key (kbd "C-z e")			'eval-expression)
+(global-set-key (kbd "C-z g")			'magit)
 (global-set-key (kbd "C-%")				'quoted-insert)
 (global-set-key (kbd "C-q r")			'query-replace)
 (global-set-key (kbd "C-q a")			'query-replace-read-args)
