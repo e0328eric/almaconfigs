@@ -23,10 +23,20 @@
 (setq-default c-basic-offset 4)
 (setq help-window-select t)
 (if (eq system-type 'darwin)
-    (setq mac-command-modifier 'meta))
+  (progn (setq mac-command-modifier 'meta)
+	     (setq mac-option-modifier 'super)
+	     (setq mac-control-modifier 'control)
+	     (setq ns-function-modifier 'hyper)))
 
 ;; Let TAB acts like vim does (a normal tab)
 (global-set-key (kbd "TAB") 'tab-to-tab-stop)
+
+;; which key settings
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode)
+  (which-key-setup-side-window-bottom))
 
 (use-package exec-path-from-shell
   :ensure t
@@ -164,6 +174,9 @@ point reaches the beginning or end of the buffer, stop there."
 ;; define new keybindings
 (global-set-key (kbd "<C-return>")		'add-newline-at-top)
 (global-set-key (kbd "<M-return>")		'add-newline-at-bottom)
+(global-set-key (kbd "<C-\\>")			'add-newline-at-top)
+(global-set-key (kbd "<M-\\>")			'add-newline-at-bottom)
+(global-set-key (kbd "<C-S-\\>")		'toogle-input-method)
 (global-set-key (kbd "C-S-s")			'isearch-backward)
 (global-set-key (kbd "M-W")				'kill-region)
 (global-set-key (kbd "C-x x")			'mark-word)
@@ -249,11 +262,23 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; hasekll-mode
 (use-package haskell-mode :ensure t)
-(use-package dante
+(use-package lsp-mode
   :ensure t
-  :hook (haskell-mode . dante)
+  :hook (haskell-mode . lsp)
+  :commands lsp)
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
+(use-package lsp-haskell
+  :ensure t
   :config
-  (local-set-key (kbd "C-c \"") 'dante-eval-block))
+ (setq lsp-haskell-server-path "haskell-language-server-wrapper")
+ (setq lsp-haskell-server-args ())
+   ;; Comment/uncomment this line to see interactions between lsp client/server.
+ (setq lsp-log-io t))
+
+(with-eval-after-load 'lsp-mode
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
 
 ;; c++-mode
 (use-package company-lsp :commands company-lsp)
@@ -361,13 +386,6 @@ point reaches the beginning or end of the buffer, stop there."
   (("M-x"			.	'smex)
    ("M-X"			.	'smex-major-mode-commands)
    ("C-c C-c M-x"	.	'execute-extended-command)))
-
-;; which key settings
-(use-package which-key
-  :ensure t
-  :config
-  (which-key-mode)
-  (which-key-setup-side-window-bottom))
 
 ;; transpose-frame
 (use-package transpose-frame
