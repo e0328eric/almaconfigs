@@ -174,9 +174,9 @@ point reaches the beginning or end of the buffer, stop there."
 ;; define new keybindings
 (global-set-key (kbd "<C-return>")		'add-newline-at-top)
 (global-set-key (kbd "<M-return>")		'add-newline-at-bottom)
-(global-set-key (kbd "<C-\\>")			'add-newline-at-top)
-(global-set-key (kbd "<M-\\>")			'add-newline-at-bottom)
-(global-set-key (kbd "<C-S-\\>")		'toogle-input-method)
+(global-set-key (kbd "C-\\")			'add-newline-at-top)
+(global-set-key (kbd "M-\\")			'add-newline-at-bottom)
+(global-set-key (kbd "C-S-\\")   		'toogle-input-method)
 (global-set-key (kbd "C-S-s")			'isearch-backward)
 (global-set-key (kbd "M-W")				'kill-region)
 (global-set-key (kbd "C-x x")			'mark-word)
