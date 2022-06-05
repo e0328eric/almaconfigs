@@ -191,7 +191,7 @@ wk.register({
 		},
 		t = {
 			name = "+terminal",
-			g = { "<cmd>FloatermNew --height=28 lazygit<CR>", "lazygit" },
+			g = { "<cmd>FloatermNew --height=38 lazygit<CR>", "lazygit" },
 			o = { "<cmd>FloatermNew --wintype=popup<CR>", "open a floating terminal" },
 			p = { "<cmd>FloatermNew python<CR>", "python" },
 		},
