@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ale = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["base16-vim"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/base16-vim",
@@ -88,6 +93,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

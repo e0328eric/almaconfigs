@@ -36,15 +36,23 @@ require("packer").startup(function(use)
 	use("mhinz/vim-crates")
 	use("dense-analysis/ale")
 
+	-- autocompletion
+	use("neovim/nvim-lspconfig")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
+	use("hrsh7th/nvim-cmp")
+
 	-- ultisnips
 	use("SirVer/ultisnips")
+	use("quangnguyen30192/cmp-nvim-ultisnips")
 
 	-- which-keys
 	use("folke/which-key.nvim")
 
 	-- telescope
 	use({ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" })
-	use("nvim-telescope/telescope-file-browser.nvim")
 
 	-- Miscellaneous
 	use({ "mg979/vim-visual-multi", branch = "master" })
@@ -52,6 +60,13 @@ require("packer").startup(function(use)
 	use("ggandor/lightspeed.nvim")
 	use("terrortylor/nvim-comment")
 	use("voldikss/vim-floaterm")
+	use({
+		"kyazdani42/nvim-tree.lua",
+		requires = {
+			"kyazdani42/nvim-web-devicons", -- optional, for file icon
+		},
+		tag = "master", -- optional, updated every week. (see issue #1193)
+	})
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
@@ -78,7 +93,7 @@ cmd("set guifont=Fira\\ Code\\ Nerd\\ Font")
 cmd("set hidden")
 cmd("set incsearch")
 cmd("set iskeyword+=-")
-cmd("set laststatus=2")
+cmd("set laststatus=3")
 cmd("set mouse=n")
 cmd("set nobackup")
 cmd("set noshowmode")
@@ -106,11 +121,12 @@ cmd("set updatetime=300")
 cmd("au ColorScheme * hi Normal ctermbg=none guibg=none")
 
 -- import filetypes
+cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
+if not fn.empty(fn.glob("./syntax/vesti.vim")) then
+	cmd("au BufRead,BufNewFile *.ves set filetype=vesti")
+	cmd("au BufRead,BufNewFile *.ves set filetype=glasm")
+end
 cmd([[
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-au BufRead,BufNewFile *.ves set filetype=vesti
-au BufRead,BufNewFile *.glasm set filetype=glasm
-au BufRead,BufNewFile *.asm set filetype=nasm
 filetype plugin indent on
 
 augroup remember_folds
@@ -182,17 +198,22 @@ wk.register({
 			n = { "<cmd>bnext<CR>", "next-buffer" },
 			p = { "<cmd>bprevious<CR>", "previous-buffer" },
 		},
+		e = { "<cmd>NvimTreeToggle<CR>", "open NvimTree" },
 		f = {
 			name = "+file",
 			f = { "<cmd>Telescope find_files<CR>", "Find File" },
-			b = { "<cmd>Telescope file_browser<CR>", "File Browser" },
 			r = { "<cmd>Telescope oldfiles<CR>", "Open Recent File" },
 			n = { "<cmd>enew<CR>", "New File" },
+			t = {
+				name = "+NvimTree",
+				t = { "<cmd>NvimTreeToggle<CR>", "open NvimTree" },
+				r = { "<cmd>NvimTreeRefresh<CR>", "refresh NvimTree" },
+			},
 		},
 		t = {
 			name = "+terminal",
 			g = { "<cmd>FloatermNew --height=38 lazygit<CR>", "lazygit" },
-			o = { "<cmd>FloatermNew --wintype=popup<CR>", "open a floating terminal" },
+			t = { "<cmd>FloatermNew --wintype=popup<CR>", "open a floating terminal" },
 			p = { "<cmd>FloatermNew python<CR>", "python" },
 		},
 	},
@@ -249,25 +270,55 @@ g.ale_sign_error = "!!"
 g.ale_sign_warning = "<>"
 
 --------------------------------------------------
---  Telescope
+--  nvim-tree
 --------------------------------------------------
--- stolen from https://github.com/nvim-telescope/telescope-file-browser.nvim
-require("telescope").setup({
-	extensions = {
-		file_browser = {
-			theme = "ivy",
-			-- disables netrw and use telescope-file-browser in its place
-			hijack_netrw = true,
-			-- mappings = {
-			-- 	["i"] = {
-			-- 		-- your custom insert mode mappings
-			-- 	},
-			-- 	["n"] = {
-			-- 		-- your custom normal mode mappings
-			-- 	},
-			-- },
-		},
+require("nvim-tree").setup({
+	view = {
+		mappings = {
+			list = { -- Default Mapping of nvim-tree
+				{ key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
+				{ key = "<C-e>", action = "edit_in_place" },
+				{ key = "O", action = "edit_no_picker" },
+				{ key = { "<C-]>", "<2-RightMouse>" }, action = "cd" },
+				{ key = "<C-v>", action = "vsplit" },
+				{ key = "<C-x>", action = "split" },
+				{ key = "<C-t>", action = "tabnew" },
+				{ key = "<", action = "prev_sibling" },
+				{ key = ">", action = "next_sibling" },
+				{ key = "P", action = "parent_node" },
+				{ key = "<BS>", action = "close_node" },
+				{ key = "<Tab>", action = "preview" },
+				{ key = "K", action = "first_sibling" },
+				{ key = "J", action = "last_sibling" },
+				{ key = "I", action = "toggle_git_ignored" },
+				{ key = "H", action = "toggle_dotfiles" },
+				{ key = "U", action = "toggle_custom" },
+				{ key = "R", action = "refresh" },
+				{ key = "a", action = "create" },
+				{ key = "d", action = "remove" },
+				{ key = "D", action = "trash" },
+				{ key = "r", action = "rename" },
+				{ key = "<C-r>", action = "full_rename" },
+				{ key = "x", action = "cut" },
+				{ key = "c", action = "copy" },
+				{ key = "p", action = "paste" },
+				{ key = "y", action = "copy_name" },
+				{ key = "Y", action = "copy_path" },
+				{ key = "gy", action = "copy_absolute_path" },
+				{ key = "[c", action = "prev_git_item" },
+				{ key = "]c", action = "next_git_item" },
+				{ key = "-", action = "dir_up" },
+				{ key = "s", action = "system_open" },
+				{ key = "f", action = "live_filter" },
+				{ key = "F", action = "clear_live_filter" },
+				{ key = "q", action = "close" },
+				{ key = "W", action = "collapse_all" },
+				{ key = "E", action = "expand_all" },
+				{ key = "S", action = "search_node" },
+				{ key = ".", action = "run_file_command" },
+				{ key = "<C-k>", action = "toggle_file_info" },
+				{ key = "g?", action = "toggle_help" },
+			},
+		}, -- END OF MAPPING
 	},
 })
-
-require("telescope").load_extension("file_browser")
