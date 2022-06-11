@@ -35,6 +35,7 @@ require("packer").startup(function(use)
 	use("rust-lang/rust.vim")
 	use("mhinz/vim-crates")
 	use("dense-analysis/ale")
+	use("simrat39/rust-tools.nvim")
 
 	-- autocompletion
 	use("neovim/nvim-lspconfig")
@@ -43,6 +44,8 @@ require("packer").startup(function(use)
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
 	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-vsnip")
+	use("hrsh7th/vim-vsnip")
 
 	-- ultisnips
 	use("SirVer/ultisnips")
@@ -122,10 +125,7 @@ cmd("au ColorScheme * hi Normal ctermbg=none guibg=none")
 
 -- import filetypes
 cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
-if not fn.empty(fn.glob("./syntax/vesti.vim")) then
-	cmd("au BufRead,BufNewFile *.ves set filetype=vesti")
-	cmd("au BufRead,BufNewFile *.ves set filetype=glasm")
-end
+cmd("au BufRead,BufNewFile *.ves set filetype=vesti")
 cmd([[
 filetype plugin indent on
 
@@ -134,6 +134,10 @@ augroup remember_folds
   autocmd BufWinLeave *.* mkview
   autocmd BufWinEnter *.* silent! loadview
 augroup END
+
+if has('nvim')
+  autocmd BufRead Cargo.toml call crates#toggle()
+endif
 ]])
 
 --------------------------------------------------
@@ -191,7 +195,7 @@ wk.register({
 			["4"] = { "<cmd>b4<CR>", "buffer 4" },
 			["5"] = { "<cmd>b5<CR>", "buffer 5" },
 			["?"] = { "<cmd>Telescope buffers<CR>", "show all buffers" },
-			d = { "<cmd>Bdelete<CR>", "delete buffer" },
+			d = { "<cmd>bdelete<CR>", "delete buffer" },
 			f = { "<cmd>bfirst<CR>", "first-buffer" },
 			h = { "<cmd>Startify<CR>", "home-buffer" },
 			l = { "<cmd>blast<CR>", "last-buffer" },
@@ -223,6 +227,22 @@ wk.register({
 --------------------------------------------------
 require("formatter").setup({
 	filetype = {
+		c = {
+			function()
+				return {
+					exe = "clang-format",
+					stdin = true,
+				}
+			end,
+		},
+		cpp = {
+			function()
+				return {
+					exe = "clang-format",
+					stdin = true,
+				}
+			end,
+		},
 		lua = {
 			require("formatter.filetypes.lua").stylua,
 		},
@@ -321,4 +341,101 @@ require("nvim-tree").setup({
 			},
 		}, -- END OF MAPPING
 	},
+})
+
+--------------------------------------------------
+--  rust-config
+--------------------------------------------------
+local nvim_lsp = require("lspconfig")
+
+local rust_conf_opts = {
+	tools = { -- rust-tools options
+		autoSetHints = true,
+		hover_with_actions = true,
+		inlay_hints = {
+			show_parameter_hints = false,
+			parameter_hints_prefix = "",
+			other_hints_prefix = "",
+		},
+	},
+
+	-- all the opts to send to nvim-lspconfig
+	-- these override the defaults set by rust-tools.nvim
+	-- see https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer
+	server = {
+		-- on_attach is a callback called when the language server attachs to the buffer
+		-- on_attach = on_attach,
+		settings = {
+			-- to enable rust-analyzer settings visit:
+			-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
+			["rust-analyzer"] = {
+				-- enable clippy on save
+				checkOnSave = {
+					command = "clippy",
+				},
+			},
+		},
+	},
+}
+
+require("rust-tools").setup(rust_conf_opts)
+
+--------------------------------------------------
+--  nvim-cmp
+--------------------------------------------------
+local cmp = require("cmp")
+cmp.setup({
+	snippet = {
+		expand = function(args)
+			vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+		end,
+	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
+	mapping = cmp.mapping.preset.insert({
+		["<C-p>"] = cmp.mapping.select_prev_item(),
+		["<C-n>"] = cmp.mapping.select_next_item(),
+		["<C-}>"] = cmp.mapping.select_prev_item(),
+		["<C-]>"] = cmp.mapping.select_next_item(),
+		["<C-b>"] = cmp.mapping.scroll_docs(-4),
+		["<C-f>"] = cmp.mapping.scroll_docs(4),
+		["<C-c>"] = cmp.mapping.complete(),
+		["<C-e>"] = cmp.mapping.close(),
+		["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
+	}),
+	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		{ name = "ultisnips" },
+	}, {
+		{ name = "buffer" },
+	}),
+})
+
+-- Set configuration for specific filetype.
+cmp.setup.filetype("gitcommit", {
+	sources = cmp.config.sources({
+		{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
+	}, {
+		{ name = "buffer" },
+	}),
+})
+
+-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline("/", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = "buffer" },
+	},
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(":", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
+		{ name = "cmdline" },
+	}),
 })

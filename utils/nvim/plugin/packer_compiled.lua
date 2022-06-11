@@ -79,6 +79,36 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-ultisnips"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
+    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
   ["formatter.nvim"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/formatter.nvim",
@@ -89,10 +119,20 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
     url = "https://github.com/ggandor/lightspeed.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-comment"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -113,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["rust.vim"] = {
     loaded = true,
@@ -163,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
     url = "https://github.com/mg979/vim-visual-multi"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   ["which-key.nvim"] = {
     loaded = true,
