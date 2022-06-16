@@ -36,6 +36,8 @@ require("packer").startup(function(use)
 	use("mhinz/vim-crates")
 	use("dense-analysis/ale")
 	use("simrat39/rust-tools.nvim")
+	use("luochen1990/rainbow")
+	use("bfrg/vim-cpp-modern")
 
 	-- autocompletion
 	use("neovim/nvim-lspconfig")
@@ -95,7 +97,7 @@ cmd("set formatoptions-=cro")
 cmd("set guifont=Fira\\ Code\\ Nerd\\ Font")
 cmd("set hidden")
 cmd("set incsearch")
-cmd("set iskeyword+=-")
+--cmd("set iskeyword+=-")
 cmd("set laststatus=3")
 cmd("set mouse=n")
 cmd("set nobackup")
@@ -121,7 +123,7 @@ cmd("set timeoutlen=100")
 cmd("set updatetime=300")
 
 -- transparent neovim
-cmd("au ColorScheme * hi Normal ctermbg=none guibg=none")
+--cmd("au ColorScheme * hi Normal ctermbg=none guibg=none")
 
 -- import filetypes
 cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
@@ -145,7 +147,7 @@ endif
 --------------------------------------------------
 cmd("let base16colorspace=256")
 cmd("set termguicolors")
-cmd("colorscheme base16-gruvbox-dark-pale")
+cmd("colorscheme base16-eighties")
 
 --------------------------------------------------
 --  Keybindings (Basic)
@@ -189,36 +191,37 @@ wk.register({
 	["<leader>"] = {
 		b = {
 			name = "+buffer",
-			["1"] = { "<cmd>b1<CR>", "buffer 1" },
-			["2"] = { "<cmd>b2<CR>", "buffer 2" },
-			["3"] = { "<cmd>b3<CR>", "buffer 3" },
-			["4"] = { "<cmd>b4<CR>", "buffer 4" },
-			["5"] = { "<cmd>b5<CR>", "buffer 5" },
-			["?"] = { "<cmd>Telescope buffers<CR>", "show all buffers" },
-			d = { "<cmd>bdelete<CR>", "delete buffer" },
-			f = { "<cmd>bfirst<CR>", "first-buffer" },
-			h = { "<cmd>Startify<CR>", "home-buffer" },
-			l = { "<cmd>blast<CR>", "last-buffer" },
-			n = { "<cmd>bnext<CR>", "next-buffer" },
-			p = { "<cmd>bprevious<CR>", "previous-buffer" },
+			["1"] = { ":b1<CR>", "buffer 1" },
+			["2"] = { ":b2<CR>", "buffer 2" },
+			["3"] = { ":b3<CR>", "buffer 3" },
+			["4"] = { ":b4<CR>", "buffer 4" },
+			["5"] = { ":b5<CR>", "buffer 5" },
+			["?"] = { ":Telescope buffers<CR>", "show all buffers" },
+			d = { ":bdelete<CR>", "delete buffer" },
+			f = { ":bfirst<CR>", "first-buffer" },
+			h = { ":Startify<CR>", "home-buffer" },
+			l = { ":blast<CR>", "last-buffer" },
+			n = { ":bnext<CR>", "next-buffer" },
+			p = { ":bprevious<CR>", "previous-buffer" },
 		},
-		e = { "<cmd>NvimTreeToggle<CR>", "open NvimTree" },
+		[" "] = { ':let @/=""<CR>', "clear search highlights" },
+		e = { ":NvimTreeToggle<CR>", "open NvimTree" },
 		f = {
 			name = "+file",
-			f = { "<cmd>Telescope find_files<CR>", "Find File" },
-			r = { "<cmd>Telescope oldfiles<CR>", "Open Recent File" },
-			n = { "<cmd>enew<CR>", "New File" },
+			f = { ":Telescope find_files<CR>", "Find File" },
+			r = { ":Telescope oldfiles<CR>", "Open Recent File" },
+			n = { ":enew<CR>", "New File" },
 			t = {
 				name = "+NvimTree",
-				t = { "<cmd>NvimTreeToggle<CR>", "open NvimTree" },
-				r = { "<cmd>NvimTreeRefresh<CR>", "refresh NvimTree" },
+				t = { ":NvimTreeToggle<CR>", "open NvimTree" },
+				r = { ":NvimTreeRefresh<CR>", "refresh NvimTree" },
 			},
 		},
 		t = {
 			name = "+terminal",
-			g = { "<cmd>FloatermNew --height=38 lazygit<CR>", "lazygit" },
-			t = { "<cmd>FloatermNew --wintype=popup<CR>", "open a floating terminal" },
-			p = { "<cmd>FloatermNew python<CR>", "python" },
+			g = { ":FloatermNew --height=38 lazygit<CR>", "lazygit" },
+			t = { ":FloatermNew --wintype=popup<CR>", "open a floating terminal" },
+			p = { ":FloatermNew python<CR>", "python" },
 		},
 	},
 })
@@ -288,6 +291,8 @@ require("nvim_comment").setup({
 --------------------------------------------------
 g.ale_sign_error = "!!"
 g.ale_sign_warning = "<>"
+g.ale_linters = { asm = {}, nasm = {}, tex = {}, plaintex = {} }
+keybind("n", "K", ":ALEGoToDefinition<CR>", false)
 
 --------------------------------------------------
 --  nvim-tree

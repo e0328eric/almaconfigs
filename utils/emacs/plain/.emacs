@@ -13,7 +13,7 @@
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
 (recentf-mode 1)
-(set-frame-font "JetBrainsMono Nerd Font 15" nil t)
+(set-frame-font "Comic Code Ligatures 13" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
