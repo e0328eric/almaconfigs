@@ -126,9 +126,10 @@ cmd("set updatetime=300")
 --cmd("au ColorScheme * hi Normal ctermbg=none guibg=none")
 
 -- import filetypes
-cmd("autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o")
-cmd("au BufRead,BufNewFile *.ves set filetype=vesti")
 cmd([[
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+au BufRead,BufNewFile *.ves set filetype=vesti
+au BufRead,BufNewFile *.asm set filetype=nasm
 filetype plugin indent on
 
 augroup remember_folds
