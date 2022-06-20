@@ -60,6 +60,7 @@ switch (uname)
         set PATH $PATH /usr/local/opt/llvm/bin
         set PATH $PATH /usr/local/Cellar/gcc/11.1.0_1/bin
         set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
+        set PATH $PATH /Users/almagest/Library/Application\ Support/Coursier/bin
         set PATH $PATH /opt/local/bin
         set PATH $PATH /opt/local/sbin
         set --universal -x GOPATH ~/.go
@@ -83,12 +84,9 @@ function c
     clear
 end
 
+# use helix editor for the main text editor
 function v
     nvim $argv
-end
-
-function m
-    micro $argv
 end
 
 function t
@@ -153,8 +151,6 @@ function cfmtcp
     cp ~/Github/arch-almagest/.clang-format .
 end
 
-
-starship init fish | source
 
 thefuck --alias | source
 fish_add_path /usr/local/opt/bison/bin

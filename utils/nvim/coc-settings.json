@@ -34,16 +34,10 @@
   "explorer.previewAction.onHover": false,
   "explorer.icon.source": "vim-devicons",
   "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
+    "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "coc.source.emoji.filetypes": [
-    "markdown"
-  ],
+  "coc.source.emoji.filetypes": ["markdown"],
   "zig.enabled": true,
   "zig.startUpMessage": true,
   "zig.path": "zls",
@@ -51,17 +45,8 @@
   "languageserver": {
     "ccls": {
       "command": "ccls",
-      "filetypes": [
-        "c",
-        "cpp",
-        "cuda",
-        "objc",
-        "objcpp"
-      ],
-      "rootPatterns": [
-        ".ccls-root",
-        "compile_commands.json"
-      ],
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls-root", "compile_commands.json"],
       "initializationOptions": {
         "cache": {
           "directory": ".ccls-cache"
@@ -77,19 +62,14 @@
     },
     "haskell": {
       "command": "haskell-language-server-wrapper",
-      "args": [
-        "--lsp"
-      ],
+      "args": ["--lsp"],
       "rootPatterns": [
         "*.cabal",
         "stack.yaml",
         "cabal.project",
         "package.yaml"
       ],
-      "filetypes": [
-        "haskell",
-        "lhaskell"
-      ],
+      "filetypes": ["haskell", "lhaskell"],
       "initializationOptions": {
         "languageServerHaskell": {
           "formattingProvider": "brittany"
@@ -98,9 +78,7 @@
     },
     "nim": {
       "command": "nimlsp",
-      "filetypes": [
-        "nim"
-      ]
+      "filetypes": ["nim"]
     }
   }
 }
