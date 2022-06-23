@@ -69,8 +69,8 @@ switch (uname)
         set CC /usr/local/bin/gcc-11
         set CXX /usr/local/bin/g++-11
         fish_add_path /usr/local/opt/llvm/bin
-        set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
-        set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
+        set -gx LDFLAGS -L/usr/local/opt/llvm/lib
+        set -gx CPPFLAGS -I/usr/local/opt/llvm/include
         set VCPKG_ROOT $HOME/vcpkg
 end
 
@@ -84,9 +84,13 @@ function c
     clear
 end
 
-# use helix editor for the main text editor
+# use helix as a main text editor
 function v
     nvim $argv
+end
+
+function h
+    hx $argv
 end
 
 function t
@@ -115,6 +119,10 @@ end
 
 function fishcfg
     nvim ~/.config/fish/config.fish
+end
+
+function hxcfg
+    nvim ~/.config/helix/config.toml
 end
 
 function reloadfish

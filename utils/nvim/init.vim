@@ -26,7 +26,10 @@ Plug 'luochen1990/rainbow'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'udalov/kotlin-vim'
 Plug 'tpope/vim-commentary'
+Plug 'e0328eric/vesti-vim'
 " Plug 'google/vim-maktaba' | Plug 'google/vim-codefmt' | Plug 'google/vim-glaive'
+Plug 'hrsh7th/nvim-cmp' | Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'mfussenegger/nvim-dap'
 Plug 'nvim-lua/plenary.nvim' | Plug 'scalameta/nvim-metals'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
@@ -117,7 +120,6 @@ set updatetime=300
 
 " import filetypes
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-au BufRead,BufNewFile *.ves set filetype=vesti
 au BufRead,BufNewFile *.asm set filetype=nasm
 filetype plugin indent on
 
@@ -260,11 +262,12 @@ let g:python_highlight_all = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "  vim-autoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""
-let autoformat#blacklist = ['vim', 'nvim', 'neovim']
+" Use sbt to format scala
+let autoformat#blacklist = ['vim', 'nvim', 'neovim', 'scala']
 au BufWrite * if index(autoformat#blacklist, &ft) < 0 | Autoformat | endif
 
-let g:formatdef_scalafmt = '"scalafmt --stdin 2>/dev/null"'
-let g:formatters_scala = ['scalafmt']
+" let g:formatters_scala = ['scalafmt']
+" let g:formatdef_scalafmt = '"scalafmt --stdin 2>/dev/null"'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "  vim-Commentary
@@ -443,23 +446,23 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Explorer
 let g:coc_explorer_global_presets = {
-            \   'floating': {
-                \      'position': 'floating',
-                \   },
-                \   'floatingLeftside': {
-                    \      'position': 'floating',
-                    \      'floating-position': 'left-center',
-                    \      'floating-width': 30,
-                    \   },
-                    \   'floatingRightside': {
-                        \      'position': 'floating',
-                        \      'floating-position': 'right-center',
-                        \      'floating-width': 30,
-                        \   },
-                        \   'simplify': {
-                            \     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-                            \   }
-                            \ }
+    \   'floating': {
+    \      'position': 'floating',
+    \   },
+    \   'floatingLeftside': {
+    \      'position': 'floating',
+    \      'floating-position': 'left-center',
+    \      'floating-width': 30,
+    \   },
+    \   'floatingRightside': {
+    \      'position': 'floating',
+    \      'floating-position': 'right-center',
+    \      'floating-width': 30,
+    \   },
+    \   'simplify': {
+    \     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+    \   }
+    \ }
 "nmap <silent> <space>e :CocCommand explorer<CR>
 " nnoremap <silent> <leader>e :CocCommand explorer<CR>
 " nmap <space>f :CocCommand explorer --preset floatingRightside<CR>
