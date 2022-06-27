@@ -4,14 +4,14 @@ indent = { tab-width = 4, unit = "    "}
 
 [[language]]
 name = "vesti"
-scope = "scope.ves"
+scope = "scope.vesti"
 roots = []
-injection-regex = "^vesti$"
+injection-regex = "^ves$"
 file-types = ["ves"]
 comment-token = "#"
 indent = { tab-width = 4, unit = "    " }
 
 [[grammar]]
 name = "vesti"
-source = { git = "https://github.com/e0328eric/vesti-tree-sitter" }
+source = { git = "https://github.com/e0328eric/tree-sitter-vesti", rev = "main" }
 

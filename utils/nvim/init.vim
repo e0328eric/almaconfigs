@@ -27,11 +27,10 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'udalov/kotlin-vim'
 Plug 'tpope/vim-commentary'
 Plug 'e0328eric/vesti-vim'
-" Plug 'google/vim-maktaba' | Plug 'google/vim-codefmt' | Plug 'google/vim-glaive'
+Plug 'google/vim-maktaba' | Plug 'google/vim-codefmt' | Plug 'google/vim-glaive'
 Plug 'hrsh7th/nvim-cmp' | Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'mfussenegger/nvim-dap'
 Plug 'nvim-lua/plenary.nvim' | Plug 'scalameta/nvim-metals'
-Plug 'vim-autoformat/vim-autoformat'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
 
 " ultisnips
@@ -47,7 +46,6 @@ Plug 'nvim-lua/plenary.nvim' | Plug 'nvim-telescope/telescope.nvim'
 Plug 'mg979/vim-visual-multi', { 'branch': 'master' }
 Plug 'antoyo/vim-licenses'
 Plug 'ggandor/lightspeed.nvim'
-Plug 'terrortylor/nvim-comment'
 Plug 'voldikss/vim-floaterm'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua', { 'tag': 'master' }
@@ -205,8 +203,8 @@ wk.register({
             n = { ":bnext<CR>", "next-buffer" },
             p = { ":bprevious<CR>", "previous-buffer" },
         },
-        ["/"] = { ':call Comment()<CR>', "comment" },
         [" "] = { ':let @/=""<CR>', "clear search highlights" },
+        ["/"] = { ':call Comment()<CR>', "comment" },
         e = { ":NvimTreeToggle<CR>", "open NvimTree" },
         f = {
             name = "+file",
@@ -244,30 +242,20 @@ let g:python_highlight_all = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "  vim-codefmt
 """""""""""""""""""""""""""""""""""""""""""""""""""
-" augroup autoformat_settings
-"   autocmd FileType bzl AutoFormatBuffer buildifier
-"   autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
-"   autocmd FileType dart AutoFormatBuffer dartfmt
-"   autocmd FileType go AutoFormatBuffer gofmt
-"   autocmd FileType gn AutoFormatBuffer gn
-"   autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
-"   autocmd FileType java AutoFormatBuffer google-java-format
-"   autocmd FileType python AutoFormatBuffer black
-"   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
-"   autocmd FileType rust AutoFormatBuffer rustfmt
-"   autocmd FileType scala AutoFormatBuffer scalafmt
-"   autocmd FileType vue AutoFormatBuffer prettier
-" augroup END
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-"  vim-autoformat
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use sbt to format scala
-let autoformat#blacklist = ['vim', 'nvim', 'neovim', 'scala']
-au BufWrite * if index(autoformat#blacklist, &ft) < 0 | Autoformat | endif
-
-" let g:formatters_scala = ['scalafmt']
-" let g:formatdef_scalafmt = '"scalafmt --stdin 2>/dev/null"'
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer black
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType scala AutoFormatBuffer scalafmt
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "  vim-Commentary

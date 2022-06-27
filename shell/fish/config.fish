@@ -86,7 +86,7 @@ end
 
 # use helix as a main text editor
 function v
-    nvim $argv
+    hx $argv
 end
 
 function h
@@ -114,15 +114,15 @@ function ls
 end
 
 function vimcfg
-    nvim ~/.config/nvim/init.vim
+    hx ~/.config/nvim/init.vim
 end
 
 function fishcfg
-    nvim ~/.config/fish/config.fish
+    hx ~/.config/fish/config.fish
 end
 
 function hxcfg
-    nvim ~/.config/helix/config.toml
+    hx ~/.config/helix/config.toml
 end
 
 function reloadfish

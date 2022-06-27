@@ -13,8 +13,7 @@ select = "underline"
 hidden = false
 
 [keys.normal]
-0 = "goto_line_start"
-V = "extend_line"
+V = ["goto_line_start", "select_mode", "goto_line_end"]
 Z = { Q = ":quit!", Z = ":write-quit" }
 "C-c" = "keep_primary_selection"
 "C-/" = "toggle_comments"
