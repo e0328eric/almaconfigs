@@ -1,17 +1,6 @@
+use-grammars = { only = [ "rust", "c", "cpp", "scala", "vesti" ]}
+
 [[language]]
 name = "c"
 indent = { tab-width = 4, unit = "    "}
-
-[[language]]
-name = "vesti"
-scope = "scope.vesti"
-roots = []
-injection-regex = "^ves$"
-file-types = ["ves"]
-comment-token = "#"
-indent = { tab-width = 4, unit = "    " }
-
-[[grammar]]
-name = "vesti"
-source = { git = "https://github.com/e0328eric/tree-sitter-vesti", rev = "main" }
 

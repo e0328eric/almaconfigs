@@ -119,6 +119,7 @@ set updatetime=300
 " import filetypes
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufRead,BufNewFile *.asm set filetype=nasm
+au BufRead,BufNewFile *.glasm set filetype=glasm
 filetype plugin indent on
 
 " Detect .h file as pure C header one
@@ -142,7 +143,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""
 let base16colorspace=256
 set termguicolors
-colorscheme base16-eighties
+colorscheme base16-monokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "  Keybindings (Basic)
@@ -253,7 +254,7 @@ augroup autoformat_settings
   autocmd FileType python AutoFormatBuffer black
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
   autocmd FileType rust AutoFormatBuffer rustfmt
-  autocmd FileType scala AutoFormatBuffer scalafmt
+  autocmd FileType zig AutoFormatBuffer "zig fmt"
   autocmd FileType vue AutoFormatBuffer prettier
 augroup END
 
