@@ -489,7 +489,7 @@ point reaches the beginning or end of the buffer, stop there."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell eglot doom-modeline company cmake-mode clang-format auto-complete aas)))
+   '(magit zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell eglot doom-modeline company cmake-mode clang-format auto-complete aas)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

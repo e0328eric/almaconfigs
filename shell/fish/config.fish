@@ -169,5 +169,6 @@ function cfmtcp
 end
 
 
-thefuck --alias | source
 fish_add_path /usr/local/opt/bison/bin
+thefuck --alias | source
+starship init fish | source
