@@ -129,20 +129,15 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
-  },
   neoformat = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
-  ["nvim-autopairs"] = {
+  ["nvim-base16"] = {
     loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-base16",
+    url = "https://github.com/RRethy/nvim-base16"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,

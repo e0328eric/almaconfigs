@@ -2,6 +2,7 @@
 vim.opt['autoindent'] = true
 vim.opt['autoread'] = true
 vim.opt['clipboard'] = 'unnamedplus'
+vim.opt['colorcolumn'] = '80'
 vim.opt['encoding'] = 'utf-8'
 vim.opt['expandtab'] = true
 vim.opt['fileencoding'] = 'utf-8'
@@ -32,6 +33,11 @@ vim.opt['undolevels'] = 1000
 vim.opt['undoreload'] = 10000
 
 -- Stop comments on newline
-vim.cmd('autocmd BufWinEnter * :set formatoptions-=c formatoptions-=r formatoptions-=o')
+vim.cmd([[
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+]])
 
 vim.cmd('command CDD cd %:p:h')
