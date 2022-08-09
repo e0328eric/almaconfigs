@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/hop",
     url = "https://github.com/phaazon/hop.nvim"
   },
+  kommentary = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/kommentary",
+    url = "https://github.com/b3nj5m1n/kommentary"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
@@ -153,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
-  },
-  ["nvim-comment"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-comment",
-    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-jdtls"] = {
     loaded = true,
@@ -245,10 +245,10 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["toggle-lsp-diagnostics.nvim"] = {
+  ["trouble.nvim"] = {
     loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/toggle-lsp-diagnostics.nvim",
-    url = "https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ultisnips = {
     loaded = true,
