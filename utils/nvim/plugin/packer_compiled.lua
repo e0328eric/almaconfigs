@@ -260,6 +260,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vesti-vim",
     url = "https://github.com/e0328eric/vesti-vim"
   },
+  ["vim-crates"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-crates",
+    url = "https://github.com/mhinz/vim-crates"
+  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-visual-multi",

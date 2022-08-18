@@ -44,4 +44,8 @@ au BufRead,BufNewFile *.asy set filetype=asy
 " au BufRead,BufNewFile *.asm set filetype=nasm
 " au BufRead,BufNewFile *.glasm set filetype=glasm
 filetype plugin indent on
+
+if has('nvim')
+  autocmd BufRead Cargo.toml call crates#toggle()
+endif
 ]])
