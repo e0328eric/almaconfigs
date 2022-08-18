@@ -61,7 +61,7 @@
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
 (recentf-mode 1)
-(set-frame-font "Comic Code Ligatures 13" nil t)
+(set-frame-font "JetbrainsMono Nerd Font 14" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
@@ -81,7 +81,7 @@
 (require 'doom-themes)
 (setq doom-themes-enable-bold t)
 (setq doom-themes-enable-italic t)
-(load-theme 'doom-gruvbox t)
+(load-theme 'doom-moonlight t)
 (doom-themes-visual-bell-config)
 (doom-themes-neotree-config)
 (setq doom-themes-treemacs-theme "doom-atom")
@@ -488,6 +488,8 @@ point reaches the beginning or end of the buffer, stop there."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "ddffe74bc4bf2c332c2c3f67f1b8141ee1de8fd6b7be103ade50abb97fe70f0c" default))
  '(package-selected-packages
    '(magit zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell eglot doom-modeline company cmake-mode clang-format auto-complete aas)))
 (custom-set-faces

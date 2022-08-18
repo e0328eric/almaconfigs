@@ -67,6 +67,9 @@ keymap("n", "m,", "<cmd> BufferLineMovePrev <cr>")
 keymap("n", ";j", "<cmd> HopWord <cr>")
 keymap("n", ";l", "<cmd> HopLineStart <cr>")
 
+keymap("n", "<C-\\>", "O")
+keymap("i", "<C-\\>", "<C-[>O")
+
 -- Binding for code runner
 keymap("n", "<F5>", "<cmd> Run <cr>")
 

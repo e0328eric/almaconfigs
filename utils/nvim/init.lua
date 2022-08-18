@@ -36,3 +36,12 @@ require("functions")
 require("bindings")
 require("commands")
 require("runner")
+
+vim.cmd([[
+" import filetypes
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+au BufRead,BufNewFile *.asy set filetype=asy
+" au BufRead,BufNewFile *.asm set filetype=nasm
+" au BufRead,BufNewFile *.glasm set filetype=glasm
+filetype plugin indent on
+]])
