@@ -32,8 +32,8 @@ vim.opt["undodir"] = os.getenv("HOME") .. "/.cache/nvim/undo"
 vim.opt["undolevels"] = 1000
 vim.opt["undoreload"] = 10000
 
--- Stop comments on newline
 vim.cmd([[
+let g:neoformat_enabled_cpp = []
 augroup fmt
   autocmd!
   autocmd BufWritePre * undojoin | Neoformat

@@ -65,6 +65,7 @@ switch (uname)
         set PATH $PATH /opt/local/sbin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:/$GOPATH/bin
+        set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib
         set CPATH $CPATH /opt/homebrew/include
         set CC /usr/local/bin/gcc-11
         set CXX /usr/local/bin/g++-11
@@ -151,6 +152,26 @@ function hakwon
 
         case Darwin
             cd ~/pCloud/TeX_Documents/Hakwon
+    end
+end
+
+function minireport
+    switch (uname)
+        case Linux
+            echo "*.*"
+
+        case Darwin
+            cd ~/pCloud/TeX_Documents/Mini_Report
+    end
+end
+
+function notetaking
+    switch (uname)
+        case Linux
+            echo "*.*"
+
+        case Darwin
+            cd ~/pCloud/TeX_Documents/NoteTaking
     end
 end
 
