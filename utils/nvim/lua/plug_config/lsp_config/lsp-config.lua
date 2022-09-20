@@ -20,8 +20,8 @@ local servers = {
 	"cssls",
 	"rust_analyzer",
 	"sumneko_lua",
-	"marksman",
 	"zls",
+	"ocamllsp",
 }
 
 for _, lsp in ipairs(servers) do

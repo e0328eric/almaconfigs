@@ -55,6 +55,7 @@ switch (uname)
         set PATH $PATH /Users/almagest/.nimble/bin
         set PATH $PATH /Users/almagest/.flutter/bin
         set PATH $PATH /Users/almagest/.npm-global/bin
+        set PATH $PATH /Users/almagest/.opam/default/bin
         set PATH $PATH /usr/local/bin
         set PATH $PATH /usr/local/opt/qt/bin
         set PATH $PATH /usr/local/opt/llvm/bin
@@ -189,7 +190,8 @@ function cfmtcp
     cp ~/Github/arch-almagest/format/.clang-format .
 end
 
-
 fish_add_path /usr/local/opt/bison/bin
 thefuck --alias | source
 starship init fish | source
+
+eval $(opam config env)

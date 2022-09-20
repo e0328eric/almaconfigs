@@ -17,10 +17,8 @@
 		     ace-window
 			 ansi-color
 		     auto-complete
-		     clang-format
 		     doom-modeline
 		     doom-themes
-		     eglot
 		     exec-path-from-shell
 		     ivy
 		     lsp-mode
@@ -129,16 +127,6 @@
   (skip-syntax-backward "-")
   (skip-syntax-backward "^-"))
 
-(defun copy-clang-format-to-current-dir ()
-  (interactive)
-  (shell-command "cp ~/.config/.clang-format ."))
-
-(require 'clang-format)
-(defun clang-format-and-save-buffer ()
-  (interactive)
-  (clang-format-buffer)
-  (save-buffer))
-
 ;; copied this function from here:
 ;; https://emacsredux.com/blog/2013/05/22/smarter-navigation-to-the-beginning-of-a-line/
 (defun smarter-move-beginning-of-line (arg)
@@ -243,19 +231,6 @@ point reaches the beginning or end of the buffer, stop there."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Language Configuration ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; C/C++ configuration
-(defun c-cpp-configs ()
-    (setq c-syntactic-indentation nil)
-	(local-set-key (kbd "C-z C-f C-c") 'copy-clang-format-to-current-dir)
-	(local-set-key (kbd "C-x C-s") 'clang-format-and-save-buffer))
-
-(setq c-default-style '((java-mode . "java")
-                        (awk-mode . "awk")
-                        (other . "linux")))
-
-(add-hook 'c-mode-hook 'c-cpp-configs)
-(add-hook 'c++-mode-hook 'c-cpp-configs)
-
 ;; TeX configuration
 (defun tex-configs ()
   (local-set-key (kbd "<C-S-return>")	'tex-feed-input)
@@ -491,7 +466,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(custom-safe-themes
    '("8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "ddffe74bc4bf2c332c2c3f67f1b8141ee1de8fd6b7be103ade50abb97fe70f0c" default))
  '(package-selected-packages
-   '(magit zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell eglot doom-modeline company cmake-mode clang-format auto-complete aas)))
+   '(magit zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell doom-modeline company cmake-mode auto-complete aas)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
