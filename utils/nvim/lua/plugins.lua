@@ -8,6 +8,8 @@ return require("packer").startup(function(use)
 	use("RRethy/nvim-base16")
 	use("andweeb/presence.nvim")
 
+    use("jceb/vim-orgmode")
+
 	-- functional plugins
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
@@ -27,7 +29,6 @@ return require("packer").startup(function(use)
 	use("SirVer/ultisnips")
 	use("folke/which-key.nvim")
 	use("b3nj5m1n/kommentary")
-	use("sbdchd/neoformat")
 	use("mhinz/vim-crates")
 	use({ "turbio/bracey.vim", run = "cd app & npm install --prefix server" })
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })

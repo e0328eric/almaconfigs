@@ -270,6 +270,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-crates",
     url = "https://github.com/mhinz/vim-crates"
   },
+  ["vim-orgmode"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-orgmode",
+    url = "https://github.com/jceb/vim-orgmode"
+  },
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-visual-multi",

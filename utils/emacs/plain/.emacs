@@ -1,7 +1,6 @@
-;; melpa package settings
 (require 'package)
 (add-to-list 'package-archives
-			 '("melpa" . "https://melpa.org/packages/") t)
+	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -9,13 +8,13 @@
 
 ;; Install Packages
 (setq package-list '(
-			 all-the-icons
-			 company
-			 flycheck
-			 posframe
+		     all-the-icons
+		     company
+		     ;;flycheck
+		     ;;posframe
 		     aas
 		     ace-window
-			 ansi-color
+		     ansi-color
 		     auto-complete
 		     doom-modeline
 		     doom-themes
@@ -30,21 +29,13 @@
 		     treemacs
 		     undo-tree
 		     vterm
-		     which-key
 		     yasnippet
 		     ;; language modes
-		     cmake-mode
-			 dap-mode
 		     go-mode
 		     haskell-mode
-		     kotlin-mode
-			 lsp-haskell
-			 lsp-metals
+		     tuareg
 		     rust-mode
-			 sbt-mode
-		     scala-mode
-		     zig-mode
-))
+		     zig-mode))
 
 (unless package-archive-contents
   (package-refresh-contents))
@@ -59,6 +50,8 @@
 (tool-bar-mode 0)
 (toggle-scroll-bar 0)
 (recentf-mode 1)
+(setq warning-minimum-level :emergency)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 (set-frame-font "JetbrainsMono Nerd Font 14" nil t)
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
@@ -85,14 +78,6 @@
 (setq doom-themes-treemacs-theme "doom-atom")
 (doom-themes-treemacs-config)
 (doom-themes-org-config)
-
-;; load emacs.local
-(add-to-list 'load-path (expand-file-name "~/.emacs.local/"))
-(require 'asy-mode)
-(require 'texmathp)
-(require 'make-regexp)
-(require 'bison-mode)
-(require 'vesti-mode)
 
 ;; Backup and Autosave Directories
 (setq temporary-file-directory "~/.tmp/")
@@ -243,57 +228,6 @@ point reaches the beginning or end of the buffer, stop there."
 (require 'rust-mode)
 (setq rust-format-on-save t)
 
-;; Scala configuration
-(use-package scala-mode
-  :interpreter
-  ("scala" . scala-mode))
-
-(use-package sbt-mode
-  :commands sbt-start sbt-command
-  :config
-  (substitute-key-definition
-   'minibuffer-complete-word
-   'self-insert-command
-   minibuffer-local-completion-map)
-   (setq sbt:program-options '("-Dsbt.supershell=false"))
-)
-
-(use-package lsp-mode
-  ;; Optional - enable lsp-mode automatically in scala files
-  :hook
-  (haskell-mode . lsp)
-  (scala-mode . lsp)
-  (lsp-mode . lsp-lens-mode)
-  
-  :config
-  ;; Uncomment following section if you would like to tune lsp-mode performance according to
-  ;; https://emacs-lsp.github.io/lsp-mode/page/performance/
-  ;;       (setq gc-cons-threshold 100000000) ;; 100mb
-  ;;       (setq read-process-output-max (* 1024 1024)) ;; 1mb
-  ;;       (setq lsp-idle-delay 0.500)
-  ;;       (setq lsp-log-io nil)
-  ;;       (setq lsp-completion-provider :capf)
-  (setq lsp-prefer-flymake nil))
-
-(require 'lsp-ui)
-(lsp-ui-mode)
-
-(use-package posframe)
-
-(use-package dap-mode
-  :hook
-  (lsp-mode . dap-mode)
-  (lsp-mode . dap-ui-mode))
-
-;; Haskell configuration
-(require 'lsp-haskell)
-(setq lsp-haskell-server-path "haskell-language-server-wrapper")
-(setq lsp-haskell-server-args ())
-(setq lsp-log-io t)
-
-(with-eval-after-load 'lsp-mode
-  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
-
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; package settings ;;
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -317,9 +251,6 @@ point reaches the beginning or end of the buffer, stop there."
 (require 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 (setq aw-background nil)
-
-(use-package flycheck
-  :init (global-flycheck-mode))
 
 (require 'aas)
 (add-hook 'latex-mode 'aas.activate-for-major-mode)
@@ -457,19 +388,3 @@ point reaches the beginning or end of the buffer, stop there."
         ("<escape> t B"		.	treemacs-bookmark)
         ("<escape> t C-t"	.	treemacs-find-file)
         ("<escape> t M-t"	.	treemacs-find-tag)))
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a" "ddffe74bc4bf2c332c2c3f67f1b8141ee1de8fd6b7be103ade50abb97fe70f0c" default))
- '(package-selected-packages
-   '(magit zig-mode yasnippet which-key vterm use-package undo-tree treemacs smex scala-mode rust-mode rainbow-delimiters nlinum-relative multiple-cursors lsp-ui lsp-haskell kotlin-mode ivy haskell-mode go-mode exec-path-from-shell doom-modeline company cmake-mode auto-complete aas)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
