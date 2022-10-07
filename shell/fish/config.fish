@@ -45,7 +45,7 @@ switch (uname)
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
 	function v
-	    helix $argv
+	    nvim $argv
 	end
 
 	function h
@@ -61,15 +61,15 @@ switch (uname)
 	end
 
 	function vimcfg
-	    helix ~/.config/helix/init.vim
+	    nvim ~/.config/helix/init.vim
 	end
 
 	function fishcfg
-	    helix ~/.config/fish/config.fish
+	    nvim ~/.config/fish/config.fish
 	end
 
 	function hxcfg
-	    helix ~/.config/helix/config.toml
+	    nvim ~/.config/helix/config.toml
 	end
 
     case Darwin

@@ -1,6 +1,14 @@
-use-grammars = { only = [ "rust", "c", "cpp", "scala", "vesti" ]}
-
 [[language]]
 name = "c"
 indent = { tab-width = 4, unit = "    "}
 
+[[language]]
+name = "nasm"
+scope = "source.asm"
+file-types = ["asm", "s"]
+comment-token = ";"
+roots = []
+
+[[grammar]]
+name = "nasm"
+source = { git = "https://github.com/PictElm/tree-sitter-nasm", rev = "main" }

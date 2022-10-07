@@ -13,7 +13,7 @@ end
 -- include plugins and their config
 require("plugins")
 require("plug_config.treesitter")
-require("plug_config.base16")
+--require("plug_config.base16")
 -- require('plug_config.colour')
 require("plug_config.toggleTerm")
 require("plug_config.presence")
@@ -38,6 +38,9 @@ require("commands")
 require("runner")
 
 vim.cmd([[
+" colorscheme
+colorscheme bogster
+
 " import filetypes
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufRead,BufNewFile *.asy set filetype=asy

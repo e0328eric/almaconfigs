@@ -5,7 +5,8 @@ return require("packer").startup(function(use)
 	use("hrsh7th/vim-vsnip")
 	use("glepnir/dashboard-nvim")
 	-- use 'marko-cerovac/material.nvim'
-	use("RRethy/nvim-base16")
+	-- use("RRethy/nvim-base16")
+    use("vv9k/bogster")
 	use("andweeb/presence.nvim")
 
     use("jceb/vim-orgmode")
@@ -31,7 +32,6 @@ return require("packer").startup(function(use)
 	use("b3nj5m1n/kommentary")
 	use("mhinz/vim-crates")
 	use({ "turbio/bracey.vim", run = "cd app & npm install --prefix server" })
-	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
 	use("sbdchd/neoformat")
 	use({
 		"ur4ltz/surround.nvim",

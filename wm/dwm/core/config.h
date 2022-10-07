@@ -16,13 +16,13 @@ static const int smartgaps          = 1;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = {
-    "Noto Sans CJK KR:size=9",
-    "LiberationMono:fontformat=truetype:size=12:antialias=true",
-    "SpaceMono Nerd Font:fontformat=truetype:size=10:antialias=true",
-    "SpaceMono Nerd Font Mono:pixselsize=9",
-    "Siji:fontformat=truetype:size=12:antialias=true",
+    "JetBrainsMono Nerd Font:size=9",
+    // "LiberationMono:fontformat=truetype:size=12:antialias=true",
+    // "SpaceMono Nerd Font:fontformat=truetype:size=10:antialias=true",
+    // "SpaceMono Nerd Font Mono:pixselsize=9",
+    // "Siji:fontformat=truetype:size=12:antialias=true",
 };
-static const char dmenufont[]       = "Noto Sans CJK KR:size=9";
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=9";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -71,13 +71,13 @@ static const Layout layouts[] = {
 	{ ModMask|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define TERMCMD(cmd) { .v = (const char*[]){ "konsole", "-e", cmd, NULL } }
+#define TERMCMD(cmd) { .v = (const char*[]){ "alacritty", cmd, NULL } }
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_extended_run", NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browsercmd[]  = { "firefox", NULL };
 //static const char *emacscmd[]  = { "emacs", NULL };
 static const char *vscodecmd[]  = { "code-insiders", NULL };
@@ -143,7 +143,7 @@ static Key keys[] = {
     { ModMask|ShiftMask,             XK_w,      incrovgaps,     {.i = +1 } },
     { ModMask|ShiftMask,             XK_s,      incrovgaps,     {.i = -1 } },
     { ModMask|ShiftMask,             XK_e,      zoom,           {0} },
-    { ModMask|ShiftMask,             XK_q,      killclient,     {0} },
+    { ModMask|ShiftMask,             XK_z,      killclient,     {0} },
     { ModMask|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
     { ModMask|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
     { ModMask|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
