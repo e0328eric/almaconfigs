@@ -44,6 +44,33 @@ switch (uname)
             rm -rf /home/almagest/.local/share/Trash
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
+	function v
+	    helix $argv
+	end
+
+	function h
+	    helix $argv
+	end
+
+	function t
+	    tmux $argv
+	end
+
+	function l
+	    ls -al $argv
+	end
+
+	function vimcfg
+	    helix ~/.config/helix/init.vim
+	end
+
+	function fishcfg
+	    helix ~/.config/fish/config.fish
+	end
+
+	function hxcfg
+	    helix ~/.config/helix/config.toml
+	end
 
     case Darwin
         set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
@@ -74,26 +101,38 @@ switch (uname)
         set -gx LDFLAGS -L/usr/local/opt/llvm/lib
         set -gx CPPFLAGS -I/usr/local/opt/llvm/include
         set VCPKG_ROOT $HOME/vcpkg
+
+	function v
+	    nvim $argv
+	end
+
+	function h
+	    hx $argv
+	end
+
+	function t
+	    tmux $argv
+	end
+
+	function l
+	    ls -al $argv
+	end
+
+	function vimcfg
+	    nvim ~/.config/nvim/init.vim
+	end
+
+	function fishcfg
+	    nvim ~/.config/fish/config.fish
+	end
+
+	function hxcfg
+	    nvim ~/.config/helix/config.toml
+	end
 end
 
 function c
     clear
-end
-
-function v
-    nvim $argv
-end
-
-function h
-    hx $argv
-end
-
-function t
-    tmux $argv
-end
-
-function l
-    ls -al $argv
 end
 
 function lg
@@ -106,18 +145,6 @@ end
 
 function ls
     exa $argv
-end
-
-function vimcfg
-    nvim ~/.config/nvim/init.vim
-end
-
-function fishcfg
-    nvim ~/.config/fish/config.fish
-end
-
-function hxcfg
-    nvim ~/.config/helix/config.toml
 end
 
 function reloadfish

@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path GOPATH:/Users/almagest/\x2ego
+SETUVAR --export --path GOPATH:/home/almagest/\x2ego
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_status:red
