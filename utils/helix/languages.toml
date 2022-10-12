@@ -12,3 +12,18 @@ roots = []
 [[grammar]]
 name = "nasm"
 source = { git = "https://github.com/PictElm/tree-sitter-nasm", rev = "main" }
+
+[[language]]
+name = "nim"
+scope = "source.nim"
+injection-regex = "nim"
+file-types = ["nim","nims"]
+shebangs = ["nim"]
+roots = []
+comment-token = "#"
+language-server = { command = "nimlsp" }
+indent = { tab-width = 4, unit = " " }
+
+[[grammar]]
+name = "nim"
+source = { git = "https://github.com/aMOPel/tree-sitter-nim", rev = "3727117e9a793610138ab0eabd75bef04c86299f" }

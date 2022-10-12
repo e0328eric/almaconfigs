@@ -33,7 +33,7 @@ vim.opt["undolevels"] = 1000
 vim.opt["undoreload"] = 10000
 
 vim.cmd([[
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
 let g:neoformat_enabled_cpp = []
 augroup fmt
   autocmd!

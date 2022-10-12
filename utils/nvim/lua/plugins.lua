@@ -4,9 +4,8 @@ return require("packer").startup(function(use)
 	-- apperative plugins
 	use("hrsh7th/vim-vsnip")
 	use("glepnir/dashboard-nvim")
-	-- use 'marko-cerovac/material.nvim'
-	-- use("RRethy/nvim-base16")
-    use("vv9k/bogster")
+	use("RRethy/nvim-base16")
+    --use("vv9k/bogster")
 	use("andweeb/presence.nvim")
 
     use("jceb/vim-orgmode")

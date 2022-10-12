@@ -44,33 +44,33 @@ switch (uname)
             rm -rf /home/almagest/.local/share/Trash
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
-	function v
-	    nvim $argv
-	end
+        function v
+            nvim $argv
+        end
 
-	function h
-	    helix $argv
-	end
+        function h
+            helix $argv
+        end
 
-	function t
-	    tmux $argv
-	end
+        function t
+            tmux $argv
+        end
 
-	function l
-	    ls -al $argv
-	end
+        function l
+            ls -al $argv
+        end
 
-	function vimcfg
-	    nvim ~/.config/helix/init.vim
-	end
+        function vimcfg
+            nvim ~/.config/helix/init.vim
+        end
 
-	function fishcfg
-	    nvim ~/.config/fish/config.fish
-	end
+        function fishcfg
+            nvim ~/.config/fish/config.fish
+        end
 
-	function hxcfg
-	    nvim ~/.config/helix/config.toml
-	end
+        function hxcfg
+            nvim ~/.config/helix/config.toml
+        end
 
     case Darwin
         set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
@@ -102,33 +102,33 @@ switch (uname)
         set -gx CPPFLAGS -I/usr/local/opt/llvm/include
         set VCPKG_ROOT $HOME/vcpkg
 
-	function v
-	    nvim $argv
-	end
+        function v
+            hx $argv
+        end
 
-	function h
-	    hx $argv
-	end
+        function h
+            hx $argv
+        end
 
-	function t
-	    tmux $argv
-	end
+        function t
+            tmux $argv
+        end
 
-	function l
-	    ls -al $argv
-	end
+        function l
+            ls -al $argv
+        end
 
-	function vimcfg
-	    nvim ~/.config/nvim/init.vim
-	end
+        function vimcfg
+            hx ~/.config/nvim/init.vim
+        end
 
-	function fishcfg
-	    nvim ~/.config/fish/config.fish
-	end
+        function fishcfg
+            hx ~/.config/fish/config.fish
+        end
 
-	function hxcfg
-	    nvim ~/.config/helix/config.toml
-	end
+        function hxcfg
+            hx ~/.config/helix/config.toml
+        end
 end
 
 function c
@@ -214,5 +214,3 @@ end
 fish_add_path /usr/local/opt/bison/bin
 thefuck --alias | source
 starship init fish | source
-
-eval $(opam config env)
