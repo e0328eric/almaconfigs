@@ -10,15 +10,23 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	execute("packadd packer.nvim")
 end
 
+require("general")
+require("functions")
+require("bindings")
+require("commands")
+require("runner")
+
 -- include plugins and their config
 require("plugins")
 require("plug_config.treesitter")
-require("plug_config.base16")
---require('plug_config.colour')
+--require("plug_config.base16")
+-- require('plug_config.colour')
 require("plug_config.toggleTerm")
 require("plug_config.presence")
 require("plug_config.lualine")
 require("plug_config.colorizer")
+require("plug_config.lsp_config.lsp-cmp")
+require("plug_config.lsp_config.lsp-config")
 require("plug_config.lazygit")
 require("plug_config.bufferline")
 require("plug_config.hop")
@@ -29,13 +37,11 @@ require("plug_config.telescope")
 require("plug_config.ultisnips")
 require("plug_config.kommentary")
 
-require("general")
-require("functions")
-require("bindings")
-require("commands")
-require("runner")
-
 vim.cmd([[
+" colorscheme
+colorscheme bogster
+highlight ColorColumn ctermbg=7 guibg=Gray
+
 " import filetypes
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufRead,BufNewFile *.asy set filetype=asy

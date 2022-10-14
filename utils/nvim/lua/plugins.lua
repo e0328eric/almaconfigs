@@ -4,15 +4,20 @@ return require("packer").startup(function(use)
 	-- apperative plugins
 	use("hrsh7th/vim-vsnip")
 	use("glepnir/dashboard-nvim")
-	use("RRethy/nvim-base16")
-    --use("vv9k/bogster")
+	-- use 'marko-cerovac/material.nvim'
+	-- use("RRethy/nvim-base16")
+    use("vv9k/bogster")
 	use("andweeb/presence.nvim")
 
     use("jceb/vim-orgmode")
+    use({ 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' })
 
 	-- functional plugins
-    use("dense-analysis/ale")
-    use("zah/nim.vim")
+	use("neovim/nvim-lspconfig")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/nvim-cmp")
 	use("williamboman/nvim-lsp-installer")
 	use("mfussenegger/nvim-jdtls")
 	use("onsails/lspkind-nvim")
