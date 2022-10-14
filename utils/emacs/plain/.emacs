@@ -33,6 +33,7 @@
 		     ;; language modes
 		     go-mode
 		     haskell-mode
+			 nim-mode
 		     tuareg
 		     rust-mode
 		     zig-mode))
@@ -56,6 +57,7 @@
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
+(setq nlinum-relative-mode t)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 (setq-default indent-tab-mode nil)

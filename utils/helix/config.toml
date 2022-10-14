@@ -13,5 +13,9 @@ select = "underline"
 hidden = false
 
 [keys.normal]
+g = { E = "goto_file_end" }
 V = ["goto_line_start", "select_mode", "goto_line_end"]
 Z = { Q = ":quit!", Z = ":write-quit" }
+
+[keys.select]
+g = { E = "goto_file_end" }
