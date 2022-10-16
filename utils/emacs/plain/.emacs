@@ -22,6 +22,7 @@
 		     ivy
 		     lsp-mode
 		     lsp-ui
+			 magit
 		     multiple-cursors
 		     nlinum-relative
 		     rainbow-delimiters
@@ -69,6 +70,11 @@
 	     (setq mac-option-modifier 'super)
 	     (setq mac-control-modifier 'control)
 	     (setq ns-function-modifier 'hyper)))
+
+(require 'ivy)
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq ivy-count-format "[%d/%d] ")
 
 ;; load themes
 (require 'doom-themes)
@@ -239,11 +245,6 @@ point reaches the beginning or end of the buffer, stop there."
 
 (require 'exec-path-from-shell)
 (exec-path-from-shell-initialize)
-
-(require 'ivy)
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
-(setq ivy-count-format "[%d/%d] ")
 
 (require 'smex)
 (global-set-key (kbd "M-x") 'smex)
