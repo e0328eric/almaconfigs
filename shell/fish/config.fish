@@ -119,15 +119,15 @@ switch (uname)
         end
 
         function vimcfg
-            nvim ~/.config/nvim/init.vim
+            hx ~/.config/nvim/init.vim
         end
 
         function fishcfg
-            nvim ~/.config/fish/config.fish
+            hx ~/.config/fish/config.fish
         end
 
         function hxcfg
-            nvim ~/.config/helix/config.toml
+            hx ~/.config/helix/config.toml
         end
 end
 

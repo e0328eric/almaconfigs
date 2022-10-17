@@ -58,7 +58,6 @@
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 (setenv "LANG" "en_US.UTF-8")
 ;;(setq-default cursor-type 'bar)
-(setq nlinum-relative-mode t)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
 (setq-default indent-tab-mode nil)
@@ -70,6 +69,9 @@
 	     (setq mac-option-modifier 'super)
 	     (setq mac-control-modifier 'control)
 	     (setq ns-function-modifier 'hyper)))
+
+(require 'nlinum-relative)
+(nlinum-relative-mode 1)
 
 (require 'ivy)
 (ivy-mode 1)

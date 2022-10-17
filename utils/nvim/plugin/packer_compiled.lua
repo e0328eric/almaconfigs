@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
+  ["nim.nvim"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nim.nvim",
+    url = "https://github.com/alaviss/nim.nvim"
+  },
   ["nvim-bufferline.lua"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-bufferline.lua",
@@ -188,21 +193,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-treesitter-refactor"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter-refactor"
-  },
-  ["nvim-ts-autotag"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

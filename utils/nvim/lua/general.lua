@@ -6,6 +6,7 @@ vim.opt["colorcolumn"] = "100"
 vim.opt["encoding"] = "utf-8"
 vim.opt["expandtab"] = true
 vim.opt["fileencoding"] = "utf-8"
+vim.opt["foldenable"] = false
 vim.opt["hidden"] = true
 vim.opt["hlsearch"] = true
 vim.opt["laststatus"] = 3

@@ -18,8 +18,7 @@ require("runner")
 
 -- include plugins and their config
 require("plugins")
-require("plug_config.treesitter")
---require("plug_config.base16")
+-- require("plug_config.base16")
 -- require('plug_config.colour')
 require("plug_config.toggleTerm")
 require("plug_config.presence")
