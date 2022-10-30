@@ -393,3 +393,6 @@ point reaches the beginning or end of the buffer, stop there."
         ("<escape> t B"		.	treemacs-bookmark)
         ("<escape> t C-t"	.	treemacs-find-file)
         ("<escape> t M-t"	.	treemacs-find-tag)))
+;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
+(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
+;; ## end of OPAM user-setup addition for emacs / base ## keep this line

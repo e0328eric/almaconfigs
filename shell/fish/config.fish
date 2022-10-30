@@ -86,13 +86,15 @@ switch (uname)
         set PATH $PATH /usr/local/bin
         set PATH $PATH /usr/local/opt/qt/bin
         set PATH $PATH /usr/local/opt/llvm/bin
+        set PATH $PATH /usr/local/go/bin
         set PATH $PATH /usr/local/Cellar/gcc/11.1.0_1/bin
         set PATH $PATH /usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin
         set PATH $PATH /Users/almagest/Library/Application\ Support/Coursier/bin
         set PATH $PATH /opt/local/bin
         set PATH $PATH /opt/local/sbin
         set --universal -x GOPATH ~/.go
-        set PATH $PATH $GOROOT/bin:/$GOPATH/bin
+        set PATH $PATH $GOROOT/bin:$GOPATH/bin
+        set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
         set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib
         set CPATH $CPATH /opt/homebrew/include
         set CC /usr/local/bin/gcc-11
@@ -119,15 +121,15 @@ switch (uname)
         end
 
         function vimcfg
-            hx ~/.config/nvim/init.vim
+            nvim ~/.config/nvim/init.vim
         end
 
         function fishcfg
-            hx ~/.config/fish/config.fish
+            nvim ~/.config/fish/config.fish
         end
 
         function hxcfg
-            hx ~/.config/helix/config.toml
+            nvim ~/.config/helix/config.toml
         end
 end
 
@@ -157,6 +159,10 @@ end
 
 function gitall
     git add . && git commit -m $argv && git push origin master
+end
+
+function getaedif
+    wget https://github.com/e0328eric/aedif/raw/main/aedif.h
 end
 
 function s
@@ -214,3 +220,6 @@ end
 fish_add_path /usr/local/opt/bison/bin
 thefuck --alias | source
 starship init fish | source
+
+# opam configuration
+source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true

@@ -5,7 +5,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/vim-vsnip")
 	use("glepnir/dashboard-nvim")
 	-- use 'marko-cerovac/material.nvim'
-	-- use("RRethy/nvim-base16")
+	use("RRethy/nvim-base16")
 	use("vv9k/bogster")
 	use("andweeb/presence.nvim")
 
@@ -38,6 +38,8 @@ return require("packer").startup(function(use)
 			require("surround").setup({ mappings_style = "surround" })
 		end,
 	})
+
+	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
 	use({
 		"lewis6991/gitsigns.nvim",

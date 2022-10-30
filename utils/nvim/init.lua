@@ -18,10 +18,10 @@ require("runner")
 
 -- include plugins and their config
 require("plugins")
--- require("plug_config.base16")
--- require('plug_config.colour')
+require("plug_config.base16")
 require("plug_config.toggleTerm")
 require("plug_config.presence")
+require("plug_config.treesitter")
 require("plug_config.lualine")
 require("plug_config.colorizer")
 require("plug_config.lsp_config.lsp-cmp")
@@ -38,7 +38,6 @@ require("plug_config.kommentary")
 
 vim.cmd([[
 " colorscheme
-colorscheme bogster
 highlight ColorColumn ctermbg=7 guibg=Gray
 
 " import filetypes
