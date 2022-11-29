@@ -1,4 +1,4 @@
-theme = "bogster"
+theme = "tokyonight"
 
 [editor]
 auto-pairs = false
@@ -16,6 +16,8 @@ hidden = false
 g = { E = "goto_file_end" }
 V = ["goto_line_start", "select_mode", "goto_line_end"]
 Z = { Q = ":quit!", Z = ":write-quit" }
+"C-up" = "copy_selection_on_prev_line"
+"C-down" = "copy_selection_on_next_line"
 
 [keys.select]
 g = { E = "goto_file_end" }
