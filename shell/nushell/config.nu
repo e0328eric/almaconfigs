@@ -1,15 +1,5 @@
 # Nushell Config File
 
-# Aliases
-alias v = nvim
-alias t = tmux
-alias e = emacs&
-alias ll = ls -l
-alias l = ls -a
-alias s = ls
-
-source ~/.cache/starship/init.nu
-
 module completions {
   # Custom completions for external commands (those outside of Nushell)
   # Each completions has two parts: the form of the external command, including its flags and parameters
@@ -241,32 +231,38 @@ let light_theme = {
     shape_nothing: light_cyan
 }
 
+# External completer example
+# let carapace_completer = {|spans| 
+#     carapace $spans.0 nushell $spans | from json
+# }
+
+
 # The default config record. This is where much of your global configuration is setup.
 let-env config = {
+  external_completer: $nothing # check 'carapace_completer' above to as example
   filesize_metric: false
-  table_mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+  table_mode: compact
   use_ls_colors: true
   rm_always_trash: false
-  color_config: $dark_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
+  color_config: $dark_theme
   use_grid_icons: true
-  footer_mode: "25" # always, never, number_of_rows, auto
-  quick_completions: true  # set this to false to prevent auto-selecting completions when only one remains
-  partial_completions: true  # set this to false to prevent partial filling of the prompt
-  completion_algorithm: "prefix"  # prefix, fuzzy
+  footer_mode: "25"
+  quick_completions: true
+  partial_completions: true
+  completion_algorithm: "fuzzy"
   float_precision: 2
-  # buffer_editor: "emacs" # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
   use_ansi_coloring: true
   filesize_format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, zb, zib, auto
-  edit_mode: emacs # emacs, vi
-  max_history_size: 10000 # Session has to be reloaded for this to take effect
-  sync_history_on_enter: true # Enable to share the history between multiple sessions, else you have to close the session to persist history to file
-  history_file_format: "plaintext" # "sqlite" or "plaintext"
-  shell_integration: true # enables terminal markers and a workaround to arrow keys stop working issue
-  disable_table_indexes: false # set to true to remove the index column from tables
-  cd_with_abbreviations: false # set to true to allow you to do things like cd s/o/f and nushell expand it to cd some/other/folder
-  case_sensitive_completions: false # set to true to enable case-sensitive completions
-  enable_external_completion: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up my be very slow
-  max_external_completion_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
+  edit_mode: emacs # vi
+  max_history_size: 10000
+  sync_history_on_enter: true
+  history_file_format: "sqlite" # "sqlite" or "plaintext"
+  shell_integration: true
+  disable_table_indexes: false
+  cd_with_abbreviations: false
+  case_sensitive_completions: false
+  enable_external_completion: true
+  max_external_completion_results: 100
   # A strategy of managing table view in case of limited space.
   table_trim: {
     methodology: wrapping, # truncating
@@ -275,6 +271,8 @@ let-env config = {
     # A suffix which will be used with 'truncating' methodology
     # truncating_suffix: "..."
   }
+  show_banner: false
+  show_clickable_links_in_ls: true
 
   hooks: {
     pre_prompt: [{
@@ -511,3 +509,8 @@ let-env config = {
     }
   ]
 }
+
+def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
+alias open = ^open
+
+source ~/.cache/starship/init.nu

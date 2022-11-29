@@ -121,15 +121,15 @@ switch (uname)
         end
 
         function vimcfg
-            nvim ~/.config/nvim/init.vim
+            hx ~/.config/nvim/init.vim
         end
 
         function fishcfg
-            nvim ~/.config/fish/config.fish
+            hx ~/.config/fish/config.fish
         end
 
         function hxcfg
-            nvim ~/.config/helix/config.toml
+            hx ~/.config/helix/config.toml
         end
 end
 
@@ -193,6 +193,16 @@ function minireport
     end
 end
 
+function voca
+    switch (uname)
+        case Linux
+            echo "*.*"
+
+        case Darwin
+            cd /Users/almagest/pCloud/Voca
+    end
+end
+
 function notetaking
     switch (uname)
         case Linux
@@ -223,3 +233,7 @@ starship init fish | source
 
 # opam configuration
 source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
+
+set -gx WASMTIME_HOME "$HOME/.wasmtime"
+
+string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH

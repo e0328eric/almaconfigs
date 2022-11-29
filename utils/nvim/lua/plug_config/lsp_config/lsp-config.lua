@@ -13,6 +13,7 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 local servers = {
 	"cmake",
+	"ccls",
 	"cssls",
 	"hls",
 	"html",
@@ -20,7 +21,6 @@ local servers = {
 	"pyright",
 	"rust_analyzer",
 	"sumneko_lua",
-	"tsserver",
 	"zls",
 	"gopls",
 }
