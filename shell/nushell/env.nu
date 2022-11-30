@@ -58,8 +58,8 @@ let-env NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
-alias v = hx
-alias h = nvim
+alias v = nvim
+alias h = hx
 alias t = tmux
 alias lg = lazygit
 alias hakwon = cd "~/pCloud/TeX_Documents/Hakwon"
