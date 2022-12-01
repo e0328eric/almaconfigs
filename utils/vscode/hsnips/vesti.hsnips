@@ -2,13 +2,6 @@ snippet MK "math mode" iA
 $${1}$$0
 endsnippet
 
-snippet be
-\[
-    $1
-\]
-$0
-endsnippet
-
 snippet sum "sumation" i
 \sum_{$1}^{$2}$0
 endsnippet

@@ -58,6 +58,7 @@ let-env NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
+alias s = ls
 alias v = nvim
 alias h = hx
 alias t = tmux

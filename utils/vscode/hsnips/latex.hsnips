@@ -2,7 +2,7 @@ snippet MK "math mode" iA
 $${1}$$0
 endsnippet
 
-snippet be
+snippet be b
 $$
     $1
 $$
