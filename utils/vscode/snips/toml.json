@@ -5,7 +5,7 @@
 	// same ids are connected.
 	// Example:
 	"basic voca template": {
-		"prefix": "mkvoca",
+		"prefix": "mkvocab",
 		"body": [
 			"[[voca]]",
 			"word = \"$1\"",
@@ -17,7 +17,7 @@
 		],
 	},
 	"basic voca template with synos": {
-		"prefix": "mkvocasynos",
+		"prefix": "mkvocas",
 		"body": [
 			"[[voca]]",
 			"word = \"$1\"",
@@ -31,7 +31,7 @@
 		],
 	},
 	"basic voca template with example": {
-		"prefix": "mkvocaexample",
+		"prefix": "mkvocae",
 		"body": [
 			"[[voca]]",
 			"word = \"$1\"",

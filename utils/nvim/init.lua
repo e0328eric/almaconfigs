@@ -38,7 +38,7 @@ require("plug_config.kommentary")
 
 vim.cmd([[
 " colorscheme
-highlight ColorColumn ctermbg=7 guibg=Gray
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 " import filetypes
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
