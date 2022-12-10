@@ -15,23 +15,6 @@ wk.register({
 			c = { "<cmd> BufferLinePickClose <cr>", "Close a picked Buffer" },
 			d = { ":bdelete<CR>", "delete buffer" },
 		},
-		c = {
-			name = "+cph",
-			c = { "<cmd> CphReceive <cr>", "CphReceive" },
-			t = { "<cmd> CphTest <cr>", "CphTest" },
-			e = {
-				name = "+CphEdit",
-				["1"] = { "<cmd> CphEdit1<cr>", "CphEdit" },
-				["2"] = { "<cmd> CphEdit2<cr>", "CphEdit" },
-				["3"] = { "<cmd> CphEdit3<cr>", "CphEdit" },
-				["4"] = { "<cmd> CphEdit4<cr>", "CphEdit" },
-				["5"] = { "<cmd> CphEdit5<cr>", "CphEdit" },
-				["6"] = { "<cmd> CphEdit6<cr>", "CphEdit" },
-				["7"] = { "<cmd> CphEdit7<cr>", "CphEdit" },
-				["8"] = { "<cmd> CphEdit8<cr>", "CphEdit" },
-				["9"] = { "<cmd> CphEdit9<cr>", "CphEdit" },
-			},
-		},
 		d = {
 			name = "+diagnostic",
 			d = { "<cmd> TroubleToogle <cr>", "Toggle Diagnostics" },
@@ -41,12 +24,6 @@ wk.register({
 			name = "+file",
 			f = { "<cmd> Telescope find_files <cr>", "Find Files" },
 			o = { "<cmd> Telescope oldfiles <cr>", "Open Recent Files " },
-		},
-		l = {
-			name = "+Bracey",
-			s = { "<cmd> Bracey <cr>", "Start Bracey" },
-			p = { "<cmd> BraceyStop <cr>", "Stop Bracey" },
-			r = { "<cmd> BraceyReload <cr>", "Reload Bracey" },
 		},
 		t = {
 			name = "+Terminal",

@@ -28,6 +28,8 @@
 	     (setq mac-option-modifier 'super)
 	     (setq mac-control-modifier 'control)
 	     (setq ns-function-modifier 'hyper)))
+ (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
+ (add-to-list 'default-frame-alist '(alpha . (85 . 50)))
 
 ;; Let TAB acts like vim does (a normal tab)
 (global-set-key (kbd "TAB") 'tab-to-tab-stop)

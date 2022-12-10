@@ -213,6 +213,16 @@ function notetaking
     end
 end
 
+function homework
+    switch (uname)
+        case Linux
+            echo "*.*"
+
+        case Darwin
+            cd ~/pCloud/TeX_Documents/Homework
+    end
+end
+
 function mathbook
     switch (uname)
         case Linux
