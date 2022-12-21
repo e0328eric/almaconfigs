@@ -1,4 +1,6 @@
-require("nvim-tree").setup({
+local nt = require("nvim-tree")
+
+nt.setup({
 	disable_netrw = true,
 	hijack_netrw = true,
 	open_on_setup = false,

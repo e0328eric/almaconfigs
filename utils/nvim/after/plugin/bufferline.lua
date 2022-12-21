@@ -1,9 +1,11 @@
+local bufferline = require("bufferline")
+
 require("bufferline").setup({
 	options = {
 		numbers = function(opts)
 			return string.format("%s.", opts.ordinal)
 		end,
-		--indicator_icon = '▎',
+		-- indicator = { icon = "▎", style = "icon" },
 		buffer_close_icon = "",
 		modified_icon = "●",
 		close_icon = "",
@@ -28,3 +30,6 @@ require("bufferline").setup({
 		sort_by = "id",
 	},
 })
+
+vim.keymap.set("n", "<Tab>", vim.cmd.BufferLineCycleNext)
+vim.keymap.set("n", "<S-Tab>", vim.cmd.BufferLineCyclePrev)

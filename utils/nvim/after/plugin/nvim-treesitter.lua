@@ -1,0 +1,36 @@
+local treesitter = require("nvim-treesitter.configs")
+
+treesitter.setup({
+	ensure_installed = {
+		"bash",
+		"c",
+		"cmake",
+		"cpp",
+		"css",
+		"fish",
+		"glsl",
+		"go",
+		"haskell",
+		"help",
+		"html",
+		"java",
+		"javascript",
+		"kotlin",
+		"lua",
+		"meson",
+		"rust",
+		"scss",
+		"typescript",
+		"vim",
+		"vue",
+		"wgsl",
+		"zig",
+	},
+	sync_install = false,
+	auto_install = true,
+
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false,
+	},
+})

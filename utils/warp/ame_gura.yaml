@@ -9,7 +9,7 @@ background_image:
   # the full path to the picture is: ~/.warp/themes/warp.jpg
   path: ame_gura.png
   # the opacity value is required and can range from 0-100
-  opacity: 45
+  opacity: 35
 ############################################################### SEE ABOVE
 
 terminal_colors:

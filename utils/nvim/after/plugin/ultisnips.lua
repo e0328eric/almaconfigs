@@ -1,4 +1,4 @@
-vim.g.UltiSnipsSnippetDirectories = {'~/.config/nvim/snips'}
+vim.g.UltiSnipsSnippetDirectories = { "~/.config/nvim/snips" }
 vim.g.UltiSnipsExpandTrigger = "<TAB>"
 vim.g.UltiSnipsJumpForwardTrigger = "<TAB>"
 vim.g.UltiSnipsJumpBackwardTrigger = "<S-TAB>"
