@@ -53,6 +53,9 @@ require("packer").startup(function(use)
 	-- vim-fugitive
 	use("tpope/vim-fugitive")
 
+	-- colorizer
+	use("norcalli/nvim-colorizer.lua")
+
 	-- vesti highlight
 	use("e0328eric/vesti-vim")
 
@@ -79,8 +82,9 @@ require("packer").startup(function(use)
 			{ "hrsh7th/cmp-nvim-lsp" },
 			{ "hrsh7th/cmp-nvim-lua" },
 
-			-- lualne
-			{ "nvim-lua/lsp-status.nvim" },
+			-- Snippets
+			{ "L3MON4D3/LuaSnip" },
+			{ "rafamadriz/friendly-snippets" },
 		},
 	})
 
