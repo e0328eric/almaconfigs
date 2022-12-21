@@ -100,9 +100,13 @@ switch (uname)
         set CC /usr/local/bin/gcc-11
         set CXX /usr/local/bin/g++-11
         fish_add_path /usr/local/opt/llvm/bin
-        set -gx LDFLAGS -L/usr/local/opt/llvm/lib
-        set -gx CPPFLAGS -I/usr/local/opt/llvm/include
+        set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
+        set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
         set VCPKG_ROOT $HOME/vcpkg
+
+        set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
+        set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include"
+        set -gx PKG_CONFIG_PATH "/usr/local/opt/icu4c/lib/pkgconfig"
 
         function v
             nvim $argv
@@ -121,15 +125,15 @@ switch (uname)
         end
 
         function vimcfg
-            hx ~/.config/nvim/init.vim
+            nvim ~/.config/nvim/init.vim
         end
 
         function fishcfg
-            hx ~/.config/fish/config.fish
+            nvim ~/.config/fish/config.fish
         end
 
         function hxcfg
-            hx ~/.config/helix/config.toml
+            nvim ~/.config/helix/config.toml
         end
 end
 
