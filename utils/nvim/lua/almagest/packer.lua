@@ -47,6 +47,9 @@ require("packer").startup(function(use)
 	-- vim-visual-multi
 	use({ "mg979/vim-visual-multi", branch = "master" })
 
+	-- toogleterm
+	use("akinsho/toggleterm.nvim")
+
 	-- undo-tree
 	use("mbbill/undotree")
 
