@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/formatter.nvim",
     url = "https://github.com/mhartington/formatter.nvim"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   harpoon = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/harpoon",
