@@ -20,6 +20,7 @@ treesitter.setup({
 		"meson",
 		"rust",
 		"scss",
+		"toml",
 		"typescript",
 		"vim",
 		"vue",
