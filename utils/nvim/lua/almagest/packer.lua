@@ -41,9 +41,6 @@ require("packer").startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 	use("nvim-tree/nvim-tree.lua")
 
-	-- ultisnips
-	use("SirVer/ultisnips")
-
 	-- vim-visual-multi
 	use({ "mg979/vim-visual-multi", branch = "master" })
 
@@ -86,8 +83,8 @@ require("packer").startup(function(use)
 			{ "hrsh7th/cmp-nvim-lua" },
 
 			-- Snippets
-			{ "quangnguyen30192/cmp-nvim-ultisnips" },
 			{ "L3MON4D3/LuaSnip" },
+			{ "rafamadriz/friendly-snippets" },
 		},
 	})
 
