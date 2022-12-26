@@ -4,7 +4,10 @@ local t = ls.text_node
 local i = ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
 
-ls.config.setup({ enable_autosnippets = true })
+ls.config.setup({
+	update_events = "TextChangedI",
+	enable_autosnippets = true,
+})
 
 ls.add_snippets("plaintex", {
 	s({ trig = "MK", snippetType = "autosnippet" }, { t("$"), i(1), t("$"), i(0) }),
