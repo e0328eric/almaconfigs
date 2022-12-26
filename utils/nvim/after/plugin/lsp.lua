@@ -39,14 +39,6 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 })
 
 lsp.setup_nvim_cmp({
-	snippet = {
-		expand = function(args)
-			vim.fn["UltiSnips#Anon"](args.body)
-		end,
-	},
-	sources = {
-		{ name = "ultisnips" },
-	},
 	mapping = cmp_mappings,
 })
 
