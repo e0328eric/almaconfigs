@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
+  ["cmp-nvim-ultisnips"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips",
+    url = "https://github.com/quangnguyen30192/cmp-nvim-ultisnips"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/cmp-path",

@@ -86,6 +86,7 @@ require("packer").startup(function(use)
 			{ "hrsh7th/cmp-nvim-lua" },
 
 			-- Snippets
+			{ "quangnguyen30192/cmp-nvim-ultisnips" },
 			{ "L3MON4D3/LuaSnip" },
 		},
 	})
