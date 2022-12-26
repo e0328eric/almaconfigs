@@ -31,6 +31,9 @@ set pure_color_primary 6699CC
 # Path Definitions
 switch (uname)
     case Linux
+        # Define a default editor
+        set -g EDITOR nvim
+
         set PATH $PATH ~/.local/bin
         set PATH $PATH ~/.cabal/bin
         set PATH $PATH ~/.ghcup/bin
@@ -73,6 +76,9 @@ switch (uname)
         end
 
     case Darwin
+        # Define a default editor
+        set -g EDITOR nvim
+
         set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
         set PATH $PATH /Users/almagest/.local/bin
         set PATH $PATH /Users/almagest/.cargo/bin
@@ -134,6 +140,10 @@ switch (uname)
 
         function hxcfg
             nvim ~/.config/helix/config.toml
+        end
+
+        function cmakeinit
+            $EDITOR CMakeLists.txt
         end
 end
 
