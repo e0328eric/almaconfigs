@@ -192,7 +192,7 @@ terminal:
       - '#383838'
       - '#b8b8b8'
       - '#e8e8e8'
-  font: JetBrainsMono Nerd Font
+  font: D2Coding ligature
   customColorSchemes:
     - name: SpaceGray Eighties
       foreground: '#bdbaae'
@@ -215,6 +215,7 @@ terminal:
         - '#ff55ff'
         - '#83e9e4'
         - '#ffffff'
+  ligatures: true
 ssh: {}
 configSync:
   parts: {}

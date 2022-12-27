@@ -147,8 +147,8 @@ ls.add_snippets("toml", {
     ]=],
 			{
 				word = i(1, "word"),
-				meaning = i(2, "meaning"),
-				synos = i(3, "synos"),
+				meaning = i(3, "meaning"),
+				synos = i(2, "synos"),
 				exit = i(0),
 			}
 		)
@@ -168,8 +168,8 @@ ls.add_snippets("toml", {
     ]=],
 			{
 				word = i(1, "word"),
-				meaning = i(2, "meaning"),
-				example = i(3, "example"),
+				meaning = i(3, "meaning"),
+				example = i(2, "example"),
 				exit = i(0),
 			}
 		)
@@ -190,9 +190,9 @@ ls.add_snippets("toml", {
     ]=],
 			{
 				word = i(1, "word"),
-				meaning = i(2, "meaning"),
-				synos = i(3, "synos"),
-				example = i(4, "example"),
+				meaning = i(4, "meaning"),
+				synos = i(2, "synos"),
+				example = i(3, "example"),
 				exit = i(0),
 			}
 		)
