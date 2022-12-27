@@ -65,6 +65,9 @@ require("packer").startup(function(use)
 	-- formatter
 	use("mhartington/formatter.nvim")
 
+	-- comment box
+	use("LudoPinelli/comment-box.nvim")
+
 	-- LSP Zero
 	use({
 		"VonHeikemen/lsp-zero.nvim",
