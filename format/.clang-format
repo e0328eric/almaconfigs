@@ -4,5 +4,6 @@ ColumnLimit: '100'
 IndentWidth: '4'
 Language: Cpp
 PointerAlignment: Left
+AlwaysBreakTemplateDeclarations: 'Yes'
 
 ...

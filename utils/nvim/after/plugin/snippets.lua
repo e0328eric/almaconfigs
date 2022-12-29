@@ -198,3 +198,48 @@ ls.add_snippets("toml", {
 		)
 	),
 })
+
+ls.add_snippets("cmake", {
+	s(
+		"cmakeinit",
+		fmt(
+			[[
+        cmake_minimum_required(VERSION {cmake_version})
+        project({project_name}
+            VERSION     {project_version}
+            DESCRIPTION "{project_description}")
+
+        # Define C and C++ standard
+        set(CMAKE_C_STANDARD 11)
+        set(CMAKE_CXX_STANDARD 17)
+
+        # For the purpose to use LSP for C++
+        set(CMAKE_EXPORT_COMPILE_COMMANDS Yes)
+
+        # Change binary location into the bin directory
+        set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${{CMAKE_BINARY_DIR}}/bin)
+
+        # Include FetchContent
+        include(FetchContent)
+
+        if(CMAKE_BUILD_TYPE STREQUAL "Release")
+            set(COMPILER_FLAGS -O3 -Wall -Wextra -Wpedantic)
+        elseif()
+            set(COMPILER_FLAGS -O0 -ggdb -Wall -Wextra -Wpedantic)
+        endif()
+
+        add_executable({project_name} src/main.cc)
+        target_compile_options({project_name} PUBLIC ${{COMPILER_FLAGS}})
+        ]],
+			{
+				cmake_version = i(1),
+				project_name = i(2),
+				project_version = i(3),
+				project_description = i(4),
+			},
+			{
+				repeat_duplicates = true,
+			}
+		)
+	),
+})
