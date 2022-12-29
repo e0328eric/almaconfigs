@@ -17,7 +17,7 @@ return {
 	--         │                Window Background Settings                │
 	--         ╰──────────────────────────────────────────────────────────╯
 	window_background_image = "/Users/almagest/.config/wezterm/Shirakami_Fubuki2.jpg",
-	window_background_image_hsb = { brightness = 0.15 },
+	window_background_image_hsb = { brightness = 0.07 },
 
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                       Keybindings                        │

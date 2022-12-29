@@ -11,6 +11,7 @@ formatter.setup({
 		lua = format_kind("lua").stylua,
 		rust = format_kind("rust").rustfmt,
 		cpp = format_kind("cpp").clangformat,
+		zig = format_kind("zig").zigfmt,
 		["*"] = format_kind("any").remove_trailing_whitespace,
 	},
 })
