@@ -98,21 +98,23 @@ switch (uname)
         set PATH $PATH /Users/almagest/Library/Application\ Support/Coursier/bin
         set PATH $PATH /opt/local/bin
         set PATH $PATH /opt/local/sbin
+        set PATH $PATH /Users/almagest/.local/share/nvim/mason/bin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:$GOPATH/bin
         set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
         set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib
         set CPATH $CPATH /opt/homebrew/include
-        set CC /usr/local/bin/gcc-11
-        set CXX /usr/local/bin/g++-11
-        fish_add_path /usr/local/opt/llvm/bin
+
         set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
         set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
         set VCPKG_ROOT $HOME/vcpkg
+        fish_add_path /usr/local/opt/llvm/bin
 
         set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
         set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include"
         set -gx PKG_CONFIG_PATH "/usr/local/opt/icu4c/lib/pkgconfig"
+        fish_add_path /usr/local/opt/icu4c/bin
+        fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
             nvim $argv

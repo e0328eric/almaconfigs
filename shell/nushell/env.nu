@@ -68,6 +68,7 @@ alias minireport = cd "~/pCloud/TeX_Documents/Mini_Report"
 alias notetaking = cd "~/pCloud/TeX_Documents/NoteTaking"
 alias homework = cd "~/pCloud/TeX_Documents/Homework"
 alias voca = cd "~/pCloud/Voca"
+alias cmakeinit = nvim "CMakeLists.txt"
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 let-env PATH = (

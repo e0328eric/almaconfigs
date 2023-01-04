@@ -5,8 +5,12 @@ return {
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                      Font Settings                       │
 	--         ╰──────────────────────────────────────────────────────────╯
-	font = wezterm.font_with_fallback({ "FiraCode Nerd Font", "JetbrainMono Nerd Font" }),
-	font_size = 12.0,
+	font = wezterm.font_with_fallback({
+		"FiraCode Nerd Font",
+		"JetbrainMono Nerd Font",
+		"Noto Sans Egyptian Hieroglyphs",
+	}),
+	font_size = 13.0,
 
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                       Colorscheme                        │
@@ -26,5 +30,7 @@ return {
 		{ key = "w", mods = "CMD|CTRL", action = act.SpawnWindow },
 		{ key = "v", mods = "CTRL|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 		{ key = "s", mods = "CTRL|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
 	},
 }
+

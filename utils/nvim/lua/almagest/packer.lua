@@ -68,6 +68,9 @@ require("packer").startup(function(use)
 	-- comment box
 	use("LudoPinelli/comment-box.nvim")
 
+	-- unicode
+	use("chrisbra/unicode.vim")
+
 	-- LSP Zero
 	use({
 		"VonHeikemen/lsp-zero.nvim",
