@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["asyncomplete.vim"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/asyncomplete.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete.vim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -158,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nim.nvim"] = {
+    loaded = true,
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/nim.nvim",
+    url = "https://github.com/alaviss/nim.nvim"
   },
   ["nvim-base16"] = {
     loaded = true,

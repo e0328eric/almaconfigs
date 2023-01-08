@@ -22,6 +22,10 @@ require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/playground")
 
+	-- Nim
+	use("alaviss/nim.nvim")
+	use("prabirshrestha/asyncomplete.vim")
+
 	-- Make verticle lines for specifing indents.
 	use("lukas-reineke/indent-blankline.nvim")
 

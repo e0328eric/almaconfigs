@@ -31,7 +31,8 @@ wk.register({
 	},
 	f = {
 		name = "+files",
-		f = { builtin.find_files, "Find Files" },
+		f = { builtin.git_files, "Find Files" },
+		["/"] = { builtin.find_files, "Find Files" },
 		r = { builtin.oldfiles, "Find recently opened files" },
 	},
 	s = {

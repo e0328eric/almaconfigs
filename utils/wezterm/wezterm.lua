@@ -20,7 +20,7 @@ return {
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                Window Background Settings                │
 	--         ╰──────────────────────────────────────────────────────────╯
-	window_background_image = "/Users/almagest/.config/wezterm/Shirakami_Fubuki2.jpg",
+	window_background_image = "/Users/almagest/.config/wezterm/gura.jpg",
 	window_background_image_hsb = { brightness = 0.07 },
 
 	--         ╭──────────────────────────────────────────────────────────╮
@@ -33,4 +33,3 @@ return {
 		{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
 	},
 }
-
