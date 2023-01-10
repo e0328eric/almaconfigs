@@ -10,6 +10,7 @@ formatter.setup({
 	filetype = {
 		cpp = format_kind("cpp").clangformat,
 		javascript = format_kind("javascript").prettier,
+		json = format_kind("json").prettier,
 		lua = format_kind("lua").stylua,
 		rust = format_kind("rust").rustfmt,
 		zig = format_kind("zig").zigfmt,

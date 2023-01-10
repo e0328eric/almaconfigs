@@ -22,8 +22,12 @@ require("packer").startup(function(use)
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/playground")
 
-	-- Nim
+	-- language highlights
+	use("qnighy/lalrpop.vim")
+	use("e0328eric/vesti-vim")
 	use("alaviss/nim.nvim")
+
+	-- Nim
 	use("prabirshrestha/asyncomplete.vim")
 
 	-- Make verticle lines for specifing indents.
@@ -60,9 +64,6 @@ require("packer").startup(function(use)
 	-- colorizer
 	use("norcalli/nvim-colorizer.lua")
 
-	-- vesti highlight
-	use("e0328eric/vesti-vim")
-
 	-- fidget
 	use("j-hui/fidget.nvim")
 
@@ -96,6 +97,15 @@ require("packer").startup(function(use)
 			{ "L3MON4D3/LuaSnip" },
 			{ "rafamadriz/friendly-snippets" },
 		},
+	})
+
+	-- dealing with crates fancy
+	use({
+		"saecki/crates.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("crates").setup()
+		end,
 	})
 
 	-- end of the list

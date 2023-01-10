@@ -118,10 +118,10 @@ ls.add_snippets("toml", {
 		fmt(
 			[=[
     [[voca]]
-    word = '{word}'
+    word = "{word}"
 
     [[voca.info]]
-    meaning = '{meaning}'
+    meaning = "{meaning}"
 
     {exit}
     ]=],
@@ -137,10 +137,10 @@ ls.add_snippets("toml", {
 		fmt(
 			[=[
     [[voca]]
-    word = '{word}'
+    word = "{word}"
 
     [[voca.info]]
-    meaning = '{meaning}'
+    meaning = "{meaning}"
     synos = [{synos}]
 
     {exit}
@@ -158,11 +158,11 @@ ls.add_snippets("toml", {
 		fmt(
 			[=[
     [[voca]]
-    word = '{word}'
+    word = "{word}"
 
     [[voca.info]]
-    meaning = '{meaning}'
-    example = '{example}'
+    meaning = "{meaning}"
+    example = "{example}"
 
     {exit}
     ]=],
@@ -179,12 +179,12 @@ ls.add_snippets("toml", {
 		fmt(
 			[=[
     [[voca]]
-    word = '{word}'
+    word = "{word}"
 
     [[voca.info]]
-    meaning = '{meaning}'
+    meaning = "{meaning}"
     synos = [{synos}]
-    example = '{example}'
+    example = "{example}"
 
     {exit}
     ]=],
