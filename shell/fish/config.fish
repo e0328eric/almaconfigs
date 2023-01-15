@@ -132,6 +132,13 @@ switch (uname)
             ls -al $argv
         end
 
+        function oldrm
+            /bin/rm $argv
+        end
+
+        function rm
+        end
+
         function vimcfg
             nvim ~/.config/nvim/init.vim
         end
