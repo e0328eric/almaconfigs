@@ -98,6 +98,10 @@ require("packer").startup(function(use)
 			{ "rafamadriz/friendly-snippets" },
 		},
 	})
+	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+	})
 
 	-- dealing with crates fancy
 	use({

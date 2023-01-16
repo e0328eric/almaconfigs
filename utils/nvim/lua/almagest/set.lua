@@ -20,6 +20,7 @@ vim.opt.ruler = true
 vim.opt.scrolloff = 3
 vim.opt.shiftwidth = 4
 vim.opt.showmode = false
+vim.opt.signcolumn = "yes"
 vim.opt.smartindent = true
 vim.opt.smarttab = true
 vim.opt.splitbelow = true
@@ -32,4 +33,3 @@ vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undo"
 vim.opt.undolevels = 100
 vim.opt.undoreload = 1000
-

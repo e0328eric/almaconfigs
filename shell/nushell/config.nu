@@ -232,7 +232,7 @@ let light_theme = {
 }
 
 # External completer example
-# let carapace_completer = {|spans| 
+# let carapace_completer = {|spans|
 #     carapace $spans.0 nushell $spans | from json
 # }
 
@@ -512,5 +512,7 @@ let-env config = {
 
 def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
 alias open = ^open
+
+alias rm = xilo
 
 source ~/.cache/starship/init.nu
