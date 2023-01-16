@@ -11,6 +11,7 @@ return {
 		"Noto Sans Egyptian Hieroglyphs",
 	}),
 	font_size = 13.0,
+	unicode_version = 15,
 
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                       Colorscheme                        │
@@ -23,6 +24,11 @@ return {
 	window_background_image = "/Users/almagest/.config/wezterm/gura.jpg",
 	window_background_image_hsb = { brightness = 0.07 },
 
+	--  ╭──────────────────────────────────────────────────────────╮
+	--  │                           etc                            │
+	--  ╰──────────────────────────────────────────────────────────╯
+	native_macos_fullscreen_mode = true,
+
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                       Keybindings                        │
 	--         ╰──────────────────────────────────────────────────────────╯
@@ -30,6 +36,7 @@ return {
 		{ key = "w", mods = "CMD|CTRL", action = act.SpawnWindow },
 		{ key = "v", mods = "CTRL|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 		{ key = "s", mods = "CTRL|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen },
 		{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
 	},
 }
