@@ -27,6 +27,9 @@ require("packer").startup(function(use)
 	use("e0328eric/vesti-vim")
 	use("alaviss/nim.nvim")
 
+	-- Rust
+	use("simrat39/rust-tools.nvim")
+
 	-- Nim
 	use("prabirshrestha/asyncomplete.vim")
 
