@@ -137,6 +137,7 @@ switch (uname)
         end
 
         function rm
+            xilo $argv
         end
 
         function vimcfg

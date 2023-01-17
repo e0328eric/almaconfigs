@@ -56,6 +56,17 @@ lsp.setup_nvim_cmp({
 	mapping = cmp_mappings,
 })
 
+lsp.setup()
+
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = true,
+	update_in_insert = false,
+	underline = true,
+	severity_sort = false,
+	float = true,
+})
+
 lsp.on_attach(function(client, bufnr)
 	local opts = function(desc)
 		if desc == nil then
@@ -96,21 +107,3 @@ lsp.on_attach(function(client, bufnr)
 		vim.lsp.buf.signature_help()
 	end, opts())
 end)
-
-lsp.setup()
-
-vim.diagnostic.config({
-	virtual_text = true,
-	signs = true,
-	update_in_insert = false,
-	underline = true,
-	severity_sort = false,
-	float = {
-		focusable = false,
-		style = "minimal",
-		border = "rounded",
-		source = "always",
-		header = "",
-		prefix = "",
-	},
-})
