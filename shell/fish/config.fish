@@ -203,7 +203,7 @@ function hakwon
             echo "*.*"
 
         case Darwin
-            cd ~/pCloud/TeX_Documents/Hakwon
+            cd ~/Nextcloud/TeX_Documents/Hakwon
     end
 end
 
@@ -213,7 +213,7 @@ function minireport
             echo "*.*"
 
         case Darwin
-            cd ~/pCloud/TeX_Documents/Mini_Report
+            cd ~/Nextcloud/TeX_Documents/Mini_Report
     end
 end
 
@@ -223,7 +223,7 @@ function voca
             echo "*.*"
 
         case Darwin
-            cd /Users/almagest/pCloud/Voca
+            cd /Users/almagest/Nextcloud/Voca
     end
 end
 
@@ -233,7 +233,7 @@ function notetaking
             echo "*.*"
 
         case Darwin
-            cd ~/pCloud/TeX_Documents/NoteTaking
+            cd ~/Nextcloud/TeX_Documents/NoteTaking
     end
 end
 
@@ -243,7 +243,7 @@ function homework
             echo "*.*"
 
         case Darwin
-            cd ~/pCloud/TeX_Documents/Homework
+            cd ~/Nextcloud/TeX_Documents/Homework
     end
 end
 
@@ -253,7 +253,7 @@ function mathbook
             echo "*.*"
 
         case Darwin
-            cd ~/pCloud/Math
+            cd ~/Nextcloud/Math
     end
 end
 

@@ -9,6 +9,7 @@ formatter.setup({
 
 	filetype = {
 		cpp = format_kind("cpp").clangformat,
+		go = format_kind("go").gofmt,
 		javascript = format_kind("javascript").prettier,
 		json = format_kind("json").prettier,
 		lua = format_kind("lua").stylua,
