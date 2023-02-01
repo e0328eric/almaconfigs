@@ -6,7 +6,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	"sumneko_lua",
-	"rust_analyzer",
 })
 
 lsp.set_preferences({
@@ -107,3 +106,4 @@ lsp.on_attach(function(client, bufnr)
 		vim.lsp.buf.signature_help()
 	end, opts())
 end)
+

@@ -10,8 +10,9 @@ require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 	-- begin packages list
 
-	-- Base16 Theme
+	-- Themes
 	use("RRethy/nvim-base16")
+	use("shaunsingh/moonlight.nvim")
 
 	-- Fuzzy Finder (files, lsp, etc)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } })
@@ -29,6 +30,9 @@ require("packer").startup(function(use)
 
 	-- Nim
 	use("prabirshrestha/asyncomplete.vim")
+
+	-- Rust
+	use("simrat39/rust-tools.nvim")
 
 	-- Make verticle lines for specifing indents.
 	use("lukas-reineke/indent-blankline.nvim")

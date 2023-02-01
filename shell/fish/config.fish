@@ -271,3 +271,4 @@ source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 set -gx WASMTIME_HOME "$HOME/.wasmtime"
 
 string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
+
