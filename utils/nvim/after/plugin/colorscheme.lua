@@ -2,7 +2,6 @@
 --  │                           Using Base16 Colorscheme                           │
 --  ╰──────────────────────────────────────────────────────────────────────────────╯
 
---[[
 local colorscheme = require("base16-colorscheme")
 
 vim.cmd("colorscheme base16-ocean")
@@ -26,10 +25,5 @@ colorscheme.setup({
 	base0F = "#a06949",
 })
 
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
---]]
-
-vim.g.moonlight_disable_background = true
-
-require("moonlight").set()
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

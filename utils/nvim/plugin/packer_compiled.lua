@@ -175,10 +175,10 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["moonlight.nvim"] = {
+  ["material.nvim"] = {
     loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
-    url = "https://github.com/shaunsingh/moonlight.nvim"
+    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nim.nvim"] = {
     loaded = true,

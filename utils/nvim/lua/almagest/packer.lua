@@ -12,7 +12,7 @@ require("packer").startup(function(use)
 
 	-- Themes
 	use("RRethy/nvim-base16")
-	use("shaunsingh/moonlight.nvim")
+	use("marko-cerovac/material.nvim")
 
 	-- Fuzzy Finder (files, lsp, etc)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } })
