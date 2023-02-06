@@ -21,7 +21,7 @@ return {
 	--         ╭──────────────────────────────────────────────────────────╮
 	--         │                Window Background Settings                │
 	--         ╰──────────────────────────────────────────────────────────╯
-	-- window_background_image = "/Users/almagest/.config/wezterm/mona.jpg",
+	window_background_image = "/Users/almagest/.config/wezterm/mona.jpg",
 	window_background_image_hsb = { brightness = 0.2 },
 
 	--  ╭──────────────────────────────────────────────────────────╮
