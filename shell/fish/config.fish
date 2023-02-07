@@ -63,16 +63,24 @@ switch (uname)
             ls -al $argv
         end
 
+        function oldrm
+            /bin/rm $argv
+        end
+
+        function rm
+            xilo $argv
+        end
+
         function vimcfg
-            nvim ~/.config/helix/init.vim
+            helix ~/.config/helix/init.vim
         end
 
         function fishcfg
-            nvim ~/.config/fish/config.fish
+            helix ~/.config/fish/config.fish
         end
 
         function hxcfg
-            nvim ~/.config/helix/config.toml
+            helix ~/.config/helix/config.toml
         end
 
     case Darwin
