@@ -48,7 +48,7 @@ switch (uname)
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
         function v
-            nvim $argv
+            helix $argv
         end
 
         function h
