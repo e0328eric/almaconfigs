@@ -1,4 +1,4 @@
-theme = "tokyonight"
+theme = "ayu_transparent"
 
 [editor]
 auto-pairs = false
@@ -14,7 +14,6 @@ hidden = false
 
 [keys.normal]
 g = { E = "goto_file_end" }
-V = ["goto_line_start", "select_mode", "goto_line_end"]
 Z = { Q = ":quit!", Z = ":write-quit" }
 "C-up" = "copy_selection_on_prev_line"
 "C-down" = "copy_selection_on_next_line"
