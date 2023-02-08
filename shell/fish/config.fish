@@ -48,11 +48,11 @@ switch (uname)
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
         function v
-            helix $argv
+            nvim $argv
         end
 
         function h
-            helix $argv
+            nvim $argv
         end
 
         function t
@@ -125,11 +125,11 @@ switch (uname)
         fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
-            hx $argv
+            nvim $argv
         end
 
         function h
-            hx $argv
+            nvim $argv
         end
 
         function t
@@ -279,4 +279,3 @@ source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 set -gx WASMTIME_HOME "$HOME/.wasmtime"
 
 string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
-

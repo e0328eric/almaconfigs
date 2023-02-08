@@ -17,6 +17,8 @@ g = { E = "goto_file_end" }
 Z = { Q = ":quit!", Z = ":write-quit" }
 "C-up" = "copy_selection_on_prev_line"
 "C-down" = "copy_selection_on_next_line"
+"C-left" = "goto_line_start"
+"C-right" = "goto_line_end"
 
 [keys.select]
 g = { E = "goto_file_end" }
