@@ -12,7 +12,7 @@ formatter.setup({
 		go = format_kind("go").gofmt,
 		javascript = format_kind("javascript").prettier,
 		json = format_kind("json").prettier,
-		lua = format_kind("lua").lua_format,
+		lua = format_kind("lua").luaformat,
 		python = format_kind("python").black,
 		rust = format_kind("rust").rustfmt,
 		zig = format_kind("zig").zigfmt,
