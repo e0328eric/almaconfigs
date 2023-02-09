@@ -12,7 +12,7 @@ return {
     --         │                      Font Settings                       │
     --         ╰──────────────────────────────────────────────────────────╯
     font = wezterm.font_with_fallback({
-        "FiraCode Nerd Font", "JetbrainMono Nerd Font",
+        "Comic Code Ligatures", "FiraCode Nerd Font", "JetbrainMono Nerd Font",
         "Noto Sans Egyptian Hieroglyphs"
     }),
     font_size = 13.0,
