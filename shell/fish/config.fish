@@ -129,7 +129,7 @@ switch (uname)
         end
 
         function h
-            nvim $argv
+            hx $argv
         end
 
         function t
