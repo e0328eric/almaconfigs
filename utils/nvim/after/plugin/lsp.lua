@@ -4,9 +4,9 @@ local luasnip = require("luasnip")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-	"sumneko_lua",
-})
+-- lsp.ensure_installed({
+--     "sumneko_lua",
+-- })
 
 lsp.set_preferences({
 	sign_icons = {
@@ -106,4 +106,3 @@ lsp.on_attach(function(client, bufnr)
 		vim.lsp.buf.signature_help()
 	end, opts())
 end)
-
