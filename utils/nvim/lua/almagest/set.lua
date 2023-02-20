@@ -35,6 +35,3 @@ vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undo"
 vim.opt.undolevels = 100
 vim.opt.undoreload = 1000
 
-vim.cmd([[
-au BufNew,BufNewFile,BufRead,BufReadPost *.asm set filetype=nasm
-]])

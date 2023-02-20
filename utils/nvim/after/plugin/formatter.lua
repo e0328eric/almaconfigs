@@ -1,28 +1,34 @@
 local formatter = require("formatter")
-local format_kind = function(ext)
-	return require("formatter.filetypes." .. ext)
-end
+local format_kind =
+    function(ext) return require("formatter.filetypes." .. ext) end
+local wk = require("which-key")
 
 formatter.setup({
-	logging = true,
-	log_level = vim.log.levels.WARN,
+    logging = true,
+    log_level = vim.log.levels.WARN,
 
-	filetype = {
-		cpp = format_kind("cpp").clangformat,
-		go = format_kind("go").gofmt,
-		javascript = format_kind("javascript").prettier,
-		json = format_kind("json").prettier,
-		lua = format_kind("lua").luaformat,
-		python = format_kind("python").black,
-		rust = format_kind("rust").rustfmt,
-		zig = format_kind("zig").zigfmt,
-		["*"] = format_kind("any").remove_trailing_whitespace,
-	},
+    filetype = {
+        cpp = format_kind("cpp").clangformat,
+        go = format_kind("go").gofmt,
+        javascript = format_kind("javascript").prettier,
+        json = format_kind("json").prettier,
+        lua = format_kind("lua").luaformat,
+        python = format_kind("python").black,
+        rust = format_kind("rust").rustfmt,
+        zig = format_kind("zig").zigfmt,
+        ["*"] = format_kind("any").remove_trailing_whitespace
+    }
 })
 
+wk.register({c = {f = {":Format<CR>", "Format current file"}}},
+            {prefix = "<leader>"})
+
+-- auto format on save
+--[=[
 vim.cmd([[
 augroup FormatAutogroup
   autocmd!
   autocmd BufWritePost * FormatWrite
 augroup END
 ]])
+--]=]
