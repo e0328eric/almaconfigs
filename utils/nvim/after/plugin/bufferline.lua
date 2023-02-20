@@ -5,7 +5,7 @@ require("bufferline").setup({
 		numbers = function(opts)
 			return string.format("%s.", opts.ordinal)
 		end,
-		-- indicator = { icon = "▎", style = "icon" },
+		indicator = { icon = "▎", style = "icon" },
 		buffer_close_icon = "",
 		modified_icon = "●",
 		close_icon = "",

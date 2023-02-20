@@ -1,8 +1,9 @@
 local toggleterm = require("toggleterm")
+local Terminal  = require('toggleterm.terminal').Terminal
+local wk = require("which-key")
 
 toggleterm.setup({
 	size = 20,
-	open_mapping = "<S-C-t>",
 	direction = "float",
 	close_on_exit = true,
 	shell = vim.o.shell,
@@ -11,3 +12,20 @@ toggleterm.setup({
 		winblend = 0,
 	},
 })
+
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
+
+function _lazygit_toggle()
+  lazygit:toggle()
+end
+
+wk.register({
+	t = {
+		name = "+terminal",
+		t = { "<cmd>ToggleTerm<CR>" , "Toogle Float Terminal" },
+		g = {
+            "<cmd>lua _lazygit_toggle()<CR>",
+			"Toogle Lazygit",
+		},
+	},
+}, { prefix = "<leader>" })
