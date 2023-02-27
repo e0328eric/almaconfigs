@@ -28,14 +28,14 @@ Using the command =C-h v doom-font=, more information about doom-fonts can be sh
 Fonts that I am using describes in the following table:
 | Font Controller          | Font Name               |
 |--------------------------+-------------------------|
-| doom-font                | Code Comics Ligatures   |
+| doom-font                | Comic Code Ligatures    |
 | doom-variable-pitch-font | FiraCode Nerd Font Mono |
 | doom-big-font            | -                       |
 | doom-unicode-font        | D2Coding ligature       |
 | doom-serif-font          | -                       |
 
 #+BEGIN_SRC elisp
-(setq doom-font (font-spec :family "Code Comics Ligatures" :size 12)
+(setq doom-font (font-spec :family "Comic Code Ligatures" :size 12)
       doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font Mono" :size 12)
       doom-unicode-font (font-spec :family "D2Coding ligature" :size 12))
 #+END_SRC
@@ -52,4 +52,3 @@ Line numbering should be relative and every org files is located in the specific
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/.config/emacs/org")
 #+END_SRC
-
