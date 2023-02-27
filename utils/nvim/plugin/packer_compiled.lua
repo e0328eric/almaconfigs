@@ -263,11 +263,6 @@ _G.packer_plugins = {
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vesti-vim"] = {
-    loaded = true,
-    path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vesti-vim",
-    url = "https://github.com/e0328eric/vesti-vim"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/almagest/.local/share/nvim/site/pack/packer/start/vim-fugitive",

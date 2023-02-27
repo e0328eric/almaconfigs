@@ -8,7 +8,7 @@ formatter.setup({
     log_level = vim.log.levels.WARN,
 
     filetype = {
-        cpp = format_kind("cpp").clangformat,
+        -- cpp = format_kind("cpp").clangformat,
         go = format_kind("go").gofmt,
         javascript = format_kind("javascript").prettier,
         json = format_kind("json").prettier,
@@ -23,12 +23,9 @@ formatter.setup({
 wk.register({c = {f = {":Format<CR>", "Format current file"}}},
             {prefix = "<leader>"})
 
--- auto format on save
---[=[
 vim.cmd([[
 augroup FormatAutogroup
   autocmd!
   autocmd BufWritePost * FormatWrite
 augroup END
 ]])
---]=]

@@ -1,0 +1,55 @@
+#+TITLE: Doom Emacs Config
+#+AUTHOR: Sungbae Jeong
+#+DATE: <2023-02-27 Mon>
+#+PROPERTY: header-args :tangle config.el
+#+auto_tangle: t
+#+STARTUP: showeverything
+
+#+BEGIN_SRC elisp
+;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+(setq user-full-name "Sungbae Jeong"
+      user-mail-address "almagest0328@gmail.com")
+#+END_SRC
+
+* About This Config
+This is the doom emacs config files written by Sungbae Jeong.
+Source code of this can be found in [[https://gitlab.com/e0328eric/arch-almagest][here]].
+
+* Default Settings
+** Font
+Doom exposes five (optional) variables for controlling fonts in Doom:
+- *doom-font*: the primary font to use
+- *doom-variable-pitch-font*: a non-monospace font
+- *doom-big-font*: used for `doom-big-font-mode'; use this for presentations or streaming.
+- *doom-unicode-font*: for unicode glyphs
+- *doom-serif-font*: for the `fixed-pitch-serif' face
+Using the command =C-h v doom-font=, more information about doom-fonts can be shown.
+
+Fonts that I am using describes in the following table:
+| Font Controller          | Font Name               |
+|--------------------------+-------------------------|
+| doom-font                | Code Comics Ligatures   |
+| doom-variable-pitch-font | FiraCode Nerd Font Mono |
+| doom-big-font            | -                       |
+| doom-unicode-font        | D2Coding ligature       |
+| doom-serif-font          | -                       |
+
+#+BEGIN_SRC elisp
+(setq doom-font (font-spec :family "Code Comics Ligatures" :size 12)
+      doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font Mono" :size 12)
+      doom-unicode-font (font-spec :family "D2Coding ligature" :size 12))
+#+END_SRC
+
+** Theme
+The [[https://github.com/doomemacs/themes][link]] contains all doom emacs theme variables. I am using *doom-ayu-dark* theme.
+#+BEGIN_SRC elisp
+(setq doom-theme 'doom-ayu-dark)
+#+END_SRC
+
+** Miscellaneous
+Line numbering should be relative and every org files is located in the specific directory in default.
+#+BEGIN_SRC elisp
+(setq display-line-numbers-type 'relative)
+(setq org-directory "~/.config/emacs/org")
+#+END_SRC
+
