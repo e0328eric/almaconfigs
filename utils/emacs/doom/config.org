@@ -5,17 +5,39 @@
 #+auto_tangle: t
 #+STARTUP: showeverything
 
-#+BEGIN_SRC elisp
-;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
-(setq user-full-name "Sungbae Jeong"
-      user-mail-address "almagest0328@gmail.com")
-#+END_SRC
+* Table Of Contents :toc:
+- [[#about-this-config][About This Config]]
+- [[#default-settings][Default Settings]]
+  - [[#basic-settings][Basic Settings]]
+  - [[#font][Font]]
+  - [[#theme][Theme]]
+  - [[#miscellaneous][Miscellaneous]]
+- [[#settings-for-each-packages][Settings for each Packages]]
+  - [[#adding-local-packages][Adding local packages]]
+  - [[#auto-activating-snippets][Auto Activating Snippets]]
+- [[#keybindings][Keybindings]]
+  - [[#tab-movement][Tab Movement]]
+  - [[#multiple-cursors][Multiple Cursors]]
+  - [[#formatting][Formatting]]
 
 * About This Config
 This is the doom emacs config files written by Sungbae Jeong.
 Source code of this can be found in [[https://gitlab.com/e0328eric/arch-almagest][here]].
 
 * Default Settings
+** Basic Settings
+Doom Emacs requires the user full name and the user mail address.
+#+BEGIN_SRC elisp
+;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+(setq user-full-name "Sungbae Jeong"
+      user-mail-address "almagest0328@gmail.com")
+#+END_SRC
+
+In addition, since I want to open emacs with the fullscreen, the following code is in here.
+#+BEGIN_SRC elisp
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+#+END_SRC
+
 ** Font
 Doom exposes five (optional) variables for controlling fonts in Doom:
 - *doom-font*: the primary font to use
@@ -41,9 +63,9 @@ Fonts that I am using describes in the following table:
 #+END_SRC
 
 ** Theme
-The [[https://github.com/doomemacs/themes][link]] contains all doom emacs theme variables. I am using *doom-ayu-dark* theme.
+The [[https://github.com/doomemacs/themes][link]] contains all doom emacs theme variables. I am using *doom-gruvbox* theme.
 #+BEGIN_SRC elisp
-(setq doom-theme 'doom-ayu-dark)
+(setq doom-theme 'doom-gruvbox)
 #+END_SRC
 
 ** Miscellaneous
@@ -51,4 +73,65 @@ Line numbering should be relative and every org files is located in the specific
 #+BEGIN_SRC elisp
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/.config/emacs/org")
+#+END_SRC
+
+
+* Settings for each Packages
+** Adding local packages
+#+BEGIN_SRC elisp
+(add-to-list 'load-path (expand-file-name "~/.config/doom/emacs_local/"))
+(require 'asy-mode)
+(require 'texmathp)
+(require 'vesti-mode)
+#+END_SRC
+
+** Auto Activating Snippets
+#+BEGIN_SRC elisp
+(use-package aas
+  :ensure t
+  :hook (latex-mode .	aas-activate-for-major-mode)
+  :hook (tex-mode	.	aas-activate-for-major-mode)
+  :config
+  (aas-set-snippets 'tex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "{$1 \\over $2}$0")))
+  (aas-set-snippets 'latex-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0"))
+	:cond #'texmathp ; expand only while in math
+    ;; bind to functions!
+    "//" (lambda () (interactive)
+           (yas-expand-snippet "\\frac{$1}{$2}$0")))
+  ;; disable snippets by redefining them with a nil expansion
+  (aas-set-snippets 'latex-mode
+    "supp" nil))
+#+END_SRC
+
+
+* Keybindings
+** Tab Movement
+#+BEGIN_SRC elisp
+(map! :desc "Move to the next tab" :g "C-x f ]" #'tab-next)
+(map! :desc "Move to the previous tab" :g "C-x f [" #'tab-previous)
+#+END_SRC
+
+** Multiple Cursors
+#+BEGIN_SRC elisp
+(map! :desc "Make a cursor below" :g "<C-down>" #'mc/mark-next-like-this)
+(map! :desc "Make a cursor above" :g "<C-up>" #'mc/mark-previous-like-this)
+#+END_SRC
+
+** Formatting
+=C-c C-f= is used for formatting the current buffer.
+#+BEGIN_SRC elisp
+(defun format-all-buffer-and-save ()
+    "Format a buffer and save it"
+  (interactive)
+  (format-all-buffer)
+  (save-buffer))
+(map! :desc "Formatting Buffer" :ni "C-c C-f" #'format-all-buffer-and-save)
 #+END_SRC
