@@ -50,3 +50,4 @@
 ;(unpin! t)
 (package! format-all)
 (package! aas)
+(package! org-auto-tangle)

@@ -18,6 +18,12 @@
 (require 'texmathp)
 (require 'vesti-mode)
 
+(use-package! org-auto-tangle
+  :defer t
+  :hook (org-mode . org-auto-tangle-mode)
+  :config
+  (setq org-auto-tangle-default t))
+
 (use-package aas
   :ensure t
   :hook (latex-mode .	aas-activate-for-major-mode)

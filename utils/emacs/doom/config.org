@@ -14,6 +14,7 @@
   - [[#miscellaneous][Miscellaneous]]
 - [[#settings-for-each-packages][Settings for each Packages]]
   - [[#adding-local-packages][Adding local packages]]
+  - [[#org-babel-tangle][Org-babel-tangle]]
   - [[#auto-activating-snippets][Auto Activating Snippets]]
 - [[#keybindings][Keybindings]]
   - [[#tab-movement][Tab Movement]]
@@ -83,6 +84,15 @@ Line numbering should be relative and every org files is located in the specific
 (require 'asy-mode)
 (require 'texmathp)
 (require 'vesti-mode)
+#+END_SRC
+
+** Org-babel-tangle
+#+BEGIN_SRC elisp
+(use-package! org-auto-tangle
+  :defer t
+  :hook (org-mode . org-auto-tangle-mode)
+  :config
+  (setq org-auto-tangle-default t))
 #+END_SRC
 
 ** Auto Activating Snippets
