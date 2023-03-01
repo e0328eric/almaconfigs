@@ -8,7 +8,7 @@
       doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font Mono" :size 12)
       doom-unicode-font (font-spec :family "D2Coding ligature" :size 12))
 
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-dracula)
 
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/.config/emacs/org")
@@ -56,6 +56,9 @@
 (defun format-all-buffer-and-save ()
     "Format a buffer and save it"
   (interactive)
-  (format-all-buffer)
-  (save-buffer))
+  (if (derived-mode-p 'zig-mode)
+      (zig-format-buffer)
+      (progn (format-all-buffer)
+            (save-buffer))))
+
 (map! :desc "Formatting Buffer" :ni "C-c C-f" #'format-all-buffer-and-save)

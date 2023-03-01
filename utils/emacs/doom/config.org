@@ -66,7 +66,7 @@ Fonts that I am using describes in the following table:
 ** Theme
 The [[https://github.com/doomemacs/themes][link]] contains all doom emacs theme variables. I am using *doom-gruvbox* theme.
 #+BEGIN_SRC elisp
-(setq doom-theme 'doom-gruvbox)
+(setq doom-theme 'doom-dracula)
 #+END_SRC
 
 ** Miscellaneous
@@ -141,7 +141,10 @@ Line numbering should be relative and every org files is located in the specific
 (defun format-all-buffer-and-save ()
     "Format a buffer and save it"
   (interactive)
-  (format-all-buffer)
-  (save-buffer))
+  (if (derived-mode-p 'zig-mode)
+      (zig-format-buffer)
+      (progn (format-all-buffer)
+            (save-buffer))))
+
 (map! :desc "Formatting Buffer" :ni "C-c C-f" #'format-all-buffer-and-save)
 #+END_SRC

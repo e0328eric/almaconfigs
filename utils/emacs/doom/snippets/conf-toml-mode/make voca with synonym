@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: make voca with synonym
+# key: mkvocas
+# --
+[[voca]]
+word = "$1"
+
+[[voca.info]]
+meaning = "$3"
+synos = [$2]
+$0
