@@ -66,7 +66,11 @@ Fonts that I am using describes in the following table:
 ** Theme
 The [[https://github.com/doomemacs/themes][link]] contains all doom emacs theme variables. I am using *doom-gruvbox* theme.
 #+BEGIN_SRC elisp
-(setq doom-theme 'doom-dracula)
+;;(setq doom-theme 'doom-oceanic-next)
+;;(setq doom-theme 'doom-palenight)
+;;(setq doom-theme 'doom-monokai-spectrum)
+;;(setq doom-theme 'doom-tokyo-night)
+(setq doom-theme 'doom-moonlight)
 #+END_SRC
 
 ** Miscellaneous
@@ -84,6 +88,7 @@ Line numbering should be relative and every org files is located in the specific
 (require 'asy-mode)
 (require 'texmathp)
 (require 'vesti-mode)
+(require 'lalrpop-mode)
 #+END_SRC
 
 ** Org-babel-tangle
@@ -121,7 +126,6 @@ Line numbering should be relative and every org files is located in the specific
     "supp" nil))
 #+END_SRC
 
-
 * Keybindings
 ** Tab Movement
 #+BEGIN_SRC elisp
@@ -138,13 +142,15 @@ Line numbering should be relative and every org files is located in the specific
 ** Formatting
 =C-c C-f= is used for formatting the current buffer.
 #+BEGIN_SRC elisp
-(defun format-all-buffer-and-save ()
+(cl-defun format-all-buffer-and-save ()
     "Format a buffer and save it"
   (interactive)
-  (if (derived-mode-p 'zig-mode)
-      (zig-format-buffer)
-      (progn (format-all-buffer)
-            (save-buffer))))
+  (when (derived-mode-p 'zig-mode)
+    (progn (zig-format-buffer) (cl-return-from format-all-buffer-and-save)))
+  (when (derived-mode-p 'rustic-mode)
+    (progn (rustic-format-buffer) (cl-return-from format-all-buffer-and-save)))
+  (format-all-buffer) (save-buffer))
 
 (map! :desc "Formatting Buffer" :ni "C-c C-f" #'format-all-buffer-and-save)
+(map! :leader :desc "Formatting Buffer" :ni "c f" #'format-all-buffer-and-save)
 #+END_SRC

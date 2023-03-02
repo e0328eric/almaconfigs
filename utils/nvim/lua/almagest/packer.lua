@@ -90,6 +90,25 @@ require("packer").startup(function(use)
     -- comment box
     use("LudoPinelli/comment-box.nvim")
 
+    use("jbyuki/nabla.nvim")
+
+    use {
+        "nvim-neorg/neorg",
+        run = ":Neorg sync-parsers",
+        config = function()
+            require('neorg').setup {
+                load = {
+                    ["core.defaults"] = {}, -- Loads default behaviour
+                    ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
+                    ["core.norg.dirman"] = { -- Manages Neorg workspaces
+                        config = {workspaces = {notes = "~/notes"}}
+                    }
+                }
+            }
+        end,
+        requires = "nvim-lua/plenary.nvim"
+    }
+
     -- LSP Zero
     use({
         "VonHeikemen/lsp-zero.nvim",

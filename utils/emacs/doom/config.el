@@ -8,7 +8,11 @@
       doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font Mono" :size 12)
       doom-unicode-font (font-spec :family "D2Coding ligature" :size 12))
 
-(setq doom-theme 'doom-dracula)
+;;(setq doom-theme 'doom-oceanic-next)
+;;(setq doom-theme 'doom-palenight)
+;;(setq doom-theme 'doom-monokai-spectrum)
+;;(setq doom-theme 'doom-tokyo-night)
+(setq doom-theme 'doom-moonlight)
 
 (setq display-line-numbers-type 'relative)
 (setq org-directory "~/.config/emacs/org")
@@ -17,6 +21,7 @@
 (require 'asy-mode)
 (require 'texmathp)
 (require 'vesti-mode)
+(require 'lalrpop-mode)
 
 (use-package! org-auto-tangle
   :defer t
@@ -53,12 +58,14 @@
 (map! :desc "Make a cursor below" :g "<C-down>" #'mc/mark-next-like-this)
 (map! :desc "Make a cursor above" :g "<C-up>" #'mc/mark-previous-like-this)
 
-(defun format-all-buffer-and-save ()
+(cl-defun format-all-buffer-and-save ()
     "Format a buffer and save it"
   (interactive)
-  (if (derived-mode-p 'zig-mode)
-      (zig-format-buffer)
-      (progn (format-all-buffer)
-            (save-buffer))))
+  (when (derived-mode-p 'zig-mode)
+    (progn (zig-format-buffer) (cl-return-from format-all-buffer-and-save)))
+  (when (derived-mode-p 'rustic-mode)
+    (progn (rustic-format-buffer) (cl-return-from format-all-buffer-and-save)))
+  (format-all-buffer) (save-buffer))
 
 (map! :desc "Formatting Buffer" :ni "C-c C-f" #'format-all-buffer-and-save)
+(map! :leader :desc "Formatting Buffer" :ni "c f" #'format-all-buffer-and-save)
