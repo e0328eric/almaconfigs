@@ -1,4 +1,0 @@
-[submodule "utils/emacs/doom/emacs_local/emacs-application-framework"]
-	path = utils/emacs/doom/emacs_local/emacs-application-framework
-	url = https://github.com/emacs-eaf/emacs-application-framework.git
-	branch = master
