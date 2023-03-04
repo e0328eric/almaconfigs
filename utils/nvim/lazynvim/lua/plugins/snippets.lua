@@ -1,7 +1,7 @@
 return {
   {
     "L3MON4D3/LuaSnip",
-    event = function()
+    config = function()
       local lsnip = require("luasnip")
       local s = lsnip.snippet
       local t = lsnip.text_node
