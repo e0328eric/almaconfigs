@@ -9,8 +9,7 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.foldenable = false
 vim.opt.foldmethod = "manual"
 vim.opt.guifont = "-misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1"
-vim.opt.guifontwide =
-    "-misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1"
+vim.opt.guifontwide = "-misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1"
 vim.opt.hidden = true
 vim.opt.hlsearch = true
 vim.opt.laststatus = 3
@@ -34,4 +33,3 @@ vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undo"
 vim.opt.undolevels = 100
 vim.opt.undoreload = 1000
-
