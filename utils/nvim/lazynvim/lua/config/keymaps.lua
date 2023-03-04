@@ -9,6 +9,9 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "Clear search highlights" }
 )
 
+vim.keymap.set("n", "<leader>b[", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous Buffer" })
+vim.keymap.set("n", "<leader>b]", ":bnext<CR>", { noremap = true, silent = true, desc = "Next Buffer" })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
