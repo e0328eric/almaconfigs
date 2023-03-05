@@ -26,22 +26,22 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: Comic Code Ligatures
+    family: FiraCode Nerd Font
     style: Regular
 
   # Bold font face
   bold:
-    family: Comic Code Ligatures
+    family: FiraCode Nerd Font
     style: Bold
 
   # Italic font face
   italic:
-    family: Comic Code Ligatures
+    family: FiraCode Nerd Font
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Comic Code Ligatures
+    family: FiraCode Nerd Font
     style: Bold Italic
 
   # Point size
