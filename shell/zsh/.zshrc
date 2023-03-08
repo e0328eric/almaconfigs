@@ -37,11 +37,6 @@ export PATH="$PATH:$GOPATH/bin"
 
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib"
 
-# export LDFLAGS="-L/usr/local/opt/qt/lib:$LDFLAGS"
-export LDFLAGS="$LDFLAGS:-L/usr/local/opt/llvm/lib"
-# export CPPFLAGS="-I/usr/local/opt/qt/include:$CPPFLAGS"
-export CPPFLAGS="$CPPFLAGS:-I/usr/local/opt/llvm/include"
-
 # Define aliases
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias c="clear"
