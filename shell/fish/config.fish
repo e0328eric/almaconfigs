@@ -271,6 +271,7 @@ end
 
 fish_add_path /usr/local/opt/bison/bin
 thefuck --alias | source
+starship init fish | source
 
 # opam configuration
 source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
