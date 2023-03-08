@@ -2,12 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set(
-  "n",
-  "<leader><space>",
-  ':let @/=""<CR>',
-  { noremap = true, silent = true, desc = "Clear search highlights" }
-)
+vim.keymap.set("n", "<leader>\\", ':let @/=""<CR>', { noremap = true, silent = true, desc = "Clear search highlights" })
 
 vim.keymap.set("n", "<leader>b[", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous Buffer" })
 vim.keymap.set("n", "<leader>b]", ":bnext<CR>", { noremap = true, silent = true, desc = "Next Buffer" })

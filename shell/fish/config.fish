@@ -118,11 +118,11 @@ switch (uname)
         set VCPKG_ROOT $HOME/vcpkg
         fish_add_path /usr/local/opt/llvm/bin
 
-        set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
-        set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include"
-        set -gx PKG_CONFIG_PATH "/usr/local/opt/icu4c/lib/pkgconfig"
-        fish_add_path /usr/local/opt/icu4c/bin
-        fish_add_path /usr/local/opt/icu4c/sbin
+        # set -gx LDFLAGS "-L/usr/local/opt/icu4c/lib"
+        # set -gx CPPFLAGS "-I/usr/local/opt/icu4c/include"
+        # set -gx PKG_CONFIG_PATH "/usr/local/opt/icu4c/lib/pkgconfig"
+        # fish_add_path /usr/local/opt/icu4c/bin
+        # fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
             nvim $argv
@@ -271,7 +271,6 @@ end
 
 fish_add_path /usr/local/opt/bison/bin
 thefuck --alias | source
-starship init fish | source
 
 # opam configuration
 source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true

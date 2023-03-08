@@ -1,0 +1,5 @@
+return {
+  {
+    "qnighy/lalrpop.vim",
+  },
+}
