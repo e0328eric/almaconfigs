@@ -193,7 +193,24 @@ utils.cfgplugin("noice", {
     },
     throttle = 1000 / 30, -- how frequently does Noice need to check for ui updates? This has no effect when in blocking mode.
     ---@type NoiceConfigViews
-    views = {}, ---@see section on views
+    views = {
+        cmdline_popup = {
+            position = {row = 5, col = "50%"},
+            size = {width = 60, height = "auto"}
+        },
+        popupmenu = {
+            relative = "editor",
+            position = {row = 8, col = "50%"},
+            size = {width = 60, height = 10},
+            border = {style = "rounded", padding = {0, 1}},
+            win_options = {
+                winhighlight = {
+                    Normal = "Normal",
+                    FloatBorder = "DiagnosticInfo"
+                }
+            }
+        }
+    }, ---@see section on views
     ---@type NoiceRouteConfig[]
     routes = {}, --- @see section on routes
     ---@type table<string, NoiceFilter>

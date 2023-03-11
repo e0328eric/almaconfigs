@@ -9,8 +9,24 @@ utils.cfgplugin("formatter", function(formatter)
         log_level = vim.log.levels.WARN,
 
         filetype = {
-            c = format_kind("cpp").clangformat,
-            cpp = format_kind("cpp").clangformat,
+            c = {
+                function()
+                    return {
+                        exe = "clang-format",
+                        stdin = true,
+                        try_node_modules = true
+                    }
+                end
+            },
+            cpp = {
+                function()
+                    return {
+                        exe = "clang-format",
+                        stdin = true,
+                        try_node_modules = true
+                    }
+                end
+            },
             go = format_kind("go").gofmt,
             javascript = format_kind("javascript").prettier,
             json = format_kind("json").prettier,

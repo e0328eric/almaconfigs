@@ -1,6 +1,7 @@
 ---
 BasedOnStyle: Chromium
 AccessModifierOffset: '-3'
+AlwaysBreakTemplateDeclarations: Yes
 ColumnLimit: '100'
 ConstructorInitializerIndentWidth: '4'
 ContinuationIndentWidth: '4'
