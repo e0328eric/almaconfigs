@@ -32,6 +32,10 @@ return {
 	{ "j-hui/fidget.nvim" },
 	{ "mhartington/formatter.nvim" },
 	{ "LudoPinelli/comment-box.nvim" },
+    {
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    },
 	{
 		"nvim-neorg/neorg",
 		requires = "nvim-lua/plenary.nvim",
@@ -47,6 +51,13 @@ return {
 			require("crates").setup()
 		end,
 	},
+    {
+        "folke/noice.nvim",
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        }
+    },
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		requires = {

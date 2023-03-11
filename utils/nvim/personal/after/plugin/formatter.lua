@@ -9,7 +9,8 @@ utils.cfgplugin("formatter", function(formatter)
         log_level = vim.log.levels.WARN,
 
         filetype = {
-            -- cpp = format_kind("cpp").clangformat,
+            c = format_kind("cpp").clangformat,
+            cpp = format_kind("cpp").clangformat,
             go = format_kind("go").gofmt,
             javascript = format_kind("javascript").prettier,
             json = format_kind("json").prettier,
@@ -21,11 +22,4 @@ utils.cfgplugin("formatter", function(formatter)
         }
     })
     utils.wkmap({c = {f = {":Format<CR>", "Format current file"}}})
-
-    vim.cmd([[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost * FormatWrite
-augroup END
-]])
 end)
