@@ -36,10 +36,9 @@ export PATH="$GOPATH/bin:$PATH"
 # export WASMTIME_HOME "$WASMTIME_HOME:$HOME/.wasmtime"
 
 export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib"
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/almagest/.local/gcc/lib"
 
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
 
 # Define aliases
 alias ohmyzsh="nvim ~/.oh-my-zsh"

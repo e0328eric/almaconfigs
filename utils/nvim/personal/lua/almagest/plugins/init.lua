@@ -29,7 +29,7 @@ return {
 	{ "akinsho/toggleterm.nvim" },
 	{ "mbbill/undotree" },
 	{ "norcalli/nvim-colorizer.lua" },
-	{ "j-hui/fidget.nvim" },
+	-- { "j-hui/fidget.nvim" },
 	{ "mhartington/formatter.nvim" },
 	{ "LudoPinelli/comment-box.nvim" },
     {
