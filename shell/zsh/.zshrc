@@ -10,8 +10,10 @@ source ~/.zsh_local/headline.zsh-theme
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/texlive/2022/bin/universal-darwin:$PATH"
 export PATH="/Users/almagest/.local/bin:$PATH"
+export PATH="/Users/almagest/.local/i686-elf/bin:$PATH"
 export PATH="/Users/almagest/.cargo/bin:$PATH"
 export PATH="/Users/almagest/.go/bin:$PATH"
 export PATH="/Users/almagest/.ghcup/bin:$PATH"
@@ -20,7 +22,6 @@ export PATH="/Users/almagest/.nimble/bin:$PATH"
 export PATH="/Users/almagest/.flutter/bin:$PATH"
 export PATH="/Users/almagest/.npm-global/bin:$PATH"
 export PATH="/Users/almagest/.opam/default/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/opt/qt/bin:$PATH"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
@@ -35,7 +36,8 @@ export PATH="$GOPATH/bin:$PATH"
 
 # export WASMTIME_HOME "$WASMTIME_HOME:$HOME/.wasmtime"
 
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib"
+export DYLD_LIBRARY_PATH="/Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib:$DYLD_LIBRARY_PATH"
+# export DYLD_LIBRARY_PATH="/Users/almagest/.local/gnu/lib:$DYLD_LIBRARY_PATH"
 
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
@@ -50,6 +52,7 @@ alias s="exa"
 alias view="nvim -R"
 alias e="emacs -nw"
 alias t="tmux"
+alias z="zellij"
 alias l="ls -al"
 alias hexdump="hexyl"
 alias oldrm="/bin/rm"

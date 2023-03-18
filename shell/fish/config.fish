@@ -89,6 +89,9 @@ switch (uname)
 
         set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
         set PATH $PATH /Users/almagest/.local/bin
+        set PATH $PATH /Users/almagest/.local/gnu/bin
+        set PATH $PATH /Users/almagest/.local/i686-elf/bin
+        set PATH $PATH /Users/almagest/.local/x86_64-elf/bin
         set PATH $PATH /Users/almagest/.cargo/bin
         set PATH $PATH /Users/almagest/.go/bin
         set PATH $PATH /Users/almagest/.ghcup/bin
@@ -111,6 +114,7 @@ switch (uname)
         set PATH $PATH $GOROOT/bin:$GOPATH/bin
         set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
         set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib
+        set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.local/gnu/lib
         set CPATH $CPATH /opt/homebrew/include
 
         set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
