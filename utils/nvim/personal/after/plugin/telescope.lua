@@ -1,7 +1,6 @@
 local utils = require("almagest.utils")
 
 utils.cfgplugin("telescope", function(telescope)
-
     local builtin = require("telescope.builtin")
     local themes = require("telescope.themes")
 

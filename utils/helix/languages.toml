@@ -5,7 +5,7 @@ indent = { tab-width = 4, unit = "    "}
 [[language]]
 name = "nasm"
 scope = "source.asm"
-file-types = ["asm", "s"]
+file-types = ["asm"]
 comment-token = ";"
 roots = []
 
@@ -27,3 +27,15 @@ indent = { tab-width = 4, unit = " " }
 [[grammar]]
 name = "nim"
 source = { git = "https://github.com/aMOPel/tree-sitter-nim", rev = "3727117e9a793610138ab0eabd75bef04c86299f" }
+
+[[language]]
+name = "typst"
+scope = "source.typ"
+file-types = ["typ"]
+comment-token = "//"
+roots = []
+indent = { tab-width = 4, unit = " " }
+
+[[grammar]]
+name = "typst"
+source = { git = "https://github.com/e0328eric/tree-sitter-typst.git", rev = "main" }

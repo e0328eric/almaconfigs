@@ -5,7 +5,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = "100"
 vim.opt.encoding = "utf-8"
 vim.opt.expandtab = true
-vim.opt.fileencoding = "utf-8"
+-- vim.opt.fileencoding = "utf-8"
 vim.opt.foldenable = false
 vim.opt.foldmethod = "manual"
 vim.opt.guifont = "-misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1"
@@ -34,3 +34,8 @@ vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undo"
 vim.opt.undolevels = 100
 vim.opt.undoreload = 1000
+
+vim.cmd([[
+au BufRead,BufNewFile *.h set filetype=c
+au BufRead,BufNewFile *.asm set filetype=nasm
+]])

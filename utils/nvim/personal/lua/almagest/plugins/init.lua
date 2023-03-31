@@ -1,79 +1,122 @@
 -- LuaFormatter off
 return {
-	{ "wbthomason/packer.nvim" },
-	{ "RRethy/nvim-base16" },
-	{ "folke/which-key.nvim" },
+    -- Colorscheme
+	"RRethy/nvim-base16",
+	"hoob3rt/lualine.nvim",
+	"akinsho/bufferline.nvim",
+    "rcarriga/nvim-notify",
+    "stevearc/dressing.nvim",
+	"norcalli/nvim-colorizer.lua",
+
+    -- Utilities
+	"nvim-tree/nvim-web-devicons",
+	"nvim-tree/nvim-tree.lua",
+	"akinsho/toggleterm.nvim",
+	"prabirshrestha/asyncomplete.vim",
+	"lukas-reineke/indent-blankline.nvim",
+	"theprimeagen/harpoon",
+	"mhartington/formatter.nvim",
+	"mbbill/undotree",
+    "TimUntersberger/neogit",
+    "numToStr/Comment.nvim",
+    "j-hui/fidget.nvim",
+	"LudoPinelli/comment-box.nvim",
+    { "folke/which-key.nvim", lazy = true },
 	{
-		"nvim-telescope/telescope.nvim",
-		branch = "0.1.x",
-		requires = { "nvim-lua/plenary.nvim" },
-	},
-	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		run = "make",
-		cond = vim.fn.executable("make") == 1,
-	},
-	{ "nvim-treesitter/nvim-treesitter" },
-	{ "nvim-treesitter/playground" },
-	{ "qnighy/lalrpop.vim" },
-	{ "alaviss/nim.nvim" },
-	{ "prabirshrestha/asyncomplete.vim" },
-	{ "simrat39/rust-tools.nvim" },
-	{ "lukas-reineke/indent-blankline.nvim" },
-	{ "theprimeagen/harpoon" },
-	{ "hoob3rt/lualine.nvim" },
-	{ "akinsho/bufferline.nvim", tag = "v3.*" },
-	{ "nvim-tree/nvim-web-devicons" },
-	{ "nvim-tree/nvim-tree.lua" },
-	{ "mg979/vim-visual-multi", branch = "master" },
-	{ "akinsho/toggleterm.nvim" },
-	{ "mbbill/undotree" },
-	{ "norcalli/nvim-colorizer.lua" },
-	-- { "j-hui/fidget.nvim" },
-	{ "mhartington/formatter.nvim" },
-	{ "LudoPinelli/comment-box.nvim" },
+        "mg979/vim-visual-multi",
+        branch = "master",
+    },
     {
         "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
+        build = function()
+            vim.fn["mkdp#util#install"]()
+        end,
     },
-	{
-		"nvim-neorg/neorg",
-		requires = "nvim-lua/plenary.nvim",
-	},
 	{
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	},
+
+    -- LSP
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        dependencies = {
+            'neovim/nvim-lspconfig',
+            'williamboman/mason.nvim',
+            'williamboman/mason-lspconfig.nvim',
+            'jose-elias-alvarez/null-ls.nvim',
+            'folke/trouble.nvim',
+            'Maan2003/lsp_lines.nvim',
+            'ray-x/lsp_signature.nvim',
+            'glepnir/lspsaga.nvim',
+        },
+        lazy = true,
+    },
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v2.x',
+        dependencies = {
+            {'neovim/nvim-lspconfig'},
+            {
+                'williamboman/mason.nvim',
+                build = function()
+                pcall(vim.cmd, 'MasonUpdate')
+                end,
+            },
+            {'williamboman/mason-lspconfig.nvim'},
+
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'hrsh7th/cmp-cmdline'},
+            {'saadparwaiz1/cmp_luasnip'},
+            {'hrsh7th/cmp-nvim-lua'},
+            {'L3MON4D3/LuaSnip'},
+            {'rafamadriz/friendly-snippets'},
+        }
+    },
+
+    -- Telescope
+    {
+		"nvim-telescope/telescope.nvim",
+		version = "0.1.x",
+		dependencies = {
+            "nvim-lua/plenary.nvim",
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+            "nvim-telescope/telescope-symbols.nvim",
+            "nvim-telescope/telescope-hop.nvim",
+            "renerocksai/telekasten.nvim",
+            "renerocksai/calendar-vim",
+        },
+        lazy = true,
+	},
+
+    -- Treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-refactor",
+            "nvim-treesitter/nvim-treesitter-context",
+            "nvim-treesitter/nvim-treesitter-textobjects",
+            "RRethy/nvim-treesitter-endwise",
+            "windwp/nvim-ts-autotag",
+            "p00f/nvim-ts-rainbow",
+        },
+        lazy = true,
+    },
+
+    -- Language Specific
+	"qnighy/lalrpop.vim",
+	"alaviss/nim.nvim",
+    "SeniorMars/typst.nvim",
 	{
 		"saecki/crates.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("crates").setup()
 		end,
-	},
-    {
-        "folke/noice.nvim",
-        requires = {
-            "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
-        }
-    },
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		requires = {
-			-- LSP Support
-			{ "neovim/nvim-lspconfig" },
-			{ "williamboman/mason.nvim" },
-			{ "williamboman/mason-lspconfig.nvim" }, -- Autocompletion
-			{ "hrsh7th/nvim-cmp" },
-			{ "hrsh7th/cmp-buffer" },
-			{ "hrsh7th/cmp-path" },
-			{ "saadparwaiz1/cmp_luasnip" },
-			{ "hrsh7th/cmp-nvim-lsp" },
-			{ "hrsh7th/cmp-nvim-lua" }, -- Snippets
-			{ "L3MON4D3/LuaSnip" },
-			{ "rafamadriz/friendly-snippets" },
-		},
 	},
 }
 -- LuaFormatter on
