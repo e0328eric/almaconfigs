@@ -10,6 +10,11 @@ return {
   {
     -- further customize the options set by the community
     "EdenEast/nightfox.nvim",
+    config = function()
+      require("notify").setup {
+        background_colour = "#000000",
+      }
+    end,
     opts = {
       options = {
         transparent = true,
