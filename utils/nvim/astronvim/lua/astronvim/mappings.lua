@@ -2,41 +2,41 @@ local utils = require "astronvim.utils"
 local is_available = utils.is_available
 local ui = require "astronvim.utils.ui"
 
-local maps = {i = {}, n = {}, v = {}, t = {}}
+local maps = { i = {}, n = {}, v = {}, t = {} }
 
 local sections = {
-    f = {name = "󰍉 Find"},
-    p = {name = "󰏖 Packages"},
-    l = {name = " LSP"},
-    u = {name = " UI"},
-    b = {name = "󰓩 Buffers"},
-    d = {name = " Debugger"},
-    g = {name = " Git"},
-    S = {name = "󱂬 Session"},
-    t = {name = " Terminal"}
+    f = { name = "󰍉 Find" },
+    p = { name = "󰏖 Packages" },
+    l = { name = " LSP" },
+    u = { name = " UI" },
+    b = { name = "󰓩 Buffers" },
+    d = { name = " Debugger" },
+    g = { name = " Git" },
+    S = { name = "󱂬 Session" },
+    t = { name = " Terminal" }
 }
 if not vim.g.icons_enabled then
     vim.tbl_map(function(opts) opts.name = opts.name:gsub("^.* ", "") end,
-                sections)
+        sections)
 end
 
 -- Normal --
 -- Standard Operations
-maps.n["j"] = {"v:count ? 'j' : 'gj'", expr = true, desc = "Move cursor down"}
-maps.n["k"] = {"v:count ? 'k' : 'gk'", expr = true, desc = "Move cursor up"}
+maps.n["j"] = { "v:count ? 'j' : 'gj'", expr = true, desc = "Move cursor down" }
+maps.n["k"] = { "v:count ? 'k' : 'gk'", expr = true, desc = "Move cursor up" }
 maps.v["j"] = maps.n.j
 maps.v["k"] = maps.n.k
-maps.n["<leader>w"] = {"<cmd>w<cr>", desc = "Save"}
-maps.n["<leader>q"] = {"<cmd>confirm q<cr>", desc = "Quit"}
-maps.n["<leader>n"] = {"<cmd>enew<cr>", desc = "New File"}
+maps.n["<leader>w"] = { "<cmd>w<cr>", desc = "Save" }
+maps.n["<leader>q"] = { "<cmd>confirm q<cr>", desc = "Quit" }
+maps.n["<leader>n"] = { "<cmd>enew<cr>", desc = "New File" }
 maps.n["gx"] = {
     utils.system_open,
     desc = "Open the file under cursor with system app"
 }
-maps.n["<C-s>"] = {"<cmd>w!<cr>", desc = "Force write"}
-maps.n["<C-q>"] = {"<cmd>q!<cr>", desc = "Force quit"}
-maps.n["|"] = {"<cmd>vsplit<cr>", desc = "Vertical Split"}
-maps.n["\\"] = {"<cmd>split<cr>", desc = "Horizontal Split"}
+maps.n["<C-s>"] = { "<cmd>w!<cr>", desc = "Force write" }
+maps.n["<C-q>"] = { "<cmd>q!<cr>", desc = "Force quit" }
+maps.n["|"] = { "<cmd>vsplit<cr>", desc = "Vertical Split" }
+maps.n["\\"] = { "<cmd>split<cr>", desc = "Horizontal Split" }
 
 -- Plugin Manager
 maps.n["<leader>p"] = sections.p
@@ -66,9 +66,9 @@ maps.n["<leader>pa"] = {
     "<cmd>AstroUpdatePackages<cr>",
     desc = "Update Plugins and Mason"
 }
-maps.n["<leader>pA"] = {"<cmd>AstroUpdate<cr>", desc = "AstroNvim Update"}
-maps.n["<leader>pv"] = {"<cmd>AstroVersion<cr>", desc = "AstroNvim Version"}
-maps.n["<leader>pl"] = {"<cmd>AstroChangelog<cr>", desc = "AstroNvim Changelog"}
+maps.n["<leader>pA"] = { "<cmd>AstroUpdate<cr>", desc = "AstroNvim Update" }
+maps.n["<leader>pv"] = { "<cmd>AstroVersion<cr>", desc = "AstroNvim Version" }
+maps.n["<leader>pl"] = { "<cmd>AstroChangelog<cr>", desc = "AstroNvim Changelog" }
 
 -- Manage Buffers
 maps.n["<leader>c"] = {
@@ -153,8 +153,8 @@ maps.n["<leader>b|"] = {
 }
 
 -- Navigate tabs
-maps.n["]t"] = {function() vim.cmd.tabnext() end, desc = "Next tab"}
-maps.n["[t"] = {function() vim.cmd.tabprevious() end, desc = "Previous tab"}
+maps.n["]t"] = { function() vim.cmd.tabnext() end, desc = "Next tab" }
+maps.n["[t"] = { function() vim.cmd.tabprevious() end, desc = "Previous tab" }
 
 -- Alpha
 if is_available "alpha-nvim" then
@@ -162,7 +162,7 @@ if is_available "alpha-nvim" then
         function()
             local wins = vim.api.nvim_tabpage_list_wins(0)
             if #wins > 1 and
-                vim.api.nvim_get_option_value("filetype", {win = wins[1]}) ==
+                vim.api.nvim_get_option_value("filetype", { win = wins[1] }) ==
                 "neo-tree" then
                 vim.fn.win_gotoid(wins[2]) -- go to non-neo-tree window to toggle alpha
             end
@@ -177,7 +177,7 @@ if is_available "Comment.nvim" then
     maps.n["<leader>/"] = {
         function()
             require("Comment.api").toggle.linewise.count(vim.v.count > 0 and
-                                                             vim.v.count or 1)
+                vim.v.count or 1)
         end,
         desc = "Comment line"
     }
@@ -234,7 +234,7 @@ end
 
 -- NeoTree
 if is_available "neo-tree.nvim" then
-    maps.n["<leader>e"] = {"<cmd>Neotree toggle<cr>", desc = "Toggle Explorer"}
+    maps.n["<leader>e"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" }
     maps.n["<leader>o"] = {
         function()
             if vim.bo.filetype == "neo-tree" then
@@ -274,8 +274,8 @@ end
 
 -- Package Manager
 if is_available "mason.nvim" then
-    maps.n["<leader>pm"] = {"<cmd>Mason<cr>", desc = "Mason Installer"}
-    maps.n["<leader>pM"] = {"<cmd>MasonUpdateAll<cr>", desc = "Mason Update"}
+    maps.n["<leader>pm"] = { "<cmd>Mason<cr>", desc = "Mason Installer" }
+    maps.n["<leader>pM"] = { "<cmd>MasonUpdateAll<cr>", desc = "Mason Update" }
 end
 
 -- Smart Splits
@@ -313,12 +313,12 @@ if is_available "smart-splits.nvim" then
         desc = "Resize split right"
     }
 else
-    maps.n["<C-h>"] = {"<C-w>h", desc = "Move to left split"}
-    maps.n["<C-j>"] = {"<C-w>j", desc = "Move to below split"}
-    maps.n["<C-k>"] = {"<C-w>k", desc = "Move to above split"}
-    maps.n["<C-l>"] = {"<C-w>l", desc = "Move to right split"}
-    maps.n["<C-Up>"] = {"<cmd>resize -2<CR>", desc = "Resize split up"}
-    maps.n["<C-Down>"] = {"<cmd>resize +2<CR>", desc = "Resize split down"}
+    maps.n["<C-h>"] = { "<C-w>h", desc = "Move to left split" }
+    maps.n["<C-j>"] = { "<C-w>j", desc = "Move to below split" }
+    maps.n["<C-k>"] = { "<C-w>k", desc = "Move to above split" }
+    maps.n["<C-l>"] = { "<C-w>l", desc = "Move to right split" }
+    maps.n["<C-Up>"] = { "<cmd>resize -2<CR>", desc = "Resize split up" }
+    maps.n["<C-Down>"] = { "<cmd>resize +2<CR>", desc = "Resize split down" }
     maps.n["<C-Left>"] = {
         "<cmd>vertical resize -2<CR>",
         desc = "Resize split left"
@@ -372,7 +372,7 @@ if is_available "telescope.nvim" then
                 end -- don't search the astronvim core files
                 if vim.fn.isdirectory(dir) == 1 then
                     table.insert(search_dirs, dir)
-                end -- add directory to search if exists
+                end                              -- add directory to search if exists
             end
             if vim.tbl_isempty(search_dirs) then -- if no config folders found, show warning
                 utils.notify("No user configuration files found", "warn")
@@ -442,7 +442,7 @@ if is_available "telescope.nvim" then
     }
     maps.n["<leader>ft"] = {
         function()
-            require("telescope.builtin").colorscheme {enable_preview = true}
+            require("telescope.builtin").colorscheme { enable_preview = true }
         end,
         desc = "Find themes"
     }
@@ -454,7 +454,7 @@ if is_available "telescope.nvim" then
         function()
             require("telescope.builtin").live_grep {
                 additional_args = function(args)
-                    return vim.list_extend(args, {"--hidden", "--no-ignore"})
+                    return vim.list_extend(args, { "--hidden", "--no-ignore" })
                 end
             }
         end,
@@ -511,7 +511,7 @@ if is_available "toggleterm.nvim" then
         }
     end
     local python = vim.fn.executable "python" == 1 and "python" or
-                       vim.fn.executable "python3" == 1 and "python3"
+        vim.fn.executable "python3" == 1 and "python3"
     if python then
         maps.n["<leader>tp"] = {
             function() utils.toggle_term_cmd(python) end,
@@ -530,7 +530,7 @@ if is_available "toggleterm.nvim" then
         "<cmd>ToggleTerm size=80 direction=vertical<cr>",
         desc = "ToggleTerm vertical split"
     }
-    maps.n["<F7>"] = {"<cmd>ToggleTerm<cr>", desc = "Toggle terminal"}
+    maps.n["<F7>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }
     maps.t["<F7>"] = maps.n["<F7>"]
     maps.n["<C-'>"] = maps.n["<F7>"]
     maps.t["<C-'>"] = maps.n["<F7>"]
@@ -653,8 +653,8 @@ if is_available "nvim-ufo" then
 end
 
 -- Stay in indent mode
-maps.v["<S-Tab>"] = {"<gv", desc = "unindent line"}
-maps.v["<Tab>"] = {">gv", desc = "indent line"}
+maps.v["<S-Tab>"] = { "<gv", desc = "unindent line" }
+maps.v["<Tab>"] = { ">gv", desc = "indent line" }
 
 -- Improved Terminal Navigation
 maps.t["<C-h>"] = {
@@ -665,7 +665,7 @@ maps.t["<C-j>"] = {
     "<cmd>wincmd j<cr>",
     desc = "Terminal down window navigation"
 }
-maps.t["<C-k>"] = {"<cmd>wincmd k<cr>", desc = "Terminal up window navigation"}
+maps.t["<C-k>"] = { "<cmd>wincmd k<cr>", desc = "Terminal up window navigation" }
 maps.t["<C-l>"] = {
     "<cmd>wincmd l<cr>",
     desc = "Terminal right window navigation"
@@ -674,11 +674,11 @@ maps.t["<C-l>"] = {
 maps.n["<leader>u"] = sections.u
 -- Custom menu for modification of the user experience
 if is_available "nvim-autopairs" then
-    maps.n["<leader>ua"] = {ui.toggle_autopairs, desc = "Toggle autopairs"}
+    maps.n["<leader>ua"] = { ui.toggle_autopairs, desc = "Toggle autopairs" }
 end
-maps.n["<leader>ub"] = {ui.toggle_background, desc = "Toggle background"}
+maps.n["<leader>ub"] = { ui.toggle_background, desc = "Toggle background" }
 if is_available "nvim-cmp" then
-    maps.n["<leader>uc"] = {ui.toggle_cmp, desc = "Toggle autocompletion"}
+    maps.n["<leader>uc"] = { ui.toggle_cmp, desc = "Toggle autocompletion" }
 end
 if is_available "nvim-colorizer.lua" then
     maps.n["<leader>uC"] = {
@@ -686,22 +686,22 @@ if is_available "nvim-colorizer.lua" then
         desc = "Toggle color highlight"
     }
 end
-maps.n["<leader>ud"] = {ui.toggle_diagnostics, desc = "Toggle diagnostics"}
-maps.n["<leader>ug"] = {ui.toggle_signcolumn, desc = "Toggle signcolumn"}
-maps.n["<leader>ui"] = {ui.set_indent, desc = "Change indent setting"}
-maps.n["<leader>ul"] = {ui.toggle_statusline, desc = "Toggle statusline"}
-maps.n["<leader>uL"] = {ui.toggle_codelens, desc = "Toggle CodeLens refresh"}
-maps.n["<leader>un"] = {ui.change_number, desc = "Change line numbering"}
+maps.n["<leader>ud"] = { ui.toggle_diagnostics, desc = "Toggle diagnostics" }
+maps.n["<leader>ug"] = { ui.toggle_signcolumn, desc = "Toggle signcolumn" }
+maps.n["<leader>ui"] = { ui.set_indent, desc = "Change indent setting" }
+maps.n["<leader>ul"] = { ui.toggle_statusline, desc = "Toggle statusline" }
+maps.n["<leader>uL"] = { ui.toggle_codelens, desc = "Toggle CodeLens refresh" }
+maps.n["<leader>un"] = { ui.change_number, desc = "Change line numbering" }
 maps.n["<leader>uN"] = {
     ui.toggle_ui_notifications,
     desc = "Toggle UI notifications"
 }
-maps.n["<leader>up"] = {ui.toggle_paste, desc = "Toggle paste mode"}
-maps.n["<leader>us"] = {ui.toggle_spell, desc = "Toggle spellcheck"}
-maps.n["<leader>uS"] = {ui.toggle_conceal, desc = "Toggle conceal"}
-maps.n["<leader>ut"] = {ui.toggle_tabline, desc = "Toggle tabline"}
-maps.n["<leader>uu"] = {ui.toggle_url_match, desc = "Toggle URL highlight"}
-maps.n["<leader>uw"] = {ui.toggle_wrap, desc = "Toggle wrap"}
-maps.n["<leader>uy"] = {ui.toggle_syntax, desc = "Toggle syntax highlight"}
+maps.n["<leader>up"] = { ui.toggle_paste, desc = "Toggle paste mode" }
+maps.n["<leader>us"] = { ui.toggle_spell, desc = "Toggle spellcheck" }
+maps.n["<leader>uS"] = { ui.toggle_conceal, desc = "Toggle conceal" }
+maps.n["<leader>ut"] = { ui.toggle_tabline, desc = "Toggle tabline" }
+maps.n["<leader>uu"] = { ui.toggle_url_match, desc = "Toggle URL highlight" }
+maps.n["<leader>uw"] = { ui.toggle_wrap, desc = "Toggle wrap" }
+maps.n["<leader>uy"] = { ui.toggle_syntax, desc = "Toggle syntax highlight" }
 
 utils.set_mappings(astronvim.user_opts("mappings", maps))
