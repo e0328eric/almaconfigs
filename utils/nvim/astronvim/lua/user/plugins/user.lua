@@ -10,19 +10,23 @@
 --     require("lsp_signature").setup()
 --   end,
 -- },
--- LuaFormatter off
 return {
   "numToStr/Comment.nvim",
   {
     "mg979/vim-visual-multi",
     branch = "master",
-    event = "User AstroFile"
+    event = "User AstroFile",
   },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
-    event = "User AstroFile"
-  }
+    event = "User AstroFile",
+  },
+  {
+    "saecki/crates.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function() require("crates").setup() end,
+    lazy = false,
+  },
 }
--- LuaFormatter on
