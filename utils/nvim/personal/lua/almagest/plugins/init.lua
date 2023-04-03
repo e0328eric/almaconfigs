@@ -1,28 +1,28 @@
 -- LuaFormatter off
 return {
     -- Colorscheme
-	"RRethy/nvim-base16",
-	"hoob3rt/lualine.nvim",
-	"akinsho/bufferline.nvim",
+    "RRethy/nvim-base16",
+    "hoob3rt/lualine.nvim",
+    "akinsho/bufferline.nvim",
     "rcarriga/nvim-notify",
     "stevearc/dressing.nvim",
-	"norcalli/nvim-colorizer.lua",
+    "norcalli/nvim-colorizer.lua",
 
     -- Utilities
-	"nvim-tree/nvim-web-devicons",
-	"nvim-tree/nvim-tree.lua",
-	"akinsho/toggleterm.nvim",
-	"prabirshrestha/asyncomplete.vim",
-	"lukas-reineke/indent-blankline.nvim",
-	"theprimeagen/harpoon",
-	"mhartington/formatter.nvim",
-	"mbbill/undotree",
+    "nvim-tree/nvim-web-devicons",
+    "nvim-tree/nvim-tree.lua",
+    "akinsho/toggleterm.nvim",
+    "prabirshrestha/asyncomplete.vim",
+    "lukas-reineke/indent-blankline.nvim",
+    "theprimeagen/harpoon",
+    "mhartington/formatter.nvim",
+    "mbbill/undotree",
     "TimUntersberger/neogit",
     "numToStr/Comment.nvim",
     "j-hui/fidget.nvim",
-	"LudoPinelli/comment-box.nvim",
+    "LudoPinelli/comment-box.nvim",
     { "folke/which-key.nvim", lazy = true },
-	{
+    {
         "mg979/vim-visual-multi",
         branch = "master",
     },
@@ -32,10 +32,10 @@ return {
             vim.fn["mkdp#util#install"]()
         end,
     },
-	{
-		"folke/todo-comments.nvim",
-		requires = "nvim-lua/plenary.nvim",
-	},
+    {
+        "folke/todo-comments.nvim",
+        requires = "nvim-lua/plenary.nvim",
+    },
 
     -- LSP
     {
@@ -56,32 +56,32 @@ return {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         dependencies = {
-            {'neovim/nvim-lspconfig'},
+            { 'neovim/nvim-lspconfig' },
             {
                 'williamboman/mason.nvim',
                 build = function()
-                pcall(vim.cmd, 'MasonUpdate')
+                    pcall(vim.cmd, 'MasonUpdate')
                 end,
             },
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason-lspconfig.nvim' },
 
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'hrsh7th/cmp-cmdline'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lua'},
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'hrsh7th/cmp-cmdline' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lua' },
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     },
 
     -- Telescope
     {
-		"nvim-telescope/telescope.nvim",
-		version = "0.1.x",
-		dependencies = {
+        "nvim-telescope/telescope.nvim",
+        version = "0.1.x",
+        dependencies = {
             "nvim-lua/plenary.nvim",
             { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
             "nvim-telescope/telescope-symbols.nvim",
@@ -90,7 +90,7 @@ return {
             "renerocksai/calendar-vim",
         },
         lazy = true,
-	},
+    },
 
     -- Treesitter
     {
@@ -108,15 +108,15 @@ return {
     },
 
     -- Language Specific
-	"qnighy/lalrpop.vim",
-	"alaviss/nim.nvim",
+    "qnighy/lalrpop.vim",
+    "alaviss/nim.nvim",
     "SeniorMars/typst.nvim",
-	{
-		"saecki/crates.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("crates").setup()
-		end,
-	},
+    {
+        "saecki/crates.nvim",
+        requires = { "nvim-lua/plenary.nvim" },
+        config = function()
+            require("crates").setup()
+        end,
+    },
 }
 -- LuaFormatter on
