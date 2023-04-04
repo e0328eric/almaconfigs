@@ -14,7 +14,7 @@ return {
     }
 
     local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities.offsetEncoding = "utf-8"
+    capabilities.offsetEncoding = { "utf-8", "utf-16" }
     require("lspconfig").clangd.setup { capabilities = capabilities }
 
     return config -- return final config table

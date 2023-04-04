@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 utils.wkmap({
     [" "] = {function() vim.cmd([[let @/=""]]) end, "Clear search highlights"},
     b = {name = "+buffer", d = {":bdelete<CR>", "delete buffer"}},
-    e = {vim.cmd.NvimTreeToggle, "Open default neovim Ex"}
+    e = { "<cmd>NeoTreeFloat<cr>", "Toggle Explorer" }
 })
 
 vim.keymap.set("n", "<Tab>", vim.cmd.BufferLineCycleNext)

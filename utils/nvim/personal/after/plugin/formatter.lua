@@ -30,7 +30,7 @@ utils.cfgplugin("formatter", function(formatter)
             go = format_kind("go").gofmt,
             javascript = format_kind("javascript").prettier,
             json = format_kind("json").prettier,
-            lua = format_kind("lua").luaformat,
+            lua = format_kind("lua").stylua,
             python = format_kind("python").black,
             rust = format_kind("rust").rustfmt,
             zig = format_kind("zig").zigfmt,

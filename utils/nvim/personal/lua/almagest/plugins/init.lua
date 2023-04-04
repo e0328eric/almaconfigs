@@ -2,15 +2,18 @@
 return {
 	-- Colorscheme
 	"RRethy/nvim-base16",
-	"hoob3rt/lualine.nvim",
+	"freddiehaddad/feline.nvim",
 	"akinsho/bufferline.nvim",
 	"rcarriga/nvim-notify",
 	"stevearc/dressing.nvim",
 	"norcalli/nvim-colorizer.lua",
 
+	-- main page
+	"glepnir/dashboard-nvim",
+
 	-- Utilities
-	"nvim-tree/nvim-web-devicons",
-	"nvim-tree/nvim-tree.lua",
+	{ "nvim-neo-tree/neo-tree.nvim", dependencies = { "MunifTanjim/nui.nvim" } },
+    "nvim-tree/nvim-web-devicons",
 	"akinsho/toggleterm.nvim",
 	"prabirshrestha/asyncomplete.vim",
 	"lukas-reineke/indent-blankline.nvim",
@@ -21,7 +24,7 @@ return {
 	"numToStr/Comment.nvim",
 	"j-hui/fidget.nvim",
 	"LudoPinelli/comment-box.nvim",
-	{ "folke/which-key.nvim", lazy = true },
+	{ "folke/which-key.nvim",        lazy = true },
 	{
 		"mg979/vim-visual-multi",
 		branch = "master",
@@ -37,22 +40,8 @@ return {
 		requires = "nvim-lua/plenary.nvim",
 	},
 
-	-- LSP
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		dependencies = {
-			"neovim/nvim-lspconfig",
-			"williamboman/mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
-			"jose-elias-alvarez/null-ls.nvim",
-			"folke/trouble.nvim",
-			"Maan2003/lsp_lines.nvim",
-			"ray-x/lsp_signature.nvim",
-			"glepnir/lspsaga.nvim",
-		},
-		lazy = true,
-	},
-	{
+    -- LSP
+{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v2.x",
 		dependencies = {
@@ -118,5 +107,6 @@ return {
 			require("crates").setup()
 		end,
 	},
+
 }
 -- LuaFormatter on
