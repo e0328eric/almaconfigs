@@ -17,7 +17,7 @@ hidden = false
 enable = true
 
 [keys.normal]
-g = { E = "goto_file_end" }
+G = "goto_file_end"
 Z = { Q = ":quit!", Z = ":write-quit" }
 V = "extend_line_below"
 "space" = { c = ":format", b = "no_op" }
