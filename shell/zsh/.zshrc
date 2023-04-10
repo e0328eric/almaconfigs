@@ -39,13 +39,17 @@ export PATH="$GOPATH/bin:$PATH"
 export DYLD_LIBRARY_PATH="/Users/almagest/.rustup/toolchains/stable-x86_64-apple-darwin/lib:$DYLD_LIBRARY_PATH"
 export DYLD_LIBRARY_PATH="/Users/almagest/.local/gnu/lib:$DYLD_LIBRARY_PATH"
 
+export LDFLAGS="$LDFLAGS -L/usr/local/lib"
+export CFLAGS="$CFLAGS -I/usr/local/include"
+
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/llvm/include"
+
 
 # Define aliases
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias c="clear"
-alias v="hx"
+alias v="nvim"
 alias h="hx"
 alias lg="lazygit"
 alias ls="exa"
@@ -61,9 +65,9 @@ alias oldrm="/bin/rm"
 alias rm="xilo"
 alias getmusic="youtube-dl -x --audio-format m4a"
 
-alias zshcfg="hx ~/.zshrc"
+alias zshcfg="nvim ~/.zshrc"
 alias reloadzsh="source ~/.zshrc"
-alias vimcfg="hx ~/.config/nvim/init.vim"
+alias vimcfg="nvim ~/.config/nvim/init.vim"
 alias cmakeinit="$EDITOR CMakeLists.txt"
 alias cfmtcp="cp ~/Github/arch-almagest/format/.clang-format ."
 
