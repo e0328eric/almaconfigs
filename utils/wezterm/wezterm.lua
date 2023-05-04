@@ -14,11 +14,12 @@ local image_table = {
     "/Users/almagest/.config/wezterm/gura.jpg",
     "/Users/almagest/.config/wezterm/Shirakami_Fubuki2.jpg",
     "/Users/almagest/.config/wezterm/mona.jpg",
-    "/Users/almagest/.config/wezterm/ame_gura.jpg"
+    "/Users/almagest/.config/wezterm/ame_gura.jpg",
+    "/Users/almagest/.config/wezterm/non-fiction.png"
 }
 local function background_image()
     math.randomseed(os.time())
-    return image_table[math.random(4)]
+    return image_table[math.random(5)]
 end
 
 return {
@@ -114,7 +115,7 @@ return {
     --         │                Window Background Settings                │
     --         ╰──────────────────────────────────────────────────────────╯
     window_background_image = background_image(),
-    window_background_image_hsb = {brightness = 0.14},
+    window_background_image_hsb = { brightness = 0.14 },
 
     --  ╭──────────────────────────────────────────────────────────╮
     --  │                           etc                            │
@@ -125,16 +126,16 @@ return {
     --         │                       Keybindings                        │
     --         ╰──────────────────────────────────────────────────────────╯
     keys = {
-        {key = "w", mods = "CMD|CTRL", action = act.SpawnWindow}, {
-            key = "v",
-            mods = "CTRL|SHIFT",
-            action = act.SplitHorizontal({domain = "CurrentPaneDomain"})
-        }, {
-            key = "s",
-            mods = "CTRL|SHIFT",
-            action = act.SplitVertical({domain = "CurrentPaneDomain"})
-        },
-        {key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen},
+        { key = "w", mods = "CMD|CTRL", action = act.SpawnWindow }, {
+        key = "v",
+        mods = "CTRL|SHIFT",
+        action = act.SplitHorizontal({ domain = "CurrentPaneDomain" })
+    }, {
+        key = "s",
+        mods = "CTRL|SHIFT",
+        action = act.SplitVertical({ domain = "CurrentPaneDomain" })
+    },
+        { key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen },
         {
             key = "Enter",
             mods = "ALT",
