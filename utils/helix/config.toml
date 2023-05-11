@@ -20,6 +20,10 @@ enable = true
 G = "goto_file_end"
 Z = { Q = ":quit!", Z = ":write-quit" }
 V = "extend_line_below"
+D = ["extend_line_below", "delete_selection"]
+"C-D" = ["extend_line_below", "delete_selection_noyank"]
+"0" = "goto_line_start"
+"$" = "goto_line_end"
 "space" = { c = ":format", b = "no_op" }
 tab = "goto_next_buffer"
 "C-tab" = "goto_previous_buffer"
