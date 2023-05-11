@@ -153,15 +153,15 @@ switch (uname)
         end
 
         function vimcfg
-            hx ~/.config/nvim/init.vim
+            nvim ~/.config/nvim/init.vim
         end
 
         function fishcfg
-            hx ~/.config/fish/config.fish
+            nvim ~/.config/fish/config.fish
         end
 
         function hxcfg
-            hx ~/.config/helix/config.toml
+            nvim ~/.config/helix/config.toml
         end
 
         function cmakeinit
