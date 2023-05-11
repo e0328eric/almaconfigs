@@ -1,4 +1,4 @@
-theme = "ayu_transparent"
+theme = "monokai_transparent"
 
 [editor]
 auto-pairs = false

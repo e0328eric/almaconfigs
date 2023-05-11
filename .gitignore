@@ -1,2 +1,3 @@
 /script/battery-low/target/
 /utils/nvim/autoload
+/utils/helix/runtime
