@@ -1,7 +1,8 @@
 version: 3
 profiles: []
 hotkeys:
-  toggle-window: []
+  toggle-window:
+    - Ctrl-Space
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
@@ -60,10 +61,10 @@ hotkeys:
   serial:
     - Alt-K
   restart-serial-session: []
-  new-window:
-    - ⌘-N
   new-tab:
     - ⌘-T
+  new-window:
+    - ⌘-N
   profile: {}
   profile-selectors: {}
   toggle-fullscreen:
@@ -103,10 +104,10 @@ hotkeys:
     - ⌘-8
   tab-9:
     - ⌘-9
-  tab-10:
-    - ⌘-0
+  tab-10: []
   duplicate-tab: []
   restart-tab: []
+  reconnect-tab: []
   explode-tab:
     - ⌘-Shift-.
   combine-tabs:
@@ -122,9 +123,9 @@ hotkeys:
   tab-19: []
   tab-20: []
   split-right:
-    - ⌘-Shift-D
+    - Ctrl-Shift-V
   split-bottom:
-    - ⌘-D
+    - Ctrl-Shift-S
   split-left: []
   split-top: []
   pane-nav-right:
@@ -186,74 +187,38 @@ terminal:
       - '#ffa3aa'
       - '#c7fffd'
       - '#ffffff'
-  font: Comic Code Ligatures
-  customColorSchemes:
-    - name: SpaceGray Eighties
-      foreground: '#bdbaae'
-      background: '#222222'
-      cursor: '#bbbbbb'
-      colors:
-        - '#15171c'
-        - '#ec5f67'
-        - '#81a764'
-        - '#fec254'
-        - '#5486c0'
-        - '#bf83c1'
-        - '#57c2c1'
-        - '#efece7'
-        - '#555555'
-        - '#ff6973'
-        - '#93d493'
-        - '#ffd256'
-        - '#4d84d1'
-        - '#ff55ff'
-        - '#83e9e4'
-        - '#ffffff'
-    - name: ayu
-      foreground: '#e6e1cf'
-      background: '#0f1419'
-      cursor: '#f29718'
-      colors:
-        - '#000000'
-        - '#ff3333'
-        - '#b8cc52'
-        - '#e7c547'
-        - '#36a3d9'
-        - '#f07178'
-        - '#95e6cb'
-        - '#ffffff'
-        - '#323232'
-        - '#ff6565'
-        - '#eafe84'
-        - '#fff779'
-        - '#68d5ff'
-        - '#ffa3aa'
-        - '#c7fffd'
-        - '#ffffff'
   ligatures: true
-  fallbackFont: Fira Code
+  font: FiraCode Nerd Font
   fontSize: 12
-  background: colorScheme
+  customColorSchemes: []
 ssh: {}
 configSync:
   parts: {}
 clickableLinks: {}
 accessibility: {}
 appearance:
-  css: |-
-    /*
+  css: |
     .xterm-viewport {
-       background-image: url("/Users/almagest/Pictures/Shirakami_Fubuki2.png");
+       background-image: url("/Users/Almagest/Nextcloud/Photos/mona.jpg");
        background-repeat: no-repeat;
-       background-position: 45%;
+       background-position: 50%;
        background-size: auto 100vh;
-       filter: opacity(50%);
-       opacity: 0.5;
+       opacity: 0.2;
        z-index: 1;
     }
-    */
-  opacity: 0.82
+
+    split-tab-spanner {
+        background: rgba(0, 0, 0, .2);
+
+        &:hover, &.active {
+            background: rgba(255, 255, 255, .125);
+        }
+    }
 hacks: {}
 enableWelcomeTab: false
 pluginBlacklist: []
-profileDefaults: {}
+providerBlacklist: []
+commandBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true

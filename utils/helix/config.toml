@@ -20,7 +20,8 @@ enable = true
 G = "goto_file_end"
 Z = { Q = ":quit!", Z = ":write-quit" }
 V = "extend_line_below"
-D = ["extend_line_below", "delete_selection"]
+D = ["select_mode", "goto_line_end", "delete_selection"]
+C = ["select_mode", "goto_line_end", "change_selection"]
 "C-D" = ["extend_line_below", "delete_selection_noyank"]
 "0" = "goto_line_start"
 "$" = "goto_line_end"

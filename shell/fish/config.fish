@@ -87,7 +87,10 @@ switch (uname)
         # Define a default editor
         set -g EDITOR nvim
 
+        set DENO_INSTALL "/Users/almagest/.deno"
+
         set PATH $PATH /usr/local/texlive/2021/bin/universal-darwin
+        set PATH "$DENO_INSTALL/bin:$PATH"
         set PATH $PATH /Users/almagest/.local/bin
         set PATH $PATH /Users/almagest/.local/gnu/bin
         set PATH $PATH /Users/almagest/.local/i686-elf/bin
@@ -117,6 +120,7 @@ switch (uname)
         set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.local/gnu/lib
         set CPATH $CPATH /opt/homebrew/include
 
+
         set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
         set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
         set VCPKG_ROOT $HOME/vcpkg
@@ -129,7 +133,7 @@ switch (uname)
         # fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
-            hx $argv
+            nvim $argv
         end
 
         function h
@@ -235,7 +239,7 @@ function voca
             echo "*.*"
 
         case Darwin
-            cd /Users/almagest/Nextcloud/Voca
+            cd ~/Nextcloud/Voca
     end
 end
 
@@ -283,3 +287,7 @@ source /Users/almagest/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
 set -gx WASMTIME_HOME "$HOME/.wasmtime"
 
 string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/bin" $PATH
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
