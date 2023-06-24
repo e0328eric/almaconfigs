@@ -1,33 +1,58 @@
 # Nushell Environment Config File
+#
+# version = 0.80.1
 
 def create_left_prompt [] {
-    let path_segment = if (is-admin) {
-        $"(ansi red_bold)($env.PWD)"
-    } else {
-        $"(ansi green_bold)($env.PWD)"
+    mut home = ""
+    try {
+        if $nu.os-info.name == "windows" {
+            $home = $env.USERPROFILE
+        } else {
+            $home = $env.HOME
+        }
     }
 
-    $path_segment
+    let dir = ([
+        ($env.PWD | str substring 0..($home | str length) | str replace --string $home "~"),
+        ($env.PWD | str substring ($home | str length)..)
+    ] | str join)
+
+    let path_color = (if (is-admin) { ansi red_bold } else { ansi green_bold })
+    let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
+    let path_segment = $"($path_color)($dir)"
+
+    $path_segment | str replace --all --string (char path_sep) $"($separator_color)/($path_color)"
 }
 
 def create_right_prompt [] {
-    let time_segment = ([
-        (date now | date format '%m/%d/%Y %r')
-    ] | str join)
+    let time_segment_color = (ansi magenta)
 
-    $time_segment
+    let time_segment = ([
+        (ansi reset)
+        $time_segment_color
+        (date now | date format '%m/%d/%Y %r')
+    ] | str join | str replace --all "([/:])" $"(ansi light_magenta_bold)${1}($time_segment_color)" |
+        str replace --all "([AP]M)" $"(ansi light_magenta_underline)${1}")
+
+    let last_exit_code = if ($env.LAST_EXIT_CODE != 0) {([
+        (ansi rb)
+        ($env.LAST_EXIT_CODE)
+    ] | str join)
+    } else { "" }
+
+    ([$last_exit_code, (char space), $time_segment] | str join)
 }
 
 # Use nushell functions to define your right and left prompt
-let-env PROMPT_COMMAND = { create_left_prompt }
-let-env PROMPT_COMMAND_RIGHT = { create_right_prompt }
+let-env PROMPT_COMMAND = {|| create_left_prompt }
+let-env PROMPT_COMMAND_RIGHT = {|| create_right_prompt }
 
 # The prompt indicators are environmental variables that represent
 # the state of the prompt
-let-env PROMPT_INDICATOR = { "" }
-let-env PROMPT_INDICATOR_VI_INSERT = { "" }
-let-env PROMPT_INDICATOR_VI_NORMAL = { "" }
-let-env PROMPT_MULTILINE_INDICATOR = { "" }
+let-env PROMPT_INDICATOR = {|| "> " }
+let-env PROMPT_INDICATOR_VI_INSERT = {|| ": " }
+let-env PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
+let-env PROMPT_MULTILINE_INDICATOR = {|| "::: " }
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
@@ -35,12 +60,12 @@ let-env PROMPT_MULTILINE_INDICATOR = { "" }
 # Note: The conversions happen *after* config.nu is loaded
 let-env ENV_CONVERSIONS = {
   "PATH": {
-    from_string: { |s| $s | split row (char esep) | path expand -n }
-    to_string: { |v| $v | path expand -n | str join (char esep) }
+    from_string: { |s| $s | split row (char esep) | path expand --no-symlink }
+    to_string: { |v| $v | path expand --no-symlink | str join (char esep) }
   }
   "Path": {
-    from_string: { |s| $s | split row (char esep) | path expand -n }
-    to_string: { |v| $v | path expand -n | str join (char esep) }
+    from_string: { |s| $s | split row (char esep) | path expand --no-symlink }
+    to_string: { |v| $v | path expand --no-symlink | str join (char esep) }
   }
 }
 
@@ -48,47 +73,22 @@ let-env ENV_CONVERSIONS = {
 #
 # By default, <nushell-config-dir>/scripts is added
 let-env NU_LIB_DIRS = [
-    ($nu.config-path | path dirname | path join 'scripts')
+    ($nu.default-config-dir | path join 'scripts')
 ]
 
 # Directories to search for plugin binaries when calling register
 #
 # By default, <nushell-config-dir>/plugins is added
 let-env NU_PLUGIN_DIRS = [
-    ($nu.config-path | path dirname | path join 'plugins')
+    ($nu.default-config-dir | path join 'plugins')
 ]
 
-alias s = ls
-alias v = nvim
-alias h = hx
-alias t = tmux
-alias lg = lazygit
-alias hakwon = cd "~/pCloud/TeX_Documents/Hakwon"
-alias minireport = cd "~/pCloud/TeX_Documents/Mini_Report"
-alias notetaking = cd "~/pCloud/TeX_Documents/NoteTaking"
-alias homework = cd "~/pCloud/TeX_Documents/Homework"
-alias voca = cd "~/pCloud/Voca"
-alias cmakeinit = nvim "CMakeLists.txt"
+let path_lst = [
+	"/usr/local/bin",
+	"~/.local/bin",
+	"~/.cargo/bin",
+]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-let-env PATH = (
-    $env.PATH                                                                         |
-    append "/usr/local/bin"                                                           |
-    append "/usr/local/opt/qt/bin"                                                    |
-    append "/usr/local/opt/llvm/bin"                                                  |
-    append "/usr/local/Cellar/gcc/11.1.0_1/bin"                                       |
-    append "/usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin" |
-    append "/Users/almagest/Library/Application Support/Coursier/bin"                 |
-    append "/opt/local/bin"                                                           |
-    append "/opt/local/sbin"                                                          |
-    append "/Users/almagest/.local/bin"                                               |
-    append "/Users/almagest/.cabal/bin"                                               |
-    append "/Users/almagest/.cargo/bin"                                               |
-    append "/Users/almagest/.go/bin"                                                  |
-    append "/Users/almagest/.ghcup/bin"                                               |
-    append "/Users/almagest/.cabal/bin"                                               |
-    append "/Users/almagest/.nimble/bin"                                              |
-    append "/Users/almagest/.flutter/bin"                                             |
-    append "/Users/almagest/.npm-global/bin"                                          |
-    append "/Users/almagest/.opam/default/bin"
-  )
+let-env PATH = ($env.PATH | split row (char esep) | append $path_lst)
+

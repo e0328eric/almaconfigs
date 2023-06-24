@@ -4,6 +4,8 @@ theme = "base16_transparent"
 auto-pairs = false
 line-number = "relative"
 bufferline = "multiple"
+text-width = 100
+rulers = [100]
 
 [editor.cursor-shape]
 insert = "bar"
