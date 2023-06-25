@@ -444,9 +444,9 @@ let-env config = {
   ]
 }
 
+def v [arg] { if (sys | get host.name) == "Darwin" { hx $arg } else { helix $arg } }
 def h [arg] { if (sys | get host.name) == "Darwin" { hx $arg } else { helix $arg } }
 alias s          = ls
-alias v          = nvim
 alias t          = tmux
 alias lg         = lazygit
 alias getmusic   = youtube-dl -x --audio-format m4a
