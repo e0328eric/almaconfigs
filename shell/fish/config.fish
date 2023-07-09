@@ -133,7 +133,7 @@ switch (uname)
         # fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
-            nvim $argv
+            hx $argv
         end
 
         function h
@@ -219,7 +219,7 @@ function hakwon
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/TeX_Documents/Hakwon
+            cd ~/pCloud/TeX_Documents/Hakwon
     end
 end
 
@@ -229,7 +229,7 @@ function minireport
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/TeX_Documents/Mini_Report
+            cd ~/pCloud/TeX_Documents/Mini_Report
     end
 end
 
@@ -239,7 +239,7 @@ function voca
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/Voca
+            cd ~/pCloud/Voca
     end
 end
 
@@ -249,7 +249,7 @@ function notetaking
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/TeX_Documents/NoteTaking
+            cd ~/pCloud/TeX_Documents/NoteTaking
     end
 end
 
@@ -259,7 +259,7 @@ function homework
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/TeX_Documents/Homework
+            cd ~/pCloud/TeX_Documents/Homework
     end
 end
 
@@ -269,7 +269,7 @@ function mathbook
             echo "*.*"
 
         case Darwin
-            cd ~/Nextcloud/Math
+            cd ~/pCloud/Math
     end
 end
 
@@ -291,3 +291,5 @@ string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/almagest/.ghcup/bin $PATH # ghcup-env

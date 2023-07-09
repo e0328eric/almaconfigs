@@ -1,4 +1,4 @@
-theme = "base16_transparent"
+theme = "gruvbox_transparent"
 
 [editor]
 auto-pairs = false
@@ -21,7 +21,7 @@ enable = true
 [keys.normal]
 G = "goto_file_end"
 Z = { Q = ":quit!", Z = ":write-quit" }
-V = "extend_to_line_bounds"
+V = ["select_mode", "extend_to_line_bounds"]
 D = ["select_mode", "goto_line_end", "delete_selection"]
 C = ["select_mode", "goto_line_end", "change_selection"]
 "C-D" = ["extend_line_below", "delete_selection_noyank"]

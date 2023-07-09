@@ -17,7 +17,6 @@ local config = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"Comic Code Ligatures",
 	"FiraCode Nerd Font",
 	"JetbrainMono Nerd Font",
 	"Noto Sans Egyptian Hieroglyphs",
@@ -74,7 +73,7 @@ config.colors = {
 config.background = {
 	{
 		source = {
-			File = "/Users/almagest/.config/wezterm/silver_wolf.png",
+			File = "/Users/almagest/.config/wezterm/Silver_Wolf.png",
 		},
 		hsb = { brightness = 0.14 },
 	},
