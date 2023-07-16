@@ -266,6 +266,9 @@ g = { g = [
 [keys.insert]
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "normal_mode"]
+"C-\\" = "open_above"
+"C-right" = "select_next_sibling"
+"C-left" = "select_prev_sibling"
 
 [keys.select]
 # Muscle memory
@@ -286,12 +289,6 @@ U = ["switch_to_uppercase", "collapse_selection", "normal_mode"]
 i = "select_textobject_inner"
 a = "select_textobject_around"
 
-# Some extra binds to allow us to insert/append in select mode because it's nice with multiple
-# cursors
-tab = [
-  "insert_mode",
-  "collapse_selection",
-] # tab is read by most terminal editors as "C-i"
 C-a = ["append_mode", "collapse_selection"]
 
 # Make selecting lines in visual mode behave sensibly
