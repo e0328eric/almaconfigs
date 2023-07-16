@@ -43,7 +43,7 @@ soft-wrap.wrap-at-text-width = true
 
 [[grammar]]
 name = "typst"
-source = { git = "https://github.com/nvarner/typst-lsp", rev = "master" }
+source = { git = "https://github.com/SeniorMars/tree-sitter-typst.git", rev = "main" }
 
 [[language]]
 name = "toml"

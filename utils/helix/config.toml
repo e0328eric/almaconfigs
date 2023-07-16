@@ -316,3 +316,6 @@ P = "paste_clipboard_before"
 
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
+
+"C-left" = "goto_line_start"
+"C-right" = "goto_line_end"
