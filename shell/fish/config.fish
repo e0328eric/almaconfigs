@@ -133,7 +133,7 @@ switch (uname)
         # fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
-            hx $argv
+            nvim $argv
         end
 
         function h
