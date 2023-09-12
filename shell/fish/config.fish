@@ -120,9 +120,8 @@ switch (uname)
         set DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH /Users/almagest/.local/gnu/lib
         set CPATH $CPATH /opt/homebrew/include
 
-
-        set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
-        set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
+        # set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
+        # set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
         set VCPKG_ROOT $HOME/vcpkg
         fish_add_path /usr/local/opt/llvm/bin
 
@@ -133,7 +132,7 @@ switch (uname)
         # fish_add_path /usr/local/opt/icu4c/sbin
 
         function v
-            hx $argv
+            nvim $argv
         end
 
         function h
