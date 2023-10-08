@@ -113,6 +113,7 @@ switch (uname)
         set PATH $PATH /opt/local/bin
         set PATH $PATH /opt/local/sbin
         set PATH $PATH /Users/almagest/.local/share/nvim/mason/bin
+        set PATH $PATH /Users/almagest/.local/fasmg/source/macos/x64
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:$GOPATH/bin
         set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
@@ -169,6 +170,11 @@ switch (uname)
 
         function cmakeinit
             $EDITOR CMakeLists.txt
+        end
+
+        function llvmpath
+            set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
+            set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
         end
 end
 

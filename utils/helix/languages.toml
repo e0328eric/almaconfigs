@@ -1,6 +1,6 @@
 [[language]]
 name = "c"
-indent = { tab-width = 4, unit = "    "}
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "nasm"
@@ -17,7 +17,7 @@ source = { git = "https://github.com/PictElm/tree-sitter-nasm", rev = "main" }
 name = "nim"
 scope = "source.nim"
 injection-regex = "nim"
-file-types = ["nim","nims"]
+file-types = ["nim", "nims"]
 shebangs = ["nim"]
 roots = []
 comment-token = "#"
@@ -30,8 +30,8 @@ source = { git = "https://github.com/aMOPel/tree-sitter-nim", rev = "3727117e9a7
 
 [[language]]
 name = "typst"
-scope = "source.typst"
-injection-regex = "typst"
+scope = "source.typ"
+injection-regex = "typ"
 roots = []
 comment-token = "//"
 file-types = ["typ"]
