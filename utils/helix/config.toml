@@ -1,4 +1,4 @@
-theme = "gruvbox_transparent"
+theme = "dracula_transparent"
 
 [editor]
 auto-pairs = false
@@ -12,33 +12,56 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.indent-guides]
+render = true
+character = "┆"
+skip-levels = 1
+
 [editor.file-picker]
 hidden = false
 
 [editor.soft-wrap]
 enable = true
+max-wrap = 100
 
 [keys.normal]
+# To collapse selections like vim
+i = ["insert_mode", "collapse_selection"]
+a = ["append_mode", "collapse_selection"]
+w = ["move_next_word_start", "move_char_right", "collapse_selection"]
+W = ["move_next_long_word_start", "move_char_right", "collapse_selection"]
+e = ["move_next_word_end", "collapse_selection"]
+E = ["move_next_long_word_end", "collapse_selection"]
+b = ["move_prev_word_start", "collapse_selection"]
+B = ["move_prev_long_word_start", "collapse_selection"]
+"C-." = ["repeat_last_motion"]
+"^" = "goto_first_nonwhitespace"
+
 G = "goto_file_end"
 Z = { Q = ":quit!", Z = ":write-quit" }
-V = "extend_line_below"
+V = ["select_mode", "extend_to_line_bounds"]
 "space" = { c = ":format", b = "no_op" }
 tab = "goto_next_buffer"
 "C-tab" = "goto_previous_buffer"
 "C-up" = "copy_selection_on_prev_line"
 "C-down" = "copy_selection_on_next_line"
 "C-left" = "goto_line_start"
+"C-/" = "toggle_comments"
+"C-\\" = "open_above"
 "C-right" = "goto_line_end"
 esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.insert]
 "C-left" = "goto_line_start"
 "C-right" = "goto_line_end"
+"C-\\" = "open_above"
 
 [keys.select]
 g = { E = "goto_file_end" }
+Q = ":reflow"
 "C-left" = "goto_line_start"
 "C-right" = "goto_line_end"
+"C-/" = "toggle_comments"
 
 [keys.normal.x]
 b = "buffer_picker"
