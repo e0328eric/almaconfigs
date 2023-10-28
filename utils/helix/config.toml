@@ -4,8 +4,8 @@ theme = "dracula_transparent"
 auto-pairs = false
 line-number = "relative"
 bufferline = "multiple"
-text-width = 100
-rulers = [100]
+text-width = 80
+rulers = [80]
 
 [editor.cursor-shape]
 insert = "bar"
