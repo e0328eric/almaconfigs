@@ -1,4 +1,5 @@
 Set-Alias -Name v -Value nvim
+Set-Alias -Name lg -Value lazygit
 
 # alias paths
 function notetaking {
@@ -18,5 +19,9 @@ function cfmtcp {
 function make-symlink ($target, $link) {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
 }
+
+# autosuggestion
+Import-Module PSReadLine
+Set-PSReadLineOption -PredictionSource History
 
 Invoke-Expression (&starship init powershell)
