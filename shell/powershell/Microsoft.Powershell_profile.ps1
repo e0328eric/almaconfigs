@@ -1,4 +1,4 @@
-Set-Alias -Name v -Value nvim
+Set-Alias -Name v -Value hx
 Set-Alias -Name lg -Value lazygit
 
 # alias paths

@@ -1,10 +1,12 @@
 [[language]]
 name = "c"
 indent = { tab-width = 4, unit = " " }
+auto-format = true
 
 [[language]]
 name = "cpp"
 indent = { tab-width = 4, unit = " " }
+auto-format = true
 
 [[language]]
 name = "rust"
@@ -29,7 +31,7 @@ file-types = ["nim", "nims"]
 shebangs = ["nim"]
 roots = []
 comment-token = "#"
-language-server = { command = "nimlsp" }
+language-servers = ["nimlsp"]
 indent = { tab-width = 4, unit = " " }
 
 [[grammar]]
@@ -44,7 +46,7 @@ injection-regex = "typ(st)?"
 comment-token = "//"
 file-types = ["typ"]
 indent = { tab-width = 2, unit = " " }
-language-server = { command = "typst-lsp" }
+language-servers = ["typst-lsp"]
 text-width = 100
 rulers = [100]
 soft-wrap.wrap-at-text-width = true
@@ -58,8 +60,8 @@ soft-wrap.wrap-at-text-width = true
 
 [[grammar]]
 name = "typst"
-source = { git = "https://github.com/uben0/tree-sitter-typst.git", rev = "master"}
+source = { git = "https://github.com/uben0/tree-sitter-typst.git", rev = "master" }
 
 [[language]]
 name = "toml"
-language-server = { command = "" }
+language-servers = []
