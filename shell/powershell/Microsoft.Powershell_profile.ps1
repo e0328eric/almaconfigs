@@ -1,4 +1,4 @@
-Set-Alias -Name v -Value hx
+Set-Alias -Name v -Value nvim
 Set-Alias -Name lg -Value lazygit
 
 # alias paths
@@ -10,6 +10,9 @@ function minireport {
 }
 function teachingf {
 	set-location '~\Nextcloud\TeX_Documents\TF\'
+}
+function nvimcfg {
+    set-location ($env:LOCALAPPDATA + '\nvim')
 }
 
 function cfmtcp {
