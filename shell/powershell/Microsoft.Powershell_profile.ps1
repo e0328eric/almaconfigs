@@ -1,5 +1,6 @@
-Set-Alias -Name v -Value nvim
+Set-Alias -Name v -Value hx
 Set-Alias -Name lg -Value lazygit
+Set-Alias -Name touch -Value New-Item
 
 # alias paths
 function notetaking {
@@ -12,7 +13,7 @@ function teachingf {
 	set-location '~\Nextcloud\TeX_Documents\TF\'
 }
 function nvimcfg {
-    set-location ($env:LOCALAPPDATA + '\nvim')
+    set-location $env:LOCALAPPDATA + '\nvim'
 }
 
 function cfmtcp {
