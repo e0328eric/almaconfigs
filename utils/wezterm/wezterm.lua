@@ -75,7 +75,7 @@ config.background = {
 		source = {
 			File = "/Users/almagest/.config/wezterm/Silver_Wolf.png",
 		},
-		hsb = { brightness = 0.14 },
+		hsb = { brightness = 0.10 },
 	},
 }
 
@@ -83,6 +83,7 @@ config.background = {
 --  │                           etc                            │
 --  ╰──────────────────────────────────────────────────────────╯
 config.native_macos_fullscreen_mode = true
+-- config.enable_kitty_graphics = true
 
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                       Keybindings                        │

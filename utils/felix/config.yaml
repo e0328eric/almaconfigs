@@ -1,0 +1,3 @@
+default: nvim
+match_vim_exit_behavior: true
+trash_directory: $HOME/.Trash
