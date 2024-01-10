@@ -1,0 +1,102 @@
+#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+# NOTE: Link of this original file comes from
+# https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/montys.omp.json
+
+final_space = true
+version = 2.0
+
+[[blocks]]
+alignment = "left"
+type = "prompt"
+
+[[blocks.segments]]
+background = "#003543"
+foreground = "#00c983"
+leading_diamond = "\ue0b6"
+style = "diamond"
+template = "{{ .Icon }} {{ .HostName }} "
+type = "os"
+
+[[blocks.segments]]
+background = "#DA627D"
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "powerline"
+template = " <#000>\uf07b \uea9c</> {{ .Path }} "
+type = "path"
+[blocks.segments.properties]
+folder_icon = "\uf115"
+folder_separator_icon = "\\"
+home_icon = "\ueb06"
+style = "full"
+
+[[blocks.segments]]
+background = "#FCA17D"
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "powerline"
+template = " ➜ ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) "
+type = "git"
+[blocks.segments.properties]
+branch_icon = " <#ffffff>\ue0a0 </>"
+fetch_stash_count = true
+fetch_status = false
+fetch_upstream_icon = true
+
+[[blocks.segments]]
+background = "#76b367"
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "powerline"
+template = " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} "
+type = "node"
+
+[[blocks.segments]]
+background = "#83769c"
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "powerline"
+template = " \ueba2 {{ .FormattedMs }} "
+type = "executiontime"
+[blocks.segments.properties]
+always_enabled = true
+
+[[blocks.segments]]
+background = "#33658A"
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "powerline"
+template = " \uf017 {{ .CurrentDate | date .Format }} "
+type = "time"
+[blocks.segments.properties]
+time_format = "3:04 PM"
+
+[[blocks.segments]]
+background = "#2e9599"
+background_templates = ["{{ if gt .Code 0 }}red{{ end }}"]
+foreground = "#ffffff"
+powerline_symbol = "\ue0b0"
+style = "diamond"
+template = " {{ if gt .Code 0 }}\uf421{{ else }}\uf469{{ end }}"
+trailing_diamond = "\ue0b4"
+type = "status"
+[blocks.segments.properties]
+always_enabled = true
+
+[[blocks]]
+alignment = "left"
+newline = true
+type = "prompt"
+
+[[blocks.segments]]
+foreground = "#cd5e42"
+style = "plain"
+template = "\ue3bf "
+type = "root"
+
+[[blocks.segments]]
+foreground = "#CD4277"
+style = "plain"
+template = " <#45F1C2><b>⚡</b></><b>{{ .UserName }}</b> <#26C6DA>❯</><#45F1C2>❯</>"
+type = "text"

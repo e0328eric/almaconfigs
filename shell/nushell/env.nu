@@ -1,6 +1,6 @@
 # Nushell Environment Config File
 #
-# version = "0.85.1"
+# version = "0.89.0"
 
 def create_left_prompt [] {
     let home =  $nu.home-path
@@ -86,44 +86,61 @@ $env.ENV_CONVERSIONS = {
 }
 
 # Directories to search for scripts when calling source or use
+# The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
-    # FIXME: This default is not implemented in rust code as of 2023-09-06.
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
 ]
 
 # Directories to search for plugin binaries when calling register
+# The default for this is $nu.default-config-dir/plugins
 $env.NU_PLUGIN_DIRS = [
-    # FIXME: This default is not implemented in rust code as of 2023-09-06.
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
-let path_lst = [
-    "/usr/local/bin",
-    "/usr/local/Cellar/gcc/11.1.0_1/bin",
-    "/usr/local/go/bin",
-    "/usr/local/opt/llvm/bin",
-    "/usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin",
-    "/usr/local/opt/qt/bin",
-    "/usr/local/texlive/2021/bin/universal-darwin",
-    "/opt/local/bin",
-    "/opt/local/sbin",
-    "~/.cabal/bin",
-    "~/.cargo/bin",
-    "~/.flutter/bin",
-    "~/.ghcup/bin",
-    "~/.go/bin",
-    "~/.local/bin",
-    "~/.local/fasmg/source/macos/x64",
-    "~/.local/gnu/bin",
-    "~/.local/i686-elf/bin",
-    "~/.local/share/nvim/mason/bin",
-    "~/.local/x86_64-elf/bin",
-    "~/.nimble/bin",
-    "~/.npm-global/bin",
-    "~/.opam/default/bin",
-    "~/Library/Application Support/Coursier/bin",
-]
+let path_list = if $nu.os-info.name == "macos" {
+    [
+        "/usr/local/bin",
+        "/usr/local/go/bin",
+        "/usr/local/opt/llvm/bin",
+        "/usr/local/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/bin",
+        "/opt/local/bin",
+        "/opt/local/sbin",
+        "~/.cabal/bin",
+        "~/.cargo/bin",
+        "~/.flutter/bin",
+        "~/.ghcup/bin",
+        "~/.go/bin",
+        "~/.local/bin",
+        "~/.local/gnu/bin",
+        "~/.local/i686-elf/bin",
+        "~/.local/share/nvim/mason/bin",
+        "~/.local/x86_64-elf/bin",
+        "~/.nimble/bin",
+        "~/.npm-global/bin",
+        "~/.opam/default/bin",
+        "~/Library/Application Support/Coursier/bin",
+    ]
+} else {
+    [
+        "/usr/local/bin",
+        "/usr/local/go/bin",
+        "/usr/local/opt/llvm/bin",
+        "/opt/local/bin",
+        "/opt/local/sbin",
+        "~/.cabal/bin",
+        "~/.cargo/bin",
+        "~/.flutter/bin",
+        "~/.ghcup/bin",
+        "~/.go/bin",
+        "~/.local/bin",
+        "~/.local/gnu/bin",
+        "~/.local/i686-elf/bin",
+        "~/.local/share/nvim/mason/bin",
+        "~/.local/x86_64-elf/bin",
+        "~/.nimble/bin",
+        "~/.npm-global/bin",
+        "~/.opam/default/bin",
+    ]
+}
 
-# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
-$env.PATH = ($env.PATH | split row (char esep) | append $path_lst)
+$env.PATH = ($env.PATH | split row (char esep) | append $path_list)
