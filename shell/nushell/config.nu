@@ -763,9 +763,11 @@ $env.config = {
 
 # def v [arg] { if (sys | get host.name) == "Darwin" { hx $arg } else { helix $arg } }
 # def h [arg] { if (sys | get host.name) == "Darwin" { hx $arg } else { helix $arg } }
+alias vlang      = ^v
 alias v          = nvim
 alias s          = ls
 alias t          = tmux
+alias l          = ls -al
 alias lg         = lazygit
 alias getmusic   = youtube-dl -x --audio-format m4a
 alias cat        = bat

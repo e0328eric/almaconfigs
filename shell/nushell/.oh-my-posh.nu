@@ -1,7 +1,7 @@
 $env.config = ($env.config | upsert render_right_prompt_on_last_line true)
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
-$env.POSH_THEME = "/Users/almagest/Github/arch-almagest/shell/nushell/montys.omp.toml"
+$env.POSH_THEME = "/Users/almagest/Github/arch-almagest/shell/nushell/night-owl.omp.toml"
 $env.PROMPT_INDICATOR = ""
 $env.POSH_PID = (random uuid)
 $env.POSH_SHELL_VERSION = (version | get version)
@@ -32,7 +32,7 @@ $env.PROMPT_COMMAND_RIGHT = { ||
     ^"/usr/local/bin/oh-my-posh" print right $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.POSH_SHELL_VERSION)" $"--execution-time=(posh_cmd_duration)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=(posh_width)"
 }
 
-if "false" == "true" {
+if "true" == "true" {
     $env.TRANSIENT_PROMPT_COMMAND = { ||
         ^"/usr/local/bin/oh-my-posh" print transient $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.POSH_SHELL_VERSION)" $"--execution-time=(posh_cmd_duration)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=(posh_width)"
     }
