@@ -17,6 +17,10 @@ if [ "$SENDER" = "space_windows_change" ]; then
                 label="$icon_strip"
             )
             sketchybar --set space.$space "${setup[@]}"
+        else
+            sketchybar --set space.$space label.drawing=off
         fi
+    else
+        sketchybar --set space.$space label.drawing=off
     fi
 fi
