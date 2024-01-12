@@ -5,10 +5,10 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local mux = wezterm.mux
 
-wezterm.on("gui-startup", function()
-	local tab, pane, window = mux.spawn_window({})
-	window:gui_window():toggle_fullscreen()
-end)
+-- wezterm.on("gui-startup", function()
+-- local tab, pane, window = mux.spawn_window({})
+-- window:gui_window():toggle_fullscreen()
+-- end)
 
 -- config structure
 local config = {}
@@ -23,7 +23,7 @@ config.font = wezterm.font_with_fallback({
 	"Noto Sans Egyptian Hieroglyphs",
 })
 
-config.font_size = 14.0
+config.font_size = 15.0
 config.unicode_version = 15
 
 --         ╭──────────────────────────────────────────────────────────╮

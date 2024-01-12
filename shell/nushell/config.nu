@@ -779,10 +779,8 @@ alias notetaking = cd ~/Nextcloud/TeX_Documents/NoteTaking
 alias homework   = cd ~/Nextcloud/TeX_Documents/Homework
 alias teachingf  = cd ~/Nextcloud/TeX_Documents/TF
 
-if $nu.os-info.name == "macos" {
-    def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
-    alias open = ^open
-}
+def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
+alias open = ^open
 
 def nurm [arg] { rm $arg }
 alias rm  = xilo
