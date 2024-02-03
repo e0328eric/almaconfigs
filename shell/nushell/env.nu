@@ -119,6 +119,7 @@ let path_list = if $nu.os-info.name == "macos" {
         "~/.npm-global/bin",
         "~/.opam/default/bin",
         "~/Library/Application Support/Coursier/bin",
+        "~/.local/flutter/bin",
     ]
 } else {
     [

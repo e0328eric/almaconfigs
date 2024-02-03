@@ -1,3 +1,33 @@
+# set fish shell
+set fish_color_normal normal
+set fish_color_command 99cc99
+set fish_color_quote ffcc66
+set fish_color_end cc99cc
+set fish_color_redirection d3d0c8
+set fish_color_error f2777a
+set fish_color_param d3d0c8
+set fish_color_selection white --bold --background=brblack
+set fish_color_search_match bryellow --background=brblack
+set fish_color_history_current --bold
+set fish_color_operator 6699cc
+set fish_color_escape 66cccc
+set fish_color_cwd green
+set fish_color_cwd_root red
+set fish_color_valid_path --underline
+set fish_color_autosuggestion 747369
+set fish_color_user brgreen
+set fish_color_host normal
+set fish_color_cancel -r
+set fish_pager_color_completion normal
+set fish_pager_color_description B3A06D yellow
+set fish_pager_color_prefix white --bold --underline
+set fish_pager_color_progress brwhite --background=cyan
+set fish_color_comment ffcc66
+set fish_color_match 1EB176
+set pure_color_info cyan
+set pure_color_success 268BD2
+set pure_color_primary 6699CC
+
 # oh-my-posh configuration
 source $HOME/.config/fish/oh-my-posh.fish >/dev/null 2>/dev/null; or true
 
@@ -118,8 +148,12 @@ switch (uname)
             tmux $argv
         end
 
+        function ls
+            exa $argv
+        end
+
         function l
-            ls -al $argv
+            exa -lhGa $argv
         end
 
         function oldrm
@@ -132,10 +166,6 @@ switch (uname)
 
         function oldls
             /bin/ls $argv
-        end
-
-        function ls
-            exa $argv
         end
 
         function vimcfg
@@ -157,6 +187,10 @@ switch (uname)
         function llvmpath
             set -gx LDFLAGS "-L/usr/local/opt/llvm/lib"
             set -gx CPPFLAGS "-I/usr/local/opt/llvm/include"
+        end
+
+        function matlab
+            /Applications/MATLAB_R2023b.app/bin/matlab -nodesktop
         end
 end
 
@@ -271,7 +305,6 @@ function cfmtcp
 end
 
 fish_add_path /usr/local/opt/bison/bin
-thefuck --alias | source
 
 # opam configuration
 source $HOME/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true
@@ -283,6 +316,11 @@ string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# pyenv
+set -Ux PYENV_ROOT $HOME/.pyenv
+fish_add_path $PYENV_ROOT/bin
+pyenv init - | source
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                           nnn                            │
