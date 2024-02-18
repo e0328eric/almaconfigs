@@ -332,10 +332,14 @@ globalkeys = gears.table.join(
 		description = "open a browser",
 		group = "launcher",
 	}),
+
+	-- reload awesome configuration file
 	awful.key({ modkey, "Shift" }, "r", awesome.restart, {
 		description = "reload awesome",
 		group = "awesome",
 	}),
+
+	-- system poweroff, reboot asnd awesome session close
 	awful.key({ modkey, "Shift" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "c", function()
 		awful.spawn('check-twice.sh "Are you sure you want to shutdown?" "poweroff"')
@@ -347,9 +351,39 @@ globalkeys = gears.table.join(
 		awful.spawn('check-twice.sh "Are you sure you want to suspend?" "systemctl suspend"')
 	end, { description = "open a trminal", group = "awesome" }),
 
+	-- rofi file browser popup
 	awful.key({ "Mod1", "Ctrl" }, "d", function()
 		awful.spawn("rofi-filebrowser.sh")
 	end, { description = "open rofi file browser", group = "spawn" }),
+
+	-- moving floating windows to
+	awful.key({ modkey, "Mod1" }, "q", function()
+		awful.placement.align(client.focus, { position = "top_left" })
+	end, { description = "move floating window to the top left", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "w", function()
+		awful.placement.align(client.focus, { position = "top" })
+	end, { description = "move floating window to the top", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "e", function()
+		awful.placement.align(client.focus, { position = "top_right" })
+	end, { description = "move floating window to the top right", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "a", function()
+		awful.placement.align(client.focus, { position = "left" })
+	end, { description = "move floating window to the left", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "s", function()
+		awful.placement.align(client.focus, { position = "centered" })
+	end, { description = "move floating window to the center", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "d", function()
+		awful.placement.align(client.focus, { position = "right" })
+	end, { description = "move floating window to the right", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "z", function()
+		awful.placement.align(client.focus, { position = "bottom_left" })
+	end, { description = "move floating window to the bottom left", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "x", function()
+		awful.placement.align(client.focus, { position = "bottom" })
+	end, { description = "move floating window to the bottom", group = "floating movement" }),
+	awful.key({ modkey, "Mod1" }, "c", function()
+		awful.placement.align(client.focus, { position = "bottom_right" })
+	end, { description = "move floating window to the bottom right", group = "floating movement" }),
 
 	awful.key({ modkey }, "k", function()
 		awful.tag.incmwfact(0.05)
