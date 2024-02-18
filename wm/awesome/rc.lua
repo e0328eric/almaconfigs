@@ -390,6 +390,25 @@ globalkeys = gears.table.join(
 		awful.screen.focused().mypromptbox:run()
 	end, { description = "run prompt", group = "launcher" }),
 
+	awful.key({}, "XF86AudioRaiseVolume", function()
+		awful.spawn("volume_brightness.sh volume_up")
+	end, { description = "volume up", group = "sound" }),
+	awful.key({ modkey, "Shift", "Control" }, "Up", function()
+		awful.spawn("volume_brightness.sh volume_up")
+	end, { description = "volume up", group = "sound" }),
+	awful.key({}, "XF86AudioLowerVolume", function()
+		awful.spawn("volume_brightness.sh volume_down")
+	end, { description = "volume down", group = "sound" }),
+	awful.key({ modkey, "Shift", "Control" }, "Down", function()
+		awful.spawn("volume_brightness.sh volume_down")
+	end, { description = "volume down", group = "sound" }),
+	awful.key({}, "XF86AudioMute", function()
+		awful.spawn("volume_brightness.sh volume_mute")
+	end, { description = "volume mute", group = "sound" }),
+	awful.key({ modkey, "Shift", "Control" }, "m", function()
+		awful.spawn("volume_brightness.sh volume_mute")
+	end, { description = "volume mute", group = "sound" }),
+
 	-- awful.key({ modkey }, "x",
 	-- function ()
 	-- awful.prompt.run {
