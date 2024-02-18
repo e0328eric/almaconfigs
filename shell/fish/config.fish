@@ -71,6 +71,10 @@ switch (uname)
             xilo $argv
         end
 
+        function ls
+            exa $argv
+        end
+
         function fishcfg
             nvim  ~/.config/fish/config.fish
         end

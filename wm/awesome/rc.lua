@@ -426,22 +426,35 @@ globalkeys = gears.table.join(
 
 	awful.key({}, "XF86AudioRaiseVolume", function()
 		awful.spawn("volume_brightness.sh volume_up")
-	end, { description = "volume up", group = "sound" }),
+	end, { description = "volume up", group = "awesome" }),
 	awful.key({ modkey, "Shift", "Control" }, "Up", function()
 		awful.spawn("volume_brightness.sh volume_up")
-	end, { description = "volume up", group = "sound" }),
+	end, { description = "volume up", group = "awesome" }),
 	awful.key({}, "XF86AudioLowerVolume", function()
 		awful.spawn("volume_brightness.sh volume_down")
-	end, { description = "volume down", group = "sound" }),
+	end, { description = "volume down", group = "awesome" }),
 	awful.key({ modkey, "Shift", "Control" }, "Down", function()
 		awful.spawn("volume_brightness.sh volume_down")
-	end, { description = "volume down", group = "sound" }),
+	end, { description = "volume down", group = "awesome" }),
 	awful.key({}, "XF86AudioMute", function()
 		awful.spawn("volume_brightness.sh volume_mute")
-	end, { description = "volume mute", group = "sound" }),
+	end, { description = "volume mute", group = "awesome" }),
 	awful.key({ modkey, "Shift", "Control" }, "m", function()
 		awful.spawn("volume_brightness.sh volume_mute")
-	end, { description = "volume mute", group = "sound" }),
+	end, { description = "volume mute", group = "awesome" }),
+
+	awful.key({}, "XF86MonBrightnessUp", function()
+		awful.spawn("volume_brightness.sh brightness_up")
+	end, { description = "backlight brightness up", group = "awesome" }),
+	awful.key({ modkey, "Shift", "Control" }, "Right", function()
+		awful.spawn("volume_brightness.sh brightness_up")
+	end, { description = "backlight brightness up", group = "awesome" }),
+	awful.key({}, "XF86MonBrightnessDown", function()
+		awful.spawn("volume_brightness.sh brightness_down")
+	end, { description = "backlight brightness down", group = "awesome" }),
+	awful.key({ modkey, "Shift", "Control" }, "Left", function()
+		awful.spawn("volume_brightness.sh brightness_down")
+	end, { description = "backlight brightness down", group = "awesome" }),
 
 	-- awful.key({ modkey }, "x",
 	-- function ()
