@@ -17,7 +17,9 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
--- {{{ Error handling
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                     Error handling                      │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
 if awesome.startup_errors then
@@ -46,23 +48,29 @@ do
 		in_error = false
 	end)
 end
--- }}}
 
--- {{{ Variable definitions
+-- screen set dpi
+awful.screen.set_auto_dpi_enabled(true)
+
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                  Variable definitions                   │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+beautiful.init("~/.config/awesome/theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "kitty"
+terminal = "wezterm"
+browser = "vivaldi"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
+shell_script_dir = "~/.config/awesome/"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod1"
+modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -83,9 +91,15 @@ awful.layout.layouts = {
 	-- awful.layout.suit.corner.sw,
 	-- awful.layout.suit.corner.se,
 }
--- }}}
 
--- {{{ Menu
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                         Autorun                         │
+--          ╰─────────────────────────────────────────────────────────╯
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          Menu                           │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Create a launcher widget and a main menu
 myawesomemenu = {
 	{
@@ -119,12 +133,13 @@ mylauncher = awful.widget.launcher({
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
--- }}}
 
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
 
--- {{{ Wibar
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          Wibar                          │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
 
@@ -248,9 +263,10 @@ awful.screen.connect_for_each_screen(function(s)
 		},
 	})
 end)
--- }}}
 
--- {{{ Mouse bindings
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                     Mouse bindings                      │
+--          ╰─────────────────────────────────────────────────────────╯
 root.buttons(gears.table.join(
 	awful.button({}, 3, function()
 		mymainmenu:toggle()
@@ -258,14 +274,10 @@ root.buttons(gears.table.join(
 	awful.button({}, 4, awful.tag.viewnext),
 	awful.button({}, 5, awful.tag.viewprev)
 ))
--- }}}
 
------------------------------------------------------------------------------------
---
---  Key Bindings
---
------------------------------------------------------------------------------------
-
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                      Key Bindings                       │
+--          ╰─────────────────────────────────────────────────────────╯
 globalkeys = gears.table.join(
 	awful.key({ modkey, "Shift" }, "/", hotkeys_popup.show_help, {
 		description = "show help",
@@ -316,14 +328,11 @@ globalkeys = gears.table.join(
 		awful.spawn(terminal)
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey, "Shift" }, "Return", function()
-		awful.spawn("firefox")
+		awful.spawn(browser)
 	end, {
-		description = "open a firefox",
+		description = "open a browser",
 		group = "launcher",
 	}),
-	awful.key({ modkey, "Shift" }, "e", function()
-		awful.spawn("emacs")
-	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey, "Shift" }, "r", awesome.restart, {
 		description = "reload awesome",
 		group = "awesome",
@@ -338,6 +347,10 @@ globalkeys = gears.table.join(
 	awful.key({ modkey, "Shift" }, "z", function()
 		awful.spawn('check-twice.sh "Are you sure you want to suspend?" "systemctl suspend"')
 	end, { description = "open a trminal", group = "awesome" }),
+
+	awful.key({ "Mod1", "Ctrl" }, "d", function()
+		awful.spawn("rofi-filebrowser.sh")
+	end, { description = "open rofi file browser", group = "spawn" }),
 
 	awful.key({ modkey }, "k", function()
 		awful.tag.incmwfact(0.05)
@@ -503,9 +516,10 @@ clientbuttons = gears.table.join(
 
 -- Set keys
 root.keys(globalkeys)
--- }}}
 
--- {{{ Rules
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          Rules                          │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
 	-- All clients will match this rule.
@@ -564,9 +578,10 @@ awful.rules.rules = {
 	-- { rule = { class = "Firefox" },
 	--   properties = { screen = 1, tag = "2" } },
 }
--- }}}
 
--- {{{ Signals
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                         Signals                         │
+--          ╰─────────────────────────────────────────────────────────╯
 -- Signal function to execute when a new client appears.
 client.connect_signal("manage", function(c)
 	-- Set the windows at the slave,
@@ -630,4 +645,3 @@ end)
 client.connect_signal("unfocus", function(c)
 	c.border_color = beautiful.border_normal
 end)
--- }}}

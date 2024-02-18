@@ -20,7 +20,7 @@ output_file=$1; shift
 ################################################################################
 cd $SRC_DIR
 
-cabal new-configure -w=ghc-8.8.3 \
+cabal new-configure -w=ghc-9.0.2 \
       --enable-optimization \
       --enable-executable-stripping
 

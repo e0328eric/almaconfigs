@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 # A dmenu binary check-twice script.
 # Gives a dmenu prompt labeled with $1 to perform command $2
 # Example:

@@ -1,7 +1,7 @@
 {-
 
 Almagest Xmonad setting Haskell File
-The package xmonad, xmonad-contrib, dbus and utf8-string are installed
+The package xmonad, xmonad-contrib, dbus and haskell-utf8-string are installed
 Also, install xmonad-log to run polybar
 Use pacman to install it
 
@@ -90,7 +90,7 @@ import XMonad.Util.WorkspaceCompare
 ---------------------------------------------------------------------------------------
 -- Main
 ---------------------------------------------------------------------------------------
-myterm = "alacritty"
+myterm = "wezterm"
 
 main :: IO ()
 main = do
@@ -105,7 +105,7 @@ main = do
                 { modMask = mod4Mask
                 , layoutHook = myLayout
                 , workspaces = myWorkspaces
-                , handleEventHook = handleEventHook def <+> HM.docksEventHook
+                -- , handleEventHook = handleEventHook def <+> HM.docksEventHook
                 , logHook = dynamicLogWithPP (myLogHook dbus)
                 , manageHook =
                       placeHook (fixed (0.5, 0.3)) <+>
@@ -197,7 +197,7 @@ myManageHook =
         , className =? "Thunar" --> doFloat
         , className =? "Pcmanfm" --> doFloat
         , className =? "Civ6Sub" --> unFloat
-        , className =? "naver-whale" --> unFloat
+        , className =? "vivaldi" --> unFloat
         , className =? "scrcpy" --> doFloat
         , className =? "Kakaotalk.exe" --> doFloat
         , resource =? "scratchpad" --> doFloat
@@ -265,7 +265,7 @@ myKeysKeyboard conf =
     , ("M1-S-C-a", sendMessage MirrorShrink)
     , ("M1-S-C-d", sendMessage MirrorExpand)
     -- Run Browser
-    , ("M-S-<Return>", spawn "firefox")
+    , ("M-S-<Return>", spawn "vivaldi")
     -- Run Text editor
     --, ("M-e", spawn "emacs")
     --, ("M-e", spawn "code-insiders")
@@ -349,9 +349,9 @@ myLogHook dbus =
 myStartupHook = do
     spawn "picom -b --config $HOME/.config/compton/compton.conf"
     -- screen locking
-    --spawnOnce "light-locker"
-    -- Google Drive
-    spawnOnce "insync start"
+    spawnOnce "light-locker"
+    -- nextcloud
+    spawnOnce "nextcloud"
     -- Alert Low Battery
     spawnOnce "battery-low"
     -- Wallpaper
@@ -363,7 +363,7 @@ myStartupHook = do
     -- Xmodmap keychange setting
     --spawnOnce "~/.script/keysetting_xmodmap.sh"
     -- KDE Connect
-    spawn "kdeconnect-indicator"
+    -- spawn "kdeconnect-indicator"
 
 ---------------------------------------------------------------------------------------
 -- DBus

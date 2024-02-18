@@ -28,9 +28,6 @@ set pure_color_info cyan
 set pure_color_success 268BD2
 set pure_color_primary 6699CC
 
-# oh-my-posh configuration
-source $HOME/.config/fish/oh-my-posh.fish >/dev/null 2>/dev/null; or true
-
 # Path Definitions
 switch (uname)
     case Linux
@@ -74,16 +71,12 @@ switch (uname)
             xilo $argv
         end
 
-        function vimcfg
-            helix ~/.config/helix/init.vim
-        end
-
         function fishcfg
-            helix ~/.config/fish/config.fish
+            nvim  ~/.config/fish/config.fish
         end
 
-        function hxcfg
-            helix ~/.config/helix/config.toml
+        function backlight
+            gmux_backlight $argv
         end
 
     case Darwin
@@ -317,11 +310,6 @@ string match -r ".wasmtime" "$PATH" >/dev/null; or set -gx PATH "$WASMTIME_HOME/
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
-# pyenv
-set -Ux PYENV_ROOT $HOME/.pyenv
-fish_add_path $PYENV_ROOT/bin
-pyenv init - | source
-
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                           nnn                            │
 #          ╰──────────────────────────────────────────────────────────╯
@@ -350,3 +338,8 @@ set -gx NNN_PLUG "f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:preview-tui"
 #set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/almagest/.ghcup/bin $PATH # ghcup-env
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/almagest/.ghcup/bin # ghcup-env
+
+################################################################################
+
+# starship condiguration
+starship init fish | source

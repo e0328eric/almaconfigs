@@ -85,7 +85,8 @@ import           XMonad.Util.WorkspaceCompare
 -- Main
 ---------------------------------------------------------------------------------------
 
-myterm = "st"
+myterm = "wezterm"
+mybrowser = "vivaldi"
 
 main :: IO ()
 main = do
@@ -94,7 +95,7 @@ main = do
         { modMask = mod4Mask
         , layoutHook = myLayout
         , workspaces = myWorkspaces
-        , handleEventHook = handleEventHook def <+> HM.docksEventHook
+        -- , handleEventHook = handleEventHook def <+> HM.docksEventHook
         , manageHook = placeHook (fixed (0.5, 0.3))
                     <+> HM.manageDocks
                     <+> myManageHook
@@ -157,7 +158,7 @@ myManageHook = composeAll
     , className =? "Thunar"           --> doFloat
     , className =? "Pcmanfm"          --> doFloat
     , className =? "Civ6Sub"          --> unFloat
-    , className =? "firefox"          --> unFloat
+    , className =?  mybrowser         --> unFloat
     , className =? "naver-whale"      --> unFloat
     , className =? "scrcpy"           --> doFloat
     , className =? "Kakaotalk.exe"    --> doFloat
@@ -233,18 +234,17 @@ myKeysKeyboard conf = mkKeymap conf $
     , ("M1-S-C-d", sendMessage MirrorExpand)
 
     -- Run Browser
-    , ("M-S-<Return>", spawn "firefox")
+    , ("M-S-<Return>", spawn mybrowser)
 
     -- Run Text editor
-    , ("M-e", spawn "code")
+    -- , ("M-e", spawn "code")
 
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
     -- See also the statusBar function from Hooks.DynamicLog.
-    , ("<Print>", spawn "spectacle")
-    , ("C-<Print>", spawn "spectacle -r")
-    , ("C-S-<Print>", spawn "spectacle -u")
-    , ("M-<KP_F3>", spawn "krusader")
+    , ("M1-S-4", spawn "spectacle")
+    , ("M1-S-3", spawn "spectacle -r")
+    , ("M1-S-2", spawn "spectacle -u")
     , ("C-M1-s", spawn "dmenu_extended_run") -- dmenu_extended
     , ("M-f", spawn $ myterm ++ " -e vifm") -- vifm
     , ("M-C-<Return>", spawn $ myterm ++ " -e mocp") -- terminal based music player
@@ -262,8 +262,8 @@ myKeysKeyboard conf = mkKeymap conf $
     , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
 
     -- Brightness Setting
-    , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 10")
-    , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 10")
+    , ("<XF86MonBrightnessUp>", spawn "gmux_backlight +300")
+    , ("<XF86MonBrightnessDown>", spawn "gmux_backlight -300")
 
     -- Reset xmonad
     , ("M-S-r", spawn "xmonad --recompile; xmonad --restart")
@@ -298,7 +298,7 @@ myStartupHook = do
     -- Xmodmap keychange setting
     --spawnOnce "~/.script/keysetting_xmodmap.sh"
     -- KDE Connect
-    spawn "kdeconnect-indicator"
+    --spawn "kdeconnect-indicator"
 
 ---------------------------------------------------------------------------------------
 -- Scratchpads
@@ -314,4 +314,3 @@ myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm ]
         w = 1
         t = 1 - h
         l = 1 - w
-

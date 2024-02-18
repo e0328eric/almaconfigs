@@ -17,14 +17,14 @@ local config = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"D2CodingLigature Nerd Font",
+	"D2CodingLigature",
 	"FiraCode Nerd Font",
 	"JetbrainMono Nerd Font",
-	"Noto Sans Egyptian Hieroglyphs",
 })
 
-config.font_size = 14.0
+config.font_size = 11.0
 config.unicode_version = 15
+config.warn_about_missing_glyphs = false
 
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                       Colorscheme                        │
@@ -74,7 +74,7 @@ config.colors = {
 config.background = {
 	{
 		source = {
-			File = "/Users/almagest/.config/wezterm/Silver_Wolf.png",
+			File = "/home/almagest/.config/wezterm/silver_wolf.png",
 		},
 		hsb = { brightness = 0.10 },
 	},
@@ -83,7 +83,7 @@ config.background = {
 --  ╭──────────────────────────────────────────────────────────╮
 --  │                           etc                            │
 --  ╰──────────────────────────────────────────────────────────╯
-config.native_macos_fullscreen_mode = true
+-- config.native_macos_fullscreen_mode = true
 config.front_end = "WebGpu"
 -- config.enable_kitty_graphics = true
 
@@ -92,14 +92,24 @@ config.front_end = "WebGpu"
 --         ╰──────────────────────────────────────────────────────────╯
 config.keys = {
 	{ key = "w", mods = "CMD|CTRL", action = act.SpawnWindow },
+	{ key = "t", mods = "MOD1", action = act.SpawnTab("CurrentPaneDomain") },
+	{ key = "1", mods = "MOD1", action = act.ActivateTab(0) },
+	{ key = "2", mods = "MOD1", action = act.ActivateTab(1) },
+	{ key = "3", mods = "MOD1", action = act.ActivateTab(2) },
+	{ key = "4", mods = "MOD1", action = act.ActivateTab(3) },
+	{ key = "5", mods = "MOD1", action = act.ActivateTab(4) },
+	{ key = "6", mods = "MOD1", action = act.ActivateTab(5) },
+	{ key = "7", mods = "MOD1", action = act.ActivateTab(6) },
+	{ key = "8", mods = "MOD1", action = act.ActivateTab(7) },
+	{ key = "9", mods = "MOD1", action = act.ActivateTab(-1) },
 	{
 		key = "v",
-		mods = "CTRL|SHIFT",
+		mods = "ALT|SHIFT",
 		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 	{
 		key = "s",
-		mods = "CTRL|SHIFT",
+		mods = "ALT|SHIFT",
 		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 	{ key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen },
