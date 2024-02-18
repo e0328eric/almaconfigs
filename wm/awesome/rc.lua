@@ -63,7 +63,6 @@ terminal = "wezterm"
 browser = "vivaldi"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
-shell_script_dir = "~/.config/awesome/"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
