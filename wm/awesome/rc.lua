@@ -200,8 +200,8 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
--- battery
-local battery_widget = require("battery-widget")
+-- batteryarc widget from https://github.com/streetturtle/awesome-wm-widgets
+local batteryarc_widget = require("batteryarc-widget.batteryarc")
 
 awful.screen.connect_for_each_screen(function(s)
 	-- Wallpaper
@@ -243,7 +243,6 @@ awful.screen.connect_for_each_screen(function(s)
 		buttons = tasklist_buttons,
 	})
 
-	-- Create the wiboxlocal battery_widget = require("battery-widget")
 	s.mywibox = awful.wibar({ position = "top", screen = s })
 
 	-- Add widgets to the wibox
@@ -258,13 +257,13 @@ awful.screen.connect_for_each_screen(function(s)
 		s.mytasklist, -- Middle widget
 		{ -- Right widgets
 			layout = wibox.layout.fixed.horizontal,
-			mykeyboardlayout,
+			batteryarc_widget({
+				show_current_level = true,
+				arc_thickness = 3,
+				size = 27,
+			}),
 			wibox.widget.systray(),
 			mytextclock,
-			--battery_widget({
-			--ac = "ADP1",
-			--adapter = "BAT0",
-			--}),
 			s.mylayoutbox,
 		},
 	})
