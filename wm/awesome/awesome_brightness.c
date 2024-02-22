@@ -1,10 +1,9 @@
 #include <errno.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define DEFAULT_BRIGHTNESS 35000
+#define DEFAULT_BRIGHTNESS 0.5
 #define BACKLIGHT_RECODER "/tmp/current_backlight.💡"
 
 int main(int argc, char **argv) {
@@ -30,31 +29,30 @@ int main(int argc, char **argv) {
   fread(file_buf, 1, 6, current_backlight_file);
 
   if (file_buf[0] == '\0') {
-    sprintf(file_buf, "%d", DEFAULT_BRIGHTNESS);
+    sprintf(file_buf, "%.5f", DEFAULT_BRIGHTNESS);
   }
 
-  uint16_t brightness = atoi(file_buf);
-  int adjustment = atoi(argv[1]);
+  double brightness = atof(file_buf);
+  double adjustment = atof(argv[1]);
 
   if (strcmp(argv[1], "status") == 0) {
-    double percent = (float)brightness / (float)UINT16_MAX * 100.0;
-    printf("%.2f", percent);
+    printf("%.3f", brightness * 100.0);
     goto CLOSE_FILE;
   }
 
-  if (adjustment + brightness >= UINT16_MAX) {
-    brightness = UINT16_MAX;
-  } else if ((int)brightness + adjustment < 0) {
+  if (adjustment + brightness >= 1.0) {
+    brightness = 1.0;
+  } else if (brightness + adjustment < 0) {
     brightness = 0;
   } else {
     brightness += adjustment;
   }
 
   char buf[100];
-  sprintf(buf, "gmux_backlight %d", brightness);
+  sprintf(buf, "xrandr --output eDP --brightness %.5f", brightness);
   system(buf);
 
-  sprintf(file_buf, "%d", brightness);
+  sprintf(file_buf, "%.5f", brightness);
   rewind(current_backlight_file);
   fwrite(file_buf, 1, 6, current_backlight_file);
 

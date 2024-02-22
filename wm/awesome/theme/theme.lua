@@ -3,7 +3,7 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "background.png"
+theme.wallpaper = themes_path .. "mona.png"
 -- }}}
 
 -- {{{ Styles
