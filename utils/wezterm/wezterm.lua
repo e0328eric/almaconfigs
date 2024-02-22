@@ -30,6 +30,9 @@ config.warn_about_missing_glyphs = false
 --         │                       Colorscheme                        │
 --         ╰──────────────────────────────────────────────────────────╯
 config.color_scheme = "AyuDark (Gogh)"
+config.window_frame = {
+	font_size = 9.5,
+}
 config.colors = {
 	tab_bar = {
 		-- The color of the strip that goes along the top of the window
@@ -71,6 +74,7 @@ config.colors = {
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                Window Background Settings                │
 --         ╰──────────────────────────────────────────────────────────╯
+--[[
 config.background = {
 	{
 		source = {
@@ -79,6 +83,8 @@ config.background = {
 		hsb = { brightness = 0.10 },
 	},
 }
+--]]
+config.window_background_opacity = 0.75
 
 --  ╭──────────────────────────────────────────────────────────╮
 --  │                           etc                            │
