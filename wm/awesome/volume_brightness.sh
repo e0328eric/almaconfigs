@@ -6,7 +6,8 @@
 # See README.md for usage instructions
 bar_color="#7f7fff"
 volume_step=1
-brightness_step=0.0023
+brightness_step_less=0.0063
+brightness_step=0.011
 max_volume=100
 
 # Uses regex to get volume from pactl
@@ -82,6 +83,18 @@ case $1 in
     # Toggles mute and displays the notification
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     show_volume_notif
+    ;;
+
+    brightness_up_less)
+    # Increases brightness and displays the notification
+    awesome_brightness "$brightness_step_less"
+    show_brightness_notif
+    ;;
+
+    brightness_down_less)
+    # Decreases brightness and displays the notification
+    awesome_brightness "-$brightness_step_less"
+    show_brightness_notif
     ;;
 
     brightness_up)
