@@ -347,7 +347,7 @@ globalkeys = gears.table.join(
 	}),
 
 	-- system poweroff, reboot asnd awesome session close
-	awful.key({ modkey, "Shift" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
+	awful.key({ modkey, "Shift", "Control" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "c", function()
 		awful.spawn('check-twice.sh "Are you sure you want to shutdown?" "poweroff"')
 	end, { description = "open a trminal", group = "awesome" }),
@@ -359,7 +359,7 @@ globalkeys = gears.table.join(
 	end, { description = "open a trminal", group = "awesome" }),
 
 	-- rofi file browser popup
-	awful.key({ "Mod1", "Ctrl" }, "d", function()
+	awful.key({ modkey, "Ctrl" }, "s", function()
 		awful.spawn("rofi-filebrowser.sh")
 	end, { description = "open rofi file browser", group = "spawn" }),
 
@@ -427,7 +427,7 @@ globalkeys = gears.table.join(
 			c:emit_signal("request::activate", "key.unminimize", { raise = true })
 		end
 	end, { description = "restore minimized", group = "client" }), -- Prompt
-	awful.key({ modkey, "Control" }, "d", function()
+	awful.key({ "Mod1", "Control" }, "d", function()
 		awful.screen.focused().mypromptbox:run()
 	end, { description = "run prompt", group = "launcher" }),
 
@@ -480,7 +480,7 @@ globalkeys = gears.table.join(
 	-- end,
 	-- {description = "lua execute prompt", group = "awesome"}),
 	-- Menubar
-	awful.key({ "Control", "Mod1" }, "s", function()
+	awful.key({ modkey, "Control" }, "d", function()
 		menubar.show()
 	end, {
 		description = "show the menubar",
