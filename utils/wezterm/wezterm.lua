@@ -17,12 +17,12 @@ local config = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"D2CodingLigature",
+	"D2CodingLigature Nerd Font",
 	"FiraCode Nerd Font",
 	"JetbrainMono Nerd Font",
 })
 
-config.font_size = 11.0
+config.font_size = 10.0
 config.unicode_version = 15
 config.warn_about_missing_glyphs = false
 

@@ -9,4 +9,3 @@ else
   fi
   echo "%{F#2193ff}"
 fi
-

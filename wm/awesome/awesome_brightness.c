@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define DEFAULT_BRIGHTNESS 0.5
+#define DEFAULT_BRIGHTNESS 0.85
 #define BACKLIGHT_RECODER "/tmp/current_backlight.💡"
 
 int main(int argc, char **argv) {

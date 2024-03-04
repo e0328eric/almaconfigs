@@ -75,6 +75,10 @@ switch (uname)
             exa $argv
         end
 
+        function open
+            /usr/bin/xdg-open $argv
+        end
+
         function fishcfg
             nvim  ~/.config/fish/config.fish
         end
@@ -82,6 +86,8 @@ switch (uname)
         function backlight
             gmux_backlight $argv
         end
+
+        alias xclip="/usr/bin/xclip -selection c"
 
     case Darwin
         # Define a default editor
