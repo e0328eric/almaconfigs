@@ -348,15 +348,15 @@ globalkeys = gears.table.join(
 
 	-- system poweroff, reboot asnd awesome session close
 	awful.key({ modkey, "Shift", "Control" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
+	awful.key({ modkey, "Shift" }, "x", function()
+		awful.spawn('check-twice.sh "Are you sure you want to lock?" "blur-lock"')
+	end, { description = "lock the computer", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "c", function()
 		awful.spawn('check-twice.sh "Are you sure you want to shutdown?" "poweroff"')
-	end, { description = "open a trminal", group = "awesome" }),
+	end, { description = "power off the computer", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "v", function()
 		awful.spawn('check-twice.sh "Are you sure you want to reboot?" "reboot"')
-	end, { description = "open a trminal", group = "awesome" }),
-	awful.key({ modkey, "Shift" }, "z", function()
-		awful.spawn('check-twice.sh "Are you sure you want to suspend?" "systemctl suspend"')
-	end, { description = "open a trminal", group = "awesome" }),
+	end, { description = "reboot the computer", group = "awesome" }),
 
 	-- rofi file browser popup
 	awful.key({ modkey, "Ctrl" }, "s", function()

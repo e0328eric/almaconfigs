@@ -22,7 +22,7 @@ function get_mute {
 
 # Uses regex to get brightness from xbacklight
 function get_brightness {
-    awesome_brightness status
+    change_backlight status
 }
 
 # Returns a mute icon, a volume-low icon, or a volume-high icon, depending on the volume
@@ -87,25 +87,25 @@ case $1 in
 
     brightness_up_less)
     # Increases brightness and displays the notification
-    awesome_brightness "$brightness_step_less"
+    change_backlight "$brightness_step_less"
     show_brightness_notif
     ;;
 
     brightness_down_less)
     # Decreases brightness and displays the notification
-    awesome_brightness "-$brightness_step_less"
+    change_backlight "-$brightness_step_less"
     show_brightness_notif
     ;;
 
     brightness_up)
     # Increases brightness and displays the notification
-    awesome_brightness "$brightness_step"
+    change_backlight "$brightness_step"
     show_brightness_notif
     ;;
 
     brightness_down)
     # Decreases brightness and displays the notification
-    awesome_brightness "-$brightness_step"
+    change_backlight "-$brightness_step"
     show_brightness_notif
     ;;
 esac

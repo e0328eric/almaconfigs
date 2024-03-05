@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
   }
 
   char buf[100];
-  sprintf(buf, "xrandr --output eDP --brightness %.5f", brightness);
+  sprintf(buf, "xrandr --output eDP-1 --brightness %.5f", brightness);
   system(buf);
 
   sprintf(file_buf, "%.5f", brightness);
