@@ -1,0 +1,27 @@
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.75
+startup_mode = "Windowed"
+title = "Alacritty"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 0
+y = 0
+
+[window.position]
+x = 0
+y = 0
