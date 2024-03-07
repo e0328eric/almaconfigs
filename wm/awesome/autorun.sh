@@ -7,6 +7,9 @@ function run() {
   fi
 }
 
+# run ibus
+run ibus-daemon -rxRd
+
 # adjust brightness
 run awesome-brightness 0
 

@@ -63,6 +63,10 @@ switch (uname)
             ls -al $argv
         end
 
+        function z
+            zellij $argv
+        end
+
         function oldrm
             /bin/rm $argv
         end
