@@ -3,7 +3,7 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "stelle-firefly.png"
+theme.wallpaper = themes_path .. "lilpa.png"
 -- }}}
 
 -- {{{ Styles

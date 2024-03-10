@@ -1,0 +1,15 @@
+// system related
+- pipewire     -- low-level multimedia framework
+- wpctl        -- audio configuration
+- pactl        -- audio configuration
+- ibus         -- multilingural
+- light-locker -- locking system
+- xrandr       -- brightness change and more
+- rofi         -- minial and customizable search popup
+- dmenu        -- only for check-twice.sh I think
+
+// terminal
+- kitty  -- very basic terminal
+- zellij -- modern tmux program
+- exa    -- modern ls command
+- fish   -- another new shell

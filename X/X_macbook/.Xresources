@@ -1,0 +1,8 @@
+Xft.dpi:        156
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.hintstyle:  hintslight
+
+Xcursor.theme: Qogir-dark
+Xcursor.size: 18
