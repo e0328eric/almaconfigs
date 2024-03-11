@@ -1,0 +1,16 @@
+oh-my-posh --help
+oh-my-posh version
+which oh-my-posh
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
+oh-my-posh init nu --config ~/.config/nushell/night-owl.omp.toml
+v ~/.config/nushell/config.nu
+cd .config/
+ls
+cd kitty/
+ls
+v kitty.conf
+ls
+v kitty.conf
+ls
+cd
+cd Github/arch-almagest/
