@@ -67,7 +67,7 @@ switch (uname)
             ls -al $argv
         end
 
-        function z
+        function ze
             zellij $argv
         end
 

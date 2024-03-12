@@ -290,3 +290,11 @@ bat foo.txt
 cd
 cd .config/zellij/
 v config.kdl
+cd .config/fish/
+v config.fish
+cd ..
+cd nushell/
+ls
+v config.nu
+cd
+cd Github/arch-almagest/
