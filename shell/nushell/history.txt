@@ -298,3 +298,46 @@ ls
 v config.nu
 cd
 cd Github/arch-almagest/
+lg
+cd
+sudo pacman -S zoxide
+v $nu.config-path
+z
+source $nu.config-path
+z
+zoxide
+v $nu.config-path
+source $nu.config-path
+z
+cd
+zi
+cd Nextcloud/TeX_Documents/NoteTaking/PDE
+cd ~/Nextcloud/TeX_Documents/NoteTaking/PDE
+cd --help
+which z
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu
+z
+cd
+v $nu.config-path
+which z
+v .zoxide.nu
+source $nu.config-path
+source $nu.env-path
+source $nu.config-path
+cd
+cd Nextcloud/TeX_Documents/NoteTaking/PDE
+v $nu.config-path
+z Nextcloud/TeX_Documents/NoteTaking/PDE
+v $nu.config-path
+z
+z Nextcloud/TeX_Documents/NoteTaking/PDE
+ls
+cd
+v $nu.config-path
+cd
+v $nu.config-path
+v .zoxide.nu
+cd
+cd Github/arch-almagest/
+ls

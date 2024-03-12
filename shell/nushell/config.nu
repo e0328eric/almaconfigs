@@ -787,3 +787,4 @@ def nurm [arg] { rm $arg }
 alias rm  = xilo
 
 source "~/.oh-my-posh.nu"
+source "~/.zoxide.nu"
