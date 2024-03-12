@@ -14,3 +14,279 @@ v kitty.conf
 ls
 cd
 cd Github/arch-almagest/
+lg
+sudo chsh almagest -s /usr/bin/nu
+cd
+cd Nextcloud/TeX_Documents/
+cd Numerical/
+ls
+v $nu.config-path
+source $nu.config-path
+z
+ls
+cd Many_Circles/
+ls
+v build.zig
+cd ..
+ls
+rm -rf Many_Circles/
+ls
+cargo new many-circles
+ls
+cd many-circles/
+ls
+zig
+cd
+cd .local
+ls
+rm -rp zig
+zigup
+ls
+tar xvf zig-compiler.tar.xz
+s
+rm zig-compiler.tar.xz
+ls
+mv zig-linux-x86_64-0.12.0-dev.3193+4ba4f94c9 zig
+zig
+cd ..
+ls
+rm -rf many-circles/
+mkdir Many_Circles
+cd Many_Circles/
+ls
+zig init
+rm src/root.zig
+v build.zig
+zig build
+v src/gsl.zig
+zig build run
+v src/main.zig
+cd zig-out/
+ls
+cd bin/
+s
+gf2 many_circles
+gdb many_circles
+ls
+cd ../..
+lds
+ls
+v src/gsl.zig
+cd zig-out/bin
+ls
+gdb many_circles
+cd Nextcloud/TeX_Documents/Numerical/
+ls
+cd Many_Circles/
+ls
+zig build run
+ls
+v src/main.zig
+zig build
+cd zig-out/bin/
+cd /usr/include/
+ls
+bat gsl/gsl_complex.h
+gdb many_circles
+cd ../..
+ls
+v build.zig
+cd ..
+ls
+rm -rp Many_Circles/
+ls
+rm .DS_Store
+mv Many_Circles_Old Many_Circles
+cd Many_Circles/
+s
+v src/main.c
+meson compile -C build
+ls
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+./many_circles
+meson compile -C build
+cd
+cd /usr/include/
+ls
+cd gsl
+ls
+bat gsl_vector_complex.h
+rg "gsl_vector_complex_set"
+rg "gsl_vector_complex_view_array"
+bat gsl_vector_complex_double.h
+v src/main.c
+z
+meson compile -C build
+./many_circles
+v src/main.c
+meson compile -C build
+v src/main.c
+meson compile -C build
+./many_circles
+v src/main.c
+meson compile -C build
+./many_circles
+v src/main.c
+meson compile -C build
+./many_circles
+v src/main.c
+./many_circles
+meson compile -C build
+./many_circles
+v src/main.c
+meson compile -C build
+v src/main.c
+./many_circles
+v src/main.c
+meson compile -C build
+./many_circles
+cd Nextcloud/TeX_Documents/Numerical/
+ls
+cd Many_Circles/
+ls
+v src/circle.h
+cd .config/awesome/
+bat prerequisits
+wpctl
+wpctl status
+cd .config/awesome/
+v settings/keybindings.lua
+rofi-filebrowser.sh 
+albert
+sudo pacman -S albert
+rofi-filebrowser.sh 
+cd Nextcloud/TeX_Documents/NoteTaking/Data_Visualization/
+v Data_Visualization.ves
+v src/main.c
+v src/single_circle_solv.c
+cd Nextcloud/TeX_Documents/NoteTaking/Data_Visualization/
+ls
+cd ../..
+ls
+cd Numerical/
+ls
+cd Many_Circles/
+cd .config/awesome/
+v rc.lua
+rg "fish" *
+rofi-filebrowser.sh 
+xs
+cd
+cd .config/rofi/
+ls
+v config.rasi
+rofi-filebrowser.sh 
+rofi --help
+cd
+cd .local/bin
+v rofi-filebrowser.sh
+rofi -show file-browser-extended                  \<\n>        -file-browser-dir /home/almagest/         \<\n>        -sorting-method fzf                       \<\n>        -file-browser-depth 5                     \<\n>		-config ~/.config/rofi/rofidmenu.rasi<\n>
+v rofi-filebrowser.sh
+./many_circles
+./rofi-filebrowser.sh
+sudo chsh almagest -s /usr/bin/fish
+cd
+cd Test/
+ls
+cd gnuplot_test/
+ls
+v test.gp
+gnuplot test.gp
+v fo.txt
+ls
+v fo.txt
+ls
+v main.go
+ls
+v main.rs
+ls
+rm main.rs
+ls
+v main.go
+ls
+rm fo.txt
+go run main.go
+l
+v foo.txt
+rm foo.txt
+v main.go
+go run main.go
+v foo.txt
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v main.go
+ls
+rm foo.txt
+go run main.go
+l
+v foo.txt
+go run main.go
+l
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+gnuplot
+v test.gp
+gnuplot
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+v test.gp
+gnuplot test.gp
+bat foo.txt
+cd
+cd .config/zellij/
+v config.kdl

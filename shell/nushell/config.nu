@@ -767,6 +767,7 @@ alias vlang      = ^v
 alias v          = nvim
 alias s          = ls
 alias t          = tmux
+alias z          = zellij
 alias l          = ls -al
 alias lg         = lazygit
 alias getmusic   = youtube-dl -x --audio-format m4a

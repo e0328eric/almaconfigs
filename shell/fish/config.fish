@@ -52,7 +52,11 @@ switch (uname)
         end
 
         function h
-            nvim $argv
+            helix $argv
+        end
+
+        function x
+            helix $argv
         end
 
         function t

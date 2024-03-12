@@ -33,6 +33,34 @@ config.color_scheme = "AyuDark (Gogh)"
 config.window_frame = {
 	font_size = 9.5,
 }
+-- The filled in variant of the < symbol
+local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
+
+-- The filled in variant of the > symbol
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
+
+config.tab_bar_style = {
+	active_tab_left = wezterm.format({
+		{ Background = { Color = "#59c2ff" } },
+		{ Foreground = { Color = "#16161d" } },
+		{ Text = SOLID_LEFT_ARROW },
+	}),
+	active_tab_right = wezterm.format({
+		{ Background = { Color = "#59c2ff" } },
+		{ Foreground = { Color = "#16161d" } },
+		{ Text = SOLID_RIGHT_ARROW },
+	}),
+	inactive_tab_left = wezterm.format({
+		{ Background = { Color = "#98c379" } },
+		{ Foreground = { Color = "#16161d" } },
+		{ Text = SOLID_LEFT_ARROW },
+	}),
+	inactive_tab_right = wezterm.format({
+		{ Background = { Color = "#98c379" } },
+		{ Foreground = { Color = "#16161d" } },
+		{ Text = SOLID_RIGHT_ARROW },
+	}),
+}
 config.colors = {
 	tab_bar = {
 		-- The color of the strip that goes along the top of the window

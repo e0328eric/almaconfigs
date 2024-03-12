@@ -65,7 +65,7 @@ local globalkeys = gears.table.join(
 	-- system poweroff, reboot asnd awesome session close
 	awful.key({ modkey, "Shift", "Control" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "x", function()
-		awful.spawn('check-twice.sh "Are you sure you want to lock?" "light-locker"')
+		awful.spawn('check-twice.sh "Are you sure you want to lock?" "blur-lock"')
 	end, { description = "lock the computer", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "c", function()
 		awful.spawn('check-twice.sh "Are you sure you want to shutdown?" "poweroff"')
