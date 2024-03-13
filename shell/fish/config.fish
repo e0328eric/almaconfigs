@@ -71,6 +71,10 @@ switch (uname)
             zellij $argv
         end
 
+        function cd
+            z $argv
+        end
+
         function oldrm
             /bin/rm $argv
         end
@@ -161,6 +165,10 @@ switch (uname)
 
         function ls
             exa $argv
+        end
+
+        function cd
+            z $argv
         end
 
         function l
@@ -361,3 +369,4 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 
 # starship condiguration
 starship init fish | source
+zoxide init fish | source

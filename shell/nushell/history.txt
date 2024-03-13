@@ -341,3 +341,17 @@ v .zoxide.nu
 cd
 cd Github/arch-almagest/
 ls
+lg
+cd
+cd Nextcloud/TeX_Documents/NoteTaking/PDE
+cd
+cd PDE
+ls
+open partial.pdf&
+open partial.pdf &
+v $nu.config-path
+source $nu.config-path
+open
+cd PDE
+open partial.pdf
+sudo chsh almagest -s /usr/bin/fish
