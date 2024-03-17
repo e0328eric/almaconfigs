@@ -71,10 +71,6 @@ switch (uname)
             zellij $argv
         end
 
-        function cd
-            z $argv
-        end
-
         function oldrm
             /bin/rm $argv
         end

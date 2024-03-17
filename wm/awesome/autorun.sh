@@ -17,4 +17,7 @@ run light-locker
 run xset s 480 dpms 600 600 600
 
 # load nextcloud
-run nextcloud
+# run nextcloud
+
+# load pcloud
+run pcloud

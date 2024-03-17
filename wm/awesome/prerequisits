@@ -13,3 +13,6 @@
 - zellij -- modern tmux program
 - exa    -- modern ls command
 - fish   -- another new shell
+
+// default application setting
+mimeo    -- this is the thing!

@@ -3,7 +3,9 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "lilpa.png"
+
+math.randomseed(os.time())
+theme.wallpaper = themes_path .. "this_is_me_lilpa.png"
 -- }}}
 
 -- {{{ Styles
