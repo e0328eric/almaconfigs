@@ -83,7 +83,7 @@ switch (uname)
             exa $argv
         end
 
-        function open
+        function o
             /usr/bin/xdg-open $argv
         end
 
@@ -246,73 +246,27 @@ function shtobat
 end
 
 function hakwon
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/TeX_Documents/Hakwon
-    end
+    cd ~/AlmaDatas/TeX_Documents/Hakwon
 end
 
 function minireport
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/TeX_Documents/Mini_Report
-    end
-end
-
-function voca
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/Voca
-    end
+    cd ~/AlmaDatas/TeX_Documents/Mini_Report
 end
 
 function notetaking
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/TeX_Documents/NoteTaking
-    end
+    cd ~/AlmaDatas/TeX_Documents/NoteTaking
 end
 
 function homework
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/TeX_Documents/Homework
-    end
+    cd ~/AlmaDatas/TeX_Documents/Homework
 end
 
 function mathbook
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/Math
-    end
+    cd ~/AlmaDatas/Math
 end
 
 function teachingf
-    switch (uname)
-        case Linux
-            echo "*.*"
-
-        case Darwin
-            cd ~/Nextcloud/TeX_Documents/TF
-    end
+    cd ~/AlmaDatas/TeX_Documents/TF
 end
 
 function cfmtcp
