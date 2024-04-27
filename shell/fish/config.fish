@@ -35,10 +35,13 @@ switch (uname)
         set -gx EDITOR nvim
 
         set PATH $PATH ~/.local/bin
+        set PATH $PATH ~/.local/gcc/bin
+        set PATH $PATH ~/.local/farbfeld
         set PATH $PATH ~/.cabal/bin
         set PATH $PATH ~/.ghcup/bin
         set PATH $PATH ~/.ghcup/env
         set PATH $PATH ~/.cargo/bin
+        set PATH $PATH ~/.nimble/bin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:$GOPATH/bin
         set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
@@ -67,7 +70,7 @@ switch (uname)
             ls -al $argv
         end
 
-        function ze
+        function z
             zellij $argv
         end
 
@@ -84,7 +87,7 @@ switch (uname)
         end
 
         function o
-            /usr/bin/xdg-open $argv
+            /usr/bin/xdg-open $argv &
         end
 
         function fishcfg
@@ -161,10 +164,6 @@ switch (uname)
 
         function ls
             exa $argv
-        end
-
-        function cd
-            z $argv
         end
 
         function l
@@ -246,27 +245,31 @@ function shtobat
 end
 
 function hakwon
-    cd ~/AlmaDatas/TeX_Documents/Hakwon
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/Hakwon
 end
 
 function minireport
-    cd ~/AlmaDatas/TeX_Documents/Mini_Report
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/Mini_Report
 end
 
 function notetaking
-    cd ~/AlmaDatas/TeX_Documents/NoteTaking
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/NoteTaking
 end
 
 function homework
-    cd ~/AlmaDatas/TeX_Documents/Homework
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/Homework
+end
+
+function lecturenote
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/Lecture_Note
 end
 
 function mathbook
-    cd ~/AlmaDatas/Math
+    cd ~/AlmaDatas/AlmaFiles/Math
 end
 
 function teachingf
-    cd ~/AlmaDatas/TeX_Documents/TF
+    cd ~/AlmaDatas/AlmaFiles/TeX_Documents/TF
 end
 
 function cfmtcp
@@ -319,4 +322,3 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 
 # starship condiguration
 starship init fish | source
-zoxide init fish | source

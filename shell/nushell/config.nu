@@ -772,16 +772,19 @@ alias l          = ls -al
 alias lg         = lazygit
 alias getmusic   = youtube-dl -x --audio-format m4a
 alias cat        = bat
+alias open       = xdg-open
+alias oldopen    = ^open
 
-alias hakwon     = cd ~/Nextcloud/TeX_Documents/Hakwon
-alias minireport = cd ~/Nextcloud/TeX_Documents/Mini_Report
-alias voca       = cd ~/Nextcloud/Voca
-alias notetaking = cd ~/Nextcloud/TeX_Documents/NoteTaking
-alias homework   = cd ~/Nextcloud/TeX_Documents/Homework
-alias teachingf  = cd ~/Nextcloud/TeX_Documents/TF
+alias hakwon     = cd ~/AlmaDatas/TeX_Documents/Hakwon
+alias minireport = cd ~/AlmaDatas/TeX_Documents/Mini_Report
+alias voca       = cd ~/AlmaDatas/Voca
+alias notetaking = cd ~/AlmaDatas/TeX_Documents/NoteTaking
+alias homework   = cd ~/AlmaDatas/TeX_Documents/Homework
+alias teachingf  = cd ~/AlmaDatas/TeX_Documents/TF
 
 def nurm [arg] { rm $arg }
 alias rm  = xilo
 
 source "~/.oh-my-posh.nu"
 source "~/.zoxide.nu"
+use task.nu # to use pueue

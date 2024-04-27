@@ -4,4 +4,4 @@
 # Example:
 # './check-twice "Do you want to shutdown?" "shutdown -h now"
 
-[ $(echo -e "No\nYes" | rofi -dmenu -p "$1") == "Yes" ] && $2
+[ $(echo -e "no\nyes" | rofi -dmenu -p "$1") == "yes" ] && $2

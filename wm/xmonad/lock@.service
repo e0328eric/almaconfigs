@@ -1,12 +1,12 @@
 [Unit]
-Description=i3lock on suspend
+Description=i3lock on sleep
 After=sleep.target
 
 [Service]
-User=%i
+User=almagest
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/home/almagest/.local/bin/lock
+ExecStart=/home/almagest/.local/bin/blur-lock
 
 [Install]
 WantedBy=sleep.target

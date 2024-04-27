@@ -7,6 +7,9 @@ function run() {
   fi
 }
 
+# start ibus
+ibus-daemon -rxRd
+
 # adjust brightness
 run awesome-brightness 0
 
@@ -17,5 +20,4 @@ run light-locker
 run xset s 480 dpms 600 600 600
 
 # load nextcloud
-# run nextcloud
-
+run pcloud

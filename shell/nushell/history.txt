@@ -355,3 +355,186 @@ open
 cd PDE
 open partial.pdf
 sudo chsh almagest -s /usr/bin/fish
+ls
+sudo chsh almagest -s /usr/bin/nu
+which nu
+ls
+sudo pacman -Syyu
+ls
+z
+z Github/dioteko/
+z dioteko-raylib-sys/
+z lib/raylib/
+ls
+cd
+ls
+z --help
+ls
+source $nu.config-path
+source $nu.env-path
+source $nu.config-path
+cd PDE
+ls
+cd
+ls
+v $nu.config-path
+minireport 
+v $nu.config-path
+cd .config/nushell/
+ls
+cd ..
+ls
+cd
+cd .config/
+ls
+minireport 
+echo $nu.config-path
+v $nu.config-path
+minireport 
+ls
+cd AlmaDatas/
+ls
+v $nu.config-path
+man reset
+help
+help commands
+help
+ps
+ps | where cpu > 0
+help where
+ls
+minireport 
+ls
+cd Folland_Solution_Typst/
+open Folland.pdf
+open --help
+help open
+reset
+help open
+reset
+v $nu.config-path
+help open
+open Folland.pdf
+v Folland.pdf
+ls
+v $nu.config-path
+source $nu.env-path
+source $nu.config-path
+open Folland.pdf
+open Folland.pdf&
+open Folland.pdf &
+open Folland.pdf;
+firefox&
+vivaldi;
+ls
+open Folland.pdf;
+xdg-open Folland.pdf;
+sudo pacman -S pueue
+pueue add open Folland.pdf
+pueue start
+pueue help
+systemctl --user start pueued
+systemctl --user enable pueued
+pueue add open Folland.pdf
+pueue status
+pueue log 0
+pueue help
+pueue kill 0
+pueue clean
+pueue status
+echo $env.NU_LIB_DIRS
+cd $env.NU_LIB_DIRS
+echo $env.NU_LIB_DIRS | cd
+ls
+echo $env.NU_LIB_DIRS
+cd /home/almagest/Github/arch-almagest/shell/nushell/scripts
+ls
+cd Github/arch-almagest/
+ls
+cd shell/nushell/
+ls
+echo $env.NU_LIB_DIRS
+mkdir scripts
+cd scripts/
+ls
+wget https://raw.githubusercontent.com/nushell/nu_scripts/main/modules/background_task/task.nu
+ls
+cd ..
+v config.nu
+minireport 
+ls
+cd Folland_Solution_Typst/
+ls
+pueue add open Folland.pdf
+pueue status
+pueue log 0
+which open
+task clean
+task add open Folland.pdf
+task spawn --help
+task spawn { open Folland.pdf }
+ls
+v Folland.typ
+typst compile Folland.typ
+v Chapter/ch1.typ
+cd ../..
+ls
+cd Mini_Report/
+ls
+mkdir Random_Processes_Solution
+cd Random_Processes_Solution/
+typst help
+typst init
+typst init --help
+ls
+typst watch Folland.typ
+l;s
+vesti init
+ls
+cd ..
+cd Rudin_Solution/RCA/
+ls
+v RCA.ves
+cd
+ls
+cd .config/vesti/
+ls
+v config.yaml
+vesti compile Random_Processes_Solution.ves
+ls
+v Random_Processes_Solution.ves
+task status
+task spawn { open Random_Processes_Solution.pdf }
+cd ../..
+ls
+cd Lecture_Note/Scattering_Problem/
+ls
+cd
+cd Github/vesti/
+ls
+lg
+git checkout main
+lg
+ls
+lg
+v src/lexer/mod.rs
+git branch list
+git branch --help
+git branch --list
+git branch -D list
+git branch --list
+git checkout introduce_pkg_manager
+ls
+lg
+v src/compile/vesti.rs
+ls
+cargo t
+v src/compile/vesti.rs
+cargo t
+cd
+cd Github/vesti/
+ls
+v src/codegen.rs
+cargo t
+v src/parser/parser_test.rs
+sudo chsh almagest -s /usr/bin/fish
