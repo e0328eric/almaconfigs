@@ -15,4 +15,7 @@
 - fish   -- another new shell
 
 // default application setting
-mimeo    -- this is the thing!
+mimeo    -- this is the thing! (AUR)
+
+// rofi config
+rofi-file-browser-extended-git (AUR)
