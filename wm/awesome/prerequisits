@@ -7,6 +7,7 @@
 - xrandr       -- brightness change and more
 - rofi         -- minial and customizable search popup
 - dmenu        -- only for check-twice.sh I think
+- dunst        -- notification
 
 // terminal
 - kitty  -- very basic terminal
