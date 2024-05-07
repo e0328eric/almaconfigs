@@ -5,7 +5,7 @@ local dpi = require("beautiful.xresources").apply_dpi
 local theme = {}
 
 math.randomseed(os.time())
-theme.wallpaper = themes_path .. "this_is_me_lilpa.png"
+theme.wallpaper = themes_path .. "stelle-firefly.png"
 -- }}}
 
 -- {{{ Styles

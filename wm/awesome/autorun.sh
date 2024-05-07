@@ -10,6 +10,9 @@ function run() {
 # start ibus
 ibus-daemon -rxRd
 
+# nm-applet
+run nm-applet
+
 # adjust brightness
 run awesome-brightness 0
 

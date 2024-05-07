@@ -8,6 +8,8 @@
 - rofi         -- minial and customizable search popup
 - dmenu        -- only for check-twice.sh I think
 - dunst        -- notification
+- xclip        -- clipboard setting
+- nm-applet    -- gui version for wifi networking (sudo pacman -S network-manager-applet)
 
 // terminal
 - kitty  -- very basic terminal
