@@ -7,6 +7,9 @@ function run() {
   fi
 }
 
+# run nimf
+run nimf
+
 # adjust brightness
 run awesome-brightness 0
 

@@ -22,14 +22,14 @@ config.font = wezterm.font_with_fallback({
 	"JetbrainMono Nerd Font",
 })
 
-config.font_size = 10.0
+config.font_size = 13.0
 config.unicode_version = 15
 config.warn_about_missing_glyphs = false
 
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                       Colorscheme                        │
 --         ╰──────────────────────────────────────────────────────────╯
-config.color_scheme = "AyuDark (Gogh)"
+config.color_scheme = "Neutron (Gogh)"
 config.window_frame = {
 	font_size = 9.5,
 }
@@ -97,25 +97,24 @@ config.front_end = "WebGpu"
 --         │                       Keybindings                        │
 --         ╰──────────────────────────────────────────────────────────╯
 config.keys = {
-	{ key = "w", mods = "CMD|CTRL", action = act.SpawnWindow },
-	{ key = "t", mods = "ALT", action = act.SpawnTab("CurrentPaneDomain") },
-	{ key = "1", mods = "ALT", action = act.ActivateTab(0) },
-	{ key = "2", mods = "ALT", action = act.ActivateTab(1) },
-	{ key = "3", mods = "ALT", action = act.ActivateTab(2) },
-	{ key = "4", mods = "ALT", action = act.ActivateTab(3) },
-	{ key = "5", mods = "ALT", action = act.ActivateTab(4) },
-	{ key = "6", mods = "ALT", action = act.ActivateTab(5) },
-	{ key = "7", mods = "ALT", action = act.ActivateTab(6) },
-	{ key = "8", mods = "ALT", action = act.ActivateTab(7) },
-	{ key = "9", mods = "ALT", action = act.ActivateTab(-1) },
+	{ key = "t", mods = "CTRL|CMD", action = act.SpawnTab("CurrentPaneDomain") },
+	{ key = "1", mods = "CTRL|CMD", action = act.ActivateTab(0) },
+	{ key = "2", mods = "CTRL|CMD", action = act.ActivateTab(1) },
+	{ key = "3", mods = "CTRL|CMD", action = act.ActivateTab(2) },
+	{ key = "4", mods = "CTRL|CMD", action = act.ActivateTab(3) },
+	{ key = "5", mods = "CTRL|CMD", action = act.ActivateTab(4) },
+	{ key = "6", mods = "CTRL|CMD", action = act.ActivateTab(5) },
+	{ key = "7", mods = "CTRL|CMD", action = act.ActivateTab(6) },
+	{ key = "8", mods = "CTRL|CMD", action = act.ActivateTab(7) },
+	{ key = "9", mods = "CTRL|CMD", action = act.ActivateTab(-1) },
 	{
-		key = "v",
-		mods = "ALT|SHIFT",
+		key = "d",
+		mods = "CTRL|SHIFT",
 		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 	{
 		key = "s",
-		mods = "ALT|SHIFT",
+		mods = "CTRL|SHIFT",
 		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 	{ key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen },
