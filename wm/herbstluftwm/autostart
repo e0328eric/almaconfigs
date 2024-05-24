@@ -21,7 +21,7 @@ function run_autostart() {
         "$@"&
     fi
 }
-run_autostart nitrogen
+run_autostart nitrogen --restore
 run_autostart nimf
 run_autostart light-locker
 run_autostart xset s 480 dpms 600 600 600
@@ -242,3 +242,6 @@ for monitor in $(hc list_monitors | cut -d: -f1) ; do
     # start it on each monitor
     "$panel" "$monitor" &
 done
+
+# set initial arrangement of layout
+hc split horizontal 0.5; hc remove
