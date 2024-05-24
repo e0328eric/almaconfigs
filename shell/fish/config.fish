@@ -90,6 +90,10 @@ switch (uname)
             /usr/bin/xdg-open $argv &
         end
 
+        function hc
+            herbstclient $argv
+        end
+
         function fishcfg
             nvim  ~/.config/fish/config.fish
         end
