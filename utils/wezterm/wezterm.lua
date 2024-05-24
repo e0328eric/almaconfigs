@@ -22,7 +22,7 @@ config.font = wezterm.font_with_fallback({
 	"JetbrainMono Nerd Font",
 })
 
-config.font_size = 13.0
+config.font_size = 12.5
 config.unicode_version = 15
 config.warn_about_missing_glyphs = false
 
@@ -90,7 +90,7 @@ config.window_background_opacity = 0.75
 --  │                           etc                            │
 --  ╰──────────────────────────────────────────────────────────╯
 -- config.native_macos_fullscreen_mode = true
-config.front_end = "WebGpu"
+-- config.front_end = "WebGpu"
 -- config.enable_kitty_graphics = true
 
 --         ╭──────────────────────────────────────────────────────────╮
