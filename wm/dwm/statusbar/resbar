@@ -1,3 +1,0 @@
-#! /bin/sh
-
-kill "$(pstree -lp | grep -- -dwmbar | awk -F --- '{split($2, a, "("); print a[2]}' | tr -d ')')"
