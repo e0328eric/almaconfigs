@@ -4,8 +4,8 @@ theme = "gruvbox_transparent"
 auto-pairs = false
 line-number = "relative"
 bufferline = "multiple"
-text-width = 80
-rulers = [80]
+text-width = 100
+rulers = [100]
 
 [editor.cursor-shape]
 insert = "bar"

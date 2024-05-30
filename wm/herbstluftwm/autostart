@@ -22,7 +22,7 @@ function run_autostart() {
     fi
 }
 run_autostart nitrogen --restore
-run_autostart nimf
+run_autostart ibus-daemon -rxRd
 run_autostart light-locker
 run_autostart xset s 480 dpms 600 600 600
 run_autostart picom
@@ -44,12 +44,12 @@ hc keyunbind --all
 hc keybind $Mod-Shift-z quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-q close
-hc keybind $Mod-Shift-x spawn check-twice.sh "Are you sure you want to lock?" light-locker-command -l
+hc keybind $Mod-Shift-x spawn check-twice.sh "Are you sure you want to lock?" "light-locker-command -l"
 hc keybind $Mod-Shift-c spawn check-twice.sh "Are you sure you want to shutdown?" poweroff
 hc keybind $Mod-Shift-v spawn check-twice.sh "Are you sure you want to reboot?" reboot
 
 # spawn programs
-hc keybind $Mod-Return spawn wezterm
+hc keybind $Mod-Return spawn kitty
 hc keybind $Mod-Shift-Return spawn vivaldi
 hc keybind $Mod-Control-s spawn rofi-filebrowser.sh
 hc keybind $Mod-Control-d spawn rofi -show drun -config ~/.config/rofi/rofidmenu.rasi
