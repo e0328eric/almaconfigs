@@ -98,8 +98,12 @@ switch (uname)
             nvim  ~/.config/fish/config.fish
         end
 
-        function backlight
-            gmux_backlight $argv
+        function showwifi
+            nmcli d wifi list
+        end
+
+        function connectwifi
+            nmcli d wifi connect $argv
         end
 
         alias xclip="/usr/bin/xclip -selection c"
