@@ -1,13 +1,30 @@
-{-
-
-Almagest Xmonad setting Haskell File
-The package xmonad, xmonad-contrib, dbus and haskell-utf8-string are installed
-Also, install xmonad-log to run polybar
-Use pacman to install it
-
--}
--- XMonad Modules
--- Basic Modules
+--          ╭─────────────────────────────────────────────────────────╮
+--          │           Almagest Xmonad configureation File           │
+--          ╰─────────────────────────────────────────────────────────╯
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                      Prerequisits                       │
+--          ╰─────────────────────────────────────────────────────────╯
+--          [] xmonad
+--          [] xmonad-contrib
+--          [] xmonad-log
+--          [] dbus
+--          [] ibus
+--          [] kitty
+--          [] nitrogen
+--          [] pcloud
+--          [] picom
+--          [] polybar
+--          [] rofi
+--          [] spectacle
+--          [] vivaldi
+--          [] haskell-data-default
+--          [] haskell-dbus
+--          [] haskell-utf8-string
+--
+--
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                     Import Packages                     │
+--          ╰─────────────────────────────────────────────────────────╯
 import qualified Codec.Binary.UTF8.String as UTF8
 import Control.Monad (forM_, join)
 import qualified DBus as D
@@ -87,11 +104,16 @@ import XMonad.Util.Run (safeSpawn, spawnPipe)
 import XMonad.Util.SpawnOnce (spawnOnce)
 import XMonad.Util.WorkspaceCompare
 
----------------------------------------------------------------------------------------
--- Main
----------------------------------------------------------------------------------------
-myterm = "wezterm"
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                        Constants                        │
+--          ╰─────────────────────────────────────────────────────────╯
+myTerm = "kitty"
 
+myBrowser = "vivaldi"
+
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                    Main Entry Point                     │
+--          ╰─────────────────────────────────────────────────────────╯
 main :: IO ()
 main = do
   dbus <- D.connectSession
@@ -99,92 +121,109 @@ main = do
     dbus
     (D.busName_ "org.xmonad.Log")
     [D.nameAllowReplacement, D.nameReplaceExisting, D.nameDoNotQueue]
-  xmonad $
-    ewmh
-      def
-        { modMask = mod4Mask
-        , layoutHook = myLayout
-        , workspaces = myWorkspaces
+  xmonad
+    $ ewmh
+        def
+          { modMask = mod4Mask
+          , layoutHook = myLayout
+          , workspaces = myWorkspaces
                 -- , handleEventHook = handleEventHook def <+> HM.docksEventHook
-        , logHook = dynamicLogWithPP (myLogHook dbus)
-        , manageHook =
-            placeHook (fixed (0.5, 0.3)) <+>
-            HM.manageDocks <+> myManageHook <+> myManageHook' <+> manageHook def
-        , terminal = myterm
-        , keys = myKeysKeyboard
-        , borderWidth = 3
-        , mouseBindings = myKeysMouse
-        , startupHook = myStartupHook
+          , logHook = dynamicLogWithPP (myLogHook dbus)
+          , manageHook =
+              placeHook (fixed (0.5, 0.3))
+                <+> HM.manageDocks
+                <+> myManageHook
+                <+> myManageHook'
+                <+> manageHook def
+          , terminal = myTerm
+          , keys = myKeysKeyboard
+          , borderWidth = 3
+          , mouseBindings = myKeysMouse
+          , startupHook = myStartupHook
         -- This is the color of the borders of the windows themselves.
-        , normalBorderColor = "#2f3d44"
-        , focusedBorderColor = "#25cea7"
-        }
+          , normalBorderColor = "#2f3d44"
+          , focusedBorderColor = "#25cea7"
+          }
 
----------------------------------------------------------------------------------------
--- Layouts
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                         Layouts                         │
+--          ╰─────────────────────────────────────────────────────────╯
 myLayout =
-  HM.avoidStruts $
-  mouseResize $
-  windowArrange $
-  T.toggleLayouts floats $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
+  HM.avoidStruts
+    $ mouseResize
+    $ windowArrange
+    $ T.toggleLayouts floats
+    $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
     myDefaultLayout =
-      tall |||
-      grid |||
-      threeCol |||
-      threeRow ||| oneBig ||| noBorders monocle ||| space ||| floats
+      tall
+        ||| grid
+        ||| threeCol
+        ||| threeRow
+        ||| oneBig
+        ||| noBorders monocle
+        ||| space
+        ||| floats
 
 spacingBorder = spacingRaw True (Border 7 7 7 7) True (Border 7 7 7 7) True
 
 tall =
-  renamed [Replace "tall"] $
-  limitWindows 12 $ spacingBorder $ ResizableTall 1 (3 / 100) (1 / 2) []
+  renamed [Replace "tall"]
+    $ limitWindows 12
+    $ spacingBorder
+    $ ResizableTall 1 (3 / 100) (1 / 2) []
 
 grid =
-  renamed [Replace "grid"] $
-  limitWindows 12 $ spacing 6 $ mkToggle (single MIRROR) $ GV.Grid (16 / 10)
+  renamed [Replace "grid"]
+    $ limitWindows 12
+    $ spacing 6
+    $ mkToggle (single MIRROR)
+    $ GV.Grid (16 / 10)
 
 threeCol =
   renamed [Replace "threeCol"] $ limitWindows 3 $ ThreeCol 1 (3 / 100) (1 / 3)
 
 threeRow =
-  renamed [Replace "threeRow"] $
-  limitWindows 3 $ Mirror $ mkToggle (single MIRROR) zoomRow
+  renamed [Replace "threeRow"]
+    $ limitWindows 3
+    $ Mirror
+    $ mkToggle (single MIRROR) zoomRow
 
 oneBig =
-  renamed [Replace "oneBig"] $
-  limitWindows 6 $
-  spacing 6 $
-  Mirror $
-  mkToggle (single MIRROR) $
-  mkToggle (single REFLECTX) $
-  mkToggle (single REFLECTY) $ OneBig (5 / 9) (8 / 12)
+  renamed [Replace "oneBig"]
+    $ limitWindows 6
+    $ spacing 6
+    $ Mirror
+    $ mkToggle (single MIRROR)
+    $ mkToggle (single REFLECTX)
+    $ mkToggle (single REFLECTY)
+    $ OneBig (5 / 9) (8 / 12)
 
 monocle = renamed [Replace "monocle"] $ limitWindows 20 Full
 
 space =
-  renamed [Replace "space"] $
-  limitWindows 4 $
-  spacing 6 $
-  Mirror $
-  mkToggle (single MIRROR) $
-  mkToggle (single REFLECTX) $
-  mkToggle (single REFLECTY) $ OneBig (2 / 3) (2 / 3)
+  renamed [Replace "space"]
+    $ limitWindows 4
+    $ spacing 6
+    $ Mirror
+    $ mkToggle (single MIRROR)
+    $ mkToggle (single REFLECTX)
+    $ mkToggle (single REFLECTY)
+    $ OneBig (2 / 3) (2 / 3)
 
 floats = renamed [Replace "floats"] $ limitWindows 20 simplestFloat
 
----------------------------------------------------------------------------------------
--- Workspaces
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                       Workspaces                        │
+--          ╰─────────────────────────────────────────────────────────╯
 myWorkspaces =
   ["1", "2", "3", "4", "5", "6", "7", "8", "9"] ++ map snd myExtraWorkspaces
 
 myExtraWorkspaces = [(xK_0, "10")]
 
----------------------------------------------------------------------------------------
--- ManageHook
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                       ManageHook                        │
+--          ╰─────────────────────────────────────────────────────────╯
 myManageHook =
   composeAll
     [ className =? "MPlayer" --> doFloat
@@ -208,112 +247,110 @@ myManageHook =
 
 myManageHook' = composeOne [isFullscreen -?> doFullFloat]
 
----------------------------------------------------------------------------------------
--- Keybinding
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                       Keybinding                        │
+--          ╰─────────────────────────────────────────────────────────╯
 myKeysKeyboard :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeysKeyboard conf =
-  mkKeymap conf $
-    -- launch a terminal
-  [ ("M-<Return>", spawn $ XMonad.terminal conf)
-  , ("M-M1-<Return>", namedScratchpadAction myScratchPads "terminal")
+  mkKeymap conf
+    $ [ ("M-<Return>", spawn $ XMonad.terminal conf)
+      , ("M-M1-<Return>", namedScratchpadAction myScratchPads "terminal")
+      , ("M-S-<Return>", spawn myBrowser)
     -- close focused window
-  , ("M-S-q", kill)
+      , ("M-S-q", kill)
     --  Reset the layouts on the current workspace to default
-  , ("M-S-h", setLayout $ XMonad.layoutHook conf)
+      , ("M-S-h", setLayout $ XMonad.layoutHook conf)
     -- Resize viewed windows to the correct size
-  , ("M-n", refresh)
+      , ("M-n", refresh)
     -- Window Navigation
-  , ("M-<Tab>", windows W.focusDown)
-  , ("M1-<Tab>", windows W.focusUp)
-  , ("M-<L>", windows W.focusUp)
-  , ("M-<R>", windows W.focusDown)
-  , ("M-a", windows W.focusUp)
-  , ("M-d", windows W.focusDown)
-  , ("M-S-C-e", windows W.focusMaster)
-  , ("M-S-<Tab>", windows W.swapDown)
-  , ("M1-S-<Tab>", windows W.swapUp)
-  , ("M-S-<R>", windows W.swapDown)
-  , ("M-S-<L>", windows W.swapUp)
-  , ("M-S-e", windows W.swapMaster)
-  , ("M-C-M1-w", sendMessage Arrange)
-  , ("M-C-M1-s", sendMessage DeArrange)
-  , ("M-S-a", sendMessage Shrink)
-  , ("M-S-d", sendMessage Expand)
-  , ("M-S-C-a", sendMessage MirrorShrink)
-  , ("M-S-C-d", sendMessage MirrorExpand)
+      , ("M-<Tab>", windows W.focusDown)
+      , ("M1-<Tab>", windows W.focusUp)
+      , ("M-<L>", windows W.focusUp)
+      , ("M-<R>", windows W.focusDown)
+      , ("M-a", windows W.focusUp)
+      , ("M-d", windows W.focusDown)
+      , ("M-S-C-e", windows W.focusMaster)
+      , ("M-S-<Tab>", windows W.swapDown)
+      , ("M1-S-<Tab>", windows W.swapUp)
+      , ("M-S-<R>", windows W.swapDown)
+      , ("M-S-<L>", windows W.swapUp)
+      , ("M-S-e", windows W.swapMaster)
+      , ("M-C-M1-w", sendMessage Arrange)
+      , ("M-C-M1-s", sendMessage DeArrange)
+      , ("M-S-a", sendMessage Shrink)
+      , ("M-S-d", sendMessage Expand)
+      , ("M-S-C-a", sendMessage MirrorShrink)
+      , ("M-S-C-d", sendMessage MirrorExpand)
     -- Layouts
-  , ("M-<Space>", sendMessage NextLayout)
-  , ("M-S-<Space>", sendMessage HM.ToggleStruts)
-  , ("M-S-n", sendMessage $ Toggle NOBORDERS)
-  , ("M-S-M1-n", sendMessage (Toggle NBFULL) >> sendMessage HM.ToggleStruts)
-  , ("M-S-f", sendMessage (T.Toggle "floats"))
-  , ("M-S-t", withFocused $ windows . W.sink)
-  , ("M-S-o", sendMessage $ Toggle REFLECTX)
-  , ("M-S-p", sendMessage $ Toggle REFLECTY)
-  , ("M-S-m", sendMessage $ Toggle MIRROR)
-  , ("M-k", sendMessage (IncMasterN 1))
-  , ("M-j", sendMessage (IncMasterN (-1)))
-  , ("M-S-k", increaseLimit)
-  , ("M-S-j", decreaseLimit)
-    -- Run Browser
-  , ("M-S-<Return>", spawn "vivaldi")
+      , ("M-<Space>", sendMessage NextLayout)
+      , ("M-S-<Space>", sendMessage HM.ToggleStruts)
+      , ("M-S-n", sendMessage $ Toggle NOBORDERS)
+      , ("M-S-M1-n", sendMessage (Toggle NBFULL) >> sendMessage HM.ToggleStruts)
+      , ("M-S-f", sendMessage (T.Toggle "floats"))
+      , ("M-S-t", withFocused $ windows . W.sink)
+      , ("M-S-o", sendMessage $ Toggle REFLECTX)
+      , ("M-S-p", sendMessage $ Toggle REFLECTY)
+      , ("M-S-m", sendMessage $ Toggle MIRROR)
+      , ("M-k", sendMessage (IncMasterN 1))
+      , ("M-j", sendMessage (IncMasterN (-1)))
+      , ("M-S-k", increaseLimit)
+      , ("M-S-j", decreaseLimit)
     -- Run Text editor
     --, ("M-e", spawn "emacs")
     --, ("M-e", spawn "code-insiders")
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
     -- See also the statusBar function from Hooks.DynamicLog.
-  , ("M1-S-2", spawn "spectacle")
-  , ("M1-S-3", spawn "spectacle -u")
-  , ("M1-S-4", spawn "spectacle -r")
+      , ("M1-S-2", spawn "spectacle")
+      , ("M1-S-3", spawn "spectacle -u")
+      , ("M1-S-4", spawn "spectacle -r")
   -- , ("M-<KP_F3>", spawn "krusader")
-  , ("C-M-s", spawn "rofi-filebrowser.sh")
-  , ("C-M-d", spawn "rofi -show drun -config ~/.config/rofi/rofidmenu.rasi")
-  , ("M-f", spawn $ myterm ++ " -e vifm") -- vifm
-  -- , ("M-m", spawn $ "mathematica") -- mathematica
-  -- , ("M-n", spawn $ "notion-app") -- notion
-    -- End of Computer
-  , ( "M-S-c"
-    , spawn "check-twice.sh \"Are you sure you want to shutdown?\" \"poweroff\"")
-  , ( "M-S-v"
-    , spawn "check-twice.sh \"Are you sure you want to reboot?\" \"reboot\"")
-  , ( "M-S-z"
-    , spawn
-        "check-twice.sh \"Are you sure you want to suspend?\" \"systemctl suspend -i\"")
-  , ("M-S-C-x", io exitSuccess)
+      , ("C-M-s", spawn "rofi-filebrowser.sh")
+      , ("C-M-d", spawn "rofi -show drun -config ~/.config/rofi/rofidmenu.rasi")
+      , ( "M-S-x"
+        , spawn
+            "check-twice.sh \"Are you sure you want to shutdown?\" \"light-locker-command -l\"")
+      , ( "M-S-c"
+        , spawn
+            "check-twice.sh \"Are you sure you want to shutdown?\" \"poweroff\"")
+      , ( "M-S-v"
+        , spawn "check-twice.sh \"Are you sure you want to reboot?\" \"reboot\"")
+      , ("M-S-C-x", io exitSuccess)
     -- Volume Settings
-  , ("<XF86AudioLowerVolume>", spawn "volume_brightness.sh volume_down")
-  , ("<XF86AudioRaiseVolume>", spawn "volume_brightness.sh volume_up")
-  , ("<XF86AudioMute>", spawn "volume_brightness.sh volume_mute")
+      , ("<XF86AudioLowerVolume>", spawn "volume_brightness.sh volume_down")
+      , ("<XF86AudioRaiseVolume>", spawn "volume_brightness.sh volume_up")
+      , ("<XF86AudioMute>", spawn "volume_brightness.sh volume_mute")
     -- Brightness Setting
-  , ("<XF86MonBrightnessUp>", spawn "volume_brightness.sh brightness_up")
-  , ("M-C-S-<R>", spawn "volume_brightness.sh brightness_up")
-  , ("<XF86MonBrightnessDown>", spawn "volume_brightness.sh brightness_down")
-  , ("M-C-S-<L>", spawn "volume_brightness.sh brightness_down")
+      , ("<XF86MonBrightnessUp>", spawn "volume_brightness.sh brightness_up")
+      , ("M-C-S-<R>", spawn "volume_brightness.sh brightness_up")
+      , ( "<XF86MonBrightnessDown>"
+        , spawn "volume_brightness.sh brightness_down")
+      , ("M-C-S-<L>", spawn "volume_brightness.sh brightness_down")
     -- Reset xmonad
-  , ("M-S-r", spawn "xmonad --recompile; xmonad --restart")
-  ] ++
-  [ ("M-" ++ m ++ show k, windows $ f i)
-  | (i, k) <- zip (XMonad.workspaces conf) ([1 .. 9] ++ [0])
-  , (f, m) <- [(W.greedyView, ""), (W.shift, "S-")]
-  ]
+      , ("M-S-r", spawn "xmonad --recompile; xmonad --restart")
+      ]
+        ++ [ ("M-" ++ m ++ show k, windows $ f i)
+           | (i, k) <- zip (XMonad.workspaces conf) ([1 .. 9] ++ [0])
+           , (f, m) <- [(W.greedyView, ""), (W.shift, "S-")]
+           ]
 
 myKeysMouse conf@XConfig {XMonad.modMask = modMask} =
   M.fromList
     [ ( (modMask, button1)
       , \w ->
-          focus w >> mouseMoveWindow w >>
-          ifClick (snapMagicMove (Just 50) (Just 50) w))
+          focus w
+            >> mouseMoveWindow w
+            >> ifClick (snapMagicMove (Just 50) (Just 50) w))
     , ( (modMask .|. shiftMask, button1)
       , \w ->
-          focus w >> mouseResizeWindow w >>
-          ifClick (snapMagicResize [LT.R, LT.D] (Just 50) (Just 50) w))
+          focus w
+            >> mouseResizeWindow w
+            >> ifClick (snapMagicResize [LT.R, LT.D] (Just 50) (Just 50) w))
     ]
 
----------------------------------------------------------------------------------------
--- LogHook
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                         LogHook                         │
+--          ╰─────────────────────────────────────────────────────────╯
 myLogHook :: D.Client -> PP
 myLogHook dbus =
   def
@@ -331,27 +368,23 @@ myLogHook dbus =
     bg2 = "#504945"
     red = "#fb4934"
 
----------------------------------------------------------------------------------------
--- Startup Applications
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                  Startup Applications                   │
+--          ╰─────────────────────────────────────────────────────────╯
 myStartupHook = do
   spawn "picom"
-    -- screen locking
+  spawn "nitrogen --restore"
+  spawnOnce "ibus-daemon -rxRd"
   spawnOnce "light-locker"
-    -- nextcloud
-  spawnOnce "nextcloud"
-    -- Alert Low Battery
-  spawnOnce "battery-low"
-    -- Wallpaper
-  spawnOnce "nitrogen --restore"
+  spawnOnce "xset s 480 dpms 600 600 600"
+  spawnOnce "polybar"
+  spawnOnce "pcloud"
     -- Palm touchpad
   spawnOnce "syndaemon -i 1.0 -t -K -R"
-    -- Polybar Start
-  spawn "~/.config/polybar/launch.sh"
 
----------------------------------------------------------------------------------------
--- DBus
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                          DBus                           │
+--          ╰─────────────────────────────────────────────────────────╯
 dbusOutput :: D.Client -> String -> IO ()
 dbusOutput dbus str = do
   let signal =
@@ -363,12 +396,12 @@ dbusOutput dbus str = do
     interfaceName = D.interfaceName_ "org.xmonad.Log"
     memberName = D.memberName_ "Update"
 
----------------------------------------------------------------------------------------
--- Scratchpads
----------------------------------------------------------------------------------------
+--          ╭─────────────────────────────────────────────────────────╮
+--          │                       Scratchpads                       │
+--          ╰─────────────────────────────────────────────────────────╯
 myScratchPads = [NS "terminal" spawnTerm findTerm manageTerm]
   where
-    spawnTerm = myterm ++ " --class scratchpad"
+    spawnTerm = myTerm ++ " --class scratchpad"
     findTerm = resource =? "scratchpad"
     manageTerm = customFloating $ W.RationalRect l t w h
       where

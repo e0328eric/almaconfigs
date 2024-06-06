@@ -9,9 +9,9 @@ import System.Taffybar.SimpleConfig
 import System.Taffybar.Widget.Battery
 import System.Taffybar.Widget.Generic.PollingGraph
 import System.Taffybar.Widget.Layout
-import System.Taffybar.Widget.NetworkGraph
 import System.Taffybar.Widget.SNITray
 import System.Taffybar.Widget.SimpleClock
+import System.Taffybar.Widget.Text.NetworkMonitor
 import System.Taffybar.Widget.Util
 import System.Taffybar.Widget.Windows
 import System.Taffybar.Widget.Workspaces
@@ -34,21 +34,22 @@ main = do
           , endWidgets =
               map
                 (>>= buildContentsBox)
-                [batteryIconNew, batteryStr, clock, tray, cpu, mem, net]
+                [tray, batteryIconNew, batteryStr, clock, net, wifi, cpu, mem]
           , cssPaths = []
           , startupHook = return ()
           }
-      -- start widget settings
       windows = windowsNew def
       layout = layoutNew myLayoutConfig
       workspaces = workspacesNew myWorkspacesConfig
-      -- end widget settings
       batteryStr = textBatteryNew "$percentage$%"
       cpu = pollingGraphNew cpuCfg 0.5 cpuCallback
       mem = pollingGraphNew memCfg 1 memCallback
-      net = networkGraphNew netCfg Nothing
+      wifi = pollingLabelNew "" 2.0 wifiInfo
+      net = networkMonitorNew defaultNetFormat Nothing
       clock = textClockNewWith def
       tray = sniTrayThatStartsWatcherEvenThoughThisIsABadWayToDoIt
+      -- start widget settings
+      -- end widget settings
   dyreTaffybar . toTaffyConfig $ myTaffybarConfig
 
 myLayoutConfig = LayoutConfig {formatLayout = myFormatLayout}
@@ -100,3 +101,8 @@ cpuCallback :: IO [Double]
 cpuCallback = do
   (_, systemLoad, totalLoad) <- cpuLoad
   return [totalLoad, systemLoad]
+
+wifiInfo :: IO String
+wifiInfo = do
+  WirelessInfo ssid strength <- getWirelessInfo "wlan0"
+  pure $ ssid ++ ": " ++ show strength ++ "%"
