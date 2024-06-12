@@ -21,8 +21,10 @@ function run_autostart() {
         "$@"&
     fi
 }
+
 run_autostart nitrogen --restore
-run_autostart ibus-daemon -rxRd
+# run_autostart ibus-daemon -rxRd
+run_autostart fcitx5 -d
 run_autostart light-locker
 run_autostart xset s 480 dpms 600 600 600
 run_autostart picom

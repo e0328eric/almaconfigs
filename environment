@@ -5,8 +5,8 @@
 #
 #QT_QPA_PLATFORMTHEME=qt5ct
 #QT_STYLE_OVERRIDE=kvantum
-BROWSER=firefox
-EDITOR=nano
+BROWSER=vivaldi
+EDITOR=vim
 
 GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
