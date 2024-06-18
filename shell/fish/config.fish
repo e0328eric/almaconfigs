@@ -42,6 +42,7 @@ switch (uname)
         set PATH $PATH ~/.ghcup/env
         set PATH $PATH ~/.cargo/bin
         set PATH $PATH ~/.nimble/bin
+        set PATH $PATH ~/.local/share/nvim/mason/bin
         set --universal -x GOPATH ~/.go
         set PATH $PATH $GOROOT/bin:$GOPATH/bin
         set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
@@ -51,11 +52,11 @@ switch (uname)
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
         function v
-            nvim $argv
+            helix $argv
         end
 
         function h
-            helix $argv
+            nvim $argv
         end
 
         function x

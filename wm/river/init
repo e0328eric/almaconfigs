@@ -31,8 +31,8 @@ riverctl spawn pcloud
 #          │                       Keybindings                        │
 #          ╰──────────────────────────────────────────────────────────╯
 
-riverctl map normal Super Return spawn foot
-riverctl map normal Super+Shift Return spawn firefox
+riverctl map normal Super Return spawn kitty
+riverctl map normal Super+Shift Return spawn vivaldi
 
 riverctl map normal Super+Shift Q close
 riverctl map normal Super+Shift Z exit

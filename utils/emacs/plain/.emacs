@@ -28,6 +28,10 @@
 	     (setq mac-control-modifier 'control)
 	     (setq ns-function-modifier 'hyper)))
 
+(global-display-line-numbers-mode 1)
+;; Alternatively, to use it only in programming modes:
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+
 ;; Let TAB acts like vim does (a normal tab)
 (global-set-key (kbd "TAB") 'tab-to-tab-stop)
 
@@ -353,14 +357,6 @@ point reaches the beginning or end of the buffer, stop there."
   :ensure t
   :config
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
-
-;; relative line numbering
-(use-package nlinum-relative
-  :ensure t
-  :config
-  (add-hook 'prog-mode-hook 'nlinum-relative-mode)
-  (setq nlinum-relative-redisplay-delay 0)
-  (setq nlinum-relative-offset 0))
 
 ;; undo-tree mode settings
 (use-package undo-tree

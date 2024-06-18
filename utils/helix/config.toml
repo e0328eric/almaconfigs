@@ -1,7 +1,7 @@
 theme = "gruvbox_transparent"
 
 [editor]
-auto-pairs = false
+auto-pairs = true
 line-number = "relative"
 bufferline = "multiple"
 text-width = 100
