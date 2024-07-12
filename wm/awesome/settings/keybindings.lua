@@ -63,7 +63,7 @@ local globalkeys = gears.table.join(
 	}),
 
 	-- system poweroff, reboot asnd awesome session close
-	awful.key({ modkey, "Shift", "Control" }, "x", awesome.quit, { description = "quit awesome", group = "awesome" }),
+	awful.key({ modkey, "Shift" }, "z", awesome.quit, { description = "quit awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "x", function()
 		awful.spawn('check-twice.sh "Are you sure you want to lock?" "light-locker-command -l"')
 	end, { description = "lock the computer", group = "awesome" }),
@@ -78,6 +78,11 @@ local globalkeys = gears.table.join(
 	awful.key({ modkey, "Ctrl" }, "s", function()
 		awful.spawn("rofi-filebrowser.sh")
 	end, { description = "open rofi file browser", group = "spawn" }),
+
+	-- Menubar
+	awful.key({ modkey, "Control" }, "d", function()
+		menubar.show()
+	end, { description = "show the menubar", group = "launcher" }),
 
 	-- moving floating windows to
 	awful.key({ modkey, "Mod1" }, "q", function()
@@ -183,7 +188,7 @@ local globalkeys = gears.table.join(
 	end, { description = "backlight brightness up less", group = "awesome" }),
 	awful.key({ "Shift" }, "XF86MonBrightnessDown", function()
 		awful.spawn("volume_brightness.sh brightness_down_less")
-	end, { description = "backlight brightness down less", group = "awesome" }),
+	end, { description = "backlight brightness down less", group = "awesome" })
 
 	-- awful.key({ modkey }, "x",
 	-- function ()
@@ -195,13 +200,6 @@ local globalkeys = gears.table.join(
 	-- }
 	-- end,
 	-- {description = "lua execute prompt", group = "awesome"}),
-	-- Menubar
-	awful.key({ modkey, "Control" }, "d", function()
-		menubar.show()
-	end, {
-		description = "show the menubar",
-		group = "launcher",
-	})
 )
 
 -- Bind all key numbers to tags.

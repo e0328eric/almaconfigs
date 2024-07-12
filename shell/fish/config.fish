@@ -38,8 +38,8 @@ switch (uname)
         set PATH $PATH ~/.local/gcc/bin
         set PATH $PATH ~/.local/farbfeld
         set PATH $PATH ~/.cabal/bin
-        set PATH $PATH ~/.ghcup/bin
-        set PATH $PATH ~/.ghcup/env
+        set PATH $PATH ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin
+        set PATH $PATH ~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib
         set PATH $PATH ~/.cargo/bin
         set PATH $PATH ~/.nimble/bin
         set PATH $PATH ~/.local/share/nvim/mason/bin
@@ -52,11 +52,11 @@ switch (uname)
             rm -rf /home/almagest/.local/share/vifm/Trash
         end
         function v
-            helix $argv
+            nvim $argv
         end
 
         function h
-            nvim $argv
+            helix $argv
         end
 
         function x
