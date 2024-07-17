@@ -162,7 +162,7 @@
 		"class<libreoffice-writer>": " ",
 		"class<libreoffice-startcenter>": "󰏆 ",
 		"class<com.obsproject.Studio>": " "
-		}   
+		}
 },
 // for Camilla or Spanish
 "hyprland/workspaces#cam": {
@@ -191,7 +191,7 @@
 		"8":"Otto",
 		"9":"Nove",
 		"10":"Dieci"
-	}	
+	}
 },
 // GROUP
 "group/motherboard": {
@@ -211,8 +211,8 @@
 		"transition-left-to-right": true
         },
 	"modules": [
-		"temperature",		
-		"cpu",	
+		"temperature",
+		"cpu",
 		"memory",
 		"disk",
 	]
@@ -283,8 +283,8 @@
 	//"interval": 5,
 	"align": 0,
 	"rotate": 0,
-	//"bat": "BAT1",
-	//"adapter": "ACAD",
+	"bat": "BAT0",
+	"adapter": "ADP1",
 	"full-at": 100,
 	"design-capacity": false,
 	"states": {

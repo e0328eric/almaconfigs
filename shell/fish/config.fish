@@ -84,7 +84,7 @@ switch (uname)
         end
 
         function ls
-            exa $argv
+            eza --icons $argv
         end
 
         function o
