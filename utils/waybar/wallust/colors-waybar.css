@@ -1,5 +1,5 @@
 @define-color foreground #FAEEE0;
-@define-color background rgba({background | rgb},0.25);
+@define-color background rgba(3,3,4,0.25);
 @define-color cursor #FAEEE0;
 
 @define-color color0 #030304;
