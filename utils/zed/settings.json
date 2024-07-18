@@ -14,5 +14,6 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Ayu Dark"
-  }
+  },
+  "relative_line_numbers": true
 }
