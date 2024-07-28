@@ -183,8 +183,8 @@
 	//"interval": 5,
 	"align": 0,
 	"rotate": 0,
-	"bat": "BAT0",
-	"adapter": "ADP1",
+	"bat": "CMB0",
+	"adapter": "AC",
 	"full-at": 100,
 	"design-capacity": false,
 	"states": {

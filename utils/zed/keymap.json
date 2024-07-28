@@ -1,0 +1,9 @@
+[
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-alt-left": "pane::ActivatePrevItem",
+      "ctrl-alt-right": "pane::ActivateNextItem"
+    }
+  }
+]
