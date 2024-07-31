@@ -59,10 +59,6 @@ switch (uname)
             helix $argv
         end
 
-        function x
-            helix $argv
-        end
-
         function t
             tmux $argv
         end
