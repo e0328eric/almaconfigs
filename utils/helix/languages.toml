@@ -45,7 +45,7 @@ roots = []
 injection-regex = "typ(st)?"
 comment-token = "//"
 file-types = ["typ"]
-indent = { tab-width = 2, unit = " " }
+indent = { tab-width = 4, unit = " " }
 language-servers = ["typst-lsp"]
 text-width = 100
 rulers = [100]
