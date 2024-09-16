@@ -32,7 +32,6 @@ shebangs = ["nim"]
 roots = []
 comment-token = "#"
 language-servers = ["nimlsp"]
-indent = { tab-width = 4, unit = " " }
 
 [[grammar]]
 name = "nim"
@@ -47,8 +46,6 @@ comment-token = "//"
 file-types = ["typ"]
 indent = { tab-width = 4, unit = " " }
 language-servers = ["typst-lsp"]
-text-width = 100
-rulers = [100]
 soft-wrap.wrap-at-text-width = true
 
 [language.auto-pairs]

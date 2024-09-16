@@ -1,29 +1,17 @@
 # Nushell Environment Config File
 #
-# version = "0.89.0"
+# version = "0.97.1"
 
 def create_left_prompt [] {
-    let home =  $nu.home-path
-
-    # Perform tilde substitution on dir
-    # To determine if the prefix of the path matches the home dir, we split the current path into
-    # segments, and compare those with the segments of the home dir. In cases where the current dir
-    # is a parent of the home dir (e.g. `/home`, homedir is `/home/user`), this comparison will
-    # also evaluate to true. Inside the condition, we attempt to str replace `$home` with `~`.
-    # Inside the condition, either:
-    # 1. The home prefix will be replaced
-    # 2. The current dir is a parent of the home dir, so it will be uneffected by the str replace
-    let dir = (
-        if ($env.PWD | path split | zip ($home | path split) | all { $in.0 == $in.1 }) {
-            ($env.PWD | str replace $home "~")
-        } else {
-            $env.PWD
-        }
-    )
+    let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
+        null => $env.PWD
+        '' => '~'
+        $relative_pwd => ([~ $relative_pwd] | path join)
+    }
 
     let path_color = (if (is-admin) { ansi red_bold } else { ansi green_bold })
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
-    let path_segment = $"($path_color)($dir)"
+    let path_segment = $"($path_color)($dir)(ansi reset)"
 
     $path_segment | str replace --all (char path_sep) $"($separator_color)(char path_sep)($path_color)"
 }
@@ -33,7 +21,7 @@ def create_right_prompt [] {
     let time_segment = ([
         (ansi reset)
         (ansi magenta)
-        (date now | format date '%x %X %p') # try to respect user's locale
+        (date now | format date '%x %X') # try to respect user's locale
     ] | str join | str replace --regex --all "([/:])" $"(ansi green)${1}(ansi magenta)" |
         str replace --regex --all "([AP]M)" $"(ansi magenta_underline)${1}")
 
@@ -89,6 +77,7 @@ $env.ENV_CONVERSIONS = {
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
     ($nu.default-config-dir | path join 'scripts') # add <nushell-config-dir>/scripts
+    ($nu.data-dir | path join 'completions') # default home for nushell completions
 ]
 
 # Directories to search for plugin binaries when calling register
@@ -121,7 +110,7 @@ let path_list = if $nu.os-info.name == "macos" {
         "~/Library/Application Support/Coursier/bin",
         "~/.local/flutter/bin",
     ]
-} else {
+} else if $nu.os-info.name == "linux" {
     [
         "/usr/local/bin",
         "/usr/local/go/bin",
@@ -142,6 +131,9 @@ let path_list = if $nu.os-info.name == "macos" {
         "~/.npm-global/bin",
         "~/.opam/default/bin",
     ]
+} else { # on windows, user can edit path env with powertoy, and personally,
+         # it is recommended.
+    []
 }
 
 $env.PATH = ($env.PATH | split row (char esep) | append $path_list)

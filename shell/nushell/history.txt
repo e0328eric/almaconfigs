@@ -538,3 +538,26 @@ v src/codegen.rs
 cargo t
 v src/parser/parser_test.rs
 sudo chsh almagest -s /usr/bin/fish
+ls
+cd
+ls
+cd Github\arch-almagest\
+ls
+cd P:\AlmaFiles\Lilpa-Backups\
+ls
+seminar
+v $nu.config-path
+ls
+ls
+cd
+mkdir ~/.cache/starship
+ls
+starship.exe init nu | save -f ~/.cache/starship/init.nu
+v $nu.config-path
+ls
+v $nu.config-path
+source $nu.config-path
+cd Github\arch-almagest\
+lg
+v $nu.config-path
+source $nu.config-path

@@ -13,9 +13,31 @@
             "keys": "ctrl+c"
         },
         {
+            "command": "unbound",
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+minus"
+        },
+        {
             "command": "paste",
             "id": "User.paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.FEF0D40B",
+            "keys": "alt+shift+v"
         },
         {
             "command": 
@@ -31,11 +53,21 @@
             "command": "find",
             "id": "User.find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.10B260D2",
+            "keys": "alt+shift+h"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{028c54c4-9856-550d-961b-37c97a35b205}",
+    "defaultProfile": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
     "newTabMenu": 
     [
         {
@@ -57,6 +89,14 @@
         },
         "list": 
         [
+            {
+                "commandline": "%LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe",
+                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
+                "hidden": false,
+                "icon": "C:\\Users\\almag\\AppData\\Local\\Programs\\nu\\nu.ico",
+                "name": "nushell",
+                "startingDirectory": "C:\\Users\\almag"
+            },
             {
                 "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
                 "hidden": false,
