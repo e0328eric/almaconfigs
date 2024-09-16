@@ -603,3 +603,32 @@ cl ln.c
 gcc ln.c
 v ln.c
 ls
+cd Test\
+ls
+sudo ln -d .\imgviewer .\fooo
+cd
+cd ~
+ls
+cd Test\
+ls
+cd fooo
+ls
+cd ..
+ls
+ls -al
+cd fooo\
+ls
+cd ..
+rm fooo
+cd Github\arch-almagest\script\
+ls
+v ln.c
+cl ln.c
+cl
+powershell.exe --help
+powershell.exe /help
+cl
+ls
+cl
+cd Github\arch-almagest\
+ls

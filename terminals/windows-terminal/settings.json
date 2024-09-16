@@ -67,7 +67,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{028c54c4-9856-550d-961b-37c97a35b205}",
+    "defaultProfile": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
     "newTabMenu": 
     [
         {
@@ -90,7 +90,7 @@
         "list": 
         [
             {
-                "commandline": "%LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe",
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; %LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe\"",
                 "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
                 "hidden": false,
                 "icon": "C:\\Users\\almag\\AppData\\Local\\Programs\\nu\\nu.ico",
