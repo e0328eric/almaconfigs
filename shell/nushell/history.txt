@@ -561,3 +561,45 @@ cd Github\arch-almagest\
 lg
 v $nu.config-path
 source $nu.config-path
+lg
+ls
+lg
+cd ..
+ls
+cd
+ls
+cd P:\AlmaFiles\Lilpa-Backups\
+dyt -F https://youtu.be/e0bGKddogD0?si=iPi6feshFrTfarHE
+ls Templates\
+ls\
+ls
+cd Github\arch-almagest\
+ls
+cd script\
+ls
+v ln.c
+cd $env.LOCALAPPDATA
+ls
+cd $env.APPDATA
+cd helix\
+ls
+v languages.toml
+exit
+cd $env.APPDATA
+cd helix\
+ls
+v languages.toml
+ls
+v ln.c
+ls
+rm ln.c
+v ln.rs
+v ln.c
+v languages.toml
+exit
+dyt -f 312 https://youtu.be/e0bGKddogD0?si=iPi6feshFrTfarHE
+ls
+cl ln.c
+gcc ln.c
+v ln.c
+ls
