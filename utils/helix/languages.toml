@@ -42,7 +42,7 @@ roots = []
 injection-regex = "typ(st)?"
 comment-token = "//"
 file-types = ["typ"]
-indent = { tab-width = 4, unit = " " }
+indent = { tab-width = 4, unit = "  " }
 language-servers = ["typst-lsp"]
 soft-wrap.wrap-at-text-width = true
 

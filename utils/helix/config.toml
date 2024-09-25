@@ -6,6 +6,7 @@ line-number = "relative"
 bufferline = "multiple"
 text-width = 80
 rulers = [80]
+default-line-ending = "lf"
 
 [editor.cursor-shape]
 insert = "bar"

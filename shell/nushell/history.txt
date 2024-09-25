@@ -632,3 +632,18 @@ ls
 cl
 cd Github\arch-almagest\
 ls
+lg
+cd Test\
+ls
+ln -d .\imgviewer .\fooo
+sudo ln -d .\imgviewer .\fooo
+ls
+cd fooo
+ls
+cd ..
+ls
+rm fooo
+cd
+ls
+cd $env.APPDATA
+ls
