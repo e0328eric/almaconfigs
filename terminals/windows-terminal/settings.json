@@ -1,8 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
             "command": "unbound",
             "keys": "alt+shift+plus"
@@ -16,8 +15,7 @@
             "keys": "alt+shift+minus"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -30,8 +28,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right",
                 "splitMode": "duplicate"
@@ -40,8 +37,7 @@
             "keys": "alt+shift+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -50,8 +46,7 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "down",
                 "splitMode": "duplicate"
@@ -68,27 +63,22 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{028c54c4-9856-550d-961b-37c97a35b205}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "D2CodingLigature Nerd Font Mono",
                 "size": 11
             },
             "opacity": 85
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; %LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe\"",
                 "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
@@ -117,12 +107,26 @@
                 "source": "Windows.Terminal.Wsl"
             },
             {
-                "commandline": "C:\\cygwin64\\Cygwin.bat",
-                "guid": "{06b12445-aaa3-4142-8b7a-b7452d3666f3}",
-                "hidden": false,
-                "icon": "C:\\cygwin64\\Cygwin.ico",
-                "name": "Cygwin",
-                "startingDirectory": "%USERPROFILE%"
+                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
+                "font": {
+                    "face": "D2CodingLigature Nerd Font Mono",
+                    "size": 11
+                },
+                "guid": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
+                "icon": "C:/msys64/ucrt64.ico",
+                "name": "UCRT64 / MSYS2",
+                "startingDirectory": "C:/msys64/home/%USERNAME%"
+            },
+            {
+                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
+                "font": {
+                    "face": "D2CodingLigature Nerd Font Mono",
+                    "size": 11
+                },
+                "guid": "{71160544-14d8-4194-af25-d05feeac7233}",
+                "icon": "C:/msys64/msys2.ico",
+                "name": "MSYS / MSYS2",
+                "startingDirectory": "C:/msys64/home/%USERNAME%"
             },
             {
                 "altGrAliasing": true,
@@ -130,8 +134,7 @@
                 "closeOnExit": "automatic",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "elevate": true,
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Mono",
                     "size": 12
                 },
@@ -160,17 +163,10 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#300A24",
             "black": "#171421",
