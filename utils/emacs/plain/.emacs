@@ -76,6 +76,8 @@ point reaches the beginning or end of the buffer, stop there."
                 'smarter-move-beginning-of-line)
 
 ;; Keybindings
+(global-unset-key (kbd "<C-\\>"))
+(global-unset-key (kbd "<M-\\>"))
 (global-set-key (kbd "<M-up>") 'scroll-down-command)
 (global-set-key (kbd "<M-down>") 'scroll-up-command)
 (global-set-key (kbd "<M-left>") 'move-beginning-of-line)
@@ -83,10 +85,8 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "<M-S-left>") 'backward-chunk)
 (global-set-key (kbd "<M-S-right>") 'forward-chunk)
-(global-set-key (kbd "<C-\\>") 'add-newline-at-top)
-(global-set-key (kbd "<M-\\>") 'add-newline-at-bottom)
-(global-set-key (kbd "<C-S-\\>") 'toogle-input-method)
-
+(global-set-key (kbd "<C-return>") 'add-newline-at-top)
+(global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
