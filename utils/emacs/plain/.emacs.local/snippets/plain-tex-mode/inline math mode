@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: inline math mode
+# name: display equation
 # key: be
 # --
 $$

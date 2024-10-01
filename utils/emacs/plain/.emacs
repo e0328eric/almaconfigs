@@ -92,6 +92,11 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> c") 'compile)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
+(eval-after-load "tex"
+  '(define-key tex-mode-map (kbd "<C-return>")	'add-newline-at-top))
+(eval-after-load "tex"
+  '(define-key tex-mode-map (kbd "<M-return>")	'add-newline-at-bottom))
+
 ;;================================================================================
 ;;                               PACKAGE CONFIGS
 ;;================================================================================
@@ -126,11 +131,18 @@ point reaches the beginning or end of the buffer, stop there."
   (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "[%d/%d] "))
 
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
 ;; better performance using latex
 ;; see the below link for more information
 ;; https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/
 (use-package cdlatex
-  :ensure t)
+  :ensure t
+  :config
+  (define-key cdlatex-mode-map (kbd "<C-return>") nil)
+  (define-key cdlatex-mode-map (kbd "TAB") nil)
+  (define-key cdlatex-mode-map (kbd "<tab>") nil))
 
 ;; yasnippet
 (add-to-list 'load-path
@@ -140,14 +152,19 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (yas-global-mode 1)
   (setq yas-snippet-dirs '("~/.emacs.local/snippets"))
-  (define-key yas-minor-mode-map (kbd "TAB") nil))
+  (define-key yas-minor-mode-map [(tab)] nil)
+  (define-key yas-minor-mode-map (kbd "TAB") nil)
+  (define-key yas-minor-mode-map (kbd "<tab>") nil)
+  :bind
+  ("C-]" . #'yas-expand))
+  ;(define-key yas-minor-mode-map (kbd "TAB") nil))
 
 ;; another great snippet pcakage
 (require 'texmathp)
 (use-package aas
   :ensure t
-  :hook (latex-mode .	aas-activate-for-major-mode)
-  :hook (tex-mode	.	aas-activate-for-major-mode)
+  :hook (latex-mode . aas-activate-for-major-mode)
+  :hook (tex-mode . aas-activate-for-major-mode)
   :config
   (aas-set-snippets 'tex-mode
 	"MK"  (lambda () (interactive)
