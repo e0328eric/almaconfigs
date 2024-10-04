@@ -18,8 +18,18 @@
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 (set-frame-font "D2CodingLigature Nerd Font Mono 12" nil t)
+(setq-default fill-column 80)
+
+;; UTF-8 "is" the standard!
+(set-default-coding-systems 'utf-8)
+(prefer-coding-system 'utf-8)
 
 (add-to-list 'load-path "~/.emacs.local")
+(add-to-list 'load-path "~/.emacs.local/simpc-mode")
+
+;; enable hard line wrap at both latex mode and tex mode
+(add-hook 'TeX-mode-hook 'auto-fill-mode)
+(add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 
 ;; utility functions
 (defun add-newline-at-top ()
@@ -71,31 +81,25 @@ point reaches the beginning or end of the buffer, stop there."
     (when (= orig-point (point))
       (move-beginning-of-line 1))))
 
-;; remap C-a to `smarter-move-beginning-of-line'
-(global-set-key [remap move-beginning-of-line]
-                'smarter-move-beginning-of-line)
-
 ;; Keybindings
-(global-unset-key (kbd "<C-\\>"))
-(global-unset-key (kbd "<M-\\>"))
+(global-unset-key (kbd "C-\\"))
+(global-unset-key (kbd "M-\\"))
+(global-unset-key (kbd "C-q"))
 (global-set-key (kbd "<M-up>") 'scroll-down-command)
 (global-set-key (kbd "<M-down>") 'scroll-up-command)
-(global-set-key (kbd "<M-left>") 'move-beginning-of-line)
+(global-set-key (kbd "<M-left>") 'smarter-move-beginning-of-line)
 (global-set-key (kbd "<M-right>") 'move-end-of-line)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "<M-S-left>") 'backward-chunk)
 (global-set-key (kbd "<M-S-right>") 'forward-chunk)
-(global-set-key (kbd "<C-return>") 'add-newline-at-top)
-(global-set-key (kbd "<M-return>") 'add-newline-at-bottom)
+(global-set-key (kbd "C-\\") 'add-newline-at-top)
+(global-set-key (kbd "M-\\") 'add-newline-at-bottom)
+(global-set-key (kbd "C-x C-.") 'recentf-open)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
+(global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
-
-(eval-after-load "tex"
-  '(define-key tex-mode-map (kbd "<C-return>")	'add-newline-at-top))
-(eval-after-load "tex"
-  '(define-key tex-mode-map (kbd "<M-return>")	'add-newline-at-bottom))
 
 ;;================================================================================
 ;;                               PACKAGE CONFIGS
@@ -134,6 +138,12 @@ point reaches the beginning or end of the buffer, stop there."
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
+(use-package magit
+  :ensure t
+  :pin melpa
+  :bind
+  (("C-x g" . magit-status)))
+
 ;; better performance using latex
 ;; see the below link for more information
 ;; https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/
@@ -142,7 +152,8 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (define-key cdlatex-mode-map (kbd "<C-return>") nil)
   (define-key cdlatex-mode-map (kbd "TAB") nil)
-  (define-key cdlatex-mode-map (kbd "<tab>") nil))
+  (define-key cdlatex-mode-map (kbd "<tab>") nil)
+  (setq cdlatex-paired-parens "$"))
 
 ;; yasnippet
 (add-to-list 'load-path
@@ -155,9 +166,9 @@ point reaches the beginning or end of the buffer, stop there."
   (define-key yas-minor-mode-map [(tab)] nil)
   (define-key yas-minor-mode-map (kbd "TAB") nil)
   (define-key yas-minor-mode-map (kbd "<tab>") nil)
+  (yas-reload-all)
   :bind
-  ("C-]" . #'yas-expand))
-  ;(define-key yas-minor-mode-map (kbd "TAB") nil))
+  ("C-q" . #'yas-expand))
 
 ;; another great snippet pcakage
 (require 'texmathp)
