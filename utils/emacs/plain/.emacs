@@ -17,7 +17,7 @@
 (scroll-bar-mode 0)
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
-(set-frame-font "D2CodingLigature Nerd Font Mono 12" nil t)
+(set-frame-font "-outline-D2Coding ligature-regular-normal-normal-mono-32-*-*-*-c-*-iso10646-1" nil t)
 (setq-default fill-column 80)
 
 ;; UTF-8 "is" the standard!
