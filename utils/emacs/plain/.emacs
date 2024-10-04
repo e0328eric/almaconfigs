@@ -98,6 +98,7 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
+(global-set-key (kbd "<escape> s") 'prettify-symbols-mode)
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
