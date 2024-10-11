@@ -106,6 +106,12 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
+;; set the default mode for files
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . TeX-mode))
+
 ;;================================================================================
 ;;                               PACKAGE CONFIGS
 ;;================================================================================
@@ -230,8 +236,5 @@ point reaches the beginning or end of the buffer, stop there."
 
 (use-package zig-mode
   :ensure t)
-
-(require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 (load-file custom-file)
