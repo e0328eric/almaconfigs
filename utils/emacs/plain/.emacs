@@ -18,7 +18,7 @@
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 (set-frame-font "-outline-D2Coding ligature-regular-normal-normal-mono-32-*-*-*-c-*-iso10646-1" nil t)
-(setq-default fill-column 80)
+ (setq-default fill-column 80)
 
 ;; UTF-8 "is" the standard!
 (set-default-coding-systems 'utf-8)
@@ -29,7 +29,9 @@
 
 ;; enable hard line wrap at both latex mode and tex mode
 (add-hook 'TeX-mode-hook 'auto-fill-mode)
+(add-hook 'tex-mode-hook 'auto-fill-mode)
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
+(add-hook 'latex-mode-hook 'auto-fill-mode)
 
 ;; utility functions
 (defun add-newline-at-top ()
@@ -85,6 +87,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-unset-key (kbd "C-\\"))
 (global-unset-key (kbd "M-\\"))
 (global-unset-key (kbd "C-q"))
+(global-unset-key (kbd "C-z"))
 (global-set-key (kbd "<M-up>") 'scroll-down-command)
 (global-set-key (kbd "<M-down>") 'scroll-up-command)
 (global-set-key (kbd "<M-left>") 'smarter-move-beginning-of-line)
@@ -99,6 +102,7 @@ point reaches the beginning or end of the buffer, stop there."
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
 (global-set-key (kbd "<escape> s") 'prettify-symbols-mode)
+(global-set-key (kbd "<escape> a") 'auto-fill-mode)
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
@@ -128,6 +132,9 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (add-hook 'prog-mode-hook 'auto-complete-mode))
 
+(use-package org-auto-tangle
+  :ensure t)
+
 ;; alternative for ido mode
 (use-package ivy
   :ensure t
@@ -135,9 +142,6 @@ point reaches the beginning or end of the buffer, stop there."
   (ivy-mode 1)
   (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "[%d/%d] "))
-
-(require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 (use-package magit
   :ensure t
@@ -199,8 +203,8 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package multiple-cursors
   :ensure t
   :config
-  (global-set-key (kbd "<C-m> C-l") 'mc/edit-lines)
-  (global-set-key (kbd "<C-m> C-a") 'mc/mark-all-like-this)
+  (global-set-key (kbd "<escape> C-l") 'mc/edit-lines)
+  (global-set-key (kbd "<escape> C-a") 'mc/mark-all-like-this)
   (global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
   (global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
   (global-unset-key (kbd "M-<down-mouse-1>"))
@@ -219,5 +223,15 @@ point reaches the beginning or end of the buffer, stop there."
   (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
   :bind
   ("C-x C-/" . 'undo-tree-redo))
+
+;; Language Specific packages
+(use-package rust-mode
+  :ensure t)
+
+(use-package zig-mode
+  :ensure t)
+
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 (load-file custom-file)
