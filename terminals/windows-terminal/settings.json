@@ -1,7 +1,17 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
         {
             "command": "unbound",
             "keys": "alt+shift+plus"
@@ -15,20 +25,13 @@
             "keys": "alt+shift+minus"
         },
         {
-            "command": {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
             "command": "paste",
             "id": "User.paste",
             "keys": "ctrl+v"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "right",
                 "splitMode": "duplicate"
@@ -37,7 +40,8 @@
             "keys": "alt+shift+v"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -46,47 +50,45 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "down",
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.10B260D2",
             "keys": "alt+shift+h"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{028c54c4-9856-550d-961b-37c97a35b205}",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
-            "font": {
+            "font": 
+            {
                 "face": "D2CodingLigature Nerd Font Mono",
                 "size": 11
             },
             "opacity": 85
         },
-        "list": [
-            {
-                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; %LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe\"",
-                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
-                "hidden": false,
-                "icon": "C:\\Users\\almag\\AppData\\Local\\Programs\\nu\\nu.ico",
-                "name": "nushell",
-                "startingDirectory": "C:\\Users\\almag"
-            },
+        "list": 
+        [
             {
                 "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
                 "hidden": false,
@@ -95,20 +97,17 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "guid": "{eb9d05b6-fcec-5d1d-8280-b6029b4bbbde}",
+                "commandline": "wsl -u almagest",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
+                "icon": "https://www.favicon.cc/?action=icon&file_id=209906#",
                 "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
-                "font": {
+                "font": 
+                {
                     "face": "D2CodingLigature Nerd Font Mono",
                     "size": 11
                 },
@@ -119,7 +118,8 @@
             },
             {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-                "font": {
+                "font": 
+                {
                     "face": "D2CodingLigature Nerd Font Mono",
                     "size": 11
                 },
@@ -129,12 +129,19 @@
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
             },
             {
+                "guid": "{eb9d05b6-fcec-5d1d-8280-b6029b4bbbde}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "automatic",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "elevate": true,
-                "font": {
+                "font": 
+                {
                     "face": "Cascadia Mono",
                     "size": 12
                 },
@@ -147,6 +154,14 @@
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
+            },
+            {
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; %LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe\"",
+                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
+                "hidden": false,
+                "icon": "C:\\Users\\almag\\AppData\\Local\\Programs\\nu\\nu.ico",
+                "name": "nushell",
+                "startingDirectory": "C:\\Users\\almag"
             },
             {
                 "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
@@ -166,30 +181,6 @@
             }
         ]
     },
-    "schemes": [
-        {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        }
-    ],
+    "schemes": [],
     "themes": []
 }

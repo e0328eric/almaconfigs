@@ -98,6 +98,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "C-\\") 'add-newline-at-top)
 (global-set-key (kbd "M-\\") 'add-newline-at-bottom)
 (global-set-key (kbd "C-x C-.") 'recentf-open)
+(global-set-key (kbd "C-x C-d") 'dired)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
@@ -110,7 +111,7 @@ point reaches the beginning or end of the buffer, stop there."
 (require 'simpc-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . TeX-mode))
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
 
 ;;================================================================================
 ;;                               PACKAGE CONFIGS
