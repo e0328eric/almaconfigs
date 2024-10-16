@@ -20,6 +20,10 @@
 (set-frame-font "-outline-D2Coding ligature-regular-normal-normal-mono-32-*-*-*-c-*-iso10646-1" nil t)
 (setq-default fill-column 80)
 
+;; NOTE: M-x customize-variable exec-path to add PATH inside in emacs
+;; NOTE: M-x customize-variable warning-minimum-level to supress warning messages
+;; NOTE: M-x customize-variable tab-width to change the default tab with
+
 ;; transparent Emacs
 (set-frame-parameter (selected-frame) 'alpha '(85 85))
 (add-to-list 'default-frame-alist '(alpha 85 85))
