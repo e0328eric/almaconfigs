@@ -210,8 +210,9 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package multiple-cursors
   :ensure t
   :config
-  (global-set-key (kbd "<escape> C-l") 'mc/edit-lines)
-  (global-set-key (kbd "<escape> C-a") 'mc/mark-all-like-this)
+  (global-set-key (kbd "C-z C-l") 'mc/edit-lines)
+  (global-set-key (kbd "C-z C-a") 'mc/mark-all-like-this)
+  (global-set-key (kbd "C-z C-z") 'mc/mark-next-like-this-word)
   (global-set-key (kbd "<C-down>") 'mc/mark-next-like-this)
   (global-set-key (kbd "<C-up>") 'mc/mark-previous-like-this)
   (global-unset-key (kbd "M-<down-mouse-1>"))
