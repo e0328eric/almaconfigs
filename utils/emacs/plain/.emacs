@@ -1,6 +1,8 @@
 ;; melpa package settings
 (require 'package)
 (add-to-list 'package-archives
+	     '("gnu" . "https://elpa.gnu.org/packages/") t)
+(add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (unless (package-installed-p 'use-package)
@@ -22,9 +24,9 @@
 ;; NOTE: M-x customize-variable tab-width to change the default tab with
 
 ;; transparent Emacs
-;;(dolist (frame (frame-list))
-;;  (set-frame-parameter frame 'alpha '(85 85))
-;;  (add-to-list 'default-frame-alist '(alpha 85 85)))
+(dolist (frame (frame-list))
+  (set-frame-parameter frame 'alpha '(85 85))
+  (add-to-list 'default-frame-alist '(alpha 85 85)))
 
 ;; UTF-8 "is" the standard!
 (set-default-coding-systems 'utf-8)
@@ -238,9 +240,13 @@ point reaches the beginning or end of the buffer, stop there."
   :bind
   ("C-x C-/" . 'undo-tree-redo))
 
-;; Language Specific packages
-(use-package rust-mode
+(use-package quelpa-use-package
   :ensure t)
+
+;; Language Specific packages
+(use-package rustic
+  :quelpa (rustic :fetcher github
+                  :repo "emacs-rustic/rustic"))
 
 (use-package zig-mode
   :ensure t)
@@ -257,7 +263,7 @@ point reaches the beginning or end of the buffer, stop there."
  '(global-display-line-numbers-mode t)
  '(mc/always-run-for-all t)
  '(package-selected-packages
-   '(org-make-toc org-auto-tangle magit zig-mode cdlatex pdf-tools multiple-cursors aas yasnippet smex which-key timu-caribbean-theme ivy))
+   '(lsp-mode rustic license-templates org-make-toc org-auto-tangle magit zig-mode cdlatex pdf-tools multiple-cursors aas yasnippet smex which-key timu-caribbean-theme ivy))
  '(tab-always-indent 'complete)
  '(tab-width 4)
  '(tool-bar-mode nil)

@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -30,8 +28,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right",
                 "splitMode": "duplicate"
@@ -40,8 +37,7 @@
             "keys": "alt+shift+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -55,8 +51,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "down",
                 "splitMode": "duplicate"
@@ -67,28 +62,34 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{028c54c4-9856-550d-961b-37c97a35b205}",
-    "newTabMenu": 
-    [
+    "defaultProfile": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "D2CodingLigature Nerd Font Mono",
                 "size": 11
             },
             "opacity": 85
         },
-        "list": 
-        [
+        "list": [
+            {
+                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
+                "font": {
+                    "face": "D2CodingLigature Nerd Font Mono",
+                    "size": 11
+                },
+                "guid": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
+                "icon": "C:/msys64/ucrt64.ico",
+                "name": "UCRT64 / MSYS2",
+                "startingDirectory": "C:/msys64/home/%USERNAME%"
+            },
             {
                 "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
                 "hidden": false,
@@ -105,21 +106,8 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
-                "guid": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
-                "icon": "C:/msys64/ucrt64.ico",
-                "name": "UCRT64 / MSYS2",
-                "startingDirectory": "C:/msys64/home/%USERNAME%"
-            },
-            {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-                "font": 
-                {
+                "font": {
                     "face": "D2CodingLigature Nerd Font Mono",
                     "size": 11
                 },
@@ -140,8 +128,7 @@
                 "closeOnExit": "automatic",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "elevate": true,
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Mono",
                     "size": 12
                 },
