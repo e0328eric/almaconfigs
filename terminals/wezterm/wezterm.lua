@@ -12,17 +12,19 @@ local mux = wezterm.mux
 
 -- config structure
 local config = {}
+local keys = {}
+local launch_menu = {}
 
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"D2CodingLigature Nerd Font",
+	"D2CodingLigature Nerd Font Mono",
 	"FiraCode Nerd Font",
 	"JetbrainMono Nerd Font",
 })
 
-config.font_size = 12.5
+config.font_size = 11
 config.unicode_version = 15
 config.warn_about_missing_glyphs = false
 
@@ -93,41 +95,107 @@ config.window_background_opacity = 0.75
 -- config.front_end = "WebGpu"
 -- config.enable_kitty_graphics = true
 
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = {
+		"powershell.exe",
+		"-NoLogo",
+	}
+
+	table.insert(launch_menu, {
+		label = "PowerShell",
+		args = { "powershell.exe", "-NoLogo" },
+	})
+	table.insert(launch_menu, {
+		label = "UCRT64",
+		args = {
+			"C:/msys64/msys2_shell.cmd",
+			"-defterm",
+			"-here",
+			"-no-start",
+			"-ucrt64",
+			"-shell",
+			"fish",
+		},
+	})
+	table.insert(launch_menu, {
+		label = "MSYS",
+		args = {
+			"C:/msys64/msys2_shell.cmd",
+			"-defterm",
+			"-here",
+			"-no-start",
+			"-msys",
+			"-shell",
+			"fish",
+		},
+	})
+end
+
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                       Keybindings                        │
 --         ╰──────────────────────────────────────────────────────────╯
-config.keys = {
-	{ key = "t", mods = "CTRL|CMD", action = act.SpawnTab("CurrentPaneDomain") },
-	{ key = "1", mods = "CTRL|CMD", action = act.ActivateTab(0) },
-	{ key = "2", mods = "CTRL|CMD", action = act.ActivateTab(1) },
-	{ key = "3", mods = "CTRL|CMD", action = act.ActivateTab(2) },
-	{ key = "4", mods = "CTRL|CMD", action = act.ActivateTab(3) },
-	{ key = "5", mods = "CTRL|CMD", action = act.ActivateTab(4) },
-	{ key = "6", mods = "CTRL|CMD", action = act.ActivateTab(5) },
-	{ key = "7", mods = "CTRL|CMD", action = act.ActivateTab(6) },
-	{ key = "8", mods = "CTRL|CMD", action = act.ActivateTab(7) },
-	{ key = "9", mods = "CTRL|CMD", action = act.ActivateTab(-1) },
-	{
-		key = "d",
-		mods = "CTRL|SHIFT",
-		action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-	},
-	{
-		key = "s",
-		mods = "CTRL|SHIFT",
-		action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
-	},
-	{ key = "f", mods = "CMD|CTRL", action = wezterm.action.ToggleFullScreen },
-	{
-		key = "Enter",
-		mods = "ALT",
-		action = wezterm.action.DisableDefaultAssignment,
-	},
-	{
-		key = "r",
-		mods = "CMD|CTRL",
-		action = wezterm.action.ReloadConfiguration,
-	},
-}
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	keys = {
+		{ key = "t", mods = "CTRL|ALT", action = act.SpawnTab("CurrentPaneDomain") },
+		{ key = "1", mods = "CTRL|ALT", action = act.ActivateTab(0) },
+		{ key = "2", mods = "CTRL|ALT", action = act.ActivateTab(1) },
+		{ key = "3", mods = "CTRL|ALT", action = act.ActivateTab(2) },
+		{ key = "4", mods = "CTRL|ALT", action = act.ActivateTab(3) },
+		{ key = "5", mods = "CTRL|ALT", action = act.ActivateTab(4) },
+		{ key = "6", mods = "CTRL|ALT", action = act.ActivateTab(5) },
+		{ key = "7", mods = "CTRL|ALT", action = act.ActivateTab(6) },
+		{ key = "8", mods = "CTRL|ALT", action = act.ActivateTab(7) },
+		{ key = "9", mods = "CTRL|ALT", action = act.ActivateTab(-1) },
+		{
+			key = "d",
+			mods = "CTRL|SHIFT",
+			action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "s",
+			mods = "CTRL|SHIFT",
+			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
+		},
+		{ key = "l", mods = "CTRL|SHIFT", action = act.ShowLauncher },
+		{ key = "f", mods = "CTRL|ALT", action = act.ToggleFullScreen },
+		{ key = "Enter", mods = "ALT", action = act.DisableDefaultAssignment },
+		{ key = "r", mods = "CTRL|ALT", action = act.ReloadConfiguration },
+		{ key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
+		{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+	}
+else
+	keys = {
+		{ key = "w", mods = "CMD|CTRL", action = act.SpawnWindow },
+		{ key = "t", mods = "ALT", action = act.SpawnTab("CurrentPaneDomain") },
+		{ key = "1", mods = "ALT", action = act.ActivateTab(0) },
+		{ key = "2", mods = "ALT", action = act.ActivateTab(1) },
+		{ key = "3", mods = "ALT", action = act.ActivateTab(2) },
+		{ key = "4", mods = "ALT", action = act.ActivateTab(3) },
+		{ key = "5", mods = "ALT", action = act.ActivateTab(4) },
+		{ key = "6", mods = "ALT", action = act.ActivateTab(5) },
+		{ key = "7", mods = "ALT", action = act.ActivateTab(6) },
+		{ key = "8", mods = "ALT", action = act.ActivateTab(7) },
+		{ key = "9", mods = "ALT", action = act.ActivateTab(-1) },
+		{
+			key = "v",
+			mods = "ALT|SHIFT",
+			action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "s",
+			mods = "ALT|SHIFT",
+			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
+		},
+		{ key = "f", mods = "CMD|CTRL", action = act.ToggleFullScreen },
+		{ key = "Enter", mods = "ALT", action = act.DisableDefaultAssignment },
+		{ key = "r", mods = "CMD|CTRL", action = act.ReloadConfiguration },
+		{ key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
+		{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+	}
+end
+
+config.disable_default_key_bindings = true
+config.keys = keys
+config.launch_menu = launch_menu
 
 return config
