@@ -31,7 +31,7 @@ config.warn_about_missing_glyphs = false
 --         ╭──────────────────────────────────────────────────────────╮
 --         │                       Colorscheme                        │
 --         ╰──────────────────────────────────────────────────────────╯
-config.color_scheme = "Neutron (Gogh)"
+config.color_scheme = "AyuDark (Gogh)"
 config.window_frame = {
 	font_size = 9.5,
 }
@@ -86,7 +86,7 @@ config.background = {
 	},
 }
 --]]
-config.window_background_opacity = 0.75
+config.window_background_opacity = 0.82
 
 --  ╭──────────────────────────────────────────────────────────╮
 --  │                           etc                            │
@@ -95,22 +95,26 @@ config.window_background_opacity = 0.75
 -- config.front_end = "WebGpu"
 -- config.enable_kitty_graphics = true
 
+-- I shall use UCRT64 in default.
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = {
-		"powershell.exe",
-		"-NoLogo",
+		"C:/msys64/msys2_shell.cmd",
+		"-defterm",
+		"-where",
+		"C:/msys64/home/almag",
+		"-no-start",
+		"-ucrt64",
+		"-shell",
+		"fish",
 	}
 
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "powershell.exe", "-NoLogo" },
-	})
 	table.insert(launch_menu, {
 		label = "UCRT64",
 		args = {
 			"C:/msys64/msys2_shell.cmd",
 			"-defterm",
-			"-here",
+			"-where",
+			"C:/msys64/home/almag",
 			"-no-start",
 			"-ucrt64",
 			"-shell",
@@ -122,12 +126,21 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		args = {
 			"C:/msys64/msys2_shell.cmd",
 			"-defterm",
-			"-here",
+			"-where",
+			"C:/msys64/home/almag",
 			"-no-start",
 			"-msys",
 			"-shell",
 			"fish",
 		},
+	})
+	table.insert(launch_menu, {
+		label = "PowerShell",
+		args = { "powershell.exe", "-NoLogo" },
+	})
+	table.insert(launch_menu, {
+		label = "Wsl - Arch",
+		args = { "wsl.exe", "-u", "almagest" },
 	})
 end
 
