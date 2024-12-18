@@ -175,6 +175,8 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		{ key = "r", mods = "CTRL|ALT", action = act.ReloadConfiguration },
 		{ key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
 		{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+		{ key = "=", mods = "CTRL", action = act.IncreaseFontSize },
+		{ key = "-", mods = "CTRL", action = act.DecreaseFontSize },
 	}
 else
 	keys = {
@@ -204,6 +206,8 @@ else
 		{ key = "r", mods = "CMD|CTRL", action = act.ReloadConfiguration },
 		{ key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
 		{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+		{ key = "=", mods = "CTRL", action = act.IncreaseFontSize },
+		{ key = "-", mods = "CTRL", action = act.DecreaseFontSize },
 	}
 end
 
