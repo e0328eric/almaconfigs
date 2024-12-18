@@ -122,19 +122,6 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		},
 	})
 	table.insert(launch_menu, {
-		label = "MSYS",
-		args = {
-			"C:/msys64/msys2_shell.cmd",
-			"-defterm",
-			"-where",
-			"C:/msys64/home/almag",
-			"-no-start",
-			"-msys",
-			"-shell",
-			"fish",
-		},
-	})
-	table.insert(launch_menu, {
 		label = "PowerShell",
 		args = { "powershell.exe", "-NoLogo" },
 	})
