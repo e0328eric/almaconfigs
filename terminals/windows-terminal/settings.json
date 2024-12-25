@@ -6,6 +6,14 @@
         {
             "command": 
             {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": 
+            {
                 "action": "newTab",
                 "index": 8
             },
@@ -71,19 +79,6 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": 
-            {
                 "action": "newTab",
                 "index": 2
             },
@@ -91,14 +86,9 @@
             "keys": "ctrl+alt+shift+3"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.FEF0D40B",
-            "keys": "alt+shift+v"
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "command": 
@@ -113,20 +103,21 @@
             "command": 
             {
                 "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.FEF0D40B",
+            "keys": "alt+shift+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878",
             "keys": "alt+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 7
-            },
-            "id": "User.newTab.E694A910",
-            "keys": "ctrl+alt+shift+8"
         },
         {
             "command": 
@@ -148,9 +139,27 @@
             "keys": "ctrl+alt+shift+7"
         },
         {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 7
+            },
+            "id": "User.newTab.E694A910",
+            "keys": "ctrl+alt+shift+8"
+        },
+        {
             "command": "find",
             "id": "User.find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 0
+            },
+            "id": "User.newTab.7975BEED",
+            "keys": "ctrl+alt+shift+1"
         },
         {
             "command": 
@@ -169,15 +178,6 @@
             },
             "id": "User.newTab.663EF760",
             "keys": "ctrl+alt+shift+6"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 0
-            },
-            "id": "User.newTab.7975BEED",
-            "keys": "ctrl+alt+shift+1"
         },
         {
             "command": 
@@ -207,7 +207,7 @@
             "font": 
             {
                 "face": "D2CodingLigature Nerd Font Mono",
-                "size": 11
+                "size": 14
             },
             "opacity": 85
         },

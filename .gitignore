@@ -1,4 +1,4 @@
 /script/battery-low/target/
 /utils/nvim/autoload
-/utils/helix/runtime
+/utils/helix/runtime/grammars
 /wm/xmonad/.stack-work
