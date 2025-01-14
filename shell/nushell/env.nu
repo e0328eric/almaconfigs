@@ -3,7 +3,7 @@
 # version = "0.97.1"
 
 def create_left_prompt [] {
-    let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
+    let dir = match (do -i { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
         '' => '~'
         $relative_pwd => ([~ $relative_pwd] | path join)
@@ -137,3 +137,4 @@ let path_list = if $nu.os-info.name == "macos" {
 }
 
 $env.PATH = ($env.PATH | split row (char esep) | append $path_list)
+

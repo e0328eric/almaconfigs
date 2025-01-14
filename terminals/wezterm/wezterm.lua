@@ -98,16 +98,15 @@ config.window_background_opacity = 0.82
 -- I shall use UCRT64 in default.
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = {
-		"C:/msys64/msys2_shell.cmd",
-		"-defterm",
-		"-where",
-		"C:/msys64/home/almag",
-		"-no-start",
-		"-ucrt64",
-		"-shell",
-		"fish",
+		"powershell.exe",
+		"-NoLogo",
+		"nu.exe",
 	}
 
+	table.insert(launch_menu, {
+		label = "PowerShell",
+		args = { "powershell.exe", "-NoLogo" },
+	})
 	table.insert(launch_menu, {
 		label = "UCRT64",
 		args = {
@@ -120,10 +119,6 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			"-shell",
 			"fish",
 		},
-	})
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "powershell.exe", "-NoLogo" },
 	})
 	table.insert(launch_menu, {
 		label = "Wsl - Arch",

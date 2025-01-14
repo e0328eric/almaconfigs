@@ -1,19 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 8
             },
@@ -77,13 +67,11 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 2
+            "command": {
+                "action": "copy",
+                "singleLine": false
             },
-            "id": "User.newTab.CCE909E3",
-            "keys": "ctrl+alt+shift+3"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": "paste",
@@ -91,17 +79,15 @@
             "keys": "ctrl+shift+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
-                "index": 3
+                "index": 2
             },
-            "id": "User.newTab.F4C304FB",
-            "keys": "ctrl+alt+shift+4"
+            "id": "User.newTab.CCE909E3",
+            "keys": "ctrl+alt+shift+3"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right",
                 "splitMode": "duplicate"
@@ -110,8 +96,15 @@
             "keys": "alt+shift+v"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "newTab",
+                "index": 3
+            },
+            "id": "User.newTab.F4C304FB",
+            "keys": "ctrl+alt+shift+4"
+        },
+        {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -120,8 +113,15 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "newTab",
+                "index": 7
+            },
+            "id": "User.newTab.E694A910",
+            "keys": "ctrl+alt+shift+8"
+        },
+        {
+            "command": {
                 "action": "splitPane",
                 "split": "down",
                 "splitMode": "duplicate"
@@ -130,8 +130,7 @@
             "keys": "alt+shift+h"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 6
             },
@@ -139,31 +138,12 @@
             "keys": "ctrl+alt+shift+7"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 7
-            },
-            "id": "User.newTab.E694A910",
-            "keys": "ctrl+alt+shift+8"
-        },
-        {
             "command": "find",
             "id": "User.find",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 0
-            },
-            "id": "User.newTab.7975BEED",
-            "keys": "ctrl+alt+shift+1"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 4
             },
@@ -171,8 +151,7 @@
             "keys": "ctrl+alt+shift+5"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 5
             },
@@ -180,8 +159,15 @@
             "keys": "ctrl+alt+shift+6"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "newTab",
+                "index": 0
+            },
+            "id": "User.newTab.7975BEED",
+            "keys": "ctrl+alt+shift+1"
+        },
+        {
+            "command": {
                 "action": "newTab",
                 "index": 1
             },
@@ -191,32 +177,34 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
-    "newTabMenu": 
-    [
+    "defaultProfile": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "D2CodingLigature Nerd Font Mono",
-                "size": 14
+                "size": 12
             },
             "opacity": 85
         },
-        "list": 
-        [
+        "list": [
+            {
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; C:\\Users\\almag\\.cargo\\bin\\nu.exe\"",
+                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
+                "hidden": false,
+                "icon": "none",
+                "name": "nushell",
+                "startingDirectory": "C:\\Users\\almag"
+            },
             {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
-                "font": 
-                {
+                "font": {
                     "face": "D2CodingLigature Nerd Font Mono",
                     "size": 11
                 },
@@ -224,13 +212,6 @@
                 "icon": "C:/msys64/ucrt64.ico",
                 "name": "UCRT64 / MSYS2",
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
-            },
-            {
-                "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "%USERPROFILE%"
             },
             {
                 "commandline": "wsl -u almagest",
@@ -242,9 +223,15 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
+                "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-                "font": 
-                {
+                "font": {
                     "face": "D2CodingLigature Nerd Font Mono",
                     "size": 11
                 },
@@ -265,8 +252,7 @@
                 "closeOnExit": "automatic",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "elevate": true,
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Mono",
                     "size": 12
                 },
@@ -279,14 +265,6 @@
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
-            },
-            {
-                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; %LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe\"",
-                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
-                "hidden": false,
-                "icon": "C:\\Users\\almag\\AppData\\Local\\Programs\\nu\\nu.ico",
-                "name": "nushell",
-                "startingDirectory": "C:\\Users\\almag"
             },
             {
                 "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
