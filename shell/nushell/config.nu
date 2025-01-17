@@ -782,7 +782,7 @@ $env.config = {
     ]
 }
 
-alias v          = hx
+alias v          = nvim
 alias s          = ls
 alias l          = ls -al
 alias lg         = lazygit

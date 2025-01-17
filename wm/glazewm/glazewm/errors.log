@@ -1,0 +1,25 @@
+[2m2025-01-15T02:12:03.821715Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-15T02:14:13.270075Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-15T11:46:51.476037Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[24].commands: unrecognized subcommand
+ at line 243 column 15
+[2m2025-01-15T11:48:20.228883Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[24].commands: unrecognized subcommand
+ at line 243 column 15
+[2m2025-01-16T03:24:15.509835Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:26.788002Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:28.040365Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:28.965857Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:29.174134Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:29.499252Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:29.834501Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:30.207215Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:30.785942Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:31.119756Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:31.566461Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:31.880219Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:32.164142Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:32.489257Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:32.808488Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:33.110635Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:33.378257Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:52.148052Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-16T03:24:55.678244Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
