@@ -50,7 +50,7 @@ gaps:
   outer_gap:
     top: '43px'
     right: '10px'
-    bottom: '10px'
+    bottom: '5px'
     left: '10px'
 
 window_effects:
@@ -121,6 +121,10 @@ workspaces:
   - name: '9'
 
 window_rules:
+  - commands: ['toggle-floating --centered']
+    match:
+      - window_process: { regex: 'KakaoTalk' }
+
   - commands: ['ignore']
     match:
       # Ignores any Zebar windows.
