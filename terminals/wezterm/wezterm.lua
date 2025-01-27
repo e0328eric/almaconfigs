@@ -86,7 +86,7 @@ config.background = {
 	},
 }
 --]]
-config.window_background_opacity = 0.82
+config.window_background_opacity = 0.84
 
 --  ╭──────────────────────────────────────────────────────────╮
 --  │                           etc                            │

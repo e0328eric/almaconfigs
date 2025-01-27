@@ -1,4 +1,4 @@
-theme = "gruvbox_transparent"
+theme = "dracula_transparent"
 
 [editor]
 auto-pairs = true

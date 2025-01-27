@@ -48,9 +48,9 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '43px'
+    top: '40px'
     right: '10px'
-    bottom: '5px'
+    bottom: '10px'
     left: '10px'
 
 window_effects:
@@ -121,9 +121,9 @@ workspaces:
   - name: '9'
 
 window_rules:
-  - commands: ['toggle-floating --centered']
+  - commands: ['toggle-tiling']
     match:
-      - window_process: { regex: 'KakaoTalk' }
+      - window_process: { regex: 'sioyek' }
 
   - commands: ['ignore']
     match:
@@ -244,7 +244,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec wezterm-gui']
+  - commands: ['shell-exec wt']
     bindings: ['alt+enter']
   - commands: ['shell-exec brave']
     bindings: ['alt+shift+enter']
