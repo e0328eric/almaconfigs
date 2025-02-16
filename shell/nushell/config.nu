@@ -798,4 +798,4 @@ alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
 alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
 alias kindergarden = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarden
 
-use ~/.cache/starship/init.nu
+source ~/.oh-my-posh.nu

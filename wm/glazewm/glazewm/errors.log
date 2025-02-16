@@ -46,3 +46,24 @@
 [2m2025-01-27T04:42:30.976471Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'Terminal'.\n\nError: The operation was canceled by the user. (0x800704C7)"
 [2m2025-01-27T04:45:12.405154Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'Windows Terminal'.\n\nError: The operation was canceled by the user. (0x800704C7)"
 [2m2025-01-27T04:45:19.937172Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute '\"Windows Terminal\"'.\n\nError: Command doesn't have an ending `\"`: '\"Windows Terminal\"'."
+[2m2025-01-31T10:59:53.951378Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-07T10:35:02.426090Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-09T05:54:32.961673Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-09T06:06:46.213045Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-12T10:57:07.221842Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-12T10:57:11.755099Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-13T04:55:01.376812Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-13T04:55:38.022254Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-13T04:55:39.564756Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-13T04:55:40.133673Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-13T04:55:40.335515Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:22.799149Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:42.834940Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:44.388272Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:45.373064Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:46.030455Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:46.679926Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:47.103742Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:47.724477Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-14T04:24:48.261560Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-02-16T09:46:04.848863Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.

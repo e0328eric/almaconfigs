@@ -138,3 +138,4 @@ let path_list = if $nu.os-info.name == "macos" {
 
 $env.PATH = ($env.PATH | split row (char esep) | append $path_list)
 
+oh-my-posh init nu --config "C:\\Users\\almag\\AppData\\Local\\Programs\\oh-my-posh\\themes\\stelbent.minimal.omp.json"
