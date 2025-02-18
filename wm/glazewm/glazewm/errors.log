@@ -67,3 +67,4 @@
 [2m2025-02-14T04:24:47.724477Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-02-14T04:24:48.261560Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-02-16T09:46:04.848863Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-17T03:45:31.595204Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'wt'.\n\nError: The operation was canceled by the user. (0x800704C7)"

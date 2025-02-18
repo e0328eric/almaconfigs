@@ -98,16 +98,34 @@ config.window_background_opacity = 0.84
 -- I shall use UCRT64 in default.
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = {
-		"C:/msys64/msys2_shell.cmd",
-		"-defterm",
-		"-where",
-		"C:/msys64/home/almag",
-		"-no-start",
-		"-ucrt64",
-		"-shell",
-		"fish",
+		"powershell.exe",
+		"-NoExit",
+		"-Command",
+		'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; C:/Users/almag/.cargo/bin/nu.exe',
 	}
 
+	table.insert(launch_menu, {
+		label = "PowerShell (dev, nushell)",
+		args = {
+			"powershell.exe",
+			"-NoExit",
+			"-Command",
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; C:/Users/almag/.cargo/bin/nu.exe',
+		},
+	})
+	table.insert(launch_menu, {
+		label = "PowerShell (dev, powershell)",
+		args = {
+			"powershell.exe",
+			"-NoExit",
+			"-Command",
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
+		},
+	})
+	table.insert(launch_menu, {
+		label = "PowerShell",
+		args = { "powershell.exe", "-NoLogo" },
+	})
 	table.insert(launch_menu, {
 		label = "UCRT64",
 		args = {
@@ -124,10 +142,6 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	table.insert(launch_menu, {
 		label = "Wsl - Arch",
 		args = { "wsl.exe", "-u", "almagest" },
-	})
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "powershell.exe", "-NoLogo" },
 	})
 end
 
