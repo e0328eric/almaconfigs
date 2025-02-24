@@ -2,3 +2,4 @@
 /utils/nvim/autoload
 /utils/helix/runtime/grammars
 /wm/xmonad/.stack-work
+/wm/glazewm/zebar/tmp-*

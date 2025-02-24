@@ -1,9 +1,28 @@
 [
   {
-    "context": "Pane",
+    "context": "Workspace",
+    "bindings": {}
+  },
+
+  {
+    "context": "Editor",
     "bindings": {
-      "ctrl-alt-left": "pane::ActivatePrevItem",
-      "ctrl-alt-right": "pane::ActivateNextItem"
+      "ctrl-up": "editor::AddSelectionAbove",
+      "ctrl-down": "editor::AddSelectionBelow"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-\\": "vim::InsertLineAbove"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-\\": "vim::InsertLineAbove"
     }
   }
 ]

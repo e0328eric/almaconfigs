@@ -117,9 +117,10 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; set the default mode for files
 (require 'simpc-mode)
+(require 'vesti-mode)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
+(add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
 
 ;;================================================================================
 ;;                               PACKAGE CONFIGS

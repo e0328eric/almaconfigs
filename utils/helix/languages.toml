@@ -63,3 +63,24 @@ source = { git = "https://github.com/uben0/tree-sitter-typst.git", rev = "master
 [[language]]
 name = "toml"
 language-servers = []
+
+[[language]]
+name = "vesti"
+scope = "source.ves"
+roots = []
+injection-regex = "ves(ti)?"
+comment-token = "%"
+file-types = ["ves"]
+indent = { tab-width = 4, unit = "  " }
+soft-wrap.wrap-at-text-width = true
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'$' = '$'
+'"' = '"'
+
+[[grammar]]
+name = "vesti"
+source = { git = "https://github.com/e0328eric/tree-sitter-vesti.git", rev = "main" }

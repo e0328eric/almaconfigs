@@ -4,16 +4,19 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vim_mode": true,
-  "ui_font_size": 12,
-  "buffer_font_size": 12,
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "buffer_font_family": "D2CodingLigature Nerd Font Mono",
+  "terminal": {
+    "font_family": "D2CodingLigature Nerd Font Mono"
+  },
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
-  },
-  "relative_line_numbers": true
+    "dark": "Night Owl Dark"
+  }
 }
