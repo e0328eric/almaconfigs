@@ -1,7 +1,11 @@
 [
   {
     "context": "Workspace",
-    "bindings": {}
+    "bindings": {
+      "ctrl-shift-h": "outline_panel::ToggleFocus",
+      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock"
+    }
   },
 
   {
@@ -15,7 +19,12 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-\\": "vim::InsertLineAbove"
+      "ctrl-\\": "vim::InsertLineAbove",
+      "ctrl-shift-h": "outline_panel::ToggleFocus",
+      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem"
     }
   },
 
