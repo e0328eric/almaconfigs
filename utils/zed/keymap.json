@@ -33,5 +33,13 @@
     "bindings": {
       "ctrl-\\": "vim::InsertLineAbove"
     }
+  },
+
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown"
+    }
   }
 ]

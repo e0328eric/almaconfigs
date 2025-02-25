@@ -1,0 +1,17 @@
+{
+  "Make a display math": {
+    "prefix": "be",
+    "body": ["\\$\\$", "    $1", "\\$\\$"],
+    "description": "make a display math"
+  },
+  "Make an inline math": {
+    "prefix": "MK",
+    "body": ["\\$$1\\$"],
+    "description": "make an inline math"
+  },
+  "Equation with a label": {
+    "prefix": "eq",
+    "body": ["useenv equation { \\label{$1}", "    $2", "}"],
+    "description": "Equation with a label"
+  }
+}
