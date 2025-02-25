@@ -8,6 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "vim_mode": true,
+  "relative_line_numbers": true,
   "ui_font_size": 14,
   "buffer_font_size": 13,
   "buffer_font_family": "D2CodingLigature Nerd Font Mono",
@@ -17,6 +18,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Night Owl Dark"
+    "dark": "Monokai Charcoal"
   }
 }
