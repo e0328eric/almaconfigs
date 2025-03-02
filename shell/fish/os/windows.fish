@@ -91,4 +91,8 @@ function kindergarten
     cd /c/Users/almag/IceDrive/TeX_Documents/Kindergarten
 end
 
-starship init fish | source
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                  Initialize oh-my-posh                   │
+#          ╰──────────────────────────────────────────────────────────╯
+
+oh-my-posh init fish --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/stelbent.minimal.omp.json" | source

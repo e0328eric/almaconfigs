@@ -183,7 +183,8 @@ set -gx NNN_PLUG "f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:preview-tui"
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/almagest/.ghcup/bin # ghcup-env
 
-################################################################################
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                  Initialize oh-my-posh                   │
+#          ╰──────────────────────────────────────────────────────────╯
 
-# starship condiguration
-starship init fish | source
+oh-my-posh init fish --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/stelbent.minimal.omp.json" | source
