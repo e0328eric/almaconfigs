@@ -12,7 +12,10 @@
     "context": "Editor",
     "bindings": {
       "ctrl-up": "editor::AddSelectionAbove",
-      "ctrl-down": "editor::AddSelectionBelow"
+      "ctrl-down": "editor::AddSelectionBelow",
+      "ctrl-alt-t": "terminal_panel::ToggleFocus",
+      "up": ["vim::Up", { "display_lines": true }],
+      "down": ["vim::Down", { "display_lines": true }]
     }
   },
 
@@ -39,7 +42,8 @@
     "context": "Editor && vim_mode == visual",
     "bindings": {
       "K": "editor::MoveLineUp",
-      "J": "editor::MoveLineDown"
+      "J": "editor::MoveLineDown",
+      "Q": "vim::Rewrap"
     }
   }
 ]

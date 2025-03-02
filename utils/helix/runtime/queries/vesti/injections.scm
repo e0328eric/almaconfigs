@@ -1,2 +1,3 @@
-((luacode_contents) @injection.content
-  (#set! injection.language "lua"))
+(luacode
+    (luacode_contents) @injection.content
+    (#set! injection.language "lua"))

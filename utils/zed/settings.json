@@ -12,6 +12,7 @@
   "ui_font_size": 14,
   "buffer_font_size": 13,
   "buffer_font_family": "D2CodingLigature Nerd Font Mono",
+  "wrap_guides": [80],
   "terminal": {
     "font_family": "D2CodingLigature Nerd Font Mono"
   },
@@ -19,5 +20,11 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Monokai Charcoal"
+  },
+  "languages": {
+    "vesti": {
+      "preferred_line_length": 80,
+      "soft_wrap": "preferred_line_length"
+    }
   }
 }

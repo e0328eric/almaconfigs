@@ -96,15 +96,8 @@ config.window_background_opacity = 0.84
 -- config.enable_kitty_graphics = true
 
 -- I shall use UCRT64 in default.
-if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-	config.default_prog = {
-		"powershell.exe",
-		"-NoExit",
-		"-Command",
-		'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; C:/Users/almag/.cargo/bin/nu.exe',
-	}
-
-	table.insert(launch_menu, {
+local launch_menu_windows = {
+	powershell_nu = {
 		label = "PowerShell (dev, nushell)",
 		args = {
 			"powershell.exe",
@@ -112,8 +105,8 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			"-Command",
 			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; C:/Users/almag/.cargo/bin/nu.exe',
 		},
-	})
-	table.insert(launch_menu, {
+	},
+	powershell = {
 		label = "PowerShell (dev, powershell)",
 		args = {
 			"powershell.exe",
@@ -121,12 +114,8 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			"-Command",
 			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
 		},
-	})
-	table.insert(launch_menu, {
-		label = "PowerShell",
-		args = { "powershell.exe", "-NoLogo" },
-	})
-	table.insert(launch_menu, {
+	},
+	msys2 = {
 		label = "UCRT64",
 		args = {
 			"C:/msys64/msys2_shell.cmd",
@@ -138,11 +127,19 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			"-shell",
 			"fish",
 		},
-	})
-	table.insert(launch_menu, {
+	},
+	arch = {
 		label = "Wsl - Arch",
 		args = { "wsl.exe", "-u", "almagest" },
-	})
+	},
+}
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = launch_menu_windows["msys2"]["args"]
+
+    table.insert(launch_menu, launch_menu_windows["msys2"])
+	table.insert(launch_menu, launch_menu_windows["powershell_nu"])
+	table.insert(launch_menu, launch_menu_windows["powershell"])
+	table.insert(launch_menu, launch_menu_windows["arch"])
 end
 
 --         ╭──────────────────────────────────────────────────────────╮
