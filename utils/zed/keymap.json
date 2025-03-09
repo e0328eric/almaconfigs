@@ -18,7 +18,6 @@
       "down": ["vim::Down", { "display_lines": true }]
     }
   },
-
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
@@ -27,6 +26,7 @@
       "ctrl-shift-b": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
       "tab": "pane::ActivateNextItem",
+      "g o": "editor::OpenSelectedFilename",
       "shift-tab": "pane::ActivatePrevItem"
     }
   },
