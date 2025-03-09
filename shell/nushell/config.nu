@@ -140,8 +140,8 @@ $env.config = {
     }
 
     filesize: {
-        metric: false
-        format: "auto"
+        unit: metric
+        precision: 4
     }
 
     cursor_shape: {
@@ -790,12 +790,14 @@ alias dyt        = yt-dlp
 alias getmusic   = yt-dlp -x --audio-format m4a
 alias pbcopy     = win32yank.exe -i
 
-alias hakwon     = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
-alias minireport = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report
-alias notetaking = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
-alias homework   = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
-alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
-alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
-alias kindergarden = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarden
+if $nu.os-info.name == "windows" {
+    alias hakwon     = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
+    alias minireport = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report
+    alias notetaking = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
+    alias homework   = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
+    alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
+    alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
+    alias kindergarden = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarden
+}
 
 source ~/.oh-my-posh.nu

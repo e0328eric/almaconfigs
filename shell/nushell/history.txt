@@ -647,3 +647,77 @@ cd
 ls
 cd $env.APPDATA
 ls
+fish
+ls
+source $nu.env-path
+source $nu.config-path
+nu --version
+ls
+cd nushell
+ls
+v config.nu
+source $nu.env-path
+source $nu.config-path
+v config.nu
+source $nu.env-path
+source $nu.config-path
+ls
+v config.nu
+v env.nu
+source $nu.env-path
+source $nu.config-path
+v env.nu
+cd
+ls
+ls -al
+rm -rp .oh-my-posh.nu
+source $nu.env-path
+source $nu.config-path
+v .oh-my-posh.nu
+v $nu.env-path
+oh-my-posh init nu --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/stelbent.minimal.omp.json"
+source $nu.config-path
+v $nu.env-path
+cd Github/arch-almagest/
+cd shell/nushell/
+ls
+wget https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/stelbent.minimal.omp.json
+ls
+pwd 
+cd
+ln -s ~/Github/arch-almagest/shell/nushell/stelbent.minimal.omp.json .oh-my-posh-theme.json
+ls
+cd
+ls
+ls -al
+v $nu.env-path
+source $nu.env-path
+source $nu.config-path
+v $nu.config-path
+source ~/.oh-my-posh.nu
+v $nu.config-path
+ls
+echo $nu
+echo $nu.os-info.name
+$nu.os-info.name == "linux"
+$nu.os-info.name == "windows"
+v $nu.config-path
+cd Github/arch-almagest/
+git pull origin main
+lg
+sudo pacman -S lazygit
+v $nu.env-path
+ls
+source $nu.env-path
+ls
+source $nu.config-path
+ls
+lg
+git pull origin main
+lg
+git
+git status
+git add *
+git commit -m "asdad"
+git config --global user.email "almagest0328@gmail.com"
+git config --global user.name "Sungbae Jeong"
