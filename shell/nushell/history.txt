@@ -721,3 +721,4 @@ git add *
 git commit -m "asdad"
 git config --global user.email "almagest0328@gmail.com"
 git config --global user.name "Sungbae Jeong"
+lg
