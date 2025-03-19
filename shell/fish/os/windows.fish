@@ -13,6 +13,7 @@ set PATH $PATH ~/.nimble/bin
 set PATH $PATH ~/.stack/bin
 set PATH $PATH ~/.local/share/nvim/mason/bin
 set PATH $PATH /c/Program\ Files/Neovim/bin
+set VCPKG_ROOT ~/.local/vcpkg
 set -gx INCLUDE '/home/almag/.local/fasm/INCLUDE'
 
 function winhome
