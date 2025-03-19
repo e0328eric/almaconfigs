@@ -1,0 +1,49 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-h": "outline_panel::ToggleFocus",
+      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock"
+    }
+  },
+
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-up": "editor::AddSelectionAbove",
+      "ctrl-down": "editor::AddSelectionBelow",
+      "ctrl-alt-t": "terminal_panel::ToggleFocus",
+      "up": ["vim::Up", { "display_lines": true }],
+      "down": ["vim::Down", { "display_lines": true }]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-\\": "vim::InsertLineAbove",
+      "ctrl-shift-h": "outline_panel::ToggleFocus",
+      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock",
+      "tab": "pane::ActivateNextItem",
+      "g o": "file_finder::Toggle",
+      "shift-tab": "pane::ActivatePrevItem"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-\\": "vim::InsertLineAbove"
+    }
+  },
+
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "K": "editor::MoveLineUp",
+      "J": "editor::MoveLineDown",
+      "Q": "vim::Rewrap"
+    }
+  }
+]

@@ -136,7 +136,7 @@ local launch_menu_windows = {
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = launch_menu_windows["msys2"]["args"]
 
-    table.insert(launch_menu, launch_menu_windows["msys2"])
+	table.insert(launch_menu, launch_menu_windows["msys2"])
 	table.insert(launch_menu, launch_menu_windows["powershell_nu"])
 	table.insert(launch_menu, launch_menu_windows["powershell"])
 	table.insert(launch_menu, launch_menu_windows["arch"])

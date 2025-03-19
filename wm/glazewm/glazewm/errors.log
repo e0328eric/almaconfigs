@@ -142,3 +142,11 @@
 [2m2025-03-05T02:07:56.759029Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-03-05T02:07:57.386246Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-03-06T10:43:10.160505Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-10T04:51:14.954381Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-11T05:58:25.442819Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-11T05:58:27.699405Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-12T00:01:59.895267Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-13T01:08:30.145284Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-17T12:14:01.300116Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-19T00:01:37.303676Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-19T02:44:21.736859Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)

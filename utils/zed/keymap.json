@@ -4,7 +4,8 @@
     "bindings": {
       "ctrl-shift-h": "outline_panel::ToggleFocus",
       "ctrl-shift-b": "workspace::ToggleLeftDock",
-      "ctrl-shift-j": "workspace::ToggleBottomDock"
+      "ctrl-shift-j": "workspace::ToggleBottomDock",
+      "ctrl-shift-o": "file_finder::Toggle"
     }
   },
 
@@ -14,10 +15,11 @@
       "ctrl-up": "editor::AddSelectionAbove",
       "ctrl-down": "editor::AddSelectionBelow",
       "ctrl-alt-t": "terminal_panel::ToggleFocus",
-      "up": ["vim::Up", { "display_lines": true }],
-      "down": ["vim::Down", { "display_lines": true }]
+      "ctrl-o": "workspace::Open",
+      "ctrl-shift-o": "file_finder::Toggle"
     }
   },
+
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
@@ -25,9 +27,15 @@
       "ctrl-shift-h": "outline_panel::ToggleFocus",
       "ctrl-shift-b": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
-      "tab": "pane::ActivateNextItem",
-      "g o": "editor::OpenSelectedFilename",
-      "shift-tab": "pane::ActivatePrevItem"
+      "tab": "pane::ActivateNextItem"
+    }
+  },
+
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "bindings": {
+      "ctrl-w q": ["pane::CloseActiveItem", { "close_pinned": false }],
+      "ctrl-w ctrl-q": ["pane::CloseActiveItem", { "close_pinned": false }]
     }
   },
 

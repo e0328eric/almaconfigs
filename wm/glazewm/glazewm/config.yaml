@@ -59,7 +59,7 @@ window_effects:
     # Highlight the window with a colored border.
     # ** Exclusive to Windows 11 due to API limitations.
     border:
-      enabled: true
+      enabled: false
       color: '#8dbcff'
 
     # Remove the title bar from the window's frame. Note that this can
@@ -181,13 +181,13 @@ keybindings:
 
   # Resize focused window by a percentage or pixel amount.
   - commands: ['resize --width -2%']
-    bindings: ['ctrl+shift+alt+a']
+    bindings: ['ctrl+shift+alt+a', 'ctrl+shift+alt+left']
   - commands: ['resize --width +2%']
-    bindings: ['ctrl+shift+alt+d']
+    bindings: ['ctrl+shift+alt+d', 'ctrl+shift+alt+right']
   - commands: ['resize --height +2%']
-    bindings: ['ctrl+shift+alt+w']
+    bindings: ['ctrl+shift+alt+w', 'ctrl+shift+alt+up']
   - commands: ['resize --height -2%']
-    bindings: ['ctrl+shift+alt+s']
+    bindings: ['ctrl+shift+alt+s', 'ctrl+shift+alt+down']
 
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
@@ -244,10 +244,13 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
+  #- commands: ['shell-exec wt']
   - commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
     bindings: ['alt+enter']
-  - commands: ['shell-exec brave']
+  - commands: ['shell-exec zen']
     bindings: ['alt+shift+enter']
+  - commands: ['shell-exec zed']
+    bindings: ['ctrl+alt+shift+enter']
 
   # Focus the next/previous active workspace defined in `workspaces` config.
   - commands: ['focus --next-active-workspace']
