@@ -1,9 +1,9 @@
 # Path Definitions
 switch (uname)
     case Linux
-        source ./os/linux.fish
+        source ~/.config/fish/os/linux.fish
     case Darwin
-        source ./os/darwin.fish
+        source ~/.config/fish/os/darwin.fish
     case Windows
         source ./os/windows.fish
 end
