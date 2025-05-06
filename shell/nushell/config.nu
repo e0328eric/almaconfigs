@@ -796,6 +796,7 @@ alias notetaking = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
 alias homework   = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
 alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
 alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
-alias kindergarden = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarden
+alias kindergarten = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarten
 
-source ~/.oh-my-posh.nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")

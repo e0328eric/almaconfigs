@@ -4,7 +4,8 @@
 ((KEYWORD_docclass) @keyword)
 ((KEYWORD_importpkg) @keyword)
 ((KEYWORD_importmod) @keyword)
-((KEYWORD_importfile) @keyword)
+((KEYWORD_copyfile) @keyword)
+((KEYWORD_importves) @keyword)
 ((KEYWORD_useltx3) @keyword)
 ((KEYWORD_getfp) @keyword)
 ((KEYWORD_startdoc) @keyword)
@@ -26,8 +27,8 @@
 ((inline_math) @string)
 ((display_math) @string)
 
-((singleline_raw_latex) @string)
-((multiline_raw_latex) @string)
+((singleline_raw_latex) @type)
+((multiline_raw_latex) @type)
 
 ;; Options and environment arguments
 ((options) @constant)
@@ -35,6 +36,4 @@
 ((optional_arg) @constant)
 
 ;; Comments
-((line_comment) @comment)
-((multiline_comment) @comment)
-
+((comment) @comment)

@@ -150,3 +150,35 @@
 [2m2025-03-17T12:14:01.300116Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-03-19T00:01:37.303676Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-03-19T02:44:21.736859Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-03-25T00:56:53.740244Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-25T10:52:05.229580Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-25T11:03:04.337482Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-25T11:03:35.426666Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-25T11:03:36.002634Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-25T12:04:40.654950Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-26T07:17:10.442403Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-03-29T03:12:18.565384Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-04-01T00:55:50.748563Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-03T10:42:20.838630Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:52.823620Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:54.230550Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:54.843766Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:55.475902Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:56.027243Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:56.569378Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-03T10:44:57.282834Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-05T13:59:43.906748Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-08T05:47:36.167148Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-08T05:47:38.663398Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-09T00:30:13.459403Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-14T00:08:12.778227Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-15T07:59:10.397008Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-16T10:35:17.772346Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-16T10:35:52.320758Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-16T10:35:53.042927Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-04-17T01:01:12.574313Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'zed'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2025-04-19T07:40:35.314030Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-21T00:06:15.066365Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-27T07:21:27.006683Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-30T05:15:44.540029Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-04-30T10:24:40.834770Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed

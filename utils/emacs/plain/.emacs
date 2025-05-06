@@ -214,7 +214,11 @@ point reaches the beginning or end of the buffer, stop there."
            (yas-expand-snippet "\\frac{$1}{$2}$0")))
   ;; disable snippets by redefining them with a nil expansion
   (aas-set-snippets 'latex-mode
-    "supp" nil))
+					"supp" nil))
+
+;; tree sitter emacs
+(use-package tree-sitter-mode
+  )
 
 (use-package multiple-cursors
   :ensure t

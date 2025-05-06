@@ -84,3 +84,18 @@ soft-wrap.wrap-at-text-width = true
 [[grammar]]
 name = "vesti"
 source = { git = "https://github.com/e0328eric/tree-sitter-vesti.git", rev = "main" }
+
+[[language]]
+name = "zig"
+auto-format = true
+
+[language-server.zls.config]
+enable_build_on_save = true
+build_on_save_args = ["check", "--watch", "-fincremental"]
+enable_autofix = false
+warn_style = true
+highlight_global_var_declarations = true
+
+[[grammar]]
+name = "zig"
+source = { git = "https://github.com/tree-sitter-grammars/tree-sitter-zig.git", rev = "master" }

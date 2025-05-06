@@ -137,5 +137,3 @@ let path_list = if $nu.os-info.name == "macos" {
 }
 
 $env.PATH = ($env.PATH | split row (char esep) | append $path_list)
-
-oh-my-posh init nu --config "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/stelbent.minimal.omp.json"
