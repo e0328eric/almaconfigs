@@ -110,31 +110,31 @@ function shtobat
 end
 
 function hakwon
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/Hakwon
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/Hakwon
 end
 
 function minireport
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/Mini_Report
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/Mini_Report
 end
 
 function notetaking
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/NoteTaking
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/NoteTaking
 end
 
 function homework
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/Homework
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/Homework
 end
 
 function lecturenote
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/Lecture_Note
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/Lecture_Note
 end
 
 function mathbook
-    cd ~/pCloudDrive/AlmaFiles/Math
+    cd ~/Icedrive/AlmaFiles/Math
 end
 
 function teachingf
-    cd ~/pCloudDrive/AlmaFiles/TeX_Documents/TF
+    cd ~/Icedrive/AlmaFiles/TeX_Documents/TF
 end
 
 function cfmtcp
