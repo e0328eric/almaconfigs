@@ -35,10 +35,6 @@ function l
     ls -al $argv
 end
 
-function z
-    zellij $argv
-end
-
 function oldrm
     /bin/rm $argv
 end
@@ -110,31 +106,31 @@ function shtobat
 end
 
 function hakwon
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/Hakwon
+    cd ~/Icedrive/TeX_Documents/Hakwon
 end
 
 function minireport
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/Mini_Report
+    cd ~/Icedrive/TeX_Documents/Mini_Report
 end
 
 function notetaking
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/NoteTaking
+    cd ~/Icedrive/TeX_Documents/NoteTaking
 end
 
 function homework
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/Homework
+    cd ~/Icedrive/TeX_Documents/Homework
 end
 
 function lecturenote
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/Lecture_Note
+    cd ~/Icedrive/TeX_Documents/Lecture_Note
 end
 
 function mathbook
-    cd ~/Icedrive/AlmaFiles/Math
+    cd ~/Icedrive/Math
 end
 
 function teachingf
-    cd ~/Icedrive/AlmaFiles/TeX_Documents/TF
+    cd ~/Icedrive/TeX_Documents/TF
 end
 
 function cfmtcp
