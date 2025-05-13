@@ -133,6 +133,10 @@ function teachingf
     cd ~/Icedrive/TeX_Documents/TF
 end
 
+function kindergarten
+    cd ~/Icedrive/TeX_Documents/Kindergarten
+end
+
 function cfmtcp
     cp ~/Github/arch-almagest/format/.clang-format .
 end
