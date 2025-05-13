@@ -43,6 +43,10 @@ function rm
     xilo $argv
 end
 
+function start
+    xdg-open $argv
+end
+
 function ls
     eza --icons $argv
 end
