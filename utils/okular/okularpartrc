@@ -2,10 +2,10 @@
 ExternalEditor=Emacsclient
 
 [General]
-ShellOpenFileInTabs=true
 SwitchToTabIfOpen=false
 
 [PageView]
+MouseMode=TextSelect
 ViewMode=Facing
 
 [Reviews]

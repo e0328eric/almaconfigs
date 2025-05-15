@@ -7,4 +7,18 @@ ShowSidebar=false
 
 [Recent Files]
 File1[$e]=$HOME/Icedrive/Math/An Introduction to Manifolds_(Tu).pdf
+File2[$e]=$HOME/Icedrive/Math/Strongly Elliptic Systems and Boundary Integral Equations_(McLean).pdf
+File3[$e]=$HOME/Icedrive/Math/Papers/Stochastic differential equations with critical drifts.pdf
+File4[$e]=$HOME/Icedrive/TeX_Documents/Kindergarten/Volume2/kindergarten-vol2.pdf
+File5[$e]=$HOME/Icedrive/TeX_Documents/Mini_Report/Tychonoff_Theorem/Tychonoff-Theorem.pdf
+File6[$e]=$HOME/Icedrive/Math/Real and Complex Analysis_(Rudin).pdf
+File7[$e]=$HOME/Icedrive/Math/Measure Theory_(Cohn).pdf
+File8[$e]=$HOME/Icedrive/Math/Real-Analysis_(Folland).pdf
 Name1[$e]=An Introduction to Manifolds_(Tu).pdf
+Name2[$e]=Strongly Elliptic Systems and Boundary Integral Equations_(McLean).pdf
+Name3[$e]=Stochastic differential equations with critical drifts.pdf
+Name4[$e]=kindergarten-vol2.pdf
+Name5[$e]=Tychonoff-Theorem.pdf
+Name6[$e]=Real and Complex Analysis_(Rudin).pdf
+Name7[$e]=Measure Theory_(Cohn).pdf
+Name8[$e]=Real-Analysis_(Folland).pdf
