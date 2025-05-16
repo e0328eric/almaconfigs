@@ -1,10 +1,13 @@
 To use this theme, you must type
-sudo pacman -S qt5
+sudo pacman -S qt5 sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg 
 
-Then copy `alma-sddm` directory into `/usr/share/sddm/themes`.
+Then copy `almagest-sddm` directory into `/usr/share/sddm/themes`.
 
-Then change the config file in `/etc/sddm.conf.d/theme.conf.user` as follows:
+Then change the config file in `/etc/sddm.conf` as follows:
 ```conf
 [Theme]
-Current=alma-sddm
+Current=almagest-sddm
 ```
+
+# References
+- https://motionbgs.com/silver-wolf-honkai-star-rail
