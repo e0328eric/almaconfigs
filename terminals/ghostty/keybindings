@@ -21,8 +21,8 @@ keybind = ctrl+shift+page_up=jump_to_prompt:-1
 #                          ╭────────────────────────╮
 #                          │ Spilt related settings │
 #                          ╰────────────────────────╯
-keybind = ctrl+shift+e=new_split:down
-keybind = ctrl+shift+o=new_split:right
+keybind = ctrl+shift+s=new_split:down
+keybind = ctrl+shift+d=new_split:right
 keybind = alt+ctrl+shift+plus=equalize_splits
 
 keybind = alt+ctrl+shift+left=resize_split:left,10
