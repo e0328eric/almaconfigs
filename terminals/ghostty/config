@@ -1,7 +1,10 @@
-theme              = Monokai Remastered
+theme = Tinacious Design (Dark)
 
-font-family        = D2CodingLigature Nerd Font Mono
-font-size          = 12
+# font-family        = D2CodingLigature Nerd Font Mono
+font-size          = 11
 
 background-opacity = 0.75
 cursor-style       = block
+
+# keybindings
+config-file = ./keybindings
