@@ -12,6 +12,7 @@ Notice that the list might not contain some packages but it is required.
 - hypridle
 - hyprlock
 - icedrive
+- keyd
 - nwg-displays
 - pamixer
 - playerctl
@@ -24,3 +25,8 @@ Notice that the list might not contain some packages but it is required.
 ## monitor settings
 
 use `nwg-displays` to set monitors
+
+## change keybindings using keyd
+
+copy `./keyd/default.conf` inside `/etc/keyd/default.conf`.
+Then run `sudo systemd enable keyd --now`.
