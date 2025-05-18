@@ -25,11 +25,11 @@ function run_autostart() {
 run_autostart nitrogen --restore
 # run_autostart ibus-daemon -rxRd
 run_autostart fcitx5 -d
-run_autostart light-locker
+# run_autostart light-locker
 run_autostart xset s 480 dpms 600 600 600
 run_autostart picom
 run_autostart polybar
-run_autostart pcloud
+run_autostart icedrive
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                       Keybindings                        │
@@ -38,8 +38,8 @@ run_autostart pcloud
 # if you have a super key you will be much happier with Mod set to Mod4
 # Mod=Mod1    # Use alt as the main modifier
 Mod=Mod4   # Use the super key as the main modifier
-myTerm=kitty
-myBrowser=vivaldi
+myTerm=ghostty
+myBrowser=qutebrowser
 
 # remove all existing keybindings
 hc keyunbind --all

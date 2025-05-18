@@ -3,7 +3,7 @@
 #   qute://help/settings.html
 
 # Change the argument to True to still load settings configured via autoconfig.yml
-config.load_autoconfig(False)
+config.load_autoconfig(True)
 
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
@@ -16,6 +16,9 @@ c.aliases = {
     "wqa": "quit --save",
     "re": "restart",
 }
+
+# autosave sessions
+config.set("auto_save.session", True)
 
 # Which cookies to accept.
 config.set("content.cookies.accept", "all", "chrome-devtools://*")
