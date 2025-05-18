@@ -19,7 +19,7 @@ Notice that the list might not contain some packages but it is required.
 - thunar
 - vivaldi
 - walker
-- wallust
+- wallust (AUR)
 - waybar
 
 ## monitor settings

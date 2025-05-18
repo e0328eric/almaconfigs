@@ -1,0 +1,7 @@
+backend = "fastresize"
+color_space = "lch"
+palette = "dark"
+
+[templates]
+hyprlock.template = "hyprlock"
+hyprlock.target = "~/.config/hypr/hyprlock_colors.conf"
