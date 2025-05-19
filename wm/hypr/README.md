@@ -5,6 +5,7 @@
 Here is a list of packages this hyprland config requires.
 Notice that the list might not contain some packages but it is required.
 
+- brightnessctl
 - fcitx5
 - fcitx5-hangul
 - ghostty
