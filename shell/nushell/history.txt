@@ -1237,3 +1237,19 @@ ls
 rm rc.el~
 cd ..
 ls
+lg
+cd Github\arch-almagest\
+ls
+cd utils\emacs\
+ls
+cd plain\
+ls
+cd .emacs.local\
+ls
+cd ../..
+ls
+rm -rp plain-obsolete\
+cd plain\
+ls
+rm -rp .emacs.rc\
+cd Github\arch-almagest\

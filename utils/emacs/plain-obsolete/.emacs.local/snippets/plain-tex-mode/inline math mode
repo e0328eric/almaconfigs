@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: display equation
-# key: be
-# expand-env: ((yas-indent-line 'fixed))
-# --
-$$
-    $1
-$$
-$0

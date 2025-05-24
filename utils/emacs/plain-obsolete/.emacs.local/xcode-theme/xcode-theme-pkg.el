@@ -1,1 +1,0 @@
-(define-package "xcode-theme" "0.1" "Color theme with a dark and light versions" 'nil :url "https://github.com/juniorxxue/xcode-theme" :keywords '("color" "theme"))
