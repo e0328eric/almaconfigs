@@ -182,3 +182,20 @@
 [2m2025-04-27T07:21:27.006683Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-04-30T05:15:44.540029Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-04-30T10:24:40.834770Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-20T04:37:24.422943Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zen'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-05-20T04:45:11.472449Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zen'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-05-20T04:49:40.602854Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zen'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-05-22T00:34:12.931379Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-05-22T01:51:46.384784Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-22T04:40:56.759750Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-22T04:40:57.748451Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-22T04:40:58.356349Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-22T04:40:58.978642Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-23T08:59:23.196433Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-05-24T02:22:38.822559Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.

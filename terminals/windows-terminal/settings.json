@@ -7,138 +7,19 @@
             "command": 
             {
                 "action": "newTab",
-                "index": 4
-            },
-            "id": "User.newTab.89E6CA61"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "down"
-            },
-            "id": "User.splitPane.D5151347"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 7
-            },
-            "id": "User.newTab.E694A910"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 8
-            },
-            "id": "User.newTab.B7F682DF"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 2
-            },
-            "id": "User.newTab.CCE909E3"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.FEF0D40B"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 3
-            },
-            "id": "User.newTab.F4C304FB"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "down",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.10B260D2"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
                 "index": 5
             },
             "id": "User.newTab.663EF760"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 6
-            },
-            "id": "User.newTab.B1B78DBA"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "id": "User.splitPane.864CD510"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 0
-            },
-            "id": "User.newTab.7975BEED"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 1
-            },
-            "id": "User.newTab.1FA5EB5"
+            "command": "paste",
+            "id": "User.paste"
         }
     ],
     "alwaysShowTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
+    "defaultProfile": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
     "keybindings": 
     [
         {
@@ -154,12 +35,16 @@
             "keys": "ctrl+shift+1"
         },
         {
+            "id": null,
+            "keys": "alt+shift+minus"
+        },
+        {
             "id": "User.newTab.663EF760",
             "keys": "ctrl+alt+shift+6"
         },
         {
             "id": null,
-            "keys": "alt+shift+minus"
+            "keys": "ctrl+shift+5"
         },
         {
             "id": null,
@@ -167,15 +52,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+5"
-        },
-        {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "keys": "ctrl+shift+3"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+3"
+            "keys": "alt+shift+d"
         },
         {
             "id": null,
@@ -194,7 +75,7 @@
             "keys": "ctrl+shift+9"
         },
         {
-            "id": "User.newTab.1FA5EB5",
+            "id": "Terminal.OpenNewTabProfile1",
             "keys": "ctrl+alt+shift+2"
         },
         {
@@ -202,64 +83,64 @@
             "keys": "shift+insert"
         },
         {
-            "id": "User.splitPane.864CD510",
-            "keys": "ctrl+shift+d"
-        },
-        {
             "id": null,
             "keys": "ctrl+c"
         },
         {
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": null,
+            "keys": "ctrl+shift+d"
         },
         {
             "id": null,
             "keys": "ctrl+v"
         },
         {
-            "id": "User.newTab.B7F682DF",
-            "keys": "ctrl+alt+shift+9"
+            "id": null,
+            "keys": "ctrl+shift+f"
         },
         {
             "id": "User.paste",
             "keys": "ctrl+shift+v"
         },
         {
-            "id": "User.splitPane.FEF0D40B",
-            "keys": "alt+shift+v"
-        },
-        {
-            "id": "User.newTab.CCE909E3",
+            "id": "Terminal.OpenNewTabProfile2",
             "keys": "ctrl+alt+shift+3"
         },
         {
-            "id": "User.newTab.F4C304FB",
-            "keys": "ctrl+alt+shift+4"
+            "id": null,
+            "keys": "alt+shift+v"
         },
         {
-            "id": "User.newTab.E694A910",
-            "keys": "ctrl+alt+shift+8"
-        },
-        {
-            "id": "User.newTab.B1B78DBA",
-            "keys": "ctrl+alt+shift+7"
-        },
-        {
-            "id": "User.newTab.89E6CA61",
+            "id": "Terminal.OpenNewTabProfile4",
             "keys": "ctrl+alt+shift+5"
         },
         {
-            "id": "User.splitPane.10B260D2",
+            "id": null,
             "keys": "alt+shift+h"
         },
         {
-            "id": "User.newTab.7975BEED",
-            "keys": "ctrl+alt+shift+1"
+            "id": null,
+            "keys": "ctrl+shift+s"
         },
         {
-            "id": "User.splitPane.D5151347",
-            "keys": "ctrl+shift+s"
+            "id": "Terminal.OpenNewTabProfile7",
+            "keys": "ctrl+alt+shift+8"
+        },
+        {
+            "id": "Terminal.OpenNewTabProfile8",
+            "keys": "ctrl+alt+shift+9"
+        },
+        {
+            "id": "Terminal.OpenNewTabProfile3",
+            "keys": "ctrl+alt+shift+4"
+        },
+        {
+            "id": "Terminal.OpenNewTabProfile6",
+            "keys": "ctrl+alt+shift+7"
+        },
+        {
+            "id": "Terminal.OpenNewTabProfile0",
+            "keys": "ctrl+alt+shift+1"
         }
     ],
     "newTabMenu": 
@@ -276,81 +157,40 @@
             "cursorShape": "filledBox",
             "font": 
             {
-                "face": "D2CodingLigature Nerd Font Mono",
-                "size": 12
+                "face": "JetBrainsMono Nerd Font Mono",
+                "size": 11
             },
             "opacity": 85
         },
         "list": 
         [
             {
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; nu.exe\"",
+                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
+                "hidden": false,
+                "name": "nushell",
+                "startingDirectory": "C:\\Users\\almag"
+            },
+            {
+                "guid": "{6922f89c-f832-514f-9d67-20565d7d29a0}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "C:\\Users\\almag"
+            },
+            {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell fish",
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
                 "guid": "{17da3cac-b318-431e-8a3e-7fcdefe6d114}",
                 "icon": "C:/msys64/ucrt64.ico",
                 "name": "UCRT64 / MSYS2",
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
             },
             {
-                "commandline": "wsl -u almagest",
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "icon": "none",
-                "name": "Gentoo",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; C:\\Users\\almag\\.cargo\\bin\\nu.exe\"",
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
-                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
-                "hidden": false,
-                "icon": "none",
-                "name": "nushell",
-                "startingDirectory": "C:\\Users\\almag"
-            },
-            {
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
-                "guid": "{028c54c4-9856-550d-961b-37c97a35b205}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-                "font": 
-                {
-                    "face": "D2CodingLigature Nerd Font Mono",
-                    "size": 11
-                },
                 "guid": "{71160544-14d8-4194-af25-d05feeac7233}",
                 "icon": "C:/msys64/msys2.ico",
                 "name": "MSYS / MSYS2",
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
-            },
-            {
-                "guid": "{eb9d05b6-fcec-5d1d-8280-b6029b4bbbde}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             },
             {
                 "altGrAliasing": true,
@@ -358,11 +198,6 @@
                 "closeOnExit": "automatic",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "elevate": true,
-                "font": 
-                {
-                    "face": "Cascadia Mono",
-                    "size": 12
-                },
                 "guid": "{f538b2fc-a988-4be2-b5e2-ff68dae40547}",
                 "hidden": false,
                 "historySize": 9001,
@@ -372,12 +207,6 @@
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
-            },
-            {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
-                "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -390,19 +219,31 @@
                 "name": "Command Prompt"
             },
             {
-                "guid": "{e4a12686-4614-5d98-83af-53a2c66f729c}",
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
-                "name": "Julia",
-                "source": "JuliaComputingInc.Julia_b0ra4bp6jsp6c"
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{cbf88ef5-b0b2-5487-a6e5-027036a3acf6}",
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
-                "name": "Gentoo",
-                "source": "Microsoft.WSL"
+                "name": "Git Bash",
+                "source": "Git"
             },
             {
-                "guid": "{ec73d661-5bba-5bea-b495-3a92d75918d5}",
+                "guid": "{5f8abaaa-5433-5b45-aa62-f1e3bc1a4525}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
+            },
+            {
+                "guid": "{569be84a-802b-529f-9af0-c42727a5b3df}",
                 "hidden": false,
                 "name": "archlinux",
                 "source": "Microsoft.WSL"

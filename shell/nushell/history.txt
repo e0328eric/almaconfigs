@@ -722,3 +722,466 @@ git commit -m "asdad"
 git config --global user.email "almagest0328@gmail.com"
 git config --global user.name "Sungbae Jeong"
 lg
+ls
+cd .local\
+ls
+git clone --depth 1 https://github.com/zigtools/zls.git
+cd zls
+git checkout 0.14.0
+git checkout v0.14.0
+git checkout 0.14.0
+cd ..
+ls
+rm zls
+rm -rp zls
+git clone https://github.com/zigtools/zls.git
+cd zls
+ls
+git checkout 0.14.0
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+cd bin
+ls
+cd ..
+ls
+cd
+cd Github\
+ls
+git clone https://github.com/e0328eric/vesti.git
+cd vesti\
+ls
+v build.zig
+winget install wezterm
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Analysis1_Yang_Prof\
+ls
+vesti compile tf4.ves
+cd $env.APPDATA
+ls
+mkdir vesti
+cd vesti\
+ls
+git clone https://github.com/e0328eric/coprime.git
+cd ../../..
+ls
+cd Kindergarten\Volume2\
+ls
+vesti compile -a kindergarten-vol2.ves
+ls
+rm build.lua~
+ls
+v build.lua
+cd
+ls
+wsl --help
+wsl --install
+winget --help
+wsl --help
+wsl -l -o
+wsl --install archlinux
+wsl -l
+esl
+wsl
+wsl --install archlinux
+wsl
+wsl archlinyx
+wsl archlinx
+wsl archlinux
+wsl -l -o
+wsl --install archlinux
+wsl -d archlinux
+cd $env.APPDATA
+ls
+cd
+mkdir .config
+cd .config\
+ls
+cd wezterm
+ls
+v wezterm.lua
+cd .config\
+cd wezterm
+ls
+v wezterm.lua
+cd ../..
+cd .glzr
+ls
+cd glazewm\
+ls
+v config.yaml
+curl -O --location https://elan.lean-lang.org/elan-init.ps1
+ls
+powershell -ExecutionPolicy Bypass -f elan-init.ps1
+winget update
+winget update --all
+shutdown /h
+winget search fasm
+winget install fasm.fasm
+which unzip
+ls
+ls Templates
+ls
+mkdir Test
+cd Test
+ls
+mv ~/Downloads/fasmcam.zip .
+ls
+unzip fasmcam.zip
+ls
+v Webcam.ASM
+fasm Webcam.ASM
+ls
+rm fasmcam.zip Webcam.ASM
+cd
+ls
+cd Github\
+ls
+git clone https://github.com/e0328eric/musik.git
+cd musik\
+ls
+winget search yt-dlp
+winget instal yt-dlp.yt-dlp
+winget install yt-dlp.yt-dlp
+ls
+yt-dlp -f ba[ext=m4a] https://youtu.be/DJLa8QYUtmQ?si=5IJeIzgDiYdxCo1K
+ls
+mv "이세계아이돌 (ISEGYE IDOL) 'Misty Rainbow' Official MV [DJLa8QYUtmQ].m4a" misty_rainbow.m4a
+ls
+ffmpeg -i misty_rainbow.m4a misty_rainbow.flac
+ls
+rm misty_rainbow.m4a
+ls
+cargo r
+ls
+v src\main.rs
+bat
+cargo install bat
+bat Cargo.toml
+cargo add crossterm
+ls
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+ls
+start .
+ls
+zig init
+ls
+zig fetch --save git+https://github.com/castholm/SDL.git
+v build.zig
+v src\main.zig
+cd src\
+ls
+rm root.zig
+cd ..
+ls
+zig build
+ffmpeg -i misty_rainbow.flac misty_rainbow.wav
+ls
+rm misty_rainbow.flac
+ls
+v .gitignore
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+ls
+zig fetch --save git+https://github.com/Not-Nik/raylib-zig.git
+ls
+v build.zig
+zig build
+v build.zig.zon
+v build.zig
+zig build
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig fetch --save git+https://github.com/rockorager/libvaxis.git
+zig build run
+v src\main.zig\
+v src\main.zig
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Analysis1_Yang_Prof\
+s
+mv tf5.ves~ tf5.ves
+ls
+vesti compile tf5.ves
+ls
+start tf5.pdf
+vesti compile -WE tf5.ves
+v tf5.ves
+teachingf 
+s
+cd 2025-1\
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Analysis1_Yang_Prof\
+ls
+start tf5.pdf
+cd
+s
+cd Github\
+ls
+curl -O --location https://az31609.vo.msecnd.net/software/eac38b62-7709-4c39-aafd-1e345ba2ee29.zip
+winget search chatgpt
+winget search openai
+cd .config\wezterm
+v wezterm.lua
+cd
+cd Test\
+ls
+cd Test\
+ls
+v main.c
+cl main.c
+v main.c
+cl main.c
+./main.exe
+v main.exe
+v main.c
+v hello.asm
+fasm hello.asm
+ghci
+cd Test\
+ls
+Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
+cd .glzr
+ls
+cd glazewm\
+v config.yaml
+cd Github\
+cd ..
+ls
+cd Test\
+ls
+rm *
+help rm 
+v $nu.config-path
+ls
+curl -O --location https://c9x.me/compile/release/qbe-1.2.tar.xz
+tar xvf qbe-1.2.tar.xz
+ls
+cd qbe-1.2\amd64\
+cd ..
+ls
+v Makefile
+rg "Deftgt" *
+cargo install ripgrep
+rg "Deftgt" *
+v main.c
+ls
+cd amd64\
+ls
+cd ..
+ls
+v Makefile
+ls
+v rv64\abi.c
+make
+nmake
+ls
+nmake Makefile
+cd ..
+rm -rp qbe-1.2\ qbe-1.2.tar.xz
+v foo.lean
+rm foo.lean
+lake
+lake new foo
+ls
+cd foo\
+ls
+v Main.lean
+v lakefile.toml
+lake +leanprover/lean4:nightly-2024-04-24
+cd Test
+ls
+cd foo\
+ls
+v lakefile.toml
+ls
+rm -rp Foo Foo.lean
+v lakefile.toml
+ls
+v Main.lean
+lake update
+v Main.lean
+cd Test
+ls
+mkdir fooo
+cd fooo\
+ls
+v main.py
+v main.c
+cl main.c /std:c11
+./main.exe
+v main.c
+cl main.c /std:c11
+v main.c
+ls
+cp main.c main.cc
+v main.cc
+cl main.c /std:c++11
+cl main.cc /std:c++11
+v main.cc
+cl main.cc /std:c++11
+v main.cc
+cl main.cc /std:c++11
+v main.cc
+cl main.cc /std:c++11
+bat main.cc
+cl main.cc /std:c++11
+./main.exe
+v main.cc
+cl main.cc /std:c++11
+v main.cc
+cl main.cc /std:c++11
+./main.exe
+v main.cc
+cl main.cc /std:c++11
+v main.cc
+cl main.cc /std:c++11
+cl /std:c++11 main.cc
+cl /h
+cl /?
+cl /std:c++20 main.cc
+v main.cc
+cl /std:c++20 main.cc
+v main.cc
+cl /std:c++20 main.cc
+v main.cc
+cl /std:c++20 main.cc
+v main.cc
+cl /std:c++20 main.cc
+./main.exe
+v main.cc
+ls
+rm *
+cd fooo\
+cd Test\
+cd foo\
+python
+python3.exe 
+cd .local\
+ls
+git clone --depth 1 --recursive https://github.com/usagi-flow/evil-helix.git
+ls
+cd evil-helix\
+ls
+cargo install --path .
+cargo build --path .
+cargo build --release
+rustup toolchain add miri
+rustup toolchain 
+rustup 
+rustup component add miri
+cd ..
+ls
+rm -rp evil-helix\
+curl -O --location https://github.com/usagi-flow/evil-helix/releases/download/release-20250413/evil-helix-amd64-windows.zip
+ls
+unzip evil-helix-amd64-windows.zip
+ls
+rm -rp helix\
+unzip evil-helix-amd64-windows.zip
+ls
+cd helix\
+cd ..
+ls
+rm evil-helix-amd64-windows.zip
+cd helix\
+ls
+cd runtime\
+ls
+hx
+cd ..
+ls
+cd ..
+ls
+hx
+ls
+cd $env.APPDATA
+ls
+ls helix\
+rm -r helix\
+s
+cd .local
+ls
+zigup
+ls
+rm -rp zig
+unzip zig-compiler.zip
+ls
+rm zig-compiler.zip
+mv zig-x86_64-windows-0.14.1 zig
+ls
+zkg version
+zig version
+cl
+zig version
+cd
+ls
+cd Test\
+ls
+cd foo
+ls
+mkdir Basics
+ls
+v Basics\S01_Calculating.lean
+cd ..
+ls
+rm -rp foo
+ls
+lake new learn_lean
+cd learn_lean\\
+ls
+v LearnLean.lean
+ls
+v LearnLean\Basic.lean
+v lakefile.toml
+v LearnLean\Basic.lean
+lake update
+v LearnLean\Basic.lean
+winget visual
+winget search visual
+winget search emacs
+winget install gnu.emacs
+cd .glzr
+ls
+cd glazewm\
+ls
+v config.yaml
+cd
+cd Github\arch-almagest\
+lg
+winget install lazygit
+cd Github\arch-almagest\
+lg

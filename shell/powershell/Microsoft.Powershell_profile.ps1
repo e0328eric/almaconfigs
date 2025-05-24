@@ -20,12 +20,8 @@ function cfmtcp {
     Copy-Item -Path '~\Github\arch-almagest\format\.clang-format' -Destination '.\.clang-format'
 }
 
-function make-symlink ($target, $link) {
-    New-Item -Path $link -ItemType SymbolicLink -Value $target
+function ln ($path, $symlink) {
+    New-Item -Path $symlink -ItemType SymbolicLink -Value $path
 }
-
-# autosuggestion
-Import-Module PSReadLine
-Set-PSReadLineOption -PredictionSource History
 
 Invoke-Expression (&starship init powershell)

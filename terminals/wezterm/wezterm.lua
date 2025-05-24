@@ -19,12 +19,11 @@ local launch_menu = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"D2CodingLigature Nerd Font Mono",
-	"FiraCode Nerd Font",
-	"JetbrainMono Nerd Font",
+	"JetBrainsMono Nerd Font Mono",
+	--"FiraCode Nerd Font",
 })
 
-config.font_size = 11
+config.font_size = 10
 config.unicode_version = 15
 config.warn_about_missing_glyphs = false
 
@@ -103,7 +102,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; C:/Users/almag/.cargo/bin/nu.exe',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
 		},
 	},
 	powershell = {
@@ -112,7 +111,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell d619ba7b -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
 		},
 	},
 	msys2 = {
@@ -134,12 +133,12 @@ local launch_menu_windows = {
 	},
 }
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
-	config.default_prog = launch_menu_windows["msys2"]["args"]
+	config.default_prog = launch_menu_windows["powershell_nu"]["args"]
 
-	table.insert(launch_menu, launch_menu_windows["msys2"])
 	table.insert(launch_menu, launch_menu_windows["powershell_nu"])
-	table.insert(launch_menu, launch_menu_windows["powershell"])
 	table.insert(launch_menu, launch_menu_windows["arch"])
+	table.insert(launch_menu, launch_menu_windows["msys2"])
+	table.insert(launch_menu, launch_menu_windows["powershell"])
 end
 
 --         ╭──────────────────────────────────────────────────────────╮
