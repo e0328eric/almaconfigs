@@ -1185,3 +1185,5 @@ lg
 winget install lazygit
 cd Github\arch-almagest\
 lg
+git config --global user.name "Sungbae Jeong"
+git config --global user.email "almagest0328@gmail.com"
