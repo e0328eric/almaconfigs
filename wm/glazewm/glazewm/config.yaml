@@ -249,7 +249,8 @@ keybindings:
     bindings: ['lwin+enter']
   - commands: ['shell-exec vivaldi']
     bindings: ['lwin+shift+enter']
-  - commands: ['shell-exec zed']
+  #- commands: ['shell-exec zed']
+  - commands: ['shell-exec %ProgramFiles%/Emacs/emacs-30.1/bin/runemacs.exe']
     bindings: ['ctrl+lwin+shift+enter']
 
   # Focus the next/previous active workspace defined in `workspaces` config.

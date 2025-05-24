@@ -199,3 +199,6 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-05-22T04:40:58.978642Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-05-23T08:59:23.196433Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
 [2m2025-05-24T02:22:38.822559Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-05-24T07:27:02.935928Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'emacs'.
+
+Error: The operation was canceled by the user. (0x800704C7)

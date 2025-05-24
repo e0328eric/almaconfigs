@@ -1187,3 +1187,53 @@ cd Github\arch-almagest\
 lg
 git config --global user.name "Sungbae Jeong"
 git config --global user.email "almagest0328@gmail.com"
+lg
+cd .glzr
+v glazewm\config.yaml
+cd 
+s
+ls
+ls utils\
+ls
+rm -rp emacs
+rm -rp editors\
+ls
+cd utils\emacs\
+ls
+cd plain\
+ls
+cd ..
+ls
+mv plain plain-obsolete
+ls
+mkdir plain
+ls
+cd plain\
+cp -r ../plain-obsolete/.emacs.local .
+ls
+cd $env.APPDATA
+ls
+rm -rp .emacs.local\
+mv C:/Users/almag/AppData/Roaming/.emacs .
+mv C:/Users/almag/AppData/Roaming/.emacs.custom.el .
+mv C:/Users/almag/AppData/Roaming/.emacs.rc .
+ls
+ls
+rm -rp .emacs.d .emacs~ .emacs.custom.el~
+ls
+cd $env.APPDATA
+ls
+cd .glzr
+cd glazewm\
+v config.yaml
+cd
+cd Github\arch-almagest\
+lg
+cd utils\emacs\
+cd plain\
+ls
+cd .emacs.rc\
+ls
+rm rc.el~
+cd ..
+ls
