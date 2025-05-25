@@ -1253,3 +1253,95 @@ cd plain\
 ls
 rm -rp .emacs.rc\
 cd Github\arch-almagest\
+lg
+emacs
+cd
+cd Github\arch-almagest\
+ls
+cd $env.APPDATA
+ls
+cd .emacs.d\
+ls
+cd auto-save-list\
+ls
+cd ..
+ls
+cd transient\
+ls
+cd ..
+ls
+cd ..
+s
+cd
+`C:\Program Files\Emacs\emacs-30.1\bin\emacs.exe`
+ls
+cd $env.APPDATA
+ls
+cd .emacs.d\
+ls
+mkdir tree-sitter
+cd tree-sitter\
+ls
+mkdir grammars
+mkdir sources
+cd sources\
+git clone --depth 1 --recursive https://github.com/e0328eric/tree-sitter-vesti.git
+cd tree-sitter-vesti\
+ls
+cl.exe /LD /Fe:tree-sitter-c.dll src\parser.c
+ls
+rm  tree-sitter-c.dll tree-sitter-c.exp tree-sitter-c.lib
+ls
+cl.exe /LD /Fe:tree-sitter-vesti.dll src\parser.c
+ls
+mv tree-sitter-vesti.dll ../../grammars/vesti.dll
+ls
+rm tree-sitter-vesti.exp tree-sitter-vesti.lib
+cd ../..
+ls
+cd grammars\
+ls
+cd $env.APPDATA
+cd .emacs.d\
+ls
+cd tree-sitter\
+ls
+mkdir queries/vesti
+cd queries\vesti\
+cp ../../sources/tree-sitter-vesti/queries/* .
+cp ../../sources/tree-sitter-vesti/queries/vesti/* .
+ls
+v config.yaml
+ls
+cd Github\vesti\
+ls
+v src\main.zig
+ls
+cd
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+cd lua\almagest\
+ls
+v remap.lua
+lg
+cd
+winget install discord
+winget install discord.discord
+winget search OBS
+winget install OBSProject.OBSStudio
+cd Test\
+v foo.ps1
+powershell -ExecutionPolicy Bypass -f foo.ps1
+ls
+v foo.ps1
+cd ..
+ls
+v .msvc_env
+cd $env.LOCALAPPDATA
+cd $env.APPDATA
+s
+cd .emacs.d
+ls
+rm -rp tree-sitter\

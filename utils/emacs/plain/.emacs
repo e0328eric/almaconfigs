@@ -17,6 +17,7 @@
 (setq-default display-line-numbers-type 'relative)
 (setq-default visible-bell (eq system-type 'windows-nt))
 (setq-default fill-column 80)
+; (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -29,7 +30,7 @@
 
 ;; setting fonts
 (when (member "JetBrainsMono NFM Medium" (font-family-list))
-  (set-frame-font "JetBrainsMono NFM Medium-9" nil t))
+  (set-frame-font "JetBrainsMono NFM Medium-12" nil t))
 
 ;; enable hard line wrap at both latex mode and tex mode
 (add-hook 'TeX-mode-hook 'auto-fill-mode)
@@ -114,9 +115,11 @@ point reaches the beginning or end of the buffer, stop there."
 ;; set the default mode for files
 (require 'simpc-mode)
 (require 'vesti-mode)
+(require 'fasm-mode)
+
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
-(add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
 ;;================================================================================
 ;;                               PACKAGE CONFIGS
@@ -239,3 +242,4 @@ point reaches the beginning or end of the buffer, stop there."
 
 (use-package zig-mode
   :ensure t)
+

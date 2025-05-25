@@ -1,27 +1,46 @@
-(defvar vesti-mode-syntax-table
-  (let ((table (make-syntax-table)))
-	(modify-syntax-entry ?% ". 124b" table)
-	(modify-syntax-entry ?* ". 23" table)
-	(modify-syntax-entry ?\n "> b" table)
-	table))
+;;; vesti-mode.el --- Major Mode for vesti -*- lexical-binding: t -*-
+
+(defconst vesti-mode-syntax-table
+  (with-syntax-table (copy-syntax-table)
+	(modify-syntax-entry ?% "<")
+	(modify-syntax-entry ?\n ">")
+	(syntax-table))
+  "Syntax table for `vesti-mode`.")
+
+(defun vesti-syntax-propertize-function (start end)
+  (goto-char start)
+  (funcall
+   (syntax-propertize-rules
+	;; block comments %* ... *%
+	("\\(%\\)\\(\\*\\)"
+	 (1 "< b")    ; % is start of a block comment
+	 (2 "< b"))   ; * is start of a block comment
+	("\\(\\*\\)%"
+	 (1 "> b")))  ; * is end of a block comment
+   start end))
 
 (defun vesti-keywords ()
-  '("docclass" "importpkg" "importves" "importfile" "useltx3" "getfp"
-	"startdoc" "useenv" "begenv" "endenv" "makeatletter" "makeatother"
-	"ltx3on" "ltx3off" "nonstopmode" "luacode"))
+  '("docclass" "importpkg" "importmod" "copyfile" "importves" "useltx3"
+	"getfp" "startdoc" "useenv" "begenv" "endenv" "makeatletter" "makeatother"
+	"ltx3on" "ltx3off" "nonstopmode" "luacode" "mathmode"))
 
 (defun vesti-font-lock-keywords ()
   (list
-   `("\\\\\\w+" . font-lock-fuction-name-face)
+   `("\\\\\\w+" . font-lock-function-name-face)
    `("\\$\\([^$]+\\)\\$" 1 font-lock-string-face)
    `("\\$\\$\\([^$]+\\)\\$\\$" 1 font-lock-string-face)
    `("docclass *\\([a-zA-Z\\-]+\\)" 1 font-lock-variable-name-face)
    `("importpkg *\\([a-zA-Z\\-]+\\)" 1 font-lock-variable-name-face)
    `(,(regexp-opt (vesti-keywords) 'symbols) . font-lock-keyword-face)))
 
+;;;###autoload
 (define-derived-mode vesti-mode prog-mode "vesti"
   :syntax-table vesti-mode-syntax-table
-  (setq-local font-lock-defaults '(vesti-font-lock-keywords))
-  (setq-local comment-start "% "))
+  (setq syntax-propertize-function #'vesti-syntax-propertize-function)
+  (setq font-lock-defaults '(vesti-font-lock-keywords))
+  (setq comment-start "% "))
+
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
 
 (provide 'vesti-mode)
