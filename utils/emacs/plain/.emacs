@@ -19,6 +19,12 @@
 (setq-default fill-column 80)
 ; (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+;; open new buffer with horizontal mode
+(add-to-list 'display-buffer-alist
+			 '("^\\*compilation\\*"
+			   (display-buffer-reuse-window display-buffer-at-bottom)
+			   (window-height . 0.3)))
+
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
@@ -112,8 +118,6 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
-(setq lsp-keymap-prefix "M-l")
-
 ;; set the default mode for files
 (require 'simpc-mode)
 (require 'vesti-mode)
@@ -155,8 +159,29 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package lsp-mode
   :init
   (setq lsp-keymap-prefix "M-l") ;; Alt+l as prefix
-  :hook ((prog-mode . lsp))
-  :commands lsp)
+  :hook
+  (;; Whitelist for lsp
+   (zig-mode . lsp-mode)
+   (rustic-mode . lsp-mode)
+   (lean4-mode . lsp-mode)
+   ;; Blacklist for lsp
+   (emacs-lisp-mode . (lambda () (lsp-mode -1)))
+   (text-mode . (lambda () (lsp-mode -1)))
+   (latex-mode . (lambda () (lsp-mode -1)))
+   (plain-TeX-mode . (lambda () (lsp-mode -1)))))
+
+(use-package lsp-ui
+  :ensure t
+  :after lsp-mode
+  :hook (lsp-mode . lsp-ui-mode)
+  :bind
+  ("<escape> h h" . lsp-ui-doc-show))
+
+(setq lsp-ui-doc-enable t)             ;; Enable hover doc
+(setq lsp-ui-doc-show-with-cursor nil) ;; Show only on hover, not on cursor move
+(setq lsp-ui-doc-show-with-mouse t)    ;; Show on mouse hover (optional)
+(setq lsp-ui-doc-delay 0.5)            ;; How fast to show doc (seconds)
+(setq lsp-ui-doc-position 'at-point)   ;; Show tooltip at point (other options: top, bottom, etc.)
 
 ;; alternative for ido mode
 (use-package ivy
@@ -204,7 +229,11 @@ point reaches the beginning or end of the buffer, stop there."
   :ensure t
   :hook (latex-mode . aas-activate-for-major-mode)
   :hook (tex-mode . aas-activate-for-major-mode)
+  :hook (vesti-mode . aas-activate-for-major-mode)
   :config
+  (aas-set-snippets 'vesti-mode
+	"MK"  (lambda () (interactive)
+		    (yas-expand-snippet "\\$$1\\$$0")))
   (aas-set-snippets 'tex-mode
 	"MK"  (lambda () (interactive)
 		    (yas-expand-snippet "\\$$1\\$$0"))

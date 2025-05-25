@@ -1368,3 +1368,4 @@ ls
 rm -rp tree-sitter-vesti\
 cd grammars\
 ls
+cd Github\arch-almagest\
