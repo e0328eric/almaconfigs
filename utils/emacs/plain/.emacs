@@ -112,6 +112,8 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 
+(setq lsp-keymap-prefix "M-l")
+
 ;; set the default mode for files
 (require 'simpc-mode)
 (require 'vesti-mode)
@@ -149,6 +151,12 @@ point reaches the beginning or end of the buffer, stop there."
 
 (use-package org-auto-tangle
   :ensure t)
+
+(use-package lsp-mode
+  :init
+  (setq lsp-keymap-prefix "M-l") ;; Alt+l as prefix
+  :hook ((prog-mode . lsp))
+  :commands lsp)
 
 ;; alternative for ido mode
 (use-package ivy
@@ -243,3 +251,7 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package zig-mode
   :ensure t)
 
+(use-package lean4-mode
+  :commands lean4-mode
+  :vc (:url "https://github.com/leanprover-community/lean4-mode.git"
+	   :rev :last-release))

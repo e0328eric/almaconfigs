@@ -26,7 +26,7 @@
 
 (defun vesti-font-lock-keywords ()
   (list
-   `("\\\\\\w+" . font-lock-function-name-face)
+   `("\\\\[a-zA-Z@]+" . font-lock-function-name-face)
    `("\\$\\([^$]+\\)\\$" 1 font-lock-string-face)
    `("\\$\\$\\([^$]+\\)\\$\\$" 1 font-lock-string-face)
    `("docclass *\\([a-zA-Z\\-]+\\)" 1 font-lock-variable-name-face)

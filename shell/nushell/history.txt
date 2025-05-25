@@ -1345,3 +1345,26 @@ s
 cd .emacs.d
 ls
 rm -rp tree-sitter\
+cd $env.APPDATA
+ls
+cd .emacs.d\
+ls
+mkdir tree-sitter
+cd tree-sitter\
+ls
+mkdir grammars
+mkdir queries/vesti
+git clone --depth 1 --recursive https://github.com/e0328eric/tree-sitter-vesti.git
+cd tree-sitter-vesti\
+ls
+cl.exe /LD /Fe:tree-sitter-vesti.dll src\parser.c
+mv tree-sitter-vesti.dll ../../grammars/vesti.dll
+mv tree-sitter-vesti.dll ../grammars/vesti.dll
+ls
+mv queries\vesti\* ../queries/vesti/
+ls
+cd ..
+ls
+rm -rp tree-sitter-vesti\
+cd grammars\
+ls
