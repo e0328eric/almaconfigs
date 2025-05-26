@@ -10,6 +10,7 @@
 (setq custom-file "~/.emacs.custom.el")
 (add-to-list 'load-path "~/.emacs.local/")
 (add-to-list 'load-path "~/.emacs.local/simpc-mode")
+(setq backup-directory-alist '((".*" . "~/.emacs.d/backups")))
 
 ;; default settings
 (setq-default inhibit-splash-screen t)
@@ -17,7 +18,7 @@
 (setq-default display-line-numbers-type 'relative)
 (setq-default visible-bell (eq system-type 'windows-nt))
 (setq-default fill-column 80)
-; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; open new buffer with horizontal mode
 (add-to-list 'display-buffer-alist
@@ -36,7 +37,7 @@
 
 ;; setting fonts
 (when (member "JetBrainsMono NFM Medium" (font-family-list))
-  (set-frame-font "JetBrainsMono NFM Medium-12" nil t))
+  (set-frame-font "JetBrainsMono NFM Medium-11" nil t))
 
 ;; enable hard line wrap at both latex mode and tex mode
 (add-hook 'TeX-mode-hook 'auto-fill-mode)
@@ -284,3 +285,7 @@ point reaches the beginning or end of the buffer, stop there."
   :commands lean4-mode
   :vc (:url "https://github.com/leanprover-community/lean4-mode.git"
 	   :rev :last-release))
+
+(cond
+ ((eq system-type 'windows-nt)
+  (load-file "~/.emacs.local/msvc_env.el")))

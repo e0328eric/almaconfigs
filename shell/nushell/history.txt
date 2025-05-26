@@ -1369,3 +1369,70 @@ rm -rp tree-sitter-vesti\
 cd grammars\
 ls
 cd Github\arch-almagest\
+lg
+cd
+;s
+ls
+rm _lesshst elan-init.ps1
+cd Github\musik\
+zig build run
+ls
+zig build run
+v src/main.zig
+zig build run
+mpv
+winget search mpv
+zig build run
+v src/main.zig
+cd Github\musik\
+cd src
+;s
+v main.zig~
+cd $env.APPDATA
+ls
+set > env.txt
+cd $env.APPDATA
+ls
+cd .emacs.local
+ls
+python.exe env_to_elisp.py
+v msvc_env.txt
+python.exe env_to_elisp.py > msvc_env.txt
+help save
+python.exe env_to_elisp.py | save msvc_env.txt
+python.exe env_to_elisp.py | save -f msvc_env.txt
+v msvc_env.txt
+python.exe env_to_elisp.py | save -f --stdout msvc_env.txt
+python.exe env_to_elisp.py | save -f msvc_env.txt
+ls
+python.exe env_to_elisp.py 
+v msvc_env.txt
+call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+ls
+winget update --all
+cd $env.APPDATA
+ls
+cd .emacs.local
+ls
+cd $env.APPDATA
+cd .emacs.local
+ls
+v foo.py
+ls
+python.exe foo.py
+v msvc_env.el
+v msvc.env
+v msvc_env.el
+python.exe foo.py
+v msvc_env.el
+v foo.py
+python.exe foo.py
+v msvc_env.el
+ls
+rm foo.py
+cd ..
+s
+v .emacs
+cd Test\
+ls
+v main.c
