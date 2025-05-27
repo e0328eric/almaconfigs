@@ -149,13 +149,18 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (load-theme 'timu-caribbean t))
 
-(use-package auto-complete
-  :ensure t
-  :config
-  (add-hook 'prog-mode-hook 'auto-complete-mode))
+;; (use-package auto-complete
+;; :ensure t
+;; :config
+;; (add-hook 'prog-mode-hook 'auto-complete-mode))
 
-(use-package org-auto-tangle
-  :ensure t)
+(use-package company
+  :ensure t
+  :init
+  (global-company-mode)
+  :config
+  (setq company-minimum-prefix-length 1
+		company-idle-delay 0.0))
 
 (use-package lsp-mode
   :init
@@ -169,20 +174,22 @@ point reaches the beginning or end of the buffer, stop there."
    (emacs-lisp-mode . (lambda () (lsp-mode -1)))
    (text-mode . (lambda () (lsp-mode -1)))
    (latex-mode . (lambda () (lsp-mode -1)))
-   (plain-TeX-mode . (lambda () (lsp-mode -1)))))
+   (plain-TeX-mode . (lambda () (lsp-mode -1))))
+  :config
+  (setq lsp-completion-provider :capf))
 
 (use-package lsp-ui
   :ensure t
   :after lsp-mode
   :hook (lsp-mode . lsp-ui-mode)
   :bind
-  ("<escape> h h" . lsp-ui-doc-show))
-
-(setq lsp-ui-doc-enable t)             ;; Enable hover doc
-(setq lsp-ui-doc-show-with-cursor nil) ;; Show only on hover, not on cursor move
-(setq lsp-ui-doc-show-with-mouse t)    ;; Show on mouse hover (optional)
-(setq lsp-ui-doc-delay 0.5)            ;; How fast to show doc (seconds)
-(setq lsp-ui-doc-position 'at-point)   ;; Show tooltip at point (other options: top, bottom, etc.)
+  ("<escape> h h" . lsp-ui-doc-show)
+  :config
+  (setq lsp-ui-doc-enable t)             ;; Enable hover doc
+  (setq lsp-ui-doc-show-with-cursor nil) ;; Show only on hover, not on cursor move
+  (setq lsp-ui-doc-show-with-mouse t)    ;; Show on mouse hover (optional)
+  (setq lsp-ui-doc-delay 0.5)            ;; How fast to show doc (seconds)
+  (setq lsp-ui-doc-position 'at-point))  ;; Show tooltip at point (other options: top, bottom, etc.)
 
 ;; alternative for ido mode
 (use-package ivy

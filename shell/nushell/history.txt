@@ -1436,3 +1436,57 @@ v .emacs
 cd Test\
 ls
 v main.c
+kindergarten 
+ls
+cd Volume2\
+ls
+cd Chapter2\
+ls
+cd Chapter2\
+kindergarten 
+cd
+kindergarten 
+cd Volume2\
+cd .vesti-dummy\
+v stdout.txt
+kindergarten 
+cd Volume2\
+ls
+kindergarten 
+cd Volume2\
+ls
+vesti compile -WE tf5.ves
+v Chapter2\section2-4.ves
+vesti compile -aWE kindergarten-vol2.ves
+cd Test
+ls
+rm foo.c foo.exe foo.obj
+zipup
+zigup
+ls
+unzip zig-compiler.zip
+ls
+cd Test
+ls
+./main.exe
+v Chapter2\section2-4.ves
+v main.c
+ls
+v main.zig
+zig build-exe main.zig
+cl main.c
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
