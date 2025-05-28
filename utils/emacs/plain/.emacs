@@ -45,6 +45,9 @@
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 (add-hook 'latex-mode-hook 'auto-fill-mode)
 
+;; set dired switches
+(setq dired-listing-switches "-alh")
+
 ;; utility functions
 (defun add-newline-at-top ()
   (interactive)
@@ -100,11 +103,11 @@ point reaches the beginning or end of the buffer, stop there."
 (global-unset-key (kbd "M-\\"))
 (global-unset-key (kbd "C-q"))
 (global-unset-key (kbd "C-z"))
+(global-unset-key (kbd "C-x C-x"))
 (global-set-key (kbd "<M-up>") 'scroll-down-command)
 (global-set-key (kbd "<M-down>") 'scroll-up-command)
 (global-set-key (kbd "<M-left>") 'smarter-move-beginning-of-line)
 (global-set-key (kbd "<M-right>") 'move-end-of-line)
-(global-set-key (kbd "C-x C-x") 'set-mark-command)
 (global-set-key (kbd "<M-S-left>") 'backward-chunk)
 (global-set-key (kbd "<M-S-right>") 'forward-chunk)
 (global-set-key (kbd "C-\\") 'add-newline-at-top)
@@ -149,11 +152,6 @@ point reaches the beginning or end of the buffer, stop there."
   :config
   (load-theme 'timu-caribbean t))
 
-;; (use-package auto-complete
-;; :ensure t
-;; :config
-;; (add-hook 'prog-mode-hook 'auto-complete-mode))
-
 (use-package company
   :ensure t
   :init
@@ -162,34 +160,31 @@ point reaches the beginning or end of the buffer, stop there."
   (setq company-minimum-prefix-length 1
 		company-idle-delay 0.0))
 
-(use-package lsp-mode
-  :init
-  (setq lsp-keymap-prefix "M-l") ;; Alt+l as prefix
-  :hook
-  (;; Whitelist for lsp
-   (zig-mode . lsp-mode)
-   (rustic-mode . lsp-mode)
-   (lean4-mode . lsp-mode)
-   ;; Blacklist for lsp
-   (emacs-lisp-mode . (lambda () (lsp-mode -1)))
-   (text-mode . (lambda () (lsp-mode -1)))
-   (latex-mode . (lambda () (lsp-mode -1)))
-   (plain-TeX-mode . (lambda () (lsp-mode -1))))
-  :config
-  (setq lsp-completion-provider :capf))
+(use-package eglot
+    :hook (prog-mode . eglot-ensure)
+    ;; The first 5 bindings aren't needed here, but are a good
+    ;; reminder of what they are bound too
+    :bind
+	(("C-x C-x p" . completion-at-point)
+     ("C-x C-x i" . imenu)
+	 ("C-x C-x g d" . xref-find-definitions)
+     ("C-x C-x g b" . xref-go-back)
+     :map
+     eglot-mode-map
+     ("C-x C-x c a" . eglot-code-actions)
+     ("C-x C-x c o" . eglot-code-actions-organize-imports)
+     ("C-x C-x c r" . eglot-rename)
+     ("C-x C-x c f" . eglot-format))
+    :config
+    (defvar complete-at-point--timer nil "Timer for triggering complete-at-point."))
 
-(use-package lsp-ui
+(use-package eldoc-box
   :ensure t
-  :after lsp-mode
-  :hook (lsp-mode . lsp-ui-mode)
+  :hook
+  (eglot-managed-mode-hook . eldoc-box-hover-mode)
   :bind
-  ("<escape> h h" . lsp-ui-doc-show)
-  :config
-  (setq lsp-ui-doc-enable t)             ;; Enable hover doc
-  (setq lsp-ui-doc-show-with-cursor nil) ;; Show only on hover, not on cursor move
-  (setq lsp-ui-doc-show-with-mouse t)    ;; Show on mouse hover (optional)
-  (setq lsp-ui-doc-delay 0.5)            ;; How fast to show doc (seconds)
-  (setq lsp-ui-doc-position 'at-point))  ;; Show tooltip at point (other options: top, bottom, etc.)
+  ("C-x C-x h" . eldoc-box-help-at-point)
+  ("C-x C-x C-h" . eldoc-box-help-at-point))
 
 ;; alternative for ido mode
 (use-package ivy
@@ -284,6 +279,11 @@ point reaches the beginning or end of the buffer, stop there."
   (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
   :bind
   ("C-x C-/" . 'undo-tree-redo))
+
+(use-package rustic
+  :ensure t
+  :config
+  (setq rustic-lsp-client 'eglot))
 
 (use-package zig-mode
   :ensure t)

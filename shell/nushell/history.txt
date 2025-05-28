@@ -1490,3 +1490,177 @@ v main.c
 cl main.c
 ./main.exe
 v main.c
+winget update --all
+cd Test\
+lks
+ls
+./main.exe
+ls
+v main.c
+cd
+ls
+cd .local\
+ls
+winget search sdl
+curl -O --location https://github.com/libsdl-org/SDL/releases/download/release-3.2.14/SDL3-3.2.14-win32-x64.zip
+start .
+mv SDL3-3.2.14 SDK3
+mv SDK3 SDL3
+ls
+cd SDL3
+cmake -S. -Bbuild\
+cmake --build build
+cmake --install build
+sudo cmake --install build
+cmake --install build --prefix C:/Users/almag/.local/SDL3_install
+sudo cmake --install build --prefix C:/Users/almag/.local/SDL3_install
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+make --build build --config Release
+cmake --build build --config Release
+cd ~
+cd Test\
+cl main.c /I"C:Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+main.exe
+dumpbin /dependencies main.exe
+dumpbin /dependents main.exe
+cd Test\
+main
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+cd .local\SDL3\
+s
+cd include\SDL3\
+rg "SDL_AudioSpec" *
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+./main.exe ./MEMORY.wav
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cd include\SDL3\
+cd Test
+ls
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+./main.exe ./MEMORY.wav
+cd .local\SDL3\
+ls
+cd include\SDL3\
+ls
+rg "SDL_Event" *
+rg "SDL_Event;" *
+v main.c
+cd include\SDL3\
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+cd Test\
+ls
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v Test\
+ls
+cd Test\
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+cd Test\
+ls
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+cd Test\
+v main.c
+cl main.c /I"C:/Users/almag/.local/SDL3/include" /link /LIBPATH:"C:/Users/almag/.local/SDL3/build/Release" SDL3.lib
+v SDL_events.h
+cd
+cd Test\
+ls
+cd Github\musik\
+ls
+cd ..
+rm -rp musik\
+rustup -V
+rustc -V
+rustup update
+git clone --depth 1 --recursive https://github.com/e0328eric/musik.git
+cd musik\
+ls
+v Cargo.toml
+v main.c
+v src\main.rs
+cd Github\musik\
+v src\main.rs
+ls
+cargo add crossterm
+v src\main.rs
+cargo add walkdir
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+cd .local
+ls
+which lean4
+which lean.exe 
+cd ..
+which elan
+winget search elan
+elan
+elan toolchain ansel\
+elan toolchain 
+elan toolchain install stable
+cd Test\learn_lean\
+ls
+bat lakefile.toml
+v LearnLean\Basic.lean
