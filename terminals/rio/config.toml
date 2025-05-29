@@ -1,5 +1,5 @@
 hide-cursor-when-typing = false
-theme = "Hardcore"
+theme = "Peppermint"
 working-dir = "C:/Users/almag"
 
 [editor]
@@ -46,9 +46,30 @@ macos.shell.program = "/bin/fish"
 linux.working-dir = "~"
 macos.working-dir = "~"
 
-[platform.windows.bindings]
+[bindings]
 keys = [
   # remove default keybindings
   { key = "t", with = "control | shift", action = "none" },
-  { key = "t", with = "control | shift", action = "none" },
+  { key = "w", with = "control | shift", action = "none" },
+  { key = "1", with = "control | shift", action = "none" },
+  { key = "2", with = "control | shift", action = "none" },
+  { key = "3", with = "control | shift", action = "none" },
+  { key = "4", with = "control | shift", action = "none" },
+  { key = "5", with = "control | shift", action = "none" },
+  { key = "6", with = "control | shift", action = "none" },
+  { key = "7", with = "control | shift", action = "none" },
+  { key = "8", with = "control | shift", action = "none" },
+  { key = "9", with = "control | shift", action = "none" },
+  # remap keys
+  { key = "t", with = "control | alt", action = "CreateTab" },
+  { key = "w", with = "control | alt", action = "CloseSplitOrTab" },
+  { key = "1", with = "control | alt", action = "SelectTab(1)" },
+  { key = "2", with = "control | alt", action = "SelectTab(2)" },
+  { key = "3", with = "control | alt", action = "SelectTab(3)" },
+  { key = "4", with = "control | alt", action = "SelectTab(4)" },
+  { key = "5", with = "control | alt", action = "SelectTab(5)" },
+  { key = "6", with = "control | alt", action = "SelectTab(6)" },
+  { key = "7", with = "control | alt", action = "SelectTab(7)" },
+  { key = "8", with = "control | alt", action = "SelectTab(8)" },
+  { key = "9", with = "control | alt", action = "SelectTab(9)" },
 ]

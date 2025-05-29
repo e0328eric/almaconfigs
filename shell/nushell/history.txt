@@ -1939,3 +1939,14 @@ cd .glzr/glazewm/
 ls
 cd Github\arch-almagest\
 ls
+lg
+cd terminals\rio\
+ls
+cd themes\
+ls
+exit
+v ../config.toml
+ls
+curl -O --location https://github.com/mbadolato/iTerm2-Color-Schemes/raw/refs/heads/master/rio/Peppermint.toml
+v ../config.toml
+ls
