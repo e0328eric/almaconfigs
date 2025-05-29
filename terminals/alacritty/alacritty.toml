@@ -1,3 +1,4 @@
+[general]
 import = [
   "~/.config/alacritty/settings/general.toml",
   "~/.config/alacritty/settings/colorscheme.toml",
@@ -5,3 +6,4 @@ import = [
   "~/.config/alacritty/settings/keybindings.toml",
   "~/.config/alacritty/settings/mouse.toml",
 ]
+working_directory = "C:/Users/almag"

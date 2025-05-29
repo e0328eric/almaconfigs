@@ -1664,3 +1664,278 @@ cd Test\learn_lean\
 ls
 bat lakefile.toml
 v LearnLean\Basic.lean
+cd Github\musik\
+cargo r
+v src\main.rs
+ls
+cd ..
+l
+mv musik musik_rust
+git clone --depth 1 --recursive https://github.com/e0328eric/musik.git
+cd musik\
+ls
+rm -rp src Cargo.toml Cargo.lock
+s
+v .gitignore
+ls
+mv ..\musik_rust\misty_rainbow.wav .
+mv ..\musik_rust\MEMORY.wav .
+v .gitignore
+ls
+zig init
+cd src\
+ls
+rm root.zig
+cd ..
+ls
+mkdir include
+cd include\
+curl -O --location https://github.com/mackron/miniaudio/raw/refs/heads/master/miniaudio.h
+ls
+cd ..
+ls
+v build.zig
+zig fetch --save git+https://github.com/rockorager/libvaxis.git
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig
+zig build run -- MEMORY.wav
+v build.zig
+zig build run -- MEMORY.wav
+v build.zig
+zig build run -- MEMORY.wav
+v src\
+ls
+cd src
+ls
+v miniaudio.c
+ls
+cd ..
+ls
+v build.zig
+ls
+rm -rp include\
+cd src\
+ls
+rm miniaudio.c
+cd ..
+s
+zig fetch --save git+https://github.com/allyourcodebase/portaudio.git
+ls
+v build.zig
+ls
+v src\main.zig
+v build.zig
+ls
+mkdir include
+cd include\
+s
+curl -O --location https://github.com/mackron/miniaudio/raw/refs/heads/master/miniaudio.h
+cd ..
+ls
+v build.zig.zon
+ls
+v src\music.c
+ls
+v build.zig
+ls
+v include\
+ls
+cd Github\musik\
+zig build
+v include\musik.h
+v src\music.c
+v src\musik.c
+zig build run -- MEMORY.wav
+v src\musik.c
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\musik.c
+zig build run -- MEMORY.wav
+zig build run -- MEMORY.wav
+v src\musik.c
+zig build run -- MEMORY.wav
+lg
+v src\main.zig
+ls
+cd include\
+ls
+git submodule
+ls
+git submodule -h
+git submodule add https://github.com/mackron/miniaudio.git
+ls
+rm miniaudio.h
+cd ..
+ls
+v build.zig
+zig build
+lg
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav\
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig\
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+lg
+kindergarten 
+ls
+cd Volume2\
+ls
+v Chapter2\section2-4.ves
+v Chapter2\section2-3.ves
+winget search alacritty
+winget install alacritty
+alacritty.exe --help
+cd Github\arch-almagest\
+ls
+cd terminals\
+ls
+ls alacritty\
+ls alacritty\settings\
+cd $env.APPDATA
+ls
+cd $env.LOCALAPPDATA
+ls
+alacritty.exe --help
+cd $env.APPDATA
+emacs .
+v settings\general.toml
+cd
+ls
+cd $env.APPDATA
+cd Alacritty
+v alacritty.toml
+ls
+cd $env.APPDATA
+cd Alacritty
+cd settings\
+v general.toml
+cd
+cd .glzr
+;s
+cd glazewm\
+v config.yaml
+cd Github\musik\
+ls
+zig build run -- MEMORY.wav
+cd Test\
+ls
+cd learn_lean\
+ls
+cd LearnLean\Basic.lean
+v LearnLean\Basic.lean
+ls
+lake update
+v LearnLean\Basic.lean
+v LearnLean\Basic2.lean
+ls
+cd .lake\
+ls
+cd build\
+ls
+cd lib\
+ls
+cd lean\
+ls
+cd ../../..
+s
+cd packages\
+ls
+cd mathlib\
+ls
+cd ../..
+ls
+cd ..
+ls
+rm -rp .lake
+lake run
+86
+v LearnLean\Basic2.lean
+ls
+cd LearnLean\
+;s
+rm Basic2.lean
+v Basic.lean
+cd $env.LOCALAPPDATA
+ls
+cd rio
+ls
+v config.toml
+rio --log
+rio --log-file
+rio --help
+rio
+ls
+cd themes\
+ls
+cd ..
+ls
+v config.toml
+rio --help
+rio -w --enable-log-filew
+rio -w --enable-log-file
+rio -w C:\Users\almag\AppData\Local\rio --enable-log-file
+v log\rio.log
+ls
+rm -rp log\
+ls
+v config.toml
+sudo powershell
+cd Github\arch-almagest\terminals\
+ls
+echo $env.LOCALAPPDATA
+cp -r C:/Users/almag/AppData/Local/rio .
+ls
+cd Github\arch-almagest\terminals\
+ls
+cd rio
+ls
+v config.toml
+cd Github\arch-almagest\terminals\
+;ls
+cd rio\
+;s
+ls
+cd Github\arch-almagest\terminals\
+ls
+cd rio\
+ls
+v config.toml
+ls
+cd Github\arch-almagest\terminals\
+s
+cd rio\
+ls
+v config.toml
+cd
+cd .glzr/glazewm/
+ls
+cd Github\arch-almagest\
+ls
