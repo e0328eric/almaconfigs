@@ -33,8 +33,9 @@ style = "Italic"
 weight = 800
 
 [window]
-opacity = 0.7
+opacity = 0.75
 decorations = "Disabled"
+# decorations = "Enabled"
 blur = true
 
 [developer]
@@ -42,7 +43,7 @@ log-level = "WARN"
 enable-log-file = true
 
 [renderer]
-backend = "GL"
+backend = "Vulkan"
 
 [shell]
 program = "powershell.exe"

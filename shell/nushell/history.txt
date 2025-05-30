@@ -2046,3 +2046,59 @@ rm lilpa_background.jpg
 v config.toml
 ls
 v config.toml
+lg
+cd
+ls
+cd Github\musik\
+ls
+mv  'メズマライザー ⧸ 初音ミク・重音テトSV [19y8YTbvri8].webm' mesmerizer.webm
+zig build run -- mesmerizer.webm
+ffmpeg -i mesmerizer.webm mesmerizer.wav
+ls
+zig build run -- mesmerizer.wav
+ls
+v src\main.zig
+cd
+ls
+cd Test\learn_lean\
+s
+ls
+cd LearnLean\Basic_Algebraic.lean
+v LearnLean\Basic_Algebraic.lean
+ls
+hexyl
+cargo install hexyl --lock
+cargo install hexyl --locked
+ls
+hexyl LearnLean\Basic_Algebraic.lean
+bat LearnLean\Basic_Algebraic.lean
+v LearnLean\Basic_Algebraic.lean
+ls
+touch .icedriveignore
+s
+cd ..
+mv learn_lean ~/Icedrive/Computer/learn_lean
+cd
+cd Icedrive\Computer\learn_lean\
+ls
+mv .icedriveignore .lake
+ls
+cd .git\
+touch .icedriveignore
+cd ..
+ls
+rm -rp .git .gitignore
+ls
+rm -rp .github\
+ls
+cd Github\arch-almagest\terminals\rio\
+v config.toml
+ls
+v config.toml
+cd Github\arch-almagest\terminals\rio\
+ls
+v config.toml
+cd Icedrive\Computer\learn_lean\
+ls
+cd Github\arch-almagest\terminals\rio\
+v config.toml

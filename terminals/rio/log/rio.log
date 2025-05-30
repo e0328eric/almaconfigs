@@ -1,3 +1,10 @@
-2025-05-30T06:22:18.140801Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
-2025-05-30T06:22:18.152237Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
-2025-05-30T06:22:19.995578Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 699
+2025-05-30T13:07:36.834208Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
+2025-05-30T13:07:36.843767Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
+2025-05-30T13:07:39.094892Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 699
+2025-05-30T13:08:31.205261Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''I''c''e''d''r''i''v''e''\\''C''o''m''p''u''t''e''r''\\''l''e''a''r''n''_''l''e''a''n'],] at line 699
+2025-05-30T13:08:31.779271Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''I''c''e''d''r''i''v''e''\\''C''o''m''p''u''t''e''r''\\''l''e''a''r''n''_''l''e''a''n'],] at line 699
+2025-05-30T13:08:34.120654Z  WARN rio-backend\src\performer\handler.rs:1122: [csi_dispatch] params=[4;2], intermediates=[62], should_ignore=false, action='m'
+2025-05-30T13:26:21.861790Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 699
+2025-05-30T13:26:24.895376Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''G''i''t''h''u''b''\\''a''r''c''h''-''a''l''m''a''g''e''s''t''\\''t''e''r''m''i''n''a''l''s''\\''r''i''o'],] at line 699
+2025-05-30T13:26:26.273253Z  WARN rio-backend\src\performer\handler.rs:1122: [csi_dispatch] params=[4;2], intermediates=[62], should_ignore=false, action='m'
+2025-05-30T13:26:33.362883Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''G''i''t''h''u''b''\\''a''r''c''h''-''a''l''m''a''g''e''s''t''\\''t''e''r''m''i''n''a''l''s''\\''r''i''o'],] at line 699
