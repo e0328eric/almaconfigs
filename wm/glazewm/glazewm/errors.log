@@ -207,3 +207,6 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-05-26T00:29:42.119062Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-05-26T00:29:43.234260Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-05-26T00:29:43.768825Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-30T05:37:56.888712Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'rio'.
+
+Error: The operation was canceled by the user. (0x800704C7)

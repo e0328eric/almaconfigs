@@ -9,28 +9,40 @@ args = []
 # Fonts
 [fonts]
 size = 13
-# extras = [{ family = "Microsoft JhengHei" }]
+extras = [{ family = "D2CodingLigature Nerd Font Mono" }]
 # features = ["ss02", "ss03", "ss05", "ss19"]
 
 [fonts.regular]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Normal"
 weight = 400
 
 [fonts.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Normal"
 weight = 800
 
 [fonts.italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Italic"
 weight = 400
 
 [fonts.bold-italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "Italic"
 weight = 800
+
+[window]
+opacity = 0.7
+decorations = "Disabled"
+blur = true
+
+[developer]
+log-level = "WARN"
+enable-log-file = true
+
+[renderer]
+backend = "GL"
 
 [shell]
 program = "powershell.exe"
@@ -45,31 +57,3 @@ linux.shell.program = "/bin/fish"
 macos.shell.program = "/bin/fish"
 linux.working-dir = "~"
 macos.working-dir = "~"
-
-[bindings]
-keys = [
-  # remove default keybindings
-  { key = "t", with = "control | shift", action = "none" },
-  { key = "w", with = "control | shift", action = "none" },
-  { key = "1", with = "control | shift", action = "none" },
-  { key = "2", with = "control | shift", action = "none" },
-  { key = "3", with = "control | shift", action = "none" },
-  { key = "4", with = "control | shift", action = "none" },
-  { key = "5", with = "control | shift", action = "none" },
-  { key = "6", with = "control | shift", action = "none" },
-  { key = "7", with = "control | shift", action = "none" },
-  { key = "8", with = "control | shift", action = "none" },
-  { key = "9", with = "control | shift", action = "none" },
-  # remap keys
-  { key = "t", with = "control | alt", action = "CreateTab" },
-  { key = "w", with = "control | alt", action = "CloseSplitOrTab" },
-  { key = "1", with = "control | alt", action = "SelectTab(1)" },
-  { key = "2", with = "control | alt", action = "SelectTab(2)" },
-  { key = "3", with = "control | alt", action = "SelectTab(3)" },
-  { key = "4", with = "control | alt", action = "SelectTab(4)" },
-  { key = "5", with = "control | alt", action = "SelectTab(5)" },
-  { key = "6", with = "control | alt", action = "SelectTab(6)" },
-  { key = "7", with = "control | alt", action = "SelectTab(7)" },
-  { key = "8", with = "control | alt", action = "SelectTab(8)" },
-  { key = "9", with = "control | alt", action = "SelectTab(9)" },
-]
