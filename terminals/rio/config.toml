@@ -43,7 +43,7 @@ log-level = "WARN"
 enable-log-file = true
 
 [renderer]
-backend = "Vulkan"
+backend = "GL"
 
 [shell]
 program = "powershell.exe"

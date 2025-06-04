@@ -19,8 +19,9 @@ local launch_menu = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
+	"FiraCode Nerd Font Mono",
+	"D2CodingLigature Nerd Font Mono",
 	"JetBrainsMono Nerd Font Mono",
-	--"FiraCode Nerd Font",
 })
 
 config.font_size = 10

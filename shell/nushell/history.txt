@@ -2102,3 +2102,649 @@ cd Icedrive\Computer\learn_lean\
 ls
 cd Github\arch-almagest\terminals\rio\
 v config.toml
+lg
+v LearnLean\Basic_Algebraic.lean
+cd Github\arch-almagest\terminals\rio\
+v config.toml
+teachingf 
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+rm tf5.ves~
+ls
+vesti compile tf5.ves
+start tf5.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+v tf5.ves
+vesti compile -WE tf5.ves
+cd Test\
+ls
+ls fooo
+cd fooo
+ls
+v main.c
+ls
+wget https://github.com/nicbarker/clay/raw/refs/heads/main/clay.h
+curl -O --location https://github.com/nicbarker/clay/raw/refs/heads/main/clay.h
+ls
+cl main.c /I.
+zig cc main.c -I.
+cd Test\fooo\
+ls
+zig cc main.c -I.
+v main.c
+rm main.c
+v main.c
+ls
+v main.c
+mv main.c
+mv main.c foo.c
+v main.c
+v foo.c
+cd 
+ls
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+pwd | pbcopy
+C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+start tf5.pdf
+vesti compile -WE tf5.ves
+v tf5.ves
+curl -O --location https://krid.myani.app/50528701-0f29-4d69-892f-7fc011548c19
+ls
+v 50528701-0f29-4d69-892f-7fc011548c19
+rm 50528701-0f29-4d69-892f-7fc011548c19
+v tf5.ves
+teachingf 
+ls
+cd 2025-1\Analysis1_Kim_Prof\
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+start tf5.pdf
+v tf5.ves
+vesti compile -WE tf5.ves
+dotnet.exe 
+dotnet.exe -h
+ilasm.exe 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+start tf5.pdf
+vesti compile -WE tf5.ves
+cd ../..
+ls
+cd ..
+ls
+cd Homework\
+ls
+cd Manifold\
+ls
+pwd | pbcopy
+v tf5.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+ls
+rm homework4.ves~ midterm.ves~
+ls
+cp homework1.ves homework4.ves
+ls
+vesti compile homework4.ves
+ls
+start homework4.pdf
+v homework4.ves
+vesti compile -WE homework4.ves
+cd Github\vesti\
+ls
+v src\compile.zig
+cd
+ls
+cd Test\
+ls
+cd
+cd Github\
+ls
+mv ~/Icedrive/Computer/learn_lean .
+ls
+cd learn_lean\
+lsw
+ls
+v .gitignore
+ls
+git init
+git branch -M main
+git remote add origin https://github.com/e0328eric/lean4-learn.git
+lf
+lg
+ls
+v .vesti-dummy\stdout.txt
+ls
+start homework3.pdf
+start midterm.pdf
+v .vesti-dummy\stdout.txt
+v homework4.ves
+cd Test
+ls
+ilasm main.exe
+ildasm main.exe
+ildasm main.obj
+ls fooo\
+rm  main.c main.exe main.obj
+mkdir musik_cs
+cd musik_cs\
+mv ../*.wav .
+ls
+v main.cs
+csc.exe main.cs
+ls
+./main.exe
+ildasm main.exe
+ildasm /h
+ildasm /OUT=main.il
+ildasm main.exe /OUT=main.il
+ls
+v main.il
+ls
+./main.exe
+v main.cs
+cd $env.
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+v after\plugin\lsp.lua
+v main.cs
+ls
+cd ..
+s
+rm -rp musik_cs\
+rm -rp musik_cs
+ls
+rm -r musik_cs
+start .
+cd fooo\
+ls
+cd ~
+ls
+cd Github\
+ls
+cd vesti\
+ls
+cd ..
+ls
+cd musik\
+s
+zig build run -- mesmerizer.wav
+v src\main.zig
+zig build run -- mesmerizer.wav
+v src\main.zig
+zig build run -- mesmerizer.wav
+v src\main.zig
+zig build run -- mesmerizer.wav
+v src\main.zig
+ls
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+zig build run -- MEMORY.wav
+v src\main.zig\
+v src\main.zig
+zig build run -- MEMORY.wav
+ls
+s
+ls
+zig build run -- MEMORY.wav
+ls
+v build.zig.zon
+ls
+v src\main.zig
+ls
+cd Github\musik\
+ls
+zig build
+zig build run
+sl
+ls
+zig build run
+v src\terminal\windows.zig
+ls
+ls
+rm build.zig build.zig.zon
+ls
+rm mesmerizer.webm
+ls
+rm -rp zig-out\
+rm -rp .zig-cache\
+s
+v src\build.xc
+v src\build.c
+ls
+cd src
+s
+ls
+cd Github\musik\
+ls
+ls src
+v build.c
+cd src
+s
+mv Terminal.c terminal.c
+ls
+cd ..
+s
+mv include\musik.h src
+mv include thirdparty
+ls
+cd thirdparty\
+ls
+cd ..
+s
+v .gitmodules
+lg
+ls
+v src\terminal\windows.zig
+v terminal\term_windows.c
+ls
+cd ..
+ls
+cl src/build.c /I./src
+v src/terminal/term_windows.c
+cl src/build.c /I./src
+v src/terminal/term_windows.c
+cl src/build.c /I./src
+v src/terminal/term_windows.c
+cl src/build.c /I./src
+v src/terminal/term_windows.c
+cl src/build.c /I./src
+v src\terminal\term_windows.c
+zig build run
+v src\terminal\term_windows.c
+cl src/build.c /I./src
+cl src/build.c /I./src /I./thirdparty
+ls thirdparty\
+cl src/build.c /I./src /I./thirdparty/miniaudio
+ls
+rm build.exe
+rm build.obj
+cd src
+s
+mv musik.c music_player.c
+mv musik.h music_player.h
+ls
+v music_player.c
+la
+ls
+mv build.c musik.c
+s
+rm main.zig
+ls
+v terminal\term_windows.c
+ls
+cd ..
+ls
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+v terminal\term_windows.c
+v src/terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+ls
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./main.exe
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+v src\terminal\term_windows.c
+ls
+v .gitignore
+lg
+v .gitmodules
+lg
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+v README.md
+./musik.exe
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty/miniaudio
+./musik.exe
+ls
+./musik.exe
+ls
+cd src\terminal\posix.c
+cd src\terminal
+ls
+rm windows.zig
+cd ..
+s
+cd ..
+lg
+ls
+lg
+git status
+git submodule update --init --recursive --remote
+lg
+ls
+v homework4.ves
+vesti compile -WE homework4.ves
+winget search hwmonitor
+winget install hwmonitor
+ls
+teachingf 
+s
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+;s
+start tf5.pdf
+cd Github\musik\
+s
+./musik.exe
+ls
+./
+./musik.exe
+v src\main.c
+cd Github\musik\
+ls
+cd thirdparty\
+curl -O --location https://github.com/e0328eric/clparse/raw/refs/heads/main/clparse.h
+ls
+mv miniaudio\miniaudio.h .
+rm -rp miniaudio\
+cd ..
+ls
+rm .gitmodules
+git rm --cached thirdparty\miniaudio
+lg
+ls
+cd thirdparty\
+ls
+v miniaudio.h
+l
+ls
+cd ..
+s
+cl src/musik.c /I./src /I./thirdparty
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe
+./musik.exe asdsad wjsakw
+./musik.exe asdsad
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe asdsad
+v src\main.c
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe asdsad
+./musik.exe asdsad adasd
+./musik.exe asdsad adasdqiwks
+./musik.exe asdsad ada sdqi wks
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe asdsad ada sdqi wks
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe asdsad ada sdqi wks
+v src\main.c
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe
+./musik.exe asdsad ada sdqi wks
+v src\main.c
+cd Github\musik\
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+sl
+ls
+homework
+ls
+cd Manifold\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+ls
+start homework4.pdf
+./musik.exe MEMORY.wav
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+lg
+./musik.exe MEMORY.wav
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cd Github\musik\
+ls
+v thirdparty\miniaudio.h
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+./musik.exe
+v src\music_player.c
+v src\main.c
+ls
+lg
+./musik.exe misty_rainbow.wav --loop
+./musik.exe MEMORY.wav --loop
+vesti compile -WE homework4.ves
+cd Github\musik\
+ls
+yt-dlp -f ba https://youtu.be/q26OmWO8ccg?si=1Az44CavP3czpCVx
+ls
+ffmpeg -i '【maimai でらっくす】系ぎて ⧸ rintaro soma【2⧸29(木)登場！】 [q26OmWO8ccg].webm' 系ぎて.wav
+ls
+rm '【maimai でらっくす】系ぎて ⧸ rintaro soma【2⧸29(木)登場！】 [q26OmWO8ccg].webm'
+ls
+./musik.exe 系ぎて.wav
+mv 系ぎて.wav foo.wav
+./musik.exe foo.wav
+ls
+v src\main.c
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+v after\plugin\lsp.lua
+cd
+ls
+cd Github\learn_lean\
+ls
+v LearnLean\Basic_More.lean
+shutdown /s /t 0
+homework
+ls
+cd Manifold\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+start homework4.pdf
+cd Github\musik\
+ls
+./musik.exe MEMORY.wav --loop
+v homework4.ves
+shutdown /s /t 0
+homework
+cd Manifold\
+ls
+start homework4.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+v homework4.ves
+cd
+ls
+cd Github\
+cd musik\
+ls
+./musik.exe MEMORY.wav --loop
+v src\main.c
+cl src/musik.c /I./src /I./thirdparty
+v src\terminal.h
+cl src/musik.c /I./src /I./thirdparty
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+./musik.exe MEMORY.wav --loop
+v src\render.c
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cd Github\musik\
+ls
+./musik.exe MEMORY.wav --loop
+v src\render.c
+./musik.exe MEMORY.wav --loop
+cl src/musik.c /I./src /I./thirdparty
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+cd Github\musik\
+./musik.exe MEMORY.wav --loop
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+cd Github\musik\
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+cd Github\musik\
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+./musik.exe MEMORY.wav --loop
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav --loop
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+winget install alacritty
+cd Github\musik\
+./musik.exe MEMORY.wav
+v src\terminal\term_windows.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\terminal\term_windows.c
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+ls
+cd thirdparty\
+ls
+curl -O --location https://github.com/e0328eric/dynString/raw/refs/heads/main/dynString.h
+cd ..
+ls
+v src\terminal.h
+ls
+cd $env.LOCALAPPDATA
+ls
+cd $env.APPDATA
+ls
+cd
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd
+cd Github\arch-almagest\terminals\alacritty\
+ls
+v alacritty.toml
+v settings\general.toml
+cd ..
+ls
+v warp\
+v alacritty\alacritty.toml
+ls
+cd alacritty\
+ls
+v settings\general.toml
+cd
+cd .glzr/glazewm/
+v config.yaml
+winget install wezterm
+winget search wezterm
+winget install wezterm
+ls
+cd .config\wezterm
+ls
+cd
+cd Github\arch-almagest\terminals\rio\
+ls
+v wezterm.lua

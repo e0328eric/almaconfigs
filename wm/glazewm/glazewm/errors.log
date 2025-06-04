@@ -210,3 +210,22 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-05-30T05:37:56.888712Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'rio'.
 
 Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-06-01T02:54:06.542582Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-02T02:48:55.708436Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-06-02T05:20:43.256370Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:45.647990Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:46.306262Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:46.753127Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:48.403114Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:49.070041Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:50.977044Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:52.081601Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:52.366342Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:52.712566Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:53.179459Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:53.600935Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T05:20:53.910722Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T06:19:36.857103Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m The handle is invalid. (0x80070006)
+[2m2025-06-02T07:26:16.297464Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-02T08:45:55.415591Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-03T12:40:21.831679Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
