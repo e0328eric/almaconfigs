@@ -24,19 +24,11 @@
     [
         {
             "id": null,
-            "keys": "alt+shift+plus"
-        },
-        {
-            "id": null,
             "keys": "ctrl+shift+4"
         },
         {
-            "id": "User.newTab.663EF760",
-            "keys": "ctrl+alt+shift+6"
-        },
-        {
             "id": null,
-            "keys": "alt+shift+minus"
+            "keys": "alt+shift+plus"
         },
         {
             "id": null,
@@ -44,11 +36,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+2"
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": "User.newTab.663EF760",
+            "keys": "ctrl+alt+shift+6"
         },
         {
             "id": null,
             "keys": "ctrl+shift+5"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+2"
         },
         {
             "id": null,
@@ -158,7 +158,7 @@
             "font": 
             {
                 "face": "JetBrainsMono Nerd Font Mono",
-                "size": 11
+                "size": 10
             },
             "opacity": 85
         },

@@ -2748,3 +2748,593 @@ cd
 cd Github\arch-almagest\terminals\rio\
 ls
 v wezterm.lua
+v config.toml
+lg
+cd
+ls
+winget uninstall wezterm
+homework
+ls
+cd Manifold\
+ls
+cd 
+cd .config\wezterm
+pwd | pbcopy
+start homework4.pdf
+cd 
+cd Github\musik\
+ls
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty\
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+v src\render.h
+v src\music_player.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+lg
+ls
+vesti compile -WE homework4.ves
+cd Github\musik\
+ls
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+v src\render.c
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe MEMORY.wav
+./musik.exe foo.wav
+cd thirdparty\
+ls
+1ls
+ls
+cd ..
+ls
+rm musik.exe musik.obj
+ls
+zig init
+ls
+cd src\
+ls
+rm root.zig
+cd ..
+ls
+v build.zig.zon
+ls
+v build.zig
+ls
+cd src
+ls
+v music_player.zig
+cd ..
+ls
+zig build
+v build.zig
+ls
+zig build
+homework
+ls
+cd Manifold\
+start homework4.pdf
+v src\main,.c
+v src\main.c
+cd 
+cd Test\
+ls
+v main.c
+cl main.c
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+./main.exe asdsad
+./main.exe asdsad asasd
+./main.exe asdsad asasdc a a a 
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+v homework4.ves
+vesti compile -WE homework4.ves
+winget search mupdf
+cd Github\musik\
+ls
+v src\main.zig
+ls
+v build.zig.zon
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+ls
+v src\main.zig
+zig build run
+v .zig-cache\o\bcaeaf9b90e290fac5b0f94632d8d05a\cimport.zig
+cd src\
+ls
+rm musik.c
+mv music_player.c Musik_raw.c
+mv music_player.h Musik_raw.h
+v src\Musik.zig
+zig build 
+v src\Musik.zig
+zig build 
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\main.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+v main.zig
+zig build run
+v src\main.zig
+v ../build.zig
+ls
+ls
+teachingf 
+ls
+cd 2025-1\
+ls
+mkdir ODE
+cd ODE\
+ls
+mv ../Analysis1_Kim_Prof/additional_1.ves ode.ves
+vesti compile ode.ves
+start ode.pdf
+cd Test\
+ls
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+cd 
+cd Github\vesti\
+ls
+v src\parser\Parser.zig
+ls
+v build.zig.zon
+v main.c
+cl main.c
+v main.c
+cl main.c
+v main.c
+ls
+v foo.h
+ls
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+ls
+v ode.ves
+vesti compile -WE ode.ves
+cd Github\learn_lean\
+ls
+v LearnLean\Basic_More.lean
+cd
+cd Github\musik\
+ls
+exit
+v src\main.zig
+ls
+cd .glzr/glazewm/
+v config.yaml
+cd
+ls
+tlmgr upgrade --all
+winget install alacritty
+cd $env.APPDATA
+ls
+cd ..
+cd Local\
+ls
+cd ..
+cd Roaming\
+cd alacritty
+ls
+v alacritty.toml
+winget install rio
+winget install raphamorim.rio
+tlmgr update --all
+ls
+cd Github\musik\
+ls
+v src\main.zig
+v src\Musik.zig
+teachingf 
+ls
+cd 2025-1\
+ls
+cd ODE\
+ls
+start ode.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\ODE
+ls
+v ode.ves\\
+v ode.ves
+vesti compile -WE ode.ves
+ls
+cd Github\musik\
+ls
+cd Github\musik\
+zig build run
+v build.zig
+zig build run
+v build.zig.zon
+v build.zig
+zig build run
+zig build run -- MEMORY.wav
+ls
+zig build run -- -L MEMORY.wav
+ls
+v src\Musik.zig
+cd Github\musik\
+ls
+zig build run -- -L MEMORY.wav
+ls
+cd ..
+ls
+cd learn_lean\
+ls
+cd LearnLean\Basic_Algebraic.lean
+v LearnLean\Basic_More.lean
+lake build
+cd Github\musik\
+ls
+v src\Terminal.zig
+v src\terminal\windows.zig
+cd ..
+ls
+mv musik\*.wav .
+ls
+rm -rp musik\
+git clone --depth 1 --recursive https://github.com/e0328eric/musik.git
+mv *.wav ./musik
+cd musik\
+ls
+cl src/musik.c /I./src /I./thirdparty
+./musik.exe foo.wav
+v src\render.c
+ls
+cl /?
+cl src/musik.c /I./src /I./thirdparty /W
+cl src/musik.c /I./src /I./thirdparty /W4
+v README.md
+ls
+curl -O --location https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+ls
+v nob.c
+ls
+rm musik.exe musik.obj
+ls
+cl nob.c
+v nob.c
+cl nob.c
+hexyl nob.c
+v nob.c
+hexyl nob.c
+cl nob.c
+v nob.c
+ls
+rm nob.c
+v nob.c
+cl nob.c
+v nob.c
+cl nob.c
+v nob.c
+cl nob.c
+v nob.c
+ls
+mv nob.c nob_old.c
+v nob.c
+rm nob_old.c
+cl nob.c
+zig cc nob.c
+v nob.c
+cl nob.c
+ls
+./nob.exe\
+./nob.exe
+ls
+ls build\
+v .gitignore
+lg
+v .gitignore
+lg
+ls
+./build/musik.exe
+./build/musik.exe mesmerizer.wav
+ls
+cl /?
+shutdown /s /t 0
+cd Github\musik\
+s
+./build/musik.exe mesmerizer.wav
+cd
+ls
+cd $env.APPDATA
+cd ..
+ls
+cd Local\
+cd rio
+ls
+v config.toml
+cd
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd Github\musik\
+ls
+./build/musik.exe mesmerizer.wav
+ls
+rm nob.c nob.exe nob.h
+ls
+cd thirdparty\
+ls
+rm clparse.h dynString.h
+cd ..
+ls
+zig init
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+s
+v build.zig.zon
+ls
+v build.zig
+ls
+cd src\
+s
+v miniaudio.c
+ls
+rm root.zig
+ls
+cd ..
+ls
+v build.zig
+ls
+v .gitignore
+ls
+lg
+minireport 
+cd ..
+ls
+cd Solutions\
+ls
+cd Folland_Solution\
+ls
+start Folland.pdf
+pwd | pbcopy
+cd C:\Users\almag\Icedrive\TeX_Documents\Solutions\Folland_Solution\
+autotex
+cargo install autotex --locked
+autotex
+autotex -h
+autotex -cl Folland.tex
+cd C:\texlive\texmf-local\
+ls
+cd tex\plain\
+ls
+cd local\
+ls
+cp ~/Icedrive/TeX_Documents/Solutions/Solution_Template/soltem.tex .
+mktexlsr
+ls
+v Chapter\ch6.tex
+autotex -cl Folland.tex
+cd Github\musik\
+ls
+./build/musik.exe MEMORY.wav --loop
+ls
+minireport 
+ls
+cd ..
+cd Solutions\
+ls
+cd Folland_Solution\
+pwd | pbcopy
+cd Folland_Solution\
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Folland_Solution
+ls
+./build/musik.exe MEMORY.wav --loop
+autotex -cl Folland.tex
+v src\Musik.zig
+cd ..
+ls
+mv musik musik_zigf
+mv musik musik_zig
+cd Github\
+ls
+mv musik musik_zig
+ls
+git clone --depth 1 --recursive https://github.com/e0328eric/musik.git
+cd musik\
+ls
+v src\walkdir.c
+cd ..
+ls
+cd musik_zig\
+ls
+v src\terminal\windows.zig
+ls
+cd src\terminal\
+ls
+rm term_windows.c
+cd ..
+ls
+rm terminal.c terminal.h
+ls
+rm utility.c utility.h
+ls
+cd Github\musik\
+ls
+cd ..
+ls
+rm -rp musik\
+mv musik_zig musik
+cd musik
+ls
+zig fetch --save git+https://github.com/rockorager/libvaxis.git
+v build.zig
+lsd
+ls
+cd Github\musik\
+ls
+zig build run
+cd Github\musik\
+zig build run
+ls
+v build.zig.zon
+v build.zig
+ls
+v src\main.zig
+ls
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run\
+zig build run
+cd zig-out\bin\
+./musik.exe
+cd ../..
+./zig-out/bin/musik.exe
+v src\main.zig
+zig build run
+cd Github\musik\
+zig build run
+v src\main.zig
+cd
+cd .glzr/glazewm/
+ls
+v config.yaml
+ls
+cd Github\musik\
+zig build run
+v src\main.zig
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\main.zig
+v src\Musik.zig
+zig build run
+v src\Musik.zig\
+v src\Musik.zig
+v src\Musik.zig\
+zig build run
+v src\Musik.zig
+zig build run
+v src\Musik.zig
+zig build run
+v src\main.zig
+zig build run
+mv foo.wav 系ぎて.wav
+v src\main.zig
+zig build run
+$ zig fetch --save https://github.com/e0328eric/zlap/archive/refs/tags/v0.6.1.tar.gz
+zig fetch --save https://github.com/e0328eric/zlap/archive/refs/tags/v0.6.1.tar.gz
+v src\commands.zlap
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+zig build run -- -h
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+v src\main.zig
+zig build run -- 系ぎて.wav
+zig build run -- MEMORY.wav
+lg
+v src\
+lg
+v src\main.zig
+cd Github\musik\
+zig build run -- MEMORY.wav
+cd Github\musik\
+zig build run -- MEMORY.wav
+cd Github\
+cd arch-almagest\
