@@ -3338,3 +3338,50 @@ cd Github\musik\
 zig build run -- MEMORY.wav
 cd Github\
 cd arch-almagest\
+lg
+cd $env.LOCALAPPDATA
+cd rio
+ls
+cd themes\
+ls
+cd .glzr/glazewm/
+lz
+v config.yaml
+ls
+cd Github\learn_lean\
+ls
+v LearnLean\Strange_Ring.lean
+lake 
+lake serve
+ls
+cd .lake
+ls
+cd packages\
+ls
+cd ../..
+ls
+lake
+lake update
+v LearnLean\Strange_Ring.lean
+cd
+teachingf 
+ls
+cd 2025-1\
+ls
+mkdir Real_Analysis
+cd Real_Analysis\
+ls
+minireport 
+ls
+cd ..
+cd Solutions\Folland_Solution\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Real_Analysis
+ls
+v real.tex
+ls
+rm real.tex
+v real.ves
+cd Github\arch-almagest\
+ls

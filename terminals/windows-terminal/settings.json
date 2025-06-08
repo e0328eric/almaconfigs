@@ -24,19 +24,11 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+4"
-        },
-        {
-            "id": null,
             "keys": "alt+shift+plus"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+1"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+minus"
+            "keys": "ctrl+shift+4"
         },
         {
             "id": "User.newTab.663EF760",
@@ -44,11 +36,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+5"
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+1"
         },
         {
             "id": null,
             "keys": "ctrl+shift+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+5"
         },
         {
             "id": null,
@@ -153,7 +153,7 @@
     {
         "defaults": 
         {
-            "colorScheme": "One Half Dark",
+            "colorScheme": "Hardcore",
             "cursorShape": "filledBox",
             "font": 
             {
@@ -227,7 +227,32 @@
             }
         ]
     },
-    "schemes": [],
+    "schemes": 
+    [
+        {
+            "background": "#121212",
+            "black": "#1B1D1E",
+            "blue": "#66D9EF",
+            "brightBlack": "#505354",
+            "brightBlue": "#66D9EF",
+            "brightCyan": "#A3BABF",
+            "brightGreen": "#BEED5F",
+            "brightPurple": "#9E6FFE",
+            "brightRed": "#FF669D",
+            "brightWhite": "#F8F8F2",
+            "brightYellow": "#E6DB74",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#5E7175",
+            "foreground": "#A0A0A0",
+            "green": "#A6E22E",
+            "name": "Hardcore",
+            "purple": "#9E6FFE",
+            "red": "#F92672",
+            "selectionBackground": "#453B39",
+            "white": "#CCCCC6",
+            "yellow": "#FD971F"
+        }
+    ],
     "showTabsInTitlebar": false,
     "themes": []
 }
