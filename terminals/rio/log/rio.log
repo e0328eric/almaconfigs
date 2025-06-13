@@ -1,9 +1,4 @@
-2025-06-07T02:14:04.632520Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
-2025-06-07T02:14:04.646676Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
-2025-06-07T02:14:05.135174Z  WARN rio-backend\src\performer\handler.rs:1098: [csi_dispatch] params=[1], intermediates=[], should_ignore=false, action='t'
-2025-06-07T02:14:07.693442Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 699
-2025-06-07T02:14:10.462611Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''G''i''t''h''u''b''\\''m''u''s''i''k'],] at line 699
-2025-06-07T02:14:14.126045Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['6''6'],['w''=''1'],[' '],] at line 699
-2025-06-07T02:14:14.160691Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['6''6'],['s''=''2'],[' '],] at line 699
-2025-06-07T02:14:14.161169Z  WARN rio-backend\src\performer\handler.rs:1122: [csi_dispatch] params=[0], intermediates=[62], should_ignore=false, action='q'
-2025-06-07T02:14:18.302963Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g''\\''G''i''t''h''u''b''\\''m''u''s''i''k'],] at line 699
+2025-06-12T07:37:19.966148Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
+2025-06-12T07:37:20.015902Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
+2025-06-12T07:37:20.710864Z  WARN rio-backend\src\performer\handler.rs:1098: [csi_dispatch] params=[1], intermediates=[], should_ignore=false, action='t'
+2025-06-12T07:37:22.994189Z  WARN rio-backend\src\performer\handler.rs:699: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 699

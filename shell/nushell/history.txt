@@ -3385,3 +3385,1751 @@ rm real.tex
 v real.ves
 cd Github\arch-almagest\
 ls
+lg
+cd ..
+ls
+v
+ls
+cd ..
+ls
+cd Github\musik\
+cd Github\musik\
+zig build run -- MEMORY.wav
+zig build run -- MEMORY.wav
+v $env.LOCALAPPDATA
+cd $env.LOCALAPPDATA
+ls
+cd rio
+ls
+v config.toml
+cd Github\musik\
+zig build run -- MEMORY.wav
+cd
+cd .glzr/glazewm/
+v config.yaml
+ls
+v src\commands.zlap
+zig build run -- MEMORY.wav -L
+ls
+v src\main.zig
+cd .local
+ls
+git clone --depth 1 --recursive https://github.com/ghostty-org/ghostty.git
+which fasm
+winget uninstall fasm
+ls
+mkdir fasm2
+mv fasm2.zip fasm2
+cd fasm2\
+unzip fasm2.zip
+ls
+rm fasm2.zip
+ls
+file fasm2
+v fasm2
+cd source\
+ls
+cd windows\
+ls
+v fasmg.asm
+cd ../..
+ls
+cd ..
+ls
+mkdir fasm
+cd fasm
+mv ../fasmw17332.zip .
+unzip fasmw17332.zip
+ls
+rm fasmw17332.zip
+ls
+start FASM.pdf
+cp FASM.pdf ~/Icedrive/Computer/fasm.pdf
+ls
+cd ..
+ls
+cd
+ls
+cd Github\
+ls
+mkdir ln
+cd ln\
+zig init
+cd src
+ls
+rm root.zig
+cd ..
+ls
+zig fetch --save https://github.com/e0328eric/zlap/archive/refs/tags/v0.6.1.tar.gz
+v build.zig.zon
+v src\main.zig
+ls
+cd
+ls
+cd Github\ln\
+ls
+v src\main.zig
+cd
+ls
+cd .local
+ls
+cd ghostty\
+zig build -Doptimize=ReleaseSafe
+cd ..
+ls
+rm -rp ghostty\
+v src\commands.zlap
+ls
+v build.zig
+zig build run -- C:\Users\almag\Github .
+v src\main.zig
+zig build run -- C:\Users\almag\Github .
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd .local\
+ls
+cd bin
+ls
+rm zig.exe
+ln ../zig/zig.exe .
+ln ../zig/zig.exe ./zig.exe
+ls
+ln ./zig.exce ../zig/zig.exe
+cd ..
+ls
+cd zig
+ls
+cd ..
+s
+cd bin\
+s
+cd
+cd Github\ln\
+~/.local/zig/zig.exe build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+cd
+cd .local
+cd bin
+ln ../zig/zig.exe ./zig.exe
+ls
+rm ln.exe
+rm ln.pdb
+cd
+ls
+cd Github\
+ls
+rm -rp ln
+ls
+mkdir ln
+ls
+cd ln
+ls
+cd ..
+ls
+cd arch-almagest\
+ls
+cd script\
+s
+mv ln.c ln.cc
+v ln.cc
+mv ln.cc ln.c
+ls
+v ln.c
+rm ln.c
+ls
+v ln.rs
+ls
+v ln.cc
+ls
+cl /std:c++17 ln.cc
+lds
+ls
+mv ln.exe ~/.local/bin
+cd
+ls
+cd .local\bin
+s
+ln ../zig/zig.exe ./zig.exe
+ls
+cd
+cd Github\arch-almagest\script\
+ls
+ln ../zig/zig.exe ./zig.exe
+v ln.cc
+cl /std:c++17 ln.cc
+mv ln.exe ~/.local/bin
+ls
+zig version
+cd ..
+s
+cd bin\
+ls
+rm zig.exe
+cd ..
+ls
+mv zig zig-lts
+zigup
+ls
+unzip zig-compiler.zip
+ls
+rm zig-compiler.zip
+s
+mv zig-x86_64-windows-0.15.0-dev.736+b6d904624 zig
+ls
+cd bin
+s
+ln ../zig/zig.exe ./zig.exe
+ln ../zig-lts//zig.exe ./zig-lts.exe
+ls
+ls
+cd Github\
+ls
+rm -rp ln
+ls
+cd musik\
+cd Github\musik\
+ls
+ghci
+cd .local
+ls
+cd bin
+ln ../fasm/FASM.EXE ./fasm.exe
+ln ../fasm2/fasmg.exe ./fasmg.exe
+fasm
+fasmg
+zig-lts.exe build run -- MEMORY.wav --loop
+cd ..
+ls
+mv musik musik_zig
+git clone --depth 1 --recursive https://github.com/e0328eric/musik.git
+cd musik\
+lg
+cd ..
+rm -rp musik\
+git clone --recursive https://github.com/e0328eric/musik.git
+cd musik\
+ls
+lg
+ls
+rm -rp .git
+mv ../musik_zig/.git .
+ls
+cd ..
+ls
+cd musik\
+ls
+lg
+ls
+v README.md
+ls
+v README.md
+cl nob.c
+./nob.exe
+v src\render.c
+nob
+ls
+./build/musik.exe MEMORY.wav --loop
+mv ../musik_zig/*.wav .
+lg
+./build/musik.exe MEMORY.wav --loop
+v src\music_player.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+v src\music_player.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+v src\music_player.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+cd Github\musik\
+nob
+./build/musik.exe 系ぎて.wav --loop
+v src\main.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+v src\main.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+v src\main.c
+nob
+v src\main.c
+nob
+./build/musik.exe 系ぎて.wav --loop
+v main.rs
+rustc main.rs
+v main.rs
+rustc main.rs
+./main.exe
+v main.rs
+rustc main.rs
+main.rs 系ぎて.wav
+main.exe 系ぎて.wav
+./build/musik.exe 系ぎて.wav --loop
+v main.rs
+ls
+rm main.exe main.pdb main.rs
+ls
+v src\main.c
+ls
+v src\main.c
+ls
+cd ..
+ls
+cd musik_zig\
+s
+cp ../musik/*.wav .
+ls
+zig-lts.exe build run -- MEMORY.wav --loop
+ls
+zig-lts.exe build run -- MEMORY.wav --loop
+cd //
+cd
+cd Github\musik\
+ls
+v src\
+lds
+cd ..
+ls
+cd musik_zig\
+s
+mv ../musik/.git .gitignore
+mv ../musik/.git . 
+ls
+cd ..
+ls
+mv -rp musik\
+mv -rp musik
+ls
+rm -rp musik
+v src\music_player.c
+cd ..
+ls
+mv musik_zig musik
+ls
+cd musik\
+ls
+zig build
+rm -rp .zig-cache
+zig build
+rm -rp .zig-cache
+v build.zig.zon
+ls
+v build.zig
+ls
+cd src
+s
+v Terminal.zig
+cd
+cd .local
+ls
+cd zls
+git checkout master
+git fetch --prune  master
+git fetch --prune origin  master
+git merge origin master
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+cd ..
+ㅣㄴ
+ls
+cd 
+ls
+cd Github\
+ls
+cd musik\
+ls
+rm nob.obj
+mv musik.obj
+rm musik.obj
+v src\terminal\terminal_windows.c
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig\
+v build.zig
+zig build
+v src\terminal\terminal.h
+zig build
+v src\terminal\terminal_windows.c
+zig build
+v build.zig
+zig build
+v src\Musik.zig
+zig build
+v src\main.zig
+zig build
+v build.zig
+cd
+ls
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Real_Analysis\
+ls
+v real.ves
+vesti compile real.ves
+v real.ves
+vesti compile real.ves
+start real.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Real_Analysis
+ls
+cd Github\vesti\
+ls
+v src\compile.zig
+zig build
+cd Github\vesti\
+zig build
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig version | pbcopy
+zig build
+zig build --help
+v src\Codegen.zig
+v build.zig.zon
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile real.ves
+v .vesti-dummy\real.tex
+ls
+v real.ves
+vesti compile real.ves
+v real.ves
+ls
+v build.zig.zon
+lg
+homework
+ls
+cd Manifold\
+ls
+v homework1.ves
+vesti compile -WE real.ves
+v real.ves
+teachingf
+ls
+cd 2025-1\
+ls
+cd Real_Analysis\
+start real.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Real_Analysis
+minireport 
+ls
+cd ..
+cd Solutions\
+cd Folland_Solution\
+ls
+v Folland.tex
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Folland_Solution
+ls
+v real.ves
+ls
+vesti compile -WE real.ves
+ls
+v real.tex
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Folland_Solution
+cd ..
+ls
+cd Solution_Template\
+ls
+v soltem.tex
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Folland_Solution
+cd ../Solution_Template/
+v real.ves
+teachingf
+ls
+cd 2025-1\
+ls
+cd Real_Analysis\
+s
+cd Test\
+ls
+rm  foo.h main.c main.exe main.obj
+rm -rp musik_cs\
+mkdir musik_asm
+cd musik_asm\
+ls
+cd .local\
+ls
+cd fasm\
+ls
+v EXAMPLES\HELLO\
+cd EXAMPLES\
+ls
+cd MSCOFF\
+ls
+v MSCOFF.ASM
+cd ..
+ls
+cd WIN64\
+ls
+cd PE64DEMO\
+ls
+v PE64DEMO.ASM
+cd ..
+s
+v musik.asm
+fasm musik.asm
+v DLL\MSGDEMO.ASM
+cd ../..
+ls
+ls INCLUDE\
+v musik.asm
+fasm musik.asm
+cd Test\musik_asm\
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+cd Test\musik_asm\
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+v musik.asm
+cd Test\musik_asm\
+fasm musik.asm
+s
+./musik.exe
+echo $?
+v musik.exe
+$env.LAST_EXIT_CODE
+./musik.exe
+$env.LAST_EXIT_CODE
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+./musik.exe
+cd .local\fas
+cd .local\fasm
+s
+cd INCLUDE\
+s
+v WIN64A.INC
+rg "ExitProcess" *
+v API\KERNEL32.INC
+rg "invoke" *
+c MACRO\PROC64.INC
+v MACRO\PROC64.INC
+v musik.asm
+./musik.exe
+cd ..
+s
+cd EXAMPLES\
+ls
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+v HELLO\HELLO.ASM
+cd ..
+ls
+cd SOURCE\
+ls
+cd Test\
+cd musik_asm\
+ls
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+v WIN32\FASM.ASM
+ls
+rg "displayString:" *
+v WIN32\FASM.ASM
+rg "display_string:" *
+v musik.asm
+fasm musik.asm
+cd Test\musik_asm\
+fasm
+v WIN32\SYSTEM.INC
+v WIN32\FASM.ASM
+cd ..
+ls
+cd EXAMPLES\WIN64\
+ls
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+v USECOM\USECOM.ASM
+cd
+ls
+cd Github\musik\
+ls
+v src\Musik.zig
+winget search collins
+winget search hoyo
+winget search collapse
+ls
+cd Github\
+ls
+cd musik\
+ls
+zig build run -- MEMORY.wav
+v src\terminal\terminal.zig
+v build.zig
+zig build run -- MEMORY.wav
+v src\main.zig
+teachingf
+ls
+cd 2025-1\
+ls
+cd Real_Analysis\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Real_Analysis
+ls
+start real.pdf
+winget install zen
+winget search zen
+winget install Zen-Team.Zen-Browser 
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd .glzr/glazewm/
+v config.yaml
+cd Github\vesti\
+ls
+v src\main.zig
+d
+cd
+ls
+cd Test\musik_asm\
+ls
+v musik.asm
+fasm musik.asm
+./musik.exe
+echo $env.LAST_EXIT_CODE
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+echo $env.LAST_EXIT_CODE
+v musik.asm
+fasm musik.asm
+./musik.exe
+echo $env.LAST_EXIT_CODE
+v musik.asm
+fasm musik.asm
+./musik.exe
+echo $env.LAST_EXIT_CODE
+cd .local\fasm
+ls
+cd EXAMPLES\WIN64\
+ls
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+fasm musik.asm
+./musik.exe
+v MANDEL\MANDEL.ASM
+cd ../..
+ls
+cd INCLUDE\MACRO\
+ls
+cd ..
+ls
+cd MACRO\
+ls
+v PROC64.INC
+v musik.asm
+fasm musik.asm
+./musik.exe
+v musik.asm
+cd
+cd .local\fasm
+cd EXAMPLES\WIN64\
+v DLL\MSGDEMO.ASM
+v DLL\WRITEMSG.ASM
+cd
+cd Github\
+ls
+mkdir musik_asm
+ls
+cd musik_asm\
+ls
+mkdir src
+cd .local/fasm/EXAMPLES/WIN64/DLL/MSGDEMO.ASM
+cd .local/fasm/EXAMPLES/WIN64/DLL/
+ls
+v MSGDEMO.ASM
+cd ..
+ls
+cd WIN64AVX\
+ls
+v WIN64AVX.ASM
+cd ..
+ls
+cd PE64DEMO\
+ls
+v PE64DEMO.ASM
+ls
+cd ..
+ls
+v src\windows.asm
+ls
+cd src\windows.asm
+cd src
+ls
+fasm windows.asm
+v src\windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+cd ../..
+s
+cd INCLUDE\
+rg "MessageBoxW" *
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+./musik.exe
+./windows.\
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+winget install Zen-Team.Zen-Browser 
+fasm windows.asm
+./windows.exe
+echo $env.LAST_EXIT_CODE
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v API\USER32.INC
+cd ..
+ls
+cd EXAMPLES\
+ls
+cd WIN64\USECOM\
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v USECOM.ASM
+ls
+cd ..
+ls
+cd WIN64AVX\
+ls
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.exe
+echo windows.exe | pbcopy
+v windows.exe
+cd Github\musik_asm\
+ls
+cd .local/fasm/EXAMPLES/WIN64/DLL/
+cd ..
+ls
+rg "MessageBoxW" *
+rg "MessageBox" *
+cd TEMPLATE\TEMPLATE.ASM
+v src\windows.asm
+fasm windows.asm
+fasm.exe src/windows.asm
+ls
+cd src\
+ls
+./windows.exe
+v windows.asm
+fasm.exe src/windows.asm
+fasm.exe  windows.asm
+./windows.exe
+ls
+./windows.exe
+v windows.asm
+./windows.exe
+v windows.asm
+fasm.exe windows.asm
+./windows.exe
+v windows.asm
+fasm.exe windows.asm
+./windows.exe
+v windows.asm
+v TEMPLATE\TEMPLATE.ASM
+winget search windbg
+winget install  Microsoft.WinDbg
+ls
+cd Github\musik_asm\
+ls
+cd src
+ls
+fasm windows.asm
+windbg windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+code .
+notepad .
+notepad windows.asm
+hextl windows.asm
+hexyl windows.asm
+v windows.asm
+hexyl windows.asm
+v windows.asm 
+ls
+fasm windows.asm
+v windows.asm 
+fasm windows.asm
+./windows.exe
+v windows.asm 
+ls
+hexyl windows.asm
+hexyl windows.exe
+v windows.asm 
+fasm windows.asm
+ls
+rm windows.bin
+hexyl windows.asm
+v windows.asm 
+hexyl windows.asm
+fasm windows.asm
+v windows.asm 
+fasm windows.asm
+./windows.exe
+v windows.asm
+ls
+fasm windows.asm
+./windows.exe
+cd ..
+ls
+cd INCLUDE\
+ls
+cd ENCODING\
+ls
+v windows.asm
+fasm windows.asm
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+v UTF8.INC
+v windows.asm
+fasm windows.asm
+cd ..
+ls
+ls API\
+v API/SHELL32.INC
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+./windows.exe
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+ls
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+./windows.exe asdsad
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+./windows.exe 
+echo $env.LAST_EXIT_CODE
+v windows.asm
+fasm windows.asm
+./windows.exe 
+v windows.asm
+fasm windows.asm
+./windows.exe 
+./windows.exe sljndsa daslsdsad
+v windows.asm
+fasm windows.asm
+./windows.exe sljndsa daslsdsad
+./windows.exe sljndsa
+./windows.exe
+v windows.asm
+fasm windows.asm
+./windows.exe
+./windows.exe asdasd
+v windows.asm
+fasm windows.asm
+./windows.exe asdasd
+v windows.asm
+fasm windows.asm
+./windows.exe asdasd
+./windows.exe 
+v windows.asm
+fasm windows.asm
+./windows.exe 
+./windows.exe  asdasd
+cd Github\musik_asm\
+ls
+v src\windows.asm
+fasm windows.asm
+cd src\
+fasm windows.asm
+./windows.exe  asdasd
+./windows.exe asdasd
+v windows.asm
+fasm windows.asm
+which windbg
+WinDbgX.exe 
+WinDbgX.exe ./windows.exe asdasd
+fasm windows.asm
+./windows.exe asdasd
+WinDbgX.exe ./windows.exe asdasd
+v windows.asm
+fasm windows.asm
+windbgx windows.exe asdsadas
+v windows.asm
+fasm windows.asm
+cd Github\musik_asm\
+v src\windows.asm
+cd Test\
+ls
+v main.c
+cl main.c
+cl main.c shell32.dll
+cl main.c shell32.lib
+./ main.exe asdasd
+./main.exe asdasd
+windbgx windows.exe asdsadas
+v windows.asm
+fasm windows.asm
+bat main.c
+windbgx windows.exe asdsadas
+v windows.asm
+fasm windows.asm
+./main.exe asdasd
+ls
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe asdsad
+v windows.asm
+fasm windows.asm
+./windows.exe 가나다라
+cd Github\musik\
+ls
+cd src\
+ls
+cd terminal\
+ls
+cd .local/fasm/EXAMPLES/WIN64/DLL/
+ls
+cd ..
+ls
+v OPENGL\OPENGL.ASM
+v windows.asm
+ls
+rm windows.exe
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+fasm windows.asm
+v windows.asm
+ls
+rm windows.exe
+fasm windows.asm
+ls
+v windows.asm
+ls
+rm windows.exe
+ls
+v terminal_windows.c
+cd
+ls
+cd .local\fasm\
+ls
+cd SOURCE\
+ls
+cd WIN32\
+ls
+v FASM.ASM
+cd ..
+rg "VirtualMemory" *
+v LIBC\FASM.ASM
+v WIN32\FASM.ASM
+rg "MEM_FREE" *
+v windows.asm
+fasm windows.asm
+./windows.exe 가나다라
+v windows.asm
+fasm windows.asm
+./windows.exe 가나다라
+ls
+rm windows.exe
+ls
+cd ..
+ls
+cd src
+ls
+mkdir Windows
+mv windows.asm Windows\musik.asm
+ls
+cd Windows\
+ls
+fasm
+cd ../..
+ls
+fasm src\Windows\musik.asm musik.exe
+ls
+v build.c
+ls
+rm musik.exe
+ls
+cl build.c
+./build.c
+./build.exe
+ls
+v .gitignore
+ls
+./musik.exe
+./musik.exe asdsad
+ls
+cd src\Windows\
+ls
+v utility.inc
+ls
+v utility.inc
+v musik.asm
+ls
+v utility.inc
+v WIN32\SYSTEM.INC
+cd .local\fasm\
+ls
+cd SOURCE\
+ls
+cd Github\musik_asm\
+ls
+cd Test\
+ls
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+v src\Windows\utility.inc
+./build.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+cd Test\fooo\
+cd ..
+ls
+cd Test\
+ls
+v main.c
+ls
+v main.zig
+zig run main.zig
+cd Test\
+ls
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+\
+cd
+cd Github\musik_asm\
+v src\Windows\utility.inc
+cd Test\
+ls
+v main.c
+ls
+rm main.zig
+v fancy_div.c
+ls
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+cd Test\
+ls
+cd Test\
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+ls
+zig run fancy_div.zig
+v fancy_div.zig
+ls
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+zig run fancy_div.zig
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+zig run fancy_div.zig
+cl fancy_div.c
+./fancy_div.exe
+zig run fancy_div.zig
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+cl fancy_div.c
+./fancy_div.exe
+python
+v fancy_div.c
+ls
+v fancy_div.c
+ls
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+v fancy_div.zig
+ls
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+v fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cl fancy_div.c
+./fancy_div.exe
+v fancy_div.c
+cd
+ls
+cd Github\musik_asm\
+ls
+python
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+ㅍ 
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+./build.exe
+hexyl musik.exe
+./build.exe
+./musik.exe
+cd Github\musik_asm\
+ls
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+./build.exe
+windbgx windows.exe
+./build.exe
+windbgx musik.exe
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+ls
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+mv ../musik/.git .
+ls
+lg
+cp ../musik/README.md .
+cp ../musik/LICENSE .
+lg
+v README.md
+lg
+v src\Windows\utility.inc
+cd .glzr/glazewm/
+v config.yaml
+cd
+ls
+cd Github\musik_asm\
+ls
+./musik.exe
+cd Github\musik_asm\
+ls
+cd Test\
+v main.c
+zig run fancy_div.zig
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+./build.exe
+windbgx musik.exe
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+./build.exe
+ls -al
+v src\Windows\utility.inc
+v main.c
+cd Github\musik_asm\
+ls
+windbgx musik.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\utility.inc
+ls
+./build.exe
+v src\Windows\utility.inc
+ls
+./build.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+./musik.exe
+./build.exe
+./musik.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+ls
+./build.exe
+./musik.exe
+./musik.exe asdsad
+lg
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdsad
+./build.exe
+./musik.exe asdsad
+v src\Windows\utility.inc
+./build.exe
+./musik.exe asdsad
+lg
+cd ..
+ls
+mv musik musik_zig
+mv musik_asm musik
+ls
+cd ..
+mv musik_asm musik
+cd musik\
+./musik.exe asdsad
+ls -al
+v src\Windows\musik.asm
+v src\Windows\utility.inc
+ls
+v src\Windows\utility.inc
+cd .local\fasm\
+ls
+cd SOURCE\
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+v WIN32\FASM.ASM
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+./musik.exe asdasd
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+ls
+v src\Windows\musik.asm\
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd
+./musik.exe asdasd dasqws
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd dasqws
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./musik.exe asdasd dasqws
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd dasqws
+v src\Windows\musik.asm
+./musik.exe asdasd fuck.wav
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+cd
+v src\Windows\musik.asm
+./build.exe
+cd musik\
+ls
+windbgx musik.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+windbgx musik.exe asdasdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+./musik.exe asdasd fuckwav
+./musik.exe asdasd 123456789
+v src\Windows\musik.asm
+./build.exe\
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\musik.asm
+./musik.exe asdasd fuck.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe
+./musik.exe asdasd
+./musik.exe asdasd fuck.wav
+./musik.exe asdasd fuck.wav 시발
+v src\Windows\musik.asm
+ls
+mv ../musik_zig/*.wav .
+s
+v .gitignore
+ls
+./musik.exe asdasd 系ぎて.wav
+v src\Windows\musik.asm
+lg
+ls
+lsl
+ls
+sduo powershell
+sudo powershell
+cd C:\Windows\System32\
+ls
+help filter
+help extension
+cd
+ls
+cd Github\
+ls
+cd C:
+cd C:/Windows/System32/
+v WEB.rs
+cd
+ls
+cd Github\
+ls
+git clone --recursive https://github.com/e0328eric/6502-cpu.git
+cd 6502-cpu\
+ls
+v src\Cpu.zig
+lg
+cd .glzr/glazewm/
+v config.yaml
+cd
+cd .local
+ls
+zigup
+ls
+rm -rp zig
+unzip zig-compiler.zip
+exit
+cd Github\musik\
+ls
+cd Github\musik_zig\
+ls
+v src\Windows\terminal.inc
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\terminal.inc
+./build.exe
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe
+./musik.exe asdas
+v src\Windows\terminal.inc
+./build.exe
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdasasd asdasd
+v src\Windows\terminal.inc
+./build.exe
+v src\Windows\terminal.inc
+./build.exe
+v src\terminal\terminal_windows.c
+cd\
+cd
+cd .local\fasm\
+s
+cd INCLUDE\
+rg "ENABLE_ECHO_INPUT" *
+cd
+ls
+cd Test\
+ls
+v main.c
+cl main.c
+./main.exe
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe
+./musik.exe asdsad
+ls
+cd ..
+ls
+cd .locxal
+cd .local
+ls
+rm zig-compiler.zip
+mv zig-x86_64-windows-0.15.0-dev.769+4d7980645 zig
+v src\Windows\terminal.inc
+v src\Windows\musik.asm\
+v src\Windows\musik.asm
+./build.exe\
+./build.exe
+./musik.exe asdsad adasd
+v src\Windows\terminal.inc
+./build.exe
+cd Github\musik
+windbgx musik.exe asdasdasd 
+v src\Windows\terminal.inc
+cd ..
+ls
+cd musik_zig\
+cd Github\musik
+ls
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe
+./musik.exe asdasda
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdasda
+cd Github\musik
+./musik.exe asdasda
+cd Github\musik
+ls
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdsadas
+cd Github\musik
+cd Github\musik_zig\
+ls
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdsadas
+cd Github\musik_zig\
+cd ..
+s
+cd musik\
+ls
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdsadas
+v src\terminal\terminal_windows.c
+cd Github\musik
+ls
+v src\terminal\terminal_windows.c
+cd Github\musik
+./build.exe
+./musik.exe adasdad
+cd Github\musik_zig\
+v src\Windows\terminal.inc
+./build.exe
+cd Github\musik
+v src\Windows\terminal.inc
+windbgx musik.exe asdasdasd 
+./build.exe
+./musik.exe asdasd
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdasd
+v src\terminal\terminal_windows.c
+v src\Windows\utility.inc
+./build.exe
+ls -al
+./musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./build.exe
+v src\Windows\utility.inc
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build.exe
+v src\Windows\utility.inc2
+v src\Windows\utility.inc
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./build.exe
+windbgx musik.exe 系ぎて.wav
+cd Github\musik
+ls
+./musik.exe asdasd
+./musik.exe 한글씨발
+v src\Windows\musik.asm
+ls
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 한글씨발
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe 한글씨발
+v src\Windows\terminal.inc
+./build.exe
+cd Github\musik
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe 한글씨발
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe 한글씨발
+./musik.exe asdsad
+v src\Windows\terminal.inc
+./build.exe
+v src\Windows\terminal.inc
+./build.exe
+./musik.exe asdsad
+v src\Windows\
+./build.exe
+./musik.exe asdsad
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\terminal.inc
+./build.exe
+bat src\Windows\musik.asm
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+lg
+ls
+v src\Windows\musik.asm
+./build.exe
+./musik.exe 系ぎて.wav
+windbgx musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+lg
+cd Github\musik
+ls
+v test.c
+ls
+rm test.c
+ls
+cp ../musik_zig/thirdparty .
+cp -r ../musik_zig/thirdparty .
+ls
+cd thirdparty\
+ls
+cd ..
+ls
+v thirdparty\
+ls
+v build.c
+v src\Windows\musik.asm
+ls
+cd src\Windows\
+ls
+fasm musik.asm
+v src\Windows\musik.asm
+v musik.asm
+ls
+cd ..
+ls
+cd ..
+ls
+v thirdparty\miniaudio.h
+cd ..
+cd musik\
+ls
+rm -rp thirdparty\
+ls
+cd Github\musik
+cd
+ls
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd
+cd Github\arch-almagest\

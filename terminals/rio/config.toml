@@ -10,7 +10,7 @@ args = []
 [fonts]
 size = 13
 extras = [{ family = "D2CodingLigature Nerd Font Mono" }]
-# features = ["ss02", "ss03", "ss05", "ss19"]
+features = ["ss02", "ss03", "ss05", "ss19"]
 
 [fonts.regular]
 family = "FiraCode Nerd Font Mono"

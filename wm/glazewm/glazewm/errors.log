@@ -230,3 +230,27 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-06-02T08:45:55.415591Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-06-03T12:40:21.831679Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2025-06-06T06:02:01.079686Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-09T02:48:43.526698Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:47.590596Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:52.064921Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:52.633045Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:52.927076Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:53.221285Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:53.639517Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:53.984101Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:54.744836Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:54.948322Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:55.246178Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:55.634787Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:55.962822Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:56.343344Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:56.757645Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:57.194318Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:58.051801Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:58.399894Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:58.747431Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:59.096296Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-09T03:55:59.409107Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-06-10T13:50:28.624482Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-11T00:32:32.571429Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-06-13T01:43:21.232629Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
