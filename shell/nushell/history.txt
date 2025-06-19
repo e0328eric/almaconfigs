@@ -5133,3 +5133,1262 @@ ls
 v config.yaml
 cd
 cd Github\arch-almagest\
+lg
+cd ..
+ls
+cd musik\
+ls
+cd 
+cd .local\fasm
+cd INCLUDE\
+ls
+rg "CLSID_WMPCore"
+rg "CLSID_WMPCore" *
+rg "CoCreateInstance" *
+cp -r ../musik_zig/thirdparty .
+cp ../musik_zig/src/miniaudio.c thirdparty\
+ls
+cd thirdparty\
+v miniaudio.c
+ls
+cd ..
+ls
+v src\Windows\musik.asm
+ls
+v build.c
+cd src\Windows\
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+exit
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+mv windows.inc winapi.inc
+v winapi.inc
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+v winapi.inc
+fasm musik.asm
+v winapi.inc
+fasm musik.asm
+v winapi.inc
+ls
+cd .local\fasm
+;s
+cd INCLUDE\
+ls
+v WIN64W.INC
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+v musik.asm
+fasm musik.asm
+v winapi.inc
+fasm musik.asm
+v winapi.inc
+fasm musik.asm
+ls
+rm musik.obj
+v winapi.inc
+fasm musik.asm
+v MACRO\PROC64.INC
+start MACRO\PROC64.INC
+v winapi.inc
+ls
+cd ..
+ls
+cd ..
+s
+v build.c
+rm musik.exe
+ls
+rm build.exe build.obj
+ls
+wget --location -O https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+curl -O --location https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+ls
+cl /?
+v nob.c
+ls
+rm build.c
+cl nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+ls build\
+v .gitignore
+ls
+lg
+ls
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+ls
+cd src
+ls
+mv libc.inc Windows\
+ls
+mv Windows windows
+ls
+cd Windows\
+cd ../..
+ls
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+notepad windows.asm
+ls
+v .gitignore
+./nob.exe
+v src\Windows\utility.inc
+ls
+cd src\Windows\
+ls
+rg "printNumber" *
+v structs.inc
+cd ../..
+./nob.exe
+./build/musik.exe
+./build/musik.exe 系ぎて.wav
+lg
+ls
+cd thirdparty\
+git submodule add https://github.com/mackron/miniaudio.git
+v miniaudio.c
+ls
+rm miniaudio.h
+cd ..
+./nob.exe
+lg
+ls
+v README.md
+lg
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+homework
+ls
+cd Manifold\
+ls
+cp homework4.ves final.ves
+vesti compile final.ves
+start final.pdf
+start midterm.pdf
+ls
+v final.ves
+vesti compile -WE final.ves
+cd .glzr/glazewm/
+v config.yaml
+ls
+cd
+homework
+cd Manifold\
+ls
+pwd | pbcopy
+exit
+ls
+homework
+ls
+cd Manifold\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+start final.pdf
+vesti compile -WE final.ves
+v final.ves
+vesti compile final.ves
+shutdown /s /t 0
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+start final.pdf
+vesti compile final.ves
+ls
+v final.ves
+vesti compile -WE final.ves
+cd
+ls
+cd Github\musik\ls
+cd Github\musik\
+ls
+exit
+exit
+exit
+exit
+exit
+exit
+cd Github\musik\
+ls
+cd ..
+cd musik_zig\
+ls
+v src\Windows\miniaudio.inc
+v src\Musik.zig
+v src\Windows\miniaudio.inc
+ls
+cd thirdparty\
+ls
+v foo.c
+ls
+cl foo.c
+./foo.exe
+rm foo.c foo.exe foo.obj
+cd ..
+v src\Windows\miniaudio.inc
+cd Github\musik\\
+ls
+cd Github\musik_zig\
+ls
+v src\Windows\miniaudio.inc
+cd Github\musik
+./nob.exe
+./build/musik.exe 系ぎて.wav
+./nob.exe
+windbgx musik.exe 系ぎて.wav
+v src\Musik.zig
+exit
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\miniaudio.inc
+v src\Windows\musik.asm
+./nob.exe
+ls
+ls build\
+windbgx ./build/musik.exe 系ぎて.wav
+cd ..
+ls
+cd musik_zig\
+cd ..
+ls
+mv musik musik_asm
+mv musik_zig musik
+cd musik\
+ls
+mv ../musik_asm/.git .
+lg
+cd ..
+ls
+cd musik_asm\
+ls
+git init
+git branch -M main
+git remote add origin https://github.com/e0328eric/musik_asm.git
+git push -u origin main
+lg
+cd ..
+ls
+cd musik\
+cd .local
+ls
+zig version
+zigup
+unzip zig-compiler.zip
+ls
+mv zig-compiler.zip ~/Test/
+mv zig-x86_64-windows-0.15.0-dev.784+4a02e080d zig
+cd zls
+git fetch --prune origin  master
+git merge origin master
+v README.md
+cd ..
+ls
+cd ..
+ls
+cd Test
+ls
+mkdir unzip_zig
+mv zig-compiler.zip unzip_zig\
+cd unzip_zig\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v main.zig
+ls
+zig run main.zig
+v main.zig
+zig run main.zig
+v 
+v main.zig
+v 
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+ls
+rm -rp zig-x86_64-windows-0.15.0-dev.784+4a02e080d\
+v main.zig
+zig run main.zig
+las
+ls
+rm -rp zig-x86_64-windows-0.15.0-dev.784+4a02e080d\
+cd
+cd Github\xilo\
+cd ..
+ls
+git clone --recursive https://github.com/e0328eric/zigup.git
+cd zigup\
+ls
+cd src
+ls
+rm .DS_Store
+v main.zig
+v main.zig
+ls
+cd
+ls
+cd Github\musik\
+ls
+mv ../musik_asm/*.wav .
+lg
+ls
+zig build run
+teachingf
+ls
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+cp tf1.ves tf6.ves
+vesti compile tf6.ves
+start tf6.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+v tf6.ves
+vesti compile -WE tf6.ves
+cd Github\musik_asm\
+ls
+v src\Windows\musik.asm
+Zls
+ls
+windbgx ./build/musik.exe 系ぎて.wav
+teachingf
+ls
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+start tf6.pdf
+pwd | pbcopy
+winget search lldb
+winget install LLVM.LLVM
+llsb
+lldb
+cd Github\musik_asm\
+ls
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+node.exe 
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ls
+v src\Windows\musik.asm
+ls
+./nob.exe
+./build/musik.exe 系ぎて.wav
+cd
+ls
+cd Test\
+ls
+v main.c
+ls
+cl main.c
+./main.exe
+cd
+ls
+cd Github\musik_asm\
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\utility.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ls
+rm -rp .git
+mv ../musik/.git .
+ls
+mv ../musik/*.wav .
+ls
+lg
+ls
+cd thirdparty\
+ls
+cd ..
+git submodule update --init --recursive --remote
+cd ..
+ls
+mv musik musik_zig
+mv musik_asm musik
+ls
+cd Github\
+mv musik_asm musik
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+cd musik_asm\
+ls
+v src\Windows\utility.inc
+ls
+rg "invoke" src
+v tf6.ves
+vesti compile -WE tf6.ves
+cd
+cd Github\
+ls
+mv musik_asm musik\
+ls
+cd musik\
+ls
+v src\Windows\musik.asm
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+ls
+lg
+ls src
+cd Github\musik_zig\
+las
+ls
+cd Github\
+cd musik\
+ls
+cd src\
+ls
+cd Windows
+ls
+v errors.inc
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\miniaudio.inc
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\miniaudio.inc
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\libc.inc
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+ls build\
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+cd Github\musik\
+ls
+v src\Windows\musik.asm
+ls
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v nob.c
+./nob.exe
+v src\Windows\libc.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v nob.c
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\errors.inc
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v nob.c
+ls
+v src\Windows\musik.asm
+node.exe 
+./nob.exe
+v nob.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+ls
+v build\
+cd build\
+ls
+rm musik.exe
+zig cc miniaudio.obj musik.obj -o musik.exe
+cd ..
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v thirdparty\miniaudio.c
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build/musik.exe 系ぎて.wav
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\libc.inc
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+cd
+ls
+teachingf
+ls
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof
+ls
+start\ tf6.pdf
+start tf6.pdf
+cd Github
+ls
+mv musik_zig\
+l
+ls
+mv musik musik_asm
+mv musik_zig musik
+cd musik\
+ls
+mv ../musik/*.wav .
+mv ../musik_asm/*.wav .
+mv ../musik_asm/.git .
+ls
+git rm --cached thirdparty\miniaudio
+ls
+v src\terminal\terminal_windows.c
+cd Github/musik_asm/
+ls
+cd ..
+ls
+cd musik\
+cd ..
+ls
+cd musik_asm\
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe\
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./build/musik.exe 系ぎて.wav
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v tf6.ves
+vesti compile -WE tf6.ves
+ls
+cd
+ls
+homework
+cd Manifold\
+;s
+ls
+cd ...
+cd ..
+ls
+cd Homework\
+ls
+cd Homework\
+cd Manifold\
+ls
+start final.pdf
+v final.ves
+start homework4.pdf
+vesti compile -WE final.ves
+ls
+vesti compile -WE final.ves
+rm -rp .vesti-dummy\
+v final.ves
+rm -rp .vesti-dummy
+start .
+vesti compile -WE final.ves
+homework
+ls
+cd Manifold\
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+ls
+start final.pdf
+v final.ves
+vesti compile -WE final.ves
+homework
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+ls
+start final.pdf
+v final.ves
+vesti compile -WE final.ves
+homework
+ls
+mkdir Random_Processes
+cd Random_Processes\
+ls
+homework 
+cd Random_Processes\
+homework 
+ls
+cd Manifold\
+ls
+v final.ves
+exit
+vesti compile random.ves
+start random.pdf
+minireport 
+s
+cd ..
+ls
+cd Solutions\Folland_Solution\
+ls
+start Folland.pdf
+cd ..
+ls
+cd Rudin_Solution\
+ls
+cd FA\
+start FA.pdf
+cd ..
+ls
+rg "\\I" *
+rg "\I" *
+rg "\\\\I" *
+v Rudin_Solution\RCA\RCA.ves
+cd ..
+ls
+cd Mini_Report\
+rg "\\\\I" *
+v random.ves
+vesti compile -WE random.ves
+v random.ves
+ls
+cp ../../Kindergarten/Volume2/build.lua .
+v build.lua
+ls
+v random.ves
+vesti compile -WE random.ves
+whether
+wheather
+weather
+teachingf 
+ls
+cd 2025-1\
+ls
+cd Analysis1_Kim_Prof\
+ls
+cd ..
+ls
+cd ..
+cd TF\2025-1\Analysis1_Kim_Prof\
+ls
+teachingf 
+ls
+cd ..
+ls
+cd Homework\
+ls
+cd Manifold\
+ls
+start final.pdf
+cd ..
+ls
+cd Random_Processes\
+ls
+start random.pdf
+pwd | pbcopy
+cd C:\Users\almag\Icedrive\TeX_Documents\TF\2025-1\Analysis1_Kim_Prof\
+ls
+start tf6.pdf
+v tf6.ves
+vesti compile -WE tf6.ves
+teachingf 
+cd ..
+ls
+cd TeX\
+ls
+zed jobs.tex
+v jobs.tex
+start jobs.pdf
+v jobs.tex
+start emptyxcolor.pdf
+v emptyxcolor.tex
+start practice.pdf
+winget search steam
+winget update --all -u
+winget uninstall emacs
+ls
+cd Github\musik\
+ls
+cd ..
+ls
+cd musik_asm\
+ls
+cp ../musik/*.wav .
+ls
+cd Github\musik\
+ls
+cd ,,
+cd ..
+ls
+mv musik musik_zig
+ls
+git clone --recursive https://github.com/e0328eric/musik.git
+ls
+cd musik\
+ls
+cp ../musik/*.wav .
+cp ../musik_asm//*.wav .
+mv ../musik_asm/src .
+cp -r ../musik_asm/src .
+ls
+lg
+cd ..
+ls
+rm -rp musik_asm\
+ls
+cd musik\
+las
+ls
+cl nob.c
+ls
+./nob.exe
+v src\Windows\musik.asm
+winget search aloha
+tavol
+cd Github\
+ls
+git clone --recursive https://github.com/e0328eric/tavol.git
+cd tavol\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Icedrive\
+ls
+cd Private\
+s
+v aloha_twofactor_backup
+tavol encrypt -h  aloha_twofactor_backup aloha_twofactor_backup.tavol
+tavol encrypt alohabrowser  aloha_twofactor_backup aloha_twofactor_backup.tavol
+ls
+rm aloha_twofactor_backup
+ls
+hexyl aloha_twofactor_backup.tavol
+cd
+ls
+cd Downloads\
+ls
+cd `슬라임을 잡으면서 300년, 모르는 사이에 레벨MAX가 되었습니다 2기-11화-자막 Linkkf_files`
+ls
+v video.min.js.download
+cd ..
+rm -rp `슬라임을 잡으면서 300년, 모르는 사이에 레벨MAX가 되었습니다 2기-11화-자막 Linkkf_files\`
+lds
+ls
+curl -O --location https://m3k.myani.app/b2nss4/m3u8/392556s11.m3u8
+ls
+ffmpeg -i 392556s11.m3u8 -o foo.mp4
+ffmpeg -i 392556s11.m3u8 foo.mp4
+ffmpeg -i "https://m3k.myani.app/b2nss4/m3u8/392556s11.m3u8" -bsf:a aac_adtstoasc -c foo.mp4
+ffmpeg -i "https://m3k.myani.app/b2nss4/m3u8/392556s11.m3u8" -codec copy foo.mp4
+ls
+v 392556s11.m3u8
+mpv
+winget search mpv
+cd Downloads\
+ls
+choco install mpvio
+sudo choco install mpvio
+mpv
+cd .glzr/glazewm/
+v config.yaml
+v
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+lg
+cd Github\musik\
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ping
+ping google.com
+s
+ls
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ls
+v src\Windows\musik.asm
+rg "sub \w rsp" *
+rg "sub \\w rsp" *
+rg "subrsp" *
+rg "sub rsp" *
+rg "sub  rsp" *
+v src\Windows\utility.inc
+lg
+v src\Windows\libc.inc
+./nob.exe
+v src\Windows\libc.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\libc.inc
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+cl /?
+v nob.c
+./nob.exe
+ls build\
+cd ..
+ls
+cd musik_zig\
+ls
+zig build -Doptimize=ReleaseSmall
+ls zig-out\bin\
+cd ..
+ls
+cd musik\
+s
+ls build\
+link ?/
+link /?
+ls
+code .
+winget search code
+winget install Microsoft.VisualStudioCode
+code .
+ls
+cd ..
+s
+mkdir sdl3_tutor
+ls
+cd sdl3_tutor\
+zig init
+ls
+cd .local
+ls
+zigup
+rm -rp zig
+unzip zig-compiler.zip
+ls
+rm zig-compiler.zip
+mv zig-x86_64-windows-0.15.0-dev.836+080ee25ec zig
+ls
+exit
+cd Github\sdl3_tutor\
+ls
+v build.zig.zon
+v build.zig
+ls
+zig build
+zig fetch --save git+https://github.com/castholm/SDL.git
+zig build
+cd src\
+ls
+rm root.zig
+v main.zig
+cd ..
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v src\main.zig
+zig build
+v src\main.zig
+ls
+v build.zig
+cd ..
+ls
+shutdown /s /t 0
+cd Github\musik
+ls
+cd Test
+ls
+v main.c
+cd
+ls
+cd Github\musik
+ls
+cd Github\musik_zig\
+ls
+v src\miniaudio.c
+cd Github\musik_zig\
+ls
+cd ..
+ls
+cd musik
+ls
+v foo/c
+v foo.c
+ls
+cl foo.c
+./foo.c
+./foo
+rm foo.c foo.exe foo.obj
+python
+ghci
+ghci\
+ghci
+cd
+cd Test
+ls
+v foo.c
+cl foo.c
+./foo
+./foo | pbcopy
+v foo.c
+cl
+cl foo.c
+./foo | pbcopy
+v src\Musik.zig
+v src\Windows\miniaudio.inc
+cd .local
+ls
+git clone --recursive --depth 1 https://github.com/curlpipe/ox.git
+cd ox
+cargo install --path .
+ls
+ox
+ls
+cd
+ls
+homework
+ls
+cd Manifold\
+ox final.ves
+hx final.ves
+cd $env.APPDATA
+ls
+cd helix
+ls
+cd runtime\queries\
+ls
+hx -h
+hx --health
+ls
+cd ..
+ls
+cd ..
+ls
+hx -h
+hx -g fetch
+hx -g build
+cd ..
+ls
+cd helix
+ls
+cd runtime\
+ls
+cd grammars\
+ls
+cd ..
+ls
+cd queries\
+ls
+cd vesti\highlights.scm
+cd vesti\
+ls
+v highlights.scm
+ls
+cd ..
+cd
+cd Github\arch-almagest\

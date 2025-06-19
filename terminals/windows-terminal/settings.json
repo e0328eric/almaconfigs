@@ -14,6 +14,22 @@
         {
             "command": "paste",
             "id": "User.paste"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "id": "User.splitPane.D5151347"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "id": "User.splitPane.864CD510"
         }
     ],
     "alwaysShowTabs": false,
@@ -24,19 +40,11 @@
     [
         {
             "id": null,
-            "keys": "alt+shift+plus"
-        },
-        {
-            "id": null,
             "keys": "ctrl+shift+4"
         },
         {
-            "id": "User.newTab.663EF760",
-            "keys": "ctrl+alt+shift+6"
-        },
-        {
             "id": null,
-            "keys": "alt+shift+minus"
+            "keys": "alt+shift+plus"
         },
         {
             "id": null,
@@ -44,11 +52,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+2"
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": "User.newTab.663EF760",
+            "keys": "ctrl+alt+shift+6"
         },
         {
             "id": null,
             "keys": "ctrl+shift+5"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+2"
         },
         {
             "id": null,
@@ -87,7 +103,7 @@
             "keys": "ctrl+c"
         },
         {
-            "id": null,
+            "id": "User.splitPane.864CD510",
             "keys": "ctrl+shift+d"
         },
         {
@@ -119,7 +135,7 @@
             "keys": "alt+shift+h"
         },
         {
-            "id": null,
+            "id": "User.splitPane.D5151347",
             "keys": "ctrl+shift+s"
         },
         {
