@@ -6392,3 +6392,1419 @@ ls
 cd ..
 cd
 cd Github\arch-almagest\
+lg
+homework 
+cd Manifold\
+ls
+hx final.ves
+ls
+cd
+ls
+cd Github\musik\
+ls
+v src\Windows\miniaudio.inc
+ls
+mv thirdparty\miniaudio.c src\Windows\
+ls
+v nob.c
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v nob.c
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\miniaudio.c
+./nob.exe
+v src\Windows\miniaudio.c
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+v src\Windows\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+echo $env.LAST_EXIT_CODE
+v src\Windows\errors.inc
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\errors.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+echo $env.LAST_EXIT_CODE
+v src\Windows\libc.inc
+./nob.exe
+v src\Windows\errors.inc
+./nob.exe
+v nob.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+lg
+cd Github\musik_zig\
+;s
+ls
+v src\Windows\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+xl /?
+cl /?
+cd Test\
+ls
+cd
+cd Icedrive\
+ls
+cd ScoreData\
+s
+cd 2025-1\
+ls
+v ODE_2025_1.xlsx
+s
+v ODE_2025_1.xlsx
+cp ODE_2025_1.xlsx ODE_Final.xlsx
+start ODE_Final.xlsx
+v ODE_Final.csv
+ls
+v scoreboard.zig
+v ODE_Final.csv
+ls
+mv ODE_Final.csv ODE_Final_score.csv
+v ODE_Final_score.csv
+s
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v ODE_Final_score.csv
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+v ODE_Final_score.csv
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v ODE_Final_score.csv
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+hexyl ODE_Final_score.csv
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+v scoreboard.zig
+zig run scoreboard.zig -- ODE_Final_score.csv ODE_Final.csv 6
+ls
+v ODE_Final.csv
+cd Github\musik
+ls
+cd Github\musik_zig\
+ls
+v src\Windows\miniaudio.c
+v src\Windows\miniaudio.c\
+v src\Windows\miniaudio.c
+./nob.exe
+v src\Windows\miniaudio.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\terminal.inc
+ls
+cd .locla
+cd .local
+ls
+cd zed
+ls\
+git fetch --prune origin main
+git merge origin master
+git merge origin main
+which zed
+cargo build --release
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd Github\musik\
+ls
+v src\Windows\miniaudio.c
+ls
+cd Github\musik\
+cd Github\musik_zig\
+ls
+v src\Windows\miniaudio.c
+ls
+v nob.c
+./nob.exe
+./build/musik.exe 系ぎて.wav
+echo $env.LAST_EXIT_CODE
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+echo $env.LAST_EXIT_CODE
+v src\Windows\miniaudio.inc
+./nob.exe
+echo $env.LAST_EXIT_CODE
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+v src\Windows\miniaudio.inc
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+v src\Musik.zig
+cd Github\musik\
+ls
+cd Github\musik_zih\
+cd Github\musik_zig
+ls
+v src\Musik.zig
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+cd Github\musik_zig
+ls
+v src\Musik.zig
+cd Test\
+ls
+rm *
+rm -rp *
+ls
+v main,.c
+cd Test\
+ls
+zig cc main.c -o main
+ls
+zig cc main.c -Os -o main
+ls
+zig cc main.c -Os -o main
+./main
+mv main main.exe
+./main.exe
+v main.c
+ls
+zig cc main.c -c main.o
+zig cc main.c -c
+zig cc foo.c -c
+ls
+link main.obj foo.obj /Fo:main
+zig cc main.obj foo.obj -o main.exe
+zig cc main.c -c
+zig cc foo.c -c
+zig cc main.obj foo.obj -o main.exe
+./main.exe
+zig cc main.c -c
+zig cc main.obj foo.obj -o main.exe
+./main.exe
+zig cc main.c -c
+zig cc main.obj foo.obj -o main.exe
+./main.exe
+zig cc foo.c -c
+zig cc main.obj foo.obj -o main.exe
+./main.exe
+zig cc foo.c -c
+zig cc main.obj foo.obj -o main.exe
+ls
+rm foo.c foo.obj
+ls
+cl main.c
+./main.exe
+cl main.c
+zig cc main.c -o main.exe
+cl main.c
+./main.exe
+zig cc main.c -o -O3 main.exe
+zig cc -O3 main.c -o main.exe
+ls
+zig cc -O3 main.c -o main.exe
+ls
+./main.exe
+zig cc -O3 main.c -o main.exe
+./main.exe
+v main.c
+ls
+exit
+cd
+cd Github\musik\
+ls
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+cd Github\musik\
+ls
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+echo $env.LAST_EXIT_CODE
+v src\Windows\miniaudio.inc
+./nob.exe
+./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+v src\Windows\miniaudio.inc
+./nob.exe
+windbgx ./build/musik.exe 系ぎて.wav
+./build/musik.exe 系ぎて.wav
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd Test
+ls
+rm *
+v main.zig
+zig build-exe -target wasm32-wasi main.zig
+ls
+zig build-exe -target wasm32-wasi -DOptimize=ReleaseSmall main.zig
+ls
+zig build-exe --help
+zig build-exe -ofmt=c main.zig
+zig build-exe -target wasm32-wasi -OReleaseSmall main.zig
+ls
+wasm2wat
+winget search wabt
+ls
+rm main.c main.wasm main.zig
+min
+nim
+choosenim
+choosenim show
+choosenim versions
+choosenim update 2.2.4
+ls
+cd Github\musik\
+ls
+v src\Windows\miniaudio.c
+ls
+cd ..
+ls
+git clone --recursive --depth 1 https://github.com/e0328eric/musik_asm.git
+ls
+cd musik_asm\
+ls
+rm -rp *
+ls
+cp -r ../musik/* . 
+ls
+lg
+cd ..
+ls
+rm -rp musik_asm
+ls
+cd musik\
+ls
+v src\Windows\musik.c
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+v after\plugin\lsp.lua
+cd after\plugin\
+rg "ccls" *\
+rg "ccls" *
+ls
+rm ccls.lua
+cd ../..
+ls
+v lua\almagest\plugins.lua
+ls
+lg
+ls
+cd Desktop\
+ls
+cd Github\
+ls
+git clone --depth 1 https://github.com/e0328eric/simpv.git
+git clone --depth 1 https://github.com/e0328eric/sipimgv.git
+ls
+cd sipimgv\
+ls
+v build.zig
+which vcpkg
+vcpkg 
+vcpkg upgrade
+vcpkg x-update-baseline
+vcpkg install
+v vcpkg-configuration.json
+vcpkg install vcpkg-configuration.json
+v vcpkg-configuration.json
+vcpkg install
+v vcpkg-configuration.json
+vcpkg install
+ls
+ls vcpkg_installed\
+ls vcpkg_installed\x64-windows\
+ls vcpkg_installed\x64-windows\bin
+ls vcpkg_installed\x64-windows\lib
+v build.zig
+zig build
+v build.zig.zon
+zig build
+v build.zig.zon
+zig build
+ls vcpkg_installed\x64-windows\include\
+v build.zig
+ls vcpkg_installed\x64-windows\include\webp\
+v build.zig
+zig build
+ls vcpkg_installed\x64-windows\lib
+v build.zig
+ls vcpkg_installed\x64-windows\lib
+zig build
+./zig-out/bin/siv.exe
+dumpbin.exe /?  ./zig-out/bin/siv.exe
+dumpbin.exe /ALL  ./zig-out/bin/siv.exe
+dumpbin.exe /?  ./zig-out/bin/siv.exe
+dumpbin.exe /SYMBOLS  ./zig-out/bin/siv.exe
+dumpbin.exe /pdata  ./zig-out/bin/siv.exe
+dumpbin.exe /?  ./zig-out/bin/siv.exe
+dumpbin.exe /dependents ./zig-out/bin/siv.exe
+cp vcpkg_installed\x64-windows\bin\*.dll ~/.local/bin
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+siv 20250621_114624.jpg
+cd
+cd Desktop\
+ls
+v foo.ves
+mv 20250621_114624.jpg 1_a.jpg
+ls
+siv 20250621_114629.jpg
+mv 20250621_114629.jpg 1_b.jpg
+mv 20250621_114633.jpg 2.jpg
+mv 20250621_114639.jpg 3.jpg
+siv 3.jpg
+ls
+mv 20250621_114646.jpg 4.jpg
+mv 20250621_114655.jpg 5.jpg
+ls
+cd Desktop\
+ls
+vesti compile test.ves
+v .vesti-dummy\stdout.txt
+vesti compile test.ves
+v .vesti-dummy\stdout.txt
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+vesti compile test.ves
+start test.pdf
+ls
+vesti compile -WE test.ves
+v src\Lua.zig
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -WE test.ves
+vesti compile test.ves
+v test.ves
+cd Github\
+ls
+mv musik musik_asm
+cd Github\musik_asm\
+ls
+cd Github\
+ls
+cd musik\
+mv ../musik_asm/.git .
+ls
+mv ../musik_asm/thirdparty .
+ls
+cd Github\musik\
+ls
+mv ../musik_asm/.gitignore .
+mv ../musik_asm/.gitmodules .
+mv ../musik_asm/README.md .
+mv ../musik_asm/LICENSE .
+mv ../musik_asm/*.wav .
+ls
+v .gitignore
+cd ..
+ls
+cd musik_asm\
+cd Github\musik\
+ls
+rm -rp cmake-build-debug CMakeLists.txt .idea
+ls
+cp ../musik_asm/nob.c .
+cp ../musik_asm/nob.h .
+ls
+v nob.c
+ls
+cl nob.c
+./nob.exe
+v src\main.c
+v nob.c
+./nob.exe
+ls
+ls build\
+./nob.exe
+ls src
+v nob.c
+ls
+ls src\windows\
+./nob.exe
+ls build
+cd build\
+ls
+cd ..
+ls
+v src\Windows\miniaudio.c
+cd ..
+ls
+cd musik\
+ls
+./nob.exe
+cd
+ls
+cd Github\musik_asm\
+ls
+v src\Windows\errors.inc
+cd ..
+ls
+cd musik_zig\
+ls
+v src\windows\miniaudio.c
+cd ..
+ls
+cd musik_zig
+ls
+mv ../musik/*.wav .
+rm -rp .git
+mv ../musik/.git .
+ls
+mv ../musik/.gitmodules .
+ls
+cd thirdparty\
+ls
+cd ..
+ls
+rm -rp thirdparty\
+mv ../musik/thirdparty .
+ls
+cd thirdparty\
+ls
+cd miniaudio\
+ls
+cd ../..
+ls
+lg
+v src\Musik.zig
+cd ..
+s
+rm -rp musik
+ls
+mv musik_zig musik
+cd
+cd .local
+ls
+cd
+ls
+cd Test\
+ls
+v main.zig
+zigup
+ls
+mv zig-compiler.tar.xz linux.tar.xz
+mv zig-compiler.zip windows.zip
+ls
+mkdir clparse_v2
+ls
+cd clparse_v2\
+ls
+curl -O --location https://github.com/e0328eric/clparse/raw/refs/heads/main/clparse.h
+ls
+cd Github\musik_asm\
+s
+v main.c
+cl main.c
+v main.c
+cl main.c
+v main.c
+cl main.c
+v main.c
+cl main.c
+cl main.c shell32.lib
+./main.exe
+./main.exe asdsad qwjadnsxz
+./main.exe asdsad 한글은?
+./main.exe asdsad 한글은
+./main.exe 한글은
+v main.c
+ls
+v strlenW.asm
+ls
+fasm strlenW.asm
+v strlenW.asm
+fasm strlenW.asm
+v main.c
+ls
+cl main.c shell32.lib strlenW.obj
+v main.c
+cl main.c shell32.lib strlenW.obj
+v main.c
+cl main.c shell32.lib strlenW.obj
+v main.c
+cl main.c shell32.lib strlenW.obj
+./main.exe 한글은
+v main.c
+cl main.c shell32.lib strlenW.obj
+./main.exe 한글은
+v src\Windows\
+ls
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+ls
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+ghci
+ls
+v main.c
+ls
+rm clparse.h
+ls
+cd ..
+ls
+cd musik\
+ls
+cd
+ls
+cd Test\
+ls
+rm -rp clparse_v2\
+ls
+v main.zig
+cd Github\
+ls
+cd musik
+ls
+cd
+ls
+cd Test
+ls
+cd
+ls
+cd Github\zigup\
+ls
+v src\main.zig
+v build.zig.zon
+zig build
+v build.zig.zon
+zig build
+v build.zig.zon
+cd ..
+ls
+git clone --depth 1 https://github.com/e0328eric/badepo.git
+cd badepo\
+ls
+v build.zig.zon
+zig version | pbcopy
+v build.zig.zon
+zig fetch --save git+https://codeberg.org/atman/zg.git
+v build.zig.zon
+zig build
+v build.zig.zon
+lg
+cd ..
+ls
+cd zigup
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build
+rg "zg" *
+v build.zig
+cd ..
+cd badepo\
+ls
+v src\os\windows.zig
+cd Github\vesti\
+ls
+v build.zig.zon
+v build.zig.zon
+rg "ziglyph" *
+v  build.zig
+zig build
+v build.zig
+zig build
+cd Github\vesti\
+ls
+v src\vesti_c.h
+lg
+cd
+ls
+cd .local
+ls
+rm -rp zig
+zigup
+ls
+unzip zig-compiler.zip
+ls
+rm zig-compiler.zip
+ls
+mv zig-x86_64-windows-0.15.0-dev.864+75d0ec9c0 zig
+ls
+zig version
+cd
+ls
+cd Github\
+ls
+cd zigup\
+ls
+cd ..
+ls
+cd badepo\
+ls
+cd Github\vesti\
+ls
+v src\location.zig
+zig build
+v src\location.zig
+v build.zig.zon
+cd
+ls
+cd Test\
+ls
+curl -O --location https://deps.files.ghostty.org/ziglyph-b89d43d1e3fb01b6074bc1f7fc980324b04d26a5.tar.gz
+ls
+tar xvf ziglyph-b89d43d1e3fb01b6074bc1f7fc980324b04d26a5.tar.gz
+ls
+cd ziglyph\
+ls
+cd src\
+s
+v src\Badepo.zig
+v display_width.zig
+lg
+cd ..
+ls
+cd zigup\
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build
+v src\download.zig
+zig build
+v src\main.zig
+zig build
+v src\main.zig
+zig build
+v src\main.zig
+zig build
+zig build run
+ls
+ls zig-compiler\
+rm -rp zig-compiler.zip zig-compiler\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Test\
+ls
+rm -rp *
+ls
+v src\main.zig
+zigup
+ls
+rm -rp *
+ls
+cd Github\zigup\
+v src\main.zig
+ls
+zig build help
+zig build -h
+zig build release
+ls
+cd zig-out\
+ls
+ls aarch64-linux\
+ls x86_64-windows\
+zip x86_64-windows\
+zip x86_64-windows
+zip -h
+zip.exe x86_64-windows
+ls
+zip.exe -h
+zip.exe x86_64-windows.zip  x86_64-windows
+ls
+v x86_64-windows.zip
+ls
+tar Jvf aarch64-linux
+tar Jvfc aarch64-linux
+tar Jvfc aarch64-linux aarch64-linux.tar.xz
+tar Jvfc aarch64-linux.tar.xz aarch64-linux
+tar Jvfc aarch64-macos.tar.xz aarch64-macos
+tar Jvfc x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+tar Jvfc x86_64-linux-musl.tar.xz x86_64-linux-musl
+tar Jvfc x86_64-macos.tar.xz x86_64-macos
+ls
+start  .
+cd .local
+ls
+rm -rp zig-lts\
+ls
+zigup
+ls
+rm zig-compiler.zip
+mv zig-compiler\zig-x86_64-windows-0.14.1 zig-lts
+rm -rp zig-compiler\
+cd
+ls
+cd Github\zigup\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+ls
+cd Test\
+ls
+zigup
+ls
+ls zig-compiler\
+ls zig-compiler\zig-x86_64-linux-0.14.1\
+ls
+rm -rp zig-compiler\
+cd
+ls
+cd Github\zigup\
+lg
+ls
+cd zig-out
+ls
+rm x86_64-windows.zip
+zip.exe -r x86_64-windows.zip 
+zip.exe -r x86_64-windows.zip x86_64-windows
+cd Github\
+ls
+git clone --depth 1 https://github.com/e0328eric/clparse.git
+git clone --depth 1 https://github.com/e0328eric/zlap.git
+ls
+cd clparse
+ls
+rm .clang-format
+ls
+mv clparse.h clparse_old.h
+ls
+cd Github\clparse\
+ls
+v clparse.h
+v clparse_old.h
+shutdown /s /t 0
+cd Icedrive\
+ls
+cd ScoreData\
+ls
+cd 2025-1\
+ls
+cd Github\clparse\
+ls
+v ODE_Final.csv
+d
+cd
+cd .local
+ls
+zigup
+zig version
+ls
+cd zig
+ls
+cd ..
+zig
+zig version
+zigup
+cd
+ls
+cd Github\clparse\
+ls
+v clparse.h
+shutdown /s /t 0
+cd Icedrive\ScoreData\2025-1\
+ls
+start ODE_Final.csv
+start .
+cd Github\clparse\
+ls
+cd Test\
+ls
+v main.c
+cl main.c
+v main.c
+cl main.c
+./main.exe
+cl main.c
+cl main.c shell32.lib strlenW.obj
+cl main.c shell32.lib
+v main.c
+cl main.c shell32.lib
+v main.c
+cl main.c shell32.lib
+cl main.c shell32.lib Kernel32.lib
+v main.c
+cl main.c shell32.lib Kernel32.lib
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c
+./main.exe 한글은
+v main.c
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c 
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c 
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c 
+./main.exe 한글은
+cl main.c shell32.lib
+./main.exe 한글은
+cl main.c shell32.lib
+v main.c 
+cl main.c shell32.lib
+./main.exe 한글은
+v main.c 
+cl main.c shell32.lib
+./main.exe 한글은
+./main.exe asdad
+v main.c 
+cl main.c shell32.lib
+v main.c 
+cl main.c shell32.lib
+./main.exe asdad
+./main.exe 한글은
+v main.c 
+v clparse.h
+ls
+cd 
+cd Github\learn_lean\
+v LearnLean\Strange_Ring.lean
+minireport 
+mkdir MetaStable
+ls
+cd MetaStable\
+touch
+touch metastable.ves
+ls
+help touch
+v metastable.ves
+vesti.exe compile metastable.ves
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\MetaStable
+start metastable.pdf
+v metastable.ves
+vesti.exe compile -WE metastable.ves
+cd
+cd Github\clparse\
+ls
+v clparse.h
+cd Github\clparse\
+ls
+v clparse.h
+ls
+cd Github\clparse\
+ls
+v clparse.h
+cd Test\
+ls
+v main.c
+cl main.c /I. shell32.lib
+v clparse_old.h
+cl main.c /I. shell32.lib
+v main.c
+v clparse.h
+cl main.c /I. shell32.lib
+./main.exe
+v main.c
+zig version
+zigup
+cd
+ls
+cd .local
+ls
+zigup
+ls
+rm -rp zig\
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.865+3034d1e37 zig
+rm -rp zig-compiler\
+ls
+zig version
+cd Github\clparse\
+ls
+v clparse.h
+cl main.c /I. shell32.lib
+cd Github\clparse\
+zig cc -Werror -Wall main.c -I.
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+zig cc --help
+zig cc --help | bat
+zig cc main.c -CC -I.
+zig cc main.c -CC -E -I.
+zig cc main.c -CC -E -I. | save "foo.c"
+ls
+v foo.c
+ls
+rm foo.c
+ls
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v clparse_old.h
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v clparse_old.h
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+cd Github\clparse\
+ls
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe 한글은
+v main.c
+cl main.c /I. shell32.lib
+./main.exe --한글
+./main.exe -h
+v main.c
+cl main.c /I. shell32.lib
+./main.exe --한글
+cd Github\clparse\
+cl main.c /I. shell32.lib
+./main.exe --한글
+cl main.c /I. shell32.lib
+./main.exe --한글\
+./main.exe --한글
+cl main.c /I. shell32.lib
+./main.exe --한글
+cl main.c /I. shell32.lib
+./main.exe --한글
+v clparse_old.h
+cl main.c /I. shell32.lib
+./main.exe --한글
+cl main.c /I. shell32.lib
+./main.exe --한글
+cl main.c /I. shell32.lib
+./main.exe --한글
+v main.c
+cl main.c /I. shell32.lib
+./main.exe --한글
+cl main.c /I. shell32.lib
+cl /utf-8 main.c /I. shell32.lib
+./main.exe --한글
+v main.c
+ls
+zig cc main.c -I. -o main_zig.exe
+./main_zig.exe
+./main_zig.exe --한글
+cl /?
+ls
+rm -rp ox
+ls
+cd Github\clparse\
+ls
+rm main.exe main.obj main_zig.pdb
+ls
+rm main_zig.exe
+ls
+v main.c
+zig cc main.c -I. -o main_zig.exe
+v clparse.h
+zig cc main.c -I. -o main_zig.exe
+zig cc main.c -I. -o main.exe
+ls
+rm main_zig.exe main_zig.pdb
+ls
+./main.exe --한글
+zig cc main.c -Oz -I. -o main.exe
+ls
+./main.exe --한글
+ls
+zig cc main.c -O3 -I. -o main.exe
+ls
+rm clparse_old.h
+rm main.exe main.pdb
+ls
+v main.c
+lg
+v clparse.h
+v main.cc
+cl main.cc /I. /utf-8
+cl main.cc /W4 /I. /utf-8
+v clparse.h
+cl main.cc /W4 /I. /utf-8
+v clparse.h
+cl main.cc shellapi.lib /W4 /I. /utf-8
+cl main.cc shell32.lib /W4 /I. /utf-8
+v clparse.h
+cl main.cc shell32.lib /W4 /I. /utf-8
+v clparse.h
+cl main.cc shell32.lib /W4 /I. /utf-8
+cl main.cc shell32.lib /W4 /I. /utf-8 /Ehsc
+cl main.cc shell32.lib /W4 /I. /utf-8 /EHsc
+v clparse.h
+cl main.cc shell32.lib /W4 /I. /utf-8 /EHsc
+ls
+./main.exe --한글
+rm main.exe main.obj
+ls
+rm main.cc
+lg
+cd Github\
+ls
+mkdir zlex
+ls
+cd zlex
+ls
+zig init
+ls
+v build.zig.zon
+ls
+zig fetch --save git+https://codeberg.org/atman/zg.git
+v build.zig
+v src\main.zig
+cd .local
+cd zls
+ls
+git fetch --prune origin main
+git fetch --prune origin master
+git merge origin master
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+v src\main.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+cd ..
+ls
+cd zlex\
+ls
+v src\main.zig
+cd
+ls
+cd Test\
+ls
+rm *
+v main.cc
+zig c++ -std=c+11 main.cc -o main
+zig c++ -std=c++11 main.cc -o main.exe
+v main.cc
+zig c++ -std=c++11 main.cc -o main.exe
+v main.cc
+zig c++ -std=c++11 main.cc -o main.exe
+v main.cc
+zig c++ -std=c++11 main.cc -o main.exe
+v main.cc
+zig c++ -std=c++11 main.cc -o main.exe
+./main.exe
+cd Github\
+ls
+cd musik_asm\
+ls
+./nob.exe
+v src\Windows\miniaudio.c
+cd ..
+ls
+cd musik\
+ls
+v src\terminal\terminal_windows.c
+ls
+v thirdparty\
+cd thirdparty\
+cp ../../clparse/clparse.h .
+ls
+cd ..
+lass
+ls
+rm -rp .zig-cache build build.zig build.zig.zon
+ls
+rm -rp zig-out\
+cp ../musik_asm/nob.h .
+cp ../musik_asm/nob.c .
+;s
+v nob.c
+ls
+cd src
+ls
+touch musik.c
+touch miniaudio.c
+touch miniaudio.h
+ls
+rm musik.h
+lss
+ls
+ls terminal\
+cd terminal\
+ls
+rm terminal.zig
+v terminal.h
+s
+v terminal.c
+ls
+cd ..
+ls
+v musik.c
+ls
+cd ..
+ls
+cd ..
+ls
+cd clparse\
+v clparse.h
+lg
+cd ..
+ls
+cd musik
+ls
+cd thirdparty\
+cp ../../clparse/clparse.h .
+cd ..
+ls
+v src\main.zig
+ls
+cd src
+s
+v miniaudio.c
+cd ../..
+ls
+cd musik_asm\
+ls
+v src\Windows\musik.asm
+cd ..
+ls
+cd musik\
+ls
+v src\miniaudio.c
+cd ..
+ls
+mv musik musik_zig
+ls
+git clone --recursive https://github.com/e0328eric/musik.git
+cd musik
+ls
+v src\Musik.zig
+v src/main.zig
+mv ../musik_zig/*.wav .
+cd ..
+ls
+cd musik\
+zig build run -- MEMORY.wav
+v \$Recycle.Bin\
+v build.zig
+zig build run -- MEMORY.wav
+v src/main.zig
+cd ..
+ls
+ls musik\
+ls musik_zig\
+rm -rp musik_zig\
+ls
+cd musik\
+ls
+zig fetch --save git+https://github.com/e0328eric/libvaxis.git
+v build.zig
+zig build run
+ls
+cd ..
+ls
+mv musik musik_zig
+cargo new musik
+cd musik
+ls
+cargo add crossterm
+cargo add cpal
+cargo add symphonia
+cargo add clap --features derive
+ls
+rustup update stable
+rustup self-update
+rustup update self
+rustup update --self
+rustup update --help
+rustup update self
+rustup update stable
+ls
+cp ../musik_zig/*.wav .
+v .gitignore
+ls
+cd Github\arch-almagest\
+ls
+cd keyboard\
+ls
+cd keyd\
+ls
+cd ..
+mkdir windows
+cd windows\
+cd Github\arch-almagest\keyboard\windows\
+v README.md
