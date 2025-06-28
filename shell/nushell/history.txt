@@ -7808,3 +7808,456 @@ mkdir windows
 cd windows\
 cd Github\arch-almagest\keyboard\windows\
 v README.md
+lg
+cd
+ls
+cd Github\
+cd musik\
+ls
+cd ..
+ls
+cd musik_zig\
+ls
+zig build
+cd C:\Users\almag\AppData\Local\zig\p\zg-0.14.0-oGqU3KEFswIffnDu8eAE2XlhzwcfgjwtM6akIc5L7cEV
+ls
+zig build test
+v codegen\dwp.zig
+v build.zig
+zig-lts build
+v codegen\dwp.zig
+ls
+v build.zig.zon
+zig build
+cd ../..
+ls
+cd ..
+rm -rp zig
+C:\Users\almag\AppData\Local\zig\p\zg-0.14.0-oGqU3KEFswIffnDu8eAE2XlhzwcfgjwtM6akIc5L7cEV
+ls
+cd data\
+ls
+cd unicode\extracted\
+ls
+cd ../..
+cd ..
+cd codegen\
+ls
+v dwp.zig
+exit
+cd ..
+ls
+git clone --depth 1 --recursive https://codeberg.org/e0328eric/zg
+ls
+cd zg
+ls
+zig build test
+v codegen\canon.zig
+v build.zig
+cd ..
+ls
+rm -rp zg
+ls
+cd musik_zig\
+ls
+v build.zig.zon
+ls
+v build.zig
+v src\main.zig
+cd
+cd .local
+zigup
+shutdown /s /t 0
+cd .local
+ls
+rm -rp zig zig-compiler\
+mv zig-lts zig
+zig version
+cd
+ls
+cd Github\vesti\
+ls
+zig build
+v build.zig
+zig build
+v build.zig.zon
+v build.zig
+zig build
+v build.zig
+cd
+cd .local
+ls
+cd zls
+git checkout 0.14.0
+git checkout 0.14.1
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\vesti\
+ls
+v build.zig
+ls
+v build.zig.zon
+ls
+zig build
+v src\compile.zig
+zig build
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig fetch --save https://codeberg.org/atman/zg/archive/v0.14.0-rc1.tar.gz
+v build.zig.zon
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v src\location.zig
+zig build
+v src\lexer\Lexer.zig
+zig build
+v src\lexer\Lexer.zig
+zig build
+v src\lexer\Lexer.zig
+zig build
+lg
+v build.zig.zon
+lg
+cd ..
+ls
+git clone --depth 1 --recursive https://github.com/e0328eric/vesti-manual.git
+ls
+cd vesti-manual\
+ls
+rm test.ves
+ls
+rm -rp vesti-cache\
+ls
+cd src
+ls
+v chapter_1.md
+cd ..
+ls
+cargo install mdbook
+cd ..
+ls
+mr -rp vesti-manual\
+rm -rp vesti-manual\
+ls
+cd Github\vesti\
+cd vesti\
+ls
+mkdir Manual
+cd Manual\
+ls
+v vesti_man.ves
+pwd | pbcopy
+cd C:\Users\almag\Github\vesti\Manual
+ls
+vesti compile vesti_man.ves
+ls
+cd ..
+ls
+v .gitignore
+lg
+ls
+cd Manual\
+ls
+start vesti_man.pdf
+v vesti_man.ves
+v .vesti-dummy\stdout.txt
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+v vesti_man.ves
+start vesti_man.pdf
+shutdown /s /t 0
+cd Icedrive\ScoreData\2025-1\
+ls
+mv Real_Analysis_Final.csv Real_Analysis_Final.xlsx
+cp Real_Analysis_Final.xlsx ~/Test/
+cd
+ls
+cd Test
+ls
+cp ODE_Final.xlsx ODE_Final.zip
+ls
+unzip ODE_Final.zip
+ls
+rm -rp _rels\ docProps\ xl
+ls
+mkdir ODE_Final
+mv ODE_Final.zip ODE_Final\
+cd ODE_Final\
+ls
+unzip ODE_Final.zip
+ls
+v docProps\app.xml
+v docProps\core.xml
+v docProps\custom.xml
+v xl\styles.xml
+ls
+cd
+ls
+cd Github\
+git clone https://github.com/e0328eric/xlsxio_zig.git
+cd xlsxio_zig\
+ls
+zig build --help
+zig init --help
+zig init --strip
+zig init --strip_comment
+zig help
+zig init
+ls
+v build.zig
+zig fetch --save git++https://github.com/allyourcodebase/zlib
+zig fetch --save git+https://github.com/allyourcodebase/zlib
+zig fetch --save git+https://github.com/brechtsanders/xlsxio.git
+zig fetch --help
+v build.zig.zon
+zig fetch --save https://github.com/brechtsanders/xlsxio/archive/refs/tags/0.2.35.tar.gz
+zig fetch https://github.com/brechtsanders/xlsxio/archive/refs/tags/0.2.35.tar.gz
+v build.zig.zon
+ls
+v build.zig
+mkdir test
+cd test\
+zig init
+zig fetch -h
+zig fetch --save ..
+v build.zig.zon
+v build.zig
+zig build
+cd ..
+ls
+v build.zig
+cd test\
+zig build
+v ../build.zig
+zig build
+v ../build.zig
+zig fetch --save ..
+zig build
+\
+cd
+cd Github\xlsxio_zig\
+ls
+v build.zig.zon
+v build.zig
+cd test\
+zig fetch --save ..
+zig build
+v ../build.zig
+zig fetch --save ..
+izg
+zig
+zig build
+cd Test\
+ls
+git clone --depth 1 --recursive https://github.com/jmcnamara/libxlsxwriter.git
+ls
+cd libxlsxwriter\
+cmake -S. -Bbuild\
+winget search zlib
+v CMakeLists.txt
+ls
+cd lib\
+ls
+cd ..
+ls
+cd src\
+ls
+cd ../..
+ls
+rm -rp libxlsxwriter\
+ls
+cd
+ls
+cd Github\
+ls
+rustup update stable
+ls
+cargo new txmlx
+rm -rp txmlx\
+rm -rp txlsx
+cargo new txlsx
+cd txlsx\
+ls
+cargo add clap --features derive
+cargo add umya-spreadsheet
+cargo add ratatui
+cargo add crossterm
+ls
+v src\main.rs
+hx src\main.rs
+hx $nu.config-path
+source $nu.config-path
+v src\main.rs
+cp ~/Test/Real_Analysis_Final.xlsx .
+ls
+v .gitignore
+v src\main.rs
+seminar 
+ls
+cd Doctor\
+ls
+mkdir AApproach
+cd AApproach\
+ls
+touch aaproach.ves
+v aaproach.ves
+which hx
+cd .local
+ls
+cd helix\
+ls
+cd ..
+ls
+rm -rp helix
+cd bin
+ls
+rm hx.exe zig.exe
+cd ..
+winget search helix
+winget install helix.helix
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+v aaproach.ves
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+vesti compile aaproach.ves
+ls
+start aaproach.pdf
+cd Desktop\
+;s
+ls
+cd Desktop\
+ls
+vesti compile foo.ves
+start foo.pdf
+v foo.ves
+vesti compile -WE foo.ves
+mv foo.pdf 증빙서류.pdf
+ls
+vesti compile foo.ves
+mv foo.pdf 출장증빙.pdf
+vesti compile foo.ves
+mv foo.pdf 계산서.pdf
+cd `Icedrive\Private\연구비 백업자료\`
+ls
+cd 2025-06-27\
+ls
+cd ..
+ls `New folder\`
+rm -rp `New folder\`
+cd 2025-06-27\
+ls
+pwd | pbcopy
+cd 'C:\Users\almag\Icedrive\Private\연구비 백업자료\2025-06-27'
+ls
+vesti compile foo.ves
+start foo.pdf
+v foo.ves
+vesti compile foo.ves
+mv foo.pdf 고속버스_영수증.pdf
+siv 홈페이지_대문.png
+vesti compile foo.ves
+mv foo.pdf 출장증빙_학회_대문.pdf
+vesti compile foo.ves
+mv foo.pdf 참가명단_홈페이지_스샷.pdf
+vesti compile foo.ves
+mv foo.pdf 출장증빙_명찰.pdf
+ls
+vesti compile foo.ves
+mv foo.pdf 고속버스_영수증.pdf
+cd Test\
+ls
+v main.c
+cl main.c
+./main.exe
+rm '[Content_Types].xml'
+zig cc main.c -o main.exe
+zig
+cd .local
+ls
+cd bin
+ls
+rm zig-lts.exe
+ln ../zig/zig.exe ./zig.exe
+ls
+zig cc main.c -o main.exe
+./main.exe
+zig cc main.c -O3 -o main.exe
+./main.exe
+v main.c
+bat main.c
+cl main.c
+./main.exe
+cd Test\
+ls
+cl /?
+cl /favor:intel64 main.c
+./main.exe
+zig cc -target x86_64-windows-gnu main.c -o main.exe
+./main.exe
+zig cc -target x86_64-windows-gnu main.c -O3 -o main.exe
+./main.exe
+cl /?
+cd Test\
+ls
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+ls
+v main.c
+cl main.c
+./main.exe
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aaproach.pdf
+cd Github\vesti\
+ls
+v src\compile.zig
+v $nu.config-path
+hx src\main.rs
+hx src\ansi.zig
+cd $env.APPDATA
+ls
+cd helix
+ls
+cd runtime\queries\
+ls
+cd ..
+ls
+cd ..
+ls
+v languages.toml
+hx --health
+lsd
+ls
+v $nu.config-path
+ls
+cd runtime\queries\
+ls
+cd ..
+ls
+cd ..
+ls
+cd runtime\queries\
+cp -r ../grammars/sources/zig/queries zig
+ls
+v src\compile.zig
+cd
+cd Github\arch-almagest\
+ls
