@@ -8595,3 +8595,4 @@ nwg-displays
 nmtui
 cd
 cd Github/arch-almagest/
+lg
