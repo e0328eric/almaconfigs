@@ -18,6 +18,7 @@ Notice that the list might not contain some packages but it is required.
 - pamixer
 - playerctl
 - thunar
+- ttf-jetbrains-mono-nerd
 - vivaldi
 - walker
 - wallust (AUR)

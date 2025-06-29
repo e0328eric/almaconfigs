@@ -7,4 +7,5 @@
 config_version: 2
 settings:
   content.notifications.enabled:
+    https://laftel.net: true
     https://www.youtube.com: false
