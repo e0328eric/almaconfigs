@@ -37,6 +37,7 @@ source = { git = "https://github.com/alaviss/tree-sitter-nim.git", rev = "main" 
 
 [language-server.tinymist]
 command = "tinymist"
+config = { exportPdf = "onType" }
 
 [[language]]
 name = "typst"

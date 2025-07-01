@@ -8261,3 +8261,180 @@ v src\compile.zig
 cd
 cd Github\arch-almagest\
 ls
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\
+s
+tlmgr update --all
+tlmgr update --all --self
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor
+cd AApproach\
+ls
+ls
+cd AApproach\
+s
+v aaproach.ves
+v --health
+v aaproach.ves
+cd $env.APPDATA
+ls
+cd helix
+ls
+cd runtime\queries\
+ls
+cd ..
+ls
+cd ..
+v -g fetch
+v -g build
+vesti compile -WE aaproach.ves
+cd
+ls
+cd Github\
+lsd
+ls
+cd musik\
+ls
+cd ..
+ls musik_zig\
+rm -rp musik
+ls
+cd Github\
+ls
+rm -rp multwin\
+ves
+nvim aaproach.ves
+v -g build
+v aaproach.ves
+cd Github\musik
+ls
+cp ../musik_zig/*.wav .
+cp ../musik_zig/thirdparty .
+cp ../musik_zig/thirdparty thirdparty
+cp ../musik_zig/thirdparty/ thirdparty
+cp -r ../musik_zig/thirdparty/ thirdparty
+ls
+v .gitignore
+git init
+ls
+v .gitignore
+cd Github\musik
+ls
+cd thirdparty\
+ls
+rm -rp miniaudio\
+cd ..
+cd thirdparty\
+git submodule add https://github.com/mackron/miniaudio.git
+nvim aaproach.ves
+vesti compile -WE aaproach.ves
+echo "https://civitai.com/api/download/models/1190596?type=Model&format=SafeTensor&size=full&fp=bf16" | pbcopy
+cd
+cd Downloads\
+ls
+curl -O --location https://civitai.com/api/download/models/1190596?type=Model&format=SafeTensor&size=full&fp=bf16
+ls
+rm `1190596`
+cd
+pwd | pbcopy
+C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+v aaproach.ves
+nvim aaproach.ves
+vesti compile -WE aaproach.ves
+cd Github\
+ls
+git clone https://github.com/e0328eric/vesti-zed.git
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy
+C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v aaproach.ves
+ls
+v foo.typ
+typst compile foo.typ
+start foo.pdf
+rm  foo.pdf foo.typ
+ls
+mv aaproach.pdf aaproach_old.pdf
+ls
+rm -rp .vesti-dummy build.lua
+ls
+v aaproach.typ
+start aaproach_old.pdf
+cargo install tinymist
+vesti compile -WE aaproach.ves
+ls
+typst compile aaproach.typ
+v aaproach.typ
+v --health
+v aaproach.typ
+nvim aaproach.typ
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+v $nu.config-path
+source $nu.config-path
+v after\plugin\lsp.lua
+lg
+v aaproach.typ
+source $nu.config-path
+cd .local\bin
+ls
+rm tinymist.exe
+v aaproach.typ
+v C:/Users/almag/
+v C:/Users/almag/AppData/Local/nvim-data/lsp.log
+v aaproach.typ
+cd $env.APPDATA
+cd ComfyUI\
+touch extra_models_config.yaml
+typst watch aaproach.typ
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\
+ls
+cd AApproach\
+ls
+rm aaproach.pdf
+mv aaproach.typ aapproach.typ
+mv aaproach.ves aapproach.ves
+ls
+start aaproach_old.pdf
+cd $env.LOCALAPPDATA
+ls
+cd nvim\
+ls
+v after\plugin\lsp.lua
+typst compile aapproach.typ
+start aapproach.pdf
+v aapproach.typ
+cd
+ls
+cd .local\bin
+ls
+iwr https://github.com/hongjr03/tinymist-nightly-installer/releases/latest/download/run.ps1 -UseBasicParsing | iex
+powershell
+wget --location -O https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.13.14/tinymist-win32-x64.exe
+curl --location -O https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.13.14/tinymist-win32-x64.exe
+ls
+mv tinymist-win32-x64.exe tinymist.exe
+hx aapproach.typ
+cd $env.APPDATA
+ls
+cd helix
+ls
+hx languages.toml
+d
+cd
+ls
+cd Github\arch-almagest\
+lg
+v $nu.config-path
+source $nu.config-path
+rm .git\index.lock
