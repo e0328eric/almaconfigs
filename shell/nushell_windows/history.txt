@@ -8438,3 +8438,30 @@ lg
 v $nu.config-path
 source $nu.config-path
 rm .git\index.lock
+lg
+v aapproach.typ
+lsa
+ls
+vesti compile aapproach.ves
+ls
+mv .vesti-dummy\aapproach.bib .
+ls
+rm -rp .vesti-dummy\
+ls
+v aapproach.typ
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aaproach_old.pdf
+start aapproach.pdf
+v aapproach.typ
+cd .glzr
+ls
+cd glazewm\
+ls
+v config.yaml
+cd
+cd Github\arch-almagest\
+ls
+lgf
