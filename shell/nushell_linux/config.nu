@@ -782,7 +782,7 @@ $env.config = {
     ]
 }
 
-alias v          = helix
+alias v          = nvim
 alias s          = ls
 alias l          = ls -al
 alias lg         = lazygit
@@ -790,13 +790,13 @@ alias dyt        = yt-dlp
 alias getmusic   = yt-dlp -x --audio-format m4a
 alias pbcopy     = win32yank.exe -i
 
-alias hakwon     = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
-alias minireport = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report
-alias notetaking = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
-alias homework   = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
-alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
-alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
-alias kindergarten = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarten
+alias hakwon     = cd ~/IceDrive/TeX_Documents/Hakwon
+alias minireport = cd ~/IceDrive/TeX_Documents/Mini_Report
+alias notetaking = cd ~/IceDrive/TeX_Documents/NoteTaking
+alias homework   = cd ~/IceDrive/TeX_Documents/Homework
+alias teachingf  = cd ~/IceDrive/TeX_Documents/TF
+alias seminar    = cd ~/IceDrive/TeX_Documents/Seminar
+alias kindergarten = cd ~/IceDrive/TeX_Documents/Kindergarten
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")

@@ -6,6 +6,8 @@ Here is a list of packages this hyprland config requires.
 Notice that the list might not contain some packages but it is required.
 
 - brightnessctl
+- cliphist
+- dunst
 - fcitx5
 - fcitx5-hangul
 - ghostty
@@ -17,6 +19,7 @@ Notice that the list might not contain some packages but it is required.
 - nwg-displays
 - pamixer
 - playerctl
+- swww
 - thunar
 - ttf-jetbrains-mono-nerd
 - vivaldi

@@ -8596,3 +8596,275 @@ nmtui
 cd
 cd Github/arch-almagest/
 lg
+bash
+source $nu.env-path
+source $nu.config-path
+ls
+cd
+v
+cd .config/
+ls
+vim nushell/config.nu
+sudo pacman -S tree-sitter-cli nodejs ghostty kitty
+source $nu.config-path
+cd
+v
+ls
+cd .config/
+ls
+cd 
+cd Github/
+git clone https://github.com/e0328eric/vesti.git
+sudo pacman -S wget
+sudo vim /etc/doas.conf
+ls
+cd
+cd .local
+ls
+mkdir bin
+ls
+cd bin
+wget https://github.com/e0328eric/zigup/releases/download/v0.4.0/x86_64-linux-musl.tar.xz
+tar xvf x86_64-linux-musl.tar.xz
+mv x86_64-linux-musl/zigup .
+ls
+rm -rp x86_64-linux-musl/ x86_64-linux-musl.tar.xz
+ls
+chmod +x zigup
+ln -s ~/Github/arch-almagest/wm/hypr ~/.config/hypr
+ls
+cd ..
+zigup
+ls
+mv zig-compiler/zig-x86_64-linux-0.14.1 zig
+ls
+rm -rp zig-compiler/
+ln -s ~/.local/zig/zig ~/.local/bin/zig
+zig version
+cd bin
+ls
+cd
+zig version
+cd .config/n
+cd .local/zig/
+ls
+chmod +x zig
+file zig
+zig version
+cd
+ls
+rustup default stable
+cd paru
+ls
+makepkg -si
+doas /usr/local/bin/sudo
+doas pacman -S sudo
+doas vim /etc/sudoers
+sudo
+which sudo
+doas rm /usr/bin/sudo
+doas pacman -S sudo
+sudo
+sudo -k
+man sudo
+doas vim /etc/sudoers
+makepkg -si
+doas pacman -Rdd sudo
+paru -S doas-sudo-shim
+cd ..
+ls
+rm -rp paru/
+wget https://github.com/jirutka/doas-sudo-shim/archive/v0.1.2/doas-sudo-shim-0.1.2.tar.gz
+tar xvf doas-sudo-shim-0.1.2.tar.gz
+cd doas-sudo-shim-0.1.2/
+ls
+doas make install DESTDIR=/ PREFIX=/usr/local
+doas pacman -S asciidoctor
+doas make install DESTDIR=/ PREFIX=/usr/local
+vim sudo.1.adoc
+sudo
+cd ..
+ls
+rm -rp doas-sudo-shim-0.1.2.tar.gz doas-sudo-shim-0.1.2/
+ls
+cd .config/hypr
+ls
+cd
+cd Github/
+ls
+cd arch-almagest/
+ls
+cd keyboard/
+ls
+sudo pacman -S keyd
+cd keyd/
+ls
+cd ..
+ls
+cd ..
+cd wm/hypr/
+ls
+ls keyd/
+sudo pacman -S bat
+sudo pacman -S hexyl
+ls
+bat README.md
+sudo cp ./keyd/default.conf /etc/keyd/default.conf
+sudo systemctl enable keyd --now
+ls
+cp README.md install_deps.sh
+cd
+ls
+cd .config/
+ls
+git clone --depthg 1 https://github.com/e0328eric/AlmaNvim.git nvim
+git clone --depth 1 https://github.com/e0328eric/AlmaNvim.git nvim
+v
+sudo pacman -S btop
+btop
+btop --force-utf
+LS
+ls
+cd hypr
+ls
+v install_deps.sh
+vim configs/
+vim install_deps.sh
+chmod +x install_deps.sh
+./install_deps.sh
+sudo pacman -S sddm
+cd
+cd Github/arch-almagest/
+ls
+cd sddm
+ls
+bat REDME.txt
+cp REDME.txt install-sddm.sh
+vim install-sddm.shl
+vim install-sddm.sh
+ls
+chmod +x install-sddm.sh
+./install-sddm.sh
+./install-sddm.sh\
+./install-sddm.sh
+bat install-sddm.sh
+sudo cp -r ./almagest-sddm /usr/share/sddm/themes
+echo "[Theme]\nCurrent=almagest-sddm\n" > sddm.conf
+ls
+echo "[Theme]\nCurrent=almagest-sddm\n"; save sddm.conf
+help save
+echo "[Theme]\nCurrent=almagest-sddm\n" | save sddm.conf
+bat sddm.conf
+bat REDME.txt
+sudo cp /etc/sddm.conf
+sudo cp ./sddm.conf /etc/sddm.conf
+sudo systemctl enable sddm
+cd .config/hypr
+ls
+vim install_deps.sh
+sudo pacman -S hyprland
+reboot
+cd .config/
+ls
+rm -rp ghostty/
+ln -s ~/Github/arch-almagest/terminals/ghostty ~/.config/ghostty
+cd .config/hypr
+ls
+swww img wallpapers/lilpa_night.png
+v install_deps.sh
+./install-sddm.sh
+./install_deps.sh
+sudo pacman -S swww
+sudo pacman -S lazygit
+git config --global credential.helper store
+git config --global user.name "Sungbae Jeong"
+git config --global user.email "almagest0328@gmail.com"
+ls
+v install_deps.sh
+./install_deps.sh
+sudo pacman -S dunst
+v configs/keybinds.conf
+v scripts/VolumeBrightness.sh
+v configs/defaults.conf
+vivaldi
+sudo pacman -S vivaldi
+cd ..
+ls
+ln -s ~/Github/arch-almagest/utils/waybar ~/.config/waybar
+cd hypr
+v configs/keybinds.conf
+v scripts/LockScreen.sh
+hyprlock -q
+sudo pacman -S hyprlock
+sudo pacman -S hypridel
+sudo pacman -S hypridle
+v install_deps.sh
+swww img wallpapers/lilpa_night.png
+cd .config/hypr
+ls
+swww img wallpapers/lilpa_night.png
+waybar
+v install_deps.sh
+./install_deps.sh
+\v 
+v install_deps.sh
+./install_deps.sh
+paru -S icedrive
+sudo pacman -S pamixer
+pacman -S alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber sof-firmware pamixer
+sudo pacman -S alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber sof-firmware pamixer
+sudo systemctl enable --now pipewire pipewire-pulse wireplumber
+sudo systemctl enable --now pipewire-pulse wireplumber
+sudo systemctl enable --now wireplumber
+sudo pacman -S pavucontrol
+cd ..
+ls
+cd waybar
+ls
+v style.css
+pacman -Ss jetbrains
+paru -S texlive-installer
+sudo vim /etc/doas.conf
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+paru -S ncpamixer
+ncpamixer 
+systemctl --user state pipewire
+systemctl --user status pipewire
+systemctl status pipewire
+systemctl --user start pipewire pipewire-pulse wireplumber
+sudo pacman -S blueman bluez
+sudo systemctl enable --now bluetooth
+waybar
+sudo pacman -S caja
+paru -S mimeo
+ls
+mv Downloads/IcedriveMounted-v3.33-x86_64.AppImage ./.local/bin/icedrive
+cd .local/bin
+ls
+chmod +x icedrive
+icedrive;
+sudo pacman -S fuse
+v $nu.config-path
+ls
+cd Github/arch-almagest/shell/
+ls
+bat nushell_windows/config.nu
+bat nushell_linux/config.nu
+v $nu.config-path
+source $nu.config-path
+cd
+paru -Ss d2coding
+sudo pacman -S ttf-d2coding-nerd
+v
+ls
+cd .config/hypr
+ls
+v configs/autostart.conf
+sudo pacman -S wl-paste
+v configs/autostart.conf
+sudo pacman -S cliphist
+v install_deps.sh
+ls
+cd
+ls
+cd Github/arch-almagest/
