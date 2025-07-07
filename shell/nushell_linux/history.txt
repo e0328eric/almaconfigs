@@ -8868,3 +8868,449 @@ ls
 cd
 ls
 cd Github/arch-almagest/
+lg
+cd ..
+ls
+cd vesti/
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+mkdir Test
+ls
+cd Test
+ls
+cp -r '/home/almagest/Icedrive/AlmaFiles/IIT/Foo/[Umashio] 催眠被験記録/' .
+ls
+cp -r '[Umashio] 催眠被験記録/' bacpup
+mv bacpup backup
+ls
+cd '[Umashio] 催眠被験記録/'
+ls
+v main.zig
+cd
+cd .local
+git clone https://github.com/zigtools/zls.git
+cd zls
+git checkout 0.14.1
+git checkout 0.14.0
+cd
+cd .config/
+ls
+mkdir vesti
+cd vesti/
+git clone https://github.com/e0328eric/coprime.git
+cd
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+node install -g @google/gemini-cli
+npm install -g @google/gemini-cli
+sudo pacman -S npm
+npm install -g @google/gemini-cli
+sudo npm install -g @google/gemini-cli
+sudo vim /etc/doas.conf
+ls
+gm
+v $nu.config-path
+source $nu.config-path
+v $nu.config-path
+gm
+ls
+cd 'Test/[Umashio] 催眠被験記録/'
+ls
+v main.cc
+g++ main.cc -o main
+v main.cc
+g++ main.cc -o main
+./main
+v main.cc
+g++ main.cc -o main
+./main
+sudo /opt/texlive-installer/install-tl
+v main.cc
+g++ main.cc -o main
+./main "\\[Umashio\\]" .
+ls
+rm main main.cc
+ls
+cd
+ls
+gm
+ls
+cd Github/
+ls
+git clone https://github.com/e0328eric/simpimgv.git
+git clone https://github.com/e0328eric/simpimg.git
+git clone https://github.com/e0328eric/siv.git
+siv
+cd siv
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+sudo pacman -S webp
+sudo pacman -S libwebp
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+siv *
+siv 001.jpg
+siv *
+cd
+cd .config/hypr
+ls
+v configs/keybinds.conf
+v hyprland.conf
+ls
+cd Icedrive\IIT
+ls
+cd Icedrive/IIT/Foo
+ls
+cd Icedrive/
+ls
+cd AlmaFiles/IIT/Foo/
+rm -rp '[Umashio] 催眠被験記録/'
+mv '/home/almagest/Test/[Umashio] 催眠被験記録/' .
+cd ..
+ls
+rm -rp '[Umashio] 催眠被験記録/' backup/
+cd
+ls
+cd Icedrive/AlmaFiles/IIT/Baz
+ls
+cd 催眠遊戯/
+ls
+cd 立ち絵/
+ls
+cd ..
+ls
+cd 画像/
+ls
+siv *
+ls
+siv cg04q.png
+ls
+cd 
+cd Github/siv
+ls
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+icedrive;
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+ls
+reboot
+alsamixer
+alsactl
+alsactl --help
+alsamixer
+pamixer
+ncpamixer 
+alsamixer
+sudo pacman -S plasma
+reboot
+sudo pacman -Rsc plasma
+sudo pacman -S zathura zathura-pdf-mupdf
+math
+ls
+cd IceDrive/
+ls
+cd Math/
+ls
+zathura Homotopy_Type_Theory.pdf;
+mimeo 
+mimeo --help
+mimeo --app2desk zathura
+mimeo -m foo.pdf
+mimeo --prefer application/pdf org.pwmt.zathura-pdf-mupdf.desktop
+cd Icedrive/AlmaFiles/IIT/Baz
+cd d..
+cd ..
+cd Foo
+cd '[Umashio] 催眠被験記録/'
+siv *
+sudo pacman -S feh
+feh *
+gm
+feh *
+feh -g 600x800 *
+cd
+ls
+cd Github/siv
+;s
+ls
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+gm
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+gm
+v build.zig
+cd Icedrive/AlmaFiles/IIT/Baz
+cd
+cd Icedrive/AlmaFiles/IIT/Foo/
+cd '[Umashio] 催眠被験記録/'
+siv *
+cd Github/siv
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+cd ..
+ls
+cd Github/
+ks
+ls
+mv siv siv-zig
+ls
+cargo new siv
+ls
+cd siv
+cargo add clap --features derive
+ls
+cd ..
+rm -rp siv
+mv siv-zig siv
+cd siv
+ls
+v src/main.zig
+lsd
+ls\
+cd ..
+ls
+cd sov
+cd siv
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd 
+cd Icedrive/AlmaFiles/IIT/Foo/
+cd '[Ijimaya (Ijima Yuu)] Seidorei no Oshigoto! ~Namaiki JK Kishi Sora Ginko no Saimin Tenraku Jinsei~ (Ryuuou no Oshigoto!)/'
+ls
+siv *
+siv *
+cd
+cd Github/siv
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+siv 001.jpg
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+v src/main.zig
+zig build run
+zig build run -- MEMORY.wav
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+cd
+cd Test
+ls
+zig init
+ls
+v build.zig.zon
+las
+ls
+cd Github/siv
+v build.zig.zon
+rm \
+zig fetch --save git+https://github.com/raysan5/raylib.git
+v build.zig.zon
+v build.zig
+v build.zig
+v src/main.zig
+v src/main.zig
+zig build run
+zig fetch --save git+https://github.com/raysan5/raylib.git
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+ls
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+siv *
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+ls
+siv feh_011558_000001_002.jpg
+rm feh_011558_000001_002.jpg
+ls
+siv *
+ls
+rm -rp feh_011558_000001_002.jpg
+ls
+lg
+ls
+cd ..
+ls
+sudo pacman -Syyu
+poweroff
+cd .config/hypr
+ls
+nmtui
+swww --help
+ls
+cd wallpapers/
+ls
+cd IceDrive/
+ls
+cd Photos/
+ls
+cd ..
+v configs/autostart.conf
+hyprctl monitors all
+hyprctl monitors all | grep "Monitor"
+cd .config/hypr
+ls
+v configs/autostart.conf
+reboot
+icedrive;
+cd .local/bin/
+s
+mv icedrive icedrive-gui
+ls
+cd .config/hypr
+v configs/keybinds.conf
+ls
+cd ..
+ls
+walker --help
+cd hypr
+ls
+v configs/keybinds.conf
+mv ~/Downloads/IcedriveCLI-v3.33 icedrive
+ls
+chmod +x icedrive
+cd 
+ls
+icedrive
+icedrive --help
+sudo mv icedrive-gui /usr/local/bin/icedrive
+ls
+rm icedrive
+cd
+sudo pacman -S signal-bin
+sudo pacman -S signal
+sudo pacman -S signal-bin
+paru -S signal-bin
+paru -S signal
+paru -Ss signal
+paru -Ss signal | bat
+bat --help
+gm
+paru -Ss signal | bat --paging=always
+paru -Ss signal | less
+sudo pacman -S less
+paru -Ss signal | less
+paru -S signal-desktop
+ls
+cd IceDrive/Photos/
+ls
+cd ComfyUi/
+ls
+cd ..
+ls
+sudo pacman -S yt-dlp
+cd
+ls
+cd IceDrive/
+ls
+cd Lilpa-Backups/
+ls
+rm '[240328] 르르 메이드카페 블루베리땅 촬영본 같이보기.mp4'
+rm -rp '[240328] 르르 메이드카페 블루베리땅 촬영본 같이보기.mp4'
+cd ..
+ls
+cd Lilpa-Backups/
+ls
+cd ..
+ls
+cp -r Photos/* ~/IceDrive/Photos/ 
+cp -r ~/Icedrive/Photos/* ~/IceDrive/Photos/ 
+cd .config/hypr
+s
+cd configs/
+ls
+v keybinds.conf
+cd .config/hypr
+s
+cd wallpapers/
+ls
+cd Github/arch-almagest/
+ls
+find -t png .
+help find
+fzf
+sudo pacman -S fzf
+fzf
+v main.zig
+zig run main.zig
+lsa
+ls
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+cp ~/Github/arch-almagest/wm/awesome/theme/stelle-firefly.png .
+hyprctl monitors all | grep "Monitor"
+swww img --help
+hyprctl monitors all | grep "Monitor"
+swww img -o DP-3 stelle-firefly.png
+swww img -o HDMI-A-3 lilpa_night.png
+swww img -o DP-4 stelle-firefly.png
+cd
+ls
+gm
+cd Github/arch-almagest/

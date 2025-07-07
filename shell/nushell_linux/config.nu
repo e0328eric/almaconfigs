@@ -788,7 +788,8 @@ alias l          = ls -al
 alias lg         = lazygit
 alias dyt        = yt-dlp
 alias getmusic   = yt-dlp -x --audio-format m4a
-alias pbcopy     = win32yank.exe -i
+alias gm         = gemini
+#alias pbcopy     = win32yank.exe -i
 
 alias hakwon     = cd ~/IceDrive/TeX_Documents/Hakwon
 alias minireport = cd ~/IceDrive/TeX_Documents/Mini_Report
