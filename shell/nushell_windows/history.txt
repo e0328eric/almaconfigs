@@ -8465,3 +8465,2262 @@ cd
 cd Github\arch-almagest\
 ls
 lgf
+lg
+v aapproach.typ\
+v aapproach.typ
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+v aapproach.typ
+shutdown /s /t 0
+cd I:\AlmaFiles\IIT\Bar
+cd I:\AlmaFiles\IIT
+ls
+cd Test\
+ls
+rm foo.ps1
+ls
+cd ..
+ls
+cd Github\
+ls
+cd zlex
+ls
+v build.zig.zon
+cd ..
+ls
+rm -rp zlex
+cd 6502-cpu\
+zig build test
+v build.zig.zon
+ls
+v build.zig
+zig build test
+v build.zig.zon
+zig build test
+v build.zig.zon
+ls\
+zig fetch --save git+https://github.com/raysan/raylib.git
+bat build.zig.zon
+zig fetch --save git+https://github.com/raysan5/raylib.git
+zig build test
+v src\Cpu.zig
+zig build test
+v src\Cpu.zig
+cd D:
+zig build test
+ls
+ls -al;
+ls -al
+rm -rp  ._sodeno19-ellen-1-full_2160p.mp4 ._sodeno19-silverwolf-4k_2160p.mp4 .Spotlight-V100\
+ls
+ls -al
+cd
+ls
+cd Test
+ls
+bar main
+bar main.c
+bat main.c
+ls
+rm -rp *
+ls
+v foo.typ
+ls
+start foo.pdf
+v foo.typ
+seminar
+lsa
+ls
+cd Doctor\AApproach\
+ls
+v aapproach.yaml
+rm aapproach.yaml
+v aapproach.bib
+seminar
+ls
+cd Doctor\AApproach\
+ls
+cd ..
+ls
+mkdir SDE
+cd SDE
+ls
+cp ../AApproach/aapproach.typ sde.typ
+typst compile sde.typ
+v sde.typ
+v $nu.config-path
+source $nu.config-path
+v sde.typ
+start sde.pdf
+ls
+cp ../AApproach/aapproach.bib sde.bib
+ls
+v sde.bib
+ls
+v sde.typ
+ls
+mv sde.typ setting.typ
+ls
+v sde.typ
+hx sde.typ
+shutdown /s /t 0
+winget search gemini
+npm install -g @google/gemini-cli
+npm install -g npm@11.4.2
+npm install -g @google/gemini-cli
+gemini
+ls
+seminar
+ls
+cd Doctor\
+ls
+v $nu.config-path
+source $nu.config-path
+ls
+cd SDE\
+ls
+start sde.pdf
+cd Github\6502-cpu\
+zig build test
+v tests\cpu\rule110_table.txt
+v tests\test_cpu.zig
+zig build test
+v tests\test_cpu.zig
+zig build test
+v tests\test_cpu.zig
+v tests\cpu\rule110_table.txt
+v tests\cpu\rule110.zig
+v tests\test_cpu.zig
+zig build test
+v tests\cpu\rule110_table.txt
+zig build test
+v $nu.config-path
+source $nu.config-path
+source $nu.config-path
+v tests\test_bus.zig
+v tests\test_cpu.zig
+lg
+v .gitignore
+ls -al
+lg
+cd
+ls
+cd Test
+ls
+v foo.typ
+start foo.pdf
+v foo.typ
+v $nu.config-path
+which hx
+v sde.typ
+winget uninstall hx
+winget uninstall helix
+cd .local
+ls
+git clone --recursive --depth 1 https://github.com/helix-editor/helix.git
+cd helix
+cargo install --path helix-term
+rustup update stable
+ls
+v rust-toolchain.toml
+nvim rust-toolchain.toml
+rm rust-toolchain.toml
+cargo install --path helix-term
+v -g fetch; v -g build
+v sde.typ
+ls
+rm sde.typ setting.pdf setting.typ
+ls
+pwd | pbcopy
+cd
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+cd $env.APPDATA
+ls
+cd vesti
+ls
+cd coprime\
+ls
+rm vesti.ron
+ls
+v coprime.cls
+lfg
+lg
+cd $env.APPDATA
+cd vesti\coprime\
+ls
+v coprime-reference.sty
+ls
+mv sde.pdf sde_old.pdf
+vesti compile sde.ves
+start sde_old.pdf
+ls
+v sde.ves
+vesti compile -WE sde.ves
+v build.lua
+ls
+cp ../../../Kindergarten/Volume2/build.lua .
+ls
+seminar
+ls
+cd Doctor\SDE\
+ls
+start sde_old.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+vesti compile -WE sde.ves
+v sde.ves
+cd Github\vesti\
+ls
+v src\parser\Parser.zig
+cd $env.APPDATA
+ls
+cd helix
+ls
+cd runtime\queries\
+ls
+cd zig
+ls
+cd ..
+cd
+v --health
+nvim src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v $nu.config-path
+v src\parser\Parser.zig
+v $nu.config-path
+source $nu.config-path
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -WE sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v sde.ves
+source $nu.config-path
+v sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\diagnostic.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+s
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\diagnostic.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+cd Test\
+ls
+v foo.zig
+zig run foo.zig
+v foo.zig
+zig run foo.zig
+v foo.zig
+zig run foo.zig
+v foo.zig
+zig run foo.zig
+v foo.zig
+zig run foo.zig
+v foo.zig
+zig run foo.zig
+v foo.zig
+v src\parser\Parser.zig
+mv foo.zig main.zig
+v main.zig
+zig run foo.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+v main.zig
+zig run main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Github\
+git clone --depth 1 https://github.com/e0328eric/vesti-tectonic-backend.git
+ls
+cd vesti-tectonic-backend\
+ls
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+ls
+seminar
+ls
+cd Doctor\SDE\
+ls
+cd Github\vesti-tectonic-backend\
+ls
+./windows_build.bat
+cargo install cargo-vcpkg
+./windows_build.bat
+start sde_old.pdf
+ls
+rm -rp build.lua sde.ves .vesti-dummy\
+ls
+cp ../AApproach/aapproach.typ .
+seminar
+ls
+cd Doctor\
+ls
+cd SDE\
+ls
+start sde.pdf
+v aapproach.typ
+ls
+mv aapproach.typ sde.typ
+v sde.typ
+typst compile sde.typ
+gm
+cd $env.LOCALAPPDATA
+ls
+cd nvim\
+ls
+v after\plugin\lsp.lua
+lf
+;lg
+v sde.typ
+typst watch sde.typ
+v sde.typ
+ls
+mv sde.pdf sde_old.pdf
+ls
+cd Github\vesti-tectonic-backend\
+ls
+cd Github\vesti\
+ls
+v src\lexer\token.rs
+ld
+ls
+v Cargo.toml
+cargo add mlua -F lua54
+ls
+cd srdc
+cd src
+ls
+rm -rp python\
+ls
+cd ..
+ls
+v Cargo.toml
+ls
+v src\parser\Parser.zig
+v src\parser\mod.rs
+hx src\parser\mod.rs
+cargo b
+v src\lexer\Token.zig
+lg
+cd ..
+ls
+rm -rp vesti
+git clone https://github.com/e0328eric/vesti.git
+cd vesti\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.lua
+ls
+cp ../../../Kindergarten/Volume2/build.lua .
+v build.lua
+makeindex --help
+ls
+cd Github\vesti\
+ls
+v build.lua
+ls
+pwdc 
+pwd | pbcopy
+v sde.ves
+ls
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v 
+v src\parser\Parser.zig
+ls
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\diagnostic.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+ls
+lg
+v sde.ves
+vesti compile sde.ves
+v build.lua
+v sde.ves
+vesti compile sde.ves
+start sde.pdf
+se
+seminar
+ls
+cd Doctor\SDE\
+s
+vesti compile -WE sde.ves
+v .vesti-dummy\coprime-reference.sty
+v sde.ves
+v sde.ves
+start sde_old.pdf
+v sde.ves
+vesti compile -WE sde.ves
+gm
+cd Github\\
+cd vesti\
+ls
+ls
+cd Github\
+ls
+rm -rp vesti-tectonic-backend\
+git clone https://github.com/e0328eric/tree-sitter-vesti.git
+cd tree-sitter-vesti\
+ls
+v src\lexer\Token.zig
+v build.zig
+v build.zig.zon
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+v src\compile.zig\
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+rg "engine" *
+v src\diagnostic.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\diagnostic.zig
+v src\parser\Parser.zig
+zig build test
+v src\parser\tests\utility.zig
+zig build test
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+cd
+cd Github\vesti\
+ls
+v src\commands.zlap
+v grammar.js
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+tree-sitter.exe generate
+v queries\vesti\highlights.scm
+lg
+cd $env.LOCALAPPDATA
+ls
+cd nvim\
+ls
+cd after\queries\
+ls
+cd vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/highlights.scm .
+ls
+lg
+hx -g fetch; hx -g build
+cd
+seminar
+ls
+cd Doctor\SDE\
+hx sde.ves
+cd $env.APPDATA
+cd helix
+ls
+cd runtime\queries\
+ls
+cd vesti\
+ls
+v highlights.scm
+hx -g fetch; hx -g build
+ls
+cd ..
+ls
+cd solidity\
+cd ../..
+ls
+cd grammars\
+ls
+rm vesti.dll
+cd sources\
+ls
+rm -rp vesti
+hx -g fetch; hx -g build
+hx sde.ves
+v vesti\grammar.js
+vesti -h
+vesti compile -h
+v
+ls
+v sde.ves
+ls
+start sde.pdf
+v sde.ves
+vesti compile sde.ves
+v sde.ves
+vesti compile sde.ves
+v sde.ves
+vesti compile sde.ves
+seminar
+ls
+cd Doctor\SDE\
+ls
+gm
+ls
+v find_fonts.ps1
+rm find_fonts.ps1
+seminar
+cd Doctor\SDE\
+gm
+cd
+homework 
+ls
+cd Manifold\
+ls
+v final.ves
+seminar
+cd Doctor\SDE\
+ls
+gm
+winget seatch d2
+winget search d2
+winget install terrastruct.d2
+ls
+v thm_2_1.d2
+vesti compile -WE sde.ves
+seminar
+ls
+cd Doctor\SDE\
+vesti compile -WE sde.ves
+ls
+rm thm_2_1.svg
+v build.lua
+v sde.ves
+v build.lua
+vesti compile -WE sde.ves
+seminar
+ls
+cd Doctor\SDE\
+ls
+rm thm_2_1.png
+v build.lua
+ls
+rm sde.typ
+ls
+rm sde_old.pdf
+ls
+v sde.ves
+vesti compile sde.ves
+ks
+ls
+rm settings.typ
+ls
+vesti compile sde.ves
+v build.lua
+d2 -l elk ./thm_2_1.d2 ./thm_2_1.pdf\
+ls
+vesti compile sde.ves
+start thm_2_1.pdf
+d2 -l elk ./thm_2_1.d2 ./thm_2_1.pdf\
+d2 -l elk ./thm_2_1.d2 ./thm_2_1.pdf
+ls
+ls .vesti-dummy\
+start thm_2_1.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+cd Github\vesti\
+ls
+v src\Lua.zig
+ls
+cd src
+ls
+mkdir lua
+mv Lua.zig lua
+v lua\Lua.zig
+ls
+v compile.zig
+ls
+cd lua
+ls
+v bibtex.lua
+ls
+v bibtex.lua
+mv Lua.zig ..
+ls
+cd ..
+ls
+mv Lua.zig lua
+cd lua
+ls
+v bibtex.lua
+v Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+rg "Lua.zig" *
+v Codegen.zig
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.lua
+vesti compile sde.ves
+v build.lua
+vesti compile sde.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile sde.ves
+v build.lua
+vesti compile sde.ves
+v build.lua
+vesti compile sde.ves
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v build.lua
+vesti compile sde.ves
+v build.lua
+vesti compile sde.ves
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\lua\Lua.zig
+v src\lua\bibtex.lua
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile sde.ves
+v src\lua\bibtex.lua
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\lua\bibtex.lua
+vesti compile sde.ves
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\lua\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v build.lua
+v src\lua\bibtex.lua
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile sde.ves
+bat build.lua
+cd Github\vesti\
+ls
+v build.lua
+vesti compile sde.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v build.lua
+vesti compile sde.ves
+v build.lua
+vesti compile sde.ves
+ls
+cd src
+ls
+mv lua\Lua.zig .
+rm -rp lua
+v Lua.zig
+cd ./.
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v build.lua
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile sde.ves
+seminar
+ls
+cd Doctor\
+ls
+cd SDE\
+ls
+start sde.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+v thm_2_1.d2
+v sde.ves
+start thm_2_1.pdf
+vesti compile -WE sde.ves
+v build.lua
+vesti compile -WE sde.ves
+ls
+cd Github\vesti\
+ls
+v src\commands.zlap
+v build.zig
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\run_script.zig
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti run
+ls
+rm thm_2_1.pdf thm_2_1.svg
+ls
+v build.lua
+vesti run
+ls
+v sde.ves
+lg
+v thm_2_1.d2
+v sde.ves
+vesti compile -WE sde.ves
+v build.lua
+cd Github\6502-cpu\
+ls
+zig fetch --save git+https://github.com/raysan5/raylib.git
+zig build
+cd Github\
+ls
+git clone https://github.com/e0328eric/monky-lang-c.git
+git clone https://github.com/e0328eric/monkey-lang-c.git
+ls
+ls glosso
+rm -rp glosso
+mv monkey-lang-c glosso
+cd glosso
+ls
+rm -rp .git .gitignore .gitmodules default.nix
+ls
+cd lib\
+ls
+cd ..
+rm -rp lib\
+ls
+cd src
+ls
+v main.c
+cd ..
+ls
+mv glosso monkey-lang-c
+ls
+cd Test\
+ls
+rm *
+v main.cc
+ls
+rm main.cc
+ls
+cd ..
+ls
+cd Github\
+ls
+ls musik
+cd musik\
+ls
+rm -rp .git .idea\ thirdparty\ CMakeLists.txt cmake-build-debug\ .gitignore
+ls
+rm -rp src
+ls
+rm .gitmodules
+ls
+cargo init
+cargo add crossterm
+ls
+hx --health
+ls
+rm -rp .gitignore Cargo.lock Cargo.toml
+ls
+cd ..
+ls
+cd musik\
+ls
+rm -rp .git
+ls
+cd ..
+ls
+cd musik_asm\
+ls
+rm -rp .idea
+ls
+cd src
+ls
+cd ..
+ls
+cd ..
+s
+cd musik\
+cp ../musik_asm/nob.c .
+cp ../musik_asm/nob.h .
+ls
+cp -r ../musik_zig/thirdparty .
+ls
+cd thirdparty\
+ls
+cd ..
+ls
+cd ..
+rm -rp musik
+ls
+git clone --recursive --depth 1 https://github.com/e0328eric/musik.git
+cd musik\
+ls
+cp ../musik_zig/*.wav .
+cd ..
+ls
+rm -rp musik_zig\
+cd musik\
+ls
+v src\miniaudio.c
+v build.zig
+v sde.ves
+vesti compile -WE sde.ves
+shutdown /s /t 0
+cd Github\musik_asm\
+cd ..
+ls
+cd musik
+ls
+seminar
+ls
+cd Doctor\SDE\
+s
+start sde.pdf
+shutdown /s /t 0
+cd Documents\ComfyUI\output\
+ls
+cd
+ls
+cd ComfyUI\output\
+ls
+siv ComfyUI_00001_.png
+ls
+siv ComfyUI_00002_.png
+rm -rp ComfyUI_00001_.png ComfyUI_00002_.png
+gm
+ls
+cd Github\arch-almagest\
+git pull origin main
+v
+cargo install --git https://github.com/estin/simple-completion-language-server.git
+cd $env.APPDATA
+ls
+cd helix
+ls
+v languages.toml
+hx languages.toml
+ls
+mkdir snippets
+v languages.toml
+v $nu.config-path
+source $nu.config-path
+ls
+cp ~/Github/arch-almagest/utils/vscode/snips/* .
+ls
+mv *.json ./snippets
+ls
+v languages.toml
+ls
+cd snippets\
+ls
+v vesti.json
+cd
+seminar
+cd Doctor\SDE\
+start sde.pdf
+cd Icedrive\
+ls
+v conflict.zig
+cd $env.APPDATA
+ls
+cd helix
+ks
+cdls
+cd runtime\queries\
+ls
+cd zig
+ls
+cd ..
+ls grammars\
+cd ..
+ls
+v languages.toml
+v -g fetch; v -g build
+cd runtime\
+cd grammars\
+rm zig.dll
+v -g fetch; v -g build
+v conflict.zig
+v --health
+v $nu.config-path
+ls
+cd ..
+ls
+cd queries\zig\
+ls
+rm *
+help rm
+ls
+cp ../../grammars/sources/zig/queries/* .
+v highlights.scm
+cd ../..
+ls
+cd ..
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+start sde.pdf
+v sde.ves
+luafindfont.exe carb
+luafindfont.exe c
+luafindfont.exe cra
+v languages.toml
+ls
+v -g fetch; v -g build
+v conflict.zig
+cd runtime\queries\
+cp ../../grammars/sources/zig/queries/* .
+cd ..
+ls
+cd grammars\
+ls
+cd ..\
+cd queries\
+cd zig\
+cp ../../grammars/sources/zig/queries/* .
+ls
+v highlights.scm
+v injections.scm
+rg "lua" *
+v conflict.zig
+v injections.scm
+ls
+v highlights.scm
+cd $env.LOCALAPPDATA
+cd nvim
+cd ..
+cd nvim-data
+ls
+cd lazy\
+ls
+cd nvim-treesitter\
+ls
+cd ..
+ls
+cd nvim-treesitter-context\
+ls
+cd ..
+ls
+cd nvim-treesitter-refactor\
+ls
+cd ../..
+ls
+cd ..
+cd nvim
+ls
+cd after\
+ls
+cd ftplugin\
+ls
+cd ..
+ls
+cd queries\
+ls
+cd ../..
+cd ..
+cd nvim-data
+start .
+v $nu.config-path
+source $nu.config-path
+v $nu.config-path
+cd $env.LOCALAPPDATA
+cd nvim
+v after\plugin\null-ls.lua
+ls
+cd after\
+ls
+cd plugin\
+ls
+rm null-ls.lua
+cd ../..
+ls
+cd lua\almagest\
+v plugins.lua
+v
+lg
+v $nu.config-path
+cd $
+cd $env.LOCALAPPDATA
+cd nvim
+v lua\almagest\plugins.lua
+cd after\plugin\
+ls
+bat nvim-nu.lua
+rm nvim-nu.lua
+ls
+v nvim-treesitter.lua
+lg
+v
+ls
+v conflict.zig
+rm conflict.zig
+v conflict.rs
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+v after\plugin\lsp.lua
+cd after\plugin\
+gm
+v after\plugin\lsp.lua
+s
+v lsp.lua
+v conflict.rs
+gm
+ls
+v conflict.rs
+ls
+rm conflict.rs
+v conflict.zig
+zig run conflict.zig
+v conflict.zig
+zig run conflict.zig
+ls
+rm conflict.zig
+lv
+lg
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+v sde.ves
+source $nu.config-path
+v sde.ves
+ls
+gm
+ls
+v find_math_fonts.py
+ls
+rm find_math_fonts.py
+bat sde.ves
+gm
+cd Downloads\
+s
+mkdir static_ttf
+mv static_ttf.zip static_ttf\
+ls
+cd static_ttf\
+ls
+unzip static_ttf.zip
+ls
+cd ..
+s
+unzip variable_ttf.zip
+ls
+start .
+v sde.ves
+vesti compile -WE sde.ves
+vesti -h
+vesti clear
+vesti compile -WE sde.ves
+cd .cargo\bin
+ls
+gm
+objdump
+cd .cargo\bin
+ls
+dumpbin.exe /dependents hexyl.exe
+seminar
+ls
+cd Doctor\
+cd SDE
+ls
+start sde.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+gm
+cd Test\
+ls
+gm
+ls
+v background_changer.c
+v sde.ves
+vesti compile -WE sde.ves
+cl background_changer.c 
+cl background_changer.c User32.dll
+cl background_changer.c User32.lib
+ls
+cp ~/Icedrive/Photos/Anby_Demara.jpg .
+ls
+./background_changer.exe Anby_Demara.jpg
+start Anby_Demara.jpg
+./background_changer.exe Anby_Demara.jpg
+v sde.ves
+v background_changer.c
+cl background_changer.c
+./background_changer.exe Anby_Demara.jpg
+./background_changer.exe ./Anby_Demara.jpg
+ls
+mogrify Anby_Demara.jpg -format png
+winget seatch imagemagick
+winget seartch imagemagick
+winget search imagemagick
+winget install ImageMagick.ImageMagick
+shutdown /s /t 0\
+shutdown /s /t 0
+cd Test\
+ls
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+cd after\ftplugin\
+ls
+v rust.lua
+v main.rs
+rm rust.lua
+cd ..
+ls
+cd plugin\
+v lsp.lua
+cd ../..
+v lua\almagest\plugins.lua
+v
+ls
+v main.zig
+mv background_changer.c background_changer.cc
+ls
+v background_changer.cc
+mv background_changer.cc background_changer.c
+ls
+cargo new wwww
+cd wwww
+ls
+cargo add windows
+v Cargo.toml
+ls
+mv ../background_changer.c .
+mv ../Anby_Demara.jpg .
+cd ..
+ls
+rm -rp background_changer.exe background_changer.obj
+cd wwww
+ls
+v Cargo.toml
+ls
+rm background_changer.c
+cargo run -- Anby_Demara.jpg
+v Cargo.toml
+v src\main.rs
+zig run conflict.zig
+cargo run -- Anby_Demara.jpg
+cargo run -- ./Anby_Demara.jpg
+v src\main.rs
+cd Test
+ls
+mv wwww\Anby_Demara.jpg .
+rm -rp wwww\
+ls
+gm
+go
+winget search go
+winget install GoLang.Go
+cd Test\
+ls
+v main.go
+go build -o wwww main.go
+ls
+mv wwww wwww.exe
+ls
+gm
+ls
+./wwww.exe
+./wwww.exe Anby_Demara.jpg
+./wwww.exe C:\Users\almag\Test\Anby_Demara.jpg
+ls
+v main.go
+gm
+v main.cc
+cl main.cc
+cl /std:c++17 main.cc
+./main.exe Anby_Demara.jpg
+./main.exe ./Anby_Demara.jpg
+v main.cc
+./main.exe ./Anby_Demara.jpg
+v main.cc
+cl /std:c++17 main.cc
+./main.exe ./Anby_Demara.jpg
+ls
+rm main.cc main.exe
+ls
+rm main.obj
+ls
+mv
+gm
+v README.md
+mv ~/Downloads/choosenim-0.8.4_windows_amd64.exe ~/.local/bin/choosenim.exe
+choosenim.exe 
+choosenim.exe version
+choosenim.exe versions
+choosenim.exe update 2.2.4
+choosenim.exe 2.2.4
+choosenim.exe 2.2.4 --firstInstall
+cd Test\
+nim
+v README.md
+nim c -d:release --app:gui main.nim
+v main.nim
+ls
+rm main.nim
+gm
+ls
+v main.nim
+ls
+rm main.nim wwww.exe README.md
+ls
+v main.go
+ls
+v main.nim
+rm main.nim
+start .
+cd $env.LOCALAPPDATA
+cd nvim-data\
+v lsp.log
+v foo.nim
+ls
+rm main.nim
+cd $env.LOCALAPPDATA
+cd nvim
+v after\plugin\lsp.lua
+v main.nim
+lg
+gm
+v main.nim
+seminar
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+v sde.ves
+ls
+v thm_2_1.d2
+vesti run
+vesti compile sde.ves
+v build.lua
+vesti run
+v build.lua
+vesti compile sde.ves
+vesti compile -WE sde.ves
+seminar
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+cd Test\
+ls
+rm main.nim
+ls
+v main.cc
+cl /std:c++17 main.cc
+./main.exe ./Anby_Demara.jpg
+./main.exe Anby_Demara.jpg
+./main.exe Anby_Demara.jpga
+v main.cc
+ls
+rm main.cc main.exwe
+rm main.cc main.exe
+ls
+v main.zig
+zig help
+v foo.h
+zig translate-c foo.h
+zig translate-c -h
+zig translate-c 0lc foo.h
+zig translate-c -lc foo.h
+zig translate-c -lc foo.h -o foo.zig
+zig translate-c -lc foo.h | save \foo.zig
+zig translate-c -lc foo.h | save foo.zig
+ls
+v foo.zig
+ls
+rm foo.h foo.zig
+ls
+v main.zig
+ls
+cp ~/Icedrive/Photos/Shirakami_Fubuki2.png
+cp ~/Icedrive/Photos/Shirakami_Fubuki2.png .
+ls
+siv.exe Shirakami_Fubuki2.png
+ls
+zig build-exe -lc main.zig
+v main.zig
+zig build-exe -lc main.zig
+v main.zig
+zig build-exe -lc main.zig
+v main.zig
+zig build-exe -lc main.zig
+./main.exe Shirakami_Fubuki2.png
+v main.zig
+zig build-exe -lc main.zig
+./main.exe Shirakami_Fubuki2.png
+v main.zig
+zig build-exe -lc -lusere32 main.zig
+zig build-exe -lc -lusere32.dll main.zig
+zig build-exe -lc  main.zig
+./main.exe Shirakami_Fubuki2.png
+v main.zig
+zig build-exe -lc  main.zig
+./main.exe Shirakami_Fubuki2.png
+./main.exe Anby_Demara.jpg
+v main.go
+v main.zig
+zig build-exe -lc  main.zig
+v main.zig
+zig build-exe -lc  main.zig
+./main.exe Anby_Demara.jpg
+./main.exe Shirakami_Fubuki2.png
+./main.exe Anby_Demara.jpg
+v main.zig
+zig build-exe -lc  main.zig
+mv main.zig ~/Github/arch-almagest/script/change-background.zig
+ls
+rm .clangd main.exe main.exe.obj main.go main.obj main.pdb
+ls
+gm
+ls
+gm
+ls
+v set_wallpaper.c
+v sde.ves
+vesti compile -WE sde.ves
+ls
+v set_wallpaper.c
+gm
+v set_wallpaper.c
+v virtual_desktop_manager.cpp
+ls
+rm virtual_desktop_manager.cpp
+v sde.ves
+ls
+d2 -l elk ./thm_2_1.d2 ./thm_2_1.pdf
+d2 -l elk ./thm_2_1.d2 ./thm_2_1.png
+v set_wallpaper.c
+rm set_wallpaper.c
+cd Test
+ls
+gm
+rm main.cpp
+ls
+v sde.ves
+shutdown /s /t 0
+cd Test\
+ls
+v foo.c
+cl main.c
+ls
+cl foo.c
+bat foo.c
+./foo.exe
+v foo.c
+cl foo.c
+./foo.exe
+v foo.py
+python foo.py
+ls
+rm foo.py
+ls
+v foo.c
+rm foo.c foo.exe
+rm foo.obj
+ls
+seminar
+lsd
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+cd yedec
+cd Github\
+ls
+git clone --recursive --depth 1 https://github.com/e0328eric/yedec.git
+ls
+cd musik\
+ls
+start sde.pdf
+ls
+cd Test\
+siv Anby_Demara.jpg
+ls
+cd 
+cd Github\6502-cpu\
+cd ..
+ls
+mv sipimgv siv
+ls
+cd siv
+ls
+lg
+git pull origin main --force
+ls
+cd ..
+mv siv siv_old
+git clone https://github.com/e0328eric/siv.git
+ls
+cd siv\
+ls
+cd Github\siv_old\
+ls
+v src\main.zig
+ls
+v build.zig
+vcpkg install
+vcpkg install port
+vcpkg install ports
+vcpkg install
+cd ..
+rg "builtin-baseline" *
+cd siv
+gm
+vcpkg install
+bat vcpkg-configuration.json
+v vcpkg-configuration.json
+cd Github\vesti\
+ls
+gm
+git checkout -b tectonic-backend
+ls
+v build.zig.zon
+ls
+v sde.ves
+vesti compile -WE sde.ves
+gm
+v src\main.zig
+cd Github\
+ls
+gm
+ls
+mv walpy walz
+cd walz
+ls
+cd ..
+mv walz walr
+cd walr\
+v README.md
+g,
+gm
+ls
+v README.md
+gm
+v README.md
+cd ..
+ls
+mv walr tapi
+cd tapi\
+ls
+gm
+ls
+v README.md
+cd ..
+mv tapi tape
+cd tape\
+ls
+cd
+seminar 
+cd Doctor\SDE\
+ls
+start sde.pdf
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+cd Test\
+ls
+zig init
+cargo new foo
+rm -rp foo\
+cargo new foo --lib
+ls
+cd foo
+ls
+v Cargo.toml
+gm
+v Cargo.toml
+mg
+gm
+v Cargo.toml
+ls
+mkdir -p dist/vcpkg-triplets
+mkdir dist/vcpkg-triplets
+cd dist\vcpkg-triplets\
+v x64-windows-static-release.cmake
+cd ../..
+ls
+v windows_build.bat
+gm
+ls
+v windows_build.ps1
+ls
+v README.md
+ls
+cargo install cargo-vcpkg
+v src\lib.rs
+v Cargo.toml
+v src\lib.rs
+ls
+pwsh windows_build.ps1
+powershell windows_build.ps1
+powershell ./windows_build.ps1
+v windows_build.ps1
+ls
+v windows_build.bat
+ls
+cargo build --release
+v Cargo.toml
+cargo build --release
+v windows_build.ps1
+ls
+rm -rp target\
+powershell ./windows_build.ps1
+v Cargo.toml
+ls
+v src\lib.rs
+cargo build --release
+powershell ./windows_build.ps1
+v src\lib.rs
+vesti compile -WE sde.ves
+v sde.ves
+cd ..
+ls
+mv foo tectonic
+cd tectonic\
+v Cargo.toml
+ls
+cd ..
+ls
+cargo new foo --lib
+v foo\src\lib.rs
+ls
+cd ..
+ls
+cd Test\
+ls
+rm -rp foo
+cd
+cd Github\vesti\
+s
+mv ~/Test/tectonic .
+ls
+cd tectonic\
+ls
+v src\lib.rs
+cd ..
+ls
+v src\tectonic.zig
+v tectonic\src\lib.rs
+v src\tectonic.zig
+ls
+v build.zig
+shutdown /s /t 0
+seminar 
+ls
+cd Doctor\SDE\
+ls
+v sde.ves
+seminar 
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+cd Doctor\SDE\
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+start sde.pdf
+v sde.ves
+vesti compile -WE sde.ves
+shutdown /s /t 0
+ls
+seminar 
+cd ../..
+ls
+cd TeX_Documents\
+ls
+cd Solutions\Folland_Solution\
+ls
+v Folland.tex
+ls
+cd ..
+s
+cd Solution_Template\
+ls
+v soltem.tex
+cd ../..
+ls
+cd TeX\
+ls
+v practice.tex
+start practice.pdf
+seminar 
+ls
+cd Doctor\SDE
+ls
+ghci
+ghcup tui
+ghci
+ghcup tui
+ghci
+cd Test\
+ls
+v reverse.txt
+rm reverse.txt
+cd
+ls
+cd Github\vesti\
+ls
+seminar 
+ls
+cd Doctor\SDE\
+s
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+s
+start sde.pdf
+v sde.ves
+vesti compile -WE sde.ves
+vesti compile  sde.ves
+cd .glzr
+ls
+cd glazewm\
+ls
+v config.yaml
+cd
+ls
+cd Github\
+ls
+rm -rp txlsx\
+mkdir glosso
+cd glosso
+zig init
+v build.zig.zon
+v build.zig
+v src\main.zig
+gm
+v sde.ves
+vesti compile  -WE sde.ves
+shutdown /s /t 0
+cd Github\vesti\
+ls
+cd Github\vesti\
+cd tectonic\target\
+ls
+cd release\
+ls
+cd build\
+ls
+cd ..
+ls
+cd ..
+ls
+cd debug\
+ls
+cd ..
+ls
+cd vcpkg\
+ls
+cd ..
+ks
+ls
+cd release\
+ls
+cd deps\
+ls
+cd ..
+ls
+cd ../.
+cd ..
+ls
+v Cargo.toml
+ls
+rm -rp target\
+v build.zig
+v src\lib.rs
+ls
+rm -rp target\
+cd ..
+ls
+v src\main.zig
+ls
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+cd tectonic\
+ls
+powershell ./windows_build.ps1
+cd ..
+ls\
+ls
+v build.zig
+zig build run
+v build.zig
+zig build run
+zig build run
+cargo vcpkg build
+cd tectonic\
+cargo vcpkg build
+ls
+rm -rp target\
+cargo vcpkg build
+powershell ./windows_build.ps1
+rm -rp target\
+cd ..
+ls
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+ls
+cd tectonic\
+ls
+cd Github\vesti\
+ls
+cd tectonic\src\lib.rs
+powershell ./windows_build.ps1
+v tectonic\src\lib.rs
+powershell ./windows_build.ps1
+ls target\release\
+v build.zig
+ls
+zig build run
+v build.zig
+zig build run
+git checkout main
+ls
+lg
+cd ..
+rm -rp tectonic\
+exit
+v build.zig.zon
+lg
+v src\main.zig
+ls
+seminar 
+cd Doctor\SDE\
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+cd
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+v sde.ves
+ls
+v build.lua
+vesti build
+vesti run
+v build.lua
+cd Test\
+ls
+v src\main.zig
+ls
+cd src
+ls
+rm root.zig
+cd ..
+ls
+v build.zig.zon
+cd Github\vesti\
+v build.zig
+ls
+zig build
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zigc
+v src\main.zig
+lds
+vls
+ls
+v build.zig
+zig build run
+v build.zig
+v src\main.zig
+zig build run
+v src\main.zig
+v src\winzig.h
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+v src\winzig.h
+zig build run
+v foo.cc
+ls
+cl /nologo /W4 /Ehsc foo.cc ole32.lib shell32.lib
+cl /nologo /Ehsc foo.cc ole32.lib shell32.lib
+ls
+rm foo.cc
+v build.zig
+v src\main.zig
+v build.zig
+v sde.ves
+vesti compile -WE sde.ves
+v sde.ves
+shutdown /s /t 0
+cd Test\
+ls
+v src\main.zig
+v src\winzig.c
+v build.zig
+zig build run
+v build.zig
+v src\winzig.c
+ls
+v build.zig
+zig build run
+v build.zig
+zig build run
+ls
+v build.zig
+ls
+cd src
+ls
+rm winzig.c
+cd ..
+cd Test\
+ls
+mv fooo\main.cpp ./main.cc
+rm -rp fooo\
+cl /nologo /Ehsc foo.cc ole32.lib shell32.lib
+cl /nologo /Ehsc main.cc ole32.lib shell32.lib
+v main.cc
+cl /nologo /Ehsc main.cc ole32.lib shell32.lib
+./foo.exe
+./main.exe
+./main.exe list
+ls
+rm -rp main.exe main.obj
+ls
+v main.cc
+zig build run
+lsa
+ls
+v src\main.zig
+zig build run\
+zig build run
+v src\main.zig
+zig build run
+la
+ls
+rm build.zig build.zig.zon zig-out\ .zig-cache\ main.cc
+rm -r build.zig build.zig.zon zig-out\ .zig-cache\ main.cc
+ls
+rm -r zig-out\ .zig-cache\
+ls
+cd Github\
+ls
+rm -rp tape
+cargo new tape
+cd tape
+ls
+cargo add windows
+v Cargo.toml
+v src\main.rs
+v Cargo.toml
+v src\main.rs
+cd Test\
+ls
+v src
+rm -rp src\
+gm
+zig build run
+ls
+v build.zig
+zig init
+v build.zig
+ls
+v build.zig.zon
+cd src
+ls
+rm root.zig
+cd ..
+ls
+v build.zig
+mv build.zig bi.zig
+zig init
+cd src\
+ls
+rm root.zig
+cd ..
+ls
+v build.zig
+;s
+ls
+rm bi.zig
+v src\main.zig
+zig build run
+v src\main.zig
+gm
+v src\main.zig
+ls
+rm -rp build.zig build.zig.zon src\ .zig-cache\
+l
+ls
+cd Github\
+ls
+cd tape\
+ls
+gm
+v src\main.rs
+ls
+rm -rp *
+ls
+rm .gitignore
+rm .git\
+rm -rf .git\
+ls
+gm
+ls
+v zig-wallpaper-tool\src\main.zig
+las
+ls
+rm -rp zig-wallpaper-tool\
+gm
+ls
+rm -rp src
+ls
+zig init
+v src\
+ls
+v build.zig.zon
+ls
+v build.zig
+ls
+v src\main.zig
+zig build
+v src\winzig.h
+v src\main.zig
+gm
+v src\main.zig
+zig build
+zig build -target x86_64-windows-msvc
+zig build -target=x86_64-windows-msvc
+zig build --target x86_64-windows-msvc
+zig build --target=x86_64-windows-msvc
+zig build -Dtarget=x86_64-windows-msvc
+v src\main.zig
+v build.zig
+zig build -Dtarget=x86_64-windows-msvc
+v build.zig
+zig build
+v src\main.zig
+zig build
+v src\main.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+cd
+seminar
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+shutdown /s /t 0
+seminar
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+cp -r ~/Downloads/Seminar/Seminar/Doctor/SDE/* . 
+ls
+cd Test\
+ls
+mkdir antig
+cd antig\
+ls
+zig init
+cd src\
+ls
+rm root.zig
+v main.zig
+ls
+cd ..
+v build.zig.zon
+v build.zig
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+v build.zig
+ls
+zig build
+v src\main.zig
+ls
+zig build run -- ~/Icedrive/Math .
+cd
+ls
+cd Github\
+ls
+cd badepo\
+ls
+v build.zig
+ls
+lg
+cd
+cd Test\
+ls
+cd antig\
+ls
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build run -- ~/Icedrive/Math .
+cd
+cd Github\badepo\
+ls
+b build.zig
+v build.zig
+lg
+cd
+cd Test\antig\
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+ls
+v src\main.zig
+v sde.ves
+vesti compile -WE sde.ves
+1cd
+cd
+ls
+cd Test\
+cd antig\
+ls
+v src\main.zig
+ls
+cd ..
+ls
+rm -rp antig\
+cd
+cd Github\
+ls
+git clone https://github.com/e0328eric/antig.git
+cd antig\
+ls
+v Cargo.toml
+v src\main.rs
+cd ..
+ls
+rm -rp antig\
+cd
+cd Test\
+ls
+gm
+npm install -g @google/gemini-cli to update
+npm install -g @google/gemini-cli
+gm
+v main.zig
+ls
+mkdir antig
+cd antig\
+ls
+zig init
+ls
+cd src\
+ls
+rm root.zig
+v main.zig
+ls
+mv ../../main.zig .
+ls
+v main.zig
+cd ..
+ls
+v build.zig.zon
+v build.zig
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig fetch --save git+https://github.com/e0328eric/zlap].git
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig
+ls
+v src\main.zig
+zig build
+v src/commands.zlap
+cd src\
+ls
+cp ~/Github/vesti/src/commands.zlap .
+ls
+v commands.zlap
+ls
+cd Github\vesti
+ls
+v main.zig
+ls
+cd ..
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+v src\main.zig
+zig build run -- ~/Icedrive/Math .
+ls
+zig build run -- ~/Icedrive/Math ./Math
+start .
+ls
+rm -rp Math\
+ls
+v src\main.zig
+ls
+zig build run -- ~/Icedrive/Math ./Math
+cd Github\badepo\
+ls
+v src\main.zig
+v build.zig
+zig fetch --save https://codeberg.org/atman/zg/archive/v0.14.1.tar.gz
+v build.zig.zon
+v src\os\windows.zig
+lg
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build run -- ~/Icedrive/Math ./Math
+v src\os\windows.zig
+lg
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build run -- ~/Icedrive/Math ./Math
+v src\os\windows.zig
+lg
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig build run -- ~/Icedrive/Math ./Math
+v src\main.zig
+ls
+rm -rp Math\
+zig build run -- ~/Icedrive/Math ./Math
+v src\main.zig
+rm -rp Math
+zig build run -- ~/Icedrive/Math ./Math
+rm -rp Math
+v src\main.zig
+zig build run -- ~/Icedrive/Math ./Math
+ls
+rm -rp Math\
+zig build run -- ~/Icedrive/Math ./Math
+rm 
+rm -rp Math\
+v src\main.zig
+zig build run -- ~/Icedrive/Math ./Math
+rm -rp Math\
+v src\os\windows.zig
+v src\main.zig
+zig build run -- ~/Icedrive/Math ./Math
+rm -rp Math\
+v src\main.zig
+cd ..
+ls
+cd
+cd Github\
+ls
+git clone https://github.com/e0328eric/antig.git
+ls
+cd antig\
+ls
+rm -rp Cargo.lock Cargo.toml src
+v .gitignore
+mv ~/Test/antig/* .
+ls
+lg
+ls
+cd ..
+ls
+cd Github\
+ls
+cd arch-almagest\
