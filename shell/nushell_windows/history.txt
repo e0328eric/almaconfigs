@@ -11423,3 +11423,6 @@ ls
 cd keyboard\
 ls
 mv ~/Icedrive/epomaker_keyset .
+lg
+cd Github\arch-almagest\
+ls
