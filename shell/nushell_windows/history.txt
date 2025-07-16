@@ -10724,3 +10724,702 @@ ls
 cd Github\
 ls
 cd arch-almagest\
+lg
+cd ..
+ls
+cd vesti\
+ls
+cd
+cd Test\
+ls
+ls antig\
+rm -rp antig\
+cd
+cd Github\
+ls
+cd antig\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Test\
+antig ~/Github/vesti/ ./vesti
+ls
+cd vesti\
+ls
+rm -rp .git
+ls
+cargo new vesti-tectonic --lib
+ls
+cd vesti-tectonic\
+ls
+v Cargo.toml
+ls
+mkdir dist/vcpkg-triplets
+cd dist\vcpkg-triplets\
+curl --location -O https://github.com/e0328eric/vesti-tectonic-backend/raw/refs/heads/main/dist/vcpkg-triplets/x64-windows-static-release.cmake
+ls
+cd ../..
+ls
+rm -rp .git
+ls
+v src\lib.rs
+ls
+cd ..
+ls
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+ls
+cd vesti-tectonic\q
+cd vesti-tectonic\
+ls
+rm -rp target\
+cd ..
+zig build
+cd vesti-tectonic\
+;ls
+ls
+cd ..
+v build.zig
+zig build
+ls vesti-tectonic\
+v build.zig
+zig build
+cargo vspkg -h
+cargo vcpkg -h
+v build.zig
+zig build
+cargo vcpkg build -h
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+ls vesti-tectonic\
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+cargo vcpkg build --manifest-path C:\Users\almag\Test\vesti\vesti-tectonic
+v build.zig
+zig build
+ls vesti-tectonic\
+v build.zig
+zig build
+v build.zig
+ls
+cd vesti-tectonic\
+ls
+mkdir target
+cd ..
+zig build
+v vesti-tectonic\Cargo.toml
+v foo.bat
+./foo.bat
+ls
+cd vesti-tectonic\
+ls
+rm -rp target\
+cd ..
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+ls
+rm foo.bat
+cd vesti-tectonic\
+s
+rm -rp target\
+rm -rp target
+cd ..
+ls
+v build.zig
+cargo b -h
+v build.zig
+zig build
+v vesti-tectonic\
+ls
+cd vesti-tectonic\
+ls
+rm -rp target
+cd ..
+zig build
+cd vesti-tectonic\
+rm -rp target
+cd ..
+ls
+v vesti-tectonic\
+zig build
+v build.zig
+v foo.bat
+./foo.bat
+ls
+cd vesti-tectonic\
+rm -rp target
+cd ..
+./foo.bat
+ls
+v build.zig
+ls
+rm -rp target
+cd target\
+ls
+cd ..
+ls
+rm -rp target
+start .
+zig build
+v build.zig
+zig build
+v vesti-tectonic\Cargo.toml
+zig build
+v build.zig
+zig build
+v vesti-tectonic\Cargo.toml
+zig build
+v build.zig
+zig build
+v build.zig
+zig build\
+zig build
+cd Test\vesti\
+ls
+cd vesti-tectonic\
+v src\main.zig
+zig build run
+zig build run -fnollvm
+zig build run -h
+zig build run
+gm
+v build.zig
+zig build run
+zig build -h
+v src\lib.rs
+exit\
+exit
+cd
+seminar
+cd Doctor\
+ls
+cd SDE
+pwd | pbcopy
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+v sde.ves
+vesti compile -WE sde.ves
+v sde.ves
+ls
+cd ComfyUI\output\
+siv ComfyUI_00004_.png
+rm -rp *
+siv ComfyUI_00002_.png
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+rm -rp *
+ls
+seminar
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+s
+start sde.pdf
+ls
+cd ComfyUI\output\
+ls
+siv ComfyUI_00001_.png
+siv ComfyUI_00002_.png
+siv ComfyUI_00003_.png
+siv ComfyUI_00004_.png
+siv ComfyUI_00005_.png
+siv ComfyUI_00006_.png
+rm -rp *
+ls
+v sde.ves
+vesti compile -WE sde.ves
+shutdown /s /t 0
+ls
+cd Test\vesti\
+ls
+zig build
+zig build-exe --help
+v build.zig
+zig build-exe --help
+zig build
+cd Test\vesti\
+ls
+rm foo.bat
+v build.zig
+zig build -Dtarget=x86_64-windows-gnu
+zig build
+zig build -Dtarget=x86_64-windows-msvc
+zig build -Dtarget=x86_64-windows-msvc\
+zig build -Dtarget=x86_64-windows-msvc
+zig build
+zig build -Dtarget=x86_64-windows-msvc
+exit
+v build.zig
+ls
+cd ..
+ls
+rm -rp vesti
+cd
+ls
+cd Github\
+ls
+mv vesti vesti-zig
+ls
+git clone https://github.com/e0328eric/vesti-tectonic-backend.git
+mv vesti-tectonic-backend vesti
+ls
+cd vesti\
+ls
+cd Github\vesti-zig\
+ls
+v Cargo.toml
+ls
+v src\lexer\token.rs
+ls
+v windows_build.bat
+./windows_build.bat
+v src\lexer\token.rs
+v src\lexer\Token.zig
+cd Test
+ls
+cp -r ~/Github/vesti-zig .
+ls
+cd vesti-zig\
+ls
+cargo new vesti-tectonic --lib
+cd vesti-tectonic
+mkdir .cargo
+v .cargo\config.toml
+ls
+cd ..
+ls
+v build.zig
+gm
+v build.zig
+cd Test\
+ls
+cd vesti-zig\
+ls
+v vesti-tectonic\Cargo.toml
+ls
+cd vesti-tectonic\
+ls
+mkdir dist/vcpkg-triplets
+cd dist\
+cd vcpkg-triplets\
+v x64-windows-static-release.cmake
+cd ../..
+ls
+v src\lib.rs
+cd ..
+ls
+v build.zig
+ls
+v vesti-tectonic\src\lib.rs
+cargo build.zig
+cd vesti-tectonic\
+cargo b
+v Cargo.toml
+cd ..
+v vesti-tectonic\src\lib.rs
+zig build
+v build.zig
+zig build
+v build.zig
+cd vesti-tectonic\
+cargo b --target x86_64-pc-windows-gnu
+v .cargo\config.toml
+cargo b --target x86_64-pc-windows-gnu
+ls
+cd ../..
+ls
+cd vesti-zig\
+ls
+cd vesti-tectonic\
+cargo b --target x86_64-pc-windows-gnu
+cargo b --target=x86_64-pc-windows-gnu
+cargo b --target=x86_64-linux-gnu
+cargo b --target x86_64-linux-gnu
+cargo b --target x86_64-pc-windows-gnu
+v .cargo\config.toml
+zig build
+cargo b --target x86_64-pc-windows-gnu
+dlltool
+ls
+rm -rp .cargo\
+cd ..
+ls
+zig build
+cd vesti-tectonic\
+mkdir .cargo
+v .cargo\config.toml
+cd ..
+zig build
+v vesti-tectonic\.cargo\config.toml
+zig build
+v build.zig
+ls
+cd vesti-tectonic\
+ls
+rm -rp .cargo\
+cd ..
+cd vesti-tectonic\
+ls
+cd ..
+zig build
+cd
+cd Github\
+ls
+cd ..
+ls
+cd Test\
+ls
+rm -rp vesti-zig\
+cd
+cd Github\
+ls
+cd vesti\
+ls
+cd Github\
+ls
+cd vesti-zig\
+s
+v src\lexer\mod.rs
+ls
+cd src\lexer\
+ls
+v newline_handler.rs
+cd ../../..
+ls
+v src\lexer\Lexer.zig
+rm -rp vesti\
+ls
+mv vesti-zig vesti
+cd
+cd Test\
+ls
+cd
+ls
+cd siv
+ls
+cd Github\
+ls
+cd siv
+ls
+lg
+zig build vcpkg
+v vcpkg-configuration.json
+zig build vcpkg
+v build.zig
+exit
+vclkg 
+vcpkg 
+vcpkg triplet
+vcpkg install --help
+gm
+v build.zig
+vcpkg help triplets
+v build.zig
+ls
+rm -rp vcpkg_installed\
+zig build vcpkg
+zig build
+ls vcpkg_installed\x64-windows-static-release\lib\
+v build.zig
+zig build
+ls
+cd src
+ls
+v main.zig
+cd ..
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+v src\main.zig
+zig build
+v src\main.zig
+zig build
+cd Github\siv\
+ls
+v build.zig
+zig build
+zig build -Dtarget=x86_64-windows-msvc
+zig build -Dtarget=x86_64-windows-gnu
+v build.zig
+vcpkg help triplets
+v build.zig
+zig build vcpkg
+v C:\Users\almag\Github\siv\vcpkg_installed\vcpkg\blds\libwebp\config-x64-mingw-static-dbg-CMakeCache.txt.log
+ls
+lg
+gm
+v build.zig
+s
+ls custom-triplets\
+bat custom-triplets\x64-mingw-static.cmake
+rm -rp vcpkg_installed
+zig build vcpkg
+v build.zig
+rm -rp vcpkg_installed
+zig build vcpkg
+v C:\Users\almag\Github\siv\vcpkg_installed\vcpkg\blds\detect_compiler\stdout-x64-mingw-static.log
+v custom-triplets\x64-mingw-static.cmake
+zig build vcpkg
+vcpkg install --overlay-triplets=./custom-triplets
+v build.zig
+ls
+cd vcpkg_installed\
+ls
+cd x64-windows\
+ls
+cd lib\
+ls
+cd ../..
+cd ..
+ls
+v build.zig
+ls
+rm -rp vcpkg_installed
+vcpkg install
+zig build
+s
+rm -rp custom-triplets\
+v build.zig
+v vcpkg-configuration.json
+v vcpkg.json
+ls
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Icedrive\Photos\
+ls
+mv ~/Test/* .
+ls
+siv *.jpg
+siv Shirakami_Fubuki2.png
+cd
+cd Github\s
+cd Github\siv
+ls
+lg
+v src\main.zig
+shutdown /s /t 0
+cd tape
+cd Github\tape
+;ls
+v src\main.zig
+gm
+v src\main.zig
+ls
+rm monitor_notifications.cpp
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+cd ..
+ls
+zlap
+cd zlap
+ls
+v src\zlap.zig
+cd ..
+ls\
+ls
+cd tape\
+ls
+v build.zig
+ls
+v src\commands.zlap
+ls
+v src\main.zig
+cd
+cd ComfyUI\output\
+ls
+siv ComfyUI_00001_.png
+rm ComfyUI_00001_.png
+siv ComfyUI_00002_.png
+ls
+r, ComfyUI_00002_.png
+rm ComfyUI_00002_.png
+siv ComfyUI_00001_.png
+winget seatch python
+winget search python
+winget install Python.Python.3.10
+ls
+git clone --depth 1 --recursive https://github.com/AUTOMATIC1111/stable-diffusion-webui.git StableDiffusion
+cd StableDiffusion\
+ls
+./webui-user.bat
+winget uninstall Python.Python.3.13
+./webui-user.bat
+winget install Python.Python.3.10
+cd StableDiffusion\
+./webui-user.bat
+python
+./webui-user.bat
+C:\Users\almag\AppData\Local\Programs\Python\
+ls
+rm -rp Python313\
+cd
+cd StableDiffusion\
+./webui-user.bat
+cd ..
+rm -rp StableDiffusion\
+cd ComfyUI\output\
+ls
+rm -rp *
+cd
+seminar
+cd Doctor\SDE\
+ls
+winget install Python.Python.3.13
+pwd | pbcopy
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+cd Github\
+ls
+cd vesti\
+v sde.ves
+vesti compile -WE sde.ves
+cd Github\tape\
+ls
+v src\main.zig
+zig build run -- set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+zig build run -- set 0 ./Anby_Demara.jpg
+v src\main.zig
+zig build run -- set 0 ./Anby_Demara.jpg
+ls
+v src\main.zig
+zig build run -- list
+v src\main.zig
+cd ..
+ls
+mkdir sf
+cd sf
+v README.md
+ls
+zig init
+ls
+v build.zig.zon
+bv build.zig
+v build.zig
+ls
+gm
+ls
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+zig fetch --save git+https://nossa.ee/~talya/libpcre.zig
+v build.zig
+ls
+cd src
+ls
+rm root.zig
+cd ..
+cd Github\
+ls
+cd vesti
+ls
+v src\commands.zlap
+cd ../..
+ls
+v src/commands.zlap
+cd Github\sf
+v src\commands.zlap
+zig build
+bat build.zig.zon
+v build.zig
+zig build
+v src\main.zig
+zig build
+cd
+seminar
+ls
+cd Doctor\SDE\
+pwd | pbcopy
+C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+ls
+vesti compile -WE sde.ves
+v sde.ves
+se
+seminar 
+ls
+cd Doctor\SDE\
+ls
+v
+ls
+v sde.ves
+pwd | pbcopy 
+ls
+cd C:\Users\almag\Icedrive\TeX_Documents\Seminar\Doctor\SDE\
+start sde.pdf
+ls
+gm
+vesti compile -WE sde.ves
+ls
+v thm_2_1.d2
+v build.lua
+v sde.ves
+vesti run
+v build.lua
+v sde.ves\
+v sde.ves
+vesti compile -WE sde.ves
+shutdown /?
+cd 
+cd C:\Users\almag\Icedrive\TeX_Documents\Seminar\Doctor\SDE\
+ls
+start sde.pdf
+ls
+cd Github\tape
+ls
+v src\main.zig
+vesti compile -WE sde.ves
+ls
+seminar 
+ls
+cd Doctor\SDE\
+ls
+pwd | pbcopy 
+\ls
+ls
+cd Doctor\SDE\
+cd Icedrive\epomaker_keyset\
+ls
+v tide_49.layout.json
+v Epomaker_tide49.json
+v tide_49.layout.json
+cd Github\arch-almagest\
+ls
+cd keyboard\
+ls
+mv ~/Icedrive/epomaker_keyset .
