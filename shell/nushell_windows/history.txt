@@ -11426,3 +11426,1019 @@ mv ~/Icedrive/epomaker_keyset .
 lg
 cd Github\arch-almagest\
 ls
+lg
+cd ..
+cd
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+start sde.pdf
+v sde.ves
+vesti compile -WE sde.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+shutdown /s /t 0
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+start sde.pdf
+cd Github\tape
+ls
+rm *
+rm -rf *
+ls
+rm -r .zig-cache\
+ls
+cargo init
+ls
+cargo add windows
+cargo add clap --features derive
+ls
+cargo add anyhow
+cd
+ls
+cd .local
+ls
+mv zig zig-lts
+zigup
+ls
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1034+bd97b6618 zig
+ls
+rm -r
+rm -rp zig-compiler\
+ls
+cd bin
+ls
+zig version
+ln ../zig-lts/zig.exe ./zig-lts.exe
+ls
+zig-lts version
+ls
+cd
+cd Github\
+ls
+git clone --depth 1 https://codeberg.org/e0328eric/zg
+ls
+cd zg
+git checkout -b v0.15.0-dev
+ls
+zig version | pbcopy
+v README.md
+ls
+v build.zig
+cd
+ls
+cd Github\
+ls
+cd vesti
+ls
+zig build
+cd ..
+ls
+cd zigup\
+cd ..
+ls
+rm -rp zg
+cd
+ls
+cd .local\
+cd bin
+ls
+mv zig.exe zig-dev.exe
+mv zig-lts.exe zig.exe
+zig version
+cd
+ls
+vesti compile -WE sde.ves
+start sde.pdf
+winget uninstall Python.Python.3.13
+winget install Python.Python.3.10
+python
+ls
+git clone --depth 1 --recursive https://github.com/AUTOMATIC1111/stable-diffusion-webui.git StableDiffusion
+cd StableDiffusion\
+ls
+cd Github\tape\
+ls
+v Cargo.toml
+cd ..
+ls
+rm -rp tape
+cd
+ls
+cd .local
+ls
+git clone --depth 1 https://github.com/sindresorhus/windows-wallpaper.git
+cd windows-wallpaper\
+cargo r -- get
+ls
+cd ..
+cd windows-wallpaper\
+./webui-user.bat
+start .
+v src\lib.rs
+cd .local\windows-wallpaper\
+ls
+v src\lib.rs
+./webui-user.bat
+cd outputs\txt2img-images\2025-07-17\
+ls
+siv 00000-3773543958.png
+siv 00003-1189221743.png
+cd StableDiffusion\
+./
+cd StableDiffusion\outputs\txt2img-images\2025-07-17\
+ls
+rm 00004-1888730896.png
+cd ../..
+cd ..
+cd models\Stable-diffusion\
+ls
+rm naiXLVpred102d_25dBoost.safetensors
+cd ../..
+ls
+cd outputs\txt2img-images\2025-07-17\
+ls
+rm 00004-309607726.png 00003-1189221743.png
+cd ../../..
+ls
+cd models\Stable-diffusion\
+ls
+rm noobaiXLNAIXL_vPred10Version.safetensors
+cd ../
+cd ..
+cd outputs\txt2img-images\2025-07-17\
+ls
+siv 00003-3506891053.png
+rm 00003-3506891053.png
+ls
+siv 00002-2750730391.png
+ls
+siv *
+ls
+siv 00004-1137644146.png
+./webui-user.bat
+v sde.ves
+vesti compile -WE sde.ves
+cd Github\
+ls
+rm -rp siv_old\
+ls
+v .rayignore
+ls
+cd Github\arch-almagest\
+ls
+cd utils
+mkdir raycast
+cd raycast\
+ls
+mv ~/.rayignore .
+ls
+cd
+ln ~/Github/arch-almagest/utils/raycast/.rayignore ./.rayignore
+ls
+v .rayignore
+ls
+seminar
+ls
+cd Doctor\SDE\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+start sde.pdf
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\SDE
+ls
+ls
+cd Github\
+ls
+mkdir wallp
+cd wallp
+ls
+zig init
+ls
+cd src
+ls
+r, root.zig
+ls
+rm root.zig
+ls
+cd ..
+ls
+v build.zig.zon
+lsd
+ls
+v build.zig
+rm -rp *
+ls
+rm -rp .zig-cache\
+ls
+cargo init
+cargo add clap --features derive
+cargo add windows
+ls
+v Cargo.toml
+cargo b
+v src\main.rs
+s
+rm -rp *
+ls
+v .gitignore
+zig-dev init
+ls
+rm -rp *
+ls
+zig-dev init --strip
+ls
+cd src
+rm root.zig
+cd ..
+ls
+v build.zig.zon
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig
+cd ..
+ls
+git clone --depth 1 https://codeberg.org/e0328eric/zg
+cd zg
+zig-dev build test
+cd Github\wallp\
+ls
+v build.zig
+zig-dev build test
+v build.zig
+zig-dev build test
+v build.zig
+zig-dev build test
+cd ..
+ls
+rm -rp zg
+ls
+v build.zig
+rm -rp *
+ls
+v .gitignore
+ls
+rm -rp .zig-cache\
+cargo init
+cargo add windows -features=Win32_UI_Shell
+cargo add windows --features=Win32_UI_Shell,Win32_System_Com
+lw
+ls
+cargo add clap --features derive
+v src\main.rs
+ls
+rm -rp *
+ls
+v .gitignore
+ls
+zig-dev init --strip
+ls
+v build.zig.zon
+ls
+v src\winzig.h
+v src\winzig.c
+ls
+v build.zig
+v src\main.zig
+zig-dev build
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+zig-dev build
+zig build
+cd Github\wallp\
+ls
+cd src\main.zig
+v src\main.zig
+cd ..
+ls
+cd zlap
+ls
+v build.zig
+cd ..
+ld
+ls
+cd wallp\
+cp ../vesti/src/commands.zlap src/
+v src\commands.zlap
+ld
+ls
+cd Github\vesti
+ls
+v src\parser\Parser.zig
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+ghci
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+shutdown /s /t 0
+cd Github\sf\
+ls
+cd ..
+ls
+cd arch-almagest\
+fzf
+ls
+cd wm\hypr\
+ls
+cd wallpapers\
+ls
+siv lilpa_night.png
+ls
+cp lilpa_night.png stelle-firefly.png ~/Icedrive/Photos/
+ls
+cd
+ls
+cd Github\wallp\
+ls
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+zig build run -- list
+zig build run -- set 0 ~/Icedrive/Photos/lilpa_night.png
+v src\main.zig
+zig build run -- set 0 ~/Icedrive/Photos/lilpa_night.png
+ls
+zig build run -- set 0 ~/Icedrive/Photos/stelle-firefly.png
+zig build run -- set 0 ~/Icedrive/Photos/lilpa_night.png
+shutdown /s /t 0
+cd Github\sf
+ls
+rm -rp *
+ls
+rm -rp .zig-cache\
+cargo init
+cargo add clap --features derive
+cargo add regex
+ls
+cd Github\sf
+ls
+v src\main.rs
+cargo add walkdir
+cargo r
+cargo r -- asdsad asdasd
+v src\main.rs
+cargo add error_stack
+v src\main.rs
+cargo r -- ~/Github/arch-almagest asdasd
+cargo r -- ~/Github/arch-almagest "*.png"
+cargo r -- ~/Github/arch-almagest *.png
+cargo r -- ~/Github/arch-almagest "(.)\.png"
+cargo r -- ~/Github/arch-almagest "(.)\\.png"
+ls
+cd ..
+ls
+cd wallp\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+git branch -M main
+git remote add origin https://github.com/e0328eric/wallp.git
+lg
+cxs
+cd
+ls
+kindergarten 
+cd Volume2\
+ls
+start kindergarten-vol2.pdf
+ls
+cd Github\sf
+ls
+v src\
+cargo r -- -r
+cargo r -- -h
+v src\
+cargo r -- ~/Github/arch-almagest "(.)\\.png"
+ls
+git branch -M main
+git remote add origin https://github.com/e0328eric/sf.git
+git pull origin main
+lg
+cargo install --path .
+cd
+ls
+cd Github\arch-almagest\
+sf . "(.)\\.png"
+ls
+cd ..
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Kindergarten\Volume2
+ls
+seminar
+cd Doctor\SDE\
+v kindergarten-vol2.ves
+ls
+vesti compile -h
+cd $env.APPDATA
+s
+cd vesti\coprime\
+ls
+v coprime-math.sty
+lg
+luafindfont.exe noto
+v kindergarten-vol2.ves
+rg ":=" *
+kindergarten 
+ls
+cd Volume2\
+ls
+sf . "(.)\\.ves~"
+rm Chapter0\section0-2.ves~
+rm Chapter1\section1-6.ves~
+rm Chapter1\section1-2.ves~
+ls
+v Chapter0\section0-3.ves
+vesti compile -WEa kindergarten-vol2.ves
+v Settings\settings.tex
+v kindergarten-vol2.ves
+kindergarten 
+ls
+cd Volume2\
+ls
+cd Github\vesti\
+cp -r ~/Icedrive/TeX_Documents/Kindergarten/Volume2 Kindergarten_Volume2
+cd ..
+ls
+ls Kindergarden\Volume2\
+rm -rp Kindergarden
+ls
+cd Kindergarten\Volume2\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Kindergarten\Volume2
+ls
+start kindergarten-vol2.pdf
+v Chapter2\section2-2.ves
+vesti compile -WEa kindergarten-vol2.ves
+cd
+ls
+cd Github\vesti\
+cd ..
+ls
+cd glosso
+ls
+wallp -h
+wallp list
+wallp 3 set ~/Icedrive/Photos/stelle-firefly.png
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+wallp set 2 ~/Icedrive/Photos/Anby_Demara.jpg
+cd Test\
+s
+gm
+ls
+v main.c
+cl main.c user32.lib 
+./main.exe
+gm
+v main.c
+cl main.c user32.lib 
+./main.exe
+v main.c
+gm
+v main.c
+cl main.c user32.lib 
+./main.exe
+v main.c
+cl main.c user32.lib 
+cd Test\
+ls
+gm
+v main.c
+ls
+cd
+cd Github\wallp
+ls
+b src\main.zig
+v src\main.zig
+cd
+seminar
+ls
+cd Doctor
+ls
+cd AApproach\
+ls
+start aapproach.pdf
+open aaproach_old.pdf
+start aaproach_old.pdf
+ls
+rm aaproach_old.pdf
+mv aapproach.pdf aapproach_old.pdf
+start aapproach_old.pdf
+seminar 
+ls
+cd Doctor\SDE\
+v sde.ves
+kindergarten 
+ls
+cd Volume2\
+ls
+v kindergarten-vol2.ves
+v aapproach.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aaproach.pdf
+vesti compile -WE aapproach.ves
+ls
+rm aaproach.pdf
+rm aaproach.ves
+start aapproach.pdf
+vesti compile -WE aapproach.ves
+vesti -h
+vesti clear
+v aapproach.ves
+vesti compile -WE aapproach.ves
+cd Github\
+ls
+ls yedec
+ls
+mv yedec yedec_zig
+cargo new yedec
+cd yedec
+ls
+rm -rp .git
+mv ../yedec_zig/.git .
+mv ../yedec_zig/README.md .
+mv ../yedec_zig/LICENSE .
+ls
+cargo add smal
+cargo add smol
+cargo add reqwest
+ls
+cargo add clap --features derive
+cd ..
+ls
+cd glosso\
+ls
+rm -rp build.zig build.zig.zon src\ .zig-cache\
+ls
+cd ..
+cd glosso
+ls
+zig-dev init --strip
+ls
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig.zon
+ls
+v build.zig
+ls
+cd
+ls
+cd .local
+ls
+unzip c3-windows.zip
+s
+rm c3-windows.zip
+ls
+cd bin
+ls
+ln ~/.local/c3-windows-Release/c3c.exe ~/.local/bin/c3c.exe
+c3c
+ls
+cd ..
+ls
+cd
+ls
+cd Github\glosso
+ls
+rm -rp build.zig build.zig.zon src\ .zig-cache\
+c3c
+init glosso
+c3c init glosso
+ls
+mv glosso\* .
+ls
+rm -rp glosso\
+ls
+v project.json
+ls scripts\
+ls resources\
+ls lib\
+ls
+cd ..
+ls
+rm -rp glosso\
+mkdir glosso
+cd glosso
+ls
+cd
+ls
+cd .local
+ls
+rm -rp c3-windows-Release\
+cd bin
+ls
+rm -rp c3c.exe
+rm -rp ./c3c.exe
+start .
+cd ..
+git clone --depth 1 --recursive https://github.com/odin-lang/Odin
+cd Odin\
+ls
+./build.bat release
+ls
+cd ..
+ls
+cd Odin\
+ls
+v build.bat
+cd ..
+ls
+cd bin\
+ln ~/.local/Odin/odin.exe ~/.local/bin/odin.exe
+cd
+cd Test\
+ls
+rm -rp main.c main.exe main.obj
+ls
+v main.odin
+odin run ,
+odin run .
+odin run main.odin
+cd .local\bin
+start .
+cd
+cd Test\
+odin main.odin
+odin run main.odin
+odin run .
+cp main.odin foo.odin
+v foo.odin
+odin run .
+rm foo.odin
+s
+v foo.odin
+v main.odin
+odin run .
+wallp list
+wallp set 2 ~/Icedrive/Photos/Anby_Demara.jpg
+wallp set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+wallp set 2 ~/Icedrive/Photos/stelle-firefly.png
+wallp set 3 ~/Icedrive/Photos/lilpa_night.png
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+wallp list
+cd Test
+ls
+v main.odin
+odin run .
+odin
+odin -help
+odin build -help
+odin build -target:adasdas
+odin build -target:adasdas .
+odin build . -target:adasdas
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+ls
+rm main.odin
+cd 
+cd Github\glosso\
+ls
+mkdir olfactory
+cd olfactory\
+lsd
+ls
+v main.odin
+odin run .
+v main.odin
+shutdown /s /t 0
+seminar 
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+ls
+rm aapproach.typ
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -WE aapproach.ves
+v aapproach.ves
+shutdown /s /t 0
+cd SendTo
+ls
+ls -al
+start .
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+cd Test\
+ls
+odin
+odin bundle -h
+odin bundle
+odin help bundle
+mkdir yedec
+rm -rp yedec\
+cd
+cd Github\
+ls
+rm -rp yedec
+ls
+mkdir yedec
+cd yedec
+ls
+v yedec.odin
+ls
+odin run .
+v yedec.odin
+odin run .
+ls
+odin help build
+odin build . -o:small
+odin build . -o:size
+ls
+odin build . -o:aggressive
+ls
+rm yedec.exe
+ls
+odin build . -o:size -build:llvm
+odin build . -o:size -build-mode:llvm
+ls
+v yedec.ll
+rm yedec.ll
+odin build . -o:size -build-mode:asm
+ls
+v yedec.S
+ls
+rm yedec.S
+ls
+git init
+mkdir thirdparty
+cd thirdparty\
+git submodule add https://github.com/laytan/odin-http.git
+cd ..
+ls
+v yedec.odin
+odin run .
+v yedec.odin
+odin run .\
+odin run .
+ls
+v yedec.odin
+cd ..
+rm -rp yedec
+mkdir yedec
+mv yedec_zig yedec_curl
+ls
+cd yedec_curl\
+ls
+v src\arcalive.zig
+cd ..
+ls
+cd yedec
+ls
+git init
+mkdir thirdparty
+cd thirdparty\
+cd ..
+git branch -M main
+cd thirdparty\
+git submodule add https://github.com/laytan/odin-http.git
+cd ..
+ls
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+cd Test\
+ls
+cd
+cd Github\yedec
+ls
+v main.odin
+ls
+v aapproach.ves
+vesti compile -WE aapproach.ves
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+rm -rp *
+ls
+rm -rp .git .gitmodules
+cargo init
+cargo add smol
+cargo add reqwest --features=stream
+ld
+ls
+v src\main.rs
+ls
+cd ..
+ls
+rm -rp yedec yedec_curl
+git clone --depth 1 --recursive https://github.com/e0328eric/yedec.git
+ls
+cd yedec
+ls
+v vcpkg.json
+ls
+rm -rp vcpkg-configuration.json vcpkg.json
+ls
+v build.zig
+cd ..
+ls
+mv yedec yedec_old
+ls
+mkdir yedec
+ls
+cd yedec
+ls
+cd D:
+ls
+ls | each
+help each
+ls | each {|e| $e.name}
+mogrify 01.webp -format png
+winget search imagemagick
+winget install ImageMagick.ImageMagick
+ls
+mogrify 01.webp -format png
+exit
+ls
+v foo.odin
+lws
+ls
+cd
+cd Test
+ls
+cargo new imgch
+ls
+cd imgch\
+cargo add image
+ls
+pwd | pbcopy 
+cd ..
+ls
+mv D:\Foo\Imouto Haramasenai to Derarenai Shima .
+mv "D:\Foo\Imouto Haramasenai to Derarenai Shima" .
+mv "D:/Foo/Imouto Haramasenai to Derarenai Shima" .
+ls
+v src\main.rs
+cargo add anyhow
+v src\main.rs
+ks
+ls
+cargo run -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+ls `./Imouto Haramasenai to Derarenai Shima/`
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+cp `./Imouto Haramasenai to Derarenai Shima/01.webp` .
+ls
+cargo r -- 01.webp
+siv 01.webp
+rm -rp 01.webp
+ls
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+cargo r -- `C:/Users/almag/Github/imgch/Imouto Haramasenai to Derarenai Shima/01.webp`
+cargo r -- `C:/Users/almag/Github/imgchImouto Haramasenai to Derarenai Shima\\01.webp`
+cargo r -- `C:/Users/almag/Github\imgch\\Imouto Haramasenai to Derarenai Shima\\01.webp`
+cargo r -- `C:\\Users\\almag\\Github\\imgch\\Imouto Haramasenai to Derarenai Shima\\01.webp`
+ls
+v src\main.rs
+cargo r -- `C:\\Users\\almag\\Github\\imgch\\Imouto Haramasenai to Derarenai Shima\\01.webp`
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+v src\main.rs
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+v src\main.rs
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+v src\main.rs
+cargo r -- `./Imouto Haramasenai to Derarenai Shima/01.webp`
+ls
+cd Github\sf\
+ls
+cargo add clap --features derive
+ls
+v src\main.rs
+cargo add regex
+ls
+v src\main.rs
+cargo install --path .
+cd `Imouto Haramasenai to Derarenai Shima\`
+ls
+ls | each {|e| $e.name}
+ls | each {|e| imgch $e.name -R -t png }
+imgch 07.webp -t png
+imgch 07.webp -t png -R
+*.webp
+help filter
+help
+help commands
+ls
+echo "*.webp"
+echo *.webp
+gm
+ls | where name !~ '\.webp$'
+ls | where name ~ '\.webp$'
+ls | where name =~ '\.webp$'
+ls | where name =~ '\.webp$' | each { |e| imgch $e -t png -R }
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ..
+ls
+mv `Imouto Haramasenai to Derarenai Shima\` D:\Foo\
+imgch
+imgch -h
+v src\main.rs
+cargo install --path .
+v src\main.rs
+cargo install --path .
+imgch -h
+git branch -M main
+git remote add origin https://github.com/e0328eric/imgch.git
+lg
+git pull origin main
+lg
+ls
+cd
+ls
+cd D:\Foo\
+cd `Imouto Muchiman ~Naka ni Choudai Saimin Ecchi~\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Goblin kara Hajimeru Sekai Seifuku 1\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+ls
+cd `Goblin kara Hajimeru Sekai Seifuku 2\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Imouto TRIP\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+v src\main.rs
+ls
+cd Github\
+ls
+cd glosso
+ls
+cd
+ls
+cd .glzr
+ls
+cd glazewm\
+v config.yaml
+cd
+cd Github\arch-almagest\

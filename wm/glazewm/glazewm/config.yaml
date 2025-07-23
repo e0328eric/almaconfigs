@@ -245,7 +245,7 @@ keybindings:
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
   #- commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
-  - commands: ['shell-exec wt']
+  - commands: ['shell-exec rio']
     bindings: ['alt+enter']
   - commands: ['shell-exec vivaldi']
     bindings: ['alt+shift+enter']

@@ -50,7 +50,7 @@
       "KC_LGUI",
       "KC_LALT",
       "KC_SPC",
-      "KC_ESC",
+      "MO(2)",
       "KC_SPC",
       "KC_NO",
       "KC_SPC",
@@ -108,7 +108,7 @@
       "KC_LGUI",
       "KC_LALT",
       "KC_SPC",
-      "KC_ESC",
+      "MO(2)",
       "KC_SPC",
       "KC_NO",
       "KC_SPC",
@@ -117,7 +117,7 @@
       "RGB_SPI",
       "KC_NO",
       "KC_NO",
-      "MO(2)"
+      "KC_NO"
     ],
     [
       "KC_GRV",
@@ -166,7 +166,7 @@
       "KC_NO",
       "KC_TRNS",
       "QK_CLEAR_EEPROM",
-      "CUSTOM(87)",
+      "KC_TRNS",
       "QK_CLEAR_EEPROM",
       "KC_NO",
       "QK_CLEAR_EEPROM",
@@ -175,7 +175,7 @@
       "KC_RGHT",
       "KC_NO",
       "KC_NO",
-      "KC_TRNS"
+      "CUSTOM(87)"
     ],
     [
       "KC_TAB",
@@ -224,16 +224,16 @@
       "KC_LALT",
       "KC_LGUI",
       "KC_SPC",
+      "MO(2)",
       "KC_SPC",
-      "KC_SPC",
-      "KC_NO",
+      "MO(5)",
       "KC_SPC",
       "KC_RGUI",
       "KC_RALT",
       "KC_RCTL",
       "KC_NO",
       "KC_NO",
-      "MO(5)"
+      "KC_SPC"
     ],
     [
       "KC_TAB",
@@ -282,7 +282,7 @@
       "KC_LALT",
       "KC_LGUI",
       "KC_SPC",
-      "KC_SPC",
+      "MO(5)",
       "KC_SPC",
       "KC_NO",
       "KC_SPC",
@@ -291,7 +291,7 @@
       "KC_RCTL",
       "KC_NO",
       "KC_NO",
-      "MO(5)"
+      "KC_SPC"
     ],
     [
       "KC_GRV",
@@ -340,7 +340,7 @@
       "KC_NO",
       "KC_TRNS",
       "QK_CLEAR_EEPROM",
-      "QK_CLEAR_EEPROM",
+      "KC_TRNS",
       "QK_CLEAR_EEPROM",
       "KC_NO",
       "QK_CLEAR_EEPROM",
@@ -349,7 +349,7 @@
       "RGB_SPI",
       "KC_NO",
       "KC_NO",
-      "KC_TRNS"
+      "QK_CLEAR_EEPROM"
     ],
     [
       "S(KC_GRV)",
