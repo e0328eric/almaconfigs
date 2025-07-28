@@ -12442,3 +12442,1033 @@ cd glazewm\
 v config.yaml
 cd
 cd Github\arch-almagest\
+lg
+cd
+cd Test\
+ls
+rm -rp imgch\
+ls
+seminar 
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+cd Github\arch-almagest\terminals\rio\
+v config.toml
+ks
+ls
+v config.toml
+ls
+cd themes\
+ls
+cd
+cd $env.APPDATA
+ls
+cd rio
+cd $env.LOCALAPPDATA
+ls
+cd rio
+ls
+v themes\Peppermint.toml
+ls
+v config.toml
+ls
+start aapproach.pdf
+ls
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+ls
+rm main.odin
+ls
+v main.hs
+git clone --depth 1 https://github.com/laytan/odin-http.git
+cd odin-http\
+ls
+v allocator.odin
+v client\client.odin
+rg "Headers :: struct" *
+v headers.odin
+cd ..
+ls
+v main.odin
+odin run main.odin -file
+v main.odin
+odin run main.odin -file
+v main.odin
+vesti compile -WE aapproach.ves
+ls
+cd Github\arch-almagest\keyboard\epomaker_keyset\
+ls
+rm Epomaker_tide49.json tide_49.layout.json
+v Profile1.bcf
+ls
+v aapproach.ves
+vesti compile -WE aapproach.ves
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+ls
+cd Github\arch-almagest\terminals\rio\
+ls
+v log\rio.log
+ls
+cd .glzr
+cd glazewm\
+ls
+v config.yaml
+wezterm
+wezterm --help
+wezterm -V
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+seminar 
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+ls
+cd 
+cd .config\wezterm
+v wezterm.lua
+cd .glzr/glazewm/
+ls
+v config.yaml
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+v aapproach.ves
+vesti compile -WE aapproach.ves
+cd Test
+ls
+cd Test\odin-http
+ls
+cd Test
+ls
+gm
+npm install -g @google/gemini-cli
+cd Test\
+ls
+mkdir foo
+cd foo
+ls
+gm
+v main.odin
+cd ..
+ls
+rm -rp *
+cd D:
+cd E:\Zan\Dollhouse\
+;s
+ls -al
+rm -rp .*
+cd ..
+ls
+cd Test
+ls
+cp 'C:\Users\almag\Icedrive/Music/수룡음 (cover)_[비챤].flac' .
+ls
+mv '수룡음 (cover)_[비챤].flac' '수룡음_(cover)_[비챤].flac'
+ls
+cargo init
+v Cargo.toml
+cargo add rodio
+v src\main.rs
+cargo add anyhow
+v src\main.rs
+shutdown /s /t 0
+cd Test
+ls
+cargo add crossterm
+v src\main.rs
+ls
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'\
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+ls
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+ls
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+ls
+v src\main.rs
+cargo add ratatui
+v src\main.rs
+v  Cargo.toml
+cargo add color_eyre
+v  Cargo.toml
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'\
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'\
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+cargo r -- '수룡음_(cover)_[비챤].flac'
+v src\main.rs
+seminar
+lks
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+start aapproach.pdf
+cargo r -- '수룡음_(cover)_[비챤].flac'
+ls
+cd ..
+s
+mv Test musik
+mkdir Test
+mv musik Test\
+cd Test
+ls
+cd musik\
+v Cargo.toml
+ls
+v src\main.rs
+cd Test
+ls
+cargo new mana-crawler
+cd mana-crawler\
+ls
+v src\main.rs
+v aapproach.ves
+vesti compile -WE aapproach.ves
+cd Test
+ls
+cd mana-crawler\
+ls
+cd E:\Foo\
+ls
+sf . "(.)\\.ves~"
+sf . "(.)\\.webp"
+cd E:\Foo\
+cd `Tanetsuke Sarechau Bokukko-chan\`\
+cd `Tanetsuke Sarechau Bokukko-chan\`
+lsd
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ,,
+cd ..
+cd `Saimin Seikyouiku\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Adabana Ch.1\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ..\
+ls
+mv `Adabana Ch. 2\` `Adabana Ch.2\`
+cd `Adabana Ch.2\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+sf . "(.)\\.webp"
+cd ..
+cd '[角煮煮] 人間操作リモコン [韓国翻訳] [DL版]\'
+ls
+rm ComicInfo.xml
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+start .
+cd ..
+cd '[角煮煮] 人間操作リモコン2 [韓国翻訳] [DL版]\'
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+rm ComicInfo.xml\
+rm ComicInfo.xml
+ls
+cd ..
+cd '[角煮煮] 人間操作リモコン2 [韓国翻訳] [DL版]\'
+ls
+siv thumb.png
+ls
+mv thumb.png 00000000.png
+cd ..
+cd '[角煮煮] 人間操作リモコン [韓国翻訳] [DL版]\'
+ls
+mv thumb.png 00000000.png
+siv *
+ls
+rm 00000000.png
+cd ..
+cd '[角煮煮] 人間操作リモコン2 [韓国翻訳] [DL版]\'
+ls
+rm 00000000.png
+siv 00000001.png
+cd ..
+sf . "(.)\\.webp"
+cd `Mesugaki Wakarase Saimin 3\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+lws
+ls
+cd ..
+cd `Saimin Appli ga Honmono Kamo Shirenai node Tsukatte Miru\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ..
+ls
+cd `Seigi 0-ten no Kanojo\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Gyakuten Enkou ~Ore ga Kawareru Sekai~\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Gyakuten Enkou 2 ~Ore ga Kawareru Sekai~\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+sf . "(.)\\.webp"
+cd ..
+cd `Fukujuu no Noroi\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+sf . "(.)\\.webp" | each { |e| echo $e }
+cd ..
+cd `Watashi no Karada, Okashi Shimasu\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ..
+cd `Watashi no Karada, Okashi Shimasu. Idol Hen\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd ..
+cd `Watashi no Karada, Okashi Shimasu. Bunnygirl Hen\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+sf . "(.)\\.webp"
+cd ..
+cd `Watashi no Karada, Okashi Shimasu. Gal Hen\`
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+sf . "(.)\\.webp"
+cd .glzr/glazewm/
+ls
+v config.yaml
+cd Test\
+ls
+mkdir raylib-odin
+cd raylib-odin\
+ls
+cd
+cd .local\
+ls
+cd Odin\
+git fetch --prune origin master
+git merge origin master
+ls
+./build.bat release
+cd
+cd Test\raylib-odin\
+ls
+curl --location -O https://github.com/odin-lang/examples/raw/refs/heads/master/raylib/game_of_life/game_of_life.odin
+odin run game_of_life.odin -file
+rm game_of_life.odin
+v main.odin
+odin run main.odin -file
+v main.odin
+odin build . -target:adasdas
+odin build . -target:linux_amd64
+cd
+ls
+cd Github\vesti\ls
+cd Github\vesti
+ls
+v build.zig.zon
+zig-dev fetch --save git+https://codeberg.org/atman/zg
+zig build
+zig-dev build
+cd
+ls
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pw 
+pwd | pbcopy 
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -WE aapproach.ves
+v aapproach.ves
+shutdown /s /t 0
+cd Test\
+ls
+cd raylib-odin\
+ls
+v main.odin
+ls
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+ls
+cd ..
+l
+mv raylib-odin yedec
+ls
+cd yedec
+ls
+vcpkg
+vcpkg search curl
+vcpkg create --help
+vcpkg new --help
+vcpkg new --application
+ls
+vcpkg search curl
+vcpkg add port curl
+vcpkg install --help
+vcpkg help triplets
+vcpkg install --target=x64-windows-static-release
+vcpkg install --triplet=x64-windows-static-release
+ls
+ls vcpkg_installed\x64-windows-static-release\lib\
+cd Test\yedec\
+ls
+cd vcpkg_installed\x64-windows-static-release\include\
+ls
+rg "curl_easy_setopt" *
+v main.odin
+ls
+cd ,,
+cd ..
+l
+ls
+rm -rp yedec\
+ls
+cp -r ~/Github/vesti .
+cd vesti\
+ls
+cargo new vesti-tectonic --lib
+cd vesti-tectonic\
+ls
+v Cargo.toml
+cargo b
+ls
+ls target\debug\
+v Cargo.toml
+cargo b
+ls target\debug\
+v Cargo.toml
+ls
+mkdir dist/vcpkg-triplets
+v dist\vcpkg-triplets\x64-windows-static-release.cmake
+cd ..
+ls
+cd vesti-tectonic\
+ls
+v Cargo.toml
+ls
+v windows_build.bat
+ls
+v src\lib.rs
+cd Test
+ls
+v main.odin
+odin run main.odin -file
+ls
+mkdir yedec
+cd yedec
+mv ../main.odin .
+ls
+vcpkg new --application
+vcpkg add port curl
+vcpkg install --triplet=x64-windows-static-release
+v curl.odin
+ls
+cd vcpkg_installed\x64-windows-static-release\include\
+cd ..
+ls
+cd lib
+ls
+pwd | pbcopy 
+cd ../../..
+ls
+v main.odin
+./windows_build.bat
+cd Test\vesti\vesti-tectonic\
+./windows_build.bat
+v src\lib.rs
+exit
+cd Test\yedec\vcpkg_installed\x64-windows-static-release\include\
+rg "curl_easy_setopt" *
+rg "struct CURLoption" *
+rg "CURLoption" *
+ls target\debug\
+ls target\release\
+cd ..
+ls
+ls vesti-tectonic\target\release\vesti_tectonic.dll.lib
+cd vesti-tectonic\
+cargo install --path .
+cargo install --help
+cargo build --help
+cd ..
+ls
+v build.zig
+zig build
+v build.zig
+v vesti-tectonic\src\lib.rs
+v src\main.zig
+zig build run
+v src\main.zig
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+zig build run\
+ls
+ls zig-out\
+ls zig-out\bin\
+v build.zig
+zig build run\
+ls
+ls vesti-tectonic\target\release\
+v build.zig
+zig build run
+v src\main.zig
+zig build run
+ls
+cd zig-out\bin\
+ls
+mv ../vesti_tectonic.dll .
+ls
+cd ../..
+zig build run
+cd zig-out\bin\
+ls
+./vesti.exe
+cd ../..
+v src\main.zig
+zig build run
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig
+cd .local\bin\
+ls
+uv
+rm uv.exe uvw.exe uvx.exe
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build --help
+zig build -p ~/.local/bin -Doptimize=ReleaseFast
+cd bin\
+ls
+cd ..
+ls
+rm -rp bin\
+ls
+zig build --prefix-lib-dir ~/.local/bin -Doptimize=ReleaseFast
+v curl.odin
+v build.zig
+ls
+rm -rp zig-out
+zig build
+ls
+v build.zig
+zig build
+cd .local\
+git clone --depth 1 https://github.com/karl-zylinski/odin-c-bindgen.git
+cd odin-c-bindgen\
+ls
+odin build src -out:~/.local/bin/c2odin.exe
+odin build src -out:c2odin.exe
+odin build -h
+odin help build
+cd Test\vesti\
+v build.zig
+zig build
+ls
+cd zig-out\bin\
+ls
+./vesti.exe
+cd ../..
+ls
+v build.zig
+zig build -h
+v build.zig
+zig build -h
+v src\commands.zlap
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+ls
+v build.zig
+l
+scd
+cd
+cd .local\bin
+kls
+ls
+cd
+ls
+homework 
+ls
+cd Manifold\
+s
+v homework4.ves
+start homework4.pdf
+vesti compile homework4.ves
+cd Test\vesti\
+ls
+v vesti-tectonic\src\lib.rs
+v homework4.ves
+vesti compile homework4.ves
+v homework4.ves
+vesti compile -T homework4.ves
+ls
+ls .vesti-dummy\
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+vesti compile -T homework4.ves
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+ls
+cd ..
+ls
+cd bin
+ls
+ln ~/.local/odin-c-bindgen/c2odin.exe ~/.local/bin/c2odin.exe
+c2odin.exe 
+cd
+ls
+cd Test\yedec\
+ls
+rm curl.odin
+c2odin.exe vcpkg_installed\x64-windows-static-release\include
+winget search llvm
+winget install LLVM.LLVM
+clang
+winget search clang
+v src\compile.zig
+cd Github\
+ls
+cd wallp\\
+ls
+mv src\main.zig ..
+ls
+rm -rp .zig-cache\ build.zig build.zig.zon zig-out\ 
+ls
+cd ..
+ls
+v main.zig
+mv main.zig wallp\
+ls
+cd wallp\
+ls
+rm -rp src
+ls
+cd Github\wallp\
+ls
+odin run .
+ls
+cd Test\
+ls
+git clone https://github.com/e0328eric/wallp.git
+cd wallp
+ls
+v src\main.zig
+odin run .
+ls
+odin run .
+odin run .\
+odin run .
+v main.odin
+odin run .
+odin build .
+ls
+dumpbin.exe /dependents wallp.exe
+./wallp.exe
+v src\winzig.h
+zig build
+ls
+cd zig-out\bin\
+dumpbin.exe /dependents wallp.exe
+v main.odin
+odin build .
+./wallp.exe
+WinDbgX.exe wallp.exe
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v src\winzig.h
+cd ../..
+v src\winzig.h
+v main.odin
+v src\main.zig
+which sumatrapdf
+cd Test\vesti
+ls
+v build.zig
+ls
+v .gitignore
+ls
+v src\main.zig
+ls
+zig build
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+homework 
+ls
+cd Manifold\
+ls
+start homework4.pdf
+v homework4.ves
+vesti compile -T homework4.ves
+ls
+cd .vesti-dummy\
+ls
+rm -rp .vesti-dummy\
+cd .
+cd ..
+ls
+v src\compile.zig
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v build.zig
+ks
+ls
+vesti compile -T homework4.ves
+ls
+ls .vesti-dummy\
+cd .vesti-dummy\.vesti-dummy\
+ls
+cd ../..
+ls
+v vesti-tectonic\src\lib.rs
+ls
+rm -rp .vesti-dummy\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v build.zig
+vesti compile -T homework4.ves
+ls
+ls .vesti-dummy\
+rm -rp .vesti-dummy\
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+cd Test\wallp\
+ls
+cd ..
+ls
+cd
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+cd Test\wallp\
+v build.zig
+cd
+cd Github\
+cd wallp\
+rm `3`
+v main.odin
+odin run .
+v main.odin
+odin run .
+odin build .
+dumpbin.exe /dependents wallp.exe
+v main.odin
+v ~/Test/wallp/build.zig
+ls
+vesti compile -T homework4.ves
+ls
+v src\compile.zig
+ls
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+rm homework4.pdf
+rm -rp .vesti-dummy\
+ls
+vesti compile -T homework4.ves
+ls
+ls .vesti-dummy\
+v vesti-tectonic\src\lib.rs
+v src\compile.zig
+ls
+rm -rp .vesti-dummy\
+rm homework4.pdf
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+ls
+v build.zig
+vesti compile -T homework4.ves
+ls
+ls .vesti-dummy\
+v src\compile.zig
+rm homework4.pdf
+rm -rp .vesti-dummy\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+vesti compile -T homework4.ves
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+v src\compile.zig
+v vesti-tectonic\src\lib.rs
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+ls
+rm -rp .vesti-dummy\
+rm homework4.pdf
+vesti compile -T homework4.ves
+ls
+start homework4.pdf
+v vesti-tectonic\Cargo.toml
+ls
+rm -rp zig-out\
+cd src\
+ls
+cd ..
+ls
+cd vesti-tectonic\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Manifold
+ls
+rm -rp target\ windows_build.bat
+vesti compile -TWE homework4.ves
+ls
+cd ..
+ls
+zig build
+ls
+cd vesti-tectonic\
+ls
+cd ..
+ls
+rm -rp zig-out .zig-cache\
+zig build -Dtectonic=true
+ls
+cd vesti-tectonic\
+ls
+ls target\
+curl --location -O https://github.com/e0328eric/vesti-tectonic-backend/raw/refs/heads/main/windows_build.bat
+./windows_build.bat
+v windows_build.bat
+cd ..
+ls 
+v build.zig.zon
+v build.zig
+zig build -Dtectonic=true
+cd vesti-tectonic\
+ls
+rm -rp target\
+cd ..
+zig build -Dtectonic=true
+v build.zig
+v vesti-tectonic\Cargo.toml
+v build.zig
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+ls vesti-tectonic\target\vcpkg\
+v build.zig
+rm -rp .zig-cache
+ls
+cd vesti-tectonic\
+ls
+rm -rp target\
+cd ..
+ls
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+vesti compile -TWE homework4.ves
+ls
+lg
+cd vesti-tectonic\
+ls
+rm windows_build.bat
+cd ..
+lg
+v README.md
+ls
+lg
+v .vesti-dummy\homework4.tex
+cd 
+ls
+cd Github\
+s
+rm -rp vesti\
+mv ~/Test/vesti .
+ls
+cd vesti\
+zig build --prefix-exe-dir ~/.local/bin -Dtectonic=true -Doptimize=ReleaseFast
+cd ../..
+ls
+cd Kindergarten\Volume2\
+vesti compile -Ta homework4.ves
+vesti compile -Ta kindergarten-vol2.ves
+v kindergarten-vol2.ves
+vesti compile -Ta kindergarten-vol2.ves
+cd $env.APPDATA
+ls
+cd vesti\
+ls
+cd coprime\
+s
+v fancythm.sty
+v coprime-math.sty
+v coprime-reference.sty
+v coprime.cls
+ls
+v coprime-math.sty
+lg
+v kindergarten-vol2.ves
+vesti compile -Ta kindergarten-vol2.ves
+v kindergarten-vol2.ves
+ls
+v kindergarten-vol2.ves
+start kindergarten-vol2.pdf
+vesti compile -Ta kindergarten-vol2.ves
+rm -rp .vesti-dummy\
+vesti compile -Ta kindergarten-vol2.ves
+v .vesti-dummy\@vesti__125d42a51b3f35b1.tex
+v kindergarten-vol2.ves
+v coprime-math.sty
+lg
+cd
+seminar
+ls
+cd Doctor\AApproach\
+ls
+v aapproach.ves
+ls
+vesti compile -a kindergarten-vol2.ves
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+vesti compile -WE aapproach.ves
+ls
+rm -rp .vesti-dummy\
+cd Test\ArcCreate_Chart_Demo\
+getmusic https://youtu.be/7o1S3o_VNII?si=QhiZ2-2x137Ifohc
+ls
+mv 'Radiance [7o1S3o_VNII].m4a' Radiance.m4a
+ls
+ffmpeg -i Radiance.m4a Radiance.wav
+ls
+rm Radiance.m4a
+ls
+curl --location -O https://i.namu.wiki/i/fHiXHAHkOfe2TwQN02eq7w2DN3ADLX84h--jvlfaYPul7HUqFnc75Ckad2yu_XU1ATvQbNMK1YG3DKgelRvrHiL1T9SHIi9-a7-NxEPkL_N_UUeLWdP4O8zHfiwcy2o2i7Fy2PdTt3WIH7uo15Kwog.webp
+imgch -h
+imgch -t png fHiXHAHkOfe2TwQN02eq7w2DN3ADLX84h--jvlfaYPul7HUqFnc75Ckad2yu_XU1ATvQbNMK1YG3DKgelRvrHiL1T9SHIi9-a7-NxEPkL_N_UUeLWdP4O8zHfiwcy2o2i7Fy2PdTt3WIH7uo15Kwog.webp
+ls
+rm fHiXHAHkOfe2TwQN02eq7w2DN3ADLX84h--jvlfaYPul7HUqFnc75Ckad2yu_XU1ATvQbNMK1YG3DKgelRvrHiL1T9SHIi9-a7-NxEPkL_N_UUeLWdP4O8zHfiwcy2o2i7Fy2PdTt3WIH7uo15Kwog.webp
+mv fHiXHAHkOfe2TwQN02eq7w2DN3ADLX84h--jvlfaYPul7HUqFnc75Ckad2yu_XU1ATvQbNMK1YG3DKgelRvrHiL1T9SHIi9-a7-NxEPkL_N_UUeLWdP4O8zHfiwcy2o2i7Fy2PdTt3WIH7uo15Kwog.png Radiance.png
+vesti compile -WE aapproach.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+vesti compile -WE aapproach.ves
+cd Github\arch-almagest\
+\ls
+v README.md
+lg

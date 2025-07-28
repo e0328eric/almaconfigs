@@ -1,4 +1,4 @@
-# Arch Linux Setting Files
+# Arch Linux (and windows) Setting Files
 
 # Screen Resolution Setting
 If ones screen scaling is too small, then add these lines into `~/.Xresources`.
@@ -10,5 +10,5 @@ Xft.rgba:       rgb
 Xft.hintstyle:  hintslight
 ```
 
-# lightdm config
-I used [Shikai](https://github.com/TheWisker/Shikai) theme
+# windows file manager
+I use [File Pilot](https://filepilot.tech).
