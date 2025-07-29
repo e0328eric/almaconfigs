@@ -160,24 +160,6 @@ point reaches the beginning or end of the buffer, stop there."
   (setq company-minimum-prefix-length 1
 		company-idle-delay 0.0))
 
-(use-package eglot
-    :hook (prog-mode . eglot-ensure)
-    ;; The first 5 bindings aren't needed here, but are a good
-    ;; reminder of what they are bound too
-    :bind
-	(("C-x C-x p" . completion-at-point)
-     ("C-x C-x i" . imenu)
-	 ("C-x C-x g d" . xref-find-definitions)
-     ("C-x C-x g b" . xref-go-back)
-     :map
-     eglot-mode-map
-     ("C-x C-x c a" . eglot-code-actions)
-     ("C-x C-x c o" . eglot-code-actions-organize-imports)
-     ("C-x C-x c r" . eglot-rename)
-     ("C-x C-x c f" . eglot-format))
-    :config
-    (defvar complete-at-point--timer nil "Timer for triggering complete-at-point."))
-
 (use-package eldoc-box
   :ensure t
   :hook
@@ -279,11 +261,6 @@ point reaches the beginning or end of the buffer, stop there."
   (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
   :bind
   ("C-x C-/" . 'undo-tree-redo))
-
-(use-package rustic
-  :ensure t
-  :config
-  (setq rustic-lsp-client 'eglot))
 
 (use-package zig-mode
   :ensure t)

@@ -13472,3 +13472,290 @@ cd Github\arch-almagest\
 \ls
 v README.md
 lg
+v aapproach.ves
+vesti compile -WE aapproach.ves
+cd Github\wallp\
+cd ComfyUI\output\
+s
+ls
+siv *
+rm -rp *
+ls
+rm -rp *
+ls
+cd Github\wallp\
+ls
+odin run .
+cd Test\wallp\
+ls
+zig build run -- list
+v build.zig
+odin build .
+dumpbin.exe /dependents wallp.exe
+odin build .
+dumpbin.exe /dependents wallp.exe
+v main.odin
+odin build .
+ls
+odin build .
+dumpbin.exe /dependents wallp.exe
+odin build .
+ls
+dumpbin.exe /dependents wallp.exe
+rm wallp.exe
+odin build .
+las
+ls
+dumpbin.exe /dependents wallp.exe
+odin build .
+dumpbin.exe /dependents wallp.exe
+dumpbin.exe /dependents zig-out\bin\wallp.exe
+./wallp.exe
+odin run .
+odin run . -- asdsad asdasdas
+odin run .
+odin run . -- asdsad asdasdas
+odin run .
+odin run . -- asdsad asdasdas
+odin run . -- list
+odin build .
+odin run . -- list
+v main.odin
+shutdown /s /t 0
+cd Github\wallp\
+ls
+cd Test
+ls
+rm -rp wallp\
+ls
+cd yedec
+ls
+v main.odin
+winget search emacs
+cd $env.LOCALAPPDATA
+ls
+v .emacs
+rm .emacs
+pwd
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs ~/AppData/Local/.emacs
+ls
+v .emacs
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.custom.el ~/AppData/Local/.emacs.custom.el
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.local ~/AppData/Local/.emacs.local
+ls
+ls .emacs.local
+v .emacs
+winget install GNU.Emacs
+cd
+ls
+cd Github\wallp\
+d
+cd
+cd Github\wallp\
+ls
+odin run . -- list
+clang
+clang --version
+odin run . -- list
+v main.odin
+v main.zig
+ls
+v main.odin
+cd ..
+ls
+rm -rp wallp\ wallp.exe
+ls
+cd yedec
+s
+cd ..
+ls
+rm -rp yedec
+mv yedec_old yedec
+cd yedec
+ls
+v build.zig
+ls
+exit
+cd Github\yedec
+vcpkg new --application
+vcpkg add port curl
+vcpkg add port xml2
+vcpkg help triplets
+zig build vcpkg
+v build.zig.zon
+ls src
+ls
+zig build vcpkg
+v build.zig.zon
+zig build vcpkg
+zig fetch --save https://codeberg.org/atman/zg/archive/v0.14.1.tar.gz
+zig build vcpkg
+rm -rp .zig-cache\
+zig build vcpkg
+ls
+v build.zig.zon
+zig
+rm -rp C:\Users\almag\AppData\Local\zig
+zig build vcpkg
+rm -rp C:\Users\almag\AppData\Local\zig
+rm -rp .zig-cache\
+ls
+v build.zig.zon
+zig fetch --save https://github.com/e0328eric/zlap/archive/refs/tags/v0.6.1.tar.gz
+zig fetch --save https://github.com/e0328eric/badepo
+zig fetch --save https://github.com/e0328eric/badepo.git
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+cd src\main.zig
+seminar
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+cd Github\
+ls
+git clone https://github.com/e0328eric/wallp.git
+ls
+cd wallp\
+ls
+rm -rp *\
+ls
+ls -al
+ls
+v main.odin
+ls
+odin run . -- list
+v main.odin
+odin run . -- list
+v main.odin
+odin run . -- list
+v main.odin
+odin run . -- list
+v main.odin
+odin run . -- list
+odin run . -- set 0 ~/Icedrive/Photos/lilpa_night.png
+odin run . -- set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+odin run . -- list
+which wallp
+cd .local\bin
+ls
+odin build .
+ls
+odin build . --help
+odin build .  -o:size
+ls
+odin build . -o:size
+odin build . -o:speed
+ls
+mv wallp.exe ~/.local/bin
+ls
+wallp list
+wallp set 4 ~/Icedrive/Photos/lilpa_night.png
+wallp set 3 ~/Icedrive/Photos/lilpa_night.png
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+lg
+git pull origin main
+cp ../vesti/LICENSE .
+v LICENSE
+lg
+v LICENSE
+cd $env.LOCALAPPDATA
+cd nvim\
+ls
+v lua\almagest\set.lua
+lg
+dumpbin.exe /dependents vesti_tectonic.dll
+cd
+cd Test\yedec\
+ls
+c2odin.exe vcpkg_installed\x64-windows-static-release\include
+ls
+ls vcpkg_installed\x64-windows-static-release\include\
+mv vcpkg_installed\x64-windows-static-release\include\include .
+ls
+v include\
+ls
+c2odin.exe vcpkg_installed\x64-windows-static-release\include\curl .
+c2odin.exe vcpkg_installed\x64-windows-static-release\include\curl
+ls
+c2odin.exe vcpkg_installed\x64-windows-static-release\include\curl
+rm -rp include\
+rm -rp vcpkg_installed\x64-windows-static-release\include\curl\curl
+ls
+v src\main.zig
+zig build
+zig build vcpkg
+vcpkg search xml2
+v build.zig
+v vcpkg.json
+ls
+zig build vcpkg
+ls vcpkg_installed\x64-windows-static-release\lib\
+cd Github\yedec]
+cd Github\yedec
+ls
+zig build
+v build.zig
+v src\main.zig
+zig build
+zig build -Dtarget=x86_64-windows-msvc
+ls
+cd vcpkg_installed\x64-windows-static-release\include\
+ls
+c2odin.exe ./curl/
+cd .local\odin-c-bindgen\
+ls
+git fetch --prune origin main
+git merge origin main
+cd
+v curl\curl\curl.odin
+cd .local\odin-c-bindgen\
+v src\bindgen.odin
+ls
+cd ../..
+ls
+cd ..
+s
+cd
+ls
+v aapproach.ves
+vesti compile -WE aapproach.ves
+v build.zig
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+wallp set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+wallp list
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v build.zig
+cd Github\wallp\
+ls
+v main.odin
+odin run . -- list\
+odin run . -- list
+lg
+v main.odin
+v aapproach.ves
+cd ComfyUI\
+ls
+imgch -t png 165e7396-84c3-431a-9acf-f4641d62103b.jpeg
+siv 165e7396-84c3-431a-9acf-f4641d62103b.jpeg
+siv 165e7396-84c3-431a-9acf-f4641d62103b.png
+ls
+rm 165e7396-84c3-431a-9acf-f4641d62103b.png
+mogrify 165e7396-84c3-431a-9acf-f4641d62103b.jpeg -format png
+imgch -t png 165e7396-84c3-431a-9acf-f4641d62103b.jpeg
+rm 165e7396-84c3-431a-9acf-f4641d62103b.jpeg 165e7396-84c3-431a-9acf-f4641d62103b.png
+vesti compile -WE aapproach.ves
+cd Github\
+ls
+cd arch-almagest\
+ls
