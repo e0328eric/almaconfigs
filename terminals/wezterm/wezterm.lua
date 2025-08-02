@@ -25,7 +25,7 @@ config.font = wezterm.font_with_fallback({
 })
 
 config.font_size = 10
-config.unicode_version = 15
+config.unicode_version = 16
 config.warn_about_missing_glyphs = false
 
 --         ╭──────────────────────────────────────────────────────────╮
@@ -167,7 +167,13 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			mods = "CTRL|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 		},
+		{
+			key = "w",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.CloseCurrentPane({ confirm = true }),
+		},
 		{ key = "l", mods = "CTRL|SHIFT", action = act.ShowLauncher },
+		{ key = "t", mods = "CTRL|SHIFT", action = act.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
 		{ key = "f", mods = "CTRL|ALT", action = act.ToggleFullScreen },
 		{ key = "Enter", mods = "ALT", action = act.DisableDefaultAssignment },
 		{ key = "r", mods = "CTRL|ALT", action = act.ReloadConfiguration },

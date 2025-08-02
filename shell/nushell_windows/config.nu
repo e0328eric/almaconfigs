@@ -784,6 +784,8 @@ $env.config = {
 
 alias v          = nvim
 alias gm         = gemini
+alias oldrm      = ^rm
+alias rm         = xilo
 alias s          = ls
 alias l          = ls -al
 alias lg         = lazygit

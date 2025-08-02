@@ -13759,3 +13759,1247 @@ cd Github\
 ls
 cd arch-almagest\
 ls
+lg
+cd ..
+cd vesti
+ls
+cd ..
+ls
+xcsd
+cd
+ls
+cd Test\
+ls
+cd yedec
+ls
+v main.odin
+ls
+cd Test\
+ls
+cd yedec
+ls
+v main.odin
+cd
+cd Github\vesti\
+v build.zig
+zig build
+v build.zig
+v C:\Users\almag\.local\zig-lts\lib\std\Build.zig
+zig build
+v C:\Users\almag\.local\zig-lts\lib\std\Build.zig
+v C:\Users\almag\.local\zig-lts\lib\compiler\build_runner.zig
+shutdown /s /t 0
+wallp list
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+exit
+cd Github\
+ls
+cd musik\
+ls
+zig build -- -h
+ls
+rm -rp .idea cmake-build-debug
+cd thirdparty\
+ls
+cd ..
+ls
+rm -rp thirdparty
+ls
+cd ..
+ls
+cd
+ls
+cd Test
+ls
+cd musik\
+ls
+cd Github\musik\
+ls
+rm -rp .gitmodules .zig-cache src build.zig build.zig.zon
+mv ~/Test/musik/* .
+ls
+git submodule --help
+git submodule deinit --all
+ls
+mkdir thirdparty/miniaudio
+git submodule deinit --all
+ls
+rm -rp thirdparty\
+ls
+cargo r -- 系ぎて.wav
+ls
+cd Github\arch-almagest\keyboard\
+cd epomaker_keyset\
+ls
+mv Profile1.bcf AlmaKeyboard.bcf
+ls
+hexyl AlmaKeyboard.bcf
+cd Test\
+ls
+v base64.zig
+ls
+zig build-exe base64.zig
+ls
+rm base64.exe.obj base64.pdb
+ls
+./base64.exe
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9jT1BTTGxuR2g3VHhQWVdrR3d2UEdi
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9ib3UtMWoyY2dYVm12WnRQUVZxakdi
+cd `P:\Crypto Folder\`
+ls
+cd Zan
+ls
+mkdir 異世界アイドル
+ls
+gm
+ls
+v base64.zig
+ls
+mkdir base64
+mv base64.zig base64\
+s
+rm base64.exe
+ls
+cd base64\
+ls
+v winzig.h
+zig translate-c winzig.h
+zig translate-c -lc winzig.h
+zig translate-c -lc winzig.h | save winzig.zig
+ls
+v winzig.zig
+ls
+v base64.zig
+ls
+zig build-exe base64.zig
+v base64.zig
+zig build-exe base64.zig
+zig build-exe base64.zig -lUser32
+ls
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.zig
+zig build-exe base64.zig -lUser32
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.zig
+zig build-exe base64.zig -lUser32
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+dumpbin.exe /dependents base64.exe
+v base64.zig
+ls
+zig build-exe base64.zig -lUser32
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.zig
+zig build-exe base64.zig -lUser32
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.zig
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+ls
+v base64.odin
+ls
+rm base64.exe.obj base64.exe base64.pdb base64.zig winzig.h winzig.zig
+ls
+odin build .
+v base64.odin
+odin build .
+v base64.odin
+odin build .
+v base64.odin
+odin build .
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+cd Github\wallp\
+ls
+v base64.odin
+odin build .
+v base64.odin
+odin build .
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.odin
+ls
+v winzig.h
+ls
+rm base64.exe
+ls
+v main.odin
+cd
+cd Test\base64\
+ls
+zig translate-c -lc winzig.h | save winzig.zig
+ls
+seminar
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+v base64.zig
+ls
+v base64.zig
+ls
+zig build-exe base64.zig -lUser32
+v base64.zig
+zig build-exe base64.zig -lUser32
+v base64.zig
+zig build-exe base64.zig -lUser32
+v base64.zig
+ls
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kQ1Z1Zks0ZFQxUi1iM3dsNWlvNUdi
+v base64.odin
+ls
+rm base64.odin
+ls
+v base64.zig
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9iZ09iZ0trLUlmTUdIWXUxMVZ2UEdi
+./base64.
+./base64. aHR0cHM6Ly9raW8uYWMvYy9kMVpSTHJJQ0lCT3IxN2JiNnRIUHli
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9kMVpSTHJJQ0lCT3IxN2JiNnRIUHli
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9jTXZzRlMzeEQ4S3ExLVVvTm91akdi
+cd `P:\Crypto Folder\Zan\異世界アイドル\`
+ls
+siv *
+v src\main.rs
+vesti compile -WE aapproach.ves
+cd ComfyUI\
+l
+ls
+cd custom_nodes\
+ls
+git clone --depth 1 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+git clone --depth 1 https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+git clone --depth 1 https://github.com/laksjdjf/cgem156-ComfyUI.git
+cd ..
+ls
+cd models\
+ls
+cd ComfyUI\
+ls
+cd output\
+ls
+siv ComfyUI_Upscale_00001_.png
+ls
+wallp set 0 ./ComfyUI_Upscale_00001_.png
+wallp set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+cd ComfyUI\output\
+ls
+siv ComfyUI_Upscale_00003_.png
+ls
+mv ComfyUI_Upscale_00004_.png ~/Icedrive/Photos/lab_lilpa.png
+wallp set 0 ~/Icedrive/Photos/lab_lilpa.png
+wallp set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+ls
+v aapproach.ves
+cd .config\
+s
+ln ~/AppData/Local/nvim ~/.config/nvim
+ls
+cd nvim
+ls
+v lua\almagest\set.lua
+lg
+which vivaldi
+cd .glzr/glazewm/
+v config.yaml
+ls `C:\Program Files\`
+C:\Users\almag\AppData\Local\Vivaldi\Application\vivaldi.exe --help
+cd Icedrive\Computer\
+ls
+gm
+ls
+mv `ComfyUI 기초학개론.pdf` ComfyUI基礎学概論.pdf
+ls
+start ComfyUI基礎学概論.pdf
+cd ComfyUI\output\
+ls
+rm ComfyUI_Upscale_00003_.png
+help rm 
+cd Github\xilo
+ls
+cd C:\$Recycle.Bin\
+pwd | pbcopy 
+ls
+cd ..
+ls
+cd
+cd ComfyUI\output\
+ls
+v src\Remover.zig
+ls
+v build.zig.zon
+ls src
+v build.zig
+v src\main.zig
+cd Test\base64\
+./base64.exe aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMVUzeE1ZQThNRlh2blc5blJPTUZ3Q1BFX2JiNGNINEpBP3VzcD1zaGFyaW5n
+ls
+rm ComfyUI_Upscale_00001_.png
+rm ComfyUI_Upscale_00002_.png
+yt-dlp -f bv https://youtu.be/TgyOpKZsXkk?feature=shared
+start "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].mp4"
+rm "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].mp4"
+yt-dlp https://youtu.be/TgyOpKZsXkk?feature=shared
+ls
+ffmpeg -i "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].webm" mp4
+ffmpeg -i "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].webm" "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].mp4"
+ls
+rm "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].webm"
+start .
+ls
+rm "[자막뉴스] '쓰나미 왔다' 순간 '물지옥'.. 일본 밀려온 고래떼 '불길' (2025.07.30⧸MBC뉴스) [TgyOpKZsXkk].mp4"
+start .
+vesti compile -WE aapproach.ves
+cd Github\xilo\
+ls
+v PLEASE_REMOVE_AFTER_IMPLEMENT
+shutdown /s /t 0
+ls
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vlang
+cd .local
+ls
+rm -rp ox
+cd bin
+ls
+cd ..
+ls
+ox
+which heix
+which helix
+which hx
+;s
+ls
+cd
+ls
+cd Github\vesti\
+ls
+v build.zig.zon
+zig-dev fetch --save git+https://codeberg.org/e0328eric/zg.git
+zig-dev build
+cd ..
+ls
+git clone --depth 1 https://codeberg.org/e0328eric/zg.git
+cd
+cd .local
+zigup
+ls
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1276+3fbdd58a8 zig
+rm -rp zig\
+ls
+rm -rp zig-compiler
+cd .local\Odin\
+ls
+git fetch --prune origin master
+git merge origin master
+zigup
+ls
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1276+3fbdd58a8 zig
+rm -rp zig-compiler
+./build.bat release
+ls
+zig version
+zig-dev version
+ls
+ls
+cd
+ls
+cd Test\
+lsa
+ls
+clang
+cl /?
+ls
+cd yedec
+ls
+cl vcpkg_installed\x64-windows-static-release\include\curl\curl.h /P curl.pre 
+cl /P vcpkg_installed\x64-windows-static-release\include\curl\curl.h
+ls
+v curl.i
+rm curl.i
+cl /?
+cl /EP vcpkg_installed\x64-windows-static-release\include\curl\curl.h | save curl.i
+ls
+v curl.i
+main.hs
+ghci
+ls
+v curl.i
+v trim.odin
+ls
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+vesti compile -WE aapproach.ves
+v trim.odin
+shutdown /s /t 0
+v aapproach.ves
+cd Test\
+ls
+cd yedec
+s
+v curl.i
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+cd Github\xilo
+ls
+cd Github\
+cd xilo
+ls
+cd src\
+ls
+mkdir os
+mv os Remover
+cd .local\bin
+ls
+v Remover\posix.zig
+v src\Remover.zig
+ls
+v rename.zig
+cd Test\base64\
+ls
+git init
+v .gitignore
+v README.md
+cp ~/Github/vesti/LICENSE .
+v LICENSE
+git branch -M main
+git remote add origin https://github.com/e0328eric/base64.git
+lg
+ls
+v Remover\windows.zig
+ls
+rm Remover.zig
+zig build
+rg "Remover.zig" *
+v main.zig
+zig build
+v Remover\posix.zig
+zig build
+v Remover\posix.zig
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+v Remover\windows.zig
+zig build
+cd ..
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cp -r ArcCreate_Chart_Demo fff
+ls
+ls fff
+ls
+xilo fff
+xilo -r fff
+xilo -p
+xilo -s
+xilo -p
+cp -r ArcCreate_Chart_Demo fff
+xilo -r fff
+v Remover\windows.zig
+ls
+cd ..
+ls
+v build.zig.zon
+ls
+rm PLEASE_REMOVE_AFTER_IMPLEMENT
+ls
+v $nu.config-path
+ls
+source $nu.config-path
+oldrm
+which oldrm
+help oldrm
+help ^rm
+그
+rm
+ls
+rm
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Github\xilo
+ls
+cd src
+ls
+rg "!handleYes" *
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+rm -p
+lg
+ls
+ㅍ 
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ㅣㄴ
+ls
+cd
+cd ComfyUI\output\
+ls\
+ls
+cd ..
+ls
+cd
+cd Github\
+lsd
+ls
+cd
+cd Github\vesti
+zig-dev build
+cd
+ls
+cd .local\zls\
+ls
+git checkout -b v0.15.0-dev
+ls
+git fetch --prune origin 0.15.0-dev
+git fetch --prune origin master
+git merge origin master
+ls
+git checkout master
+git merge origin master
+ls
+zig-dev build --prefix-exe-dir=~/.local/bin -Doptimize=ReleaseFast
+zig-dev build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\zlap
+ls
+v build.zig
+lg
+cd ..
+ls
+git clone --depth 1 https://github.com/e0328eric/ziglua.git
+cd ziglua\
+ls
+cd ..
+ls
+cd vesti\
+ls
+v build.zig.zon
+zig-dev fetch --help
+zig-dev fetch --save=zlua git+https://github.com/natecraddock/ziglua.git
+v build.zig.zon
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+cd ..
+ls
+v zlap\
+lg
+ls
+cd zlap
+lg
+cd vesti\
+cd ..
+ls
+cd vesti\
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+cd ..
+ls
+cd ziglua\
+ls
+rm -r C:\Users\almag\AppData\Local\zig
+zig-dev build
+v build.zig
+zig-dev build
+v build.zig
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+cd ..
+cd zlap\
+v build.zig
+lg
+v build.zig.zon\
+v build.zig.zon
+cd
+cd Github\vesti\
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+cd ..
+ls
+cd zlap\
+v build.zig
+zig-dev build test
+v build.zig
+zig-dev build test
+v build.zig.zon
+zig-dev build test
+v build.zig.zon
+zig-dev build test
+lg
+ls
+cd ..
+ls
+cd vesti\
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig.zon
+zig-dev fetch --save git+https://github.com/e0328eric/zlap.git
+zig-dev build
+v build.zig
+zig-dev build
+cd ..
+ls
+cd zg
+ls
+cd
+ls
+cd .local\
+ls
+cd bin
+ls
+rm zig.exe zig-dev.exe
+ls
+ln ~/.local/zig/zig.exe ~/.local/bin/zig.exe
+ln ~/.local/zig-lts//zig.exe ~/.local/bin/zig-lts.exe
+zig-lts version
+zig version
+cd
+cd Github\vesti\
+ls
+cd ..
+s
+cd zg
+ls
+v build.zig
+cds
+cd
+cd .local\zls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Remover\windows.zig
+cd
+ls
+cd Github\zg
+zig fetch -h
+zig fetch --save ../zg
+v build.zig
+ls
+v build.zig.zon
+zig version | pbcopy
+v build.zig.zon
+ls
+v build.zig.zon
+zig fetch --save ../zg
+v build.zig.zon
+zig build
+v build.zig.zon
+zig build
+cd codegen\
+ls
+rg "reader()" *
+rg "reader\(\)" *
+rg "reader\\(\\)" *
+rg "in_file.reader\\(\\)" *
+cd Github\zg
+cd codegen\
+ls
+v props.zig
+v numeric.zig
+v scripts.zig
+v upper.zig
+v props.zig
+v numeric.zig
+v scripts.zig
+v upper.zig
+v case_prop.zig
+ls
+v wbp.zig
+ls
+v gencat.zig
+ls
+v hangul.zig
+ls
+v canon.zig
+ls
+v normp.zig
+ls
+v lower.zig
+ls
+v ../build.zig
+v compat.zig
+ls
+v core_props.zig
+cd ..
+zig build test
+rg ".writer\\(\\)" *
+cd codegen\
+ls
+v canon.zig
+v case_prop.zig
+v compat.zig
+ls
+v dwp.zig
+ls
+v gbp.zig
+v ccc.zig
+v gbp.zig
+lsd
+ls
+v ccc.zig
+v gbp.zig
+v ccc.zig
+v compat.zig
+v core_props.zig
+v case_prop.zig
+v core_props.zig
+v dwp.zig
+ls
+v fold.zig
+ls
+v gencat.zig
+ls
+v hangul.zig
+sl
+ls
+v lower.zig
+ls
+v normp.zig
+v numeric.zig
+v props.zig
+ls
+v scripts.zig
+ls
+v upper.zig
+ls
+v wbp.zig
+ls
+cd ..
+zig build test
+cd ..
+ls
+rm -rp zg
+ls
+rm -rp zg
+v C:\Users\almag\.local\zig\lib\std\compress\flate\bit_writer.zig
+cd ../..
+ls
+v foo
+cd Github\vesti
+ls
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg.git
+zig build
+v build.zig.zon
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg.git
+zig build
+rm -r C:\Users\almag\AppData\Local\zig
+rm -p
+zig build
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg/src/branch/v0.15.0
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg/src/branch/v0.15.0.git
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg.git#0.15.0
+zig fetch --save git+https://codeberg.org/ivanstepanovftw/zg.git#v0.15.0
+zig build
+v build.zig.zon
+zig fetch --save https://codeberg.org/atman/zg/archive/v0.14.1.tar.gz
+cd
+lsd
+ls\
+ls
+cd Test\yedec\
+ls
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+ls
+v curl_strip.i
+v trim.odin
+odin run trim.odin -file
+v curl_strip.i
+v trim.odin
+odin run trim.odin -file
+v curl_strip.i
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v curl_strip.i
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v trim.odin
+odin run trim.odin -file
+v curl_strip.i
+ls
+c2odin.exe curl_strip.i
+shutdown /s /t 0
+cd Github\
+ls
+git clone --depth 1 https://codeberg.org/e0328eric/zg.git
+lsd
+s
+cd zg
+ls
+zig build test
+cd Github\zg\
+v build.zig
+v codegen\
+cd codegen
+s
+v canon.zig
+v ccc.zig
+ls
+v canon.zig
+v fff
+cd .local
+ls
+cd zig
+ls
+cd lib\std\
+ls
+cd IOo
+cd Io
+ls
+cd ..
+ls
+cd Io
+ls
+v Writer.zig
+cd
+v case_prop.zig
+v ccc.zig
+ls
+v compat.zig
+v core_props.zig
+v dwp.zig
+lsd
+ls
+v fold.zig
+v gbp.zig
+ls
+v gencat.zig
+v hangul.zig
+ls
+v lower.zig
+v normp.zig
+ls
+v numeric.zig
+ls
+cd .local
+git clone --depth 1 https://c9x.me/git/qbe.git/
+git clone --depth 1 https://c9x.me/git/qbe.git
+git clone https://c9x.me/git/qbe.git
+git clone --depth 1 git://c9x.me/qbe.git
+ls
+cd qbe\
+ls
+nmake 
+nmake Makefile
+ls
+v Makefile
+v amd64\sysv.c
+v Makefile
+cd ..
+rm -rp qbe
+ls
+v props.zig
+v scripts.zig
+v upper.zig
+v lower.zig
+v upper.zig
+ls
+v fff
+v wbp.zig
+zig build test
+v canon.zig
+v case_prop.zig
+v ccc.zig
+v compat.zig
+v core_props.zig
+v dwp.zig
+v fold.zig
+v gbp.zig
+v gencat.zig
+v hangul.zig\
+v hangul.zig
+ls
+v lower.zig
+ls
+v normp.zig
+v numeric.zig
+v props.zig
+v scripts.zig
+v upper.zig
+v wbp.zig
+zig build test
+v canon.zig
+v case_prop.zig
+v ccc.zig
+v compat.zig
+v core_props.zig
+v dwp.zig
+v fold.zig
+v gbp.zig
+v gencat.zig
+v hangul.zig
+v lower.zig
+v normp.zig
+v numeric.zig
+v props.zig
+v scripts.zig
+v upper.zig
+v wbp.zig
+zig build test
+v canon.zig
+v case_prop.zig
+v ccc.zig
+v compat.zig
+v core_props.zig
+v dwp.zig
+v fold.zig
+v gbp.zig
+v gencat.zig
+v hangul.zig
+v lower.zig
+v normp.zig
+v numeric.zig
+v props.zig
+v scripts.zig
+v upper.zig
+v wbp.zig
+zig build test
+cd ..
+ls
+cd ..
+ls
+rm -rp zg
+cd ..
+ls
+v C:\Users\almag\.local\zig\lib\std\fs\File.zig
+cd
+ls
+cd Test\yedec\
+ls
+mv trim.odin bindgen.odin
+ls
+rm curl_strip.i
+ls
+rm curl.i
+ls
+rm bindgen.odin
+ls
+rm -rp vcpkg_installed\
+ls
+vcpkg install --triplet=x64-windows-static-release
+choosenim.exe 2.2.4 --firstInstall
+nim
+ls
+rm main.odin
+ls
+v main.odin
+rm main.odin
+rm -s
+ls
+cd vcpkg_installed\x64-windows-static-release\include\
+ls
+c2odin.exe curl\
+cd curl\
+ls
+cd Test\yedec\vcpkg_installed\x64-windows-static-release\include\
+c2odin.exe curl\
+cd
+cd .local\odin-c-bindgen\src\
+v bindgen.odin
+v curl.h
+c2odin.exe curl\
+v curl\curl.odin
+cd ..
+c2odin.exe curl\
+cd ..
+odin build . -out:c2odin.exe
+ls
+odin build src -out:c2odin.exe
+cd Test\yedec\vcpkg_installed\x64-windows-static-release\include\
+v src\bindgen.odin
+odin build src -out:c2odin.exe
+c2odin.exe curl\
+v src\bindgen.odin
+odin build src -out:c2odin.exe
+cd Github\
+ls
+cd ..
+ls
+cd Github\
+ls
+git clone --depth 1 https://github.com/e0328eric/odin-c-bindgen.git
+cd odin-c-bindgen\
+ls
+v src\bindgen.odin
+lg
+v src\bindgen.odin
+lg
+v curl\curl.h
+cd ../..
+ls
+cd ..
+rm -r vcpkg_installed\x64-windows-static-release\include\curl\curl
+ls
+v bindgen.sjson
+ls
+c2odin
+c2odin .
+v bindgen.sjson
+c2odin .\
+c2odin .
+v bindgen.sjson
+ls vcpkg_installed\
+v bindgen.sjson
+c2odin .
+v bindgen.sjson
+c2odin .
+v bindgen.sjson
+ls
+cd thirdparty\
+ls
+mkdir curl
+mv cbind.h curl\
+ls
+cd curl\
+ls
+mv cbind.h ..
+ls
+cd ..
+ls
+rm -rp curl\
+cd ..
+ls
+v bindgen.sjson
+c2odin .
+v bindgen.sjson
+c2odin .
+v thirdparty\cbind.odin
+v thirdparty\cbind.h
+v bindgen.sjson
+c2odin .
+v thirdparty\curl.odin
+v bindgen.sjson
+v vcpkg_installed\x64-windows-static-release\include\curl\easy.h
+lavcpkg_installed\x64-windows-static-release\include\curl\easy.h
+ls vcpkg_installed\x64-windows-static-release\include\curl\easy.h
+ls vcpkg_installed\x64-windows-static-release\include\curl
+v bindgen.sjson
+cd thirdparty\
+ls
+rm -rp *
+cd ..
+v bindgen.sjson
+c2odin .
+v bindgen.sjson
+ls
+v main.odin
+odin run ./
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v main.odin
+odin run .
+v thirdparty\curl.odin
+ls
+rm -rp *
+rm -r *
+ls
+rm -rf *
+ls
+rm vcpkg.json
+rm -rf vcpkg_installed
+rm -rp vcpkg_installed\
+rm -rf vcpkg_installed
+ls
+rm -s
+rm -p
+cd
+cd Github\
+s
+cd yedec
+ls
+rm -r build.zig build.zig.zon zig-out\ .zig-cache\
+y
+ls
+rm -r .zig-cache src\ vcpkg.json vcpkg_installed\
+ls
+rm -r src
+ls
+rm vcpkg-configuration.json vcpkg.json vcpkg_installed
+las
+ls
+rm vcpkg.json
+rm -r vcpkg_installed
+ls
+rm -s
+rm -p
+cd ..
+ls
+rm -rp yedec
+git clone --depth 1 https://github.com/e0328eric/yedec.git
+cd ..
+ls
+cd .local
+ls
+cd bin
+ls
+rm zig.exe zig-lts.exe
+ln ~/.local/zig-lts/zig.exe ~/.local/bin/zig.exe
+ln ~/.local/zig/zig.exe ~/.local/bin/zig-dev.exe
+cd
+zig version
+cd Github\yedec
+ls
+v build.zig.zon
+zig fetch --save https://codeberg.org/atman/zg/archive/v0.14.1.tar.gz
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+ls
+cd src
+ls
+rm commands_minify.json
+ls
+cd
+cd Github\xilo
+v src\Remover\windows.zig
+cd
+cd .local\zls
+git checkout v0.14.0
+git checkout 0.14.0
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+cd 
+cd Github\
+ls
+cd yedec
+ls
+cd src\
+ls
+mv commands.json commands.zlap
+v commands.zlap
+cd ../..
+ls
+cd zlap
+ls
+v README.md
+v build.zig.zon
+cd example\
+ls
+cp command.zlap command.zon
+v command.zon
+ls
+shutdown /s /t 0
+cd Github\zlap\
+ls
+cd example\\
+lws
+ls
+v command.zon
+ls
+cd Github\zlap
+v build.zig.zon
+v build.zig
+v src\zlap.zig
+cd
+cd Test\
+ls
+mkdir zlap
+ls
+cd zlap
+ls
+v main.zig
+ls
+v command.zon
+v main.zig
+zig build-exe main.zig
+v main.zig
+zig build-exe main.zig
+v main.zig
+zig build-exe main.zig
+v main.zig
+zig build-exe main.zig
+cd ..
+ls
+cd ..
+ls
+v command.zon
+cd ../..
+ls
+rm -rp zlap\
+ls
+mkdir msgpz
+ls
+cd msgpz\
+ls
+v README.md
+zig-dev init --strip
+zig-dev init -h
+zig-dev init -m
+ls
+v build.zig
+rm build.zig build.zig.zon
+zig-dev init
+ls
+cd src
+ls
+rm main.zig root.zig
+mv root.zig msgpz.zig
+v msgpz.zig
+cd ..
+ls
+v build.zig
+wallp set 0 ~/Icedrive/Photos/rococo.png
+cd .local\
+ls
+cd zed
+git fetch --prune origin main
+git merge origin main
+ls
+cd .local
+ls
+ls bin
+ls
+cd .config\wezterm
+ls
+winget install GNU.Emacs
+v wezterm.lua
+cd
+cd Github\arch-almagest\
