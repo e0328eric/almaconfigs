@@ -15122,3 +15122,10 @@ cd
 ls
 cd Github\arch-almagest\
 ls
+lg
+cd
+ls
+cd .config\wezterm
+v wezterm.lua
+cd
+cd Github\arch-almagest\
