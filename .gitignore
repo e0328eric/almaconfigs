@@ -4,3 +4,5 @@
 /wm/xmonad/.stack-work
 /wm/glazewm/zebar/tmp-*
 /utils/Zed/extensions
+/shell/nushell_windows/history.txt
+/shell/nushell_linux/history.txt
