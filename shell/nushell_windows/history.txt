@@ -15003,3 +15003,122 @@ winget install GNU.Emacs
 v wezterm.lua
 cd
 cd Github\arch-almagest\
+lg
+cd .glzr/glazewm/
+v config.yaml
+cd
+cd Github\msgpz\
+cargo build --release
+v src\msgpz.zig
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+v aapproach.ves
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+v aapproach.ves
+vesti compile -WE aapproach.ves
+winget uninstall GNU.Emacs
+cargo install --git https://github.com/sxyazi/yazi.git
+cd $env.LOCALAPPDATA
+ls
+cd ..
+cd Roaming\
+ls
+cd ..
+cd LocalLow\
+ls
+cd ..
+ls
+cd Local\
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+ls
+winget install ImageMagick.ImageMagick
+winget upgrade ImageMagick.ImageMagick
+winget update ImageMagick.ImageMagick
+winget uninstall ImageMagick.ImageMagick
+winget uninstall ImageMagick.ImageMagick --all-versions\
+winget uninstall ImageMagick.ImageMagick --all-versions
+winget install ImageMagick.ImageMagick
+magick.exe 
+winget install sxyazi.yazi
+ya
+yazi
+ls
+cd .local
+ls
+ls FilePilot\
+cd FilePilot\
+dumpbin.exe /dependents base64.exe
+dumpbin.exe /dependents FPilot.exe
+cd ..
+s
+rm
+ls
+cd bin
+ls
+ln ~/.local/FilePilot/FPilot.exe ~/.local/bin/fpilot.exe
+cd
+cd .cargo\bin
+ls
+rm ox.exe simple-completion-language-server.exe
+which ya
+cd
+cd Github\msgpz\
+python
+v src\
+shutdown /s /t 0
+which base64
+cd Test\base64\
+ls
+./base64.exe aHR0cHM6Ly9raW8uYWMvYy9jTllvOXh2YXF0UDM5MUVCcTV5akdi
+cd `Downloads\foo\아이네 갓경정장.zip\`
+lsa
+ls
+ls | where name =~ '\.zip$' | each { |e| unzip $e.name }
+ls
+ls | where name =~ '\.zip$' | each { |e| echo $e.name }
+ls | where name =~ '\.zip$' | each { |e| unzip $e.name }
+rm -s
+rm -p
+cd .local\bin
+mv ~/Test/base64/base64.exe .
+cd
+base64 aHR0cHM6Ly9raW8uYWMvYy9jTllvOXh2YXF0UDM5MUVCcTV5akdi
+wallp set 0 ~/Icedrive/Photos/suit_lilpa.png
+wallp set 0 ~/Icedrive/Photos/lilpa_school.png
+wallp set 0 ~/Icedrive/Photos/lilpa_night.png
+wallp set 0 ~/Icedrive/Photos/lilpa_casual.png
+wallp set 0 ~/Icedrive/Photos/jing_school.png
+wallp set 0 ~/Icedrive/Photos/lilpa_school.png
+wallp set 0 ~/Icedrive/Photos/Anby_Demara.jpg
+rm -s
+rm -p
+shutdown /s /t 0\
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+cd
+cd .config\waveterm\
+ls
+cd ..
+ls
+rm -r waveterm\
+ls
+cd wezterm
+ls
+v wezterm.lua
+ls
+cd
+ls
+cd Github\arch-almagest\
+ls
