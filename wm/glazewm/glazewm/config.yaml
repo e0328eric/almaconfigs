@@ -245,10 +245,10 @@ keybindings:
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
   #- commands: ['shell-exec rio']
-  #- commands: ['shell-exec wt']
-  - commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
+  #- commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
+  - commands: ['shell-exec wt']
     bindings: ['alt+enter']
-  - commands: ['shell-exec vivaldi']
+  - commands: ['shell-exec aloha']
     bindings: ['alt+shift+enter']
   - commands: ['shell-exec %ProgramFiles%/Emacs/emacs-30.1/bin/runemacs.exe']
     bindings: ['ctrl+alt+shift+enter']

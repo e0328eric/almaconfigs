@@ -40,15 +40,11 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+4"
-        },
-        {
-            "id": null,
             "keys": "alt+shift+plus"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+1"
+            "keys": "ctrl+shift+4"
         },
         {
             "id": null,
@@ -60,6 +56,10 @@
         },
         {
             "id": null,
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "id": null,
             "keys": "ctrl+shift+5"
         },
         {
@@ -68,11 +68,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+3"
+            "keys": "alt+shift+d"
         },
         {
             "id": null,
-            "keys": "alt+shift+d"
+            "keys": "ctrl+shift+3"
         },
         {
             "id": null,
@@ -91,16 +91,12 @@
             "keys": "ctrl+shift+9"
         },
         {
-            "id": "Terminal.OpenNewTabProfile1",
-            "keys": "ctrl+alt+shift+2"
-        },
-        {
             "id": null,
             "keys": "shift+insert"
         },
         {
-            "id": null,
-            "keys": "ctrl+c"
+            "id": "Terminal.OpenNewTabProfile1",
+            "keys": "ctrl+alt+shift+2"
         },
         {
             "id": "User.splitPane.864CD510",
@@ -108,15 +104,23 @@
         },
         {
             "id": null,
-            "keys": "ctrl+v"
+            "keys": "ctrl+c"
         },
         {
             "id": null,
             "keys": "ctrl+shift+f"
         },
         {
+            "id": null,
+            "keys": "ctrl+v"
+        },
+        {
             "id": "User.paste",
             "keys": "ctrl+shift+v"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+v"
         },
         {
             "id": "Terminal.OpenNewTabProfile2",
@@ -124,15 +128,11 @@
         },
         {
             "id": null,
-            "keys": "alt+shift+v"
+            "keys": "alt+shift+h"
         },
         {
             "id": "Terminal.OpenNewTabProfile4",
             "keys": "ctrl+alt+shift+5"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+h"
         },
         {
             "id": "User.splitPane.D5151347",
@@ -240,6 +240,18 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
+            },
+            {
+                "guid": "{9e15c05a-dfce-508f-b00a-83963c6b7bb6}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a814c124-3d9e-5090-bcc8-61450ecb5aa6}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 (2)",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
