@@ -792,6 +792,8 @@ alias gm         = gemini
 alias oldrm      = ^rm
 alias rm         = xilo
 alias pbcopy     = wl-copy
+alias bg         = job spawn
+alias fg         = job unfreeze
 
 alias hakwon     = cd ~/IceDrive/TeX_Documents/Hakwon
 alias minireport = cd ~/IceDrive/TeX_Documents/Mini_Report
