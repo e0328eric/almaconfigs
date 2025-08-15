@@ -1,12 +1,12 @@
 [[language]]
 name = "c"
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "scls", "clangd" ]
+language-servers = ["scls", "clangd"]
 
 [[language]]
 name = "cpp"
 indent = { tab-width = 4, unit = "    " }
-language-servers = [ "scls", "clangd" ]
+language-servers = ["scls", "clangd"]
 
 [[language]]
 name = "rust"
@@ -128,4 +128,4 @@ file-types = []
 shebangs = []
 roots = []
 auto-format = false
-language-servers = [ "scls" ]
+language-servers = ["scls"]

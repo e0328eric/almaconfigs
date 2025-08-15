@@ -1,3 +1,19 @@
+;; On windows, this sets emacs default path by %USERPROFILE%.
+(when (eq system-type 'windows-nt)
+  ;; 1) Make Emacs see HOME (prefer %HOME%, fall back to %USERPROFILE%)
+  (setenv "HOME" (getenv "USERPROFILE"))
+
+  ;; 2) Re-pin directories that Emacs computed before your init loaded
+  ;;    (so they match the HOME you just set).
+  (setq user-emacs-directory
+        (expand-file-name ".emacs.d/" (getenv "HOME")))
+  (setq server-auth-dir
+        (expand-file-name "server/" user-emacs-directory))
+
+  ;; Optional: start in HOME in *scratch* etc.
+  (setq default-directory
+        (file-name-as-directory (getenv "HOME"))))
+
 ;; melpa package settings
 (require 'package)
 (add-to-list 'package-archives
@@ -36,8 +52,15 @@
 (prefer-coding-system 'utf-8)
 
 ;; setting fonts
-(when (member "JetBrainsMono NFM Medium" (font-family-list))
-  (set-frame-font "JetBrainsMono NFM Medium-11" nil t))
+;; font_height == pixel * 10
+(defun my/apply-fonts (&optional _frame)
+  (set-face-attribute 'default nil :family "JetBrainsMono NFM Medium" :height 110)
+  (set-face-attribute 'fixed-pitch nil :family "JetBrainsMono NFM Medium" :height 110)
+  (set-face-attribute 'variable-pitch nil :family "D2CodingLigature Nerd Font" :height 120))
+
+(if (daemonp)
+	(add-hook 'after-make-frame-functions #'my/apply-fonts)
+  (my/apply-fonts))
 
 ;; enable hard line wrap at both latex mode and tex mode
 (add-hook 'TeX-mode-hook 'auto-fill-mode)
@@ -114,6 +137,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "M-\\") 'add-newline-at-bottom)
 (global-set-key (kbd "C-x C-.") 'recentf-open)
 (global-set-key (kbd "C-x C-d") 'dired)
+(global-set-key (kbd "C-x C-x") 'set-mark-command)
 
 ;; define ESC related keybindings (ESC-t is the prefix of the tremacs)
 (global-set-key (kbd "<escape> c") 'compile)
@@ -121,6 +145,7 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> a") 'auto-fill-mode)
 (global-set-key (kbd "<escape> q") 'quoted-insert)
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
+(define-key key-translation-map (kbd "<escape> ESC") (kbd "C-g"))
 
 ;; set the default mode for files
 (require 'simpc-mode)
@@ -165,8 +190,8 @@ point reaches the beginning or end of the buffer, stop there."
   :hook
   (eglot-managed-mode-hook . eldoc-box-hover-mode)
   :bind
-  ("C-x C-x h" . eldoc-box-help-at-point)
-  ("C-x C-x C-h" . eldoc-box-help-at-point))
+  ("<escape> h" . eldoc-box-help-at-point)
+  ("<escape> C-h" . eldoc-box-help-at-point))
 
 ;; alternative for ido mode
 (use-package ivy

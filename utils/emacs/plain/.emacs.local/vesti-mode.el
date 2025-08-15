@@ -22,7 +22,7 @@
 (defun vesti-keywords ()
   '("docclass" "importpkg" "importmod" "copyfile" "importves" "useltx3"
 	"getfp" "startdoc" "useenv" "begenv" "endenv" "makeatletter" "makeatother"
-	"ltx3on" "ltx3off" "nonstopmode" "luacode" "mathmode"))
+	"ltx3on" "ltx3off" "nonstopmode" "luacode" "mathmode" "compty"))
 
 (defun vesti-font-lock-keywords ()
   (list
