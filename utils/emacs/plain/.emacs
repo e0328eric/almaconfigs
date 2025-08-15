@@ -34,6 +34,7 @@
 (setq-default display-line-numbers-type 'relative)
 (setq-default visible-bell (eq system-type 'windows-nt))
 (setq-default fill-column 80)
+(global-display-fill-column-indicator-mode 1)
 ;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; open new buffer with horizontal mode
