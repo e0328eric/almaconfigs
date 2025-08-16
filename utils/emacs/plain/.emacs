@@ -136,7 +136,8 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<M-S-right>") 'forward-chunk)
 (global-set-key (kbd "C-\\") 'add-newline-at-top)
 (global-set-key (kbd "M-\\") 'add-newline-at-bottom)
-(global-set-key (kbd "C-x C-.") 'recentf-open)
+(global-set-key (kbd "C-x C-f") 'recentf-open)
+(global-set-key (kbd "C-x C-.") 'find-file)
 (global-set-key (kbd "C-x C-d") 'dired)
 (global-set-key (kbd "C-x C-x") 'set-mark-command)
 

@@ -38,7 +38,11 @@
   :syntax-table vesti-mode-syntax-table
   (setq syntax-propertize-function #'vesti-syntax-propertize-function)
   (setq font-lock-defaults '(vesti-font-lock-keywords))
-  (setq comment-start "% "))
+  (setq comment-start "% ")
+
+  ;; force 4-spaces indentation
+  (setq tab-width 4)
+  (setq indent-tabs-mode nil))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
