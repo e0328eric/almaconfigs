@@ -325,3 +325,6 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-08-13T09:10:12.739773Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-08-13T09:14:15.195584Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-08-13T09:14:15.195852Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-21T10:28:52.946662Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-21T11:18:57.494797Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-08-21T11:18:57.495653Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed

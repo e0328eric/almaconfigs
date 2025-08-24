@@ -1,18 +1,7 @@
 ;; On windows, this sets emacs default path by %USERPROFILE%.
 (when (eq system-type 'windows-nt)
-  ;; 1) Make Emacs see HOME (prefer %HOME%, fall back to %USERPROFILE%)
-  (setenv "HOME" (getenv "USERPROFILE"))
-
-  ;; 2) Re-pin directories that Emacs computed before your init loaded
-  ;;    (so they match the HOME you just set).
-  (setq user-emacs-directory
-        (expand-file-name ".emacs.d/" (getenv "HOME")))
-  (setq server-auth-dir
-        (expand-file-name "server/" user-emacs-directory))
-
-  ;; Optional: start in HOME in *scratch* etc.
   (setq default-directory
-        (file-name-as-directory (getenv "HOME"))))
+        (file-name-as-directory (getenv "USERPROFILE"))))
 
 ;; melpa package settings
 (require 'package)
@@ -151,8 +140,10 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; set the default mode for files
 (require 'simpc-mode)
-(require 'vesti-mode)
 (require 'fasm-mode)
+
+(setq vesti-treesit-extra-load-path '("~/.emacs.d/tree-sitter/"))
+(require 'vesti-mode)
 
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))

@@ -5992,3 +5992,3296 @@ rm -s
 rm -p
 cd Github\arch-almagest\
 ls
+lg
+cd Github\vesti\
+cd ..
+ls
+cd wallp\
+ls
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+vesti compile -WE complex_solution.ves
+cd Github\vesti\
+ls
+cd Test
+ls
+mkdir tcc
+cd tcc
+cd
+cd .local\
+cd Odin\
+curl --location -O https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip
+./update.bat
+ls\
+ls
+unzip tcc-0.9.27-win64-bin.zip
+ls
+cd tcc\
+ls
+cd ../..
+ls
+rm -r tcc
+ls
+vesti compile -WE aapproach.ves
+lua
+cd Test
+ls
+v main.c
+clang main.c -o main
+v main.c
+clang main.c -o main
+3.
+v aapproach.ves
+cd ../..
+ls
+cd ..
+ls
+cd Solutions\Complex_Quall\
+ls
+rm `complex_solution (conflicted).ves`
+ls
+pwd | pbcopy 
+start complex_questions.pdf
+start complex_solution.pdf
+vesti compile -WE aapproach.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Complex_Quall
+ls
+cd D:
+cd D:\
+ls
+sf . "\\.(.)"
+sf . "(.)\\\\._"
+sf . "(.)\\._"
+sf . "(.)\\\\\\._"
+sf . "(.)\\._"
+cd D:\Bar\ma\
+ls
+gm
+npm install -g @google/gemini-cli
+gm
+v complex_solution.ves
+vesti compile -WE complex_solution.ves
+seminar 
+ls
+cd ..
+ls
+cd Solutions\Complex_Quall\
+ls
+start complex_solution.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Complex_Quall
+ls
+start complex_questions.pdf
+v complex_solution.ves
+ls
+mv .vesti-dummy\complex_solution.tex .
+ls
+vesti compile -WE complex_solution.ves
+rm -rp complex_solution.ves .vesti-dummy\
+ls
+autotex -h
+autotex -xLc complex_solution.tex
+ls
+cd C:
+cd C:\
+ls
+cd texlive\texmf-local\tex\latex\
+ls
+cd local\
+ls
+git clone --depth 1 https://github.com/e0328eric/coprime.git
+mktexlsr
+autotex -xLc complex_solution.tex
+v complex_solution.tex
+shutdown /s /t 0
+seminar 
+ls
+cd ..
+ls
+cd Solutions\Complex_Quall\
+ls
+rm `complex_solution (conflicted).pdf`
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Solutions\Complex_Quall
+;s
+ls
+start complex_solution.pdf
+cd Github\vesti\
+ls
+v src\Lua.zig
+cd
+homework 
+ls
+cd Complex_Analysis\
+cd assignment3\
+v homework3.tex
+seminar 
+cd ..
+cd Solutions\Complex_Quall\
+cd $env.LOCALAPPDATA
+cd $env.APPDATA
+ls
+cd vesti\coprime\
+git fetch --prune origin master
+git merge origin master
+cd
+cd .local\
+ls
+cd Odin\
+./update.bat
+cd
+ls
+homework 
+cd Complex_Analysis\
+ls
+cd assignment1\
+v homework1.ves
+v homework1.tex
+cd ..
+ls
+cd midterm\
+v complex_solution.ves
+vesti compile -WE complex_solution.ves
+shutdown /s /t 0
+cd Github\vesti\
+ls
+v build.zig.zon
+cd ..
+ls
+cd zg
+;s
+cd .local
+ls
+zigup
+ls
+rm -rp zig
+rm -s
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1474+3ea015db9 zig
+rm -rf zig-compiler\
+zig-dev version
+v build.zig
+cd ..
+ls
+cd vesti\
+ls
+v build.zig.zon
+cd
+cd Github\zg
+ls
+zig-dev build
+v codegen\canon.zig
+ls
+cd
+ls
+cd Github\vesti\
+ls
+cd .zig-cache\c\
+ls
+cd ..
+ls
+sf . "dwp.bin.z"
+cd o/68ee37c824063bd1bcb2b0abbdc9319e/
+ls
+cd ..
+cd 6b8f30ace88404ebd0411a3bea88897d\
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd zg\codegen\
+ls
+zig-dev build
+cd Github\vesti\
+zig-dev build
+cd
+cd Test\
+ls
+bat main.c
+rm main.c
+ls
+cd foo
+ls
+bat main.odin
+rm main.odin
+ls
+rm main.odin
+v main.zig
+cp ~/Github/zg/data/unicode/DerivedCoreProperties.txt .
+ls
+v main.zig
+ls
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+cd
+ls
+cd Github\vesti\
+v gbp.zig
+cd ..
+ls
+cd vesti\
+ls
+sf . "dwp.bin.z"
+cd .zig-cache\
+sf . "dwp.bin.z"
+zig-dev build
+ls
+lg
+v build.zig.zon
+ls
+lg
+;s
+ls
+cd
+ls
+cd
+cd Github\vesti\
+ls
+v src\Lua.zig
+cd Test\
+ls
+cd foo\
+ls
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+v main.zig
+zig-dev run main.zig
+cd ..
+cd
+cd Github\
+cd zg\
+cd codegen\
+ls
+v canon.zig
+rg "1024" *
+cd Github\zg\
+cd codegen\
+v case_prop.zig
+v ccc.zig
+v compat.zig
+v core_props.zig
+v dwp.zig
+v fold.zig
+v gbp.zig
+v gencat.zig
+v hangul.zig
+v lower.zig
+v normp.zig
+v numeric.zig
+v props.zig
+v scripts.zig
+v upper.zig
+v wbp.zig
+cd
+cd Github\vesti\
+v build.zig.zon
+zig-dev build
+cd ..
+ls
+cd zg
+ls
+cd ..
+ls
+rm -rp zg
+rm -r zg
+v canon.zig
+cd ../..
+v xilo\
+zig-dev build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd xilo
+zig-dev build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\
+cd ..
+ls
+cd zg
+rm -r zg
+cd Github\zg\
+ls
+cd ..
+ls
+cd xilo\
+ls
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+cd ..
+rm -r zg
+ls
+cd xilo
+ls
+v src\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+cd ..
+ls
+git clone --depth 1 https://codeberg.org/e0328eric/zg.git
+cd
+cd Test
+ls
+cd foo\
+ls
+rm *
+ls
+rm main.zig
+ls
+curl --location -O https://deps.files.ghostty.org/ziglyph-b89d43d1e3fb01b6074bc1f7fc980324b04d26a5.tar.gz
+tar xvf ziglyph-b89d43d1e3fb01b6074bc1f7fc980324b04d26a5.tar.gz
+ls
+cd ziglyph\
+ls
+v README.md
+cd src\
+ls
+cd autogen\
+ls
+cd ..
+ls
+cd data\
+ls
+cd ..
+s
+cd ..
+ls
+v build.zig
+cd
+ls
+cd Github\vestiu
+cd Github\vesti
+ls
+mkdir thirdparty
+cd thirdparty\
+ls
+mv ~/Test/foo/ziglyph .
+ls
+cd ziglyph\
+ls
+v src\fetch_unicode_files.zig
+ls
+cd src
+ls
+rg "cwd" *
+cd ..
+ls
+v build.zig
+ls
+cd ../..
+s
+v build.zig.zon
+ls
+v build.zig
+ls
+zig-dev build
+v build.zig
+zig-dev build
+ls
+v thirdparty\ziglyph\build.zig
+cd
+cd .local\zls\
+ls
+git checkout main
+git checkout master
+git fetch --prune origin master
+git merge origin master
+zig-dev build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+zig-dev version
+zigup
+cd zls
+ls
+zig-dev build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+which ln
+cd bin
+s
+rm zig.exe zig-dev.exe
+ln ~/.local/zig-lts/zig.exe ~/.local/bin/zig-lts.exe
+ln ~/.local/zig/zig.exe ~/.local/bin/zig.exe
+ls
+zig version
+cd ..
+cd zls\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+curl --location -O https://github.com/ziglibs/diffz/archive/a20dd1f11b10819a6f570f98b42e1c91e3704357.tar.gz
+ls
+rm a20dd1f11b10819a6f570f98b42e1c91e3704357.tar.gz
+ls
+rm -s
+ls
+rm -s
+rm -p
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ,,
+cd ..
+ls
+rm -r zls
+git clone --depth 1 https://github.com/zigtools/zls.git
+cd zls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig fetch --save git+https://github.com/ziglibs/diffz.git
+v build.zig.zon
+zig fetch --save git+https://github.com/ziglibs/diffz.git
+zig fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig fetch --save https://github.com/zigtools/lsp-kit/archive/714dc1c10c86d051ab5d24f016ef4be2ee7802df.tar.gz
+zig-lts fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig-lts fetch --save git+https://github.com/ziglibs/diffz.git
+zig-lts build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cds
+cd
+ls
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+cd Github\vesti\
+zig build
+cd Github\vesti\
+ls
+cd thirdparty\ziglyph\
+ls
+v build.zig
+v build.zig
+cd ../..
+zig build
+lg
+zig build
+cd Github\vesti\
+cd thirdparty\ziglyph\
+ls
+v src\ziglyph.zig
+rg "isLetter" *
+rg "codePointWidth" *
+v src\main.zig
+v src/parser/Parser.zig
+cd src
+rg "parser.deinit" *
+v compile.zig
+v parser\tests\utility.zig
+zig build
+v Lua.zig
+rg "{tok}" *
+rg "\\{tok\\}" *
+rg "\\{span\\}" *
+v src\diagnostic.zig
+zig build
+v location.zig
+v lexer\Token.zig
+zig build
+cd src
+rg "\\{cot\\}" *
+rg "\\{cowt\\}" *
+rg "\\{cows\\}" *
+v Lua.zig
+cd ..
+zig build
+zig build -freference-trace=13
+cd ../..
+ls
+cd ziglua\
+ls
+lg
+cd ..
+ls
+rm -r ziglua\
+git clone --depth 1 https://github.com/e0328eric/ziglua.git
+ls
+cd ziglua\
+ls
+v src\lib.zig
+cd
+cd Github\vesti\
+ls
+v src\run_script.zig
+cd
+cd Github\ziglua\
+ls
+v src\lib.zig
+cd
+cd Github\vesti\
+zig build
+v src\Lua.zig
+v README.md
+lg
+v build.zig
+zig version | pbcopy
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+zig build test
+zig build test -h
+zig build test --summary=all
+zig build test --summary all
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+v src/compile.zig
+lg
+cd
+cd Test
+ls
+cd foo
+ls
+rm ziglyph-b89d43d1e3fb01b6074bc1f7fc980324b04d26a5.tar.gz
+rm -s
+ls
+zig init
+zig init -h
+rm -rp *
+zig init -m
+ls
+mkdir src
+v build.zig
+rm build.zig build.zig.zon
+zig init
+v build.zig
+ls
+rm *
+rm -r *
+ls
+rm -r src\
+v pythonzig.h
+zig translate-c -lc pythonzig.h | save pyzig.zig
+cd $env.LOCALAPPDATA
+sf "python.h" .
+sf . "python.h"
+which python
+cd Programs\Python\
+ls
+cd Python313\
+ls
+cd Lib\
+;ls
+cd site-packages
+ls
+cd ../../..
+ls
+cd Python310\
+ls
+cd include\
+ls
+cd
+cd $env.LOCALAPPDATA
+cd Programs\
+ls
+cd Python\
+ls
+cd ..
+ls
+ls Python\
+cd Python\Python310\
+ls
+cd Lib\
+ls
+ls site-packages\
+cd site-packages\charset_normalizer-3.4.2.dist-info\
+ls
+cd ..
+ls
+cd ..
+cd ../..
+ls
+rm -r Python310\\
+cd Python313\include\
+ls
+pwd | pbcopy 
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pythonzig.h | save pyzig.zig
+ls
+rm pyzig.zig
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pythonzig.h | save pyzig.zig
+ls
+v pyzig.zig
+cd Test\
+ls
+v foo\
+cd foo
+lsa
+ls
+v main.zig
+cd .glzr/glazewm/
+v config.yaml
+cd Github\
+ls
+mv vesti vesti-zig
+ls
+mkdir vesti-odin
+ls
+cd vesti-odin\
+ls
+mkdir src
+ls
+mv src vesti
+v vesti\main.odin
+cd ..
+ls
+rm -rp vesti-odin\
+mv vesti-zig vesti
+ls
+cd vesti\
+ls
+cd thirdparty\ziglyph\
+ls
+v LICENSE
+cd ../..
+ls
+cd ..
+mv vesti/thirdparty/ziglyph .
+ls
+cd ziglyph\
+ls
+git init
+git remote add origin https://github.com/e0328eric/ziglyph.git
+lg
+git branch -M main
+lg
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+cd ..
+ls
+cd vesti\
+ls
+rm -r thirdparty\
+v build.zig.zon
+zig fetch --save https://github.com/e0328eric/ziglyph.git
+zig-lts fetch --save git+https://github.com/e0328eric/ziglyph.git
+zig-lts fetch --save https://github.com/e0328eric/ziglyph.git
+zig fetch --save git+https://github.com/e0328eric/ziglyph.git
+zig fetch --save https://github.com/e0328eric/ziglyph/archive/069b76e6340156cfe8881ced66932214ffbe6bb4.git
+zig fetch --save https://github.com/e0328eric/ziglyph/archive/069b76e6340156cfe8881ced66932214ffbe6bb4.tar.gz
+v build.zig.zon
+mkdir thirdparty
+cd thirdparty\
+mv ../../ziglyph .
+cd ziglyph\
+rm -rp .git
+cd ../..
+ls
+cd
+cd Test\foo\
+ls
+cd
+cd Github\vesti\
+ls
+git branch -h
+git branch inline-python
+ls
+git checkout inline-python
+ls
+v src\lexer\Token.zig
+ls
+v src\parser\ast.zig
+v src\parser\Parser.zig
+ls
+cd src\
+ls
+mv Lua.zig Python.zig
+v Python.zig
+cd ..
+ls
+v build.zig.zon
+v build.zig
+ls
+v build.zig
+v src\vesti_c.h
+zig fetch --save git+https://github.com/allyourcodebase/cpython.git
+v build.zig.zon
+v src\vesti_c.h
+seminar 
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+v aapproach.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+lsd
+ls
+vesti compile -WE complex_solution.ves
+vesti compile -WE aapproach.ves
+kindergarten 
+ls
+cd Volume2\
+ls
+pwd | pbcopy 
+start kindergarten-vol2.pdf
+v kindergarten-vol2.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Kindergarten\Volume2
+vesti compile -WE aapproach.ves
+vesti compile -WE kindergarten-vol2.ves
+vesti compile -aWE kindergarten-vol2.ves
+v kindergarten-vol2.ves
+cd .local\zls\
+zigup
+cd ..
+ls
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1509+b9a6dae2a zig
+ls
+rm -rp zig-compiler\
+rm -s
+ls
+zig version
+cd zls
+lg
+git revert HEAD
+lg
+v build.zig.zon
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig fetch --save git+https://github.com/zigtools/lsp-kit
+zig fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig-lts fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+cd]
+cd
+cd Test\
+ls
+cd foo
+cd ..
+mv foo py-integrate
+ls
+cd py-integrate\
+ls
+zig init -m 
+ls
+mkdir src
+mv pythonzig.h src/pyzig.h
+ls
+rm pyzig.zig
+mv main.zig src
+v src\main.zig
+v build.zig\
+v build.zig
+hx build.zig
+v build.zig
+cd
+cd .local
+ls
+cd zls
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v build.zig
+vesti compile -aWE kindergarten-vol2.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dversion-string=0.15.0-dev.1425+7ee6dab3
+cd
+cd Test\py-integrate\
+v build.zig
+cd
+cd Github\vesti\
+v build.zig
+zls
+v build.zig
+cd $env.APPDATA
+cd vesti\coprime\
+v fancythm.sty
+lg
+cd
+ls
+cd Test\py-integrate\
+s
+v build.zig
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+v after\plugin\lsp.lua
+cd Github\vesti\
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+cd $env.LOCALAPPDATA
+cd Programs\
+ls
+cd Python\Python313\
+ls
+cd include\
+ls
+cd Github\vesti\thirdparty\ziglyph\
+ls
+v src\autogen\blocks.zig
+vesti compile -WE aapproach.ves
+\
+cd
+seminar 
+ls
+cd Doctor\AApproach\
+vesti compile -WE aapproach.ves
+v aapproach.ves
+l
+mkdir chapter
+mv chapter chapter2
+mkdir chapter3
+mkdir chapter4
+mkdir appendix
+ls
+vesti compile -aWE aapproach.ves
+v appendix\sharp-maximal.ves
+rm `aapproach (conflicted).ves`
+ls
+v appendix\sharp-maximal.ves
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -aWE aapproach.ves
+ls
+cd appendix\
+ls
+v 'sharp-maximal [conflicted].ves'
+rm 'sharp-maximal [conflicted].ves'
+cd ..
+v appendix\sharp-maximal.ves
+vesti compile -aWE aapproach.ves
+cd ..
+ls
+cd PDE_Sobolev\
+ls
+vesti compile -a PDE_Sobolev.ves
+ls
+cd .local
+ls
+cd zls
+cd ..
+rm -rp zls
+git clone --depth 1 https://github.com/zigtools/zls.git
+zig version
+zigup
+ls
+zigup
+ls
+rm -r zig-compiler.zip
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1519+dd4e25cf4 zig
+ls
+rm -r zig-compiler\
+ls
+cd zls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig-lts fetch --save git+https://github.com/zigtools/lsp-kit.git
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd .local\zls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd .local\zig/lib/src
+cd .local/zig/lib/std/
+l.s
+ls
+cd .local/zig-lts/lib/std/
+v std.zig
+v array_list.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/Server.zig
+ls
+cd
+ls
+cd Test\py-integrate\
+v build.zig
+cd $env.LOCALAPPDATA
+cd nvim\
+v after\plugin\lsp.lua
+hx build.zig
+cd $env.LOCALAPPDATA
+cd nvim
+v build.zig
+zls
+v after\plugin\lsp.lua
+v build.zig
+cd ..
+cd Roaming\
+cd helix
+v languages.toml
+hx config.toml
+hx build.zig
+v languages.toml
+v build.zig
+v
+cd $env.LOCALAPPDATA
+cd nvim
+cd .local\zig
+pwd | pbcopy 
+v \$Recycle.Bin\\
+v build.zig
+v after\plugin\lsp.lua
+lg
+cd
+cd .local\zed\
+cp ../Odin/update.bat .
+v update.bat
+./update.bat
+v update.bat
+zig build --help
+ls
+cd $env.LOCALAPPDATA
+cd nvim
+v after\plugin\lsp.lua
+lg
+cd
+./update.bat
+cd ..
+cd $env.APPDATA
+ls
+cd helix
+ls
+v runtime\queries\zig\highlights.scm
+cd ../..
+ls
+cd Roaming\helix
+ls
+v languages.toml
+cd Test\py-integrate\
+winget search dngrep
+winget install dngrep
+v build.zig
+ls
+cd src\
+ls
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pyzig.h | save pyzig.zig
+ls
+v pyzig.zig
+cd ..
+ls
+zig build --watch -fincremental
+zig build --watch -fincremental\
+zig build --watch -fincremental
+rm -r .zig-cache
+v build.zig
+rm -r .zig-cache
+zig build --watch -fincremental
+v build.zig
+ls
+cd $env.LOCALAPPDATA
+cd Programs\Python\
+ls
+cd Python313\
+ls
+ls libs
+ls Lib
+ls
+ls tcl
+zig build --watch -fincremental
+zig build
+ls
+zig build
+ls
+cd libs\
+ls
+pwd | pbcopy 
+cd ..
+ls
+cd include\
+l;s
+zig build --watch -fincremental
+cd .local\bin\
+ls
+rm zls
+rm zls.exe
+ls
+rm -s
+ls
+cd ..
+ls
+cd ..
+ls
+cd .local\zed\
+winget install emacs
+cd $env.LOCALAPPDATA
+ls
+cd $env.LOCALAPPDATA
+ls
+hx .emacs
+ls
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.custom.el ~/.emacs.custom.el
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.local ~/.emacs.local
+ls
+rm .emacs.custom.el .emacs.local
+rm .emacs.local
+ls
+winget install emacs
+./update.bat
+cd
+cd Test\py-integrate\
+which zls
+cd 
+cd Test\py-integrate\
+v build.zig
+zed .
+zig build run
+ls
+cd Test\py-integrate\
+cd internal\
+ls
+cd ../..
+ls
+sf . "io.h"
+cd include\
+ls
+cd `C:/Program Files/`
+ls
+cd `Microsoft Visual Studio\`
+ls
+cd 2022\
+ls
+cd ../../..
+ls
+cd `Program Files (x86)\`
+ls
+cd Microsoft\
+ls
+cd ..
+ls
+sf . "io.h"
+zig build run -Dtarget=x86_64-windows-gnu
+emacs .
+cd $env.LOCALAPPDATA
+ls
+cd
+ls
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs ~/.emacs
+cd .glzr/glazewm/
+ls
+v config.yaml
+"C:\Program Files\Emacs\emacs-30.1\bin\emacsclientw.exe" --help<\n>
+"C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe" --help<\n>
+"C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe"
+`C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe` --help
+`C:/Program Files/Emacs/emacs-30.1/bin/runemacs.exe` --daemon=main
+`C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe` -s main -n -c
+`C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe` --help
+`C:/Program Files/Emacs/emacs-30.1/bin/runemacs.exe` --help
+`C:/Program Files/Emacs/emacs-30.1/bin/emacsclientw.exe` -a main -n -c
+cd Test\py-integrate\
+ls
+zig build run
+cd `C:\Program Files (x86)\`
+cd `Windows Kits\`
+sf . "vcruntime.h"
+cd ..
+sf . "vcruntime.h"
+cd `Program Files (x86)\`
+sf . "vcruntime.h"
+cd Test\py-integrate\
+zig build run
+cd
+cd ..
+ls
+cd Lib\ls
+cd ..
+ls
+cd Python313\
+ls
+cd libs
+l;s
+ls
+zig build run
+cd
+cd .local\
+ls
+zig version
+zigup
+ls
+cd
+lsd
+ls
+cd Github\vesti\
+ls
+cd Test\py-integrate\
+v build.zig
+v build.zig
+cd $env.LOCALAPPDATA
+cd nvim
+v lua\almagest\set.lua
+v lua\almagest\remap.lua
+lg
+v $nu.config-path
+help jobs
+help job
+cd Github\arch-almagest\shell\nushell_linux\
+v $nu.config-path
+source $nu.config-path
+v $nu.config-path
+source $nu.config-path
+v config.nu
+v $nu.config-path
+e .
+help job
+v $nu.config-path
+nvim $nu.config-path
+cd Github\vesti\
+e .
+e
+v $nu.config-path
+source $nu.config-path
+e .
+cd .emacs.d\
+ls
+cd server\
+ls
+v $nu.config-path
+emacsclientw.exe -h
+emacsclientw.exe -s
+emacsclient.exe -s
+emacsclientw.exe -server-file
+v $nu.config-path
+emacsclientw -n -c . -a "" -f %USERPROFILE%/.emacs.d/server/main
+emacsclientw -n -c -a "" -f %USERPROFILE%/.emacs.d/server/main
+emacsclientw -n -c . -a "" -f $env.USERPROFILE/.emacs.d/server/main
+$env.USERPROFILE
+$"($env.USERPROFILE)/.emacs.d/server/main"
+r$"($env.USERPROFILE)\.emacs.d\server\main"
+$"($env.USERPROFILE)/.emacs.d/server/main"
+v $nu.config-path
+source $nu.config-path
+e .
+cd Github\vesti\
+zig build --watch -fincremental
+v build.zig
+zig build --watch -fincremental
+v build.zig
+zig build --watch -fincremental
+ls
+cd src\
+ls
+cd ..
+zig build --watch -fincremental
+zig version | pbcopy
+cd ..
+cd zlap
+zig build run-examole
+zig build run-examle
+zig build run-example
+446
+zig build run-example
+zig build run-example -- -h
+zig build run-example -- -c
+zig build run-example -- -c asdsad
+zig build run-example -- run -h
+zig version | pbcopy
+lg
+cd ..
+cd vesti\
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+zig-lts fetch --save git+https://github.com/e0328eric/zlap.git
+zig build
+v src\main.zig
+zig build
+cd Github\vesti\
+cd Github\
+cd vesti\
+ls
+zigup
+cd
+cd .local\
+ls
+rm -r zig
+rm 0s
+rm -s
+rm -p
+zigup
+ls
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1552+b87b95868 zig
+rm -rp zig-compiler\
+zig version
+ks
+ls
+cd
+cd Github\vesti\
+zig build run-example -- run -h
+zig build --watch -fincremental
+v src\diagnostic.zig
+lg
+shutdown /s /t 0
+cd Github\vesti\
+e
+zig build --watch -fincremental
+ls
+cd ..
+ls
+mv vesti vesti-py
+git clone --depth 1 https://github.com/e0328eric/vesti.git
+cd ..
+ls
+cd .local\
+ls
+zig version
+zigup
+cd
+ls
+cd Github\vesti\
+ls
+zig-lts fetch --save git+https://github.com/e0328eric/zlap.git
+cd Github\vesti-py\
+bat build.zig.zon
+v build.zig.zon
+v build.zig
+zig version | pbcopy
+v build.zig
+v build.zig.zon
+ls
+zig build
+v src\Codegen.zig
+seminar 
+ls
+cd ../
+cd NoteTaking\
+ls
+cd Probability\
+ls
+start Probability-Question.pdf
+vesti clear
+rm Probability.typ
+mv Probability.pdf Probability_Old.pdf
+e
+start Probability_Old.pdf
+vesti build Probability.ves
+vesti compile Probability.ves
+start Probability.pdf
+seminar 
+cd ..
+cd NoteTaking\
+cd Probability\
+ls
+vesti compile -WE Probability.ves
+vesti compile -WE Probability.ves\
+seminar 
+cd Doctor\AApproach\
+ls
+cd $env.APPDATA
+ls
+cd vesti\coprime\
+ls
+v vesti.zon
+v aapproach.ves
+v fancythm.sty
+vesti compile -WE Probability.ves
+v Probability.ves
+e
+seminar 
+\ls
+ls
+cd ..
+cd Github\vesti-zed\
+cd Github\tree-sitter-vesti\
+cd ..
+v extension.toml
+lg
+seminar 
+cd ..
+cd NoteTaking\Probability\
+cd Github\vesti\
+e
+zig build --watch -fincremental
+zig-lts build --watch -fincremental
+zig build --watch -fincremental
+zig build
+zig build --watch -fincremental
+rm -rp .zig-cache\
+v .emacs
+cd .emacs.local
+ls
+cd snippets\
+ls
+cp -r latex-mode vesti-mode
+v `vesti-mode\inline math mode`
+cd ..
+ls
+v vesti-mode.el
+e
+v Probability.ves
+zig build --watch -fincremental
+zig build
+vesti compile -WE Probability.ves
+e
+zig build
+516
+zig build
+zig version | pbcopy
+lg
+seminar 
+cd ./.
+cd ..
+ls
+cd NoteTaking\Probability\
+ls
+start .
+ls
+v Probability.ves
+ls
+cd
+s
+cd Github\vesti
+ls
+cd src\parser\
+cd .
+cd ..
+ls
+cd Github\vesti-py\
+v lexer\Token.zig
+v src\lexer\Lexer.zig
+ls
+v src\parser\ast.zig
+cd src
+ls
+v pyzig.h
+cd ..
+rm -rp .git
+cd ..
+v parser\ast.zig
+ls
+cd .local
+zigup
+ls
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1572+47e652876 zig
+rm -r zig-compiler\
+cd zls
+ls
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig-lts build
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\vesti\
+hx build.zig
+v build.zig
+v 
+v build.zig
+cd .glzr/glazewm/
+v config.yaml
+v $nu.config-path
+cd .emacs.d\
+ls
+mkdir tree-sitter
+cd tree-sitter\
+mkdir src
+cd src
+git clone --depth 1 https://github.com/e0328eric/tree-sitter-vesti
+cd tree-sitter-vesti\
+ls
+cmake -S. -Bbuild
+cmake --build build
+ls
+ls build\
+ls build\x64\Debug
+ls build\Debug\
+rm -r build
+cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release
+v CMakeLists.txt
+cmake --build build
+ls build\Debug\
+mv build\Debug\tree-sitter-vesti.dll ..
+cd ..
+ls
+mv tree-sitter-vesti.dll ..
+ls
+cd ..
+ls
+mv tree-sitter-vesti.dll libtree-sitter-vesti.dll
+cd Github\vesti\
+ls
+cd src
+ls
+v parser\
+cd Github\vesti\
+zig build test
+zig build test --summary all
+v parser\tests\pycode.zig
+cd
+cd Test\
+ls
+mkdir foo
+cd foo
+ls
+pwd | pbcopy 
+cd Test\foo
+vesti compile foo.ves
+start foo.pdf
+vesti compile -WE foo.ves
+v foo.ves
+nim
+nimble install c2nim
+ls
+cd Test\
+ls
+cd mana-crawler\
+ls
+cd .
+cd ..
+ls
+cd yedec\
+ls
+cd ..
+ls
+cd linkkf_downloader\
+ls
+cd ..
+ls
+cd yedec
+ls
+cd ..
+ls
+rm -rp yedec
+mkdir yedec
+cd yedec
+ls
+vcpkg new --application
+vcpkg add port curl
+vcpkg add port xml2
+vcpkg install --triplet=x64-windows-static-release
+v vcpkg.json
+vcpkg install --triplet=x64-windows-static-release
+v vcpkg.json
+vcpkg install --triplet=x64-windows-static-release
+c2nim
+cd vcpkg_installed\x64-windows-static-release\include\
+ls
+cd curl\
+c2nim curl.h
+ls
+zig translate-c curl.h
+zig translate-c curl.h -lc
+cd .local\bin
+ls
+rm zigcc.bat cc.bat
+mv zigcc.bat cc.bat
+cd
+cd Github\tree-sitter-vesti\
+v src\scanner.c
+ls
+cd ..
+ls
+cd tree-sitter-vesti\
+v queries\vesti\injections.scm
+v queries\vesti\highlights.scm
+tree-sitter generate
+tree-sitter parse
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse
+tree-sitter test
+v src\scanner.c
+tree-sitter test
+v test\corpus\vesti_statements.txt
+tree-sitter test
+v test\corpus\vesti_statements.txt
+v foo.ves
+tree-sitter parse foo.ves
+ls
+rm foo.ves
+v test\corpus\vesti_statements.txt
+ls
+lg
+v package.json
+tree-sitter test
+v queries\vesti\highlights.scm
+tree-sitter test
+v tree-sitter.json
+v package.json
+ls
+cd .local
+ls
+winget uninstall llvm
+winget install llvm
+winget upgrade llvm
+cd
+cd `C:\Program Files\`
+ls
+cd llvm
+ls
+cd include\
+ls
+cd ..
+ls
+cd bin
+ls
+./clang.exe --version
+winget upgrade llvm
+ls
+cd ..
+ls
+cd lib
+ls
+cd ..
+cd share\
+ls
+cd ..
+cd
+cd Github\tree-sitter-vesti\
+rg "bug" *
+v test\corpus\vesti_statements.txt
+v queries\vesti\highlights.scm
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate\
+tree-sitter generate
+v queries\vesti\highlights.scm
+tree-sitter test
+v grammar.js
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter test
+v grammar.js
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+cd Github\tree-sitter-vesti\
+tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter test
+tree-sitter generate
+cd .local
+s
+zig version
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1585+ee85c8b6d zig
+rm -r zig-compiler\
+rm -s
+ls
+ced
+cd
+cd Github\vesti\src\parser\tests\
+v test\corpus\pycode.txt
+cd ..
+ls
+cd vesti\
+zig build test --summary all
+zig build test --help
+zig build test --verbose
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v src\CowStr.zig
+zig build test --summary all
+v pycode.zig
+cd ..
+ls
+cd Github\vesti-py\
+zig build test --summary all
+v Parser.zig
+ls
+cd tests
+hexyl pycode.zig
+v Parser.zig
+cd ..
+b Parser.zig
+zig build test --summary all
+ls
+zig build test --summary all
+v src\parser\Parser.zig
+cd ..
+ls
+cd tree-sitter-vesti\
+ls
+v test\corpus\pycode.txt
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter test
+v src\scanner.c
+tree-sitter test
+v src\scanner.c
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+cd tree-sitter-vesti\
+cd Github\tree-sitter-vesti\
+ls
+tree-sitter test
+v grammar.js
+cd src\
+clang-format.exe scanner.c
+clang-format.exe scanner.c | save scanner_fmrt.c
+ls
+v scanner_fmrt.c
+clang-format
+clang-format -h
+ls
+rm scanner_fmrt.c
+rm scanner.c
+mv scanner_fmrt.c scanner.c
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v scanner.c
+cd ..
+ls
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v grammar.js
+ls
+rm -r cmake-build-debug
+rm -r .idea
+rm -s
+ls
+v grammar.js\\
+v grammar.js
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v test\corpus\pycode.txt
+v foo
+v Parser.zig
+cd ../..
+zig build test --summary all
+v Parser.zig
+v scanner.c
+v src\parser\tests\pycode.zig
+zig build test --summary all
+v src\parser\tests\pycode.zig
+zig build test --summary all
+v src\parser\tests\pycode.zig
+zig build test --summary all
+v src\lexer\Token.zig
+zig build
+v src\parser\Parser.zig
+zig build test --summary all
+lg
+ls
+cd ..
+lg
+v src\parser\Parser.zig
+ls
+v src\python.zig
+cd ..
+ls
+cd
+ls
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+v
+v after\plugin\nvim-treesitter.lua
+v after\queries\vesti\
+cd after\queries\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+ls
+cd ../..
+cd ..
+lg
+cd
+cd Github\vesti
+v foo.ves
+ls
+v .g
+v .gitignore
+cd Github\vesti\
+cd .glzr/glazewm/
+cd Github\vesti\
+ls
+v src\Python.zig
+cd Github\vesti\
+cd
+cd .local
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.15.0-dev.1599+cf90a5e45 zig
+rm -r zig-compiler\
+rm -s
+ls
+cd
+cd Github\vesti\
+pwd | pbcopy 
+zig version | pbcopy 
+v build.zig
+ls
+zig build
+v src\Python.zig
+cd Github\vesti\
+v src\Python.zig
+cd src
+ls
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pyzig.h | save pyzig.zig
+rm pyzig.zig
+cd ..
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pyzig.h | save pyzig.zig
+zig build
+cd ..
+cd vesti-py\
+cd .zig-cache\
+sf . "pyzig.zig"
+v o/2a469d3c4a604b6c6e2adedfa045029e/pyzig.zig
+cd ..
+cd vesti\
+ls
+rm -rp .zig-cache zig-out
+rm pyzig.zig
+ls
+cd src
+mv Python.zig Python_old.zig
+ls
+cd ..
+ls
+v src\pyzig.c
+v build.zig
+ls
+mv compile_flags.txt src
+v src\pyzig.c
+rm src\compile_flags.txt
+v src\pyzig.c
+clangd --check=./src/pyzig.c
+v compile_commands.json
+ls
+v src\pyzig.c
+v compile_commands.json
+zig build
+v build.zig
+zig build
+v src\Python_old.zig
+zig build
+v build.zig
+v src\Python.zig
+zig build
+cd Test\
+ls
+mkdir fuck
+cd fuck
+ls
+v main.hs
+cd ..
+rm -r fuck
+zig build
+cd src
+ls
+rm pyzig.h
+ls
+cd Github\vesti\
+ls
+cd Github\vesti\
+zig build run -- compile foo.ves
+v src\pyzig.c
+zig build run -- compile foo.ves
+ls
+mv foo.ves zig-out\bin
+cd zig-out\bin\
+ls
+./vesti.exe foo.ves
+./vesti.exe compile foo.ves
+zig build
+./vesti.exe compile foo.ves
+zig build
+./vesti.exe compile foo.ves
+zig build
+./vesti.exe compile foo.ves
+zig build
+cd ../..
+mv zig-out\bin\foo.ves .
+rm -r zig-out
+zig build run -- compile foo.ves
+v foo.ves
+v build.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+ls
+v foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile foo.ves
+v src\compile.zig
+ls
+start foo.pdf
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v foo.ves
+ls
+start foo.pdf
+vesti compile -WE foo.ves
+ls
+vesti compile -WE foo.ves
+vesti compile foo.ves
+zig build run -- compile foo.ves
+lg
+v .gitignore
+lg
+cd src
+ls
+rm Lua.zig
+lg
+v vespy_methods.c
+v vespy.c
+cd ..
+lg
+zigup
+cd src
+ls
+rm vespy_methods.c
+ls
+v vespy.h
+cd ..
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+cd src
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include pyzig.h | save pyzigasdasd.zig
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include vespy.h | save pyzigasdasd.zig
+rm pyzigasdasd.zig
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include vespy.h | save pyzigasdasd.zig
+v pyzigasdasd.zig
+ls
+rm pyzigasdasd.zig
+v vespy.c
+cd ..
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\Python.zig
+v foo.ves
+v src\Codegen.zig
+v foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+cd Github\
+rm -r vesti-py
+ls
+rm -s
+rm -p
+cd vesti\
+ls
+lg
+ls
+v src\Python.zig
+v .vesti-dummy\foo.tex
+v foo.ves
+v src\Python.zig
+cd Github\vesti\
+zigup
+ls
+zigup
+ls
+v .gitignore
+ls
+v src\Python.zig
+zig build
+v src\Python.zig
+zig build
+v src\Python.zig
+zig build
+v src\Python.zig
+zig build
+v src\Python.zig
+cd src
+rg "lua" *
+ls
+cd
+cd .local\odin-c-bindgen\
+lg
+ls
+odin build . -o:size -out:c2odin.exe
+odin build src -o:size -out:c2odin.exe
+v libclang\CXFile.odin
+cd
+ls
+cd Github\vesti\
+ls
+cd
+ls
+cd .local\odin-c-bindgen\
+ls
+cd
+ls
+cd Github\vesti\
+ls
+cd Documents\ComfyUI\output\
+;s
+ls
+rm ComfyUI_00001_.png
+rm ComfyUI_00002_.png
+cd Documents\ComfyUI\custom_nodes\
+ls
+git clone --depth 1 https://github.com/laksjdjf/cgem156-ComfyUI.git
+ls
+cd cgem156-ComfyUI\
+ls
+cd scripts\
+ls
+cd attention_couple\
+ls
+v README.md
+cd ../..
+ls
+cd ..
+rm -r cgem156-ComfyUI\
+git clone --depth 1 https://github.com/laksjdjf/cgem156-ComfyUI.git
+v src\Python.zig
+ls
+cd src
+ls
+zig translate-c -lc -IC:\Users\almag\AppData\Local\Programs\Python\Python313\include vespy.h | save pyzig_wrapper.zig
+v pyzig_wrapper.zig
+v Python.zig
+cd ..
+zig build
+v src\Python.zig
+zig build
+v build.zig
+zig build
+v build.zig
+v src\Python.zig
+v build.zig
+zig build
+v src\Python.zig
+v build.zig
+v src\Python.zig
+zig build
+v build.zig
+zig build
+lg
+ls
+v build.zig
+v src\python.zig
+cd src
+rg "lua" *
+v Codegen.zig
+ls
+cd
+cd Github\vesti\
+v foo.ves
+start foo.pdf
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\Codegen.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves\
+v foo.ves
+v foo.ves\
+zig build run -- compile foo.ves
+v foo.ves\
+v foo.ves
+v .vesti-dummy\foo.tex
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+ㅍ 
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+v src\parser\Parser.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+v src\Codegen.zig
+v foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build test
+v build.zig
+zig build test
+v build.zig
+zig build test
+v build.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+v foo.ves
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+ls
+cd ..
+cd tree-sitter-vesti\
+v vespy_methods.c
+v parser\Parser.zig
+v diagnostic.zig
+zig build run -- compile foo.ves
+cd ..
+zig build run -- compile foo.ves
+v diagnostic.zig
+v src/diagnostic.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+v src/diagnostic.zig
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+v foo.ves
+v src/diagnostic.zig
+zig build run -- compile foo.ves
+v src/diagnostic.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+v .vesti-dummy\foo.tex
+v src/parser/Parser.zig
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+cd Github\vesti\
+zig build run -- compile foo.ves
+v foo.ves\
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+zig build test --summary all
+\ls
+zig build test --summary all
+v src\scanner.c
+tree-sitter generate
+v grammar.js
+ls
+v test\corpus\pycode.txt
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter test
+cd ..
+ls
+cd tree-sitter-vesti\
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+tree-sitter test\
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+lg
+v grammar.js
+tree-sitter test
+lg
+cd $env.LOCALAPPDATA
+v
+cd nvim\
+ls
+cd after\queries\
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+lg
+cd
+cd Github\vesti\
+zig build run -- compile foo.ves
+v src/parser/Parser.zig
+ls
+rm foo.pdf
+rm foo.ves
+ls
+v foo.ves
+v src\vespy.c
+ls
+v src\Codegen.zig
+v src\Python.zig
+v src\compile.zig
+zig build run -- compile foo.ves
+ls
+start foo.pdf
+zig build run -- compile foo.ves
+start foo.pdf
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+rm -rp .zig-cache zig-out
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+rm -rp .zig-cache zig-out
+zig build run -- compile foo.ves
+v foo.ves
+cd Github\vesti\
+ls
+cd Github\vesti\
+zig build run -- compile foo.ves
+v src\Python.zig
+v src\Codegen.zig
+zig build run -- compile foo.ves
+start foo.pdf
+zig build run -- compile foo.ves
+rm -rp .zig-cache zig-out
+zig build run -- compile foo.ves
+v src\Codegen.zig
+v src\vespy.h
+zig build run -- compile foo.ves
+rm -rp .zig-cache zig-out
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v src\Codegen.zig
+zig build run -- compile foo.ves
+rm -rp .zig-cache zig-out
+zig build run -- compile foo.ves
+v src\diagnostic.zig
+zig build run -- compile foo.ves
+v foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+cd ..
+ls
+cd tree-sitter-vesti\
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+lg
+v
+cd ..
+cd vesti\
+ls
+zig build run -- compile foo.ves
+lg
+v foo.ves
+cd
+kindergarten 
+ls
+cd Volume2\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+mv build.lua build.py
+v build.py
+kindergarten 
+cd Volume2\
+ls
+start kindergarten-vol2.pdf
+python build.py
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+shutdown /s /t 0
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+ls
+kindergarten 
+ls
+cd Volume2\
+ls
+seminar 
+kindergarten 
+ls
+cd Volume2
+ls
+python
+vesti compile -a kindergarten-vol2.ves
+ls .vesti-dummy\
+vesti compile -a kindergarten-vol2.ves
+python
+vesti compile -a kindergarten-vol2.ves
+v build.py
+ls
+cd
+cd Github\vesti\
+ls
+v src\Python.zig
+cd src
+rg "vesti-dummy" .
+cd
+ls
+cd Github\vesti\
+v parser\Parser.zig
+rg "VESTI_LOCAL" .
+v compile.zig
+v main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v build.zig
+kindergarten 
+ls
+cd Volume2\
+v Python.zig
+LG
+lg
+kindergarten 
+cd Volume2\
+v build.py
+vesti compile -a kindergarten-vol2.ves
+ls
+v .vesti-dummy\kindergarten-vol2.tex
+ls
+cd .vesti-dummy\
+ls
+v kindergarten-vol2.tex
+ls
+cd ..
+cd Github\vesti\
+rm -rp Kindergarten_Volume2\
+cp -r ~/Icedrive/TeX_Documents/Kindergarten/Volume2 Kindergarten_Volume2
+cd Kindergarten_Volume2\
+ls
+cd ..
+lg
+cd Kindergarten_Volume2\
+ls
+cd Chapter0\
+ls
+cd ..
+cd Chapter1\
+ls
+cd ..
+lg
+shutdown /s /t 0
+cd .local\
+ls
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.15.1 zig
+ls
+rm -r zig-compiler\
+cd
+cd Github\vesti\
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+lg
+ls
+cd ..
+ls
+cd zigup\
+zig build
+cd
+cd Github\vesti\
+lg4
+lg
+ls
+cd src
+ls
+v compile.zig
+shutdown /s /t 0
+cd .local
+ls
+cd zls
+ls
+git fetch --prune origin master
+git merge origin master
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+cd odin-c-bindgen\
+odin build src -o:size -out:c2odin.exe
+ls
+tar xvf clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+which clang
+ls
+mv clang+llvm-20.1.8-x86_64-pc-windows-msvc\ ../clang
+rm clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+cd ..
+ls
+cd clang\
+ls
+cd bin
+ls
+cd ..
+cd .
+cd ..
+cd odin-c-bindgen\
+ls
+cp ../clang/lib/libclang.lib libclang\
+cp ../clang/bin/libclang.dll .
+ls
+odin build src -o:size -out:c2odin.exe
+cd ..
+ls
+cd Odin\
+./update.bat
+bibtex
+bibtex --help
+cd
+ls
+cd Github\vesti\Kindergarten_Volume2\
+ls
+v .vesti-dummy\kindergarten-vol2.aux
+cd ..
+ls
+cd Github\
+lws
+cd vesti\
+zig build
+v src\Python.zig
+zig build
+v src\run_script.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src/compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src/compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src/Python.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+lg
+cd Kindergarten_Volume2\
+lsa
+ls
+v .vesti-dummy\kindergarten-vol2.bbl
+v kindergarten-vol2.ves
+v .vesti-dummy\kindergarten-vol2.aux
+v build.py
+v kindergarten-vol2.ves
+vesti compile -a kindergarten-vol2.ves
+v kindergarten-vol2.ves
+v build.py
+cd ..
+ls
+v README.md
+lg
+seminar
+ls
+cd Doctor\AApproach\
+s
+mv build.lua build.py
+v build.py
+ls
+vesti compile -a aapproach.ves
+ls .vesti-dummy\
+ls
+start aapproach.pdf
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+vesti compile -aWE aapproach.ves
+cd Github\vesti\
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd Github\vesti\
+ls
+cd src
+ls
+mv run_script.zig pyscript.zig
+ls
+v pyscript.zig
+rg "run_script" .
+v src/main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd Kindergarten_Volume2\
+ls
+mv build.py step.py
+cd ..
+ls
+cd Kindergarten_Volume2\
+ls
+v step.py
+cd ..
+lg
+ls
+mv build.py after.py
+v appendix\sharp-maximal.ves
+v aapproach.ves
+v appendix\sharp-maximal.ves
+vesti compile -aWE aapproach.ves
+ls
+vesti clear
+vesti compile -a aapproach.ves
+v .vesti-dummy\
+cd Github\vesti\
+v README.md
+lg
+cd Github\vesti\
+v src/commands.zlap
+vesti compile -aWE aapproach.ves
+pip install scipy
+vesti compile -aWE aapproach.ves
+pip install sympy
+vesti compile -aWE aapproach.ves
+vesti compile -aWET aapproach.ves
+shutdown /s /t 0
+cd Github\vesti\
+lg
+cd
+seminar
+ls
+cd Doctor\AApproach\
+ls
+rm `3`
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+lls
+ls
+cd Test\yedec\
+ls
+c2odin.exe vcpkg_installed\x64-windows-static-release\include\curl
+ls
+mv vcpkg_installed\x64-windows-static-release\include\curl .
+ls
+mkdir libs
+mv curl libs\
+ls
+mv libs\curl\curl libs\curl_odin
+mv libs\curl vcpkg_installed\x64-windows-static-release\include\curl
+mv libs\curl_odin libs\curl
+v libs\curl\curl.odin
+ls
+v appendix\sharp-maximal.ves
+vesti compile -aWET aapproach.ves
+cd
+ls
+cd Github\vesti\
+ls
+cvd
+cd
+ls
+cd .local\bin
+ls
+dumpbin.exe /dependents vesti_tectonic.dll
+dumpbin.exe /dependents vesti.exe
+v build.zig
+zig build run
+v build.zig
+zig build run
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+cd after\plugin\
+ls
+rm toggleterm.lua
+v which-key.lua
+cd ..
+v lua\almagest\plugins.lua
+cd after\plugin\
+ls
+rm nvim-tree.lua
+v oil.lua
+cd ..
+rm -rp nvim nvim-data
+git clone --depth 1 https://github.com/e0328eric/AlmaNvim.git nvim
+v
+cd $env.LOCALAPPDATA\
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+v after\plugin\harpoon.lua
+lg
+cd
+ls
+seminar
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+minireport 
+ls
+mkdir Bochner_Integral
+cd Bochner_Integral\
+ls
+fc-list | rg "Noto Sans KR"
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\Bochner_Integral
+ls
+v bochner-integral.ves
+cd $env.LOCALAPPDATA
+cd nvim\after\plugin
+v harpoon.lua
+lg
+vesti compile bochner-integral.ves
+start bochner-integral.pdf
+vesti compile bochner-integral.ves
+tlmgr upgrade --all
+vesti compile bochner-integral.ves
+v harpoon.lua\
+v bochner-integral.ves\
+v bochner-integral.ves
+v before.py
+vesti compile bochner-integral.ves
+v before.py
+vesti compile bochner-integral.ves
+cd .vesti-dummy\
+ls
+unzip font.zip
+ls
+rm font.zip
+cd ..
+ls
+v before.py
+cd Github\vesti\
+ls
+v src\main.zig
+v src\vespy.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+rm -rp .vesti-dummy
+v bochner-integral.ves
+ls
+vesti compile bochner-integral.ves
+s
+ls
+rm *.otf
+ls
+rm `GUST e-foundry License.txt`
+ls
+v before.py
+ls
+rm -rp .vesti-dummy
+vesti compile bochner-integral.ves
+ls
+ls .vesti-dummy\
+tlmgr update --all
+v before.py
+v bochner-integral.ves
+rm -rp .vesti-dummy
+v bochner-integral.ves
+ls
+vesti compile bochner-integral.ves
+ls .vesti-dummy\
+v .vesti-dummy\bochner-integral.tex
+v bochner-integral.ves
+ls
+rm -rp .vesti-dummy\
+vesti compile bochner-integral.ves
+v bochner-integral.ves
+rm -rp .vesti-dummy\
+vesti compile bochner-integral.ves
+v bochner-integral.ves
+vesti compile bochner-integral.ves
+v bochner-integral.ves
+vesti compile bochner-integral.ves
+cd $env.APPDATA
+ls
+cd vesti\coprime\
+ls
+v before.py
+ls
+lg
+v coprime-math.sty
+lg
+v before.py
+v bochner-integral.ves\
+v bochner-integral.ves
+v before.py
+vesti compile -WE bochner-integral.ves
+v bochner-integral.ves
+start bochner-integral.pdf
+v before.py
+v before.py
+v aapproach.ves
+vesti compile -a aapproach.ves
+ls
+v before.py
+ls
+vesti compile -a aapproach.ves
+ls .vesti-dummy\
+ls
+start aapproach.pdf
+v bochner-integral.ves
+vesti compile -aWET aapproach.ves
+rm -r .vesti-dummy\
+v appendix\sharp-maximal.ves
+v chapter4\particular-case.ves
+seminar
+cd Doctor\AApproach\
+cd ..
+ls
+cd PDE_Sobolev\
+lls
+ls
+rm -r .vesti-dummy
+cp ../AApproach/before.py .
+ls
+v PDE_Sobolev.ves
+vesti compile -a PDE_Sobolev.ves
+rg "defun" .
+v Additional_Note\additional_exe_8_4_5.ves
+vesti compile -a PDE_Sobolev.ves
+v PDE_Sobolev.ves
+vesti compile -a PDE_Sobolev.ves
+ls
+rm -r .vesti-dummy
+mv Additional_Note ../PDE_Sobolev_Additional_Note
+ls
+v PDE_Sobolev.ves
+vesti compile -a PDE_Sobolev.ves
+v PDE_Sobolev.ves
+vesti compile -ax PDE_Sobolev.ves
+v .vesti-dummy\stdout.txt
+seminar
+cd PDE_Sobolev\
+ls
+cd Doctor\PDE_Sobolev\
+vesti compile -ax PDE_Sobolev.ves
+vesti compile -aWE PDE_Sobolev.ves
+v .vesti-dummy\@vesti__44c734b70b5b0219.tex
+rm -r .vesti-dummy
+vesti compile -aWE PDE_Sobolev.ves
+v ./.vesti-dummy/@vesti__44c734b70b5b0219.tex
+v PDE_Sobolev.ves
+rg "The operators" .
+vesti compile -aWE PDE_Sobolev.ves
+rm -r .vesti-dummy
+vesti compile -aWE PDE_Sobolev.ves
+v Chapter12\section12-9.ves
+ls
+v .vesti-dummy\
+cd .vesti-dummy\
+ls
+xelatex PDE_Sobolev.tex
+v @vesti__c7a49688cf2612ac.tex
+cd ..
+v Chapter12\
+vesti compile -aWE PDE_Sobolev.ves
+cd .vesti-dummy\
+xelatex PDE_Sobolev.tex
+v @vesti__e18355c230c403a6.tex
+cd ..
+vesti compile -aWE PDE_Sobolev.ves
+v Chapter13\section13-3.ves
+rg "\\bar\\diff" .
+rg "\bar\diff" .
+rg "%*" .
+rg "%\\*" .
+v Chapter12\section12-9.ves
+vesti compile -aWE PDE_Sobolev.ves
+seminar
+ls
+cd Doctor\PDE_Sobolev_Old\
+ls
+ls Chapter1\
+v Chapter1\section1-5.tex
+v PDE_sobolev.tex
+v Chapter1\section1-5.ves
+vesti compile -aWET PDE_Sobolev.ves
+v aapproach.ves
+vesti compile -aWET aapproach.ves
+shutdown /s /t 0
+cd Github\vesti\
+ls
+rm kindergarten-vol2.pdf
+v src\main.zig
+zig build run
+v src\main.zig
+lg
+cd
+cd .local\Odin
+./update.bat
+cd
+cd Test\yedec\
+ls
+cp vcpkg_installed\x64-windows-static-release\lib\libcurl.lib .
+ls
+mkdir src
+v src\main.odin
+mv libcurl.lib libs\
+ls
+v src\main.odin
+odin run src
+v libs\curl\curl.odin
+v src\main.odin
+odin run src
+v src\main.odin
+odin run src
+v src\main.odin
+v vcpkg_installed\x64-windows-static-release\include\curl\curl.h
+cd
+cd .local\odin-c-bindgen\
+ls
+lg
+v src\bindgen.odin
+cd
+cd Test\yedec\
+odin run src
+v libs\curl\curl.odin
+cd
+cd Github\vesti\
+v vesti-tectonic\Cargo.toml
+ls
+zig build -Dtectonic=true
+ls
+ls vesti-tectonic\target\release
+v build.zig
+zig build -Dtectonic=true
+v src\compile.zig
+zig build -Dtectonic=true
+cd zig-out\
+cd bin\
+ls
+cd .local\bin\
+ls
+cd ../..
+ks
+ls
+v vesti-tectonic\Cargo.toml
+ls
+cd vesti-tectonic\src\
+cd ..
+ls
+rm -r target\
+cd ..
+rm -r zig-out .zig-cache\
+rm 0s
+rm -s
+ls
+cd .local\bin
+ls
+rm vesti_tectonic.dll
+v build.zig
+cd
+seminar 
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+v aapproach.ves
+start aapproach.pdf
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+v build.zig
+zig build -Dtectonic=true
+ls vesti-tectonic\target\release
+v build.zig
+ls vesti-tectonic\target\release
+zig build -Dtectonic=true
+v build.zig
+ls
+v vesti-tectonic\Cargo.toml
+ls
+v build.zig
+zig build -Dtectonic=true
+cd zig-out\
+ls
+cd bin\
+dumpbin.exe /dependents vesti.exe
+ls
+cd ../..
+v src\compile.zig
+vesti compile -aWE aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd .local\bin
+ls
+dumpbin.exe /dependents vesti.exe
+vesti compile -a aapproach.ves
+v chapter4\particular-case.ves
+v src\compile.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd D:
+cd D:/
+ls
+mv '3396356-막내의 걱정스러운 취향 [AI Generated]' '막내의 걱정스러운 취향'
+ls
+cd `막내의 걱정스러운 취향\`
+ls
+siv thumb.webp
+rm thumb.webp
+ls
+rm ComicInfo.xml
+v ComicInfo.xml
+rm ComicInfo.xml
+ls
+siv 00000001.webp
+v .ehviewer
+rm .ehviewer
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+ls
+cd ..
+RefreshEnv.cmd 
+tgpt
+zip --help
+^zip --help
+^zip 末っ子の心配な好み\
+^zip 末っ子の心配な好み 末っ子の心配な好み.zip
+^zip 末っ子の心配な好み.zip 末っ子の心配な好み
+ls
+start .
+cd
+diskpart
+diskpart.exe 
+sudo diskpart.exe 
+ghjc-pkg
+ghc-pkg
+ghc-pkg --help
+ghc-pkg list
+ghcup tui
+cd Test\yedec\
+ls
+ghc -h
+ghc --help
+ls
+odin run src
+v libs\curl\typecheck-gcc.odin
+odin run src
+ls
+rm -rp libs\ vcpkg_installed\
+rm -p
+ls
+vcpkg install --triplet=x64-windows
+which vcpkg
+cd Test\yedec\
+rm -r .pkgdb
+ghc-pkg init .pkgdb
+ls
+vesti compile -aWE aapproach.ves
+cd Github\vesti\
+ls
+cd Test\
+ls
+ls foo
+rm -rp fo
+rm -rp foo
+ls
+rm -rp py-integrate\
+ls
+rm -s
+ls
+cd Github\
+ls
+mv ~/Test/base64 .
+ls
+cd
+ls
+v mana-crawler\
+csd
+cdl
+cd
+ls
+cd Test\
+ls
+mkdir texfoo
+cd texfoo\
+ls
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+start foo.pdf
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+rm -rp Kindergarten_Volume2\
+ls
+cd Manual\
+lsa
+ls
+cp ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach/before.py .
+cp ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach/aapproach.ves .
+cp ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach/after.py
+cp ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach/after.py .
+ls
+v vesti_man.ves
+ls
+rm aapproach.ves
+v after.py
+v before.py
+vesti compile -aT vesti_man.ves
+start vesti_man.pdf
+cd
+seminar 
+cd Doctor\AApproach\
+ls
+v before.py
+v keywords.py
+ls
+rm keywords.py
+v vesti_man.ves
+ls
+vesti compile -aT vesti_man.ves
+v vesti_man.ves
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile -aT vesti_man.ves
+v vesti_man.ves
+vesti compile -aT vesti_man.ves
+cd ..
+ls
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v Manual\vesti_man.ves
+vesti compile -aT vesti_man.ves
+cd Manual\
+vesti compile -aT vesti_man.ves
+rm -r .vesti-dummy\
+cd ..
+ls
+rm -r .vesti-dummy\
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd Github\vesti\
+ls
+v src\compile.zig
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v Manual\vesti_man.ves
+vesti compile -aT vesti_man.ves
+cd Manual\
+vesti compile -aT vesti_man.ves
+lg .vesti-dummy\
+ls .vesti-dummy\
+v .vesti-dummy\.gitignore
+v vesti_man.ves
+vesti compile -aT vesti_man.ves
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile -aT vesti_man.ves
+cd ..
+ls
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+ls
+cd Manual\
+ls
+mv before.py first.py
+mv after.py step.py
+ls
+v step.py
+ls
+vesti compile -aT vesti_man.ves
+cd ..
+lg
+lr
+ls
+rm -r .vesti-dummy\
+start aapproach.pdf
+ls
+mv before.py first.py
+mv after.py step.py
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v aapproach.ves
+v chapter4\particular-case.ves
+ls
+cd chapter4\particular-case.ves
+v chapter4\particular-case.ves
+v chapter4\particular-case.ves\
+vesti compile -aWE aapproach.ves
+cd Github\vesti\
+ls
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+lg
+seminar 
+cd Doctor\PDE_Sobolev\
+ls
+v PDE_Sobolev.ves
+minireport 
+ls
+mkdir Heat_Kernel
+cd Heat_Kernel\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\Heat_Kernel
+ls
+v heat_kernel.ves
+v heat_kernel.ves
+v first.py
+vesti compile heat_kernel.ves
+v first.py
+ls
+vesti compile heat_kernel.ves
+ls
+start heat_kernel.pdf
+cd ,,
+cd ..
+cd Bochner_Integral\
+ls
+rm before.py
+mv ../Heat_Kernel/first.py .
+ls
+v bochner-integral.ves
+cd ..
+ls
+rm -rp Heat_Kernel
+shutdown /s /t 0
+seminar 
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+;s
+start aapproach.pdf
+vesti compile heat_kernel.ves
+ㅍ aapproach.ves
+minireport 
+ls
+mkdir Left_Continuous_and_Derivative
+cd Left_Continuous_and_Derivative\
+cp ../Bochner_Integral/first.py .
+cp ../Bochner_Integral/bochner-integral.ves left_conti.ves
+pwd | pbcopy 
+vesti compile left_conti.ves
+ls
+start left_conti.pdf
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\Left_Continuous_and_Derivative
+vesti compile -WE left_conti.ves
+v first.py
+v left_conti.ves
+vesti compile -WE left_conti.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\Left_Continuous_and_Derivative
+cd C:\Users\almag\IceDrive\TeX_Documents\Mini_Report\Left_Continuous_and_Derivative
+v left_conti.ves
+vesti compile -WE left_conti.ves
+cd ..
+ls
+rm -rp Left_Continuous_and_Derivative\
+cd .emacs.local
+ls
+mv vesti-mode.el vesti-mode-old.el
+v vesti-mode.el
+cd .emacs.d\tree-sitter\
+ls
+cd .emacs.local
+mv libtree-sitter-vesti.dll vesti.dll
+v vesti-mode.el
+which clangf
+which clang
+cd .local\clang\
+ls
+cd bin
+ls
+pwd
+cd ..
+ls `C:/Program Files/`
+cd ..
+mv clang `C:/Program Files/clamg`
+mv clang `C:/Program Files/clang`
+rm -p
+cd ..
+ls
+cd .emacs.d\tree-sitter\
+ls
+cd ..
+ls
+v vesti-mode.el
+cd ..
+ls
+cd .emacs.local
+v .emacs
+v vesti-mode.el
+cd
+cd .glzr/glazewm/
+v config.yaml
+rm .emacs .emacs.local .emacs.d
+ls
+rm .emacs.custom.el
+ls
+ls -al
+rm -rp .emacs.d
+cd $env.LOCALAPPDATA
+ls
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs ~/AppData/Local/.emacs
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.custom.el ~/AppData/Local/.emacs.custom.el
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.local ~/AppData/Local/.emacs.local
+mkdir .emacs.d
+cd .emacs.d\
+mkdir tree-sitter
+cd tree-sitter\
+ls
+git clone --depth 1 https://github.com/e0328eric/tree-sitter-vesti
+ls
+cd tree-sitter-vesti\
+ls
+cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+cd ..
+mv tree-sitter-vesti\build\Debug\tree-sitter-vesti.dll vesti.dll
+ls
+cd ..
+ls
+cd ..
+ls
+v .emacs
+cd Github\arch-almagest\utils\emacs\daemon\
+v emacs_daemon.bat
+cd .glzr/glazewm/
+v config.yaml
+cd .glzr/glazewm/
+v config.yaml
+cd $env.LOCALAPPDATA
+ls
+rm .emacs .emacs.local .emacs.d
+ls
+rm .emacs.custom.el
+cd ..
+cd Roaming\
+ls
+cd .emacs.d\
+ls
+mv ../..
+mv ../../Local/.emacs.d/tree-sitter .
+ls
+cd ../..
+ls
+cd Local\
+rm -r .emacs.d
+cd ..
+cd Roaming\
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.local ~/AppData/Roaming/.emacs.local
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs ~/AppData/Roaming/.emacs
+ln ~/Github/arch-almagest/utils/emacs/plain/.emacs.custom.el ~/AppData/Roaming/.emacs.custom.el
+cd .emacs.d\
+ls
+runemacs
+cd $env.APPDATA
+cd .emacs.d\
+ls
+cd tree-sitter\
+ls
+mv vesti.dll libtree-sitter-vesti.dll
+ls
+v $nu.config-path
+cd Github\arch-almagest\

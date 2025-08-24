@@ -785,7 +785,7 @@ $env.config = {
 def e [...paths: string] {
     let p = if ($paths | is-empty) { [$env.PWD] } else { $paths }
     job spawn {
-        ^emacsclientw -n -c ...$p -a "" -f $"($env.USERPROFILE)/.emacs.d/server/main"
+        ^emacsclientw -n -c ...$p -a "" -f $"($env.APPDATA)/.emacs.d/server/main"
     }
 }
 
