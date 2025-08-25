@@ -6,7 +6,7 @@
     },
     "inline math mode": {
         "prefix": "MK",
-        "body": ["$", "    $1", "$"],
+        "body": ["$$1$"],
         "description": "display math mode for vesti"
     },
     "set minus": {

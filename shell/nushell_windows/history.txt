@@ -9659,3 +9659,24 @@ ls
 v vesti.json
 cd ..
 v languages.toml
+lg
+cd Github\vesti\
+v snippets\vesti.json
+v Manual\vesti_man.ves
+v $nu.config-path
+v
+v $nu.config-path
+ls
+cd Github\vesti\
+v build.zig
+cd $env.APPDATA
+ls
+cd helix
+v languages.toml
+ls
+cd runtime\queries\zig\
+ls
+rg "lua-match" *
+v highlights.scm
+cd Github\vesti\
+v build.zig
