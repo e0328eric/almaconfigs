@@ -9321,3 +9321,341 @@ cd .glzr/glazewm/
 v config.yaml
 cd
 cd Github\arch-almagest\
+lg
+cd
+ls
+v foo
+shutdown /s /t 0
+cd Github\vesti\
+ls
+cd thirdparty\ziglyph\
+ls
+v build.zig
+zig build --help
+v build.zig.zon
+zig build --help\
+v build.zig.zon
+zig build --help\
+zig build --help
+zig build fetch
+cd Github\vesti\
+cd thirdparty\ziglyph\
+ls
+zig build fetch
+zig build gen
+zig build gen\
+zig build gen
+ls
+seminar 
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+start aapproach.pdf
+zig build gen
+v src\fetch_unicode_files.zig
+ls
+rm -rp zig-cache .zig-cache\
+ls
+cd Github\
+ls
+mkdir bindgen
+ls
+cd bindgen\
+ls
+cp `C:\Program Files\clang\include\clang-c\*` .
+ls
+mkdir libclang
+mv *.h libclang\
+ls
+ls libclang\
+c2odin.exe libclang
+ls
+v libclang\
+v libclang\libclang\CXFile.odin
+ls
+v libclang\
+rm -rp libclang
+cp ~/.local/odin-c-bindgen/libclang .
+cp -r ~/.local/odin-c-bindgen/libclang .
+cp -r ~/.local/odin-c-bindgen/libclang.dll .
+ls
+v src/main.odin
+mkdir src
+v src/main.odin
+odin run src -- asdasd asdsad
+odin run src -- 1232 435
+v src\main.odin
+cd $env.APPDATA
+ls
+cd .emacs.local
+ls
+mv vesti-mode.el vesti-mode-old-tree-sitter.el
+cd ..
+sl
+ls
+cd Github\
+ls
+mkdir sl
+mv sl sl_win
+cd sl_win\
+ls
+cp ../musik_asm/nob.c .
+cp ../musik_asm/nob.h .
+ls
+mkdir src
+cp ../musik_asm/src/Windows/musik.asm src/sl.asm
+v src\sl.asm
+cp ../musik_asm/src/Windows/libc.inc src\libc.inc
+s
+v .emacs
+cd .local
+cd zls
+git fetch --prune origin master
+git merge origin master
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd $env.APPDATA
+ls
+cd .emacs.d
+s
+sf . "tree-sitter"
+ls
+cd tree-sitter\
+ls
+tree-sitter
+cd tree-sitter-vesti\
+tree-sitter build
+cd ..
+tree-sitter parse foo.ves
+ls
+rm libtree-sitter-python.dll
+cd tree-sitter-vesti\
+ls
+mv vesti.dll ../libtree-sitter-vesti.dll
+cd ..
+ls
+emacs
+ls
+cd ..
+ls
+rm -r tree-sitter
+cd ..
+ls
+cd .emacs.local
+ls
+cd Github\arch-almagest\utils\emacs\plain\.emacs.local\
+ls
+cd tree-sitter\
+ls
+rm -rp tree-sitter-vesti\
+cp ~/AppData/Roaming/helix/runtime/grammars/python.dll libtree-sitter-python.dll
+ls
+emacs
+emacs
+cd
+ls
+cd Github\tree-sitter-vesti\
+ls
+v test\corpus\pycode.txt
+tree-sitter generate
+tree-sitter test
+ls
+cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release
+cmake --b
+cmake --build build
+ls
+v .gitignore
+lg
+mv build\Debug\tree-sitter-vesti.dll .
+ls
+mv tree-sitter-vesti.dll ~/Github/arch-almagest/utils/emacs/plain/.emacs.local/tree-sitter/libtree-sitter-vesti.dll
+emacs
+cd
+ls
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+v after\plugin\lsp.lua
+cd
+cd Github\vesti\
+v src\main.zig
+lxs
+la
+cd ..
+ls
+cd vesti\thirdparty\ziglyph\
+ls
+v src\autogen\blocks.zig
+ls
+cd src\
+ls
+rm -r autogen\
+cd ..
+zig build gen
+zig build fetch
+v src\fetch_unicode_files.zig
+ls
+rm -rp zig-cache\
+zig build fetch
+v build.zig
+zig build gen
+v src\gen_zig_code.zig
+zig build gen
+v src\gen_zig_code.zig
+zig build gen
+v src\gen_zig_code.zig
+zig build gen
+v src\gen_zig_code.zig
+zig build gen
+ls;
+.zig-cache\
+ls
+cd ..
+ls
+v src\gen_zig_code.zig
+ls
+cd src
+s
+cd autogen\
+ls
+cd ..
+v gen_zig_code.zig
+seminar 
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+cd Test\
+ls
+mkdir fooo
+cd fooo
+v main.zig
+ls
+zig run main.zig
+zig build main.zig
+zig build-exe main.zig
+s
+WinDbgX.exe main.exe
+v main.zig
+cd Github\vesti\
+lg
+ls
+cd thirdparty\ziglyph\
+zig-lts version
+zig-lts build fetch
+v build.zig.zon
+zig-lts build fetch
+v build.zig.zon
+zig-lts build fetch
+v src\fetch_unicode_files.zig
+v src\gen_zig_code.zig
+ls
+v build.zig
+ls
+zig-lts build fetch
+v build.zig
+zig-lts build fetch
+v build.zig
+zig build fetch
+v build.zig
+zig build fetch
+zig-lts build fetch
+zig-lts build gen
+v src\gen_zig_code.zig
+zig-lts build gen
+ls
+ls src\autogen\
+v src\autogen\canonical_compositions.txt.deflate
+v src\autogen\derived_core_properties.zig
+v src\fetch_unicode_files.zig
+zig-lts build gen
+v src\fetch_unicode_files.zig
+v src\autogen\derived_core_properties.zig
+ls
+cd src
+rm autogen\
+rm -r autogen\
+ls
+cd ..
+ls
+v build.zig
+zig-lts build gen
+rm -rp .zig-cache
+zig-lts build gen
+v build.zig
+zig-lts build gen
+v src\gen_zig_code.zig
+rm .zig-cache\
+rm -r .zig-cache\
+zig-lts build gen
+v build.zig
+zig-lts build gen
+v src\gen_zig_code.zig
+zig-lts build gen
+lg
+cd ..
+ls
+cd ..
+v .gitignore
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+vesti compile -aWE aapproach.ves
+v thirdparty\ziglyph\build.zig
+vesti compile -aWE aapproach.ves
+ls
+rm -r .vesti-dummy
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+lg
+shutdown /s /t 0
+zig
+zig build-exe --help
+ls
+cd Test\fooo\
+ls
+zig build-exe --help
+zig build-exe -femit-asm=main.s main.zig
+ls
+zig build-exe -femit-asm=main.s main.zig -OReleaseSmall
+ls
+v main.s
+ls
+rm *
+;s
+ls
+cd
+cd .local\Odin\
+./update.bat
+cd
+ls
+hx foo.ves
+cd $env.APPDATA
+ls
+cd helix
+ls
+v languages.toml
+cargo install --locked --git https://github.com/estin/simple-completion-language-server.git
+v $nu.config-path
+cd $env.APPDATA
+cd helix
+ls
+cd runtime\queries\
+ls
+cd vesti
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+ls
+v highlights.scm
+v injections.scm
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+v languages.toml
+ls
+cd snippets\
+ls
+v vesti.json
+cd ..
+v languages.toml

@@ -17,9 +17,12 @@
 ((KEYWORD_ltx3on) @keyword)
 ((KEYWORD_ltx3off) @keyword)
 ((KEYWORD_nonstopmode) @keyword)
-((KEYWORD_luacode) @keyword)
 ((KEYWORD_mathmode) @keyword)
 ((KEYWORD_compty) @keyword)
+((KEYWORD_pycode) @keyword)
+(pycode_block (pycode_start) @keyword)
+(pycode_block (pycode_end)   @keyword)
+(pycode_block (pycode_imports) @constant)
 
 ;; Identifiers
 ((class_pkg_name) @type)

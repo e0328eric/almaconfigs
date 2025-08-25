@@ -142,16 +142,13 @@ point reaches the beginning or end of the buffer, stop there."
 (require 'simpc-mode)
 (require 'fasm-mode)
 
-(setq vesti-treesit-extra-load-path '("~/.emacs.d/tree-sitter/"))
-(require 'vesti-mode)
-
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
-;;================================================================================
+;;===============================================================================
 ;;                               PACKAGE CONFIGS
-;;================================================================================
+;;===============================================================================
 (use-package which-key
   :ensure t
   :config
@@ -291,3 +288,107 @@ point reaches the beginning or end of the buffer, stop there."
 (cond
  ((eq system-type 'windows-nt)
   (load-file "~/.emacs.local/msvc_env.el")))
+
+;; Vesti Config
+;;uncomment this if one cannot use tree-sitter parser
+;;(require 'vesti-mode)
+
+;; tree-sitter-vesti
+(setq treesit-extra-load-path
+	  (list (expand-file-name "~/.emacs.local/tree-sitter")))
+;; expecting <that-directory>/tree-sitter-vesti.dll on Windows
+;; .so on Linux, and .dylib on Macos
+
+(require 'treesit)
+(define-derived-mode vesti-ts-mode prog-mode "Vesti-TS"
+  :group 'vesti
+  (when (treesit-language-available-p 'vesti)
+	(treesit-parser-create 'vesti)
+	(setq-local treesit-font-lock-settings
+				(treesit-font-lock-rules
+				 ;; -----------------------
+				 ;; Keywords (@keyword)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'keyword
+				 '(((KEYWORD_docclass)        @font-lock-keyword-face)
+				   ((KEYWORD_importpkg)       @font-lock-keyword-face)
+				   ((KEYWORD_importmod)       @font-lock-keyword-face)
+				   ((KEYWORD_copyfile)        @font-lock-keyword-face)
+				   ((KEYWORD_importves)       @font-lock-keyword-face)
+				   ((KEYWORD_useltx3)         @font-lock-keyword-face)
+				   ((KEYWORD_getfp)           @font-lock-keyword-face)
+				   ((KEYWORD_startdoc)        @font-lock-keyword-face)
+				   ((KEYWORD_useenv)          @font-lock-keyword-face)
+				   ((KEYWORD_begenv)          @font-lock-keyword-face)
+				   ((KEYWORD_endenv)          @font-lock-keyword-face)
+				   ((KEYWORD_makeatletter)    @font-lock-keyword-face)
+				   ((KEYWORD_makeatother)     @font-lock-keyword-face)
+				   ((KEYWORD_ltx3on)          @font-lock-keyword-face)
+				   ((KEYWORD_ltx3off)         @font-lock-keyword-face)
+				   ((KEYWORD_nonstopmode)     @font-lock-keyword-face)
+				   ((KEYWORD_mathmode)        @font-lock-keyword-face)
+				   ((KEYWORD_compty)          @font-lock-keyword-face)
+				   ((KEYWORD_pycode)          @font-lock-keyword-face)
+				   ;; pycode delimiters as keywords
+				   (pycode_block (pycode_start) @font-lock-keyword-face)
+				   (pycode_block (pycode_end)   @font-lock-keyword-face))
+				 
+				 ;; -----------------------
+				 ;; Constants (@constant)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'constant
+				 '(((pycode_block (pycode_imports) @font-lock-constant-face))
+				   ((options)        @font-lock-constant-face)
+				   ((mandantory_arg) @font-lock-constant-face)
+				   ((optional_arg)   @font-lock-constant-face))
+				 
+				 ;; -----------------------
+				 ;; Types (@type)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'type
+				 '(((class_pkg_name)         @font-lock-type-face)
+				   ((env_name)               @font-lock-type-face)
+				   ((singleline_raw_latex)   @font-lock-type-face)
+				   ((multiline_raw_latex)    @font-lock-type-face))
+				 
+				 ;; -----------------------
+				 ;; Functions (@function)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'function
+				 '(((latex_function_name) @font-lock-function-name-face))
+				 
+				 ;; -----------------------
+				 ;; Strings (@string)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'string
+				 '(((inline_math)  @font-lock-string-face)
+				   ((display_math) @font-lock-string-face))
+				 
+				 ;; -----------------------
+				 ;; Comments (@comment)
+				 ;; -----------------------
+				 :language 'vesti
+				 :feature 'comment
+				 '(((comment) @font-lock-comment-face))
+				 ))
+	(setq-local treesit-font-lock-feature-list
+				'((comment keyword)           ; level 1
+				  (type function constant)    ; level 2
+				  (string)))                  ; level 3
+	(setq-local treesit-range-settings
+				(treesit-range-rules
+				 :embed 'python      ;; injection.language = "python"
+				 :host  'vesti
+				 ;; Collect every (pycode_line_content) inside a (pycode_block)
+				 '((pycode_block
+					(pycode_line
+					 (pycode_line_content) @range)))))
+    (treesit-major-mode-setup)))
+
+(add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-ts-mode))
+

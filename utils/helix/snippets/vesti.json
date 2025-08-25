@@ -1,13 +1,13 @@
 {
     "display math mode": {
         "prefix": "be",
-        "body": ["\\[", "    $1", "\\]"],
+        "body": ["$$", "    $1", "$$"],
         "description": "display math mode for vesti"
     },
-    "infinity symbol": {
-        "prefix": "oo",
-        "body": ["\\infty"],
-        "description": "an infinity symbol"
+    "inline math mode": {
+        "prefix": "MK",
+        "body": ["$", "    $1", "$"],
+        "description": "display math mode for vesti"
     },
     "set minus": {
         "prefix": "-",
