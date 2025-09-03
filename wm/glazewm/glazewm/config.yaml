@@ -48,10 +48,10 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '40px'
-    right: '10px'
-    bottom: '10px'
-    left: '10px'
+    top: '35px'
+    right: '5px'
+    bottom: '5px'
+    left: '5px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -248,7 +248,7 @@ keybindings:
   #- commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
   - commands: ['shell-exec wt']
     bindings: ['alt+enter']
-  - commands: ['shell-exec vivaldi']
+  - commands: ['shell-exec zen']
     bindings: ['alt+shift+enter']
   - commands: ['shell-exec %ProgramFiles%/Emacs/emacs-30.1/bin/emacsclientw.exe -n -c -f %APPDATA%/.emacs.d/server/main']
     bindings: ['ctrl+alt+shift+enter']

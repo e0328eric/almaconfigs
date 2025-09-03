@@ -197,6 +197,13 @@ point reaches the beginning or end of the buffer, stop there."
   :bind
   (("C-x g" . magit-status)))
 
+(add-to-list 'eglot-server-programs
+			 '(zig-mode . ("zls")))
+(use-package eglot
+  :ensure t
+  :hook ((rust-mode . eglot-ensure)
+		 (zig-mode . eglot-ensure)))
+
 ;; better performance using latex
 ;; see the below link for more information
 ;; https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/

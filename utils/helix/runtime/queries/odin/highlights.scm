@@ -5,7 +5,7 @@
 
 [
  "package"
-] @namespace
+] @keyword
 
 [
   "import" 

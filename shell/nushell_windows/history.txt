@@ -9680,3 +9680,1168 @@ rg "lua-match" *
 v highlights.scm
 cd Github\vesti\
 v build.zig
+lg
+v Manual\vesti_man.ves
+cd ..
+cd vesti\
+ls
+v highlights.scm
+v injections.scm
+cd ..\
+cd ..
+ls
+cd grammars\
+ls
+cd sources\vesti\
+ls
+cd ../../../
+ls
+rm -r grammars\
+rm -s
+hx -g fetch
+hx -g build
+cd Github\tree-sitter-vesti\
+v queries\vesti\injections.scm
+lg
+v Manual\vesti_man.ves
+v queries\vesti\injections.scm
+cd Github\vesti\
+v Manual\vesti_man.ves
+ls
+cd Manual\
+ls
+v vesti_man.ves
+cd ..
+ls
+v src\vespy_methods.c
+ls
+cd src
+ls
+v io.h
+cd ..
+lsd
+ls
+cd Manual\
+start vesti_man.pdf
+v vesti_man.ves
+vesti compile vesti_man.ves
+v vesti_man.ves
+vesti compile vesti_man.ves
+v vesti_man.ves
+vesti compile vesti_man.ves
+v vesti_man.ves\
+v vesti_man.ves
+vesti compile vesti_man.ves
+cd ..
+ls
+v src\parser\Parser.zig
+v src\location.zig
+cd
+cd Test\
+ls
+hx --health
+ls
+mkdir odin-https
+mv odin-https odin-http
+cd odin-http\
+v main.odin
+ls
+cd ..
+ls
+rm -rp odin-http\
+cd
+cd Github\yedec\
+ls
+v build.zig
+ls
+v build.zig.zon
+cd
+cd Test\
+ls
+mkdir odin-http
+ls
+cd odin-http\
+ls
+v main.odin
+cd $env.APPDATA
+cd helix
+ls
+cd runtime\
+ls
+cd queries
+ls
+cd odin\
+ls
+v highlights.scm
+v main.odin
+ls
+cd ..
+ls
+rm -rp odin-http
+shutdown /s /t 0
+wsl
+wsl --help
+wsl --update
+cd Icedrive\Math
+ls
+sf . "stochastic"
+seminar ls
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+s
+v aapproach.ves
+vesti compile -aWE aapproach.ves
+cd TEst
+ls
+ls fooo
+cd fooo
+cp `~/Icedrive/Math/Stochastic Integration and Differential Equations_(Protter).pdf` .
+ls
+pwd | pbcopy 
+cd C:\Users\almag\TEst\fooo
+ls
+mv `Stochastic Integration and Differential Equations_(Protter).pdf` foo.pdf
+ls
+vesti compile crop.ves
+start crop.pdf
+vesti compile -WE crop.ves
+v crop.ves
+ls
+cp crop.pdf `~/Icedrive/Math/Stochastic Integration and Differential Equations_(Protter).pdf`
+cd
+ls
+cd Github\vesti\
+s
+mkdir examples
+cd examples\
+mv ~/Test/fooo/crop.ves .
+mv crop.ves crop_pdf.ves
+v crop_pdf.ves
+vesti compile -WE crop.ves
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+wsl kitty
+ls
+cd Test\
+ls
+cd yedec
+ls
+v vcpkg.json
+v src\
+ls
+seminar
+cd Github\vesti\thirdparty\ziglyph\
+ls
+v $nu.config-path
+source $nu.config-path
+cd src\
+ls
+ls autogen\
+rg "deflate" *
+v normalizer\Normalizer.zig
+cd ../..
+lg
+cd ..
+lg
+v Manual\vesti_man.ves
+source $nu.config-path
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+cd after\plugin\
+ls
+v bufferline.lua
+rm bufferline.lua
+v ../../lua/almagest/plugins.lua
+ls
+cd ../..
+ls
+v lua\almagest\remap.lua
+ls
+cd after\
+cd plugin\
+v which-key.lua
+ls
+rm toggleterm.lua
+rm nvim-tree.lua
+ls
+v oil.lua
+ls
+cd ..
+ls
+v lua\almagest\remap.lua
+cd Test\
+ls
+v barbar/baz/foo.ves
+ls
+ls barbar\baz\foo.ves
+rm -r barbar
+lg
+lg
+ls
+v
+v /
+v .
+ls
+cd ..
+ls
+cd yedec
+ls
+v build.zig
+zig build vcpkg
+v build.zig.zon
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+zig build vcpkg\
+zig build vcpkg
+ls
+rg "zg" *
+rg "zg_" src
+rg "zg_DisplayWidth" * 
+cd src
+rg "zg_DisplayWidth" .
+cd ..
+ls
+v build.zig.zon
+v build.zig
+zig build vcpkg
+v build.zig
+rm -r .zig-cache\
+rm -s
+rm -p
+zig build vcpkg
+v build.zig
+cd ..
+ls
+cd badepo\
+ls
+v build.zig.zon
+ls
+v build.zig
+ls
+v build.zig
+v build.zig.zon
+ls
+cd ..
+ls
+v zigup\
+cd zigup
+ls
+v build.zig.zon
+v build.zig
+ls
+rg "badepo" src
+cd Github\zigup
+ls
+zig build --helpo
+zig build --help
+v src\download.zig
+zig build --watch -fincremental
+ls
+cd src
+ls
+cd ..
+zig build
+v src\download.zig
+zig build
+v src\download.zig
+zig build
+v src\download.zig\
+v src\download.zig
+v src\download.zig\
+zig build
+v src\download.zig\
+v src\download.zig
+cd Test\
+ls
+v winmonitor/main.zig
+ls
+cd winmonitor\
+ls
+v winzig.h
+ls
+zig translate-c -lc vespy.h | save windows.zig
+zig translate-c -lc winzig.h | save windows.zig
+rm windows.zig
+zig translate-c -lc winzig.h | save windows.zig
+ls
+v windows.zig
+ls
+v main.zig
+ls
+rm *
+ls
+zig init -m 
+v src/main.zig
+ls
+cd Github\vesti\
+v build.zig
+zig build
+v build.zig
+ls
+lg
+v src\lexer\Token.zig
+v src\main.zig
+cd
+seminar
+ls
+cd Doctor\AApproach\
+ls
+cd
+ls
+cd .glzr/glazewm/
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -aWE aapproach.ves
+v chapter4\particular-case.ves
+shutdown /s /t 0
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+start aapproach.pdf
+vesti compile -a\ aapproach.ves
+vesti compile -a aapproach.ves
+v appendix\sharp-maximal.ves
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+v after\plugin\harpoon.lua
+lg
+lsd
+ls
+cd Github\zigup\
+ls
+v src\download.zig
+zig build
+v src\download.zig
+zig build
+cd Github\zigup\
+zig build --watch -fincremental
+v src\download.zig
+vesti compile -aWE aapproach.ves
+v appendix\stochastic-fubini.ves
+./KakaoTalk.exe
+cd Github\zigup\
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+zig build run
+v src\download.zig
+cd Github\zigup\
+v src\download.zig
+zig build run
+v src\main.zig
+zig build run
+cd Github\zigup\
+zig build run
+cd .local\zig\lib\std\http\
+ls
+rg "TRansfer" *
+v Client.zig
+zig build run
+zig build run\
+zig build run
+ls
+rm -r zig-compiler.zip zig-compiler
+rm  -r zig-compiler
+ls
+zig build run
+ls
+rm  -r zig-compiler zig-compiler.zip
+zig build run
+ls
+zig build run
+rm -r zig-compiler zig-compiler.tar.xz zig-compiler.zip
+zig build run
+ls
+v zig-compiler.tar.xz
+v zig-compiler.zip
+tar xvf zig-compiler.tar.xz
+ls
+rm zig-compiler\
+ls zig-compiler\
+ls
+rm -r zig-compiler
+cd zig-x86_64-linux-0.16.0-dev.48+aae556071\
+ls
+cd ..
+ls
+rm -r zig-x86_64-linux-0.16.0-dev.48+aae556071\
+rm zig-compiler.tar.xz
+mkdir foo
+mv zig-compiler.zip foo\
+cd foo\
+l;s
+unzip zig-compiler.zip
+ls
+cd ..
+ls
+rm -r foo
+zig build run
+cd .local\zig
+rg "zip.extract" *
+ls
+rm -r zig-compiler zig-compiler.zip
+zig build run
+ls
+wallp list
+wallp set 0 `~/Pictures/Screenshots/Screenshot 2025-08-25 235429.png`
+wallp set 0 `~/Pictures/Screenshots/Screenshot 2025-08-23 200411.png`
+wallp set 0 ~/Icedrive/Photos/Cerydra.png
+wallp list
+wallp set 0 ~/Icedrive/Photos/Cerydra.png
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+wallp set 2 ~/Icedrive/Photos/Shirakami_Fubuki2.png
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+;s
+ls
+v appendix\heat-kernel.ves
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+cd Github\zigup\
+ls
+rm -r zig-compiler zig-compiler.zip
+rm -s
+v .gitignore
+v src\download.zig
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+cd .local\zig
+ls
+cd lib\std
+ls
+cd compress
+ls
+cd flate\
+ls
+v Decompress.zig
+cd
+cd Github\zigup\
+ls
+rm -r zig-compiler zig-compiler.zip
+zig build run
+ls
+ls zig-compiler\zig-x86_64-windows-0.16.0-dev.65+ca2e17e0a\
+rm -r zig-compiler
+zig build run
+cd Github\zigup\
+ls
+v zig-compiler.tar.xz
+hexyl --help
+hexyl -n 100 zig-compiler.tar.xz
+ls
+rm -r zig-compiler zig-compiler.tar.xz
+zig build run
+hexyl -n 100 zig-compiler.tar.xz
+v zig-compiler.tar.xz
+v src\main.zig
+ls
+rm -r zig-compiler zig-compiler.tar.xz
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+rm -r zig-compiler zig-compiler.tar.xz
+lg
+zig build run
+ls
+rm -rp zig-compiler zig-compiler.tar.xz
+v src\main.zig
+lg
+ls
+lg
+seminar
+ls
+cd Doctor\AApproach\
+ls
+zig build release
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+v build.zig
+cd ..
+ls
+cd badepo\
+ls
+v build.zig
+cd
+ls
+cd Github\zigup\
+ls
+cd .local\zig
+sf "unistd.h" .
+sf .  "unistd.h"
+cd ..
+ls
+cd badepo\
+ls
+v src\os\posix.zig
+sf .  "ioctl.h"
+cd .\lib\libc\musl\include\sys\ioctl.h
+v\ .\lib\libc\musl\include\sys\ioctl.h
+v .\lib\libc\musl\include\sys\ioctl.h
+v src\os\czig.h
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+;s
+start aapproach.pdf
+v aapproach.ves
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+cd .local\Odin\
+./update.bat
+cd ..
+Lls
+ls
+cd 
+ls
+cd Test\
+ls
+cd fooo
+ls
+rm *
+y
+rm -r *
+rm 0s
+rm -s
+ls
+cd Github\
+cd zigup\
+ls
+zig build release
+cd ..
+cd zigup\
+ls
+v build.zig.zon
+cd ..
+ls
+b badepo\
+v badepo\
+cd zigup\
+zig build release
+cd .local/zig/lib/
+rg "winsize" *
+v ../badepo/src/os/czig.h
+v ../badepo/src/os/posix.zig
+ls
+cd .zig-cache\
+ls
+rg "ioctl" *
+v o\94a65336ce48b12ba23d582a24d462a0\cimport.zig
+cd ..
+ls
+cd ..
+ls
+start .
+seminar
+ls
+cd Doctor\
+cd AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+cd Test\fooo
+ls
+curl --location -O https://github.com/ziglang/zig/raw/refs/heads/master/lib/std/tar/testdata/18089.tar
+v 18089.tar
+hexyl -n 100 18089.tar
+cp -r C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach AA
+ls
+cd AA
+ls
+cd ,.
+cd ..
+tar 
+tar -h
+tar cJ AA\
+tar cJ AA
+tar -h
+tar cJ AA | save foo.tar.xz
+ls
+v foo.tar.xz
+hexyl -n 100 foo.tar.xz
+tar cz AA | save foo.tar.gz
+v foo.tar.gz
+hexyl -n 100 foo.tar.gz
+cd Downloads\
+ls
+hexyl -n 100 `Stochastic partial differential equations six perspectives.djvu`
+rm `Stochastic Evolution Systems_ Linear Theory and Applications -- Boris L_ Rozovsky, Sergey V_ Lototsky -- Probability theory and stochastic modelling, -- 9783319948928 -- 560d63a80ce706844b407cf6ad017c86 -- Anna’s A.pdf`
+ls
+rm `Stochastic Evolution Systems_ Linear Theory and Applications -- Boris L_ Rozovsky, Sergey V_ Lototsky -- Probability theory and stochastic modelling, -- 9783319948928 -- 560d63a80ce706844b407cf6ad017c86 -- Anna’s A.pdf`
+mv `Stochastic Evolution Systems_ Linear Theory and Applications -- Boris L_ Rozovsky, Sergey V_ Lototsky -- Probability theory and stochastic modelling, -- 9783319948928 -- 560d63a80ce706844b407cf6ad017c86 -- Anna’s A.pdf` foooo
+ls
+ls foo
+rm fooo
+start .
+winget install djvu
+winget search djvu
+vesti compile -aWE aapproach.ves
+rm -s
+rm -p
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+wallp set 2 ~/Icedrive/Photos/Shirakami_Fubuki2.png
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+ls
+cd Github\wallp
+ls
+odin build .
+ls
+v .gitignore
+ls
+lg
+ls
+rm wallp.exe
+cd
+cd .local\Odin\
+./update.bat
+xcds
+cd
+ls
+cd Github\
+ls
+seminar
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+cd Github\vesti\
+ls
+cd thirdparty\ziglyph\
+ls
+cd Github\vesti\
+cd thirdparty\ziglyph\
+rg "deflate" *
+v src\gen_zig_code.zig
+sf . "UnicodeData.txt"
+ls
+cd .zig-cache\
+sf . "UnicodeData.txt"
+v _ziglyph-data\ucd\UnicodeData.txt
+v src/normalizer/Normalizer.zig
+cd src\autogen\
+ls
+cd ..
+ls
+cd Github\vesti\thirdparty\ziglyph\
+ls
+v src
+cd src
+s
+cd ..
+ls
+mkdir compressor
+cd compressor\
+ls
+v compressor.zig
+zig build-lib compressor.zig
+v compressor.zig
+v gen_zig_code.zig
+start aapproach.pdf
+seminar
+cd Doctor\
+s
+cd SDE
+start sde.pdf
+cd
+ls
+cd .local\
+ls
+mkdir zig-compiler
+zigup
+ls
+rm zig-compiler.zip
+v chapter3\stochastic-banach.ves
+vesti compile -aWE aapproach.ves
+zigup
+ls
+ls zig-compiler\
+cd
+ls
+cd .local\bin\
+cd ..
+ls
+rm -r zig-compiler\
+unzip zig-compiler.zip
+ls
+rm zig-compiler.zip
+ls
+mv zig-lts zig-0.14.1
+ls
+mv zig zig-lts
+mv zig-lts zig
+ls
+mv zig-x86_64-windows-0.16.0-dev.70+73a0b5441 zig-dev
+ls
+cd .bin
+cd bin
+s
+rm zig.exe zig-lts.exe 
+ln ~/.local/zig/zig.exe ~/.local/bin/zig.exe
+ls ..
+ln ~/.local/zig-0.14.1//zig.exe ~/.local/bin/zig-0.14.1.exe
+ln ~/.local/zig-dev//zig.exe ~/.local/bin/zig-dev.exe
+ls
+zig version
+zig-dev version
+zig-0.14.1.exe  version
+cd
+lsa
+ls
+cd Github\zigup\
+ls
+zig-dev build
+ls
+zig-dev build release
+v build.zig
+v ../badepo/src/os/czig.h
+v build.zig
+cd ..
+ls
+cd badepo\
+ls
+lg
+cd ..
+ls
+cd ziglua\
+v build.zig.zon
+cd ..
+ls
+cd zigup\
+v build.zig.zon
+zig-dev fetch --save git+https://github.com/e0328eric/badepo.git
+zig-dev build release
+v .zig-cache\o\a2010f75018fdbfd1db3b97aa182690f\czig.zig
+ls
+v build.zig
+zig-dev build release
+cd .local
+ls
+cd zls
+git fetch --prune origin master
+git merge origin master
+v build.zig
+cd ..
+ls
+mv zig zig-lts
+mv zig-dev zig
+cd bin
+ls
+rm zig-dev.exe zig.exe
+rm zig.exe
+ln ~/.local/zig/zig.exe ~/.local/bin/zig.exe
+ln ~/.local/zig-lts/zig.exe ~/.local/bin/zig-lts.exe
+cd ..
+zig-lts version
+ls
+cd zls
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd 
+ls
+v src\main.zig
+v chapter4\particular-case.ves
+shutdown /s /t 0
+zig build run
+cd Github\zigup\
+zig build run
+cd Github\zigup\
+ls
+rm -r zig-compiler zig-compiler.tar.xz
+v src\main.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd .local
+zigup
+cd
+cd Test\
+ls
+cd fooo
+ls
+rm -r 18089.tar AA\ foo.tar.gz
+rm -r AA\ foo.tar.gz
+ls
+zigup
+zig build release
+start .
+ls
+v main.zig
+cd
+cd .local\zls
+lg
+cd\
+cd
+cd Test\fooo
+ls
+v main.zig
+cd
+ls
+cd Github\zigup\
+cd ..
+cd vesti\thirdparty\
+ls
+cdm ziglyph\
+cd ziglyph\compressor\
+ls
+cd Github\vesti\thirdparty\ziglyph\
+ls
+v compressor.zig
+v src\gen_zig_code.zig
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+yt-dlp https://youtu.be/ZBMLdfzm23k?feature=shared
+ls
+mpv '아프가니스탄 동부 규모 6.0 지진...3천여 명 사상 ⧸ YTN [ZBMLdfzm23k].mp4'
+start .
+v chapter4\
+cd Github/tree-sitter-vesti/
+ls
+v grammar.js
+v chapter4\particular-case.ves
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v test\corpus\bugs.txt
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v grammar.js
+v test\corpus\pycode.txt
+v queries\vesti\highlights.scm
+tree-sitter generate
+tree-sitter test
+cd test\corpus\
+ls
+v bugs.txt
+ls
+rm bugs.txt
+cd ../..
+lsa
+ls
+tree-sitter generate
+tree-sitter test
+lg
+cd $env.LOCALAPPDATA
+cd nvim\
+v after\queries\vesti\highlights.scm
+cd after\queries\
+ls
+v highlights.scm
+v vesti\injections.scm
+v injections.scm
+rm highlights.scm injections.scm
+cd ../..
+lg
+v
+v chapter4\particular-case.ves
+vesti compile -aWE aapproach.ves
+cd Github\
+ls
+mkdir c2odin
+cd c2odin\
+ls
+cp ~/.local/odin-c-bindgen/libclang .
+cp -r ~/.local/odin-c-bindgen/libclang .
+cp -r ~/.local/odin-c-bindgen/libclang.dll .
+ls
+cd `C:/Program Files/clang/`
+ls
+cd include\
+ls
+d clang-c\
+cd clang-c\
+ls
+v libclang\CXFile.odin
+v CXFile.h
+ls
+v src/main.odin
+odin run src -- 1232 435
+v src/main.odin
+odin run src -- 1232 435
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+v chapter4\particular-case.ves
+cd Github/vesti/thirdparty/ziglyph/
+ls
+cd
+cd Test
+ls
+ls fooo\
+ls fooo
+rm -rp foo
+rm -rp fooo
+ls
+cp -r ~/Github/vesti/thirdparty/
+cp -r ~/Github/vesti/thirdparty/ziglyph .
+ls
+cd ziglyph\
+ls
+v src\gen_zig_code.zig
+ls
+cd compressor\
+ls
+cd .local\zig-0.14.1\
+ls
+cd lib\std
+cd flate
+cd compress\flate
+ls
+cd ..
+ls
+v flate.zig
+v compressor.zig
+ls
+cd Github\
+ls
+mkdir cefer
+cd cefer
+which clang
+clang --version
+v main.c
+ls
+clang main.c -o main --target=x86_64-windows-msvc
+ls
+`C:/Program Files/clang/bin/clang`  main.c -o main --target=x86_64-windows-msvc
+`C:/Program Files/clang/bin/clang` --version
+clang --version
+ls
+v cefer.h\
+v cefer.h
+clang --version
+c
+clang --version
+v main.c
+clang main.c -o main --target=x86_64-windows-msvc
+v cefer.h
+v  main.c
+clang main.c -o main --target=x86_64-windows-msvc
+v  main.c
+clang --version
+clang main.c -o main
+ls
+./main
+mv main main.exe
+./main.exe
+v main.c
+clang main.c -o main
+v main.c
+clang main.c -o main
+v main.c
+clang main.c -o main
+v main.c
+clang main.c -o main
+./main.exe
+v main.c
+clang main.c -o main.exe
+ls
+rm main
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+cl main.c
+v main.c
+cl main.c
+v cefer.h
+cl main.c
+v cefer.h
+cl main.c
+v cefer.h
+cl main.c
+./main.exe
+v cefer.h
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+ls
+clang main.c -o main.exe
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+v main.c
+ls
+rm main.exe main.obj
+clang main.c -o main.exe
+./main.exe
+cl main.c
+./main.exe
+v cefer.h
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+cl main.c
+./main.exe
+v main.c
+clang main.c -o main.exe
+./main.exe
+clang main.c -o main.exe
+cl main.c
+ls
+cl
+which clang
+cd Github\cefer\
+ls
+rm main.exe main.obj
+ls
+./main.exe
+clang main.c -o main.exe
+`C:/Program Files/clang/bin/clang` main.c -o main.exew
+`C:/Program Files/clang/bin/clang` main.c -o main.exe
+zig cc main.c -o main
+ls
+mv main main.ese
+mv main.ese main.exe
+./main.exe
+v main.c
+ls
+rm main.exe main.pdb
+ls
+cd 
+cd Github\vesti\
+ls
+winget search zen
+winget install Zen-Team.Zen-Browser.Twilight
+winget install Zen-Team.Zen-Browser
+ls
+cd vesti-tectonic
+ls
+mkdir bin
+cp target\release\vesti_tectonic.dll.lib bin
+ls
+ls bin\
+cp ~/.local/bin/vesti_tectonic.dll bin\
+ls bin\
+ls
+ls bin\
+ls
+rm -r target
+cd ..
+ls
+lg
+v build.zig
+cd ..
+ls
+cd cefer
+s
+v cefer.h
+git init
+git remote add origin https://github.com/e0328eric/cefer.git
+lg
+git branch -M main
+lg
+git pull origin main
+lg
+cd
+ls
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+start aapproach.pdf
+cd .glzr/glazewm/
+v config.yaml
+cd
+cd Github\arch-almagest\
