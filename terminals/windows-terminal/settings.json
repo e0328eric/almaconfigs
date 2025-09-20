@@ -35,7 +35,7 @@
     "alwaysShowTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{effc8099-b14e-5fc5-bd24-4943d770455c}",
+    "defaultProfile": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
     "keybindings": 
     [
         {
@@ -51,16 +51,12 @@
             "keys": "ctrl+shift+1"
         },
         {
-            "id": "User.newTab.663EF760",
-            "keys": "ctrl+alt+shift+6"
-        },
-        {
             "id": null,
             "keys": "alt+shift+minus"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+2"
+            "id": "User.newTab.663EF760",
+            "keys": "ctrl+alt+shift+6"
         },
         {
             "id": null,
@@ -68,11 +64,15 @@
         },
         {
             "id": null,
-            "keys": "alt+shift+d"
+            "keys": "ctrl+shift+2"
         },
         {
             "id": null,
             "keys": "ctrl+shift+3"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+d"
         },
         {
             "id": null,
@@ -91,12 +91,16 @@
             "keys": "ctrl+shift+9"
         },
         {
+            "id": "Terminal.OpenNewTabProfile1",
+            "keys": "ctrl+alt+shift+2"
+        },
+        {
             "id": null,
             "keys": "shift+insert"
         },
         {
-            "id": "Terminal.OpenNewTabProfile1",
-            "keys": "ctrl+alt+shift+2"
+            "id": null,
+            "keys": "ctrl+c"
         },
         {
             "id": "User.splitPane.864CD510",
@@ -104,23 +108,15 @@
         },
         {
             "id": null,
-            "keys": "ctrl+c"
+            "keys": "ctrl+v"
         },
         {
             "id": null,
             "keys": "ctrl+shift+f"
         },
         {
-            "id": null,
-            "keys": "ctrl+v"
-        },
-        {
             "id": "User.paste",
             "keys": "ctrl+shift+v"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+v"
         },
         {
             "id": "Terminal.OpenNewTabProfile2",
@@ -128,11 +124,15 @@
         },
         {
             "id": null,
-            "keys": "alt+shift+h"
+            "keys": "alt+shift+v"
         },
         {
             "id": "Terminal.OpenNewTabProfile4",
             "keys": "ctrl+alt+shift+5"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+h"
         },
         {
             "id": "User.splitPane.D5151347",
@@ -181,16 +181,11 @@
         "list": 
         [
             {
-                "commandline": "nu.exe",
-                "guid": "{effc8099-b14e-5fc5-bd24-4943d770455c}",
+                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; nu.exe\"",
+                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
                 "hidden": false,
                 "name": "nushell",
                 "startingDirectory": "C:\\Users\\almag"
-            },
-            {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
             },
             {
                 "commandline": "C:\\WINDOWS\\system32\\wsl.exe --distribution-id {bd62367b-a1b5-4339-8e0f-681fb9db2c5b} --cd ~ -u almagest",
@@ -205,6 +200,25 @@
                 "icon": "C:/msys64/ucrt64.ico",
                 "name": "UCRT64 / MSYS2",
                 "startingDirectory": "C:/msys64/home/%USERNAME%"
+            },
+            {
+                "commandline": "nu.exe",
+                "guid": "{effc8099-b14e-5fc5-bd24-4943d770455c}",
+                "hidden": false,
+                "name": "nushell (plain)",
+                "startingDirectory": "C:\\Users\\almag"
+            },
+            {
+                "guid": "{6922f89c-f832-514f-9d67-20565d7d29a0}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "C:\\Users\\almag"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
             },
             {
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
@@ -230,20 +244,6 @@
                 "useAcrylic": false
             },
             {
-                "commandline": "powershell.exe -NoExit -Command \"&{Import-Module \"\"\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments \"\"\"-arch=x64 -host_arch=x64\"\"\"}; nu.exe\"",
-                "guid": "{52ee5915-4421-47f4-912b-cc824743b0b1}",
-                "hidden": false,
-                "name": "nushell(cl)",
-                "startingDirectory": "C:\\Users\\almag"
-            },
-            {
-                "guid": "{6922f89c-f832-514f-9d67-20565d7d29a0}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "C:\\Users\\almag"
-            },
-            {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -259,6 +259,12 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022 (2)",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{e4a12686-4614-5d98-83af-53a2c66f729c}",
+                "hidden": false,
+                "name": "Julia",
+                "source": "JuliaComputingInc.Julia_b0ra4bp6jsp6c"
             }
         ]
     },

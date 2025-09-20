@@ -248,7 +248,7 @@ keybindings:
   #- commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
   - commands: ['shell-exec wt']
     bindings: ['alt+enter']
-  - commands: ['shell-exec zen']
+  - commands: ['shell-exec vivaldi']
     bindings: ['alt+shift+enter']
   - commands: ['shell-exec %ProgramFiles%/Emacs/emacs-30.1/bin/emacsclientw.exe -n -c -f %APPDATA%/.emacs.d/server/main']
     bindings: ['ctrl+alt+shift+enter']

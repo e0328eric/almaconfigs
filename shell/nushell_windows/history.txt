@@ -10845,3 +10845,4134 @@ cd .glzr/glazewm/
 v config.yaml
 cd
 cd Github\arch-almagest\
+lg
+cabal
+ghcup tui
+vesti compile -aWE aapproach.ves
+base64 aHR0cHM6Ly9raW8uYWMvYy9ibXJMcFVvVkYxUHdmOENFN1Zjekti
+base64 aHR0cHM6Ly9raW8uYWMvYy9hNmZ2ZVZxQmQyUDRMM3pYaE9fUEdi
+base64 aHR0cHM6Ly9raW8uYWMvYy9kZHZneDBuMVNSVm5iNGJwUFI5ekdi
+base64 aHR0cHM6Ly9raW8uYWMvYy9hSVhuOTZpYmNzT01yNThuOFk4akdi
+cd Downloads\
+unzip 트루러버.zip
+cp 트루러버.zip foo.zip
+start .
+rm -s
+cd
+cd .glzr/glazewm/
+v config.yaml
+cd Github\cefer\
+ls
+v cefer.h
+v chapter4\particular-case.ves
+cd ../..
+ls
+cd ..
+ls
+cd NoteTaking\
+ls
+mkdir Comm_Algebra
+cd Comm_Algebra\
+ls
+pwd | pbcopy 
+C:\Users\almag\IceDrive\TeX_Documents\NoteTaking\Comm_Algebra
+cp ../../Seminar/Doctor/AApproach/first.py .
+lss
+ls
+seminar
+cd Doctor\AApproach\
+v aapproach.ves
+vesti compile -WE comm_algebra.ves
+vesti run
+v first.py
+mkdir .vesti-dummy
+vesti run
+v comm_algebra.ves
+ls
+start comm_algebra.pdf
+v comm_algebra.ves
+vesti compile -WE comm_algebra.ves
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v chapter4\particular-case.ves
+shutdown /s /t 0
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+wallp set 2 ~/Icedrive/Photos/Shirakami_Fubuki2.png
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+seminar
+cd Doctor\AApproach\
+pwdc
+pwd | pbcopy 
+cd Doctor\AApproach\
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -WE comm_algebra.ves
+vesti compile -aWE aapproach.ves.ves
+cd Github\vesti
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Github\vesti
+v src\lexer\Token.zig
+ls
+cd
+ls
+cd Github\vesti
+v build.zig
+ls
+cd vesti-tectonic\
+ls
+cd bin
+ls
+rm vesti_tectonic.dll
+cd ../..
+ls
+v vesti-tectonic\
+zig build rustbuild
+v build.zig
+zig build rustbuild
+v build.zig
+zig build rustbuild
+v build.zig
+ls
+cd vesti-tectonic\
+ls
+rm -r bin\
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+cd .local
+ls
+zig version
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.164+bc7955306 zig
+rm -r zig-compiler\
+ls
+rm -s
+rm -p
+lsd
+ls
+cd
+cd Github\vesti\
+v src\vespy_methods.c
+v first.py
+start aapproach.pdf
+v chapter4\particular-case.ves
+shutdown /s /t 0
+ls
+v .rayignore
+seminar
+cd Github\vesti\
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+vesti compile -aWE aapproach.ves.ves
+start aapproach.pdf
+cd Github\vesti\
+sw
+ls
+cd src
+ls
+mkdir tex2ves
+v main.zig
+cd ..
+ls
+v build.zig
+ls
+cd src\
+ls
+cd ..
+s
+cd vesti-tectonic
+lsd
+ls
+mkdir bin
+cd ..
+ls
+zig build rustbuild
+v build.zig
+zig build rust
+ls
+v build.zig
+zig build rust
+v build.zig
+ls
+ls vesti-tectonic\target\release\
+v build.zig
+cd .local\bin\
+ls
+rm vesti_tectonic.dll vesti.exe vesti.pdb
+vesti compile -aWE aapproach.ves
+rm  vesti.exe vesti.pdb
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+zig build rust
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\pyscript.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+v src\pyscript.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+cd Github\vesti\
+ls
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+zig version | pbcopy 
+v build.zig
+v build.zig.zon
+ls
+cd
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+vesti compile -aWE aapproach.ves
+zig version | pbcopy 
+v src\pyscript.zig
+lg
+cd Github\vesti\
+lg
+ls vesti-tectonic\bin
+v build.zig
+lg
+v build.zig
+strip
+v appendix\sharp-maximal.ves
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwdc
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v aapproach.ves
+cd .local\bin
+curl --location -O https://github.com/upx/upx/releases/download/v5.0.2/upx-5.0.2-win64.zip
+ls
+unzip upx-5.0.2-win64.zip
+ls
+cd upx-5.0.2-win64\
+ls
+mv upx.exe .
+mv upx.exe ..
+cd ..
+ls
+rm -rp upx-5.0.2-win64\ upx-5.0.2-win64.zip
+cd
+cd .local\bin
+vesti compile -aWE aapproach.ves
+ls
+upx
+upx -9 vesti_tectonic.dll
+ls -al
+ls
+cd
+ls
+cd Github\vesti\
+;s
+ls
+cd vesti-tectonic\
+cd bin\
+ls
+upx -9 vesti_tectonic.dll
+ls
+upx -9 libvesti_tectonic.so
+ls
+cd ..
+ls
+cd ..
+ls
+v build.zig
+zig build rust
+v build.zig
+ls
+v build.zig
+zig build rust
+ls
+cd vesti-tectonic\
+ls
+cd bin\
+ls
+cd ../..
+lg
+ls
+shutdown /s /t 0
+cd Documents\ComfyUI\models\lora
+cd Documents\ComfyUI\models\loras\
+ls
+sf . "(.)\\.png"
+siv 냥르르\00014-896491584.png
+cd Documents\ComfyUI\models\\
+ls
+cd Github\
+ls
+cd cefer
+ls
+which clang
+ls
+v cefer.h
+v $nu.config-path
+source $nu.config-path
+ls
+cl
+ls
+cd Github\cefer\
+ls
+v cefer.h
+v --health\
+v --health
+ls
+v main.c
+v cefer.h
+cd $env.APPDATA
+ls
+cd helix
+v languages.toml
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+cd after\plugin\
+v nvim-treesitter.lua
+v cefer.h
+v --health
+v cefer.h
+cd $env.APPDATA\
+cd $env.APPDATA
+cd helix
+v languages.toml
+h cefer.h
+v config.toml
+v cefer.h
+v config.toml
+cd ,,
+cd ..
+ls
+rm -rp cefer\
+cd
+ls
+cd .local\
+cd zls
+ls
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+cd
+ls
+zigup
+ls
+seminar
+s
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+lsd
+ls
+start aapproach.pdf
+v chapter4\relation.ves
+v $nu.config-path
+source $nu.config-path
+winget search cmder
+cd .local\bin
+ls
+mv ~/Downloads/cmder.zip .
+v cmder.zip
+cd ..
+mv bin/cmder.zip .
+ls
+mkdir cmder
+mv cmder.zip cmder
+cd cmder\
+ls
+unzip cmder.zip
+ls
+cd ..
+ls
+cd bin
+ls
+ln ~/.local/cmder/Cmder.exe ~/.local/bin/cmder.exe
+ls
+cmder.exe 
+cd ..
+ls
+cd cmder\
+./Cmder.exe
+cd ..
+cd bin\
+rm cmder.exe
+cd ..
+ls
+cd CustomShortcuts\
+ls
+start .
+cmder
+ls
+exit
+winget search mupdf
+cd .local
+ls
+curl --location -O https://github.com/ArtifexSoftware/mupdf/archive/refs/tags/1.26.7.tar.gz
+tar xvf 1.26.7.tar.gz
+rm 1.26.7.tar.gz
+ls
+mv mupdf-1.26.7 mupdf
+cd mupdf\
+ls
+nmake Makefile
+./setup.py
+python ./setup.py
+v README
+cd docs\
+ls
+cd ../..
+ls
+rm -rp mupdf
+git clone --depth 1 --recursive git://git.ghostscript.com/mupdf.git
+cd mupdf\
+ls
+msbuild ./platform/win32/mupdf.sln /t:Build /p:Configuration=Release
+msbuild ./platform/win32/mupdf.sln /p:Configuration=Release
+ls
+cd platform\win32\
+ls
+ls x64
+ls Release\
+rm -rp Release\
+ls x64\Release\
+ls x64\Release\libmupdf\
+ls
+cd ../..
+ls
+ls source\
+cd source\fitz\
+ls
+cd ../..
+ls
+cd include\mupdf\
+ls
+base64 aHR0cHM6Ly9raW8uYWMvYy9hSVhuOTZpYmNzT01yNThuOFk4akdi
+v chapter4\relation.ves
+seminar
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -aWE aapproach.ves
+imgch -t png 87d9ad2b4056e2b224a9370f4846b1d88264407f9a8315cdffdbaf77e0964f9e.webp
+ls
+cd .local\
+ls
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.178+b1189ab03 zig
+rm -r zig-compiler\
+ls
+cd
+ls
+cd Github\vesti\
+ls
+cd thirdparty\ziglyph\
+ls
+cd thirdparty\ziglyph\
+cd Github\vestithirdparty\ziglyph\
+cd Github\vesti\thirdparty\ziglyph\
+ls
+v compressor\compressor.zig
+v src\gen_zig_code.zig
+ls
+rm -r compressor\
+v build.zig
+ls
+cd ..
+ls
+cd ..
+ls
+cd thirdparty\ziglyph\
+cd src\autogen\
+rg "deflate" *
+ls
+rg "decompress" *
+v grapheme_break_property.zig
+ls
+v derived_core_properties.zig
+rg "if" *
+rg "txt" *
+ls
+rg "flate" *
+cd ..
+ls
+v gen_zig_code.zig
+rg "deflate" *
+cd Github\vesti\thirdparty\ziglyph\
+ls
+cd
+ls
+cd Test
+ls
+ls texfoo
+rm -rp texfoo
+ls
+cd unicode-datas
+mkdir unicode-datas
+cd unicode-datas\
+cp ~/Github/vesti/thirdparty/ziglyph/src/autogen/*.deflate .
+ls
+v normalizer\Normalizer.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+ls
+v canonical_compositions.txt
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+v decompress.zig
+zig-0.14.1.exe run decompress.zig
+ls
+rm canonical_compositions.txt.deflate canonical_decompositions.txt.deflate compatibility_decompositions.txt.deflate
+ls
+v compatibility_decompositions.txt
+cd
+ls
+cd Github\vesti\thirdparty\ziglyph\
+ls
+cd Github\
+ls
+mkdir cgly
+cd cgly\
+v cgly.h
+cd ..
+ls
+rm -r cgly
+ls
+cd
+ls
+cd Test\unicode-datas\
+ls
+mkdir add_nulls
+ls
+cd add_nulls\
+ls
+v src\normalizer\Normalizer.zig
+cd
+cd Test\unicode-datas\
+ls
+cd add_nulls\
+ls
+ls ..
+cd ..
+v canonical_compositions.txt
+v add_null.zig
+ls
+zig ru add_null.zig
+zig run add_null.zig
+v add_null.zig
+zig run add_null.zig
+ls
+v canonical_compositions.txt
+cd
+ls
+cd Github\vesti\thirdparty\ziglyph\
+cd src\autogen\
+ls
+ls
+cd
+ls
+cd Github\
+mkdir pdfcrop
+mv pdfcrop pdfutils
+cd pdfutils\
+ls
+curl --location -O https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+ls
+v nob.c
+mkdir src
+v src\main.c
+cp ../vesti/compile_commands.json .
+cd .local/mupdf
+ls
+pwd | pbcopy 
+v compile_commands.json
+ls
+v src\main.c
+hx src\main.c
+v src\main.c
+v compile_commands.json
+v src\main.c
+ld
+ls
+cd src
+ls
+curl --location -O https://github.com/e0328eric/clparse/raw/refs/heads/main/clparse.h
+v main.c
+ls
+cd Github\
+git clone https://github.com/e0328eric/cefer.git
+cp ../../cefer/cefer.h ,
+ls
+mv , cefer.h
+ls
+cd Github\pdfutils\
+ls
+v src\main.c
+ls
+cd src
+ls
+cd ..
+v nob.c
+v compile_commands.json
+cd .local\mupdf\platform\win32\x64\Release\mupdf\
+ls
+cd ..
+ls
+pwd | pbcopy 
+v nob.c
+clang nob.h -o nob.exe
+v nob.c
+zig cc nob.c -o nob.exe
+./nob.exe
+clang
+gcc
+which gcc
+gcc --version
+ls
+./nob.exe
+v nob.c
+./nob.exe
+cd Github\pdfutils\
+ls
+./nob.exe
+clang --version
+v nob.c
+./nob.exe
+cd .local\mupdf\platform\win32\x64\Release\mupdf\
+ls
+cd ..
+ls
+cd extract\
+ls
+cd ..
+cd
+v nob.c
+./nob.exe
+cd .local\mupdf\platform\win32\x64\Release\mupdf\
+cd ..
+ls
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+cd
+cd
+ls
+cd Github\pdfutils\
+slv
+ls
+cd src\
+ls
+./nob.exe
+cd Github\pdfutils\
+./nob.exe
+v clparse.h
+mv pdfutils pdfutils.exe
+v nob.c
+ls
+./pdfutils.exe
+./pdfutils.exe a b c
+ls
+rm clparse.h
+curl --location -O https://github.com/e0328eric/clparse/raw/refs/heads/main/clparse.h
+./nob.exe
+v src\main.c
+./nob.exe
+v clparse.h
+v src\main.c
+ls
+start .
+zig init
+v build.zig
+ls
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+v build.zig
+ls
+rm .zig-cache\
+rm -r .zig-cache
+ls
+rm build.zig build.zig.zon
+ls
+cd src\
+ls
+rm main.zig root.zig
+cd ..
+ls
+cd $env.LOCALAPPDATA
+ls
+cd nvim
+ls
+cd after\plugin\
+ls
+v formatter.lua
+v first.hs
+ls
+rm first.hs
+zig init
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+ls
+cd
+ls
+cd Github\pdfutils\
+ls
+cd src
+cp ../../vesti/src/commands.zlap .
+ls
+v build.zig
+ls
+v src\main.zig
+ls
+cd src
+ls
+bat root.zig
+rm root.zig
+ls
+v main.zig
+zig build test --fuzz
+v main.zig
+zig build run
+v main.zig
+zig build run
+v main.zig
+zig build run
+v main.zig
+zig build run
+zig build run -- compile foo.ves
+zig build run -- subpdf asdsad
+v cefer.h
+ls
+cd ..
+ls
+rm -r .zig-cache build.zig build.zig.zon
+rm -rp zig-out
+ls
+cd src
+ls
+rm commands.zlap main.zig
+rm main.zig
+v main.c
+ls
+cd ..
+ls
+mv ../vesti/compile_commands.json .
+ls
+v compile_commands.json
+which ghc
+cd C:\Users\almag\.ghcup\ghcup\bin
+ls
+cd
+cd Github\pdfutils\
+ls
+v src\main.c
+./nob.exe
+clang nob.c -o nob.exe
+ls
+curl --location -O https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+clang nob.c -o nob.exe
+./nob.exe
+v nob.c
+v compile_commands.json
+./nob.exe
+./pdfutils.exe
+./pdfutils.exe awd asdasc
+cd src\
+v clparse.h
+v main.c
+./nob.exe
+cd ..
+./nob.exe
+v src\main.c
+./nob.exe
+./pdfutils.exe
+./pdfutils.exe asdsad
+v src\main.c
+./nob.exe
+./pdfutils.exe
+./pdfutils.exe asdsad
+./pdfutils.exe -- asdsad
+v src\main.c
+./nob.exe
+./pdfutils.exe asdsad
+./pdfutils.exe
+v src\main.c
+./nob.exe
+./pdfutils.exe
+./pdfutils.exe asdsad
+./pdfutils.exe a
+v src\clparse.h
+v src\main.c
+./nob.exe
+./pdfutils.exe a
+v src\main.c
+./nob.exe
+./pdfutils.exe a
+cd Github\pdfutils\
+ls
+v src\main.c
+./nob.exe
+./pdfutils.exe a
+v src\main.c
+./nob.exe
+./pdfutils.exe aadasdas
+v src\main.c\
+v src\main.c
+./nob.exe
+./pdfutils.exe aadasdas
+./pdfutils.exe aadasdas foofoo
+v src\main.c
+./nob.exe
+./pdfutils.exe aadasdas foofoo
+./nob.exe
+./pdfutils.exe aadasdas foofoo
+v src\main.c
+./nob.exe
+./pdfutils.exe aadasdas foofoo
+./pdfutils.exe --hat=234 aadasdas foofoo
+./pdfutils.exe --hat 234 aadasdas foofoo
+./pdfutils.exe 234 --hat aadasdas foofoo
+./pdfutils.exe 234 --hat aadasdas --hat foofoo
+./pdfutils.exe 234 aadasdas --hat foofoo
+v src\main.c
+./nob.exe
+./pdfutils.exe 234 aadasdas --hat foofoo
+v src\clparse.h
+./nob.exe
+v src\clparse.h
+ls
+./nob.exe
+v src\main.c
+./nob.exe
+./pdfutils.exe 234 aadasdas --hat foofoo
+./pdfutils.exe 
+./pdfutils.exe a
+cd Github\pdfutils\
+./nob.exe
+./pdfutils.exe a
+./nob.exe
+./pdfutils.exe a
+./pdfutils.exe a b c
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+./pdfutils.exe a
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./pdfutils.exe a b c d e
+./nob.exe
+./pdfutils.exe a b c d e
+./pdfutils.exe a
+./pdfutils.exe a --hat v
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+v src\main.c\
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+./nob.exe
+./pdfutils.exe a b
+./nob.exe
+./pdfutils.exe a b
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./pdfutils.exe a b
+./nob.exe
+./pdfutils.exe a b
+v src\main.c
+./nob.exe
+./pdfutils.exe a b
+cd Github\
+ls
+cd clparse\
+ls
+cp ~/Github/pdfutils/src/clparse.h .
+lg
+ls
+v src\clparse.h
+v src\main.c
+./nob.exe
+./pdfutils.exe a b c
+./pdfutils.exe a b c d
+./pdfutils.exe a b c
+./pdfutils.exe a b c -h
+v src\clparse.h
+v src\main.c
+./nob.exe
+./pdfutils.exe a b c -h
+./pdfutils.exe a b c
+./pdfutils.exe subpdf a b c
+v src\main.c
+./nob.exe
+./pdfutils.exe a b c
+./pdfutils.exe subpdf a b c -h
+v src\clparse.h
+./nob.exe
+./pdfutils.exe subpdf a b c -h
+./pdfutils.exe -h
+cd Github\clparse
+cp ~/Github/pdfutils/src/clparse.h .
+lg
+v src\clparse.h
+v src\main.c
+./nob.exe
+./pdfutils.exe -h
+./pdfutils.exe subpdf -h
+shutdown /s /t 0
+cd Github\pdfutils\
+ls
+v src\main.c
+v src/Main.hsc
+ls
+rm src\Main.hsc
+v src\main.c
+ls
+rm compile_commands.json
+zig init
+ls
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+cp ../vesti/src/commands.zlap src\command.zlap
+ls
+v src\command.zlap
+ls
+v build.zig
+cd src
+ls
+v mupdf_zig.h
+rm cefer.h clparse.h
+ls
+rm root.zig
+cd ..
+ls
+v build.zig
+cd
+cd .local\zls
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.195+ac42eaaad zig
+rm -rp zig-compiler\
+rm -s
+rm -p
+cd
+ls
+cd Github\pdfutils\\
+ls
+zig build
+v src\main.zig
+ls
+zig build run -- subpdf asdsad
+v src\command.zlap
+zig build run -- subpdf asdsad
+ls
+rm nob.exe nob.exe nob.h nob.c
+ls
+rm nob.c
+rm nob.exe.old nob.h
+ls
+rm nob.h
+rm pdfutils.exe
+ls
+v src\main.zig
+cd .local/mupdf/include/
+ls
+cd mupdf\
+ls
+v fitz.h
+rg "fz_try" *
+v fitz\context.h
+cd .local/mupdf/include/mupdf
+rg "fz_open_document" *
+v fitz/document.h
+cd ../..
+ls
+cd source\
+ls
+cd fitz\
+ls
+rg "fz_document *fz_open_document" .
+rg "fz_open_document" .
+v document.c
+v context.c
+v context-imp.h
+rg "longjmp" *
+cd ../..
+cd include\mupdf\
+rg "longjmp" *
+ls
+rm -r build.zig build.zig.zon zig-out\ .zig-cache\ src\main.zig src/command.zlap
+rm -r zig-out\ .zig-cache\ src\main.zig src/command.zlap
+ls
+cd src\
+cp ../../clparse/clparse.h .
+cp ../../cefer/cefer.h .
+ls
+rm mupdf_zig.h
+cd ..
+s
+v fitz/system.h
+cd
+cd Github\
+ls
+cd vesti\
+lg
+ls
+cd ..
+ls
+cd pdfutils\
+cp ../vesti/compile_commands.json .
+v compile_commands.json
+ls
+cd
+cd .local/mupdf/include/mupdf
+cd ../..
+cd source\
+rg "fz_push_try" *
+v fitz\error.c
+v src\main.c
+shutdown /s /t 0
+cd Github\pdfutils\
+ls
+cd .local\mupdf\source\
+rg "pdf_graft_page" *
+v pdf\pdf-graft.c
+v src\main.c
+./nob.exe
+v src\main.c
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+shutdown /s /t 0
+wallp set 3 ~/Icedrive/Photos/stelle-firefly.png
+wallp set 1 ~/Icedrive/Photos/lilpa_night.png
+wallp set 2 ~/Icedrive/Photos/lilpa_night.png
+ls
+shutdown /s /t 0
+cd Github\pdfutils\
+ls
+./nob.exe
+cd src
+ls
+rm cefer.h
+v main.c
+./n
+cd ..
+./nob.exe
+cl /?
+v nob.c
+cd .local\mupdf\platform\win32\x64\Release\mupdf\
+ls
+cd ..
+ls
+./nob.exe
+cd Github\pdfutils\
+./nob.exe
+v nob.c
+./nob.exe
+v nob.c
+./nob.exe
+ls
+zig cc src/main.c -I../../.local/mupdf/include -L ../../.local/mupdf/platform/win32/x64/Release -llibmupdf -llibthirdpartry
+zig cc src/main.c -I../../.local/mupdf/include -L ../../.local/mupdf/platform/win32/x64/Release -llibmupdf -llibthirdparty
+./nob.exe
+clang src/main.c -I../../.local/mupdf/include -L ../../.local/mupdf/platform/win32/x64/Release -llibmupdf -llibthirdparty
+cd
+cd Github\pdfutils\
+ls
+zig cc src/main.c -I../../.local/mupdf/include -L ../../.local/mupdf/platform/win32/x64/Release -llibmupdf -llibthirdparty
+cl src/main.c /I../../.local/mupdf/include /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib thirdparty.lib
+cl /?
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib thirdparty.lib
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib
+cd Github\
+ls
+cd musik_asm\
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib legacy_stdio_definitions.lib
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib legacy_stdio_definitions.lib kernel32.lib
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib legacy_stdio_definitions.lib kernel32.lib /DEFAULTLIB:libcmt
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib legacy_stdio_definitions.lib msvcrt.lib
+ls
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib legacy_stdio_definitions.lib ucrt.lib
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib msvcrt.lib
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib msvcrt.lib /NODEFAULTLIB:library
+cl src/main.c /I../../.local/mupdf/include /link /LIBPATH:../../.local/mupdf/platform/win32/x64/Release libmupdf.lib libthirdparty.lib msvcrt.lib /NODEFAULTLIB:libcmt
+v nob.c
+cd ..
+cd pdfutils\
+ls
+ls
+rm main.exe main.obj
+./nob.exe
+cl nob.c
+./nob.exe
+clang src/main.c -I../../.local/mupdf/include -L ../../.local/mupdf/platform/win32/x64/Release -llibmupdf -llibthirdparty -lmsvcrt
+clang --help | bat
+ls
+rm main.exe main.obj a.exe
+rm a.exe
+ls
+./nob.exe
+ls
+v nob.c
+shutdown /s /t 0
+cd Test\
+ls
+mkdir NA
+cd NA
+ls
+cd Test\NA\
+python np.py
+v np.py
+cd
+cd Github\pdfutils\
+ls
+cd
+ls
+cd Github\pdfutils\\
+cd Github\pdfutils\
+ls
+cp `~/Icedrive/Math/Papers/Stochastic partial differential equations six perspectives.pdf` .
+ls
+mv `Stochastic partial differential equations six perspectives.pdf` aapproach_by_Krylov.pdf
+ls
+./pdfutils.exe
+./pdfutils.exe subpdf
+./pdfutils.exe subpdf -h
+start aapproach_by_Krylov.pdf
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+./nob.exe
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+./nob.exe
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+v src\main.c
+cd
+cd .local\mupdf\source
+rg "aborting process from uncaught error!" *
+v fitz\error.c
+cd
+cd Github\pdfutils\
+cd .local\mupdf\source
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+ls
+start output.pdf
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-198
+start output.pdf
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+v src\main.c
+ls
+cd src
+ls
+cp ~/Github/cefer/cefer.h .
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+ls
+git init
+v main.c
+cd ..
+ls
+v .gitignore
+lg
+start output.pdf
+mv output.pdf ~/Icedrive/Math/Papers/aapproach_by_Krylov.pdf
+ls
+v nob.c
+git branch -M main
+git remote add origin https://github.com/e0328eric/pdfutils.git
+lg
+v .gitignore
+lg
+rm -rp .git
+git init
+git -M main
+git branch -M main
+git remote add origin https://github.com/e0328eric/pdfutils.git
+lg
+ls
+mkdir src
+ls
+curl --location -O https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+cp ~/Github/cefer/cefer.h src
+cp ~/Github/clparse/clparse.h src
+ls
+upx -9 pdfutils.exe
+ls
+v src\main.c
+s
+cp ~/Github/vesti/compile_commands.json .
+v fitz\error.c
+cd ..
+pwd | pbcopy 
+v compile_commands.json
+v nob.c
+ls
+shutdown /s /t 0
+cd Github\pdfutils\
+ls
+v src\main.c
+cd
+seminar
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+cd Github\pdfutils\
+ls
+v src\main.c
+v chapter4\relation.ves
+yt-dlp https://youtube.com/watch?v=_5Dcoyucy90&feature=shared
+yt-dlp https://youtu.be/_5Dcoyucy90?si=5oX6ASBJT5Mf07yp
+yt-dlp --update
+yt-dlp https://youtu.be/_5Dcoyucy90?si=5oX6ASBJT5Mf07yp
+start .
+ls
+rm '[다양성 존중 교육 코어 다지기] 핵심개념① 존중 ： 다양성 존중하기 [_5Dcoyucy90].mkv'
+start .
+yt-dlp -h
+yt-dlp -f "bv*+ba/b" https://youtu.be/_5Dcoyucy90?si=5oX6ASBJT5Mf07yp
+ls
+ffmpeg -i '[다양성 존중 교육 코어 다지기] 핵심개념① 존중 ： 다양성 존중하기 [_5Dcoyucy90].mkv' -c copy foo.mp4
+ffmpeg -i '[다양성 존중 교육 코어 다지기] 핵심개념① 존중 ： 다양성 존중하기 [_5Dcoyucy90].mkv' mp4
+ffmpeg -i '[다양성 존중 교육 코어 다지기] 핵심개념① 존중 ： 다양성 존중하기 [_5Dcoyucy90].mkv' foo.mp4
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" https://youtu.be/_5Dcoyucy90?si=5oX6ASBJT5Mf07yp
+start .
+cd Github\pdfutils\
+ls
+v scanner.c
+v src\main.c
+ls
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf output.pdf 197-254
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254
+v src\main.c
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254
+v src\main.c
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254
+v src\main.c
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254
+v src\main.c
+./nob.exe; ./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254
+rm output.pdf
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254 -o foo.pdf
+v src\main.c
+./nob.exew
+./nob.exe
+./pdfutils.exe subpdf aapproach_by_Krylov.pdf 197-254 -o foo.pdf
+ls
+rm foo.pdf
+lg
+cp ~/Github/vesti/LICENSE .
+v LICENSE
+lg
+./pdfutils.exe 0h
+./pdfutils.exe -h
+./pdfutils.exe subpdf -h
+v src\clparse.h
+./nob.exe
+v src\clparse.h
+./nob.exe
+./pdfutils.exe subpdf -h
+./nob.exe
+./pdfutils.exe subpdf -h
+v src\clparse.h
+./nob.exe
+./pdfutils.exe subpdf -h
+lg
+cd
+cd Github\clparse
+cp ~/Github/pdfutils/src/clparse.h .
+lg
+cd ..
+ls
+cd pdfutils\
+ls
+v src\main.c
+shutdown /s /t 0
+cd Github\
+git clone --recursive --depth 1 https://github.com/e0328eric/many_circles.git
+ls
+cd many_circles\
+ls
+cd complex_bessel\
+ls
+v src\amos_iso_c_fortran_wrapper.f90
+v src\machine.for
+v src\zbesh.for
+cd ../..
+ls
+rm -rp many_circles\
+cd
+cd Test
+ls
+start .
+lsd
+ls
+mkdir launder
+cd launder\
+ls
+v main.cc
+cl main.cc
+cl /?
+./main.exe
+v main.cc
+cl main.cc
+v main.cc
+cl main.cc
+v main.cc
+cl main.cc
+./main.exe
+v main.cc
+cl main.cc
+cl /std:c++17 main.cc
+./main.exe
+v main.cc
+cl /std:c++17 main.cc
+v main.cc
+./main.exe
+v manuallydrop.cc
+cp ~/Github/pdfutils/compile_commands.json .
+v compile_commands.json
+ls
+v manuallydrop.cc
+cl /std:c++17 manuallydrop.cc
+./manuallydrop.exe
+v manuallydrop.cc
+cl /std:c++17 manuallydrop.cc
+./manuallydrop.exe
+v manuallydrop.cc
+cl /std:c++17 manuallydrop.cc
+./manuallydrop.exe
+v manuallydrop.cc
+ls
+cd .,
+cd ..
+ls
+rm -rp launder\
+cd
+cd .local
+zigup
+ls
+rm -rp zig\
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.205+4c0127566 zig
+rm -rp zig-compiler
+cxds
+cd
+cd Github\vesti\
+zig build
+v README.md
+ls
+seminar
+ls
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+ls
+vesti compile -aWE aapproach.ves
+v src\parser\Parser.zig
+v build.zig
+v build.zig.zon
+zig version | pbcopy 
+v build.zig.zon
+v build.zig
+zig build
+zig build test
+v src\parser\tests\utility.zig
+zig build test
+v src\parser\tests\utility.zig
+zig build test
+v build.zig
+zig build test
+v build.zig
+zig build test
+zig build test --summary all
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast -Dtectonic=true
+lg
+cd ..
+cd tree-sitter-vesti\
+v grammar.js
+vesti compile -a aapproach.ves
+rm `chapter4\relation (conflicted).ves`
+vesti compile -a aapproach.ves
+cd vest
+cd Github\vesti\
+v parser\Parser.zig
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build test
+cd ..
+ls
+cd tree-sitter-vesti\
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+lg
+cd ..
+v chapter2\solvability-pde.ves
+v
+vesti compile -a aapproach.ves
+v chapter4\relation.ves
+cd Test\
+s
+mkdir vittu
+cd vittu\
+ls
+v main.cc
+cl main.cc
+./main.exe
+v main.cc
+cl main.cc
+cl /std:c++17 main.cc
+./main.exe
+v main.cc
+cl /std:c++17 main.cc
+clang main.cc
+./main.exe
+ls
+./a.exe
+rm a.exe main.exe main.obj
+clang /utf-8 main.cc
+clang /utf8 main.cc
+cl /utf8 main.cc
+cl /utf-8 main.cc
+v main.cc
+ls
+rm *
+ls
+cd ..
+ls
+rm -rp vittu
+cd
+cd Github\
+ls
+cd glosso\
+ls
+cd olfactory\
+ls
+rm main.odin
+cd
+seminar
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+vesti compile -a aapproach.ves
+cd Github\vesti\vesti-tectonic\bin\
+ls
+v chapter4\relation.ves
+vesti compile -aWE aapproach.ves
+cd
+cd Github\vesti
+ls
+lg
+ls
+cd $env.APPDATA
+ls
+cd vesti
+ls
+cp coprime\vesti.zon config.zon
+v config.zon
+v src\parser\Parser.zig
+v src\main.zig
+cd src
+ls
+mv config_path.zig config.zig
+v src/parser/Parser.zig
+v parser/Parser.zig
+v main.zig
+ls
+v config.zig
+mv config.zig Config.zig
+ls
+v src/parser/Parser.zig
+v parser/Parser.zig
+v main.zig
+v Config.zig
+ls
+cd ..
+ls
+v build.zig.zon
+v build.zig
+zig build
+v src\main.zig
+zig build
+v src/Config.zig
+zig build
+v src/Config.zig
+zig build
+v src\Codegen.zig
+zig build
+v src\Codegen.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+seminar
+ls
+cd Doctor\AApproach\
+ls
+v aapproach.ves
+vesti compile -a aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\Config.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -a aapproach.ves
+cd $env.APPDATA
+cd vesti
+ls
+v config.zon
+ls
+cd coprime\
+ls
+v vesti.zon
+v coprime.cls
+cd $env.APPDATA
+cd vesti\coprime\
+lg
+cd
+ls
+seminar
+s
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+v chapter4\relation.ves
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+ls
+cd Github\glosso
+ls
+ls olfactory\
+rm -rp olfactory\
+cp ../pdfutils/nob.h .
+cp ../pdfutils/nob.c .
+ls
+cl /?
+cd Github\glosso
+ls
+v src/main.cc
+cp ../pdfutils/compile_commands.json .
+v compile_commands.json
+v src\main.cc
+cl nob.c
+./nob.exe
+ls
+rm glosso.exe
+./nob.exe
+ls
+./glosso.exe
+v compile_commands.json
+v src\main.cc
+ls
+cd src
+ls
+cp ../../clparse/clparse.h .
+ls
+v main.cc
+cd .
+cd ..
+./glosso.exe
+./nob.exe
+v nob.c
+ls
+./nob.exe\
+./nob.exe
+v src\main.cc
+./nob.exe
+v compile_commands.json
+v src\clparse.h
+cd src
+ls
+v defer.hh
+v src\main.cc
+cd ..
+s
+rm -rp *
+cabal
+cabal --help
+cabal init
+ls
+v glosso.cabal
+cabal --help
+cabal list
+ls
+rm -rp *
+ls
+mkdir src
+cp ../../clparse/clparse.h src
+cp ../clparse/clparse.h src
+v main.cc
+cp ../vesti/compile_commands.json .
+v compile_commands.json
+mv main.cc src\
+v compile_commands.json
+ls
+cp ../pdfutils/nob.c .
+cp ../pdfutils/nob.h .
+v nob.c
+ls
+v src\defer.hh
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+cd Github\glosso
+ls
+cd ..
+ls
+mv glosso glosso_cpp
+mkdir glosso
+ls
+cd glosso
+ls
+v src/main.hs
+ghc src\main.hs 
+v src/main.hs
+ls
+ghc src\main.hs 
+./src/main.exe
+ghc-pkg init .pkgdb
+ghc-pkg list
+ls
+ghc-pkg --package-db=pkgdb list
+ghc-pkg --package-db=.pkgdb list
+ghc-pkg --package-db=.pkgdb register text
+cd ..
+ls
+rm -rp glosso
+ls
+mv glosso_cpp glosso
+ls
+cd glosso
+ls
+cd ..
+ls
+mv glosso glosso_cpp
+mkdir glosso
+cd glosso
+vesti compile -aWE aapproach.ves
+v chapter4\relation.ves
+ocaml
+winget install OCaml.opam
+opam switch list
+opam init
+ls
+cd ..
+ls
+rm -rp glosso
+mv glosso_cpp glosso
+cd glosso
+ls
+v src\main.cc
+./nob.exe
+ls
+v nob.c
+cl nob.c
+./nob.exe
+ls
+rm -rp *
+zig inti
+zig init
+cd src\
+ls
+rm root.zig
+v main.zig
+ls
+cd ..
+v build.zig
+lls
+s
+ls
+cd $env.APPDATA
+;s
+cd nvim
+cd $env.LOCALAPPDATA
+cd nvim
+v lua\almagest\set.lua
+lg
+cd
+cd Test\
+ls
+v asdsad
+shutdown /s /t 0
+ghc-pkg list
+ghc-pkg describe text
+ghci
+ㅣㄴ
+cd Github\glosso
+ls
+rm -rp *
+ls
+v src/Main.hs
+ghc src\Main.hs 
+ls
+cd src
+ls
+rm Main.hi Main.o
+./Main.exe
+v src/Main.hs
+cd ..
+ls
+v src\Main.hs
+cd src\
+ls
+ghc Main.hs
+ls
+./Main.exe
+cd ..
+ls
+curl --location -O https://github.com/tsoding/nob.h/raw/refs/heads/main/nob.h
+ls
+v nob.hsc
+rm -rp nob.h nob.hsc src\
+;s
+zig init
+cd src\
+ls
+rm root.zig
+cd ..
+ls
+v build.zig
+base64 aHR0cHM6Ly9raW8uYWMvYy9kSnNOUkh3YjQzTlk5OG96eHVrakti
+base64 aHR0cHM6Ly9raW8uYWMvYy9kb3VvcmhRQUN2T1RyX21TVG9oNUti
+shutdown /s /t 0
+cd Github\vesti
+lg
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+ls
+v src\lexer\Token.zig
+cd src
+ls
+v ansi.zig
+v Codegen.zig
+v commands.zlap
+v compile.zig
+v Config.zig
+v CowStr.zig
+v diagnostic.zig
+v io.h
+v lexer\Lexer.zig
+v lexer\Token.zig
+v location.zig
+v main.zig
+v parser\ast.zig
+v parser\Parser.zig
+v parser\tests\docclass.zig
+v pyscript.zig
+v Python.zig
+v vespy.c
+v vespy.h
+v vespy_methods.c
+v vesti_c.h
+cd ..
+ls
+v build.zig
+v vesti-tectonic\src\lib.rs
+lg
+cd Test
+ls
+ls MA
+ls NA
+mv NA numerical_analysis
+ls
+mkdir fooo
+cd fooo
+v foo.tex
+pdflatex foo.tex
+start foo.pdf
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v foo.tex
+pdflatex foo.tex
+v src\parser\Parser.zig
+shutdown /s /t 0
+cd Github\vesti
+ls
+cd Test\fooo\
+v foo.tex
+ls
+pdflatex foo.tex
+cd
+cd Github\vesti\
+cd src
+rg "borrow" *
+v CowStr.zig
+rg "Borrowed" *
+rg "Owned" *
+cd
+ls
+cd Test\fooo\
+ls
+v foo.tex
+v src\lexer\Lexer.zig
+zig build
+v src\parser\ast.zig
+zig build
+cd Github\vesti\
+ls
+v src\Codegen.zig
+zig build
+v src\parser\Parser.zig
+ls
+cd src\parser\tests\
+ls
+cp docclass.zig defun.zig
+ls
+cd defun.zig
+v defun.zig
+cd ../.
+cd ..
+v foo.ves
+zig build -- compile foo.ves
+start foo.pdf
+ls
+v foo.ves
+zig build run -- compile foo.ves
+v src\Codegen.zig
+cd Github\vesti\
+zig build run -- compile foo.ves
+cd\
+cd
+cd Github\vesti\
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v foo.ves
+v src\parser\ast.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v src\parser\ast.zig
+zig build run -- compile foo.ves
+v src\parser\ast.zig
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\diagnostic.zig
+zig build run -- compile foo.ves
+v src\diagnostic.zig
+zig build run -- compile foo.ves
+ls
+v build.zig
+ls
+cd src\parser\tests\
+ls
+rm defun.zig
+cd ..
+ls
+v Parser.zig
+lsd
+cd ../..
+v build.zig.zon
+ls
+lg
+cd Manual\
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Manual\
+start vesti_man.pdf
+vesti compile vesti_man.ves
+cd ../..
+ls
+cd tree-sitter-vesti\
+v grammar.js
+tree-sitter generate
+lg
+v
+cd
+cd Github\vesti\
+v foo.ves
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+cd after\queries\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+lg
+v foo.ves
+cd ..
+cd tree-sitter-vesti\
+v grammar.js
+tree-sitter generate
+lg
+v 
+cd
+cd Github\vesti\
+v foo.ves
+v src\parser\ast.zig
+lg
+v Manual\vesti_man.pdf
+ls
+seminar
+cd Doctor\AApproach\
+ls
+shutdown /s /t 0
+cd Github\vesti\
+ls
+v src\parser\ast.zig
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Github\vesti\
+v src\parser\Parser.zig
+cd Github\vesti\
+ls
+vesti compile foo.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile foo.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile foo.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v foo.ves
+shutdown /s /t 0\
+shutdown /s /t 0
+cd Github\vesti\
+ls
+cd Github\vesti\
+zig build run -- compile foo.ves
+cd Github\vesti\
+zig build run -- compile foo.ves
+cd Github\vesti\
+vesti compile foo.ves
+zig build run -- compile foo.ves
+vesti compile foo.ves
+v src\parser\ast.zig
+zig build run -- compile foo.ves
+\ls
+zig build run -- compile foo.ves
+start foo.pdf
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v foo.ves
+lg
+shutdown /s /t 0
+v .vesti-dummy\foo.tex
+rm -s
+rm -p
+ls
+cd .local\
+ls
+zig version
+zigup
+s
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.218+1872c85ac zig
+ls
+rm -rp zig-compiler\
+cd Odin\
+./update.bat
+cd ..
+ls
+cd SDL3\
+ls
+cd Github\musik\
+ls
+cd ..
+ls
+cd musik_rust\
+ls
+cargo r --release -- 系ぎて.wav
+cd Github\vesti\
+ls
+v src\Python.zig
+cd Github\tree-sitter-vesti\
+v grammar.js
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+tree-sitter test
+lgf
+v foo.ves
+lg
+v
+v queries\vesti\highlights.scm
+lg
+cd $env.LOCALAPPDATA
+cd nvim\after\queries\vesti\
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+v queries\vesti\highlights.scm
+v foo.ves
+v highlights.scm
+cd
+cd Github\tree-sitter-vesti\
+v queries\vesti\highlights.scm
+ls
+v grammar.js
+lg
+tree-sitter generate
+lg
+v 
+v foo.ves
+zig build run -- compile foo.ves
+cd Github\vesti\
+ls
+v src\Codegen.zig
+v src\Python.zig
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build test
+cd Github\vesti\
+zig build test
+v src\lexer\Lexer.zig
+cd Github\vesti\
+s
+cd Github\vesti\
+ls
+v src\lexer\Lexer.zig
+ls
+v foo.ves
+zig build -- compile foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile foo.ves
+v src\lexer\Lexer.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+start foo.pdf
+cd ..
+ls
+cd tree-sitter-vesti\
+v grammar.js
+v test\corpus\pycode.txt
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+v grammar.js
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate
+v grammar.js
+v queries\vesti\highlights.scm
+tree-sitter generate
+tree-sitter test
+v foo.ves
+cd ..
+ls
+cd tree-sitter-vesti\
+tree-sitter generate
+tree-sitter test
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+v queries\vesti\highlights.scm
+cd tree-sitter-vesti\
+cd Github/tree-sitter-vesti\
+ls
+v src\scanner.c
+tree-sitter generate; tree-sitter test
+v grammar.js
+cd Github/tree-sitter-vesti\
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+ls
+cd src\
+ls
+rm scanner.c
+cd ..
+ls
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v queries\vesti\injections.scm
+v grammar.js
+tree-sitter generate; tree-sitter test
+v foo.ves
+tree-sitter parse foo.ves
+v src\scanner.c
+ls
+cd src\
+ls
+rm scanner.c
+cd ..
+ls
+rg "scanner" *
+v queries\vesti\injections.scm
+tree-sitter generate; tree-sitter test
+v grammar.js
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+ls
+cd test\corpus\pycode.txt
+cd test\corpus\
+ls
+mv vesti_statements.txt asdsadasdas
+mv asdsadasdas ../vesti_statements.txt
+tree-sitter generate; tree-sitter test
+v pycode.txt
+v grammar.js
+cd ../..
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+v grammar.js
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+v src\scanner.c
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+ls
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+v test\corpus\pycode.txt
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+v grammar.js
+lg
+cd $env.LOCALAPPDATA
+cd nvim\after\queries\vesti\
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+v queries\vesti\highlights.scm
+v
+cd
+cd Github\vesti\
+v src\lexer\Lexer.zig
+v src\lexer\Token.zig
+v foo.ves
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+tree-sitter generate; tree-sitter test
+v grammar.js
+v src\scanner.c
+tree-sitter generate; tree-sitter test
+v src\scanner.c
+v grammar.js
+tree-sitter generate; tree-sitter test
+v test\corpus\pycode.txt
+cd test\corpus\
+ls
+mv ../vesti_statements.txt .
+cd ../..
+ls
+tree-sitter generate; tree-sitter test
+lg
+v
+cd
+cd Github\vesti\
+ls
+lg
+zig build run -- compile foo.ves
+v test\corpus\pycode.txt
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+ls
+v build.zig.zon
+v src\lexer\Lexer.zig
+cd Manual\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v vesti_man.ves
+ls
+vesti compile vesti_man.ves
+v first.py
+vesti compile vesti_man.ves
+v first.py
+vesti compile vesti_man.ves
+v first.py
+v vesti_man.ves
+cd ../..
+ls
+cd tree-sitter-vesti\
+v src\scanner.c
+tree-sitter generate; tree-sitter test
+v foo.ves
+lg
+v
+v src\scanner.c
+cd
+ls
+cd Github\vesti
+ls
+v Manual\vesti_man.ves
+lg
+v src\parser\tests\pycode.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+cd
+seminar
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+vesti compile -aWE aapproach.ves
+v first.py
+v first.py
+vesti compile -aWE aapproach.ves
+vesti compile -aWE aapproach.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v first.py
+start aapproach.pdf
+vesti compile -aWE aapproach.ves
+shutdown /s /t 0
+ls
+cd Github\vesti
+ls
+v src\Python.zig
+ls
+v foo.ves
+vesti compile foo.ves
+v foo.ves
+vesti compile foo.ves
+v foo.ves
+vesti compile foo.ves
+start foo.pdf
+v foo.ves
+start foo.pdf
+vesti compile foo.ves
+v foo.ves
+v src\parser\Parser.zig
+v foo.ves
+v src\Python.zig
+ls
+cd Github\vesti
+ls
+cd Github\vesti
+ls
+zig build
+v src\vespy.c
+v foo.ves
+zig build run -- compile foo.ves
+v
+v asda
+v src\Python.zig
+shutdown /s /t 0
+cd Github\vesti
+ls
+v src\parser\Parser.zig
+v src\lexer\Lexer.zig
+cd Github\vesti
+zig build run -- compile foo.ves
+v foo.ves
+v src/parser/ast.zig
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+start foo.pdf
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves
+v src\parser\Parser.zig
+zig build run -- compile foo.ves\
+zig build run -- compile foo.ves
+v src\parser\ast.zig
+v foo.ves
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+cd
+seminar
+ls
+cd Doctor\AApproach\
+ls
+pwd | pbcopy 
+cd Github\vesti
+ls
+v examples\
+lg
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+cd Icedrive\Private\
+ls
+v annas_archive_password.txt
+ls
+vesti compile -aWE aapproach.ves
+v chapter4\relation.ves
+cd Github\musik_asm\
+lsa
+ls
+./nob.exe
+ls
+./build/musik.exe 系ぎて.wav
+v src\Windows\musik.asm
+./nob.exe
+./build/musik.exe 系ぎて.wav
+ls
+v src\Windows\musik.asm
+cd ..
+cd musik_rust\
+ls
+cargo r --release -- 系ぎて.wav
+cd Github\vesti\
+lg
+zig build
+shutdown /s /t 0
+cd Github\musik_asm\
+seminar
+;s
+cd Doctor\AApproach\
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+cd Github\musik_asm\
+start aapproach.pdf
+seminar
+cd Doctor\AApproach\
+ls
+cd appendix\
+ls
+vesti compile -aWE aapproach.ves
+vesti clear
+v aux_lemmas.ves
+ls
+cd ..
+cd appendix\
+mv aux_lemmas.ves aux-lemmas.ves
+cd ..
+vesti compile -aWE aapproach.ves
+v first.py
+v chapter4\relation.ves
+ls
+v appendix\aux-lemmas.ves
+vesti compile -aWE aapproach.ves
+cd chapter4\
+ls
+v general-case.ves
+ls
+cd ..
+ls
+v aapproach.ves
+ls
+vesti compile -aWE aapproach.ves
+cd Github\
+ls
+cd
+cd Test\
+ls
+mkdir tcc
+cd tcc
+curl --location -O https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip
+unzip tcc-0.9.27-win64-bin.zip
+l
+cd ..
+mv tcc tccc
+mv tccc/tcc .
+ls
+rm -rp tccc
+cd tcc
+ls
+ls include\
+v include\io.h
+v include\_mingw.h
+v include\setjmp.h
+ls
+cd ..
+ls
+rm -rp tcc
+ls
+ls made-by-gpt\
+ls
+git clone --depth 1 https://github.com/TinyCC/tinycc.git
+cd tinycc\
+ls
+ls win32\
+ls tests\
+ls
+ls include\
+ls lib\
+rg "preprocessor" *
+v tccpp.c
+ls
+cd ..
+rm -rp tcc
+ls
+rm -r tinycc\
+rm -s
+cd
+ls
+cd Github\vesti\
+ls
+v src\parser\Parser.zig
+ls
+v src\Python.zig
+v foo.ves
+zig build run -- compile foo.ves
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+ls
+lg
+v src\Python.zig
+ls
+cd 
+ls
+cd Github\vesti\
+cd src
+ls
+cp Python.zig Python_v2.zig
+ls
+v Python_v2.zig
+shutdown /s /t 0
+cd Github\vesti\
+ls
+cd src
+ls
+v Python_v2.zig
+ls
+mv Python.zig Python_old.zig
+mv Python_v2.zig Python.zig
+cd ..
+ls
+zig build run -- compile foo.ves
+v src\Codegen.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+rm -rp zig-out .zig-cache
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+ls
+cd src
+rm Python_old.zig
+ls
+v parser\ast.zig
+v ../foo.ves
+ls
+cd ..
+zig build run -- compile foo.ves
+v foo.ves
+v src\parser\Parser.zig
+v foo.ves
+zig build run -- compile foo.ves
+cd Github\vesti\
+zig build run -- compile foo.ves
+v foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+start foo.pdf
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+python
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+\\
+cd
+cd Github\vesti\
+zig build run -- compile foo.ves
+pip install --force-reinstall --no-cache-dir numpy
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v 
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+zig build run -- compile foo.ves
+v src\vespy.c
+v src\diagnostic.zig
+seminar
+cd Github\vesti\
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+v aapproach.ves
+vesti compile -aWE aapproach.ves
+sf . "conf"
+rm `chapter4\general-case (conflicted).ves`
+cd Github\vesti\
+v src\Python.zig
+start foo.pdf
+v foo.ves
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+zig build run -- compile foo.ves
+v src\Python.zig
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+zig build run -- compile foo.ves
+v foo.ves
+v src\Python.zig
+ls
+lg\
+lg
+vesti compile -aWE aapproach.ves
+v build.zig
+v build.zig.zon
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v chapter4\general-case.ves
+cd Github\musik_asm\
+v src\Windows\utility.inc
+cd Test\
+ls
+v foo.zip
+v foo.zig
+shutdown /s /t 0
+cd Test\
+ls
+v foo.zig
+ls
+rm foo.zig
+cd
+cd Github\
+git clone https://github.com/e0328eric/simple-hello-world.git
+cd simple-hello-world\
+ls
+fasm hello.asm
+wasmtime
+winget search wasmtime
+winget install BytecodeAlliance.Wasmtime
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+source $nu.env-path
+source $nu.config-path
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cd Github\simple-hello-world\
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+ls
+bat hello.c
+cl hello.c
+v hello.c
+cl hello.c
+v hello.c
+cl hello.c
+v hello.c
+cl hello.c
+v hello.c
+cl hello.c
+ls
+v hello.c
+./hello.exe
+asdasdasd
+v hello.asm
+fasm hello.asm
+v backjoon.zig
+ls
+zig build-exe backjoon.zig -target wasm32-wasi -OReleaseSmall -fstrip
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+v hello.c
+cl hello.c
+./hello.exe
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+lg
+ls
+v backjoon.zig
+ls
+rm backjoon.zig
+lg
+ls
+v hello.asm
+ls
+fasm hello.asm
+v .gitignore
+ls
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+v hello.asm
+v hello.c
+cl hello.c
+./hello.exe
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+wasmtime --dir=. backjoon.wasm hello.bin hello.c
+cl hello.c
+v hello.c
+cl hello.c
+./hello.exe
+v hello.c
+v hello.asm
+v hello.c
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c
+cl hello.c
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+v hello.asm
+fasm hello.asm
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -m
+cl hello.c
+./hello.exe
+ls
+./hello.exe
+cp hello.asm hello_win.asm
+v hello.asm
+ls
+lg
+ls
+./hello.exe
+v hello.c
+v backjoon.zig
+zig build-exe backjoon.zig -target wasm32-wasi -OReleaseSmall -fstrip
+v backjoon.zig
+zig build-exe backjoon.zig -target wasm32-wasi -OReleaseSmall -fstrip
+ls
+v backjoon.zig
+wasmtime --dir=. backjoon.wasm hello.bin hello.c -M
+bat hello.c
+cl hello.c
+./hello.exe
+v backjoon.zig
+rm backjoon.zig
+lg
+wasmtime backjoon.wasm
+shutdown /s /t 0
+python
+seminar
+cd ../
+ls
+cd TF\
+s
+mkdir 2025-2
+ls
+cd 2025-2\
+cp ../2025-1/Analysis1_Kim_Prof .
+cp -r ../2025-1/Analysis1_Kim_Prof .
+ls
+mv Analysis2_Kim_Prof 
+mv Analysis1_Kim_Prof Analysis2_Kim_Prof 
+ls
+cp -r Analysis2_Kim_Prof SetTheory_Kim_Prof
+cp -r Analysis2_Kim_Prof Analysis2_Yang_Prof
+ls
+cd SetTheory_Kim_Prof\
+ls
+rm *
+rm -r *
+ls
+cd ..
+ls
+cd SetTheory_Kim_Prof\
+ls
+cd ..
+ls
+cd Analysis2_Kim_Prof\
+l;s
+ls
+rm -r *
+cd ..
+ls
+cd Analysis2_Yang_Prof\
+rm -r *
+y
+rm -r *
+ls
+rm -s
+ls
+cd ..
+lws
+ls
+cd SetTheory_Kim_Prof\
+ls
+cp ../../../Seminar/Doctor/AApproach/*.py .
+ls
+cp ../../../Seminar/Doctor/AApproach/aapproach.ves .
+v aapproach.ves
+ls
+mv aapproach.ves tf1.ves
+v tf1.ves
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof
+ls
+vesti compile tf1.ves
+v tf1.ves
+ls
+vesti clear
+vesti compile tf1.ves
+v step.py
+ls
+rm step.py
+start tf1.pdf
+vesti compile tf1.ves
+cd Github\vesti\
+v src\compile.zig
+lg
+v src\compile.zig
+cd src
+rg "toStr" *
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v tf1.ves
+vesti compile -WE tf1.ves
+shutdown /s /t 0
+teachingf 
+ls
+cd 2025-2\
+ls
+cd SetTheory_Kim_Prof\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof
+start tf1.pdf
+v tf1.ves
+v .vesti-dummy\tf1.tex
+cd Github\vesti\
+ls
+v src\vespy_methods.c
+v tf1.ves
+v .vesti-dummy\tf1.tex
+v tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile -WE tf1.ves
+v tf1.ves
+shutdown /s /t 0
+cd Github\vesti\
+v src\vespy_methods.c
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof
+start tf1.pdf
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile tf1.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v build.zig.zon
+v build.zig
+lg
+vesti compile tf1.ves
+v .vesti-dummy\tf1.tex
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile tf1.ves
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\vespy_methods.c
+vesti compile tf1.ves
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile tf1.ves
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v tf1.ves
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v src\vespy_methods.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+v .vesti-dummy\tf1.tex
+vesti compile tf1.ves
+v tf1.ves
+vesti compile -WE tf1.ves
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+ls
+v src\parser\ast.zig
+v src\parser\Parser.zig
+cd Github\tree-sitter-vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v grammar.js
+v queries\vesti\highlights.scm
+lfg
+lg
+cd $env.LOCALAPPDATA
+cd nvim
+cd after\queries\vesti\
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+lg
+v
+cd ..
+ls
+cd tree-sitter-vesti\
+tree-sitter generate; tree-sitter test
+lg
+cd ./.
+cd ..
+cd vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+ls
+cd Manual\
+ls
+vesti compile vesti_man.ves
+lg
+start vesti_man.pdf
+cd ../..
+cd ..
+ls
+homework 
+ls
+cd Numerical_Analysis\
+s
+mkdir Undergrad
+ls
+mv Final\ Personal-project-1.pdf Personal-project-1.tex `Team Project\` Undergrad\
+ls
+mkdir Grad
+cd Grad\
+ls
+homework 
+cd Numerical_Analysis\Grad\
+ls
+cp -r ../../../TF/2025-2/SetTheory_Kim_Prof/* .
+ls
+vesti clear
+ls
+rm `tf1 (conflicted).pdf`
+ls
+mv tf1.ves homework1.ves
+rm tf1.pdf
+vesti compile homework1.ves
+v homework1.ves
+ls
+v homework1.ves
+start homework1.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Numerical_Analysis\Grad
+ls
+vesti compile homework1.ves
+v homework1.ves
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+vesti compile -WE homework1.ves
+v homework1.ves
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+v fooo.txt
+ls
+v foo.py
+python foo.py
+pip install matplotlib
+python foo.py
+v foo.py
+python foo.py
+time
+v fooo.txt
+ls
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+ls
+mv foo.py gauss.py
+cp gauss.py tridiag.py
+v tridiag.py
+ls
+python tridiag.py
+v tridiag.py
+python tridiag.py
+v tridiag.py
+python tridiag.py
+v tridiag.py
+python tridiag.py
+v tridiag.py
+python tridiag.py
+ls
+imgch -t png gauss.webp
+imgch -t png tridiag.webp
+start .
+v homework1.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Homework\Numerical_Analysis\Grad
+v homework1.ves
+v gauss.py
+vesti compile -WE homework1.ves
+v homework1.ves
+teachingf 
+;sd
+ls
+cd 2025-2\
+ls\
+ls
+cd Analysis2_Kim_Prof\
+ls
+cp ../SetTheory_Kim_Prof/* .
+cp -r ../SetTheory_Kim_Prof/* .
+ls
+cd ..
+ls
+cd SetTheory_Kim_Prof\
+ls
+rm `tf1 (conflicted).pdf`
+cd ..
+ls
+cd Analysis2_Kim_Prof\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Kim_Prof
+rm `tf1 (conflicted).pdf`
+start tf1.pdf
+vesti compile -WE tf1.ves
+v tf1.ves
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\AApproach\
+ls
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Kim_Prof\
+ls
+start tf1.pdf
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Kim_Prof
+ls
+homework 
+ls
+cd Numerical_Analysis\Grad\
+ls
+v homework1.ves
+vesti compile homework1.ves
+v tf1.ves
+vesti compile -WE tf1.ves
+shutdown /s /t 0
+cd .local
+ls
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.218+1872c85ac zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.235+377a8b2a3\ zig
+ls
+rm -r zig-compiler
+rm -s
+cd
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Kim_Prof\
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Kim_Prof
+ls
+start tf1.pdf
+v tf1.ves
+vesti compile -WE tf1.ves
+cd Icedrive\Photos\
+ls
+wallp set 0 `유노 일러스트.jpg`
+wallp set 0 `유노 일러스트_(no_logo).jpg`
+base64 aHR0cHM6Ly9raW8uYWMvYy9hNUFvaVZta1pjS3dIMVVHX0Vuekti
+cd Test\fooo\
+ls
+rm *
+ls
+cd $env.APPDATA
+cd StabilityMatrix\Models\Lora\
+s
+pwd | pbcopy 
+mv `고양이 헤드셋\` C:\Users\almag\AppData\Roaming\StabilityMatrix\Models\Lora
+ls
+teachingf 
+ls
+cd 2025-2\
+lsd
+ls
+cd Analysis2_Kim_Prof\
+ls
+rm `tf1 (conflicted).ves`
+cp tf1.ves additional1.ves
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Kim_Prof
+ls
+vesti compile additional1.ves
+ls
+cd Github\vesti\
+ls
+cd $env.APPDATA
+cd vesti\coprime\
+ls
+v src\parser\ast.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd .local
+ls
+zigup
+ls
+rm -r zig
+v vesti.zon
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.238+580b6d1fa .
+rm -r zig-compiler\
+ls
+cd zls\
+ls
+cd ..
+ls
+mv zig-x86_64-windows-0.16.0-dev.238+580b6d1fa zig
+cd zls
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile additional1.ves
+mkdir report
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile additional1.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+sd
+ls
+mkdir template
+cd coprime\
+ls
+cp vesti.zon ../template/
+cd ..
+ls
+cd template\
+ls
+ls
+v vesti.zon
+ls
+v first.py
+ls
+bat vesti.zon
+v first.py
+v additional1.ves
+ls
+vesti clear
+ls
+rm first.py
+vesti compile additional1.ves
+ls
+vesti compile additional1.ves
+vesti compile -a additional1.ves
+v .vesti-dummy\additional1.tex
+v .vesti-dummy\@vesti__2367009ed27f5e44.tex
+v .vesti-dummy\@vesti__f97d9a11b4833632.tex
+ls
+mkdir tf
+mv tf tf1
+mv tf1.ves tf1.pdf first.py tf1\
+ls
+mkdir additional1
+ls
+mv additional1.ves additional1\
+rm additional1.pdf font.ves
+rm font.ves
+vesti clear
+ls
+cd additional1\
+v src\commands.zlap
+ls
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+cd additional1\
+ls
+vesti compile additional1.ves
+start additional1.pdf
+ㅣㅎ
+lg
+v font.ves
+ls
+cd ..
+ls
+cd coprime\
+lg
+cd ..
+ls
+cd template\
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/e0328eric/vesti-template.git
+git push -u origin main
+lg
+ls
+v additional1.ves
+cd ../..
+ls
+cd SetTheory_Kim_Prof\
+ls
+vesti clear
+vesti compile -WE additional1.ves
+ls
+mkdir tf1
+mv first.py tf1.pdf tf1.ves tf1\
+ls
+mkdir additional1
+cd additional1\
+v additional1.ves
+v additional1.ves
+ls
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof\additional1
+ls
+ves compile additional1.ves
+vesti compile additional1.ves
+start additional1.pdf
+v ../tf1/tf1.ves
+vesti compile -WE additional1.ves
+v additional1.ves
+shutdown /s /t 0
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof\additional1
+ls
+pwd | pbcopy 
+ls
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\SetTheory_Kim_Prof\additional1
+ls
+start additional1.pdf
+vesti compile -WE additional1.ves
+teachingf 
+ls
+cd 2025-2\Analysis2_Kim_Prof\
+cd ..
+ls
+cd SetTheory_Kim_Prof\
+ls
+cd tf1\
+v tf1.ves
+teachingf 
+cd 2025-2\
+ls
+cd SetTheory_Kim_Prof\
+ls
+cd tf1\
+ls
+v tf1.ves
+ls
+v additional1.ves
+vesti compile -WE additional1.ves
+v additional1.ves
+vesti compile -WE additional1.ves
+cd
+ls
+kindergarten 
+ls
+cd Volume2\
+ls
+mv build.py first.py
+vesti compile kindergarten-vol2.ves
+v kindergarten-vol2.ves
+vesti compile kindergarten-vol2.ves
+v first.py
+ls
+cd Github\vesti\
+ls
+v first.py
+ls
+vesti compile kindergarten-vol2.ves
+v Settings\
+ls
+v kindergarten-vol2.ves
+vesti compile kindergarten-vol2.ves
+start kindergarten-vol2.pdf
+v font.ves
+cd $env.APPDATA
+ls
+cd vesti\template\
+ls
+v first.py
+ls
+vesti compile kindergarten-vol2.ves
+v font.ves
+v font.ves
+v first.py
+vesti compile kindergarten-vol2.ves
+ls
+ls .vesti-dummy\
+v kindergarten-vol2.ves
+vesti compile kindergarten-vol2.ves
+v kindergarten-vol2.ves
+vesti compile -x kindergarten-vol2.ves
+cd $env.APPDATA
+cd vesti\template\
+ls
+cd Github\vesti\
+ls
+v src\vespy_methods.c
+v first.py
+lg
+kindergarten 
+s
+cd Volume2\
+ls
+vesti compile -WE kindergarten-vol2.ves
+v Measure-Integration\section5.ves
+shutdown /s /t 0
+julia
+winget search julia
+winget install Julialang.Julia
+cd Github\vesti\
+v build.zig
+cd ..
+ls
+cd `Github\vesti - Copy\`
+cd ..
+mv `vesti - Copy\` vesti_julia
+cd vesti_julia\
+ls
+v src\lexer\Token.zig
+ls
+cd srcv
+cd src
+ls
+cd ..
+ls
+v build.zig\
+v build.zig
+ls
+v src\vesti_c.h
+ls
+cd src
+ls
+cd ..
+ls
+v compile_commands.json
+v src\julia.c
+ls
+cd src\
+ls
+rm julia.c
+ls
+v julia.c
+v vesti_c.h
+v Julia.zig
+ls
+v julia.h
+cd ..
+ls
+zig build
+v build.zig
+zig build
+cd ..
+rm -rp vesti_julia\
+ls
+cd Github\vesti\
+ls
+v compile_commands.json
+;s
+ls
+rm compile_commands.json
+ls
+v build.zig
+ls
+cd src\
+ls
+v lexer\Token.zig
+v parser\ast.zig
+ls
+rm Python.zig
+ls
+mv vespy.c vesjl.c
+mv vespy.h vesjl.h
+rm vespy_methods.c
+ls
+v vesjl.h
+ls
+v Julia.zig
+shutdown /s /t 0
+cd Github\vesti\
+lks
+ls
+cd src\
+ls
+rm vesjl.c vesjl.h
+v vesti_c.h
+cd ..
+lsd
+ls
+v build.zig
+v src\Julia.zig
+zig build run -- compile foo.ves
+v build.zig
+zig build run -- compile foo.ves
+v build.zig
+zig build run -- compile foo.ves
+v build.zig
+zig build run -- compile foo.ves
+v foo.ves
+v src\lexer\Lexer.zig
+ls
+cd src
+s
+mv pyscript.zig jlscript.zig
+rg "pyscript" *
+v compile.zig
+v commands.zlap
+ls
+v main.zig
+rg "py" *
+v lexer\Lexer.zig
+ls
+v jlscript.zig
+rg "python" *
+cd Github\vesti\
+ls
+cd src
+ls
+rg "py" *
+rg "Py" *
+cd ..
+zig build run -- compile foo.ves
+rm -rp .zig-cache\
+rm -rp .cache\
+ls
+zig build run -- compile foo.ves
+lg
+v Codegen.zig
+v parser\Parser.zig
+zig build
+v foo.ves
+zig build run -- compile foo.ves
+zig build
+zig build run -- compile foo.ves
+zig build run -- compile -dss foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+cd Test\fooo\
+ls
+v main.c
+winget uninstall Julialang.Julia
+winget install --name Julia --id 9NJNWW8PVKMN -e -s msstore
+juliaup.exe 
+juliaup.exe default
+juliaup.exe default +1.11
+juliaup.exe default +1.10
+juliaup.exe default +1.6
+juliaup.exe default 1.11
+juliaup.exe add
+juliaup.exe add --help
+julia list
+juliaup.exe list
+juliaup.exe add 1.11
+ls
+cd .julia
+ls
+cd juliaup\
+ls
+cd julia-1.11.7+0.x64.w64.mingw32\
+ls
+pwd | pbcopy 
+cd
+lsd
+cd Test\fooo\
+ls
+v main.c
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -ljulia.dll -lopenlibm.dll
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lmingw32
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lgcc
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lgcc -lmsvcrt
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lgcc -lmsvcrt
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lgcc -lmsvcrt -target x86_64-windows-gnu
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lgcc -lmsvcrt -target x86_64-windows-msvc
+zig cc -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll -lgcc -lmsvcrt -target x86_64-windows-gnu
+clang main.c  -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+zig cc main.c  -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+./a.exe
+zig cc main.c  -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+./a.exe
+cd Test\fooo\\
+ls
+./a.exe
+ls
+cd
+cd Github\
+ls
+start .
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+cp -r vesti vesti-julia
+cd vesti-julia\
+ls
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+$env.JULIA_DIR
+v build.zig
+zig build
+v build.zig
+ls
+cd src\
+ls
+cd ..
+ls
+rm compile_commands.json
+rm -rp .cache\
+ls
+vesti clear
+ls
+cd src
+ls
+rm vespy.c vespy.h io.h vespy_methods.c
+rm io.h
+ls
+rm vespy_methods.c
+mv Python.zig Julia.zig
+mv pyscript.zig jlscript.zig
+ls
+v lexer\Token.zig
+ls
+v parser\ast.zig
+ls
+v parser\Parser.zig
+pwd | pbcopy 
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+ls
+v chapter4\general-case.ves
+vesti compile -WE aapproach.ves
+cd C:\Users\almag\IceDrive\TeX_Documents\Seminar\Doctor\AApproach
+cd Github\vesti-julia\
+s
+cd src
+ls
+cd Github\vesti-julia\
+cd src
+ls
+rg "python" *
+rg "py" *
+rg -h
+rg -i "py" *
+v Codegen.zig
+ls
+cd parser\tests\
+ls
+mv pycode.zig jlcode.zig
+v jlcode.zig
+v ../
+cd .
+cd ..
+ls
+cd ..
+ls
+v parser\tests\jlcode.zig
+v Codegen.zig
+v Julia.zig
+cd ..
+zig build
+v src/Julia.zig
+v src\parser\Parser.zig
+zig build
+v foo.ves
+zig build run -- compile -s foo.ves
+v build.zig
+zig build run -target x86_64-windows-gnu -- compile -s foo.ves
+zig build run -Dtarget=x86_64-windows-gnu -- compile -s foo.ves
+ls
+cd src\
+ls
+v julia.c
+cd ..
+ls
+v build.zig
+v src\julia.c
+zig build run -Dtarget=x86_64-windows-gnu -- compile -s foo.ves
+v src\julia.c
+v build.zig
+v src\julia.c
+v build.zig
+zig build run -Dtarget=x86_64-windows-gnu -- compile -s foo.ves
+cd Test\fooo\
+v build.zig
+zig build run -Dtarget=x86_64-windows-gnu -- compile -s foo.ves
+v main.c
+zig cc main.c  -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+./a.exe
+$env.JULIA_DIR
+v build.zig
+zig cc main.c  -I../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/include/julia -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib -L../../.julia/juliaup/julia-1.11.7+0.x64.w64.mingw32/lib/julia  -ljulia.dll -lopenlibm.dll
+zig build run -- compile -s foo.ves
+juliaup list
+zig build
+rm -rp .zig-cache zig-out
+zig build
+ls
+cd src\
+ls
+mkdir julia
+cd ..
+ls
+cd src
+ls
+v commands.zlap
+v main.zig
+ls
+mv julia.c Julia.zig julia
+ls
+cd julia\
+ls
+bat julia.c
+mv julia.c julia_fast_lts.c
+cd ../..
+ls
+v build.zig
+ls
+cd src
+ls
+v Codegen.zig
+v compile.zig
+v jlscript.zig
+ls
+rg "./" *
+rg "\\./" *
+cd Github\vesti-julia\
+v src\main.zig
+v src\parser\tests\importpkg.zig
+ls
+cd src\julia\
+ls
+v vesti.jl
+ls
+cd ..
+ls
+mv julia_fast_lts.c vesjulia.c
+v build.zig
+v Julia.zig
+v vesjulia.c
+ls
+v vesti.jl
+ls
+julia
+ls
+lg
+v vesjulia.c
+v foo.ves
+start foo.pdf
+zig build run -- compile -s foo.ves
+ls
+cd ..
+ls
+cd julia\Julia.zig
+cd julia\
+v Julia.zig
+ls
+v vesjulia.c
+v build.zig
+zig build run -- compile -s foo.ves
+juliaup.exe list
+juliaup.exe add nightly~x64
+v build.zig
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+v Julia.zig
+ls
+v foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+v vesti.jl
+cd ..
+ls
+seminar
+cd Doctor\AApproach\
+ls
+cd Github\vesti-julia\
+ls
+v foo.ves
+zig build run -- compile -s foo.ves
+cd Github\vesti-julia\
+ls
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+cd zig-out\bin\
+dumpbin.exe /dependents vesti.exe
+cd ..
+ls
+cd ..
+ls
+v build.zig
+julia
+zig build run -- compile -s foo.ves
+v src\julia\vesjulia.c
+cd src\julia\
+ls
+v vesti.jl
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+lg tree-sitter-vesti\
+cd tree-sitter-vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+kindergarten 
+ls
+cd Volume2\
+ls
+v kindergarten-vol2.ves
+ls
+kindergarten 
+cd Volume2\
+julia
+juliaup -h
+juliaup remove
+juliaup remove --help
+juliaup list
+juliaup remove nightly~x64
+cd Github\vesti-julia\
+v src\julia\vesti.jl
+julia
+ls
+v first.jl
+ls
+rm first.py
+vesti compile kindergarten-vol2.ves
+v first.jl
+vesti compile kindergarten-vol2.ves
+v first.jl
+vesti compile kindergarten-vol2.ves
+vesti clear
+vesti compile kindergarten-vol2.ves
+ls .vesti-dummy\
+v first.jl
+vesti clear
+v first.jl
+vesti clear
+vesti compile kindergarten-vol2.ves
+v first.jl
+vesti clear
+vesti compile kindergarten-vol2.ves
+julia
+v src\julia\Julia.zig
+v foo.ves
+zig build run -- compile -s foo.ves
+start foo.pdf
+v foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\vesjulia.c
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves\
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+v src\julia\Julia.zig
+zig build run -- compile -s foo.ves
+ls
+cd $env.APPDATA
+cd vesti
+ls
+cd template\
+l;s
+mv first.py first.jl
+v first.jl
+v font.ves
+v vesti.zon
+ls
+v first.jl
+ls
+v font.ves
+v kindergarten-vol2.ves
+vesti compile kindergarten-vol2.ves
+v first.jl
+lg
+ls
+ls
+cd ..
+ls
+mv vesti vesti-py
+mv vesti-julia vesti
+ls
+cd vesti\
+ls
+zig version | pbcopy 
+v build.zig.zon
+v build.zig
+ls
+zig build test
+v build.zig
+zig build test
+v build.zig
+zig build test
+v build.zig
+zig build test
+v src\julia\vesti.jl
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesti.jl
+vesti compile kindergarten-vol2.ves
+v src\julia\vesti.jl
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesti.jl
+v src\julia\Julia.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\Julia.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile kindergarten-vol2.ves
+start foo.pdf
+v foo.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build run -- compile -s foo.ves\
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+lg
+ls
+cd ..
+s
+cd tree-sitter-vesti\
+v grammar.js
+v src\scanner.c
+tree-sitter generate
+v src\scanner.c
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+v queries\vesti\highlights.scm
+v queries\vesti\injections.scm
+tree-sitter generate
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+cd after\queries\vesti\
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+cd Github\vesti\
+v foo.ves
+v
+v foo.ves
+v queries\vesti\injections.scm
+v injections.scm
+cd Github\tree-sitter-vesti\
+v grammar.js
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+lg
+v 
+v injections.scm
+cd
+cd Github\tree-sitter-vesti\
+v test\corpus\pycode.txt
+cd test\corpus\
+ls
+mv pycode.txt jlcode.txt
+tree-sitter test
+v grammar.js
+tree-sitter generate
+v grammar.js
+tree-sitter test
+v grammar.js
+tree-sitter test
+tree-sitter generate
+tree-sitter test
+v grammar.js
+tree-sitter generate
+tree-sitter test
+tree-sitter generate
+lg
+v
+v jlcode.txt
+v foo.ves
+ls
+tree-sitter test
+ls
+v foo.ves
+tree-sitter test
+v foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+ls
+v grammar.js
+v queries\vesti\highlights.scm
+tree-sitter generate
+lg
+v jlcode.txt
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+lg
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+ls
+rm highlights.scm injections.scm
+v foo.ves
+v highlights.scm
+v injections.scm
+v ../../queries/vesti/injections.scm
+lg
+lg
+cd ../..
+ls
+cd ..
+ls
+cd vesti-py\
+ls
+rm -rp .git
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/e0328eric/vesti-python.git
+git push -u origin main
+lg
+cd ..
+ls
+cd vesti
+lg
+v \$Recycle.Bin\
+v README.md
+lg
+teachingf 
+ls
+cd 2025-2\
+ls
+cd SetTheory_Kim_Prof\
+ls
+cd tf1\
+ls
+v tf1.ves
+vesti compile tf1.ves
+v tf1.ves
+ls
+ls .vesti-dummy\
+rm first.py
+v tf1.ves
+vesti compile tf1.ves
+vesti clear
+vesti compile tf1.ves
+v src\julia\Julia.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\Julia.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+start tf1.pdf
+v tf1.ves
+cd $env.APPDATA
+ls
+cd helix
+ls
+cd runtime\grammars\
+ls
+rm vesti.dll
+cd ..
+ls
+cd queries\vesti\
+lsd
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+ls
+hx -g fetch; hx -g build
+hx font.ves
+hx tf1.ves
+v highlights.scm
+v injections.scm
+cd ..
+ls
+cd ..
+cd grammars\
+ls
+rm vesti.dll
+cd sources\vesti\
+ls
+cd ..
+rm -rp vesti
+hx -g fetch; hx -g build
+cd
+ls
+cd Github\tree-sitter-vesti\
+ls
+cd ..
+ls
+cd $env.APPDATA
+cd helix
+ls
+cd snippets\
+ls
+cd ..
+ls
+cd tree-sitter-vesti\
+ls
+v src\scanner.c
+ls
+tree-sitter generate
+tree-sitter test
+v src\scanner.c
+tree-sitter generate
+tree-sitter test
+v src
+cd src
+rm scanner.c
+cd ..
+tree-sitter generate
+cd src
+ls
+v scanner.c
+cd ..
+tree-sitter generate
+cd ..
+cd tree-sitter-vesti\
+tree-sitter generate
+tree-sitter test
+v grammar.js
+ls
+cd runtime\
+ls
+dc queries\vesti\
+cd queries\vesti\
+ls
+v queries\vesti\highlights.scm
+v highlights.scm
+cd ../..
+cd grammars\
+rm -rp vesti.dll
+rm -rp sources\vesti\
+hx -g fetch; hx -g build
+hx tf1.ves
+lg
+rm -rp sources\vesti\
+rm vesti.dll
+hx tf1.ves
+hx -g fetch; hx -g build
+v
+v grammar.js
+lg
+tree-sitter generate
+lg
+v tf1.ves
+v 
+v first.jl
+v tf1.ves
+ls
+cd ..
+ls
+rm vesti.dll
+rm -rp sources\vesti\
+hx -g fetch; hx -g build
