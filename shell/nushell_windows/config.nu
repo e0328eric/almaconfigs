@@ -810,4 +810,4 @@ alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
 alias kindergarten = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarten
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+oh-my-posh init nu --config $"($nu.config-path | path dirname)/emodipt-extend.omp.json "

@@ -14976,3 +14976,321 @@ ls
 rm vesti.dll
 rm -rp sources\vesti\
 hx -g fetch; hx -g build
+lg
+ls
+hx font.ves
+hx tf1.ves
+ls
+cd vesti\
+ls
+v src\julia\Julia.zig
+lg
+seminar
+cd Doctor\AApproach\
+ls
+v aapproach.ves
+ls
+rm first.py
+mv step.py step.jl
+v step.jl
+ls
+vesti compile aapproach.ves
+vesti clear
+vesti compile aapproach.ves
+cd Github\vesti\
+cd src
+ls
+rg "python" *
+v step.jl
+vesti compile aapproach.ves
+v step.jl
+v jlscript.zig
+v julia\Julia.zig
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v first.jl
+v aapproach.ves
+v first.jl
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v aapproach.ves
+v first.jl
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v step.jl
+v src\julia\vesjulia.c
+vesti compile aapproach.ves
+v step.jl
+vesti compile aapproach.ves
+v src\commands.zlap
+v src\jlscript.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v first.jl
+v step.jl
+ls
+v step.jl
+ls
+v src\jlscript.zig
+cd $env.APPDATA
+cd vesti\template\
+v step.jl
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v step.jl
+ls
+cd ..
+ls
+cd tree-sitter-vesti\
+v grammar.js
+tree-sitter generate
+lg
+v aapproach.ves
+v 
+v grammar.js
+lg
+tree-sitter generate
+lg
+v aapproach.ves
+v
+v aapproach.ves
+vesti compile aapproach.ves
+v aapproach.ves
+vesti compile aapproach.ves
+v aapproach.ves
+vesti compile aapproach.ves
+v aapproach.ves
+v first.jl
+vesti compile aapproach.ves
+v first.jl
+cd ..
+cd vesti\
+ls
+cd src\julia\
+ls
+v Julia.zig
+ls
+cd ..
+v first.jl
+lg
+v compile.zig
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+v step.jl
+julia step.jl
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+shutdown /s /t 0
+cd Github\vesti\
+ls
+seminar
+ls
+cd Doctor\AApproach\
+ls
+julia
+vesti compile aapproach.ves
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\Julia.zig
+julia
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\julia\vesjulia.c
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+julia
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v first.jl
+vesti compile aapproach.ves
+v first.jl
+v step.jl
+vesti compile aapproach.ves
+cd Icedrive\Photos\
+lsd
+ls
+wallp set 0 lilpa_night.png
+v step.jl
+ls
+v foo.ves
+vesti compile -s foo.ves
+v foo.ves
+vesti compile -s foo.ves
+ls
+v step.jl
+vesti compile -s foo.ves
+v foo.ves
+vesti compile -s foo.ves
+v src\julia\vesjulia.c
+ls
+rm step.jl
+s
+lg
+ls
+cd examples\
+ls
+v crop_pdf.ves
+cd ..
+lg
+ls
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Yang_Prof\
+ls
+mkdir tf1
+cd tf1\
+ls
+v tf1.ves
+pwd | pbcopy 
+C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Yang_Prof\tf1cd 
+cd C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Yang_Prof\tf1
+ls
+v tf1.ves
+vesti compile tf1.ves
+ls
+vesti compile tf1.ves
+v aapproach.ves
+hx aapproach.ves
+cd Github\tree-sitter-vesti\
+ls
+v src\scanner.c
+v grammar.js
+tree-sitter generate
+lg
+v aapproach.ves
+v
+v aapproach.ves
+start tf1.pdf
+v tf1.ves
+v ../../Analysis2_Kim_Prof/tf1/tf1.ves
+ced
+cd
+julia
+v tf1.ves
+shutdown /s /t 0
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Yang_Prof\
+ls
+cd tf1\
+ls
+cd ..
+lcd
+cd tf1\
+ls
+start tf1.pdf
+pwd | pbcopy 
+C:\Users\almag\IceDrive\TeX_Documents\TF\2025-2\Analysis2_Yang_Prof\tf1
+v tf1.ves
+shutdown /s /t 0
+cd Github/vesti/
+ls
+cd
+cd .local
+zigup
+ls
+rm -rp zig
+rm -s
+rm -p
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.254+6dd0270a1 zig
+rm -r zig-compiler
+ls
+zig version
+cd
+cd Github\vesti
+ls
+cd Github\tree-sitter-vesti\
+v build.zig
+cd
+seminar
+cd Doctor\AApproach\
+ls
+v foo.ves
+v aapproach.ves
+winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
+oh-my-posh font install
+v $nu.config-path
+ls
+seminar
+ls
+cd Doctor\AApproach\
+v $nu.env-path
+source $nu.config-path
+v $nu.config-path
+ls
+winget uninstall starship
+v $nu.config-path
+cd Github\arch-almagest\shell\nushell_windows\
+ls
+v config.nu
+curl --location -O https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/refs/heads/main/themes/emodipt-extend.omp.json
+cd ..
+ls
+cd powershell\
+ls
+cp ../nushell_windows/emodipt-extend.omp.json .
+v Microsoft.Powershell_profile.ps1
+pwd | pbcopy 
+v Microsoft.Powershell_profile.ps1
+cd ..
+ls
+cd nushell_windows\
+ls
+v config.nu
+$nu.config-path
+v config.nu
+source $nu.config-path
+source $nu.env-path
+source $nu.config-path
+cd Github\arch-almagest\shell\nushell_windows\
+cd ..
+ls
+cd nushell_linux\
+ls
+cp ../nushell_windows/emodipt-extend.omp.json .
+v ../nushell_windows/config.nu
+v config.nu
+ls

@@ -24,8 +24,6 @@ function ln ($path, $symlink) {
     New-Item -Path $symlink -ItemType SymbolicLink -Value $path
 }
 
-Invoke-Expression (&starship init powershell)
-
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
 # Be aware that if you are missing these lines from your profile, tab completion
@@ -35,3 +33,5 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+oh-my-posh init pwsh --config C:\Users\almag\Github\arch-almagest\shell\powershell\emodipt-extend.omp.json | Invoke-Expression
