@@ -15294,3 +15294,22 @@ cp ../nushell_windows/emodipt-extend.omp.json .
 v ../nushell_windows/config.nu
 v config.nu
 ls
+lg
+cd ..
+ls
+cd nushell_windows\
+v emodipt-extend.omp.json
+vesti compile tf1.ves
+v emodipt-extend.omp.json
+vesti compile -s tf1.ves
+cd ..
+ls
+cd nushell_linux\
+cp ../nushell_windows/emodipt-extend.omp.json .
+lg
+cd Github\arch-almagest\
+lg
+cd .git
+ls
+rm index.lock
+cd ..
