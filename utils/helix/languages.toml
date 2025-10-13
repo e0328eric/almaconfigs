@@ -44,6 +44,17 @@ command = "tinymist"
 config = { exportPdf = "onType" }
 
 [[language]]
+name = "julia"
+scope = "source.jl"
+roots = []
+injection-regex = "jl"
+comment-token = "#"
+
+[[grammar]]
+name = "julia"
+source = { git = "https://github.com/tree-sitter/tree-sitter-julia.git", rev = "73d1539a51b8a202d6d2471cc594cf4d7c5e673f"}
+
+[[language]]
 name = "typst"
 scope = "source.typ"
 roots = []

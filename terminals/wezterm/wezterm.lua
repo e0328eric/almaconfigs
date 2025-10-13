@@ -167,7 +167,12 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			mods = "CTRL|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 		},
-		{
+    {
+      key = "u",
+      mods = "CTRL|SHIFT",
+      action = wezterm.action.CharSelect { copy_on_select = true },
+    },
+  	{
 			key = "w",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.CloseCurrentPane({ confirm = true }),
@@ -204,7 +209,12 @@ else
 			key = "s",
 			mods = "ALT|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
-		},
+	  },
+	  {
+      key = "u",
+      mods = "CTRL|SHIFT",
+      action = wezterm.action.CharSelect { copy_on_select = true },
+    },
 		{ key = "f", mods = "CMD|CTRL", action = act.ToggleFullScreen },
 		{ key = "Enter", mods = "ALT", action = act.DisableDefaultAssignment },
 		{ key = "r", mods = "CMD|CTRL", action = act.ReloadConfiguration },

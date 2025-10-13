@@ -1,6 +1,5 @@
-2025-07-30T01:22:20.052860Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
-2025-07-30T01:22:20.076198Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
-2025-07-30T01:22:20.664767Z  WARN rio-backend\src\performer\handler.rs:1144: [csi_dispatch] params=[1], intermediates=[], should_ignore=false, action='t'
-2025-07-30T01:22:25.722252Z  WARN rio-backend\src\performer\handler.rs:745: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 745
-2025-07-30T01:22:30.977803Z  WARN rio-backend\src\performer\handler.rs:745: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 745
-2025-07-30T01:22:48.539512Z  WARN rio-backend\src\performer\handler.rs:745: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 745
+2025-10-09T02:57:03.987904Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\Windows\Fonts\mstmc.ttf' cause malformed font.
+2025-10-09T02:57:04.165802Z  WARN sugarloaf\src\font\loader\mod.rs:166: Failed to load a font face 0 from 'C:\WINDOWS\Fonts\mstmc.ttf' cause malformed font.
+2025-10-09T02:57:08.826100Z  WARN rio-backend\src\performer\handler.rs:1144: [csi_dispatch] params=[1], intermediates=[], should_ignore=false, action='t'
+2025-10-09T02:57:11.078574Z  WARN rio-backend\src\performer\handler.rs:745: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 745
+2025-10-09T02:57:21.641504Z  WARN rio-backend\src\performer\handler.rs:745: [unhandled osc_dispatch]: [['9'],['9'],['C'':''\\''U''s''e''r''s''\\''a''l''m''a''g'],] at line 745

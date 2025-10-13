@@ -270,9 +270,9 @@
 ; Remaining identifiers
 ; ---------------------
 
-(const_statement
-  (variable_declaration
-    . (identifier) @constant))
+; (const_statement
+;   (variable_declaration
+;     . (identifier) @constant))
 
 ; SCREAMING_SNAKE_CASE
 (

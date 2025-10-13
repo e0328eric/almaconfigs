@@ -9,7 +9,6 @@
       (primitive_definition)
       (abstract_definition)
       (struct_definition)
-      (assignment_expression)
       (const_statement)
     ])
   (#set! injection.language "markdown"))
