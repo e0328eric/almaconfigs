@@ -3,7 +3,7 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-shift-h": "outline_panel::ToggleFocus",
-      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-\\": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
       "ctrl-shift-o": "file_finder::Toggle"
     }
@@ -25,7 +25,7 @@
     "bindings": {
       "ctrl-\\": "vim::InsertLineAbove",
       "ctrl-shift-h": "outline_panel::ToggleFocus",
-      "ctrl-shift-b": "workspace::ToggleLeftDock",
+      "ctrl-shift-\\": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
       "tab": "pane::ActivateNextItem"
     }

@@ -8,7 +8,7 @@ args = []
 
 # Fonts
 [fonts]
-size = 13
+size = 15
 extras = [{ family = "D2CodingLigature Nerd Font Mono" }]
 features = ["ss02", "ss03", "ss05", "ss19"]
 
@@ -34,8 +34,8 @@ weight = 800
 
 [window]
 opacity = 0.75
-decorations = "Disabled"
-# decorations = "Enabled"
+#decorations = "Disabled"
+decorations = "Enabled"
 blur = true
 
 [developer]
@@ -57,6 +57,7 @@ args = [
 keys = [
   { key = "[", with = "control | shift", action = "SelectPrevSplit" },
   { key = "]", with = "control | shift", action = "SelectNextSplit" },
+  { key = "U", with = "control | shift", action = "CreateTab " },
 ]
 
 [platform]

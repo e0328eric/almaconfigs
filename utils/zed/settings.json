@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Zed (Default)",
   "vim_mode": true,
   "relative_line_numbers": true,
   "ui_font_size": 14,
@@ -15,12 +16,22 @@
   "wrap_guides": [80],
   //"disable_ai": true,
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font Mono"
+    "font_family": "JetBrainsMono Nerd Font Mono",
+    "shell": {
+      "with_arguments": {
+        "program": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": [
+          "-NoExit",
+          "-Command",
+          "&{Import-Module \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments \"-arch=x64 -host_arch=x64\"}; nu.exe"
+        ]
+      }
+    }
   },
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Catppuccin Mocha"
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Ayu Dark"
   },
   "languages": {
     "vesti": {

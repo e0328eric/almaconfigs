@@ -18,17 +18,15 @@
 ((KEYWORD_makeatother) @keyword)
 ((KEYWORD_ltx3on) @keyword)
 ((KEYWORD_ltx3off) @keyword)
-((KEYWORD_nonstopmode) @keyword)
-((KEYWORD_textmode) @keyword)
-((KEYWORD_mathmode) @keyword)
 ((KEYWORD_compty) @keyword)
-((KEYWORD_jlcode) @constant)
-((jlcode_end) @constant)
+((KEYWORD_luacode) @constant)
+((luacode_end) @constant)
 
 ;; Identifiers
 ((class_pkg_name) @type)
 ((env_name) @type)
 ((latex_function_name) @function)
+((attributes) @keyword)
 
 ((inline_math) @string)
 ((display_math) @string)

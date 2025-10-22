@@ -800,6 +800,7 @@ alias lg         = lazygit
 alias dyt        = yt-dlp
 alias getmusic   = yt-dlp -x --audio-format m4a
 alias pbcopy     = win32yank.exe -i
+alias archlinux  = wsl.exe -d archlinux --cd ~ -u almagest
 
 alias hakwon     = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
 alias minireport = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report

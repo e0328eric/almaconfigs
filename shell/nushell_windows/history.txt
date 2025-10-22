@@ -18491,3 +18491,2071 @@ las
 ls
 cd Github\arch-almagest\
 ls
+lg
+v peano-axiom.ves
+hx peano-axiom.ves
+v peano-axiom.ves
+vesti compile -WE peano-axiom.ves
+teachingf 
+ls
+cd 2025-2\
+ls
+cd SetTheory_Kim_Prof\
+s
+cd tf3\
+start peano-axiom.pdf
+v peano-axiom.ves
+start .
+vesti compile -WE peano-axiom.ves
+v peano-axiom.ves
+seminar
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+vesti compile -WE peano-axiom.ves
+vesti compile -WE aapproach.ves
+cd
+cd Github\vesti
+ls
+v src\parser\ast.zig
+v src\parser\Parser.zig
+lg
+v build.zig
+v src\Codegen.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src/diagnostic.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Codegen.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile  aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile  aapproach.ves
+vesti compile aapproach.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Parser.zig
+vesti compile aapproach.ves
+v src\parser\Parser.zig
+rg "nocheckin" src
+v src\parser\ast.zig
+shutdown /s /t 0
+v chapter6\proof.ves
+ls
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Kim_Prof\
+ls
+cp -r tf2 tf3
+cd tf3\
+ls
+rm tf2.pdf
+mv tf2.ves tf3.ves
+vesti run
+ls
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Yang_Prof\
+ls
+v \$Recycle.Bin\\
+teachingf 
+ls
+cd Analysis2_Yang_Prof\
+cd 2025-2\
+cd Analysis2_Yang_Prof\
+ls
+cd tf1\
+cd 
+cd Github\vesti
+vesti compile tf3.ves
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile tf3.ves
+start tf3.pdf
+v src\commands.zlap
+ls
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -WEV tf3.ves
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\compile.zig
+start tf3.pdf
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+which start
+cd ../..
+cd SetTheory_Kim_Prof\
+cd tf3\
+start .
+v tf3.ves
+ls .vesti-dummy\
+cd .vesti-dummy\
+ls
+xelatex tf3.tex
+cd ..
+ls
+texdoc dvipdfmx-specials
+texdoc list
+texdoc --help
+texdoc -l
+texdoc texdoc
+texdoc xelatex
+texdoc lualatex
+texdoc tex
+web
+texdoc web
+texdoc latex
+texdoc ltshipout
+v src\lexer\Token.zig
+v src\parser\Parser.zig
+vesti compile -WE tf3.ves
+v tf3.ves
+vesti compile tf3.ves
+cd ..
+ls
+cd additional2\
+ls
+start additional2.pdf
+v tf1.ves
+v additional1\
+cd Test\
+ls
+rm '[다양성 존중 교육 코어 다지기] 핵심개념② 소통 ： 변화를 이끄는 마음의 열쇠 [Kw4LKPZC8z4].mp4'
+ls
+start .
+cargo new foo
+cd foo
+ls
+cargo add julia
+v src\main.rs
+cargo run
+ls
+cd
+ls
+cd Github\
+ls
+cd vesti-py\
+ls
+cd Github\vesti\
+ls
+v build.zig
+cd ..
+ls
+v build.zig
+cd vesti\
+ls
+cd ..
+ls
+git clone https://github.com/e0328eric/vesti-tectonic-backend.git 
+ls
+mv vesti vesti-zig
+mv vesti-tectonic-backend vesti
+ls
+cd vesti\
+s
+v Cargo.toml
+cargo build -h
+cargo build -F tectonic_backend]\
+cargo build -F tectonic_backend
+cargo build -F tectonic
+v Cargo.toml
+cargo build -F tectonic
+cd ..
+ls
+rm -rp vesti
+mv vesti-zig vesti-julia
+ls
+cd vesti-py\
+ls
+cd Github\vesti-julia\
+ls
+v src\lexer\Token.zig
+cd ..
+mv vesti-julia vesti
+ls
+cd vesti\
+lsa
+ls
+cd src\julia\
+lws
+ls
+v Julia.zig
+v JuliaDll.zig
+zig build
+v Julia.zig
+v JuliaDll.zig
+v Julia.zig
+zig build
+v Julia.zig
+cd Github\vesti
+ls
+cd src\julia\
+ls
+v vesjulia.c
+v JuliaDll.zig
+ls
+rm JuliaDll.zig
+shutdown /s /t 0
+cd Desktop\
+ls
+vesti compile -WE midterm.ves
+ls
+mv `수치해석_중간고사_(정성배).pdf` midterm.pdf
+ls
+start midterm.pdf
+v midterm.ves
+cd
+cd Github\
+lsd
+ls
+cd Github\vesti-py\
+ls
+cd vesti\vesti-tectonic\
+;s
+rm -r target\
+v build.zig
+cd src\
+ls
+v Python.zig
+v vespy.c
+cd ..
+;s
+v build.zig
+zig build
+cd ../..
+ls
+cp -r vesti vesti-julia
+ls
+cd vesti\
+ls
+v build.zig
+z\
+zig build
+v build.zig
+ls
+cd src\
+s
+v build.zig
+v python/vespy.c
+v src\vespy.c
+cd src
+v python/vespy.h
+v lexer\Token.zig
+cd ../..
+cd vesti
+ls
+cd src
+rg "jl" -i *
+v parser\Parser.zig
+v parser\ast.zig
+v lexer\Lexer.zig
+v vespy.h
+v parser\Parser.zig
+ls
+v parser\Parser.zig
+v parser\Parser.zig
+cd Github\vesti
+ls
+cd src
+v python\vespy_methods.c
+ls
+v vespy_methods.c
+v python\Python.zig
+ls
+rm -rp julia
+ls
+v python\PythonDl.zig
+v python\PythonDll.zig
+v Python.zig
+v julia\vesti.jl
+teachingf 
+s
+cd 2025-2\
+ls
+cd Analysis2_Yang_Prof\
+ls
+mkdir tf2
+cd tf2\
+ls
+v first.jl
+vesti run
+v first.jl
+vesti run
+cp ../tf1/tf1.ves 
+cp ../tf1/tf1.ves .
+ls
+mv tf1.ves tf2.ves
+ls
+v tf2.ves
+start tf2.pdf
+cargo install tectonic
+cd
+cd Github\
+s
+git clone https://github.com/e0328eric/vesti-tectonic-backend.git 
+cd vesti-tectonic-backend\
+ls
+v Cargo.toml
+v windows_build.bat
+./windows_build.bat
+vcpkg install graphite2
+v tf2.ves
+ls
+rm `tf2 (conflicted).ves`
+v tf2.ves
+vesti compile -WE tf2.ves
+shutdown /s /t 0
+homework 
+ls
+cd Numerical_Analysis\
+ls
+cd Grad\
+ls
+mkdir midterm
+cd midterm\
+ls
+cd
+cd Github\
+ls
+rm -rp vesti\
+mv vesti-julia vesti
+ls
+cd vesti\
+ls
+cd src\julia\
+ls
+v JuliaDll.zig
+v Julia.zig
+ls
+cd ../..
+v build.zig
+zig build
+v src\julia\Julia.zig
+v src\julia\JuliaDll.zig
+v src\julia\Julia.zig
+zig build
+v build.zig
+cd src\julia\
+ls
+rm JuliaDll.zig
+b Julia.zig
+v Julia.zig
+lg
+cd ../..
+v build.zig
+lg
+v first.jl
+cd Github\vesti\
+ls
+v build.zig
+cd ..ls
+ls
+cd ..
+ls
+cd vesti-vscode-syntax\
+ls
+rm -rp bin node_modules out package-lock.json parsers queries tsconfig.json
+ls
+v syntaxes/vesti.tmLanguage.json
+v package.json
+lg
+v syntaxes\vesti.tmLanguage.json
+ls
+v package.json
+lg
+vsce publish
+cd
+homework 
+s
+cd Numerical_Analysis\Grad\
+ls
+cd midterm\
+ls
+v data.jl
+v first.jl
+vesti run
+ls
+v midterm.ves
+rm data.jl
+vesti compile midterm.ves
+v font.ves
+v midterm.ves
+pwd | pbcopy 
+vesti compile midterm.ves
+start midterm.pdf
+v midterm.ves
+ls
+v .vesti-dummy\
+ls
+ls .vesti-dummy\
+v midterm.ves
+ls
+rm foo.png
+ls
+start fit_comparison.png
+v midterm.ves
+ls
+start fit_comparison_log.png
+v midterm.ves
+start fit_comparison_log.png
+v midterm.ves
+rm fit_comparison_log.png
+v midterm.ves
+rm numeric.jl
+vesti compile -WE midterm.ves
+shutdown /s /t 0
+homework 
+ls
+cd Numerical_Analysis\Grad\
+ls
+cd midterm\
+start midterm.pdf
+vesti compile -WE midterm.ves
+v .vesti-dummy\
+vesti compile -WE midterm.ves
+v midterm.ves
+ls
+teachingf 
+ls
+cd 2025-2\Analysis2_Kim_Prof\
+ls
+cd tf3\
+ls
+start tf3.pdf
+start .
+shutdown /s /t 0
+cd Github\vesti-vscode-syntax\
+ls
+rm vesti-0.30.0.vsix
+ls
+v syntaxes\vesti.tmLanguage.json
+v package.json
+lg
+vsce publish
+cd
+seminar
+cd Doctor\AApproach\
+ls
+v chapter7\embeddings.ves
+vesti compile aapproach.ves
+cd Github
+cp -r vesti vesti-julia
+cd vesti
+ls
+zig fetch --save git+https://github.com/e0328eric/ziglua.git
+;s
+ls
+v build.zig
+ls
+cd src
+ls
+mkdir lua
+ls
+v lua\Lua.zig
+v lua\luascript.zig
+ls
+shutdown /s /t 0
+cd Github\
+ls
+mv vesti vesti-lua
+ls
+cd Github\vesti-lua\
+ls
+cd src
+ls
+v julia\Julia.zig
+ls
+rm -rp julia
+ls
+rm jlscript.zig
+ls
+v diagnostic.zig
+v main.zig
+ls
+v main.zig
+cd Github\vesti-lua\
+zig build --watch -fincremental
+v build.zig
+v build.zig.zon
+v build.zig
+rm -rp .zig-cache\
+zig build --watch -fincremental
+v lua\Lua.zig
+cd ..
+ls
+cd ..
+cd vesti-julia\
+zig build
+cd ..
+ls
+rm -rp vesti-lua\
+ls
+mv vesti-julia vesti
+ls
+cd vesti\
+s
+v build.zig.zon
+v build.zig
+ls
+ls thirdparty\
+rm -rp thirdparty
+ls
+zig build
+v build.zig
+zig build
+zig fetch --save git+https://github.com/jacobsandlund/uucode.git
+zig build
+lg
+ls
+v build.zig.zon
+ls src
+cd ..
+ls
+cd vesti-tectonic-backend\
+ls
+v Cargo.toml
+./windows_build.bat
+cd ..\
+ls
+rm -rp vesti-tectonic-backend
+ls
+cd vesti\
+ls
+cd ..
+ls
+cd vesti-py\
+ls
+lg
+v build.zig
+ls
+cd src
+s
+rm vesti_c.h
+cp ../../vesti/src/vesti_c.zig .
+ls
+cd ..
+ls
+v build.zig
+cd src
+rg "import(\"c\")" src
+rg "import(\"c\")" *
+ls
+v main.zig
+v compile.zig
+cd ..
+zig build
+ls
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+ls
+cd ..
+ls
+cd vesti\
+v build.zig
+v build.zig
+ls vesti-tectonic\
+ls vesti-tectonic\bin\
+v build.zig
+ls
+rm -rp thirdparty vesti-tectonic
+cp -r ../vesti/thirdparty .
+ls
+cp -r ../vesti/vesti-tectonic .
+lg
+ls
+v src\main.zig
+zig build
+v src\main.zig
+zig build run -- compile -s foo.ves
+v foo.ves
+v src\diagnostic.zig
+lg
+zig build run -- com
+v src\main.zig
+zig build
+v src\main.zig
+v src\main.zig
+lg
+ls
+lg
+ls
+v src\commands.zlap
+v src\main.zig
+ls
+v src\lexer\Lexer.zig
+v src\lexer\Token.zig
+v src\commands.zlap
+v src\lexer\Lexer.zig
+lg
+v src\lexer\Lexer.zig
+v src\parser\Parser.zig
+lg
+v src\parser\Parser.zig
+zig build
+ls vesti-tectonic\bin\
+v build.zig
+ls
+rm -rp .zig-cache
+rm -rp zig-out\
+zig build
+v src\parser\Parser.zig
+v build.zig
+v build.zig
+zig build
+ls src
+v src\ves_module.zig
+zig build
+v src\ves_module.zig
+v src\lexer\Lexer.zig
+zig build
+v src\parser\Parser.zig
+lg
+cd .local
+ls
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.747+493ad58ff zig
+rm -r zig-compiler\
+cd
+ls
+cd Github\vesti\
+zig build
+cd
+ls
+cd Github\
+ls
+cp -r vesti vesti-julia
+ls
+cd
+ls
+cd Test\
+ls
+mkdir ziglua-test
+cd ziglua-test\
+ls
+zig init
+zig fetch --save git+https://github.com/e0328eric/ziglua.git
+v build.zig
+v src\Lua.zig
+ls
+cd ..
+ls
+v donotrun.zig
+mv donotrun.zig Lua.zig
+ls
+cd ziglua-test\
+ls
+v src\Lua.zig
+lza
+sls
+v src\main.zig
+zig build
+v src\main.zig
+ls
+cd src
+ls
+rm root.zig
+cd ..
+zig build run
+ls .zig-cache\o\46cc1f91aa045641c7196fd51679843b\
+ls
+ls src
+ls .zig-cache\o\46cc1f91aa045641c7196fd51679843b
+v .zig-cache\o\46cc1f91aa045641c7196fd51679843b\lua_all.zig
+ls
+curl --location -O https://www.lua.org/ftp/lua-5.4.8.tar.gz
+tar xvf lua-5.4.8.tar.gz
+ls
+cd lua-5.4.8\src\
+ls
+cd ../../
+v .zig-cache\o\46cc1f91aa045641c7196fd51679843b\lua_all.zig
+cd lua-5.4.8\src\
+rg "luaL_checkversion_" *
+v lauxlib.h
+cd ../..
+ls
+zig-lts.exe build run
+v src\Lua.zig
+zig-lts.exe build run
+v src\Lua.zig
+zig-lts.exe build run
+v src\Lua.zig
+zig-lts.exe build run
+v src\Lua.zig
+zig-lts.exe build run
+zig build run
+cd
+ls
+cd Github\
+ls
+cd
+cd Test\ziglua-test\
+ls
+zig build
+cd lua-5.4.8\src\
+rg "luaL_checkversion_" *
+v .zig-cache\o\46cc1f91aa045641c7196fd51679843b\lua_all.zig
+cd ../..
+v .zig-cache\o\46cc1f91aa045641c7196fd51679843b\lua_all.zig
+zig build
+zig build run
+v src\main.zig
+zig build run
+v src\Lua.zig
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+cd
+cd Github\vesti\
+v build.zig
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v 
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+v src\main.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+zig build run
+v src\Lua.zig
+v main.zig
+v src/main.zig
+zig build run
+v src/main.zig
+zig build run
+ls
+rm -rp lua-5.4.8 lua-5.4.8.tar.gz
+cd
+ls
+cd Github\
+ls
+cd vesti\
+ls
+v build.zig
+zig fetch --save git+https://github.com/e0328eric/ziglua.git
+v build.zig.zon
+ls
+cd src
+;s
+ls
+mv jlscript.zig luascript.zig
+ls
+cp ~/Test/ziglua-test/src/Lua.zig .
+ls
+cd Test\
+v Lua.zig
+cd
+cd Github\vesti-julia\
+v Lua.zig
+ls
+rm -rp julia
+v src\julia\vesjulia.c
+v lexer\Token.zig
+v lexer\Lexer.zig
+v commands.zlap
+v diagnostic.zig
+v parser\ast.zig
+v parser\Parser.zig
+cd parser\tests\
+mv jlcode.zig luacode.zig
+v luacode.zig
+cd ../..
+ls
+v parser\tests\luacode.zig
+v parser\tests\utility.zig
+v parser\tests\luacode.zig
+v parser\tests\utility.zig
+v luascript.zig
+v Codegen.zig
+v compile.zig
+v main.zig
+zig build
+v C:\Users\almag\Github\vesti\.zig-cache\o\b64aa22512d646ed91d889e5ab681167\lua_all.zig
+cd ..
+ls
+cd ..
+ls
+cd ziglua\
+ls
+cd build\
+ls
+v lua.zig
+cd 
+cd Github\vesti\
+v C:\Users\almag\Github\vesti\.zig-cache\o\b64aa22512d646ed91d889e5ab681167\lua_all.zig
+cd
+cd Test\
+ls
+mkdir lua_source
+cd lua_source\
+curl --location -O https://www.lua.org/ftp/lua-5.4.8.tar.gz
+tar xvf lua-5.4.8.tar.gz
+cd lua-5.4.8\src\
+ls
+rg "luaL_checkversion_" *
+v lauxlib.h
+ls
+zig translate-c -lc lauxlib.h | save --force lauxlib.zig
+v lauxlib.zig
+rg "luaL_checkversion_" *
+cd 
+cd Testy
+cd Test
+ls
+cd bugs\
+ls
+v foo.h
+ls
+zig translate-c foo.h | save --force foo.zig
+v foo.zig
+v foo.h
+zig translate-c foo.h | save --force foo.zig
+v foo.zig
+v lauxlib.zig
+v foo.h
+z0
+zig translate-c foo.h | save --force foo.zig
+rm -rp .zig-cache
+zig build
+v foo.zig
+v lauxlib.h
+zig version | pbcopy 
+v foo.h
+zig-lts.exe version
+cd
+ls
+cd .local
+ls
+rm -rp zig-lts
+zigup
+ls
+mv zig-compiler\zig-x86_64-windows-0.15.2 zig-lts
+rm -rp zig-compiler\
+cd
+ls
+cd Github\vesti\
+zig-lts.exe build
+v build.zig.zon
+v build.zig
+zig-lts.exe build
+cd
+ls
+cd Github\
+ls
+cd
+cd .local\
+ls
+mv zig zig-dev
+mv zig-lts zig
+ls
+cd bin\
+ls
+rm zig-lts.exe
+ln ../zig-dev/zig.exe zig-dev.exe
+ls
+zig-dev version
+zig version
+cd ..
+ls
+cd zlsd
+cd zls\
+ls
+git checkout 0.15.2
+git checkout 0.15.1
+git checkout 0.15.0
+./update.bat
+cd ..
+ls
+rm -rp zls
+git clone https://github.com/zigtools/zls
+cd zls
+git checkout 0.15.0
+cd
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Github\tree-sitter-vesti\
+ls
+v src\scanner.c
+v grammar.js
+v queries\vesti\highlights.scm
+v queries\vesti\injections.scm
+tree-sitter generate
+lg
+v
+cd $env.LOCALAPPDATA
+cd nvim
+ls
+cd after\queries\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+lg
+cd
+ls
+cd
+ls
+cd Github\vesti\
+zig build
+v src\Config.zig
+zig build
+v src\Config.zig
+cd src
+v zon_alloc.zig
+cd ..
+zig build
+v src\Lua.zig
+v src\main.zig
+zig build
+v build.zig
+v src\Lua.zig
+v src\zon_alloc.zig
+zig build
+v src\zon_alloc.zig
+zig build
+v src\zon_alloc.zig
+zig build
+v src\zon_alloc.zig
+ls
+cd src
+ls
+rm zon_alloc.zig
+v Config.zig
+ls
+cd ..
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+v src\Lua.zig -freference-trace=12
+zig build -freference-trace=12
+cd Github\vesti\
+zig build -freference-trace=12
+v src\Lua.zig
+zig build
+v src\Codegen.zig
+zig build
+v src\Codegen.zig
+zig build
+v src\Codegen.zig
+zig build
+v src\Codegen.zig
+v src\main.zig
+zig build
+v src\luascript.zig
+zig build
+v src\luascript.zig
+zig build
+v src/Lua.zig
+zig build
+v src\compile.zig
+zig build
+v src\ves_module.zig
+zig build
+v src\ves_module.zig
+zig build
+v src/parser/Parser.zig
+v src\ves_module.zig
+zig build
+v src\parser\Parser.zig
+zig build
+v src\parser\Parser.zig
+zig build
+v src\parser\Parser.zig
+zig build
+v foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+start foo.pdf
+v foo.ves
+zig build run -- compile -s foo.ves
+start foo.pdf
+ls
+cd $env.APPDATA
+ls
+cd vesti\template\
+ls
+mv before.jl before.lua
+ls
+v vesti.zon
+ls
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+lsd
+ls
+zigup
+ls
+rm zig-compiler.zip
+curl --location -O https://mirrors.ctan.org/fonts/noto.zip
+v before.lua
+cd 
+cd Github\vesti\
+ls
+v first.lua
+zig build run -- run
+v .vesti-dummy\
+ls .vesti-dummy\
+v first.lua
+zig build run -- run
+ls
+v src\main.zig
+v first.lua
+zig build run -- run
+v first.lua
+zig build run -- run
+ls\
+l;s
+ls
+rm noto.zip first.lua
+vesti clear
+ls
+v src\Lua.zig
+v src\Lua.zig
+v f
+v first.lua
+zig build run -- run
+v src\Lua.zig
+v first.lua
+zig build run -- run
+v first.lua
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v first.lua
+zig build run -- run
+v first.lua
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+v first.lua
+zig build run -- run
+v first.lua
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build -freference-trace=11
+v src\Lua.zig
+zig build -freference-trace=11
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v src\Lua.zig
+zig build
+v first.lua
+ls
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+ls
+rm STIXMath.ttf
+ls
+v src\Lua.zig
+v first.lua
+zig build run -- run
+v src\Lua.zig
+zig build run -- run
+v src\Lua.zig
+ls
+zig build run -- run
+v first.lua
+zig build run -- run
+las
+ls
+rm STIXMath.ttf
+ls
+cd Manual\
+ls
+rm before.jl first.jl
+ls
+v step.jl
+rm step.jl
+cd ..
+ls
+v src\Lua.zig
+ls
+rm first.lua
+cd Manual\
+v first.lua
+ls
+v vesti_man.ves
+cd ..
+ls
+v src\Lua.zig
+ls src
+v src\Lua.zig
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd Manual\
+ls
+cd ..
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+cd Manual\
+ls
+v vesti_man.ves
+vesti run
+ls
+v before.lua
+cd ..
+ls
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+cd Manual\
+vesti run
+v before.lua
+v vesti_man.ves
+v before.lua
+start vesti_man.pdf
+vesti compile vesti_man.ves
+v before.lua
+cd ..
+ls
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+cd Manual\
+vesti compile vesti_man.ves
+v vesti_man.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+ls
+vesti compile vesti_man.ves
+v vesti_man.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile vesti_man.ves
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile vesti_man.ves
+v vesti_man.ves
+vesti compile vesti_man.ves
+cd ..
+lg
+v README.md
+lg
+ls Manual\
+cd Manual\
+ls
+rm foo.pdf
+cd ..
+v .gitignore
+lg
+cds
+cd
+seminar
+cd Doctor\AApproach\
+ls
+mv step.jl step.lua
+v step.lua
+rm before.jl
+rm first.jl
+v first.lua
+vesti run
+vesti compile aapproach.ves
+cd
+cd Github\vesti\
+ls
+v src\Lua.zig
+v step.lua
+v before.lua
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+ls .vesti-dummy\
+ls
+rm step.lua
+vesti clear
+vesti compile aapproach.ves
+ls .vesti-dummy\
+cd $env.APPDATA
+cd vesti\template\
+lg
+ls
+cd
+cd Github\vesti\
+rm -rp AApproach
+cp -r ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach .
+lg
+ls
+cd examples\
+ls
+rm before.jl first.jl
+v first.lua
+vesti run
+ls
+v crop_pdf.ves
+v example1.ves
+rm example1.ves
+cd ..
+lg
+cd
+Cd Github\vesti-julia\
+cd Github\
+ls
+cd vesti-julia\
+ls
+rm -rp .git
+git init
+git branch -M main
+git remote add origin https://github.com/e0328eric/vesti-julia.git
+lg
+cd ..
+s
+rm -rp vesti-julia vesti-py
+ls
+cd vesti\
+s
+v build.zig
+ls
+shutdown /s /t 0
+cd Test\
+ls
+cd yedec\
+ls
+cd ..
+ls
+rm -rp yedec
+mkdir yedec
+cd yedec
+zig init
+zig fetch --save git+https://github.com/jiacai2050/zig-curl.git
+ls
+v build.zig
+ls
+cd src
+rm root.zig
+cd ..
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+zig build run
+v src\main.zig
+zig build run
+ls
+rm -rp *
+lsd
+ls
+cargo init
+cargo add reqwest
+cargo add reqwest --features=stream
+ls
+v src\main.rs
+cd ..
+ls
+rm -rp yedec
+mkdir yedec
+ls
+cd yedec
+ls
+zig init
+zig fetch --save git+https://github.com/jiacai2050/zig-curl.git
+ls
+v build.zig
+rm src\root.zig
+rm -s
+rm -p
+ls
+v src\main.zig
+v src\util.zig
+zig build run
+zig fetch --save=curl https://github.com/jiacai2050/zig-curl/archive/refs/tags/0.3.2.zip
+zig fetch --save=curl https://github.com/jiacai2050/zig-curl/archive/refs/tags/v0.3.2.zip
+zig build run
+v build.zig.zon
+cd ..
+rm -rp yedec
+cargo new yedec
+cd yedec
+s
+cargo add reqwest --features=stream
+cargo add smol
+v src\main.rs
+ls
+rm -rp *
+go mod init
+cargo init
+cargo add smol
+cargo add reqwest --features=stream
+v src\main.rs
+rm -rp *
+ls
+zig init
+v build.zig
+rm src\root.zig
+v src\main.zig
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+v build.zig
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+ls
+zig build run
+ls
+rm hanae1.png
+siv hanae56.png
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+ls
+v src\main.zig
+ls
+rm hanae56.png
+zig build run
+v src\main.zig
+zig build run
+;s
+cd hanae\
+ls
+siv *
+cd ..
+ls
+rm -rp hanae\
+cd
+cd Github\badepo\
+ls
+v build.zig
+v build.zig.zon
+v src\os\windows.zig
+lgh
+lg
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+v src\main.zig
+zog build run
+cd Github\badepo\
+v src\os\windows.zig
+zig build run
+lg
+ls
+cd hanae\
+ls
+start .
+cd ..
+ls
+zig fetch --save git+https://github.com/e0328eric/badepo.git
+v src\main.zig
+lsd
+ls
+start .
+zig build run
+v src\main.zig
+zig build run
+ls
+rm -rp hanae
+v src\os\windows.zig
+v src\main.zig
+v src\os\posix.zig
+lg
+zig build run
+v src\os\posix.zig
+v src\main.zig
+zig build run
+cd E:\
+ls
+sf . "(.)\\\\\\._"
+sf . "(.)\\._"
+ls -al Bar
+cd Github\
+v vesti\Manual\vesti_man.ves
+cd tree-sitter-vesti\
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+v src\scanner.c
+ls
+v grammar.js
+v foo.ves
+v grammar.js
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+cd Github\tree-sitter-vesti\0
+cd Github\tree-sitter-vesti\
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+lg
+rm foo.ves
+ls
+lg
+v foo.ves
+v ../vesti/Manual/vesti_man.ves
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+rm -rp foo.ves
+v
+cd ..
+cd vesti/Manual/
+v vesti_man.ves
+ls
+cd Github\vesti\Manual\
+ls
+cd ..
+zig build -Dtarget=aarch64-macos
+ls zig-out\bin\
+cd Github\ziglua\
+cd ..
+cd zigup
+ls
+v build.zig
+v build.zig
+zig build release
+ls zig-out
+ls zig-out\x86_64-windows\
+rm -rp zig-out\
+v build.zig
+zig build release
+ls
+v build.zig
+zig build release
+v build.zig
+zig build release
+v build.zig
+zig build release
+v build.zig
+zig build release
+v build.zig
+zig build release
+ls zig-out\
+v build.zig
+zig build release
+ls vesti-tectonic\bin\
+cd ..
+cd vesti\
+ls
+ls zig-out\
+ls zig-out\aarch64-macos\
+rm -rp zig-out\
+rm -s
+zig build release
+ls zig-out\aarch64-macos\
+ls zig-out\bin
+ls zig-out\bin\aarch64-macos\
+zig build release
+ls zig-out\bin\aarch64-macos\
+rm -rp zig-out\
+zig build release
+ls zig-out\bin\aarch64-macos\
+ls zig-out\aarch64-macos\
+ls
+ls vesti
+rm -rp vesti
+rm -rp vesti.exe\
+ls
+v build.zig
+lg
+cd zig-out\
+start .
+cd Github\vesti\
+ls
+cd zig-out
+tar -h
+tar Jcv aarch64-macos
+tar Jcvf aarch64-macos.tar.xz  aarch64-macos
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+cd ..
+ls
+rm -rp zig-out
+ls
+zig build release -Doptimize=ReleaseSafe
+cd zig-out\
+ls
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+ls -al x86_64-linux-gnu\
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl
+tar Jcvf aarch64-macos.tar.xz  aarch64-macos
+zip --help
+start .
+cd Github\vesti\
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+shutdown /s /t 0
+cd Github\vesti\
+ls
+cd zig-out\x86_64-linux-gnu\
+ls
+cd ..
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+cd ..
+ls
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+ls
+cd zig-out
+ls
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl\
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl
+cd ..
+ls
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+cd zig-out
+ls
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+ls
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+ls
+start .
+cd ../..
+ls
+cd vesti
+ls
+v foo.ves
+ls
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+cd zig-out
+ls
+tar Jcvf x86_64-linux-musl.tar.xz x86_64-linux-musl
+cd ..
+rm `3`
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+v vesti-tectonic\Cargo.toml
+zig build rust
+cd vesti-tectonic\target\release\
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rp target\
+rm -rp target
+v Cargo.toml
+rm -rp target
+ls
+cd ..
+ls
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+v src\compile.zig
+zig build
+v src\compile.zig
+zig build
+cd Manual\
+../zig-out/bin/vesti.exe compile vesti_man.ves
+cd ..
+ls
+cd zig-out\bin\
+s
+mv ../x86_64-linux-gnu/libvesti_tectonic_x86_64.so vesti_tectonic_x86_64.dll
+cd ..
+cd ..
+ls
+zig build release -Doptimize=ReleaseSafe
+v build.zig
+rm -rp x86_64-linux-musl x86_64-linux-musl.tar.xz
+ls
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+v src\compile.zig
+cd src
+rg "ves" *
+ls
+cd ..
+mv foo.ves foo.vesti
+zig build run -- compile -s foo.vesti
+ls .vesti-dummy\
+v src\main.zig
+ls
+zig build run -- compile -s foo.vesti
+mv foo.vesti foo.ves
+ls
+zig build release -Doptimize=ReleaseSafe
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+start .
+cd ..
+lg
+cd zig-out\x86_64-windows\
+ls
+cd ../..
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+teachingf 
+ls
+cd 2025-2\
+ls
+cd SetTheory_Kim_Prof\
+ls
+cd tf1\
+ls
+start tf1.pdf
+vesti clear
+ls
+rm before.jl build.jl first.jl
+v first.lua
+vesti run
+ls
+v before.lua
+ls
+cd
+cd Github\tree-sitter-vesti\
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+v foo.lua
+v foo.ves
+ls
+lg
+rm foo.ves
+vesti compile tf1.ves
+cd
+cd Github\vesti\
+v src\compile.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile tf1.ves
+v src\Codegen.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+vesti compile tf1.ves
+zig build release -Doptimize=ReleaseSafe
+v src\Lua.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build release -Doptimize=ReleaseSafe
+v build.zig
+tar -h
+cd zig-out
+tar Jcvf aarch64-macos.tar.xz -C aarch64-macos aarch64-macos/libvesti_tectonic.dylib --chmod=0755 aarch64-macos/vesti
+tar Jcvf aarch64-macos.tar.xz -C aarch64-macos --chmod=0755 aarch64-macos/vesti
+ls
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+zip^ --help
+^zip --help
+^zip -r x86_64-windows.zip x86_64-windows 
+start .
+./x86_64-windows/x86_64-windows/vesti.exe
+ls
+start .
+vesti compile tf1.ves
+cd
+ls
+cd Github\vesti\
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile tf1.ves
+v build.zig.zon
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+ls
+zig fetch --save git+https://github.com/jacobsandlund/uucode.git
+v build.zig
+v src\location.zig
+v build.zig
+v tf1.ves
+zig build
+ls
+v src\location.zig
+cd src
+rg "ziglyph" *
+v parser\Parser.zig
+v lexer\Lexer.zig
+ls
+cd ..
+ls
+v build/uucode_config.zig
+v build.zig
+v build\uucode_config.zig
+zig build
+v build.zig
+mv build uucode
+zig build
+v uucode\uucode_config.zig
+zig build
+v uucode\uucode_config.zig
+zig build
+v uucode\uucode_config.zig
+shutdown /s /t 0
+cd Github\vesti\
+ls
+zig build
+v uucode\uucode_config.zig
+ls
+rm -rp thirdparty
+ls
+zig build
+cd Manual\
+ls
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+seminar
+cd Doctor\AApproach\
+vesti compile aapproach.ves
+v src\lexer\Lexer.zig
+v uucode\uucode_config.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v src\lexer\Lexer.zig
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+start aapproach.pdf
+v aapproach.ves
+vesti compile aapproach.ves
+v .vesti-dummy\aapproach.tex
+v aapproach.ves
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile aapproach.ves
+v .vesti-dummy\aapproach.tex
+v aapproach.ves
+v .vesti-dummy\aapproach.tex
+vesti compile aapproach.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v aapproach.ves
+v src\lexer\Lexer.zig
+cd src
+rg "cowbanga" *
+v src\lexer\Lexer.zig
+v lexer\Lexer.zig
+cd ..
+xlg
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zig build release -Doptimize=ReleaseSafe
+cd zig-out
+ls
+rm -f aarch64-macos.tar.xz x86_64-linux-gnu.tar.xz x86_64-windows.zip
+ls
+rm x86_64-windows.zip
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+ls
+^zip -r x86_64-windows.zip x86_64-windows 
+rm -rf x86_64-windows
+ls
+rm x86_64-windows.zip
+zig build release -Doptimize=ReleaseSafe
+cd ..
+zig build release -Doptimize=ReleaseSafe
+cd zig-out\
+ls
+ls x86_64-windows\
+^zip -r x86_64-windows.zip x86_64-windows 
+start .
+v chapter6\proof.ves\
+v chapter6\proof.ves
+cd ..
+ls
+cd Manual\
+ls
+start vesti_man.pdf
+cd Github\vesti\
+v src\parser\Parser.zig
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+v chapter7\embeddings.ves
+v appendix\uniqueness.ves
+vesti compile -WE aapproach.ves
+shutdown /s /t 0
+cd Github\vesti\
+ls
+v src\Lua.zig
+v src\lexer\Lexer.zig
+v uucode\uucode_config.zig
+rm -s
+rm -p
+v src\lexer\Lexer.zig
+shutdown /s /t 0
+cd $env.APPDATA
+cd helix
+ls
+cd runtime\queries\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+cd ../..
+ls
+rm grammars\vesti.dll
+rm -r grammars\sources\vesti
+cd ..
+hx -g fetch; hx -g build
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+cd $env.APPDATA
+ls
+cd rio
+cd $env.LOCALAPPDATA
+ls
+cd rio
+ls
+v config.toml
+rio --version
+v config.toml
+exit
+cd $env.LOCALAPPDATA
+cd rio
+v config.toml
+cd Github\arch-almagest\terminals\
+ls
+cd rio
+ls
+cd Github\arch-almagest\shell\nushell_windows\
+v config.nu
+source $nu.config-path
+archlinux 
+ls
+archlinux 
+v config.toml
+seminar
+ls
+cd Doctor\AApproach\
+start aapproach.pdf
+cd Doctor\AApproach\
+seminar
+cd Doctor\AApproach\
+ls
+rm -p
+hx chapter7\embeddings.ves
+v chapter7\embeddings.ves
+vesti compile -WE aapproach.ves
+shutdown /s /t 0
+cd Github\vesti\
+ls
+v src\Config.zig
+ls
+cd $env.APPDATA
+ls
+cd vesti
+ls
+v README.md
+ls
+v foo.ves
+zig build run -- compile -s foo.vesti
+v src\main.zig
+zig build run -- compile -s foo.vesti
+v src\diagnostic.zig
+zig build run -- compile -s foo.vesti
+v src/main.zig
+zig build run -- compile -s foo.vesti
+ls
+zig build run -- compile -s foo.ves
+v .vesti-dummy\luacode.lua
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+v .vesti-dummy\luacode.lua
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+v .vesti-dummy\luacode.lua
+v foo.ves
+zig build run -- compile -s foo.ves
+v .vesti-dummy\luacode.lua
+v foo.ves
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+v src\Lua.zig
+v .vesti-dummy\luacode.lua
+v foo.ves
+zig build run -- compile -s foo.ves
+v .vesti-dummy\luacode.lua
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+v src\Config.zig
+zig build run -- compile -s foo.ves
+v src\Lua.zig
+zig build run -- compile -s foo.ves
+v src\Lua.zig
+v src/Config.zig
+zig build run -- compile -s foo.ves
+v config.zon
+v README.md
+lg
+ls
+archlinux 
+v README.md
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+v build.zig
+zig build release -Doptimize=ReleaseSafe
+lg
+cd zig-out\
+ls
+tar Jcvf aarch64-macos.tar.xz aarch64-macos
+tar Jcvf x86_64-linux-gnu.tar.xz x86_64-linux-gnu
+rm -rp x86_64-windows.zip
+^zip -r x86_64-windows.zip x86_64-windows 
+start ,
+start .
+cd
+cd Github\vesti\Manual\
+ls
+rm -rp .vesti-dummy\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -WEx aapproach.ves
+vesti compile -WEx vesti_man.ves
+v before.lua
+vesti compile -WE vesti_man.ves
+archlinux 
+ls
+cd ..
+ls
+cd siv
+ls
+zig vcpkg
+zig build vcpkg
+v build.zig.zon
+zig fetch --save git+https://github.com/raysan5/raylib.git
+zig build vcpkg
+zig fetch --save git+https://github.com/e0328eric/zlap.git
+v src\main.zig
+zig build vcpkg
+v build.zig
+zig build vcpkg
+zig build
+v src\main.zig
+ls
+v build.zig
+v src/main.zig
+zig build
+v src/main.zig
+zig build
+ls
+cd languages\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+cd
+ls
+cd .local
+ls
+cd bin
+ls
+cd ..
+ls
+rm -rp zed
+ls
+cd CustomShortcuts\
+ls
+v zed.lnk
+start .
+cd ..
+ls
+cd zed
+cd bin
+cp ~/Downloads/Zed-x86_64.exe zed.exe
+cd Github\arch-almagest\
+ls
+cd utils\
+ls
+cd zed
+ls
