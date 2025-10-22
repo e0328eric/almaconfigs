@@ -20559,3 +20559,12 @@ cd utils\
 ls
 cd zed
 ls
+lg
+zed
+cd .local
+ls
+cd
+cd .glzr
+ls
+cd glazewm
+v config.yaml
