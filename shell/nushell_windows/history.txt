@@ -20568,3 +20568,102 @@ cd .glzr
 ls
 cd glazewm
 v config.yaml
+lg
+shutdown /s /t 0
+start aapproach.pdf
+vesti compile -WE vesti_man.ves
+vesti compile -WE aapproach.ves.ves
+vesti compile -WE aapproach.ves
+base64 aHR0cHM6Ly9raW8uYWMvYy9kY3h0ejhoX1ZFT3hyNFNaMHhfUEti
+base64 aHR0cHM6Ly9raW8uYWMvYy9kbHl6ZHdBOFVmUXZ2V01kVDJhek9i
+cd `D:\문화제에서 최면술에 빠진 여자들\`
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd 'D:\[Sakamata Nerimono] Hypnostay\'
+ls
+ls | where name =~ '\.webp$' | each { |e| imgch $e.name -t png -R }
+cd Github\vesti
+;s
+zig build
+v foo.ves
+zig build run -- compile -s foo.ves
+v foo.ves
+zig build run -- compile -s foo.ves
+start foo.pdf
+v foo.ves
+zig build run -- compile -s foo.ves
+v .vesti-dummy\foo.tex
+start foo.pdf
+v foo.ves
+zig build run -- compile -s foo.ves
+start foo.pdf
+v .vesti-dummy\foo.tex
+v foo.ves
+zig build run -- compile -s foo.ves
+cd Github\vesti
+v foo.ves
+zig build run -- compile -s foo.ves
+cd Github\vesti
+zig build run -- compile -s foo.ves
+cd Github\vesti
+zig build run -- compile -s foo.ves
+cd Github\vesti
+zig build run -- compile -s foo.ves
+v .vesti-dummy\foo.tex
+v foo.ves
+cal
+help cal
+cal --full-year 2025
+cd Github\vesti
+zig build test
+v src\parser\tests\utility.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+v src\parser\Parser.zig
+zig build test
+v src\parser\tests\luacode.zig
+zig build test
+v src\parser\tests\luacode.zig
+zig build test
+zig build test --summary all
+v src\parser\tests\environments.zig
+cd Github\vesti
+ls
+zig build
+zig build test --summary all
+ls
+cd AApproach\
+../zig-out/bin/vesti.exe compile aapproach.ves
+zig build
+cd ..
+zig build
+cd AApproach\
+../zig-out/bin/vesti.exe compile aapproach.ves
+cd ..
+rm -rp AApproach
+cp -r ~/Icedrive/TeX_Documents/Seminar/Doctor/AApproach .
+cd AApproach\
+../zig-out/bin/vesti.exe compile aapproach.ves
+v aapproach.ves
+cd ..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+vesti compile -WE aapproach.ves
+shutdown /s /t 0
+zig run scoreboard.zig
+zig run scoreboard.zig ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+zig run scoreboard.zig -- ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+pwd | pbcopy 
+cd C:\Users\almag\Icedrive\ScoreData\2025-2
+ls
+v scoreboard.zig
+v ODE_Theory_Template.csv
+zig run scoreboard.zig -- ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+zig run scoreboard.zig -- ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+hx ODE_Theory_Template.csv
+zig run scoreboard.zig -- ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+cd Github\vesti
+cd src
+rg "takeDelimiter" *
+zig run scoreboard.zig -- ODE_Theory_Template.csv ODE_Theory_Midterm.csv 9
+cd Github\arch-almagest\
