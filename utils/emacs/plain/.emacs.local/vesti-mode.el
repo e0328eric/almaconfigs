@@ -1,216 +1,223 @@
 ;;; vesti-mode.el -- Regex highlighting for Vesti -*- lexical-binding: t; -*-
 
 ;;; Commentary:
-;; Regex-based highlighting for the Vesti language, derived from the public
-;; tree-sitter-vesti repo’s surface constructs (declarations like useenv/begenv/
-;; endenv/defun/defenv/etc., bracket/brace args, jlcode fences #jl:…:jl#).
-;;
-;; Save as vesti-mode.el, then:
-;;   (add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
-;;   (with-eval-after-load 'vesti-mode
-;;     (custom-set-faces
-;;      '(vesti-jlcode-fence-face ((t :inherit font-lock-preprocessor-face :weight bold)))
-;;      '(vesti-jlcode-body-face  ((t :inherit font-lock-doc-face)))))
+;; Plain font-lock (non-Tree-sitter) highlighting for the Vesti language.
+;; File extensions: .ves
 
-(require 'rx)
+(require 'regexp-opt)
 
 (defgroup vesti nil
-  "Major mode for the Vesti language"
+  "Major mode for the Vesti language."
   :group 'languages)
 
-(defface vesti-command-face
-  '((t :inherit font-lock-keyword-face))
-  "Face for top-level Vesti commands."
-  :group 'vesti)
+;; Faces
+(defface vesti-keyword-face    '((t :inherit font-lock-keyword-face)) "Keywords.")
+(defface vesti-attribute-face  '((t :inherit font-lock-constant-face)) "Attributes like #label.")
+(defface vesti-env-face        '((t :inherit font-lock-type-face))     "Environment names.")
+(defface vesti-func-face       '((t :inherit font-lock-function-name-face)) "Defined function names.")
+(defface vesti-math-face       '((t :inherit font-lock-string-face))   "Inline/display math.")
+(defface vesti-rawlatex-face   '((t :inherit shadow))                  "Raw LaTeX sections.")
+(defface vesti-luacode-face    '((t :inherit font-lock-preprocessor-face)) "Lua code blocks.")
+(defface vesti-command-face    '((t :inherit font-lock-builtin-face))  "LaTeX-style \\commands.")
 
-(defface vesti-arg-key-face
-  '((t :inherit font-lock-type-face))
-  "Face for option keys inside [...] argument lists."
-  :group 'vesti)
+;; Keywords taken from your grammar.js
+(defconst vesti--keywords
+  '("docclass" "importpkg" "importmod" "cpfile" "importves"
+    "startdoc" "useenv" "begenv" "endenv" "defun" "defenv" "compty" "#lu:"))
 
-(defface vesti-brace-face
-  '((t :inherit font-lock-builtin-face))
-  "Face for braces and brackets."
-  :group 'vesti)
+(defconst vesti--compile-types '("plain" "pdf" "xe" "lua"))
 
-(defface vesti-jlcode-fence-face
-  '((t :inherit font-lock-preprocessor-face :weight bold))
-  "Face for #jl: … :jl# fences."
-  :group 'vesti)
+;; Regexes
+(defconst vesti--rx-attribute    "#[A-Za-z0-9][A-Za-z0-9_]*")
+(defconst vesti--rx-env-name     "[A-Za-z][A-Za-z0-9-]*\\(?:\\*\\)?")
+(defconst vesti--rx-filepath     "[[:alnum:][:word:]/@._-]+")
+(defconst vesti--rx-latex-cmd
+  (rx "\\" (or (seq (+ (any "@" upper lower)) (* "*"))
+               (not (any " \t\r\n")))))
 
-(defface vesti-jlcode-body-face
-  '((t :inherit font-lock-doc-face))
-  "Face for jlcode body content."
-  :group 'vesti)
+;; % comments:
+;;   - line: %...<eol> (but not starting with %! or %# or %- or %*)
+;;   - block: %* ... *%  (balanced-ish)
+;; Raw LaTeX blocks:
+;;   - singleline: %#...<eol> or %##<eol>
+;;   - multiline:  %#  ...  #% ... %
+;;
+;; We’ll mark these via syntax-propertize so font-lock treats them as comments.
+(defconst vesti--block-comment-start "%\\*")
+(defconst vesti--block-comment-end   "\\*%")
 
-;; A best-effort list of surface commands gleaned from the grammar:
-(defconst vesti--commands
-  '("docclass" "singlepkg" "multipkg" "importmod" "copyfile" "importves" "getfp"
-    "compile_type" "useenv" "begenv" "endenv" "defun" "defenv" "defthm" "defn"
-    "import" "include" "usepkg" "addtocounter" "proof")
-  "Top-level Vesti commands or declarations to highlight.")
+;; Lua block delimiters
+(defconst vesti--luacode-start "^#lu:[ \t]*\\(?:\\(.+\\)\\)?$")
+(defconst vesti--luacode-end   "^:lu#[ \t]*$")
 
-;; Regex helpers
-(defconst vesti--command-rx
-  (rx line-start (* space)
-      (group (or
-              ;; plain word commands
-              (regexp (eval (regexp-opt vesti--commands 'symbols)))
-              ;; fallback: any identifier at bol treated as a command-ish thing
-              (seq (any alpha "_") (* (any alnum "_")))))
-      symbol-end))
+(defun vesti--syntax-propertize (start end)
+  "Apply syntax properties in region START..END."
+  (save-excursion
+    ;; Block comments %* ... *%
+    (goto-char start)
+    (while (re-search-forward vesti--block-comment-start end t)
+      (put-text-property (match-beginning 0) (match-end 0)
+                         'syntax-table (string-to-syntax "< b")))
+    (goto-char start)
+    (while (re-search-forward vesti--block-comment-end end t)
+      (put-text-property (match-beginning 0) (match-end 0)
+                         'syntax-table (string-to-syntax "> b")))
+    ;; Treat '%' as comment-starter elsewhere
+    (goto-char start)
+    (while (re-search-forward "%" end t)
+      (put-text-property (match-beginning 0) (match-end 0)
+                         'syntax-table (string-to-syntax "<"))
+      ;; newline closes the comment
+      (when (looking-at "[^\n]*\\(\n\\)")
+        (put-text-property (match-beginning 1) (match-end 1)
+                           'syntax-table (string-to-syntax ">"))))))
 
-(defvar vesti-mode-syntax-table
-  (let ((st (make-syntax-table)))
-    ;; Strings
-    (modify-syntax-entry ?\" "\"" st)
-	
-    ;; Comments:
-    ;;  1) // line comments
-    (modify-syntax-entry ?/ ". 124b" st)
-    (modify-syntax-entry ?\n "> b" st)
-    ;;  2) % line comments (LaTeX-ish) — many Vesti snippets mix TeX
-    (modify-syntax-entry ?% "<" st)
-    ;;  3) # … end-of-line comments if not a jl fence (we handle jl in propertize)
-    ;; We won’t mark # as comment starter here to avoid fighting the jl fence.
-    ;; Braces/brackets are punctuation
-    (modify-syntax-entry ?{ "(}" st)
-    (modify-syntax-entry ?} "){" st)
-    (modify-syntax-entry ?[ "(]" st)
-	(modify-syntax-entry ?] ")[" st)
-    st)
-  "Syntax table for `vesti-mode'.")
+(defun vesti--font-lock-luacode (limit)
+  "Fontify #lu: ... :lu# blocks up to LIMIT.
+Applies `vesti-luacode-face' to the whole body."
+  (when (re-search-forward vesti--luacode-start limit t)
+    (let ((beg (match-beginning 0)))
+      (if (re-search-forward vesti--luacode-end limit t)
+          (let ((end (match-end 0)))
+            (put-text-property beg end 'font-lock-face 'vesti-luacode-face)
+            (set-match-data (list beg end))
+            t)
+        ;; unterminated: color to limit
+        (put-text-property beg limit 'font-lock-face 'vesti-luacode-face)
+        (set-match-data (list beg limit))
+        t))))
 
-;; Font-lock:
+(defun vesti--font-lock-rawlatex (limit)
+  "Fontify \"%# …\"-style raw LaTeX up to LIMIT."
+  (when (re-search-forward "^%#\\(?:#?\\)?[^\n]*\\(\n\\|\\'\\)" limit t)
+    (let ((beg (match-beginning 0))
+          (end (match-end 0)))
+      (put-text-property beg end 'font-lock-face 'vesti-rawlatex-face)
+      (set-match-data (list beg end))
+      t)))
 
-(defconst vesti--string-rx
-  (rx ?\" (* (or (seq ?\\ ?) (not ?\"))) ?\"))
-
-(defconst vesti--number-rx
-  (rx symbol-start (? (any ?+ ?-))
-      (or
-       ;; integer
-       (seq (+ digit))
-       ;; float
-       (seq (+ digit) ?. (+ digit) (? (seq (any ?e ?E) (? (any ?+ ?-)) (+ digit))))
-       ;; .123, 1., etc.
-       (seq ?. (+ digit))))
-  )
-
-(defconst vesti--braces-rx
-  (rx (any ?\{ ?\} ?\[ ?\])))
-
-(defconst vesti--optkey-rx
-  ;; inside [...] treat foo=bar key as a 'type-ish' token
-  (rx symbol-start (+ (any alpha "_")) (* (any alnum "_" ?-)) ?=))
-
-;; jlcode fences and body via syntax-propertize + auxiliary matcher
-(defconst vesti--jl-fence-open-rx
-  (rx line-start (* space) "#jl:" (* space) "<" (* (not (any ?\n ?\>))) ">" (* space) line-end))
-(defconst vesti--jl-fence-close-rx
-  (rx line-start (* space) ":jl#" (* space) line-end))
-
-(defun vesti--font-lock-jlcode (limit)
-  "Font-lock matcher that highlights #jl: <lang> ... :jl# blocks up to LIMIT."
-  (when (re-search-forward vesti--jl-fence-open-rx limit t)
-    (let* ((beg (match-beginning 0))
-           (fence-beg (match-beginning 0))
-           (fence-end (match-end 0)))
-      ;; fence line
-      (put-text-property fence-beg fence-end 'face 'vesti-jlcode-fence-face)
-      ;; body: up to closing fence or limit
-      (let ((body-beg fence-end))
-        (if (re-search-forward vesti--jl-fence-close-rx limit t)
-            (let ((body-end (match-beginning 0))
-                  (close-beg (match-beginning 0))
-                  (close-end (match-end 0)))
-              (put-text-property body-beg body-end 'face 'vesti-jlcode-body-face)
-              (put-text-property close-beg close-end 'face 'vesti-jlcode-fence-face)
-              (set-match-data (list beg close-end))
-              t)
-          ;; no closing fence found; color to limit
-          (put-text-property body-beg limit 'face 'vesti-jlcode-body-face)
-          (set-match-data (list beg limit))
+(defun vesti--font-lock-display-math (limit)
+  "Fontify display math $$…$$ up to LIMIT."
+  (when (re-search-forward "\\$\\$" limit t)
+    (let ((beg (match-beginning 0)))
+      (when (re-search-forward "\\$\\$" limit t)
+        (let ((end (match-end 0)))
+          (put-text-property beg end 'font-lock-face 'vesti-math-face)
+          (set-match-data (list beg end))
           t)))))
 
-(defvar vesti-font-lock-keywords
+(defun vesti--font-lock-inline-math (limit)
+  "Fontify inline math $…$ up to LIMIT (single-line best effort)."
+  (when (re-search-forward "\\$" limit t)
+    (let ((beg (match-beginning 0)))
+      (when (re-search-forward "\\$" (line-end-position) t)
+        (let ((end (match-end 0)))
+          (put-text-property beg end 'font-lock-face 'vesti-math-face)
+          (set-match-data (list beg end))
+          t)))))
+
+;; Imenu (optional)
+(defconst vesti-imenu-generic-expression
+  `(("Functions"  ,(concat "^\\s-*defun\\s-+\\(" vesti--rx-env-name "\\)\\b") 1)
+    ("Envs"       ,(concat "^\\s-*defenv\\s-+\\(" vesti--rx-env-name "\\)\\b") 1)
+    ("Use env"    ,(concat "^\\s-*useenv\\s-+\\(" vesti--rx-env-name "\\)\\b") 1)))
+
+;; Font-lock keyword rules (order matters: earlier gets precedence)
+(defconst vesti-font-lock-keywords
   `(
-    ;; Commands at BOL (and generic identifiers at BOL as a fallback)
-    (,vesti--command-rx (1 'vesti-command-face))
-    ;; Braces and brackets
-    (,vesti--braces-rx . 'vesti-brace-face)
-    ;; Strings
-    (,vesti--string-rx . font-lock-string-face)
-    ;; Numbers
-    (,vesti--number-rx . font-lock-number-face)
-    ;; Option keys inside [...]
-    (,(rx "[" (*? anything) (group (eval vesti--optkey-rx)) (*? anything) "]")
-     (1 'vesti-arg-key-face t))
-    ;; jlcode fence blocks (matchers must run early)
-    (vesti--font-lock-jlcode)
-    )
-  "Font-lock rules for `vesti-mode'.")
+    ;; Lua blocks (greedy)
+    (vesti--font-lock-luacode . 0)
 
-;; Simple imenu (captures names in defun/defenv like: defun foo [opts] { ... })
-(defconst vesti--imenu-generic-expressions
-  `(("Functions" ,(rx line-start (* space) (or "defun" "defn")
-                      (+ space) (group (+ (or (syntax word) (syntax symbol)))))
-     1)
-    ("Environments" ,(rx line-start (* space) (or "defenv" "begenv" "endenv")
-                         (+ space) (group (+ (or (syntax word) (syntax symbol)))))
-     1)))
+    ;; Raw LaTeX single-line %#...
+    (vesti--font-lock-rawlatex . 0)
 
-;; Ultra-basic indentation: indent by 2 * brace-depth; treat 'endenv' like a dedenter
-(defun vesti--line-opens-block-p ()
-  (save-excursion
-    (back-to-indentation)
-    (looking-at-p (rx (or (seq (or "begenv" "defenv" "defun" "defn"))
-                          symbol-end)
-                      (* not-newline) "{"))))
+    ;; Display math $$...$$ (multi-line)
+    (vesti--font-lock-display-math . 0)
 
-(defun vesti--line-closes-block-p ()
-  (save-excursion
-    (back-to-indentation)
-    (or (looking-at-p (rx "}"))
-        (looking-at-p (rx (or "endenv") symbol-end)))))
+    ;; Inline math $...$ (same line)
+    (vesti--font-lock-inline-math . 0)
 
-(defun vesti-calc-indent ()
-  (let* ((ppss (syntax-ppss))
-         (depth (car ppss))
-         (base (* 2 depth)))
-    (save-excursion
-      (back-to-indentation)
-      (cond
-       ((vesti--line-closes-block-p) (max 0 (- base 2)))
-       ((vesti--line-opens-block-p)  (+ base 2))
-       (t base)))))
+    ;; Keywords
+    (,(regexp-opt vesti--keywords 'symbols) . 'vesti-keyword-face)
 
-(defun vesti-indent-line ()
-  "Indent current line as Vesti."
-  (interactive)
-  (let ((col (current-column))
-        (indent (vesti-calc-indent)))
-    (indent-line-to indent)
-    (when (> col (current-indentation))
-      (move-to-column col))))
+    ;; compile_type symbols when used standalone
+    (,(regexp-opt vesti--compile-types 'symbols) . 'font-lock-constant-face)
 
-;; Syntax-propertize: keep default; jlcode is done in font-lock matcher.
+    ;; Attributes like #label
+    (,vesti--rx-attribute . 'vesti-attribute-face)
+
+    ;; LaTeX-style commands
+    (,vesti--rx-latex-cmd . 'vesti-command-face)
+
+    ;; env/file names in various forms
+    (,(concat "\\_<\\(useenv\\|begenv\\|endenv\\)\\_>\\s-+\\(" vesti--rx-env-name "\\)")
+     (2 'vesti-env-face))
+    (,(concat "\\_<\\(defenv\\)\\_>\\s-+\\(" vesti--rx-env-name "\\)")
+     (2 'vesti-env-face))
+    (,(concat "\\_<\\(defun\\)\\_>\\s-+\\(?:" "\\[[^]]*\\]\\s-*\\)?" "\\(" vesti--rx-env-name "\\)")
+     (2 'vesti-func-face))
+
+    ;; Filepath in (importmod|importves|compty)(...)
+    (,(concat "\\_<\\(importmod\\|importves\\|compty\\)\\_>\\s-*("
+              "\\(" vesti--rx-filepath "\\)" ")")
+     (2 'font-lock-string-face))
+
+    ;; Option lists: (opt1,opt2,...)
+    ("(\\([[:alnum:]_\\-]+\\(?:,[[:alnum:]_\\-]+\\)*,?\\))" . (1 font-lock-variable-name-face))
+    ))
+
+;; Syntax table
+(defvar vesti-mode-syntax-table
+  (let ((st (make-syntax-table)))
+    ;; Comments: '%' starts a comment; newline ends it
+    (modify-syntax-entry ?% "<" st)
+    (modify-syntax-entry ?\n ">" st)
+    ;; Quotes are ordinary in Vesti
+    (modify-syntax-entry ?\" "." st)
+    ;; Braces/parens
+    (modify-syntax-entry ?{ "(}" st)
+    (modify-syntax-entry ?} "){" st)
+    (modify-syntax-entry ?( "()" st)
+    (modify-syntax-entry ?) ")(" st)
+    (modify-syntax-entry ?[ "(]" st)
+    (modify-syntax-entry ?] ")[" st)
+    ;; Backslash as word constituent for LaTeX commands
+    (modify-syntax-entry ?\\ "_" st)
+    st))
 
 ;;;###autoload
 (define-derived-mode vesti-mode prog-mode "Vesti"
-  "Major mode for editing Vesti files (regex-based highlighting)."
+  "Major mode for the Vesti language (regex font-lock)."
+  :group 'vesti
   :syntax-table vesti-mode-syntax-table
-  (setq-local font-lock-defaults '(vesti-font-lock-keywords))
-  (setq-local comment-start "% ")
+  (setq-local comment-start "%")
   (setq-local comment-end   "")
-  (setq-local indent-line-function #'vesti-indent-line)
-  (setq-local imenu-generic-expression vesti--imenu-generic-expressions)
-  ;; Make bracket/brace faces show up even if user theme is minimal:
-  (font-lock-add-keywords nil vesti-font-lock-keywords))
+  (setq-local comment-use-syntax t)
+
+  ;; Make font-lock extend over multi-line constructs (e.g., $$…$$, %*…*%, #lu:…:lu#)
+  (setq-local font-lock-multiline t)
+
+  ;; Syntax-propertize handles %* … *% and lines with %
+  (setq-local syntax-propertize-function #'vesti--syntax-propertize)
+
+  ;; Imenu
+  (setq-local imenu-generic-expression vesti-imenu-generic-expression)
+
+  ;; Font-lock
+  (setq-local font-lock-defaults
+              '(vesti-font-lock-keywords
+                ;; keywords-only? -> nil (we still want strings/comments)
+                nil
+                ;; case-fold? -> nil (case-sensitive)
+                nil))
+
+  ;; Indentation (very light: preserve, but indent after certain starters)
+  (setq-local indent-line-function #'indent-relative))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.ves\\'" . vesti-mode))
+(add-to-list 'auto-mode-alist '("\\.ves\\'"   . vesti-mode))
+;;;;;###autoload
+;;(add-to-list 'auto-mode-alist '("\\.vesti\\'" . vesti-mode))
 
 (provide 'vesti-mode)
 ;;; vesti-mode.el ends here
-

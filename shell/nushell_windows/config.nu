@@ -802,13 +802,14 @@ alias getmusic   = yt-dlp -x --audio-format m4a
 alias pbcopy     = win32yank.exe -i
 alias archlinux  = wsl.exe -d archlinux --cd ~ -u almagest
 
-alias hakwon     = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
-alias minireport = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report
-alias notetaking = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
-alias homework   = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
-alias teachingf  = cd C:/Users/almag/IceDrive/TeX_Documents/TF
-alias seminar    = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
+alias hakwon       = cd C:/Users/almag/IceDrive/TeX_Documents/Hakwon
+alias minireport   = cd C:/Users/almag/IceDrive/TeX_Documents/Mini_Report
+alias notetaking   = cd C:/Users/almag/IceDrive/TeX_Documents/NoteTaking
+alias homework     = cd C:/Users/almag/IceDrive/TeX_Documents/Homework
+alias teachingf    = cd C:/Users/almag/IceDrive/TeX_Documents/TF
+alias seminar      = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
 alias kindergarten = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarten
+alias vimconfig    = cd C:/Users/almag/AppData/Local/nvim
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 oh-my-posh init nu --config $"($nu.config-path | path dirname)/emodipt-extend.omp.json "

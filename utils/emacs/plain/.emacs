@@ -1,7 +1,7 @@
-;; On windows, this sets emacs default path by %USERPROFILE%.
 (when (eq system-type 'windows-nt)
-  (setq default-directory
-        (file-name-as-directory (getenv "USERPROFILE"))))
+  (setenv "HOME" (concat "C:/Users/" (getenv "USERNAME"))))
+(when (memq system-type '(gnu gnu/linux darwin))
+  (setenv "HOME" (concat "/home/" (getenv "USER"))))
 
 ;; melpa package settings
 (require 'package)
@@ -12,10 +12,21 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(setq custom-file "~/.emacs.custom.el")
-(add-to-list 'load-path "~/.emacs.local/")
-(add-to-list 'load-path "~/.emacs.local/simpc-mode")
-(setq backup-directory-alist '((".*" . "~/.emacs.d/backups")))
+;; Set platform-specific home config dir
+(defconst my-home-config-dir
+  (cond
+   ((eq system-type 'windows-nt)
+    (concat (getenv "HOME") "/AppData/Roaming"))
+   ((memq system-type '(gnu gnu/linux darwin))
+    (concat (getenv "HOME") "/.config"))
+   (t (getenv "HOME"))))
+
+;; Derived paths
+(setq custom-file (expand-file-name ".emacs.custom.el" my-home-config-dir))
+(add-to-list 'load-path (expand-file-name ".emacs.local/" my-home-config-dir))
+(add-to-list 'load-path (expand-file-name ".emacs.local/simpc-mode/" my-home-config-dir))
+(setq backup-directory-alist
+      `((".*" . ,(expand-file-name ".emacs.d/backups/" my-home-config-dir))))
 
 ;; default settings
 (setq-default inhibit-splash-screen t)
@@ -37,26 +48,20 @@
 (scroll-bar-mode 0)
 (global-display-line-numbers-mode 1)
 
-;; UTF-8 "is" the standard!
-(set-default-coding-systems 'utf-8)
-(prefer-coding-system 'utf-8)
-
 ;; setting fonts
 ;; font_height == pixel * 10
 (defun my/apply-fonts (&optional _frame)
-  (set-face-attribute 'default nil :family "JetBrainsMono NFM Medium" :height 110)
-  (set-face-attribute 'fixed-pitch nil :family "JetBrainsMono NFM Medium" :height 110)
+  (set-face-attribute 'default nil :family "D2CodingLigature Nerd Font" :height 120)
+  (set-face-attribute 'fixed-pitch nil :family "D2CodingLigature Nerd Font" :height 120)
   (set-face-attribute 'variable-pitch nil :family "D2CodingLigature Nerd Font" :height 120))
 
 (if (daemonp)
 	(add-hook 'after-make-frame-functions #'my/apply-fonts)
   (my/apply-fonts))
 
-;; enable hard line wrap at both latex mode and tex mode
-(add-hook 'TeX-mode-hook 'auto-fill-mode)
-(add-hook 'tex-mode-hook 'auto-fill-mode)
-(add-hook 'LaTeX-mode-hook 'auto-fill-mode)
-(add-hook 'latex-mode-hook 'auto-fill-mode)
+;; UTF-8 "is" the standard!
+(set-default-coding-systems 'utf-8)
+(prefer-coding-system 'utf-8)
 
 ;; set dired switches
 (setq dired-listing-switches "-alh")
@@ -138,21 +143,17 @@ point reaches the beginning or end of the buffer, stop there."
 (global-set-key (kbd "<escape> b r") 'revert-buffer)
 (define-key key-translation-map (kbd "<escape> ESC") (kbd "C-g"))
 
+;;===============================================================================
+;;                               PACKAGE CONFIGS
+;;===============================================================================
 ;; set the default mode for files
 (require 'simpc-mode)
 (require 'fasm-mode)
-
-;; Vesti Config
-;;uncomment this if one cannot use tree-sitter parser
-(require 'vesti-mode)
 
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
-;;===============================================================================
-;;                               PACKAGE CONFIGS
-;;===============================================================================
 (use-package which-key
   :ensure t
   :config
@@ -179,14 +180,6 @@ point reaches the beginning or end of the buffer, stop there."
   (setq company-minimum-prefix-length 1
 		company-idle-delay 0.0))
 
-(use-package eldoc-box
-  :ensure t
-  :hook
-  (eglot-managed-mode-hook . eldoc-box-hover-mode)
-  :bind
-  ("<escape> h" . eldoc-box-help-at-point)
-  ("<escape> C-h" . eldoc-box-help-at-point))
-
 ;; alternative for ido mode
 (use-package ivy
   :ensure t
@@ -195,29 +188,18 @@ point reaches the beginning or end of the buffer, stop there."
   (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "[%d/%d] "))
 
+(use-package ace-window
+  :ensure t
+  :bind (("C-x o" . ace-window))
+  :config
+  (setq aw-scope 'frame))  ;; or 'global if you use multiple frames
+
+;; magic git
 (use-package magit
   :ensure t
   :pin melpa
   :bind
   (("C-x g" . magit-status)))
-
-(add-to-list 'eglot-server-programs
-			 '(zig-mode . ("zls")))
-(use-package eglot
-  :ensure t
-  :hook ((rust-mode . eglot-ensure)
-		 (zig-mode . eglot-ensure)))
-
-;; better performance using latex
-;; see the below link for more information
-;; https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/
-(use-package cdlatex
-  :ensure t
-  :config
-  (define-key cdlatex-mode-map (kbd "<C-return>") nil)
-  (define-key cdlatex-mode-map (kbd "TAB") nil)
-  (define-key cdlatex-mode-map (kbd "<tab>") nil)
-  (setq cdlatex-paired-parens "$"))
 
 ;; yasnippet
 (add-to-list 'load-path
@@ -233,6 +215,33 @@ point reaches the beginning or end of the buffer, stop there."
   (yas-reload-all)
   :bind
   ("C-q" . #'yas-expand))
+
+;; pdf-tools
+;; at first, it does not compile. one should fix .emacs.d/elpa/pdf-tools-<version>/build/server/Makefile.am
+;; in there, add -Wno-implicit-function-declaration in libsynctex_a_CFLAGS
+(use-package pdf-tools
+  :ensure t
+  :config
+  ;; Initialize pdf-tools
+  (pdf-tools-install)
+
+  ;; Automatically reload PDF when file changes
+  (add-hook 'pdf-view-mode-hook #'auto-revert-mode)
+
+  ;; Disable incompatible modes like line numbers
+  (add-hook 'pdf-view-mode-hook
+            (lambda ()
+              ;; Disable line numbers
+              (display-line-numbers-mode -1)
+              ;; Optionally disable other visual modes if you use them globally
+              (when (bound-and-true-p hl-line-mode)
+                (hl-line-mode -1))
+              (when (bound-and-true-p visual-line-mode)
+                (visual-line-mode -1))))
+
+  ;; Ensure Emacs doesn't complain about line number mode
+  (with-eval-after-load 'pdf-view
+    (add-to-list 'pdf-view-incompatible-modes 'display-line-numbers-mode)))
 
 ;; another great snippet pcakage
 (require 'texmathp)
@@ -288,14 +297,45 @@ point reaches the beginning or end of the buffer, stop there."
   :bind
   ("C-x C-/" . 'undo-tree-redo))
 
-(use-package zig-mode
-  :ensure t)
+;; vesti mode
+(use-package lua-mode :ensure t)
+(use-package polymode :ensure t)
+(require 'vesti-mode)
+(require 'poly-vesti)
 
-(use-package lean4-mode
-  :commands lean4-mode
-  :vc (:url "https://github.com/leanprover-community/lean4-mode.git"
-	   :rev :last-release))
+;; treesitter
+;; --- Paths: where Emacs looks for the binary grammar ---
+;; Windows: %APPDATA%/.emacs.local/treesit
+;; POSIX:   ~/.config/emacs/.emacs.local/treesit
+(setq treesit-extra-load-path
+      (list (if (eq system-type 'windows-nt)
+                (expand-file-name ".emacs.local/treesit" (getenv "APPDATA"))
+              (expand-file-name ".emacs.local/treesit"
+                                (expand-file-name "~/.config/emacs/")))))
 
-(cond
- ((eq system-type 'windows-nt)
-  (load-file "~/.emacs.local/msvc_env.el")))
+;; Optional: be explicit about the grammar's base name
+;; Emacs will look for:
+;;   Windows: libtree-sitter-vesti.dll
+;;   Linux:   libtree-sitter-vesti.so
+;;   macOS:   libtree-sitter-vesti.dylib
+
+;; --- Mode wiring ---
+(add-to-list 'major-mode-remap-alist '(vesti-mode . vesti-ts-mode))
+
+(define-derived-mode vesti-ts-mode text-mode "Vesti[TS]"
+  "Tree-sitter-based major mode for Vesti."
+  (if (treesit-language-available-p 'vesti)
+      (treesit-parser-create 'vesti)
+    (message "Vesti grammar not found. Check treesit-extra-load-path and file name.")))
+
+;; --- Query files (highlights.scm, injections.scm, etc.) ---
+(setq treesit-query-user-dir
+      (if (eq system-type 'windows-nt)
+          (expand-file-name ".emacs.local/treesit" (getenv "APPDATA"))
+        (expand-file-name ".emacs.local/treesit" "~/.config/emacs/")))
+
+;; --- Quick diagnostics ---
+;; Evaluate these to debug:
+;; (message "treesit-extra-load-path = %S" treesit-extra-load-path)
+;; (treesit-language-available-p 'vesti)      ; should be t
+;; (treesit--available-languages)             ; see what Emacs sees

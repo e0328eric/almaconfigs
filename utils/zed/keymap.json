@@ -2,10 +2,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-shift-h": "outline_panel::ToggleFocus",
       "ctrl-shift-\\": "workspace::ToggleLeftDock",
-      "ctrl-shift-j": "workspace::ToggleBottomDock",
-      "ctrl-shift-o": "file_finder::Toggle",
       "ctrl-shift-t": "workspace::NewTerminal"
     }
   },
@@ -16,9 +13,7 @@
       "ctrl-up": "editor::AddSelectionAbove",
       "ctrl-down": "editor::AddSelectionBelow",
       "ctrl-shift-t": "workspace::NewTerminal",
-      "ctrl-alt-t": "terminal_panel::ToggleFocus",
-      "ctrl-o": "workspace::Open",
-      "ctrl-shift-o": "file_finder::Toggle"
+      "ctrl-alt-t": "terminal_panel::ToggleFocus"
     }
   },
 
@@ -70,6 +65,22 @@
           "create_new_window": false
         }
       ]
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-shift-o": "file_finder::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-k o": "workspace::Open"
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "a": "project_panel::NewFile"
     }
   }
 ]
