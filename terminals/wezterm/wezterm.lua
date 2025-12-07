@@ -19,12 +19,13 @@ local launch_menu = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
+	"IosevkaTerm Nerd Font Propo",
 	"FiraCode Nerd Font Mono",
 	"D2CodingLigature Nerd Font Mono",
 	"JetBrainsMono Nerd Font Mono",
 })
 
-config.font_size = 10
+config.font_size = 12
 config.unicode_version = 16
 config.warn_about_missing_glyphs = false
 
@@ -167,12 +168,12 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 			mods = "CTRL|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 		},
-    {
-      key = "u",
-      mods = "CTRL|SHIFT",
-      action = wezterm.action.CharSelect { copy_on_select = true },
-    },
-  	{
+		{
+			key = "u",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.CharSelect({ copy_on_select = true }),
+		},
+		{
 			key = "w",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.CloseCurrentPane({ confirm = true }),
@@ -209,12 +210,12 @@ else
 			key = "s",
 			mods = "ALT|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
-	  },
-	  {
-      key = "u",
-      mods = "CTRL|SHIFT",
-      action = wezterm.action.CharSelect { copy_on_select = true },
-    },
+		},
+		{
+			key = "u",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.CharSelect({ copy_on_select = true }),
+		},
 		{ key = "f", mods = "CMD|CTRL", action = act.ToggleFullScreen },
 		{ key = "Enter", mods = "ALT", action = act.DisableDefaultAssignment },
 		{ key = "r", mods = "CMD|CTRL", action = act.ReloadConfiguration },

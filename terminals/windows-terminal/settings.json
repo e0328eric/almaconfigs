@@ -40,19 +40,11 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+4"
-        },
-        {
-            "id": null,
             "keys": "alt+shift+plus"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+1"
-        },
-        {
-            "id": null,
-            "keys": "alt+shift+minus"
+            "keys": "ctrl+shift+4"
         },
         {
             "id": "User.newTab.663EF760",
@@ -60,11 +52,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+5"
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+1"
         },
         {
             "id": null,
             "keys": "ctrl+shift+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+5"
         },
         {
             "id": null,
@@ -173,8 +173,8 @@
             "cursorShape": "filledBox",
             "font": 
             {
-                "face": "JetBrainsMono Nerd Font Mono",
-                "size": 10
+                "face": "IosevkaTerm Nerd Font Propo",
+                "size": 12
             },
             "opacity": 86
         },

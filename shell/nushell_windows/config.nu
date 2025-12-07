@@ -810,6 +810,7 @@ alias teachingf    = cd C:/Users/almag/IceDrive/TeX_Documents/TF
 alias seminar      = cd C:/Users/almag/IceDrive/TeX_Documents/Seminar
 alias kindergarten = cd C:/Users/almag/IceDrive/TeX_Documents/Kindergarten
 alias vimconfig    = cd C:/Users/almag/AppData/Local/nvim
+alias flowconfig   = cd C:/Users/almag/AppData/Roaming/flow
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 oh-my-posh init nu --config $"($nu.config-path | path dirname)/emodipt-extend.omp.json "

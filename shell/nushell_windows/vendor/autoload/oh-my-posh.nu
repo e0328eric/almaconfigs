@@ -5,7 +5,7 @@ if ($env.config? | is-not-empty) {
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
 $env.PROMPT_INDICATOR = ""
-$env.POSH_SESSION_ID = "e5adaf08-fb65-409c-ae84-381204e32fdc"
+$env.POSH_SESSION_ID = "d4849cea-4db7-4891-9d75-2c9f5403a874"
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 

@@ -150,7 +150,7 @@ Applies `vesti-luacode-face' to the whole body."
     (,vesti--rx-latex-cmd . 'vesti-command-face)
 
     ;; env/file names in various forms
-    (,(concat "\\_<\\(useenv\\|begenv\\|endenv\\)\\_>\\s-+\\(" vesti--rx-env-name "\\)")
+    (,(concat "\\_<\\(useenv\\|begenv\\)\\_>\\s-+\\(" vesti--rx-env-name "\\)")
      (2 'vesti-env-face))
     (,(concat "\\_<\\(defenv\\)\\_>\\s-+\\(" vesti--rx-env-name "\\)")
      (2 'vesti-env-face))
@@ -177,10 +177,10 @@ Applies `vesti-luacode-face' to the whole body."
     ;; Braces/parens
     (modify-syntax-entry ?{ "(}" st)
     (modify-syntax-entry ?} "){" st)
-    (modify-syntax-entry ?( "()" st)
-    (modify-syntax-entry ?) ")(" st)
-    (modify-syntax-entry ?[ "(]" st)
-    (modify-syntax-entry ?] ")[" st)
+    (modify-syntax-entry ?\( "()" st)
+    (modify-syntax-entry ?\) ")(" st)
+    (modify-syntax-entry ?\[ "(]" st)
+    (modify-syntax-entry ?\] ")[" st)
     ;; Backslash as word constituent for LaTeX commands
     (modify-syntax-entry ?\\ "_" st)
     st))

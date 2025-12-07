@@ -320,19 +320,7 @@ point reaches the beginning or end of the buffer, stop there."
 ;;   macOS:   libtree-sitter-vesti.dylib
 
 ;; --- Mode wiring ---
-(add-to-list 'major-mode-remap-alist '(vesti-mode . vesti-ts-mode))
-
-(define-derived-mode vesti-ts-mode text-mode "Vesti[TS]"
-  "Tree-sitter-based major mode for Vesti."
-  (if (treesit-language-available-p 'vesti)
-      (treesit-parser-create 'vesti)
-    (message "Vesti grammar not found. Check treesit-extra-load-path and file name.")))
-
-;; --- Query files (highlights.scm, injections.scm, etc.) ---
-(setq treesit-query-user-dir
-      (if (eq system-type 'windows-nt)
-          (expand-file-name ".emacs.local/treesit" (getenv "APPDATA"))
-        (expand-file-name ".emacs.local/treesit" "~/.config/emacs/")))
+;;(add-to-list 'major-mode-remap-alist '(vesti-mode . vesti-ts-mode))
 
 ;; --- Quick diagnostics ---
 ;; Evaluate these to debug:
