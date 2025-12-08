@@ -24433,3 +24433,229 @@ v wezterm.lua
 cd Icedrive\Photos\
 cd 
 cd Github\arch-almagest\
+lg
+ls
+wezterm -h
+wezterm imgcat Anby_Demara.png
+cd 
+cd .cargo\bin\
+ls
+imgch
+cd
+cd Github\
+ls
+rustup update
+cargo install yazi
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq oschwartz10612.Poppler sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+cd Icedrive\Photos\
+yazi
+winget install --id yorukot.superfile
+cd Icedrive\Photos\
+spfg
+spfg=
+cd Icedrive\Photos\\
+cd Icedrive\Photos\
+wallp set 0 Anby_Demara.png
+wallp list
+wallp set 0 Anby_Demara.png
+cd Icedrive\Photos\
+wallp set 0 Anby_Demara.png
+wallp set 0 ./Anby_Demara.png
+wallp set 1 ./Anby_Demara.png
+flow --list-languages
+flowconfig
+ls
+cd file_type\
+ls
+flow
+ls
+cp typst.conf vesti.cof
+mv vesti.cof vesti.conf
+flow vesti.conf
+v vesti.conf
+teachingf 
+cd 2025-2\Analysis2_Yang_Prof\tf6\
+flow tf6.ves
+ls
+cd ..
+ls
+flow
+flow --help
+flow --show-log
+flow --show-log tf6.ves
+cd 
+cd .local\flow\
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseSafe
+flow --show-log tf6.ves
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+ls
+rg "tree" src
+rg "parser" src
+cd
+cd Github\tree-sitter-vesti\
+v src\scanner.c
+lg
+cd ..
+cd vesti-zed\
+v extension.toml
+rm -rp grammars 
+cd Test\fooo
+ls
+v foo.py
+rm main.zig
+cp `~/Icedrive/Computer/Modern Fortran Explained Incorporating Fortran 2018.pdf` bar.pdf
+ls
+v foo.py
+python foo.py
+pip install pypdf2
+python foo.py
+pip install reportlab
+python foo.py
+start final_book_numbered.pdf
+ls
+rm final_book_numbered.pdf
+rm -s
+pip install pypdf
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+v foo.py
+python foo.py
+start book_final.pdf
+v foo.py
+ls
+v foo.py
+ls
+v foo.py
+rm book_source.pdf test_source.pdf book_final.pdf
+python foo.py
+ls
+start test_source.pdf
+rm test_source.pdf
+v foo.py
+start book_final.pdf
+start .
+teachingf 
+ls
+cd 2025-2\Analysis2_Yang_Prof\tf6\
+v tf6.ves
+cd ../..
+ls
+cd Analysis2_Kim_Prof\
+lks
+ls
+cp -r tf5 tf6
+cd tf6\
+ls
+rm tf5.pdf
+mv tf5.ves tf6.ves
+vesti compile -W
+cd ../..
+ls
+cd Analysis2_Kim_Prof\tf6\
+vesti compile
+v first.lua
+vesti compile
+start tf6.pdf
+vesti compile -W
+opam
+fortran
+v tf6.ves
+homework 
+ls
+cd Commutative_Algebra\
+ls
+start final_homework.pdf
+cd Github\vesti\
+l
+ls
+v asdsadas
+v foo.ves
+lg
+ls
+rm asdsadas
+ls
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+v src\parser\Parser.zig
+v src\parser\ast.zig
+cd src\parser\
+ls
+v foo.ves
+v Preprocessor.zig
+ls
+cd ..
+v lexer\Token.zig
+cd Manual\
+ls
+cd Github\vesti\Manual\
+ls
+cd ..
+s
+cd src\parser
+cd ..
+ls
+cd src\parser
+v defkind.zig
+v Parser.zig
+v asdada
+cd Test\fooo\
+ls
+v vittu.tex
+ls
+pdflatex vittu.tex
+v vittu.tex
+pdflatex vittu.tex
+start vittu.pdf
+cd ../../Manual/
+cd .vesti-dummy\
+ls
+cd ..
+ls
+teachingf 
+cd 2025-2\Analysis2_Yang_Prof\tf6\
+ls
+cd .vesti-dummy\
+v vittu.tex
+pdflatex vittu.tex
+v coprime-math.sty
+start vittu.pdf
+bat vittu.tex
+cd ../..
+lg
+v src\lexer\Token.zig
+v src\parser\defkind.zig
+lg
+cd Manual\
+s
+start vesti_man.pdf
+pwd | pbcopy 
+cd C:\Users\almag\Github\vesti\Manual
+s
+v vesti_man.ves
+teachingf 
+ls
+cd 2025-2\
+ls
+cd Analysis2_Kim_Prof\
+ls
+cd tf6\
+staet .
+start .
+cd ../..
+ls
+cd SetTheory_Kim_Prof\additional1\
+cd ..
+ls
+cp -r tf5 tf6
+cd tf6\
+ls
+rm tf5.pdf
+ls
+v first.lua
+cd Github\arch-almagest\
