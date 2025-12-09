@@ -1,3 +1,3 @@
 /etc/keyd/default.conf
 
-and then run sudo systemd enable keyd --now
+and then run sudo systemctl enable keyd --now
