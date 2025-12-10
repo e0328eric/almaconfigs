@@ -110,35 +110,35 @@ function shtobat
 end
 
 function hakwon
-    cd ~/Icedrive/TeX_Documents/Hakwon
+    cd ~/pCloud/TeX_Documents/Hakwon
 end
 
 function minireport
-    cd ~/Icedrive/TeX_Documents/Mini_Report
+    cd ~/pCloud/TeX_Documents/Mini_Report
 end
 
 function notetaking
-    cd ~/Icedrive/TeX_Documents/NoteTaking
+    cd ~/pCloud/TeX_Documents/NoteTaking
 end
 
 function homework
-    cd ~/Icedrive/TeX_Documents/Homework
+    cd ~/pCloud/TeX_Documents/Homework
 end
 
 function lecturenote
-    cd ~/Icedrive/TeX_Documents/Lecture_Note
+    cd ~/pCloud/TeX_Documents/Lecture_Note
 end
 
 function mathbook
-    cd ~/Icedrive/Math
+    cd ~/pCloud/Math
 end
 
 function teachingf
-    cd ~/Icedrive/TeX_Documents/TF
+    cd ~/pCloud/TeX_Documents/TF
 end
 
 function kindergarten
-    cd ~/Icedrive/TeX_Documents/Kindergarten
+    cd ~/pCloud/TeX_Documents/Kindergarten
 end
 
 function cfmtcp
