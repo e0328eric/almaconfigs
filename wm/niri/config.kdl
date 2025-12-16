@@ -119,11 +119,11 @@ spawn-sh-at-startup "qs -c ~/.config/quickshell"
 spawn-at-startup "/usr/lib/mate-polkit/polkit-mate-authentication-agent-1"
 spawn-sh-at-startup "vicinae server"
 spawn-sh-at-startup "gnome-keyring-daemon --start --components=secrets"
-spawn-at-startup "pcloud"
+spawn-at-startup "synology-drive"
 
 environment {
   XDG_CURRENT_DESKTOP "niri"
-  QT_QPA_PLATFORM "wayland"
+  QT_QPA_PLATFORM "wayland;xcb"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   QT_QPA_PLATFORMTHEME "gtk3"
   QT_QPA_PLATFORMTHEME_QT6 "gtk3"
@@ -223,7 +223,7 @@ binds {
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
-    Mod+Shift+Return hotkey-overlay-title="Open Browser" { spawn "zen-browser"; }
+    Mod+Shift+Return hotkey-overlay-title="Open Browser" { spawn "firefox"; }
 
     Mod+Space repeat=false hotkey-overlay-title="Open Vicinae" { spawn "vicinae" "toggle"; }
 
@@ -394,12 +394,9 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // === Screenshots ===
-    XF86Launch1 { screenshot; }
-    Ctrl+XF86Launch1 { screenshot-screen; }
-    Alt+XF86Launch1 { screenshot-window; }
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Mod+P { screenshot; }
+    Mod+Ctrl+P { screenshot-screen; }
+    Mod+Alt+P { screenshot-window; }
     // === System Controls ===
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+P { power-off-monitors; }
