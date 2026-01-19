@@ -331,3 +331,4 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-08-25T06:15:58.037979Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-08-25T06:16:03.731749Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-08-25T06:16:03.731898Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-12-31T05:05:58.627163Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Program path is not valid for command '%ProgramFiles%/WezTerm/wezterm-gui.exe'.

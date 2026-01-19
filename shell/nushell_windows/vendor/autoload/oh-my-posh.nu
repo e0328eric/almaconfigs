@@ -5,7 +5,7 @@ if ($env.config? | is-not-empty) {
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
 $env.PROMPT_INDICATOR = ""
-$env.POSH_SESSION_ID = "780060cf-1733-486b-bfd1-b9711659ec99"
+$env.POSH_SESSION_ID = "a087190c-0198-4cbd-8eba-8da78afc09fc"
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 
@@ -13,7 +13,7 @@ $env.POSH_SHELL_VERSION = (version | get version)
 $env.VIRTUAL_ENV_DISABLE_PROMPT = 1
 $env.PYENV_VIRTUALENV_DISABLE_PROMPT = 1
 
-let _omp_executable: string = (echo "C:/Users/almag/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe")
+let _omp_executable: string = (echo "oh-my-posh.exe")
 
 # PROMPTS
 

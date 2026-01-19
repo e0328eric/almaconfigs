@@ -25,7 +25,7 @@ config.font = wezterm.font_with_fallback({
 	"JetBrainsMono Nerd Font Mono",
 })
 
-config.font_size = 12
+config.font_size = 11
 config.unicode_version = 16
 config.warn_about_missing_glyphs = false
 
@@ -104,7 +104,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c5198fa9 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
 		},
 	},
 	powershell = {
@@ -113,7 +113,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c5198fa9 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
 		},
 	},
 	msys2 = {
@@ -158,26 +158,16 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 		{ key = "7", mods = "CTRL|ALT", action = act.ActivateTab(6) },
 		{ key = "8", mods = "CTRL|ALT", action = act.ActivateTab(7) },
 		{ key = "9", mods = "CTRL|ALT", action = act.ActivateTab(-1) },
-		{
-			key = "d",
-			mods = "CTRL|SHIFT",
-			action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-		},
-		{
-			key = "s",
-			mods = "CTRL|SHIFT",
-			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
-		},
-		{
-			key = "u",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action.CharSelect({ copy_on_select = true }),
-		},
-		{
-			key = "w",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action.CloseCurrentPane({ confirm = true }),
-		},
+
+		{ key = "d", mods = "CTRL|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+		{ key = "s", mods = "CTRL|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+        { key = "UpArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Up") },
+        { key = "DownArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Down") },
+        { key = "LeftArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Left") },
+        { key = "RightArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Right") },
+
+		{ key = "u", mods = "CTRL|SHIFT", action = wezterm.action.CharSelect({ copy_on_select = true }) },
+		{ key = "w", mods = "CTRL|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
 		{ key = "l", mods = "CTRL|SHIFT", action = act.ShowLauncher },
 		{ key = "t", mods = "CTRL|ALT", action = act.ShowLauncherArgs({ flags = "FUZZY|TABS" }) },
 		{ key = "f", mods = "CTRL|ALT", action = act.ToggleFullScreen },
@@ -211,6 +201,10 @@ else
 			mods = "ALT|SHIFT",
 			action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
 		},
+        { key = "UpArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Up") },
+        { key = "DownArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Down") },
+        { key = "LeftArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Left") },
+        { key = "RightArrow", mods = "CTRL|ALT", action = act.ActivatePaneDirection("Right") },
 		{
 			key = "u",
 			mods = "CTRL|SHIFT",
