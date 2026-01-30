@@ -27400,3 +27400,1156 @@ ls
 cd arch-almagest\
 ls
 git remote set-url origin https://codeberg.org/e0328eric/almaconfigs.git
+lg
+git push -u origin main
+v README.md
+cd ..
+cd vesti\
+cd VirtualMachine\
+nu boot-linux.nu
+v boot-linux.nu
+v src\parser\Preprocessor.zig
+zig build run -- experimental foo.ves
+cd Github\vesti\
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- experimental foo.ves
+v foo.ves
+ls
+v src\parser\Parser.zig
+ls
+cd src\parser\
+ls
+cp Parser.zig NewParser.zig
+v NewParser.zig
+ls
+cd src\parser\
+ls
+mv Parser.zig OldParser.zig
+mv NewParser.zig Parser.zig
+cd ../..
+v foo.ves
+zig build run -- compile foo.ves
+cd ../..
+v build.zig
+zig build run -- compile foo.ves
+zig build run -- compile -S foo.ves
+start foo.pdf
+v foo.ves
+v src\parser\Parser.zig
+v src\parser\Preprocessor.zig
+start foo.pdf
+v foo.ves
+zig build run -- compile -S foo.ves
+v src\experimental.zig
+v src\Compiler.zig
+zig build run -- compile -S foo.ves
+v src\Compiler.zig
+z
+zig build run -- compile -S foo.ves
+v src\Compiler.zig
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+v src\Compiler.zig
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+z
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+v foo.ves
+zig build run -- compile -S foo.ves
+v foo.ves
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+v foo.ves
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- compile -S foo.ves
+v build.zig
+v foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- compile -S foo.ves
+v src\parser\Preprocessor.zig
+zig build run -- compile -S foo.ves
+v foo.ves
+lg
+cd src\parser\
+mv OldParser.zig ~/Test
+lg
+git push -u origin main
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v Preprocessor.zig
+lg
+cd Github\vesti\
+ls
+v src\parser\Preprocessor.zig
+zig build
+v src\lexer\Token.zig
+z
+zig build
+python3.exe 
+v src\parser\Preprocessor.zig
+seminar
+cd Doctor\Weight_Sobolev\
+cd ..
+ls
+mv Weight_Sobolev Half_Plane
+mv Half_Plane Half_Space
+cd Half_Space\
+ls
+mv weight_sobolev.ves half_space.ves
+rm weight_sobolev.pdf
+ls
+v first.lua
+vesti compile
+cd
+cd Github\vesti\
+v build.zig
+v src\parser\Preprocessor.zig
+cd Github\vesti\
+zig build
+v half_space.ves
+mkdir weighted_sobolev
+mkdir half_space
+ls
+zig build
+v src\parser\Preprocessor.zig
+seminar
+ls
+cd Doctor\Half_Space\
+ls
+vesti compile
+ls weighted_sobolev\
+v half_space.ves
+vesti compile
+seminar
+cd Doctor\Half_Space\
+cd ..
+s
+cd AApproach\
+ls
+v aapproach.ves
+cd ..
+cd AApproach\
+vesti compile
+cd
+cd .local\bin\
+rm vesti_tectonic_x86_64.dll
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+ls
+cd Half_Space\
+s
+vesti compile
+mv weighted_sobolev weighted-sobolev
+cd weighted-sobolev\
+mv weighed_sobolev.ves weighed-sobolev.ves
+cd ..
+s
+v half_space.ves
+vesti compile
+ls
+mv weighted-sobolev weighted_sobolev
+cd weighted_sobolev\
+ls
+mv weighed-sobolev.ves weighed_sobolev.ves
+cd ..
+ls
+ls
+ls weighted_sobolev\
+cd weighted_sobolev\
+mv weighed_sobolev.ves weighted_sobolev.ves
+cd ..
+seminar
+ls
+cd Doctor\Half_Space\
+v half_space.ves
+ls
+start half_space.pdf
+v half_space.ves
+ls
+v appendix/appendix.ves
+vesti compile -W
+vesti clear
+seminar
+la
+ls
+cd Doctor\
+ls
+mv Half_Space Weighted_Sobolev
+ls
+cd Weighted_Sobolev\
+ls
+rm -r half_space half_space.pdf 
+ls
+mv half_space.ves weighted_sobolev.ves
+v first.lua
+ls
+cd
+cd Github\vesti\
+vesti compile
+v src\commands.zlap
+cd Github\vesti\
+ls
+seminar
+cd Doctor
+ls
+ls Half_Space\
+ls Weighted_Sobolev\
+cd Weighted_Sobolev\
+ls
+v src\main.zig
+v first.lua
+ls
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v weighted_sobolev.ves
+ls
+mkdir chapter1
+mv weighted_sobolev\weighted_sobolev.ves chapter1\definition.ves
+ls
+rm -r weighted_sobolev\
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+seminar
+cd Doctor
+ls
+rm -rp Half_Space
+ls
+mkdir Half_Space
+cd Half_Space\
+ls
+vesti compile -W
+v src\main.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti init Half_Space
+ls
+bat first.lua
+v first.lua
+ls
+lg
+vesti
+v weighted_sobolev.ves
+ls
+start weighted_sobolev.pdf
+cd
+cd Github\vesti\
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Preprocessor.zig
+vesti compile -W
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+vesti compile -W
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src/Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src/parser/Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v .vesti-dummy\weighted_sobolev.tex
+vesti clear
+v src\lexer\Token.zig
+lg
+v src\diagnostic.zig
+zig build
+cd Github\vesti\
+cd Github\vesti\
+zig build
+v src\parser\Preprocessor.zig
+zig build
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile -W
+vesti compile
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+lg
+v src\parser\Parser.zig
+lg
+v src\lexer\Lexer.zig
+v chapter1\definition.ves
+vesti compile -W
+seminar
+cd Doctor\Weighted_Sobolev\
+ls
+seminar
+cd Doctor\Weighted_Sobolev\
+vesti compile -W
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+seminar
+cd Doctor\Weighted_Sobolev\
+vesti compile -W
+vesti compile
+v src\lexer\Token.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile -W
+cd appendix\
+ls
+mv appendix.ves banach.ves
+cd ..
+v chapter1\definition.ves
+seminar
+cd Doctor\AApproach\
+v aapproach.ves
+cd
+cd Github\vesti\
+ls
+v src\parser\Preprocessor.zig
+vesti compile -W
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+z
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile\
+vesti compile
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+shutdown /s /t 0
+v weighted_sobolev.ves
+cargo install zellij
+cd Github\vesti\
+ls
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+seminar
+cd Doctor\Weighted_Sobolev\
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Weighted_Sobolev
+vesti compile
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Weighted_Sobolev
+start weighted_sobolev.pdf
+vesti compile
+v src\lexer\Token.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v .vesti-dummy\weighted_sobolev.tex
+v chapter1\definition.ves
+vesti compile
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v chapter1\definition.ves
+vesti compile
+v src\parser\Preprocessor.zig
+v .vesti-dummy\@vesti__e5da40ce2b0a8234.tex
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v .vesti-dummy\@vesti__e5da40ce2b0a8234.tex
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v chapter1\definition.ves
+vesti compile
+cd Github\vesti\
+zig build
+v src\lexer\Token.zig
+v src\parser\Parser.zig
+zig build
+lg
+zig build
+lg
+v src\parser\Preprocessor.zig
+seminar
+cd Doctor\Weighted_Sobolev\
+start weighted_sobolev.pdf
+vesti compile
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Weighted_Sobolev
+vesti compile -W
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+lg
+vesti compile -W
+cd Github\vesti\
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+cd src\parser\
+ls
+mv Preprocessor.zig My_Preprocessor.zig
+v Preprocessor.zig
+ls
+rm Preprocessor.zig
+mv My_Preprocessor.zig Preprocessor.zig
+v Preprocessor.zig
+ls
+mv Preprocessor.zig My_Preprocessor.zig
+v 
+v Preprocessor.zig
+cd ../..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+\
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v Preprocessor.zig
+cd src\parser\
+s
+rm My_Preprocessor.zig
+lg
+v src\parser\Preprocessor.zig
+lg
+cd ../..
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+lg
+cd Github\vesti\
+vesti compile -W
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+vesti compile
+v src\parser\Preprocessor.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v chapter1\definition.ves
+vesti compile -W
+shutdown /s /t 0
+seminar
+cd Doctor\Weighted_Sobolev\
+start weighted_sobolev.pdf
+cd ../..
+cd ..
+ls
+cd Kindergarten\Volume2\
+vesti compile
+v chapter1\definition.ves
+shutdown /s /t 0
+seminar
+ls
+cd Doctor\Weighted_Sobolev\
+ls
+v chapter2/basic_facts.ves
+v chapter2/the_operator_L.ves
+ls
+start weighted_sobolev.pdf
+vesti compile
+vesti compile -W
+v appendix\banach.ves
+ls
+v chapter2\the_operator_L.ves
+vesti compile -W
+v chapter3\embedding.ves
+shutdown /s /t 0
+cd .local
+ls
+zig version
+zigup
+ls
+rm -r zig
+rm -s
+rm -p
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2261+d6b3dd25a zig
+rm -rp zig-compiler\
+ls
+cd fasm2\
+ls
+cd examples\
+ls
+cd tetros\
+ls
+v tetros.asm
+cd ..
+ls
+cd win64avx512\
+ls
+v win64avx512.asm
+cd
+cd Test
+ls
+v exif.c
+ls
+v exif.zig
+rm exif.exe exif.obj OldParser.zig
+ls
+zig run exif.zig -- foo.png
+cd 
+cd Github\xilo
+zig build
+ls
+lg
+cd ..
+cd vesti\
+zig build
+cd ..
+ls
+git clone --depth 1 https://github.com/e0328eric/siv.git
+cd siv
+ls
+zig build vcpkg
+zig fetch --save git+https://codeberg.org/e0328eric/zlap
+zig fetch --save git+https://github.com/raysan5/raylib.git
+zig build vcpkg
+ls
+v exif.zig
+cd Github\siv
+v siv.odin
+odin build .
+~/.local/Odin/odin.exe build .
+v siv.odin
+~/.local/Odin/odin.exe build .
+ls
+mv siv.exe ~/.local/bin
+cd
+cd .local\Odin\
+pwd | pbcopy 
+v siv.odin
+cd
+cd Test\
+siv `릴파 (17).png`
+cd
+cd .local\Odin\bin\
+lls
+ls
+cd ..
+ls
+cd vendor\sdl3
+ls
+pwd | pbcopy 
+cd
+cd Test\
+siv `릴파 (17).png`
+dumpbin /dependents ~/.local/bin/siv.exe
+cd image\
+ls
+pwd | pbcopy 
+siv `릴파 (17).png`
+cd
+cd Test
+dumpbin /dependents ~/.local/bin/siv.exe
+cd
+cd Test
+siv `릴파 (17).png`
+siv `릴파 (17).png` foo.png
+odin
+odin help build
+cd
+cd .local\Odin\bin\
+cd ../..
+cd bin
+ls -al
+odin build . -o:size -build-mode:static
+~/.local/Odin/odin.exe build . -o:size -build-mode:static
+ls -al
+rm siv.lib
+odin help build | bat
+cd Github\siv
+odin
+odin build . -o:size -extra-linker-flags:"/MT"
+odin build . -o:size -subsystem:windows
+odin help build | bat
+ls -al
+dumpbin /dependents ./siv.exe
+ls
+mv siv.exe ~/.local/bin
+rm -r build.zig build.zig.zon  src\ vcpkg-configuration.json vcpkg.json .zig-cache\
+rm -r src\ vcpkg-configuration.json 
+rm -r vcpkg.json .zig-cache
+v .gitignore
+cd
+cd Test
+ls
+siv `릴파 (17).png` foo.png
+ls
+lg
+shutdown /s /t 0
+cd Github\vesti\
+seminar
+ls
+cd Doctor\Weighted_Sobolev\
+start weighted_sobolev.pdf
+v src\Lua.zig
+cd $env.APPDATA
+cd vesti\template\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+v before.lua
+vesti compile
+vesti run
+vesti compile
+v before.lua
+vesti compile
+cd
+seminar
+cd Doctor\AApproach\
+v bib.bib
+v chapter3\embedding.ves
+shutdown /s /t 0
+vesti compile -W
+shutdown /s /t 0
+ls
+cd Github\vesti\
+cd ..
+ls
+cd siv
+ls
+zig init -m
+zig fetch --save git+https://github.com/allyourcodebase/SDL3.git
+v src/main.zig
+v build.zig
+zig build run
+cd ..
+git clone --depth 1 https://github.com/e0328eric/SDL3.git
+cd SDL3
+ls
+v build.zig.zon
+pwd | pbcopy 
+zig version | pbcopy 
+v build.zig.zon
+ls
+cd ..
+cd siv\
+cd Github\SDL3\
+v build.zig.zon
+zig build run
+v build.zig
+zig build run
+zig build run -Dtarget=x86_64-windows-msvc
+v build.zig
+zig build run
+v build.zig
+zig build run
+v build.zig
+ls
+rm -rp build.zig build.zig.zon src\ .zig-cache\
+ls
+v siv.odin
+cd
+cd .local
+ls
+git clone --depthh 1 https://github.com/karl-zylinski/odin-c-bindgen.git
+git clone --depth 1 https://github.com/karl-zylinski/odin-c-bindgen.git
+cd odin-c-bindgen\
+odin build src -o:speed -out:c2odin.exe
+curl -O https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+tar xvf clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+rm clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+curl -O https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+tar xvf clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+start .
+rm clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+curl -O --location https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+tar xvf clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+mv clang+llvm-20.1.8-x86_64-pc-windows-msvc\lib\libclang.lib libclang
+mv clang+llvm-20.1.8-x86_64-pc-windows-msvc/bin/libclang.dll ../bin
+ls
+rm -rp clang+llvm-20.1.8-x86_64-pc-windows-msvc\ clang+llvm-20.1.8-x86_64-pc-windows-msvc.tar.xz
+ls
+odin build src -o:speed -out:c2odin.exe
+ls
+mv c2odin.exe ../bin
+ls
+cd
+cd Github\
+git clone --depth 1 https://github.com/e0328eric/clap.git
+cd clap
+ls
+c2odin clparse.h
+ls
+c2odin clparse.h .
+mkdir src
+mv clparse.h src
+c2odin.exe src
+ls
+cd src\src\
+ls
+v clparse.odin
+ls
+mv clparse.odin ../..
+cd ..
+mv clparse.h ..
+cd ..
+las
+ls
+rm -r src
+ls
+v clparse.odin
+cd ..
+cd
+cd Test
+mkdir sdl
+cd sdl
+zig init -m
+zig fetch --save git+https://github.com/allyourcodebase/SDL3.git
+v build.zig.zon
+lg
+zig fetch --save git+https://github.com/e0328ericv/SDL3.git
+zig fetch --save git+https://github.com/e0328eric/SDL3.git
+ls
+v build.zig
+v src/main.zig
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+v build.zig.zon
+v build.zig
+zig fetch --save=sdl_source https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.4.0.tar.gz
+bat build.zig.zon
+v build.zig
+cd ..
+rm -rp sdl\
+ls
+shutdown /s /t 0
+seminar
+s
+cd Doctor\Weighted_Sobolev\
+ls
+start weighted_sobolev.pdf
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Weighted_Sobolev
+ls
+vesti compile -W
+cd Github\vesti\
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=Debug
+shutdown /s /t 0
+seminar
+cd Doctor\AApproach\
+pwd | pbcopy 
+ls
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\AApproach
+ls
+start aapproach.pdf
+v appendix\aux-lemmas.ves
+wallp set 0 ~/pCloud/Photos/rappa.jpg
+wallp list
+wallp set 1 ~/pCloud/Photos/stelle-firefly.png
+wallp set 2 ~/pCloud/Photos/갈브레나_3840x2160.jpg
+seminar
+ls
+cd Doctor\AApproach\
+ls
+start aapproach.pdf
+cd
+ls
+cd .local
+ls
+zig version
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2296+fd3657bf8 zig
+cd
+cd Github\xilo\
+v src\rm\Remover\windows.zig
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+rm -s
+rm -p
+ls
+ls src
+c d
+cd
+ls
+cd Test\
+ls
+rm -r notcurses\
+mkdir foo
+foo\
+ls
+v main./c
+v main.c
+zig cc main.c -o main
+v main.c
+zig cc main.c -o main
+zig cc main.c -std=gnu11 -o main
+v main.c
+zig cc main.c -std=gnu11 -o main
+./main
+mv main main.exe
+./main
+v main.c
+zig cc main.c -std=gnu11 -o main
+v appendix\aux-lemmas.ves
+shutdown /s /t 0
+cd Github\alma-nix\
+cd Github\xilo\
+ls
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Doptimize=ReleaseFast -Dtarget=x86_64-linux-musl
+v src\rm\rename.zig
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Doptimize=ReleaseFast -Dtarget=x86_64-linux-musl
+lg
+cd .
+cd ..
+ls
+cd zigup
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Doptimize=ReleaseFast -Dtarget=x86_64-linux-musl
+cd ..
+cd alma-nix\
+ls
+lg
+cd ..
+ls
+cd SDL3\
+cd ..
+ls
+cd vesti
+lg
+cd .local\
+s
+zig version
+cd
+cd Github\alma-nix\\
+cd ..
+cd vesti\
+zig build
+zig build -Dtarget=x86_64-linux-musl
+zig build -Dtarget=x86_64-linux-gnuj
+zig build -Dtarget=x86_64-linux-gnu
+seminar
+cd Doctor\AApproach\
+ls
+vesti compile
+ls
+cd
+seminar
+ls
+cd Doctor\Weighted_Sobolev\
+pwd | pbcopy 
+ls
+start weighted_sobolev.pdf\
+start weighted_sobolev.pdf
+vesti compile -W
+v .vesti-dummy\weighted_sobolev.log
+seminar
+cd Doctor\AApproach\
+ls
+v bib.bib
+cd
+ls
+cd Github\
+ls
+mv vesti vesti-zig
+git clone https://github.com/e0328eric/vesti-tectonic-backend.git
+mv vesti-tectonic-backend vesti-rust
+ls
+cd vesti-rust\
+ls
+v Cargo.toml
+cargo build
+cargo build -F tectonic
+v Cargo.toml
+cargo build -F tectonic
+cargo build
+v Cargo.toml
+cargo build
+ls
+rm windows_build.bat
+ls
+cd dist\
+ls
+cd ..
+rm -rp dist\
+rm -rp example\
+v src\lexer\token.rs
+ls
+v src\main.rs
+cd ..
+ls
+mv vesti-rust vesti-rust-old
+ls
+rustup update
+cd
+ls
+cd Test
+s
+cargo new foo
+cargo new fooo
+ls foo
+cd fooo
+v src\main.rs
+cd
+ls
+cd Github\
+ls
+rm -rp vesti-rust-old\
+mv vesti-zig vesti
+ls
+seminar
+cd Doctor\AApproach\
+v chapter1\definition.ves
+v bib.bib
+vesti compile -W
+v .vesti-dummy\weighted_sobolev.log
+v chapter1\definition.ves
+cd .local
+ls
+zigup
+zig version
+ls
+rustc --help
+rustc --print target-list
+cd
+ls
+cd Github\
+ls
+cd vesti\
+ls
+zig build --help
+ls
+cd ..
+ls
+cargo new setjmp
+cd setjmp\
+ls
+v src\main.rs
+cd ..
+ls
+rm -rp setjmp\
+ls
+mv siv siv-odin
+mkdir siv
+cd siv
+ls
+zig init
+rm src\root.zig
+v build.zig.zon
+ls
+v build.zig
+cd ..
+cd SDL3\
+cd ..
+cd siv
+zig fetch --save git+https://github.com/e0328eric/SDL3.git
+bat build.zig.zon
+cd Github\
+ls
+git clone --depth 1   8 │ siv           │ dir  │ 4.0960 kB │ 7 minutes ago
+git clone --depth 1 https://github.com/e0328eric/SDL_image.git\
+git clone --depth 1 https://github.com/e0328eric/SDL_image.git
+ls
+cd siv
+cd Github\
+ls
+v build.zig.zon
+v build.zig
+zig build
+v build.zig
+v build.zig.zon
+ls
+v build.zig
+zig build
+v build.zig
+zig build
+cd .zig-cache\
+ls
+cd o
+ls
+sf . "cimports"
+ls
+start .
+cd ../..
+ls
+v build.zig
+zig build
+v build.zig
+zig build
+v build.zig
+zig build
+cd SDL_image\
+ls
+v build.zig
+zig build
+v src\sdl_wrapper.h
+zig build
+v src\sdl_wrapper.h
+v build.zig
+zig build
+v build.zig
+v src\sdl_wrapper.h
+zig build
+v src\main.zig
+ls
+v build.zig
+ls
+v build.zig
+cd ..
+ls
+rm build.zig.zon
+v build.zig.zon
+zig fetch --save git+https://github.com/e0328eric/SDL_image.git
+ls
+v build.zig.zon
+ls
+v build.zig.zon
+v build.zig
+ls
+cd siv-odin\
+ls
+v src\main.zig
+ls
+zig fetch --save git+https://codeberg.org/e0328eric/zlap.git
+v build.zig
+cd Github\vesti
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+v src\main.zig
+v src\vesti_c.zig
+v build.zig
+zig build -Dtarget=wasm32-wasi
+v build.zig
+lg
+ls
+seminar
+ls
+cd Doctor\Weighted_Sobolev\
+cd .local
+ls
+zig version
+zigup
+cd
+seminar
+cd Doctor\Weighted_Sobolev\
+s
+rm 3
+cd
+cd Github\alma-nix\
+lg
+ls
+cd ..
+mv Weighted_Sobolev Weighted_Sobolev_Vesti
+ls
+mv Weighted_Sobolev Weighted_Sobolev_Vesti
+ls
+cp -r Weighted_Sobolev_Vesti Weighted_Sobolev
+cd Weighted_Sobolev\
+ls
+pdflatex
+ls
+rm texput.log
+ls
+start .\
+cp ../Weighted_Sobolev_Vesti/bib.bib .
+ls
+start .
+ls
+mkdir chapter1 chapter2 chapter3 appendix
+ls
+mv @vesti__e5da40ce2b0a8234.tex chapter1/definitions.tex
+mv @vesti__159fc35a7eeba594.tex chapter2\basic_facts.tex
+mv @vesti__3c24df7f66d1330d.tex chapter2\the_operator_L.tex
+mv @vesti__9b299d801f90f460.tex chapter3/embedding.tex
+mv @vesti__871fdb959f2d2685.tex appendix\banach.tex
+mv @vesti__84a6cca4b7d5baf3.tex appendix\pf-lemma19.tex
+v @vesti__fc561acdad8f27f.tex
+rm @vesti__fc561acdad8f27f.tex
+v weighted_sobolev.tex
+xelatex weighted_sobolev.tex
+v chapter1\definitions.tex
+ls
+cd
+ls
+cd Github\alma-nix\
+ls
+v bootstrap_home.sh
+v bootstrap.sh
+lg
+shutdown /s /t 0
+cd Github\vesti\
+lg
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+seminar
+cd Doctor\Weighted_Sobolev\
+ls
+start weighted_sobolev.pdf
+cd ..
+ls
+cd Weighted_Sobolev_ALMAWIN_Jan-30-091007-2026_conflict_parent\
+s
+cd ..
+s
+cd Weighted_Sobolev\
+ls
+seminar
+cd Doctor\Weighted_Sobolev\
+start weighted_sobolev.pdf
+pwd | pbcopy 
+cd Github\vesti\
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Weighted_Sobolev
+start weighted_sobolev.pdf
+vesti compile -W
+seminar
+cd Doctor\Weighted_Sobolev\
+ls
+v first.lua
+cd .glzr
+ls
+cd glazewm\
+vivaldi
+v config.yaml
+cd
+cd Github\arch-almagest\
