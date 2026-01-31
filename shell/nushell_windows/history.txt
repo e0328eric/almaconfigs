@@ -28553,3 +28553,64 @@ vivaldi
 v config.yaml
 cd
 cd Github\arch-almagest\
+lg
+ls
+cd VirtualMachine\
+ls
+seminar
+ls
+cd Doctor\Weighted_Sobolev\
+ls
+start weighted_sobolev.pdf
+cd .local
+zig version
+ziguo
+ls
+v chapter5\parabolic.ves
+v chapter6/proof.ves
+vesti compile -W
+zigup
+ls
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2349+204fa8959 zig
+ls
+rm -rp zig-compiler\
+ls
+zig version
+cd
+cd .local
+ls
+cd Odin\
+cd Github\vesti\
+lg
+git fetch --prune origin master
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+git merge origin master
+ls
+./build.bat release
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd ..
+s
+cd zigup
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+zellih
+zellij
+ls
+cargo install zellij
+ls
+cd Github\arch-almagest\
+ls
+mkdir bin
+cd bin
+ls
+mkdir zigup
+zig release
+cd ..
+cd AApproach\
+ls
+zig build release
+v bib.bib
+start .
