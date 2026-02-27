@@ -50,7 +50,7 @@ sudo pacman -Syyu
 #          │                     install packages                     │
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
-    git cmake make gcc keyd bat lazygit bluez libsecret gnome-keyring \
+    git cmake make gcc keyd bat lazygit libsecret gnome-keyring \
     ufw
 
 # enable gnome keyrings
@@ -76,6 +76,38 @@ if [[ ! -d "/usr/share/sddm/themes/almagest-sddm" ]]; then
 fi
 
 #          ╭──────────────────────────────────────────────────────────╮
+#          │                        bluetooth                         │
+#          ╰──────────────────────────────────────────────────────────╯
+sudo pacman -S --noconfirm --needed \
+    pipewire wireplumber pipewire-alsa pipewire-pulse rtkit \
+    bluez bluez-utils lib32-alsa-plugins pavucontrol
+
+sudo systemctl enable --now rtkit-daemon.service
+
+# in this setting, sound is weird
+sudo mkdir -p /etc/pipewire/pipewire.conf.d
+sudo tee /etc/pipewire/pipewire.conf.d/92-low-latency.conf >/dev/null <<'EOF'
+context.properties = {
+  default.clock.rate = 48000
+  default.clock.quantum = 1024
+  default.clock.min-quantum = 512
+  default.clock.max-quantum = 2048
+}
+EOF
+
+sudo mkdir -p /etc/wireplumber/wireplumber.conf.d
+sudo tee /etc/wireplumber/wireplumber.conf.d/50-bluez-properties.conf >/dev/null <<'EOF'
+monitor.bluez.properties = {
+  bluez5.enable-sbc-xq = false
+  bluez5.enable-msbc = true
+  bluez5.enable-hw-volume = true
+  bluez5.roles = [ a2dp_sink a2dp_source hsp_hs hsp_ag hfp_hf hfp_ag ]
+}
+EOF
+
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+
+#          ╭──────────────────────────────────────────────────────────╮
 #          │                 install hyprland stuffs                  │
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
@@ -90,7 +122,7 @@ paru -S --noconfirm --needed vicinae awww-git noctalia-shell \
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
 #          ╰──────────────────────────────────────────────────────────╯
-sudo pacman -S --noconfirm --needed steam
+sudo pacman -S --noconfirm --needed steam mpv
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                      make symlinks                       │

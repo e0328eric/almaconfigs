@@ -60,7 +60,7 @@ function hc
 end
 
 function fishcfg
-    nvim  ~/.config/fish/config.fish
+    nvim  ~/.config/fish/os/linux.fish
 end
 
 function showwifi
@@ -139,6 +139,10 @@ end
 
 function kindergarten
     cd ~/pCloud/TeX_Documents/Kindergarten
+end
+
+function seminar
+    cd ~/pCloud/TeX_Documents/Seminar
 end
 
 function cfmtcp
