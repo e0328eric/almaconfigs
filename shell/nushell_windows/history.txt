@@ -28614,3 +28614,2400 @@ ls
 zig build release
 v bib.bib
 start .
+v weighted_sobolev.ves
+looking-glass-host
+cd `C:/Program Files/`
+ls
+cd `Looking Glass (host)\`
+ls
+./looking-glass-host.exe
+sudo ./looking-glass-host.exe
+cd `C:\Program Files\Looking Glass (host)\`
+ls
+sudo ./looking-glass-host.exe
+hx\
+hx
+seminar
+cd Doctor\Half_Space\
+hx half_space_ALMAWIN_Feb-10-075041-2026_Conflict.ves
+rm half_space_ALMAWIN_Feb-10-075041-2026_Conflict.ves
+v half_space.ves
+cd Github\
+ls
+cd alma-nix\
+lg
+ls
+cd ..
+ls
+cd vesti
+lg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd .local
+ls
+rm -rp zig
+zigup
+cd ..
+ls
+cd alma-nix\
+lg
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2535+b5bd49460 zig
+ls
+cd zls
+lg
+v nix\root\vm.nix
+cd
+ls
+flow 
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseFast
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseSafe
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSaf
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+cd Github\vesti\src\
+v vesti_c.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+zig build --prefix-exe-dir ~/.local/bin  -Doptimize=ReleaseSafe
+v main.zig
+cd ../..
+lsd
+ls
+cd ..
+ls
+mv vesti vesti-zig
+ls
+rustc --version
+rustup update
+ls
+cargo new vesti
+ls
+cd vesti
+ls
+v Cargo.toml
+xcsd
+cd
+cd Test
+ls
+rm -rp *
+ls
+cargo new tavol
+cd tavol\
+cargo publish
+cargo login
+cargo publish
+v Cargo.toml
+cargo publish --allow-dirty
+v Cargo.toml
+cargo publish --allow-dirty
+v Cargo.toml
+cargo publish --allow-dirty
+cd
+cd Github\vesti\
+cargo add crossterm dirs libc pathdiff path-slash
+cargo add ron walkdir
+cargo add unicode-width
+cargo add serde -F derive
+cargo add windows -F Win32_UI_WindowsAndMessaging
+cargo add clap -F derive
+cargo add base64ct -F alloc
+ls
+cp ../vesti-zig/LICENSE .
+ls
+rm -rp .git
+mv ../vesti-zig/.git .
+ls
+cd ..
+ls
+cd vesti-zig
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/e0328eric/vesti-zig.git
+git push -u origin main
+v src\location.rs
+v src\lexer\token.rs
+v src\lexer\Token.zig
+rm -rp .git
+mv ../vesti/.git .
+cd .local
+ls
+git clone --depth 1 https://codeberg.org/ziglang/zig.git zig-source
+ls
+cmake --version
+cd .config\wezterm
+hx wezterm.lua
+v wezterm.lua
+"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -all
+cd .local\zig-source\
+mkdir build
+cd build
+cmake --version
+cmake .. -Thost=x64 -G "Visual Studio 18 2026" -A x64 -DCMAKE_PREFIX_PATH=C:\Users\Andy\llvm+clang+lld-20.0.0-x86_64-windows-msvc-release-mt -DCMAKE_BUILD_TYPE=Release
+ls
+cd ..
+rm -rp build
+cd ..
+ls
+git clone --depth 1 --branch release/21.x https://github.com/llvm/llvm-project llvm-project-21
+cd llvm-project-21\
+ls
+mkdir build
+cd build
+cmake .. -Thost=x64 -G "Visual Studio 18 2026" -A x64 -DCMAKE_PREFIX_PATH=C:\Users\almag\.local\llvm-21 -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ZLIB=OFF -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_LIBXML2=OFF -DLLVM_USE_CRT_RELEASE=MT -DLLVM_ENABLE_PROJECTS="lld;clang"
+cmake ..\llvm -Thost=x64 -G "Visual Studio 18 2026" -A x64 -DCMAKE_PREFIX_PATH=C:\Users\almag\.local\llvm-21 -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ZLIB=OFF -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_LIBXML2=OFF -DLLVM_USE_CRT_RELEASE=MT -DLLVM_ENABLE_PROJECTS="lld;clang"
+ls
+msbuild /m -p:Configuration=Release INSTALL.vcxproj
+cd ../..
+ls
+rm -rp llvm-project-21\
+rm -rp llvm-project-21
+ls
+mkdir llvm-21
+cd llvm-21\
+ls
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+ls
+cd zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31\bin\
+cd ..
+ls
+cd ../..
+ls
+cd zig-source\
+ls
+rm -rp build
+cd .local\zig-source\
+ls
+rm -rp build
+ls
+mkdir build
+cd build\
+ls
+ninja
+ls
+cd .local\
+ls
+cd zig-source\build\
+ls
+cd stage3\
+ls
+ls lib
+cd lib\zig\
+ls
+cd ../..
+cd build\stage3\
+cd .local\
+cd zig
+ls
+ls
+cd bin\
+ls
+cd ..
+rm -r zig\
+cd ../..
+mv zig-source\build\stage3 zig
+cd
+cd Github\vesti\
+zig version
+ls
+cd bin
+ls
+ln ~/.local/zig/bin/zig.exe ~/.local/bin/zig.exe
+zog build
+zig build
+ls
+cd ..
+cd vesti-zig\
+zig build
+zig build -freference-trace=11
+v src\Compiler.zig
+zig build
+cd ..
+ls
+cd zig\lib\
+ls
+cd zig\std\
+s
+v dynamic_library.zig
+v src\Compiler.zig
+cd .local
+ls
+rm -rp zig zig-source llvm-21\
+rm bin\zig.exe
+rm -s
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+ls
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+rm zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+ls
+rm zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip]
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+git clone --depth 1 https://codeberg.org/ziglang/zig-bootstrap.git
+ls
+rm -rp zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+ls zig-compiler\
+rm -rp zig-compiler\
+ls zig
+zig version
+cd zig\lib\std\
+ls
+v dynamic_library.zig
+cd
+ls
+cd Github\vesti\
+ls
+cd ..
+ls
+mv vesti vesti-rust
+mv vesti-zig vesti
+cd vesti\
+lg
+v src\dlopen.c
+seminar
+ls
+cd Doctor\Half_Space\
+vesti compile -W
+cd .local\
+ls
+cd
+cd .local
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip
+v zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip
+curl -O --location https://ziglang.org/deps/zig-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip
+rm zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip zig-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip
+git clone --depth 1 https://codeberg.org/ziglang/zig-bootstrap.git
+curl -O --location https://ziglang.org/builds/zig-x86_64-windows-0.16.0-dev.2287+eb3f16db5.zip
+ls
+rm -r zig-x86_64-windows-0.16.0-dev.2287+eb3f16db5.zip zig-x86_64-windows-gnu-0.16.0-dev.2287+eb3f16db5.zip zig
+rm -r zig\
+rm -s
+curl -O --location https://ziglang.org/deps/zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+rm -p
+ls
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.2510+bcb5218a2.zip
+unzip zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+ls
+rm zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31.zip
+ls
+mv zig+llvm+lld+clang-x86_64-windows-gnu-0.16.0-dev.104+689461e31 zig-bootstrap
+ls
+git clone --depth 1 https://codeberg.org/ziglang/zig.git zig-source
+git clone --depth 120 https://codeberg.org/ziglang/zig.git zig-source
+cd
+ls
+cd Github\vesti-rust\
+ls
+cd
+cd Github\vesti
+ls
+v src\lexer\token.rs
+cd Github\vesti
+v src\lexer\token.rs
+cd ..
+cd vesti-rust\
+v src\lexer\token.rs
+cd ..
+rm -rp vesti-rust\
+v src\lexer\Token.zig
+ls
+rm -r zig-bootstrap
+ls
+zigup
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2535+b5bd49460 zig
+ls
+rm -rp zig-compiler\
+v src\vesti_c.zig
+ls
+cd src
+ls
+v DynLib.zig
+ls
+mv DynLib.zig dyn_lib.zig
+v dyn_lib.zig
+cd ..
+zig build
+v src\vesti_c.zig
+ls
+v src\lexer\Token.zig
+v src\parser\Preprocessor.zig
+zig build
+v src\lexer\Token.zig
+v src\parser\Preprocessor.zig
+zig build
+v src/dyn_lib.zig
+zig build
+v src/dyn_lib.zig
+zig build
+v src/dyn_lib.zig
+zig build
+ls
+cd Manual\
+ls
+v first.lua
+../zig-out/bin/vesti.exe compile
+cd pCloud\Photos\
+wallp set 2 ~/pCloud/Photos/갈브레나_3840x2160.jpg
+wallp set 3 ~/pCloud/Photos/Shirakami_Fubuki2.png
+wallp list
+wallp set 3 ~/pCloud/Photos/Shirakami_Fubuki2.png
+wallp set 1 ~/pCloud/Photos/Shirakami_Fubuki2.png
+wallp set 1 ~/pCloud/Photos/robin.jpg
+wallp set 1 ~/pCloud/Photos/Shirakami_Fubuki2.png
+wallp set 3 ~/pCloud/Photos/Shirakami_Fubuki2.png
+wallp set 3 ~/pCloud/Photos/robin.jpg
+wallp set 0 ~/pCloud/Photos/lilpa_night.png.jpg
+wallp set 0 ~/pCloud/Photos/lilpa_night.png
+ls
+cd Github\wallp\
+ls
+v main.odin
+cd ..
+ls
+mv xilo xilo_zig
+cargo new xilo
+rm -rp xilo
+cargo new chre
+cd chre
+v README.md
+ls
+v README.md
+cargo add clap -F derive\
+cargo add clap -F derive
+cargo add crossterm
+cargo add windows -F Win32_UI_Shell
+cd Github\wallp\
+v main.odin
+v Cargo.toml
+cargo add random
+ls
+seminar
+cd Doctor\AApproach\
+v first.lua
+vesti compile
+~/Github/vesti/zig-out/bin/vesti.exe compile
+cd ..
+ls
+cd vesti\
+ls
+v src\dyn_lib.zig
+zig build
+v src\dyn_lib.zig
+zig build
+v src\dyn_lib.zig
+zig build --prefix-exe-dir ~/.local/bin  -Doptimize=ReleaseSafe
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseSafe
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v build.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+vesti compile
+lg
+ls
+ls
+cd ..
+cd Half_Space\
+v first.lua
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+vesti compile
+v .gitignore
+cd zig-pkg\
+ls
+cd ..
+ls
+v src\dyn_lib.zig
+lg
+winget install discord
+winget install Discord.Discord
+cd Github\vesti\
+v src\parser\Parser.zig
+cd ..
+ls
+cd yedec
+s
+v src\main.zig
+cd ..
+ls
+mv yedec foooo
+ls
+cargo new yedec
+ls
+cd yedec
+ls
+cargo add reqwest --features=json
+cargo add tokio
+cargo add serde -F derive
+cargo add serde_json
+cd
+cd Test
+cd
+cd .local
+git clone --depth 1 https://github.com/VoxDroid/KemonoDownloader.git
+ls
+cd KemonoDownloader\
+ls
+v README.md
+cd ..
+curl -O --location https://github.com/VoxDroid/KemonoDownloader/releases/download/v5.9.0/KDLE.zip
+ls
+start .
+cd KemonoDownloader\
+ls
+cd ..
+rm -rp KemonoDownloader\
+cd Github\yedec
+ls
+cd ..
+s
+cd fooo
+cd foooo
+ls
+v src\main.zig
+shutdown /s /t 0
+cd Github\chre\
+ls
+v Github\wallp
+cd Github\wallp
+ls
+v src\commands.rs
+cargo add windows_core
+v src\wallp\mod.rs
+v main.odin
+cd Github\wallp
+]ls
+ls
+dc ..
+cd ..
+ls
+cd chre\
+cd Github\wallp
+v src\wallp\mod.rs
+ls
+cd ..
+ls
+rm -rp chre
+mv xilo_zig xilo
+cd .local
+zig version
+zigup
+ls
+cd xilo
+ls
+cd .local\Odin
+lg
+ls
+./build.bat release
+cd
+ls
+cd Github\
+ls
+mkdir olap
+cd olap
+v olap.odin
+odin run olap.odin
+odin run .
+v olap.odin
+odin run .
+v olap.odin
+odin run .
+v olap.odin
+odin run .
+v olap.odin
+odin run .
+v olap.odin
+odin run .
+v olap.odin
+cd ..
+ls
+cargo new chre
+cd chre\
+ls
+cargo add windows -F Win32_UI_Shell, Win32_System_Com
+cargo add windows -F Win32_UI_Shell Win32_System_Com
+cargo add windows -F Win32_UI_Shell; Win32_System_Com
+cargo add windows -F 
+cargo add windows --help
+cargo add windows -F --help
+cargo add windows -F Win32_UI_Shell -F Win32_System_Com
+v Cargo.toml
+cargo add clap -F derive
+v src\wallp\mod.rs
+v src\commands.rs
+v src\main.rs
+wallp set 0 `~/pCloud/Photos/NVIDIA/Wuthering Waves/Wuthering Waves Screenshot 2026.02.13 - 23.15.33.87.png`
+cd Github\chre\
+cd Github
+ls
+rm -rp olap
+cd .local
+cd
+cd .local
+zigup
+ls
+cd wallp\
+v src\commands.rs
+cargo add windows_core
+v src\wallp\mod.rs
+cd ..
+ls
+rm -rp chre\
+mkdir olap
+cd olap
+v main.odin
+v olap.odin
+ls
+v constants.odin
+cd
+cd Github\olap\
+cd 
+cd .local
+git clone --depth 1 https://github.com/DanielGavin/ols.git
+cd ols\
+v build.bat
+./build.bat
+./odinfmt.bat
+ls
+cd ..
+ls
+cd bin
+ln ~/.local/ols/ols.exe ~/.local/bin/ols.exe
+ls
+v constants.odin
+cd ..
+cd alma-nix\
+cd config\nvim\
+v after\plugin\lsp.lua
+lg
+ls
+v validation.odin
+cd
+cd Test\
+ls
+mkdir foo
+cd foo
+v main.odin
+v error.odin
+cd .glzr
+ls
+cd glazewm\
+ls
+v config.yaml
+cd
+cd Github\
+rm -rp olap
+ls
+mv xilo xilo_zig
+mkdir chre
+cd chre
+ls
+v src/main.odin
+ls
+odin run src
+v src/main.odin
+odin run src
+v src/main.odin
+ls
+v src\wallp.odin
+v src\main.odin
+odin run src -- wallp list
+v src\wallp.odin
+odin run src -- wallp list
+v src\wallp.odin
+odin run src -- wallp list
+v src\main.odin
+odin run src -- wallp list
+cd Github\chre\
+ls
+rm src.exe
+odin run src -- wallp list
+ls
+rm src.exe
+odin run src -o:chre -- wallp list
+odin run src -out:chre -- wallp list
+odin --help
+odin run --help
+odin run -out:chre.exe src -- wallp list
+odin run src -out:chre.exe -- wallp list
+ls
+v src\wallp.odin
+odin run src -out:chre.exe -- wallp list
+ls
+v src\wallp.odin
+odin run src -out:chre.exe -- wallp list
+cd Github\chre\
+ls
+v src\wallp.odin
+cd .local\Odin\vendor\
+ls
+cd sdl3
+ls
+rg "sdl3.lib" *
+rg "lib" *
+v sdl3_joystick.odin
+rg "import" *
+v sdl3__foreign.odin
+rg "SDL3.lib" *
+rg "SDL3.dll" *
+cd
+cd Github\siv
+ls
+cd ..
+ls
+rm -rp siv
+mv siv-odin siv
+cd siv
+ls
+v siv.odin
+ls
+odin build . -subsystem:windows
+dumpbin /dependents ./siv.exe
+v src\main.odin
+cd .local\bin
+ls
+start .
+cd 
+cd pCloud\Photos\Lilpa\
+ls
+siv sfaffssss.png
+cd ..
+ls
+cd `NVIDIA\Wuthering Waves\`
+ls
+siv *
+ls
+rm `Wuthering Waves Screenshot 2025.07.27 - 23.26.57.30.png` `Wuthering Waves Screenshot 2025.07.27 - 23.27.04.33.png` `Wuthering Waves Screenshot 2025.07.27 - 23.27.07.51.png`
+ls
+cp `Wuthering Waves Screenshot 2026.02.13 - 23.15.33.87.png` ../../rupa_and_friends.png
+cd ../..
+ls
+wallp set 0 rupa_and_friends.png
+ls
+shutdown /s /t 0
+cd .local
+ls
+zig version
+zigup
+ls
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2565+684032671 zig
+ls
+cd v
+ls
+cd ..
+ls
+cd 
+ls
+cd Github\
+ls
+cd vesti
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseSafe
+ls
+cd ..
+ls
+cd chre\
+ls
+cp ../xilo_zig/README.md .
+cp ../xilo_zig/LICENSE .
+v README.md
+ls
+odin build src -o:speed -out:chre.exe
+ls
+mv chre.exe ~/.local/bin
+cd .local\bin
+ls
+rm wallp.exe
+cd
+cd pCloud\Photos\Lilpa\
+ls
+cd ..
+ls
+chre wallp list
+chre wallp set 1 robin.jpg
+chre wallp set 1 ./robin.jpg
+v src\wallp.odin
+odin build src -o:speed -out:chre.exe
+mv chre.exe ~/.local/bin
+chre wallp set 0 ./robin.jpg
+chre wallp set 0 ./rupa_and_friends.png
+ls
+mv ../wallp/.git .
+ls
+rm -rp .git\
+cd Github\xilo_zig\
+ls
+v src\ln\
+v src\ln.odin
+cd ..
+mv chre chre_odin
+cargo new chre
+cd chre\
+cargo add clap -F derive
+cargo add windows_core
+cargo add windows -F Win32_UI_Shell -F Win32_System_Com
+cd Github\chre_odin\
+ls
+cd src\
+ls
+v main.rs
+cargo build
+v ..
+v wallp.rs
+cd
+cd Test
+ls
+v src\wallp.odin
+cd
+zig translate-c `C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/ShObjIdl_core.h`; save foo.zig
+cd .local\zig\lib\c\sys\
+ls
+cd ..
+ls
+cd lib
+rg "IDesktopWallpaper" *
+zig translate-c -I`C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared` `C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/ShObjIdl_core.h`; save foo.zig
+cd libc\include\
+ls
+cd any-windows-any\
+ls
+zig translate-c -I`~/.local/zig/lib/libc/include/any-windows-any` shobjidl.h; save foo.zig
+ls
+zig translate-c -I`C:/Users/almag/.local/zig/lib/libc/include/any-windows-any` shobjidl.h; save foo.zig
+zig translate-c -I~/.local/zig/lib/libc/include/any-windows-any shobjidl.h; save foo.zig
+zig translate-c -I ~/.local/zig/lib/libc/include/any-windows-any shobjidl.h; save foo.zig
+zig translate-c -I ~/.local/zig/lib/libc/include/any-windows-any ~/.local/zig/lib/libc/include/any-windows-any/shobjidl.h; save foo.zig
+zig translate-c -I ~/.local/zig/lib/libc/include/any-windows-any ~/.local/zig/lib/libc/include/any-windows-any/shobjidl.h | save --force foo.zig
+v foo.zig
+zig 
+zig env
+v main.zig
+zig run foo.zig
+zig run main.zig
+zig env
+zig
+v main.zig
+cd
+cd Github\
+ls
+mv xilo_zig xilo
+cd xilo
+ls
+v build.zig
+v src\winzig.h
+v build.zig
+zig build
+v shobjidl.h
+cd
+cd Github\chre_odin\
+v src\wallp\wallp.zig
+v src\wallp.odin
+cd Github\xilo\
+cd Github\chre_odin\
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v build.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp --list
+v src\wallp\wallp.zig
+zig build run -- wallp 0 `~/pCloud/Photos/유노 일러스트_(no_logo).jpg`
+zig build run -- wallp 0 ~/pCloud/Photos/rupa_and_friends.png
+ls src\
+;g
+v src\wallp.odin
+cd ..
+rm -rp chre_odin\ chre\ wallp\
+ls
+cd xilo
+ls
+v src\wallp\wallp.zig
+zig build run -- wallp 10 ~/pCloud/Photos/rupa_and_friends.png
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+cd ..
+mv xilo chre
+ls
+mv xilo chre
+ls
+cd chre
+ls
+v README.md
+ls
+v src\commands.zlap
+rg "xilo" *
+rg "xilo" src
+v build.zig
+v build.zig.zon
+v src\rm\Remover\posix.zig
+v src\main.zig
+lg
+cd
+cd Github\arch-almagest\
+cd ..
+cd alma-nix\
+ls
+cd ..
+v $nu.config-path
+cd
+cd Github\chre
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v build.zig.zon
+lg
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+cd .local\bin
+ls -al
+rm xilo.exe xilo.pdb
+rm *pdb
+rm -s
+rm -p
+cd
+cd Github\chre
+v src\rm\Remover\windows.zig
+chre -h
+chre --help
+v src\main.zig
+chre
+chre --help
+v src\main.zig
+vesti -h
+chre -h
+v src\main.zig
+zig build -- -h
+v src\main.zig
+zig build -- -h
+v src\main.zig
+zig build -- -h
+v src\main.zig
+zig build run -- -h
+zig build run -- 
+zig build run -- -h
+v src\main.zig
+zig build run -- -h
+v src\main.zig
+lg
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+chre -h
+chre wallp -h
+v src\wallp\wallp.zig
+v src\main.zig
+zig build run -- wallp --suffle ~/pCloud/Photos
+v src\main.zig
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/pCloud/Photos
+cd Github\siv
+ls
+v siv.odin
+cd ..
+s
+cd yedec\
+ls
+ls src
+cd ..
+rm -rp yedec
+mv foooo yedec
+ls
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+cd vesti\
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+v src\wallp\wallp.zig
+zig build run -- wallp --suffle ~/Github/alma-nix/nix/home/wallpapers/
+lg
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\lexer\Token.zig
+chre wallp --suffle ~/Github/alma-nix/nix/home/wallpapers
+chre wallp 0 ~/pCloud/Photos/rupa_and_friends.png
+cd ..
+cd vesti
+ls
+v src\lexer\Token.zig
+v foo.ves
+v Manual\vesti_man.ves
+v foo.ves
+v src\lexer\Token.zig
+cd Github\vesti\
+v src\lexer\Lexer.zig
+cd src\lexer\
+kls
+ls
+cp Lexer.zig OldLexer.zig
+v Lexer.zig
+zig build run -- experimental foo.ves
+cd ../..
+ls
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+v foo.ves
+zig build run -- experimental foo.ves
+v foo.ves
+zig build run -- experimental foo.ves
+v foo.ves
+zig build run -- experimental foo.ves
+v foo.ves
+zig build run -- experimental foo.ves
+cd Github\vesti\
+ls
+v src\lexer\Token.zig
+rm src\lexer\OldLexer.zig
+ls
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+v src\parser\Preprocessor.zig
+v src\lexer\Token.zig
+zig build run -- experimental foo.ves
+cd Github\vesti\
+zig build run -- experimental foo.ves
+v src\lexer\Token.zig
+v ]
+shutdown /s /t 0
+cd Github\
+git clone --depth 1 https://github.com/e0328eric/tree-sitter-vesti.git
+cd tree-sitter-vesti\
+ls
+v src\scanner.c
+v grammar.js
+v src\scanner.c
+lg
+v
+cd
+cd vesti
+cd Github\vesti\
+v foo.ves
+zig build run -- experimental foo.ves
+cd src\lexer\
+ls
+cd ..
+ls
+cd ..
+ls
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+ls
+cd Manual\
+ls
+v vesti_man.ves
+v first.lua
+vesti compile
+cd Github\vesti\
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\lexer\Lexer.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v vesti_man.ves
+vesti compile
+cd Manual\
+v vesti_man.ves
+cd Github\tree-sitter-vesti\
+v grammar.js
+lg
+v
+v grammar.js
+v vesti_man.ves
+v grammar.js
+v
+v package.json
+v grammar.js
+lg
+cd ..
+v foo.ves
+v
+rg "comment" *
+v grammar.js
+lg
+v
+f foo.ves
+v src\scanner.c
+v src\grammar.json
+tree-sitter generate
+v foo.ves
+lg
+lg
+v
+cd Manual\
+cd ..
+v vesti_man.ves
+cd ..
+ls
+cd vesti\
+v ddd.lua
+cd Github\tree-sitter-vesti\
+v grammar.js
+v src\scanner.c
+v grammar.js
+v src\scanner.c
+tree-sitter generate
+lg
+v vesti_man.ves
+v
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v grammar.js
+v src\scanner.c
+v grammar.js
+v queries\vesti\highlights.scm
+v src\scanner.c
+v queries\vesti\highlights.scm
+tree-sitter parse foo.ves
+v queries\vesti\highlights.scm\
+v queries\vesti\highlights.scm
+v foo.ves
+tree-sitter parse --show-extra
+tree-sitter parse foo.ves  --show-extra
+tree-sitter parse -- --show-extra
+tree-sitter parse -- --show-extra foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v src\scanner.c
+v foo.ves
+tree-sitter generate
+lg
+v
+v foo.ves
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v grammar.js
+lg
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+lg
+v
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+lg
+v
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+lg
+v
+v foo.ves
+tree-sitter parse foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v src\scanner.c
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v \$Recycle.Bin\
+v foo.ves
+v src\scanner.c
+v grammar.js
+tree-sitter generate
+v grammar.js
+v src\scanner.c
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v grammar.js
+v foo.ves
+cd ..
+v foo.ves
+zig build run -- experimental foo.ves
+v grammar.js
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+v grammar.js
+v src\scanner.c
+v queries\vesti\highlights.scm
+tree-sitter generate
+tree-sitter parse foo.ves
+lg
+cd ..
+cd alma-nix\config\nvim\after\queries\vesti\
+ls
+cp ~/Github/tree-sitter-vesti/queries/vesti/* .
+sls
+ls
+lg
+cd
+v
+v foo.ves
+cd $env.APPDATA
+cd ..
+cd Local\
+ls
+cd nvim
+ls
+cd after\queries\vesti\
+v highlights.scm
+cd
+cd Github\tree-sitter-vesti\
+v queries\vesti\highlights.scm
+lg
+v src\lexer\Lexer.zig
+zig build run -- experimental foo.ves
+v foo.ves
+v src\lexer\Lexer.zig
+zig build run -- experimental foo.ves
+v build.zig.zon
+ls
+zig build test
+zig build run -- experimental foo.ves
+v foo.ves
+v src\lexer\Lexer.zig
+v src\lexer\Token.zig
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+v grammar.js
+lg
+tree-sitter generate
+tree-sitter parse foo.ves
+lg
+v foo.ves
+v 
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseSafe
+cd Manual\
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v foo.ves
+tree-sitter parse foo.ves
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v src\scanner.c
+tree-sitter generate
+tree-sitter parse foo.ves
+v foo.ves
+tree-sitter parse foo.ves
+v foo.ves
+lg
+v vesti_man.ves
+v 
+v foo.ves
+v .gitignore
+lg
+rm foo.ves
+lg
+vesti compile
+v Manual\vesti_man.ves
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+vesti compile
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\Lua.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+vesti compile
+v vesti_man.ves
+cd Github\tree-sitter-vesti\
+v src\lexer\Lexer.zig
+v grammar.js
+tree-sitter generate
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+lg
+v
+v foo.ves
+tree-sitter parse foo.ves
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v grammar.js
+tree-sitter generate
+tree-sitter parse foo.ves
+v grammar.js
+v src\
+lg
+lg
+v src\lexer\Lexer.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v grammar.js
+tree-sitter generate
+lg
+v 
+v src\lexer\Lexer.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v vesti_man.ves
+vesti compile
+start .
+v first.lua
+v vesti_man.ves
+vesti compile
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile
+v vesti_man.ves
+vesti compile
+v vesti_man.ves
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile
+v .vesti-dummy\vesti_man.tex
+v vesti_man.ves
+vesti compile
+v vesti_man.ves
+vesti compile
+v vesti_man.ves
+cd ..
+lg
+seminar
+cd Doctor\Half_Space\
+ls
+vesti clear
+ls
+v src\Lua.zig
+cd $env.APPDATA
+cd vesti\template\
+v font.ves
+ls
+rg "--" *
+rg "\\-\\-" *
+seminar
+cd Doctor\Half_Space\
+v chapter6\proof.ves
+v appendix\pf-lemma19.ves
+v chapter6\proof.ves
+cd Github\tree-sitter-vesti\
+v src\scanner.c
+lg
+v
+rg "%" *
+vesti compile
+cd ..
+cd AApproach\
+rg "\\-\\-" *
+vesti clear
+rg "\\-\\-" *
+v chapter1\definition.ves
+cd ..
+cd AApproach\
+v aapproach.ves
+v chapter5\variable-coeff.ves
+v chapter3\stochastic-banach.ves
+start aapproach.pdf
+v chapter4/general-case.ves
+v appendix\compare-spaces.ves
+v src\scanner.c\
+cd Github\vesti\
+v src\scanner.c
+tree-sitter generate
+lg
+v appendix\heat-kernel.ves
+v
+rg "%" *
+vesti compile
+rg "Davis" *
+v aapproach.ves
+v src\lexer\Lexer.zig
+vesti compile
+cd
+cd Github\vesti\
+v build.zig.zon
+zig version | pbcopy 
+v build.zig.zon
+lg
+shutdown /s /t 0
+cd Github\chre
+ls
+cd Test
+v main.zig
+zig run main.zig
+v main.zig\
+v main.zig
+v main.zig\
+zig run main.zig
+v src\commands.zlap
+cd
+seminar
+ls
+cd Doctor\Half_Space\
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+ls
+okular half_space.pdf
+start half_space.pdf
+v chapter2\the_operator_L.ves
+start half_space.pdf
+vesti compile -W
+v chapter2\the_operator_L.ves
+cd Downloads\
+v AApproach.ps
+cd pCloud\TeX_Documents\
+v CV/cv.ves
+vesti compile
+cd CV
+ls
+vesti compile -S cv.ves
+v cv.ves
+vesti compile -S cv.ves
+v cv.ves
+vesti compile -S cv.ves
+start cv.pdf
+cd pCloud\TeX_Documents\CV
+vesti compile -SW cv.ves
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+vesti compile -SW cv.ves
+vesti compile -S cv.ves
+v cv.ves
+cd Github\vesti\
+ls
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+seminar
+cd ..
+cd CV
+ls
+seminar
+cd ..
+cd CV
+vesti compile -SW cv.ves
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+vesti compile -SW cv.ves
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+vesti compile -SW cv.ves
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=Debug
+vesti
+vesti init
+ls
+rm .ves
+v first.lua
+ls
+vesti compile
+v cv.ves
+seminar
+cd Doctor\Half_Space\
+ls
+start half_space.pdf
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+cd .local
+zig version
+zigup
+ls
+rm -rp zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2619+c8f54a2f0 zig
+rm -r zig-compiler
+rm -s
+cd
+cd Github\vesti\
+vesti compile -W
+cd Github\vesti\
+rm -r .zig-cache zig-out zig-pkg
+rm -r zig-out zig-pkg
+zig build --prefix-exe-dir ~/.local/bin -Doptimize=ReleaseSafe
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseFast
+vesti clear
+cd Github\yedec
+ls
+v src\main.zig
+ls
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+rm -p
+vesti compile -W
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+rm -p
+v src\main.zig
+zig build run
+v chapter2\the_operator_L.ves
+shutdown /s /t 0
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+rm -p
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+start half_space.pdf
+v chapter3\stochastic-banach.ves
+vesti compile -W
+v chapter3\embedding.ves
+vesti compile
+shutdown /s /t 0
+cd Github\vesti
+ls
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseFast
+seminar
+cd Doctor\Half_Space\
+pwd 
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+start half_space.pdf
+vesti compile -W
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseFast
+v src\Compiler.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseFast
+shutdown /s /t 0\
+shutdown /s /t 0
+seminar
+cd Doctor\Half_Space\
+start half_space.pdf
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+v chapter3\embedding.ves
+cd ..
+ls
+cd ../..
+cd CV\
+ls
+vesti compile -W
+cd ../../..
+cd CV\
+v first.lua
+v cv.ves
+start cv.pdf
+v cv.ves
+vesti compile -W
+cd
+cd
+ls
+cd Github\vesti
+pwd | pbcopy 
+cd C:\Users\almag\Github\vesti
+lg
+ls
+lg
+git remote set-url origin git@gitlab.com/e0328eric/vesti.git
+git push --set-upstream origin --all
+git remote set-url origin git@gitlab.com:e0328eric/vesti.git
+git push --set-upstream origin --all
+git remote set-url origin https://gitlab.com/e0328eric/vesti.git
+git push --set-upstream origin --all
+git remote set-url origin https://codeberg.org/e0328eric/vesti.git
+git push --set-upstream origin --all
+cd
+ls
+cd .local
+zig version
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2623+27eec9bd6 zig
+rm -r zig-compiler\
+ls
+rm -s
+ls
+ls
+lg
+ls
+zig build
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseSafe
+cd .local/zig/lib/libc/include/any-windows-any/
+cd ..
+cd
+cd Test
+v main.c
+zig cc main.c -target x86_64-windows-gnu -O1
+v main.c
+zig cc main.c -target x86_64-windows-gnu -O1
+v main.c
+zig cc main.c -target x86_64-windows-gnu -O1
+zig cc main.c -target x86_64-windows-gnu -O0
+rm a.exe a.pdb main.c
+v main.zig
+ls
+v foo.h
+zig translate-c --helop
+zig translate-c --help
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe
+zig translate-c foo.h -target x86_64-windows-gnu -OReleaseSafe
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any  foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+v foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+v foo.h
+v stdio.h
+cd ..
+ls
+cd x86-linux-any\
+ls
+cd ..
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+zig translate-c -target x86_64-windows-gnu -ODebug -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseFast -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSmall -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+zig version | pbcopy 
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any foo.h
+cd
+ls
+seminar
+cd Doctor\Half_Space\
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\Seminar\Doctor\Half_Space
+start half_space.pdf
+v chapter4\elliptic.ves\
+v chapter4\elliptic.ves
+vesti compile -W
+cd
+cd Test
+ls
+rm foo.h foo.zig main.zig
+ls
+git clone --depth 1 https://github.com/mlua-rs/lua-src-rs.git
+cd lua-src-rs\
+v Cargo.toml
+cargo b
+ls
+ls target\
+cd target\debug\
+ls
+ls build\
+ls
+cd ../..
+ls
+v src\lib.rs
+cd ..
+rm -r lua-src-rs\
+cd
+cd .local\vv
+cd .local\v
+ls
+lg
+v README.md
+./make.bat
+v --help
+v
+vv
+v --help
+rustup update
+cd Tesdt
+cd Test
+ls
+v main.rs
+rustc main.rs
+CC="asda" rustc main.rs
+lg
+ls
+cd Test
+v main.rs\
+rustc main.rs
+rustc --edition 2024 main.rs
+rustc --edition 2024 main.rs\
+rustc --edition 2024 main.rs
+A
+v main.rs
+cd
+kas
+ls
+cd Github\
+ls
+mkdir notcurses-zig
+cd notcurses-zig\
+ls
+zig init -m
+cd
+cd Github\vesti\
+git remote set-url origin https://github.com/e0328eric/vesti.git
+git push --set-upstream origin --all
+git push --set-upstream origin --all --force
+git push --set-upstream origin --all --force-with-lease
+git push --set-upstream origin --all --force
+zig build release
+v build.zig
+zig build release
+zig build release -Doptimize=ReleaseSafe
+zig build release -Doptimize=ReleaseFast
+zig fetch --save git+https://github.com/dankamongmen/notcurses.git
+zig fetch --save https://github.com/dankamongmen/notcurses/archive/refs/heads/master.tar.gz
+zig fetch --save=notcurses-sys git+https://github.com/dankamongmen/notcurses.git
+v build.zig.zon
+v build.zig
+cd ..
+ls
+cd
+cd .local\
+zig version
+zigup
+cd
+cd Github\notcurses-zig\
+v build.zig.zon
+chre wallp --suffle ~/Github/alma-nix/nix/home/wallpapers
+cd Github\chre\
+v src\wallp\wallp.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseFast
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\commands.zlap
+cd src\
+rm -r hide\
+v main.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+chre wallp --suffle ~/Github/alma-nix/nix/home/wallpapers
+chre wallp --list
+chre wallp 0 ~/Github/alma-nix/nix/home/wallpapers/
+chre wallp 0 ~\Github\alma-nix\nix\home\wallpapers\ame_gura.png\
+chre wallp 0 ~\Github\alma-nix\nix\home\wallpapers\phrolova.png
+chre wallp 3 ~\Github\alma-nix\nix\home\wallpapers\rupa_and_friends.png
+chre wallp 2 ~\Github\alma-nix\nix\home\wallpapers\Shirakami_Fubuki2.png
+chre wallp 2 ~\Github\alma-nix\nix\home\wallpapers\Cerydra.png
+chre wallp 1 ~\Github\alma-nix\nix\home\wallpapers\spakle2.jpg
+chre wallp 1 ~\Github\alma-nix\nix\home\wallpapers\stelle-firefly.png
+LG
+CD ..
+cd ..
+lg
+seminar
+ls
+cd Doctor\Half_Space\
+start half_space.pdf
+iwr -useb https://christitus.com/win | iex
+seminar
+cd ..
+ls
+cd CV\
+ls
+start cv.pdf
+ls
+pwd | pbcopy 
+cd C:\Users\almag\pCloud\TeX_Documents\CV
+ls
+vesti compile -W
+ls
+vesti clear
+vesti compile -W
+vesti compile
+v cv.ves
+ls
+rm first.lua before.lua font.ves
+rm font.ves cv.ves
+rm cv.ves
+autotex -xc cv.tex
+ls
+cd Github\zigup\
+git remote set-url origin https://github.com/e0328eric/zigup.git
+git push --set-upstream origin --all --force
+cd ..
+ls
+cd zlap
+git remote set-url origin https://github.com/e0328eric/zlap.git
+git push --set-upstream origin --all --force
+cd ..
+ls
+cd chre
+git remote set-url origin https://github.com/e0328eric/chre.git
+git push --set-upstream origin --all --force
+autotex -lc cv.tex
+v foo.tex
+ls
+rm foo.tex
+pdflatex
+v cv.tex
+autotex -lc cv.tex
+cd Github\alma-nix\
+lg
+cd Github\alma-nix\
+lg
+cd ..
+cd vesti\
+ls
+lg
+cd Github\alma-nix\
+v variables.nix
+lg
+go
+winget search go
+winget install GoLang.Go
+cd Test
+ls
+seminar
+cd ..
+cd CV
+pwd | pbcopy \
+pwd | pbcopy 
+C:\Users\almag\pCloud\TeX_Documents\CV
+ls
+start cv.pdf
+cd Test
+ls
+rustc --edition 2024 main.rs
+./main.exe
+rustc --edition 2024 main.rs
+v main.rs
+rustc --edition 2024 main.rs
+./main.exe
+rustc --edition 2024 main.rs
+./main.exe
+ls
+rm main.exe main.pdb main.rs
+cd
+cd .local
+zig version
+zigup
+v cv.tex
+v
+v foo
+v foo.txt
+shutdown /s /t 0
+cd Test
+v foo.txt
+curl https://forms.mis.mpg.de/cgi-bin/registration.pl?id=417 | save foo.html
+v foo.html
+cd
+cd pCloud\Private\
+ls
+v Conference/register-2025-07.txt
+cd Conference\
+mv register-2025-07.txt register-2025-07.md
+v register-2025-07.md
+cd Github\
+cd chre\
+ls
+cd Github
+ls
+git clone --depth 1 https://github.com/e0328eric/tavol.git
+cd tavol\
+ls
+v src\commands.zlap
+v src\commands.zlap
+v src\main.zig
+cd ..
+cd chre\
+zig build
+v src\main.zig
+cd ..
+ls
+mv vesti vesti-zig
+cargo new vesti
+ls
+cd vesti
+ls
+shutdown /s /t 0
+ls
+cd Github\
+ls
+cd vesti
+ls
+bat Cargo.toml
+v Cargo.toml
+cargo add windows -F Win32_UI_WindowsAndMessaging
+cargo add clap -F derive
+cargo add crossterm
+ls
+cargo add mlua
+cargo add mlua -F anyhow -F lua55
+cargo add mlua -F anyhow -F lua55 -F vendored
+cargo add mlua -F anyhow -F lua55 -F vendored -F mlua_derive
+ls
+v src\location.rs
+v src\main.rs
+cargo add unicode-width
+v src\main.rs
+v src\location.rs
+cd ..
+ls
+cd vesti
+ls
+v Cargo.toml
+rm -rp &
+rm -rp *
+ls
+go mod init github.com/e0328eric/vesti
+v go.mod
+v main.go
+cd ..
+s
+rm -rp vesti
+ls
+cd vesti-zig
+ls
+ls vesti\
+ls src
+cd src\parser
+ls
+v Parser.zig
+cd ..
+v lexer\Token.zig
+ls
+cd ../..
+cargo new vesti
+cd vesto
+cd vesti
+ls
+cargo add unicode-width
+ls
+cargo add unicode-width
+cargo add crossterm
+cargo add clap -F derive
+cargo add windows -F Win32_UI_WindowsAndMessaging
+cargo add mlua -F anyhow -F lua55 -F vendored -F mlua_derive
+ls
+v src\location.rs
+cd src
+v main.rs
+v lexer\token.rs
+ls
+cd Github\vesti\
+ls
+cd ..
+ls
+cd vesti-zig\
+v lexer\mod.rs
+ls
+cd ..
+ls
+v Cargo.toml
+ls
+cargo add icu -F compiled_data
+v src\location.rs
+v Cargo.toml
+cargo add unicode-width
+v src\lexer\token.rs
+shutdown /s /t 0
+winget search obs
+winget install OBSProject.OBSStudio
+cd Github\alma-nix\
+lg
+cd Github\alma-nix\
+cd nix\home\wallpapers\
+ls
+start .
+chre wallp 0 ~\Github\alma-nix\nix\home\wallpapers\luno1.png
+chre wallp --suffle ~/Github/alma-nix/nix/home/wallpapers
+ls
+cd Github\vesti-zig\
+ls
+cd
+cd .local
+ls
+zig version
+zigup
+cd
+ls
+cd Github\vesti-zig\
+ls
+cd ..
+ls
+cd vesti
+ls
+v src\lexer\mod.rs
+s
+cp -r ../vesti-zig/Manual .
+cp -r ../vesti-zig/LICENSE .
+cp -r ../vesti-zig/README.md .
+ls
+cd Test
+ls
+mkdir 무걔
+cd 무걔\
+ls
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" https://www.youtube.com/playlist?list=PLzy-AsQeybxNnz06M58z5qtOXethbMBYD
+winget search yt-dlp
+winget install yt-dlp.yt-dlp.nightly
+cd Test\무걔\
+v src\lexer\mod.rs
+cargo b
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]" https://www.youtube.com/playlist?list=PLzy-AsQeybxNnz06M58z5qtOXethbMBYD
+v src\main.rs
+cargo r
+cd
+cd Github\vesti\
+cargo r
+v src\lexer\mod.rs
+ls
+cargo r
+cd ..
+ls
+mv vesti vesti-rust
+mv vesti-zig vesti
+cd vesti
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+cd Test\무걔\
+mpv *
+ls
+rm '[PD대정령] 150327 아이워너테이크더타임머신2(I Wanna Take The Time-Machine 2) 무서운걔임 스테이지 -1 [_WzlDErh2TI].mp4' '[PD대정령] 150327 아이워너테이크더타임머신2(I Wanna Take The Time-Machine 2) 무서운걔임 스테이지 -2 [gIwt78U7rfA].mp4' '[PD대정령] 150327 아이워너테이크더타임머신2(I Wanna Take The Time-Machine 2) 무서운걔임 스테이지 -3 [umyk3jpFglk].mp4' '[PD대정령] 150402 아이워너테이크더타임머신2(I Wanna Take The Time-Machine 2) 무서운걔임 스테이지 -4 [HYYHM4EzK5k].mp4'
+ls
+mv '[PD대정령] 160712 무서운 걔임 8 [ctLryc-NdFA].mp4' "무걔8.mp4"
+start .
+cd ..
+ls
+cd vesti-rust\
+ls
+v src\lexer\mod.rs
+cd ..
+cd vesti\
+s
+cd
+cd Github\vesti\
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+v src\parser\Preprocessor.zig
+lg
+ls
+cd
+cd pCloud\Music\
+ls
+v adasd
+cd .,.
+cd ..
+ls
+cd vesti-rust\
+ls
+mpv --loop 'U (millennium parade) (cover)_[릴파].flac'
+v src\lexer\mod.rs
+cd ..
+rm -r vesti-rust\
+cd vesti\
+ls
+cd vesti-tectonic\
+ls
+cd ..
+ls
+winget search nix\
+winget search nix
+ls
+cd ,,
+cd ..
+ls
+git clone https://github.com/e0328eric/AxiomOS.git
+ls
+cd AxiomOS\
+ls
+v build.zig
+cd ..
+mv AxiomOS AxiomOS_old
+ls
+mkdir AxiomOS
+cd AxiomOS\
+ls
+zig init -m
+v build.zig.zon
+ls
+cd
+cd Github\AxiomOS_old\
+v build.zig
+ls
+v build.zig
+v src/bootloader/multiboot_header.s
+ls
+v src\bootloader\multiboot_header.s
+v linker.ld
+v src/linker.ld
+v build.zig
+v linker.ld
+v src\kernel/main.zig
+v src\kernel\kmain.zig
+v src\kernel/Vga.zig
+rm src\kernel\Vga.zig
+v build.zig
+v src\kernel\main.zig
+cd src\kernel\
+ls
+mv main.zig kmain.zig
+v src\kernel\Vga.zig
+v kmain.zig
+cd ../..
+v src\bootloader\boot.s
+v src\bootloader\boot.s
+v src\bootloader\long_mode.s
+v src\bootloader\long_mode.s
+ls
+v src\bootloader\boot.s
+cd ..
+ls
+rm -rp AxiomOS AxiomOS_old\
+rm -rp AxiomOS_old\
+rm -s
+rm -p
+cd .local
+ls
+cd fasm\INCLUDE\
+ls
+v WIN64A.INC
+v WIN64AX.INC
+cd
+ls
+cd .local
+zig version
+zigup
+cd
+ls
+cd Github\
+ls
+mv vesti vesti-zig
+cargo new vesti
+ls
+v vesti-zig\src\lexer\Lexer.zig
+cd
+cd Test
+ls
+v foo.rs
+rustc foo.rs
+v foo.rs
+rustc foo.rs
+./foo.exe
+v foo.rs
+rustc foo.rs
+./foo.exe
+ls
+ls foo
+rm -r foo foo.exe foo.html foo.pdb foo.rs
+ls
+cd
+ls
+cd Github\vesti\
+ls
+cargo add unicode-width
+v src\main.rs
+cargo r
+v src\main.rs
+cargo r
+ls
+cargo add mlua -F anyhow -F lua55 -F vendored -F mlua_derive
+cargo add clap -F derive
+cargo add windows -F Win32_UI_WindowsAndMessaging
+cargo add crossterm
+ls
+ls Cargo.toml
+bat Cargo.toml
+v Cargo.toml
+ls
+v src\main.rs
+v src\location.rs
+v src\lexer\mod.rs
+cd Github\vesti-zig\
+v src\lexer\token.rs
+v src\lexer\Token.zig
+shutdown /s /t 0
+odin\
+odin
+odin help build
+odin build  -target:"?"
+odin build  -target:?
+odin build -target:"?" .
+cd Test
+ls
+mkdir foo
+cd foo
+v foo.odin
+odin build -target:"?" .
+odin build . -target:"?"
+cd 
+cd Github\vesti\
+ls
+cd Github\vesti-zig\
+ls
+v src\lexer\token.rs
+cd ..
+ls
+rm -rp vesti
+git clone --depth 1 https://github.com/e0328eric/vesti-tectonic-backend.git
+mv vesti-tectonic-backend vesti
+cd vesti
+v windows_build.bat
+ls
+ls dist
+rm -rp dist example windows_build.bat
+ls
+v Cargo.toml
+cargo add mlua -F anyhow -F lua55 -F vendored -F mlua_derive
+ls
+cd src
+ls
+rm -rp python
+bat vesmodule.rs
+v main.rs
+ls
+rg "python" *
+v codegen.rs
+ls
+v parser\ast.rs
+ls
+v parser\mod.rs
+cd ..
+ls
+v Cargo.toml
+ls
+cd src\lexer\
+ls
+rm newline_handler.rs
+v token.rs
+cd ../../..
+ls
+rm -rp vesti
+v src\lexer\Token.zig
+cd
+cd .local
+zig version
+zigup
+ls
+rm -r zig\
+rm -r zig
+ls
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.2653+784e89fd4 zig
+rm -r zig-compiler\
+rm -s
+rm -p
+cd
+ls
+cd Github\chre\
+ls
+lg
+zig build
+shutdown /s /t 0
+cd Github\alma-nix\
+ls
+lg
+cd nix\home\wallpapers\
+start luno1.png
+lg
+cd ../../..
+v variables.nix
+v nix\root\boot.nix
+cd chre
+cd
+cd Github\chre
+ls
+cd Github\chre
+ls
+zig build
+cd Test
+ls
+cd foo
+ls
+rm foo.odin
+v foo.zig
+zig run foo.zig
+v foo.zig
+v src\tavol\tavol.zig
+zig run foo.zig
+zig build
+lg
+ls
+cd ..
+ls
+cd zigup
+zig build
+lg
+v .gitignore
+lg
+ls
+cd ..
+ls
+cd vesti-zig\
+ls
+zig build
+ls
+cd ..
+ls
+chre
+cd chre
+ls
+cd ..
+cd alma-nix\
+ls nix\home\bin\
+cd nix\home\bin\
+ls
+rm xilo
+ls
+cd ..
+ls
+v exe.nix
+ls
+cd bin
+rm rustup-init
+ls
+cd ..
+ls
+cd ..
+s
+cd ..
+chre
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-gnu -Doptimize=ReleaseFast
+chre
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Dtarget=x86_64-linux-musl -Doptimize=ReleaseFast
+v config\shell\nushell\config.nu
+cd
+cd Github\chre
+lgh
+lg
+cd ..
+cd vesti-zig\
+v src\rm\Remover\posix.zig
+cd ..
+cd alma-nix\nix\home\bin\
+lsa
+ls
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Dtarget=x86_64-linux-musl -Doptimize=ReleaseFast
+cd ..
+cd ziglua\
+cd ..
+cd ziguo
+cd zigup
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Dtarget=x86_64-linux-musl -Doptimize=ReleaseFast
+ls
+cd
+cd .local\zls\
+lg
+cd ../..
+ls
+cd root\
+ls
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Dtarget=x86_64-linux-musl -Doptimize=ReleaseFast
+cds
+cd
+cd Github\arch-almagest\
+ls
+cd refind\
+ls
+cd refind_almagest\
+ls
+cd ..
+bat README.md
+cd Github\alma-nix\nix\root\
+ls
+pwd | pbcopy 
+cp -r C:\Users\almag\Github\arch-almagest\refind\refind_almagest .
+ls
+cd refind_almagest\
+mv refind_almagest almagest-refind
+cd almagest-refind\
+bat "refind_almagest" *
+rg "refind_almagest" *
+v theme.conf
+cd ..
+ls
+v boot.nix
+v theme.conf
+ls
+start background.png
+lg
+shutdown /s /t 0
+cd Github\alma-nix\
+lg
+cd pCloud\Private\
+ls
+cd Test
+ls
+v foo.c
+cl foo.c
+./foo.exe
+v foo.c
+cl foo.c
+./foo.exe
+v foo.c
+ls
+rm foo.c foo.exe foo.obj
+ls
+bat foo.txt
+rm foo.txt
+ls
+ls foo
+rm -r foo
+ls
+rm -r tavol
+mkdir foo
+cd foo
+v main.c
+v main.zig
+v win.h
+ls
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any win.h
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any win.h > win.zig
+zig translate-c -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any win.h | save  win.zig
+ls
+v win.zig
+rm win.h
+v main.c
+cd Github\chre\
+ls
+v src\tavol\tavol.zig
+lg
+v main.zig
+v win.zig
+v main.zig
+ls
+zig run main.zig
+v main.zig
+rm win.zig
+zig run main.zig
+zig run -target x86_64-windows-gnu main.zig
+zig run -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any main.zig
+v main.zig
+zig run -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any main.zig
+v main.zig
+zig run -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any main.zig
+v main.zig
+zig run -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/include/any-windows-any main.zig
+v main.zig
+cd Github\arch-almagest\
+ls
