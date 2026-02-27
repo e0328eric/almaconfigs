@@ -7,6 +7,17 @@ set -xe
 
 ALMACONF="$HOME/.almaconf"
 
+# making symlink function
+link_if_missing() {
+    local target="$1"
+    local link="$2"
+
+    if [[ ! -e "$link" ]]; then
+        ln -s "$target" "$link"
+    fi
+}
+
+
 # prevent to runu this script on root
 if [ "$EUID" -eq 0 ]; then
     echo "Do not run this script as root."
@@ -119,6 +130,12 @@ sudo pacman -S --noconfirm --needed \
 paru -S --noconfirm --needed vicinae awww-git noctalia-shell \
     synology-drive mimeo
 
+# setting cursor
+if [[ ! -d "$HOME/.local/share/icons" ]]; then
+    mkdir -p "$HOME/.local/share/icons"
+fi
+link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTheme"
+
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
 #          ╰──────────────────────────────────────────────────────────╯
@@ -132,15 +149,6 @@ CONFIG="$HOME/.config"
 
 # if fish config is already installed, remove it.
 rm -rf "$CONFIG/fish"
-
-link_if_missing() {
-    local target="$1"
-    local link="$2"
-
-    if [[ ! -e "$link" ]]; then
-        ln -s "$target" "$link"
-    fi
-}
 
 link_if_missing "$ALMACONF/wm/hypr"             "$CONFIG/hypr"
 link_if_missing "$ALMACONF/utils/nvim"          "$CONFIG/nvim"
