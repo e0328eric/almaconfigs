@@ -40,7 +40,7 @@ function oldrm
 end
 
 function rm
-    xilo $argv
+    chre rm $argv
 end
 
 function start
