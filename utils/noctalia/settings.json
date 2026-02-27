@@ -105,11 +105,11 @@
                     "textColor": "none"
                 },
                 {
-                    "compactMode": true,
+                    "compactMode": false,
                     "diskPath": "/",
                     "iconColor": "none",
                     "id": "SystemMonitor",
-                    "showCpuFreq": false,
+                    "showCpuFreq": true,
                     "showCpuTemp": true,
                     "showCpuUsage": true,
                     "showDiskAvailable": false,
@@ -193,7 +193,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Monochrome",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
