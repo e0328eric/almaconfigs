@@ -139,7 +139,8 @@ link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTh
 #          │                         gamings                          │
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
-    cachyos-gaming-meta cachyos-gaming-applications protonup-qt
+    cachyos-gaming-meta protonup-qt mangohud lutris gamescope \
+    xdg-desktop-portal-hyprland woff2 webkit2gtk
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
@@ -148,7 +149,7 @@ sudo pacman -S --noconfirm --needed \
     mpv zathura zathura-djvu zathura-pdf-mupdf
 
 paru -S --noconfirm --needed \
-    expressvpn synology-drive
+    synology-drive
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                      make symlinks                       │
