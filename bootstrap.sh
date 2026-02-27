@@ -127,8 +127,7 @@ sudo pacman -S --noconfirm --needed \
     grim nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd \
     vivaldi cliphist grimblast-git wl-clipboard starship zenith
 
-paru -S --noconfirm --needed vicinae awww-git noctalia-shell \
-    synology-drive mimeo
+paru -S --noconfirm --needed vicinae awww-git noctalia-shell mimeo
 
 # setting cursor
 if [[ ! -d "$HOME/.local/share/icons" ]]; then
@@ -141,6 +140,9 @@ link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTh
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
     steam mpv zathura zathura-djvu zathura-pdf-mupdf
+
+paru -S --noconfirm --needed \
+    expressvpn synology-drive
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                      make symlinks                       │
