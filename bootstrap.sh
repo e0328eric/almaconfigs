@@ -136,10 +136,16 @@ fi
 link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTheme"
 
 #          ╭──────────────────────────────────────────────────────────╮
+#          │                         gamings                          │
+#          ╰──────────────────────────────────────────────────────────╯
+sudo pacman -S --noconfirm --needed \
+    cachyos-gaming-meta cachyos-gaming-applications protonup-qt
+
+#          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
-    steam mpv zathura zathura-djvu zathura-pdf-mupdf
+    mpv zathura zathura-djvu zathura-pdf-mupdf
 
 paru -S --noconfirm --needed \
     expressvpn synology-drive
