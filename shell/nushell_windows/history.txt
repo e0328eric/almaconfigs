@@ -31011,3 +31011,6 @@ zig run -target x86_64-windows-gnu -OReleaseSafe -I ~/.local/zig/lib/libc/includ
 v main.zig
 cd Github\arch-almagest\
 ls
+lg
+ls
+rm -r quickshell
