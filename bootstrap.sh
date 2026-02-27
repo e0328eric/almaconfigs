@@ -81,7 +81,7 @@ sudo pacman -S --noconfirm --needed \
     hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs \
     hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul grim \
     nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd \
-    vivaldi cliphist grimblast-git wl-clipboard starship
+    vivaldi cliphist grimblast-git wl-clipboard starship zenith
 
 paru -S --noconfirm --needed vicinae awww-git noctalia-shell
 
