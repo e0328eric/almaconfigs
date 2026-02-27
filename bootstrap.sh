@@ -122,7 +122,8 @@ paru -S --noconfirm --needed vicinae awww-git noctalia-shell \
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
 #          ╰──────────────────────────────────────────────────────────╯
-sudo pacman -S --noconfirm --needed steam mpv
+sudo pacman -S --noconfirm --needed \
+    steam mpv zathura zathura-djvu zathura-pdf-mupdf
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                      make symlinks                       │
