@@ -44,16 +44,27 @@ if ! command -v paru >/dev/null 2>&1; then
     rm -rf paru
 fi
 
-# install packages
 sudo pacman -Syyu
-sudo pacman -S --noconfirm --needed \
-    git cmake make gcc keyd bat lazygit bluez libsecret
 
-# setting keyd
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                     install packages                     │
+#          ╰──────────────────────────────────────────────────────────╯
+sudo pacman -S --noconfirm --needed \
+    git cmake make gcc keyd bat lazygit bluez libsecret gnome-keyring
+
+# enable gnome keyrings
+systemctl --user enable gnome-keyring-daemon
+systemctl --user start gnome-keyring-daemon
+
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                       setting keyd                       │
+#          ╰──────────────────────────────────────────────────────────╯
 sudo cp "$ALMACONF/keyboard/keyd/default.conf" "/etc/keyd/default.conf"
 sudo systemctl enable keyd --now
 
-# install sddm stuffs
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                   install sddm stuffs                    │
+#          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
     sddm qt6 qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 
@@ -63,7 +74,9 @@ if [[ ! -d "/usr/share/sddm/themes/almagest-sddm" ]]; then
     sudo cp "$ALMACONF/sddm/sddm.conf" "/etc/sddm.conf"
 fi
 
-# install hyprland stuffs
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                 install hyprland stuffs                  │
+#          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
     hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs \
     hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul grim \
@@ -72,10 +85,14 @@ sudo pacman -S --noconfirm --needed \
 
 paru -S --noconfirm --needed vicinae awww-git noctalia-shell
 
-# install several utilities
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                install several utilities                 │
+#          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed steam
 
-# make symlinks
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                      make symlinks                       │
+#          ╰──────────────────────────────────────────────────────────╯
 CONFIG="$HOME/.config"
 
 # if fish config is already installed, remove it.
@@ -101,7 +118,9 @@ link_if_missing "$ALMACONF/utils/noctalia"      "$CONFIG/noctalia"
 # wallpapers
 link_if_missing "$ALMACONF/wallpapers" "$CONFIG/alma-wallpapers"
 
-# git settings
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                       git settings                       │
+#          ╰──────────────────────────────────────────────────────────╯
 #
 # Set global Git identity
 git config --global user.name "Sungbae Jeong"
@@ -110,6 +129,9 @@ git config --global user.email "almagest0328@gmail.com"
 # Set credential helper to libsecret
 git config --global credential.helper /usr/lib/git-core/git-credential-libsecret
 
+#          ╭──────────────────────────────────────────────────────────╮
+#          │                install prebuilt binaries                 │
+#          ╰──────────────────────────────────────────────────────────╯
 # make ~/.local/bin
 if [[ ! -d "$HOME/.local/bin" ]]; then
     mkdir "$HOME/.local/bin"
