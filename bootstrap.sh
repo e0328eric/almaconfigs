@@ -50,7 +50,8 @@ sudo pacman -Syyu
 #          │                     install packages                     │
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
-    git cmake make gcc keyd bat lazygit bluez libsecret gnome-keyring
+    git cmake make gcc keyd bat lazygit bluez libsecret gnome-keyring \
+    ufw
 
 # enable gnome keyrings
 systemctl --user enable gnome-keyring-daemon
@@ -79,11 +80,12 @@ fi
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
     hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs \
-    hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul grim \
-    nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd \
+    hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul fcitx5-config-qt \
+    grim nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd \
     vivaldi cliphist grimblast-git wl-clipboard starship zenith
 
-paru -S --noconfirm --needed vicinae awww-git noctalia-shell
+paru -S --noconfirm --needed vicinae awww-git noctalia-shell \
+    synology-drive mimeo
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
