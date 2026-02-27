@@ -108,7 +108,7 @@ git config --global user.name "Sungbae Jeong"
 git config --global user.email "almagest0328@gmail.com"
 
 # Set credential helper to libsecret
-git config --global credential.helper /usr/bin/git-credential-libsecret
+git config --global credential.helper /usr/lib/git-core/git-credential-libsecret
 
 # make ~/.local/bin
 if [[ ! -d "$HOME/.local/bin" ]]; then
