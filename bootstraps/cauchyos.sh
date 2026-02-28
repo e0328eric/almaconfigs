@@ -140,6 +140,9 @@ if [[ ! -d "$HOME/.local/share/icons" ]]; then
 fi
 link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTheme"
 
+# set zathura for default pdf reader
+mimeo --add application/pdf org.pwmt.zathura-pdf-mupdf.desktop
+
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                         gamings                          │
 #          ╰──────────────────────────────────────────────────────────╯
