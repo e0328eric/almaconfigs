@@ -31014,3 +31014,32 @@ ls
 lg
 ls
 rm -r quickshell
+lg
+find 
+help find 
+cd C:\Windows\System32\WinBioDatabase\
+ls
+rm 51F39552-1075-4199-B513-0C10EA185DB0.DAT C6C03801-E229-419B-A7E9-4D5370992800.DAT
+sudo rm 51F39552-1075-4199-B513-0C10EA185DB0.DAT
+sudo del 51F39552-1075-4199-B513-0C10EA185DB0.DAT
+cd Test
+ls
+cd foo
+ls
+v main.zig
+cd
+ls
+cd Github\yedec\
+ls
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v src\main.zig
+zig build run
+v build.zig
+v src\main.zig
+zig build run
+rm -s
+rm -p
+cd Github\arch-almagest\
