@@ -145,7 +145,7 @@ link_if_missing "$ALMACONF/cursors/LilpaTheme" "$HOME/.local/share/icons/LilpaTh
 #          ╰──────────────────────────────────────────────────────────╯
 sudo pacman -S --noconfirm --needed \
     cachyos-gaming-meta protonup-qt mangohud lutris gamescope \
-    xdg-desktop-portal-hyprland woff2 webkit2gtk
+    steam xdg-desktop-portal-hyprland woff2 webkit2gtk
 
 #          ╭──────────────────────────────────────────────────────────╮
 #          │                install several utilities                 │
