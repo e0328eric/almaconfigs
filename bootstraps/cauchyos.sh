@@ -2,10 +2,15 @@
 
 set -xe
 
-# AlmaArch Configuration
+# AlmaArch Configuration for CauchyOS
 # This configuration assumes that user is already defined and the user can use sudo
 
 ALMACONF="$HOME/.almaconf"
+
+if [[ "$(basename "$(dirname "$PWD")")" != ".almaconf" ]]; then
+    echo "The directory name which this script located must be .almaconf."
+    exit 1
+fi
 
 # making symlink function
 link_if_missing() {
