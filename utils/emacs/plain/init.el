@@ -3,6 +3,8 @@
 (when (memq system-type '(gnu gnu/linux darwin))
   (setenv "HOME" (concat "/home/" (getenv "USER"))))
 
+(setq default-directory (expand-file-name "~/"))
+
 ;; melpa package settings
 (require 'package)
 (add-to-list 'package-archives
@@ -16,9 +18,9 @@
 (defconst my-home-config-dir
   (cond
    ((eq system-type 'windows-nt)
-    (concat (getenv "HOME") "/AppData/Roaming"))
+    (concat (getenv "HOME") "/AppData/Roaming/emacs"))
    ((memq system-type '(gnu gnu/linux darwin))
-    (concat (getenv "HOME") "/.config"))
+    (concat (getenv "HOME") "/.config/emacs"))
    (t (getenv "HOME"))))
 
 ;; Derived paths
@@ -63,7 +65,8 @@
 (set-default-coding-systems 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; set dired switches
+;; dired mode config
+(setq dired-dwim-target t)
 (setq dired-listing-switches "-alh")
 
 ;; utility functions
@@ -167,10 +170,17 @@ point reaches the beginning or end of the buffer, stop there."
    ("M-X" . 'smex-major-mode-commands)
    ("C-c C-c M-x" . 'execute-extended-command)))
 
-(use-package timu-caribbean-theme
+;;(use-package timu-caribbean-theme
+;;  :ensure t
+;;  :config
+;;  (load-theme 'timu-caribbean t))
+(use-package doom-themes
   :ensure t
+  :custom
+  (doom-themes-enable-bold t)
+  (doom-themes-enable-italic t)
   :config
-  (load-theme 'timu-caribbean t))
+  (load-theme 'doom-outrun-electric t))
 
 (use-package company
   :ensure t
@@ -298,49 +308,8 @@ point reaches the beginning or end of the buffer, stop there."
   ("C-x C-/" . 'undo-tree-redo))
 
 ;; vesti mode
-(use-package lua-mode :ensure t)
-(use-package polymode :ensure t)
-(require 'vesti-mode)
-(require 'poly-vesti)
-
-;; treesitter
-;; --- Paths: where Emacs looks for the binary grammar ---
-;; Windows: %APPDATA%/.emacs.local/treesit
-;; POSIX:   ~/.config/emacs/.emacs.local/treesit
 (setq treesit-extra-load-path
-      (list (if (eq system-type 'windows-nt)
-                (expand-file-name ".emacs.local/treesit" (getenv "APPDATA"))
-              (expand-file-name ".emacs.local/treesit"
-                                (expand-file-name "~/.config/emacs/")))))
+	  (list (expand-file-name ".emacs.d/tree-sitter" "~/")))
+(use-package lua-mode :ensure t)
+(require 'vesti-ts-mode)
 
-;; Optional: be explicit about the grammar's base name
-;; Emacs will look for:
-;;   Windows: libtree-sitter-vesti.dll
-;;   Linux:   libtree-sitter-vesti.so
-;;   macOS:   libtree-sitter-vesti.dylib
-
-;; --- Mode wiring ---
-(add-to-list 'major-mode-remap-alist '(vesti-mode . vesti-ts-mode))
-
-(define-derived-mode vesti-ts-mode text-mode "Vesti[TS]"
-  "Tree-sitter-based major mode for Vesti."
-  (if (treesit-language-available-p 'vesti)
-      (treesit-parser-create 'vesti)
-    (message "Vesti grammar not found. Check treesit-extra-load-path and file name.")))
-
-;; --- Query files (highlights.scm, injections.scm, etc.) ---
-(setq treesit-query-user-dir
-      (if (eq system-type 'windows-nt)
-          (expand-file-name ".emacs.local/treesit" (getenv "APPDATA"))
-        (expand-file-name ".emacs.local/treesit" "~/.config/emacs/")))
-
-(defun vesti--load-query (fname)
-  (let* ((file (expand-file-name (concat "vesti/" fname) treesit-query-user-dir)))
-	(when (file-exists-p file)
-	  (treesit-query-compile 'vesti (treesit-query
-
-;; --- Quick diagnostics ---
-;; Evaluate these to debug:
-;; (message "treesit-extra-load-path = %S" treesit-extra-load-path)
-;; (treesit-language-available-p 'vesti)      ; should be t
-;; (treesit--available-languages)             ; see what Emacs sees

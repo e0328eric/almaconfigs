@@ -31043,3 +31043,95 @@ zig build run
 rm -s
 rm -p
 cd Github\arch-almagest\
+ls
+cd .config\wezterm
+ls
+teachingf 
+ls
+cd 2026-1\
+;s
+rm `#additional1.ves#`
+ls
+v additional1.ves
+c d\
+cd
+cd Github\
+ls
+git clone --depth 1 https://github.com/e0328eric/tree-sitter-vesti.git
+cd $env.APPDATA
+cd .emacs.d\
+ls
+mkdir tree-sitter
+cd tree-sitter\
+cp ../../../Local/nvim-data/lazy/nvim-treesitter/parser/vesti.so libtree-sitter-vesti.so
+ls
+cd ../..
+ls
+cd emacs
+ls
+rm `#init.el#`
+cd .emacs.d\
+ls
+cd ..
+ls
+cp -r ../.emacs.d/tree-sitter .emacs.d/
+cd .emacs.local\
+ls
+rm -r treesit poly-vesti.el
+rm vesti-mode.el
+v vesti-ts-mode.el
+ls
+cd ..
+ls
+v init.el
+cd .emacs.d\
+ls
+mv ../AppData/Roaming/.emacs.d/tree-sitter .
+ls
+cd Github\tree-sitter-vesti\
+ls
+cd src
+cl /O2 /LD /I. parser.c /Fe:libtree-sitter-vesti.dll
+cl /O2 /LD /I. parser.c scanner.c /Fe:libtree-sitter-vesti.dll
+ls
+mv libtree-sitter-vesti.dll ~/.emacs.d/tree-sitter/
+rm libtree-sitter-vesti.exp libtree-sitter-vesti.lib
+cd
+ls
+cd .emacs.d\tree-sitter\
+ls
+rm libtree-sitter-vesti.so
+cd .emacs.d\tree-sitter\
+ls
+cd ..
+cp -r tree-sitter ../AppData/Roaming/.emacs.d/
+emacs
+cd
+cd Github\tree-sitter-vesti\
+tree-sitter generate --abi 14
+winget search node
+winget install OpenJS.NodeJS
+cd Github\tree-sitter-vesti\
+tree-sitter generate --abi 14
+cd src
+cl /O2 /LD /I. parser.c scanner.c /Fe:libtree-sitter-vesti.dll
+mv libtree-sitter-vesti.dll ~/.emacs.d/tree-sitter/
+ls
+rm  libtree-sitter-vesti.exp libtree-sitter-vesti.lib
+ls
+exit
+cd Github\alma-nix\
+ls
+cd nix\home\
+ls
+bat git.nix
+git config --global credential.helper store
+git config --global user.name "Sungbae Jeong"
+git config --global user.email "almagest0328@gmail.com"
+cd Github\vesti\
+v git.nix
+cd ../..
+cd ..
+cd almaconfigs\
+ls
+lg

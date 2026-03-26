@@ -2,7 +2,7 @@
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 
 ## Scancode Map
-set `REG_BINARY` and value should be
+set `REG_BINARY`, name should be `Scancode Map` (including space) and value should be
 
 ```
 00000000    00  00  00  00  00  00  00  00
