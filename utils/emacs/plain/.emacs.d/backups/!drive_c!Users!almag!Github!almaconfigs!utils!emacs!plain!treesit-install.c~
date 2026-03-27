@@ -1,0 +1,650 @@
+/*
+ * install_tree_sitter_grammar.c
+ *
+ * Builds tree-sitter grammar DLLs using MSVC for Emacs on Windows.
+ * C port of Install-TreeSitterGrammar.ps1.
+ *
+ * Usage:
+ *   install_tree_sitter_grammar.exe [OPTIONS] LANG [LANG ...]
+ *   install_tree_sitter_grammar.exe --languages python rust c cpp
+ *   install_tree_sitter_grammar.exe --languages all-common
+ *   install_tree_sitter_grammar.exe --languages python --grammar-dir C:\emacs-grammars
+ *   install_tree_sitter_grammar.exe --clean --languages all-common
+ *
+ * Build (from a Developer Command Prompt):
+ *   cl /O2 /W4 /Fe:install_tree_sitter_grammar.exe install_tree_sitter_grammar.c
+ */
+
+#define WIN32_LEAN_AND_MEAN
+#define _CRT_SECURE_NO_WARNINGS
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <direct.h>
+#include <stdbool.h>
+
+/* ── Constants ────────────────────────────────────────────────────────────── */
+
+#define MAX_PATH_LEN   4096
+#define MAX_CMD_LEN    8192
+#define MAX_LANGUAGES  64
+#define MAX_SOURCES    4
+
+/* ── Grammar repository table ─────────────────────────────────────────────── */
+
+typedef struct {
+    const char *name;
+    const char *repo_url;
+    const char *subdir;   /* NULL if no subdirectory */
+} GrammarEntry;
+
+static const GrammarEntry grammar_repos[] = {
+    { "bash",       "https://github.com/tree-sitter/tree-sitter-bash",           NULL },
+    { "c",          "https://github.com/tree-sitter/tree-sitter-c",              NULL },
+    { "cmake",      "https://github.com/uyha/tree-sitter-cmake",                 NULL },
+    { "cpp",        "https://github.com/tree-sitter/tree-sitter-cpp",            NULL },
+    { "c-sharp",    "https://github.com/tree-sitter/tree-sitter-c-sharp",        NULL },
+    { "css",        "https://github.com/tree-sitter/tree-sitter-css",            NULL },
+    { "dockerfile", "https://github.com/camdencheek/tree-sitter-dockerfile",     NULL },
+    { "elixir",     "https://github.com/elixir-lang/tree-sitter-elixir",         NULL },
+    { "go",         "https://github.com/tree-sitter/tree-sitter-go",             NULL },
+    { "gomod",      "https://github.com/camdencheek/tree-sitter-go-mod",         NULL },
+    { "haskell",    "https://github.com/tree-sitter/tree-sitter-haskell",        NULL },
+    { "html",       "https://github.com/tree-sitter/tree-sitter-html",           NULL },
+    { "java",       "https://github.com/tree-sitter/tree-sitter-java",           NULL },
+    { "javascript", "https://github.com/tree-sitter/tree-sitter-javascript",     NULL },
+    { "json",       "https://github.com/tree-sitter/tree-sitter-json",           NULL },
+    { "lua",        "https://github.com/tree-sitter-grammars/tree-sitter-lua",   NULL },
+    { "make",       "https://github.com/tree-sitter-grammars/tree-sitter-make",  NULL },
+    { "markdown",   "https://github.com/tree-sitter-grammars/tree-sitter-markdown", "tree-sitter-markdown" },
+    { "nix",        "https://github.com/nix-community/tree-sitter-nix",          NULL },
+    { "python",     "https://github.com/tree-sitter/tree-sitter-python",         NULL },
+    { "ruby",       "https://github.com/tree-sitter/tree-sitter-ruby",           NULL },
+    { "rust",       "https://github.com/tree-sitter/tree-sitter-rust",           NULL },
+    { "toml",       "https://github.com/tree-sitter-grammars/tree-sitter-toml",  NULL },
+    { "tsx",        "https://github.com/tree-sitter/tree-sitter-typescript",     "tsx" },
+    { "typescript", "https://github.com/tree-sitter/tree-sitter-typescript",     "typescript" },
+    { "yaml",       "https://github.com/tree-sitter-grammars/tree-sitter-yaml",  NULL },
+    { "zig",        "https://github.com/tree-sitter-grammars/tree-sitter-zig",   NULL },
+    { NULL, NULL, NULL }
+};
+
+static const char *common_languages[] = {
+    "bash", "c", "cmake", "cpp", "css", "dockerfile", "go", "html",
+    "java", "javascript", "json", "lua", "make", "markdown", "nix",
+    "python", "ruby", "rust", "toml", "tsx", "typescript", "yaml", "zig",
+    NULL
+};
+
+/* ── Console colors (Windows) ─────────────────────────────────────────────── */
+
+typedef enum {
+    COLOR_RESET = 7,
+    COLOR_GREEN = 10,
+    COLOR_CYAN  = 11,
+    COLOR_RED   = 12,
+    COLOR_YELLOW = 14,
+    COLOR_DARK_YELLOW = 6,
+} ConsoleColor;
+
+static HANDLE h_console;
+
+static void set_color(ConsoleColor c)
+{
+    SetConsoleTextAttribute(h_console, (WORD)c);
+}
+
+static void reset_color(void)
+{
+    set_color(COLOR_RESET);
+}
+
+/* ── Utility functions ────────────────────────────────────────────────────── */
+
+static void str_to_lower(char *s)
+{
+    for (; *s; s++) {
+        if (*s >= 'A' && *s <= 'Z')
+            *s += ('a' - 'A');
+    }
+}
+
+static void str_trim(char *s)
+{
+    /* trim leading */
+    char *start = s;
+    while (*start == ' ' || *start == '\t' || *start == '\r' || *start == '\n')
+        start++;
+    if (start != s)
+        memmove(s, start, strlen(start) + 1);
+
+    /* trim trailing */
+    size_t len = strlen(s);
+    while (len > 0 && (s[len-1] == ' ' || s[len-1] == '\t' ||
+                       s[len-1] == '\r' || s[len-1] == '\n'))
+        s[--len] = '\0';
+}
+
+/* Extract the last path component from a URL (e.g. "tree-sitter-python") */
+static const char *url_leaf(const char *url)
+{
+    const char *p = strrchr(url, '/');
+    return p ? p + 1 : url;
+}
+
+static bool file_exists(const char *path)
+{
+    DWORD attr = GetFileAttributesA(path);
+    return attr != INVALID_FILE_ATTRIBUTES;
+}
+
+static bool dir_exists(const char *path)
+{
+    DWORD attr = GetFileAttributesA(path);
+    return attr != INVALID_FILE_ATTRIBUTES &&
+           (attr & FILE_ATTRIBUTE_DIRECTORY);
+}
+
+static void ensure_dir(const char *path)
+{
+    if (!dir_exists(path)) {
+        CreateDirectoryA(path, NULL);
+    }
+}
+
+/* Recursively create directory tree (like mkdir -p) */
+static void ensure_dir_recursive(const char *path)
+{
+    char tmp[MAX_PATH_LEN];
+    strncpy(tmp, path, sizeof(tmp) - 1);
+    tmp[sizeof(tmp) - 1] = '\0';
+
+    for (char *p = tmp + 1; *p; p++) {
+        if (*p == '\\' || *p == '/') {
+            char saved = *p;
+            *p = '\0';
+            ensure_dir(tmp);
+            *p = saved;
+        }
+    }
+    ensure_dir(tmp);
+}
+
+/* Run a command and return the exit code. */
+static int run_command(const char *cmd)
+{
+    STARTUPINFOA si;
+    PROCESS_INFORMATION pi;
+    char cmd_buf[MAX_CMD_LEN];
+
+    ZeroMemory(&si, sizeof(si));
+    si.cb = sizeof(si);
+    ZeroMemory(&pi, sizeof(pi));
+
+    /* CreateProcess needs a mutable string */
+    strncpy(cmd_buf, cmd, sizeof(cmd_buf) - 1);
+    cmd_buf[sizeof(cmd_buf) - 1] = '\0';
+
+    if (!CreateProcessA(NULL, cmd_buf, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi)) {
+        fprintf(stderr, "  Failed to execute: %s (error %lu)\n", cmd, GetLastError());
+        return -1;
+    }
+
+    WaitForSingleObject(pi.hProcess, INFINITE);
+
+    DWORD exit_code = 1;
+    GetExitCodeProcess(pi.hProcess, &exit_code);
+
+    CloseHandle(pi.hProcess);
+    CloseHandle(pi.hThread);
+
+    return (int)exit_code;
+}
+
+/* Run a command in a specific working directory. */
+static int run_command_in(const char *cmd, const char *working_dir)
+{
+    STARTUPINFOA si;
+    PROCESS_INFORMATION pi;
+    char cmd_buf[MAX_CMD_LEN];
+
+    ZeroMemory(&si, sizeof(si));
+    si.cb = sizeof(si);
+    ZeroMemory(&pi, sizeof(pi));
+
+    strncpy(cmd_buf, cmd, sizeof(cmd_buf) - 1);
+    cmd_buf[sizeof(cmd_buf) - 1] = '\0';
+
+    if (!CreateProcessA(NULL, cmd_buf, NULL, NULL, FALSE, 0, NULL,
+                        working_dir, &si, &pi)) {
+        fprintf(stderr, "  Failed to execute: %s (error %lu)\n", cmd, GetLastError());
+        return -1;
+    }
+
+    WaitForSingleObject(pi.hProcess, INFINITE);
+
+    DWORD exit_code = 1;
+    GetExitCodeProcess(pi.hProcess, &exit_code);
+
+    CloseHandle(pi.hProcess);
+    CloseHandle(pi.hThread);
+
+    return (int)exit_code;
+}
+
+/* Check if an executable is found on PATH */
+static bool command_exists(const char *name)
+{
+    char cmd[MAX_CMD_LEN];
+    snprintf(cmd, sizeof(cmd), "where %s >nul 2>&1", name);
+    return system(cmd) == 0;
+}
+
+/* Recursively delete a directory tree */
+static void rmdir_recursive(const char *path)
+{
+    char cmd[MAX_CMD_LEN];
+    snprintf(cmd, sizeof(cmd), "cmd /c rmdir /s /q \"%s\"", path);
+    system(cmd);
+}
+
+/* Copy a file */
+static bool copy_file(const char *src, const char *dst)
+{
+    return CopyFileA(src, dst, FALSE) != 0;
+}
+
+/* Remove files matching a pattern in a directory */
+static void remove_files(const char *dir, const char *ext)
+{
+    char pattern[MAX_PATH_LEN];
+    WIN32_FIND_DATAA fd;
+
+    snprintf(pattern, sizeof(pattern), "%s\\*%s", dir, ext);
+    HANDLE hFind = FindFirstFileA(pattern, &fd);
+    if (hFind == INVALID_HANDLE_VALUE) return;
+
+    do {
+        char full[MAX_PATH_LEN];
+        snprintf(full, sizeof(full), "%s\\%s", dir, fd.cFileName);
+        DeleteFileA(full);
+    } while (FindNextFileA(hFind, &fd));
+
+    FindClose(hFind);
+}
+
+/* ── Lookup a grammar entry by language name ──────────────────────────────── */
+
+static const GrammarEntry *find_grammar(const char *lang)
+{
+    for (const GrammarEntry *e = grammar_repos; e->name; e++) {
+        if (_stricmp(e->name, lang) == 0)
+            return e;
+    }
+    return NULL;
+}
+
+/* ── Find MSVC / cl.exe ──────────────────────────────────────────────────── */
+
+static bool find_msvc(void)
+{
+    if (command_exists("cl.exe")) {
+        set_color(COLOR_GREEN);
+        printf("[OK] cl.exe found on PATH\n");
+        reset_color();
+        return true;
+    }
+
+    /*
+     * If cl.exe isn't on PATH, the user needs to run this from a
+     * Developer Command Prompt. Unlike PowerShell, we can't easily
+     * import the VS dev shell from a plain C program — the env vars
+     * set by vcvarsall.bat don't propagate to our process unless we
+     * parse them. We keep it simple: require the proper shell.
+     */
+    fprintf(stderr,
+        "Could not find MSVC (cl.exe). Please either:\n"
+        "  1. Run this from a \"Developer Command Prompt for VS\", or\n"
+        "  2. Run vcvarsall.bat x64 before invoking this tool.\n");
+    return false;
+}
+
+/* ── Build a single grammar ───────────────────────────────────────────────── */
+
+static bool build_grammar(const char *lang, const char *repo_url,
+                          const char *subdir, const char *grammar_dir,
+                          const char *temp_dir)
+{
+    char dll_name[256];
+    char repo_dir[MAX_PATH_LEN];
+    char src_dir[MAX_PATH_LEN];
+    char parser_path[MAX_PATH_LEN];
+    char cmd[MAX_CMD_LEN];
+
+    snprintf(dll_name, sizeof(dll_name), "libtree-sitter-%s.dll", lang);
+
+    set_color(COLOR_CYAN);
+    printf("\n── Building %s ──\n", lang);
+    reset_color();
+
+    /* Clone or pull */
+    snprintf(repo_dir, sizeof(repo_dir), "%s\\%s", temp_dir, url_leaf(repo_url));
+
+    if (dir_exists(repo_dir)) {
+        printf("  Updating existing clone...\n");
+        snprintf(cmd, sizeof(cmd), "git -C \"%s\" pull --quiet", repo_dir);
+        run_command(cmd);
+    } else {
+        printf("  Cloning %s...\n", repo_url);
+        snprintf(cmd, sizeof(cmd), "git clone --depth 1 --quiet \"%s\" \"%s\"",
+                 repo_url, repo_dir);
+        if (run_command(cmd) != 0) {
+            set_color(COLOR_YELLOW);
+            printf("  Clone failed for %s — skipping\n", lang);
+            reset_color();
+            return false;
+        }
+    }
+
+    /* Find the src directory */
+    if (subdir) {
+        snprintf(src_dir, sizeof(src_dir), "%s\\%s\\src", repo_dir, subdir);
+    } else {
+        snprintf(src_dir, sizeof(src_dir), "%s\\src", repo_dir);
+    }
+
+    snprintf(parser_path, sizeof(parser_path), "%s\\parser.c", src_dir);
+    if (!file_exists(parser_path)) {
+        set_color(COLOR_YELLOW);
+        printf("  parser.c not found in %s — skipping %s\n", src_dir, lang);
+        reset_color();
+        return false;
+    }
+
+    /* Collect source files */
+    const char *sources[MAX_SOURCES];
+    int n_sources = 0;
+    sources[n_sources++] = "parser.c";
+
+    char scanner_c[MAX_PATH_LEN], scanner_cc[MAX_PATH_LEN];
+    snprintf(scanner_c,  sizeof(scanner_c),  "%s\\scanner.c",  src_dir);
+    snprintf(scanner_cc, sizeof(scanner_cc), "%s\\scanner.cc", src_dir);
+
+    if (file_exists(scanner_c))  sources[n_sources++] = "scanner.c";
+    if (file_exists(scanner_cc)) sources[n_sources++] = "scanner.cc";
+
+    /* Build source list string */
+    char sources_str[1024] = "";
+    for (int i = 0; i < n_sources; i++) {
+        if (i > 0) strcat(sources_str, " ");
+        strcat(sources_str, sources[i]);
+    }
+
+    /* Build cl.exe command line
+     *   /O2      — optimize
+     *   /LD      — create DLL
+     *   /I.      — include current dir (for tree_sitter/parser.h)
+     *   /utf-8   — source charset
+     *   /nologo  — quiet
+     */
+    char out_dll[MAX_PATH_LEN];
+    snprintf(out_dll, sizeof(out_dll), "%s\\%s", src_dir, dll_name);
+
+    snprintf(cmd, sizeof(cmd),
+             "cl.exe /O2 /LD /I. /utf-8 /nologo %s /Fe:\"%s\"",
+             sources_str, out_dll);
+
+    printf("  Compiling: cl.exe %s\n", sources_str);
+    int rc = run_command_in(cmd, src_dir);
+
+    if (rc != 0) {
+        set_color(COLOR_YELLOW);
+        printf("  Compilation failed for %s\n", lang);
+        reset_color();
+        return false;
+    }
+
+    /* Copy DLL to grammar directory */
+    char dest[MAX_PATH_LEN];
+    snprintf(dest, sizeof(dest), "%s\\%s", grammar_dir, dll_name);
+
+    if (!copy_file(out_dll, dest)) {
+        set_color(COLOR_RED);
+        printf("  Failed to copy %s to %s (error %lu)\n", dll_name, dest, GetLastError());
+        reset_color();
+        return false;
+    }
+
+    set_color(COLOR_GREEN);
+    printf("  Installed: %s\n", dest);
+    reset_color();
+
+    /* Clean up intermediate files */
+    remove_files(src_dir, ".obj");
+    remove_files(src_dir, ".lib");
+    remove_files(src_dir, ".exp");
+
+    return true;
+}
+
+/* ── Usage ────────────────────────────────────────────────────────────────── */
+
+static void print_usage(const char *argv0)
+{
+    printf(
+        "Usage: %s [OPTIONS] --languages LANG [LANG ...]\n"
+        "\n"
+        "Options:\n"
+        "  --languages LANG ...   Language grammars to build (or \"all-common\")\n"
+        "  --grammar-dir DIR      Output directory for DLLs\n"
+        "                         (default: %%USERPROFILE%%\\.emacs.d\\tree-sitter)\n"
+        "  --temp-dir DIR         Temp directory for cloning repos\n"
+        "                         (default: %%TEMP%%\\tree-sitter-build)\n"
+        "  --clean                Remove temp directory after building\n"
+        "  --help                 Show this help\n"
+        "\n"
+        "Examples:\n"
+        "  %s --languages python rust c cpp\n"
+        "  %s --languages all-common --clean\n"
+        "  %s --languages python --grammar-dir C:\\emacs-grammars\n",
+        argv0, argv0, argv0, argv0);
+}
+
+/* ── Main ─────────────────────────────────────────────────────────────────── */
+
+int main(int argc, char *argv[])
+{
+    h_console = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    /* Default directories */
+    char grammar_dir[MAX_PATH_LEN] = "";
+    char temp_dir[MAX_PATH_LEN]    = "";
+    bool clean = false;
+
+    const char *languages[MAX_LANGUAGES];
+    int n_languages = 0;
+
+    /* Set defaults from environment */
+    {
+        const char *userprofile = getenv("USERPROFILE");
+        if (userprofile)
+            snprintf(grammar_dir, sizeof(grammar_dir),
+                     "%s\\.emacs.d\\tree-sitter", userprofile);
+
+        const char *tmp = getenv("TEMP");
+        if (!tmp) tmp = getenv("TMP");
+        if (tmp)
+            snprintf(temp_dir, sizeof(temp_dir),
+                     "%s\\tree-sitter-build", tmp);
+    }
+
+    /* ── Parse arguments ──────────────────────────────────────────────── */
+    if (argc < 2) {
+        print_usage(argv[0]);
+        return 1;
+    }
+
+    bool parsing_languages = false;
+
+    for (int i = 1; i < argc; i++) {
+        if (_stricmp(argv[i], "--help") == 0 || _stricmp(argv[i], "-h") == 0) {
+            print_usage(argv[0]);
+            return 0;
+        }
+        else if (_stricmp(argv[i], "--clean") == 0) {
+            clean = true;
+            parsing_languages = false;
+        }
+        else if (_stricmp(argv[i], "--grammar-dir") == 0) {
+            parsing_languages = false;
+            if (++i >= argc) {
+                fprintf(stderr, "Error: --grammar-dir requires a value\n");
+                return 1;
+            }
+            strncpy(grammar_dir, argv[i], sizeof(grammar_dir) - 1);
+        }
+        else if (_stricmp(argv[i], "--temp-dir") == 0) {
+            parsing_languages = false;
+            if (++i >= argc) {
+                fprintf(stderr, "Error: --temp-dir requires a value\n");
+                return 1;
+            }
+            strncpy(temp_dir, argv[i], sizeof(temp_dir) - 1);
+        }
+        else if (_stricmp(argv[i], "--languages") == 0) {
+            parsing_languages = true;
+        }
+        else if (parsing_languages) {
+            /* Collect language names (strip commas for convenience) */
+            char buf[256];
+            strncpy(buf, argv[i], sizeof(buf) - 1);
+            buf[sizeof(buf) - 1] = '\0';
+
+            /* Remove trailing comma if present */
+            size_t len = strlen(buf);
+            if (len > 0 && buf[len - 1] == ',')
+                buf[len - 1] = '\0';
+
+            str_trim(buf);
+            str_to_lower(buf);
+
+            if (strlen(buf) > 0 && n_languages < MAX_LANGUAGES) {
+                char *dup = _strdup(buf);
+                languages[n_languages++] = dup;
+            }
+        }
+        else {
+            fprintf(stderr, "Unknown option: %s\n", argv[i]);
+            print_usage(argv[0]);
+            return 1;
+        }
+    }
+
+    if (n_languages == 0) {
+        fprintf(stderr, "Error: No languages specified. Use --languages LANG ...\n");
+        return 1;
+    }
+
+    if (grammar_dir[0] == '\0') {
+        fprintf(stderr, "Error: Could not determine grammar directory "
+                "(USERPROFILE not set). Use --grammar-dir.\n");
+        return 1;
+    }
+    if (temp_dir[0] == '\0') {
+        fprintf(stderr, "Error: Could not determine temp directory "
+                "(TEMP not set). Use --temp-dir.\n");
+        return 1;
+    }
+
+    /* ── Resolve "all-common" ─────────────────────────────────────────── */
+    if (n_languages == 1 && _stricmp(languages[0], "all-common") == 0) {
+        free((void *)languages[0]);
+        n_languages = 0;
+        for (const char **p = common_languages; *p; p++) {
+            languages[n_languages++] = _strdup(*p);
+        }
+    }
+
+    /* ── Verify prerequisites ─────────────────────────────────────────── */
+    if (!find_msvc())
+        return 1;
+
+    if (!command_exists("git")) {
+        fprintf(stderr, "git is not on PATH. Please install Git for Windows.\n");
+        return 1;
+    }
+
+    /* ── Setup directories ────────────────────────────────────────────── */
+    ensure_dir_recursive(grammar_dir);
+    ensure_dir_recursive(temp_dir);
+
+    /* ── Main build loop ──────────────────────────────────────────────── */
+    int success = 0;
+    const char *failed[MAX_LANGUAGES];
+    int n_failed = 0;
+
+    for (int i = 0; i < n_languages; i++) {
+        const char *lang = languages[i];
+        const GrammarEntry *entry = find_grammar(lang);
+
+        if (!entry) {
+            set_color(COLOR_YELLOW);
+            printf("Unknown language '%s' — skipping. "
+                   "Add its repo URL to the source or use a known name.\n", lang);
+            reset_color();
+            failed[n_failed++] = lang;
+            continue;
+        }
+
+        if (build_grammar(lang, entry->repo_url, entry->subdir,
+                          grammar_dir, temp_dir)) {
+            success++;
+        } else {
+            failed[n_failed++] = lang;
+        }
+    }
+
+    /* ── Summary ──────────────────────────────────────────────────────── */
+    set_color(COLOR_CYAN);
+    printf("\n======================================\n");
+    set_color(n_failed == 0 ? COLOR_GREEN : COLOR_YELLOW);
+    printf("  Built: %d / %d\n", success, n_languages);
+    if (n_failed > 0) {
+        set_color(COLOR_RED);
+        printf("  Failed:");
+        for (int i = 0; i < n_failed; i++)
+            printf(" %s%s", failed[i], i < n_failed - 1 ? "," : "");
+        printf("\n");
+    }
+    set_color(COLOR_CYAN);
+    printf("  Grammar dir: %s\n", grammar_dir);
+    printf("======================================\n\n");
+    reset_color();
+
+    /* ── Cleanup ──────────────────────────────────────────────────────── */
+    if (clean) {
+        printf("Cleaning up %s...\n", temp_dir);
+        rmdir_recursive(temp_dir);
+    }
+
+    /* ── Emacs config hint ────────────────────────────────────────────── */
+    set_color(COLOR_DARK_YELLOW);
+    printf("Add this to your Emacs init.el:\n\n");
+
+    /* Print path with forward slashes for Emacs */
+    char emacs_path[MAX_PATH_LEN];
+    strncpy(emacs_path, grammar_dir, sizeof(emacs_path) - 1);
+    emacs_path[sizeof(emacs_path) - 1] = '\0';
+    for (char *p = emacs_path; *p; p++) {
+        if (*p == '\\') *p = '/';
+    }
+    printf("  (setq treesit-extra-load-path '(\"%s\"))\n\n", emacs_path);
+    reset_color();
+
+    /* Free language strings */
+    for (int i = 0; i < n_languages; i++)
+        free((void *)languages[i]);
+
+    return n_failed > 0 ? 1 : 0;
+}

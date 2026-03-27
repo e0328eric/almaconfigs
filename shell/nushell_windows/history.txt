@@ -31135,3 +31135,91 @@ cd ..
 cd almaconfigs\
 ls
 lg
+lg
+cd Github\almaconfigs\utils\emacs\plain\
+ls
+cd .emacs.local\
+ls
+v msvc.env
+seminar
+ls
+cd Doctor\Half_Space\
+ls
+vesti compile
+cd Github\vesti\
+ls
+seminar
+cd Doctor\Half_Space\
+vesti compile
+v src\parser\Parser.zig
+ls
+v uucode\uucode_config.zig
+ls
+v foo.ves
+ls
+v src\experimental.zig
+vesti experimental foo.ves
+v src\lexer\Lexer.zig
+cargo install ripgrep
+v src\lexer\Lexer.zig
+zig build --prefix-exe-dir ~/Github/alma-nix/nix/home/bin -Dtarget=x86_64-linux-musl -Doptimize=ReleaseFast\
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v chapter1\definition.ves
+vesti compile
+v first.lua
+vesti compile
+v before.lua
+ls .vesti-dummy
+vesti clear
+vesti compile
+v font.ves
+v half_space.ves
+ls
+rm font.ves
+v half_space.ves
+vesti clear
+vesti compile
+v .vesti-dummy\@vesti__cb25b097aa8e0a0f.tex
+v half_space.ves
+vesti compile
+v half_space.ves
+v font.ves
+vesti compile
+start .
+v font.ves
+v first.lua
+vesti compile
+v font.ves
+vesti compile
+v chapter1\definition.ves
+lg
+seminar
+ls
+cd Doctor\Half_Space\
+ls
+cd Github\almaconfigs\utils\emacs\plain\
+ls
+./treesit-install.ps1 -Languages zig
+s
+cl /O2 treesit-install.c
+ls
+./treesit-install.exe
+sudo ./treesit-install.exe --languages zig
+cd
+ls
+cd .emacs.d\tree-sitter\
+ls
+git clone --depth 1 https://github.com/GrayJack/tree-sitter-zig.git
+cd tree-sitter-zig\
+ls
+tree-sitter generate --abi 14
+ls
+cd src
+ls
+cl /O2 /LD /I. parser.c /Fe:libtree-sitter-zig.dll
+ls
+mv libtree-sitter-zig.dll ../../
+cd ../..
+ls
+rm -rp tree-sitter-zig\
+cd Github\almaconfigs\

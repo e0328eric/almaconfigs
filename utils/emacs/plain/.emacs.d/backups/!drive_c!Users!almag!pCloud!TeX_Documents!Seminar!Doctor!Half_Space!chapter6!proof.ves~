@@ -1,0 +1,344 @@
+#def #TODO {
+    useenv center {
+        \bf{\color{red}[Fill Here!!]}
+    }
+}
+
+First, we prove several auxiliary results.
+
+#label (lemma:6.1)
+useenv lemma {
+    Let $u\in W_p^2(\R_+^d)$ and let $c$ be a constant such that $1-p < c < 1$.
+    Assume that
+    #eq (eq:6.1) {
+        \liminf_{x^1\downarrow0}{|u(x)|//x^1} < oo\quad"on"\quad
+        \{x : x^1 = 0\}\ "(a.e.)".
+    }
+    Let $\xi$ be a unit vector in $\R^d$. Then
+    #eq (eq:6.2) {
+    useenv aligned {
+        -\int_{\R_+^d}(x^1)^c|u|^{p-2}uu_{(\xi)(\xi)}dx
+        &= c(1-c)p^{-1}(\xi^1)^2\int_{\R_+^d}(x^1)^{c-2}|u|^pdx
+        + (p-1)\int_{\R_+}x^c|u|^{p-2}(u_{(\xi)})^2dx \\
+        &>= (\xi^1)^2\kappa\int_{\R_+^d}(x^1)^{c-2}|u|^pdx,
+    }}
+    where $\kappa=(1-c)(p-1+c)p^{-2}$, $u_{(\xi)}=u_{x^i}\xi^i$, and
+    $u_{(\xi)(\xi)} = u_{x^ix^j}\xi^i\xi^j$.
+    \proof
+    If $\xi=(\xi^1,0,...,0)$, then \cref{eq:6.2} reduces to the one-dimensional
+    case by Fubini's theorem. In this case, we proceed as in the proof of
+    \Cref{thm:2.16} integrating by parts on the basis of \Cref{lemma:2.17}.
+    When we apply the integration by parts, we need to estimate boundary terms
+    for $(x^1)^c|u|^{p-2}uu_{x^1}$ and $(x^1)^{c-1}|u|^p$.
+    The boundary terms vanish for $x=0$ due to assumption \cref{eq:6.1} and the
+    fact that $u_x$ is bounded $(d=1)$. Recall that \cref{eq:6.1} is equivalent
+    to
+    $$
+        \sup_{r>0}\inf_{0<x^1<r}{|u(x)|//x^1} < oo\quad"on"\quad
+        \{x : x^1 = 0\}\ "(a.e.)".
+    $$
+    Thus for every $r>0$ one can take $0<x^1<r$ such that (also consider any
+    $x$ satisfies \cref{eq:6.1}), since $c+p-1>0$,
+    $$
+        |(x^1)^c|u|^{p-2}uu_{x^1}|
+        <= N(x^1)^{1-p}|u|^{p-1}(x^1)^{c+p-1} <= N r^{c+p-1} -> 0,
+    $$
+    $$
+        |(x^1)^{c-1}|u|^{p}|
+        = (x^1)^{-p}|u|^{p}(x^1)^{c+p-1} <= N r^{c+p-1} -> 0.
+    $$
+    Whereas for $x->oo$ they vanish since $c+1<0$, and
+    $|u|^p$, $|u|^{p-1}u_x\in L_1(\R_+)$, so that at least along a subsequence
+    $x|u|^{p-1}u_x(x)->0$ and $|u|^p(x)->0$.\footnote{
+        Notice that for $f\in L_1(\R_+)$, we have $\liminf_{x->oo}|f(x)|=0$.
+    }
+    Hence we have the following calculation.
+    useenv align* {
+        \int_{\R_+^d}(x^1)^c|u|^{p-2}uu_{(\xi)(\xi)}dx
+        &= \int_{\R_+^d}(x^1)^c|u|^{p-2}uu_{x^1x^1}dx \\
+        &= \int_{\R_+^d}(x^1)^c (|u|^{p-2}uu_{x^1})_{x^1} dx -
+        (p-1)\int_{\R_+^d}(x^1)^c |u|^{p-2}(u_{x^1})^2 dx \\
+        &= -c\int_{\R_+^d}(x^1)^{c-1}|u|^{p-2}uu_{x^1} dx -
+        (p-1)\int_{\R_+^d}(x^1)^c |u|^{p-2}(u_{x^1})^2 dx \\
+        &= -c\int_{\R_+^d}(x^1)^{c-1} (|u|^{p})_{x^1} dx -
+        (p-1)\int_{\R_+^d}(x^1)^c |u|^{p-2}(u_{x^1})^2 dx \\
+        &= c(c-1)p^{-1}\int_{\R_+^d}(x^1)^{c-2} |u|^{p} dx -
+        (p-1)\int_{\R_+^d}(x^1)^c |u|^{p-2}(u_{x^1})^2 dx.
+    }
+
+    To prove the inequality in \cref{eq:6.2}, define $v=|u|^{p/2}$ and observe
+    that by \Cref{lemma:2.17} and Minkowski's inequality
+    useenv align* {
+        \int_0^oo x^{c-2}|u|^pdx
+        &= \int_0^oo x^{c-2}v^2dx
+        = \int_0^oo x^{c} ?(\int_0^1v'(yx)dy)?^2dx \\
+        &<= ?(\int_0^1?(\int_0^oo x^c(v'(yx))^2dx)?^{1/2}dy)?^2
+        = \int_0^oo x^c (v'(x))^2dx ?(\int_0^1 y^bdy)?^2,
+    }
+    where $b = -1/2-c/2 > -1$. By evaluating the last integral we get
+    $$
+        \int_0^oo x^{c-2}|u|^pdx
+        <= 4(1-c)^{-2}\int_{\R_+}x^c(v_x)^2dx
+        = p^2(1-c)^{-2}\int_{\R_+}x^c|u|^{p-2}(u_{(\xi)})^2dx.
+    $$
+    This yields the inequality in \cref{eq:6.2},\footnote{
+        Here, as $\xi$ is a unit vector, $\xi^1=1$.
+    }which is thus proved for $d=1$
+    and for any $d$ if $\xi=(\xi^1,0,...,0)$.
+
+    If $\xi^1=0$, by changing coordinates we can always assume $\xi=|\xi|e_2$,
+    where $e_2$ is the second basis vector. Then integrating by parts we see
+    that the left-hand side of \cref{eq:6.2} equals
+    $$
+        (p-1)\int_{\R_+^d}(x^1)^c|u|^{p-2}u_{x^2}^2dx >= 0.
+    $$
+
+    In the general case $\xi^1!=0$, without loss of generality we assume that
+    $\xi^1>0$ and make the change of coordinates $y^1 = x^1/\xi^1$, $y^i = x^i -
+    \xi^ix^1/\xi^1$. Then
+    $$
+        ?|{\diff y//\diff x}|? = {1//\xi^1},\quad
+        u_{(\xi)(\xi)} = u_{y^iy^j}y_{(\xi)}^iy_{(\xi)}^iy_{(\xi)}^j =
+        u_{y^1y^1}.
+    $$
+    Hence, by the result for $\xi=(\xi^1,0,...,0)$ the left-hand side of
+    \cref{eq:6.2} equals
+    $$
+        -(\xi^1)^{1+c}\int_{\R_+^d}(y^1)^c|u|^{p-2}uu_{y^1y^1}dy
+        >= (\xi^1)^{1+c}\kappa\int_{\R_+^d}(y^1)^{c-2}|u|^pdy
+        = (\xi^1)^2\kappa\int_{\R_+^d}(x^1)^{c-2}|u|^pdx.
+    $$
+    This proves the lemma.
+}
+
+#label(coro:6.2) useenv coro {
+    If we are given a nonnegative symmetric $d\times d$ matrix $a$, then, under
+    the assumptions of \Cref{lemma:6.1}, we have
+    #eq (eq:6.3) {
+    useenv aligned {
+        -\int_{\R_+^d}(x^1)^c|u|^{p-2}ua^{ij}u_{x^ix^j}dx
+        &= c(1-c)p^{-1}a^{11}\int_{\R_+^d}(x^1)^{c-2}|u|^pdx
+        + (p-1)\int_{\R_+}(x^1)^c|u|^{p-2}a^{ij}u_{x^i}u_{x^j}dx \\
+        &>= (\xi^1)^2\kappa\int_{\R_+^d}(x^1)^{c-2}|u|^pdx,
+    }}
+    \proof
+    Observe that $a^{ij} = \lambda^k\xi_k^i\xi_k^j$, where $\lambda^k$ are the
+    eigenvalues and $\xi_k$ eigenvectors of $a$, which implies that the
+    left-hand side of \cref{eq:6.3} equals
+    $$
+        -\lambda^k\int_{\R_+^d}(x^1)^c|u|^{p-2}uu_{(\xi_k)(\xi_k)}dx.
+    $$
+}
+
+The following is the basic a priori estimate.
+#label(lemma:6.3) useenv lemma {
+    Let $u\in\Hf_{p,\theta}^2(T)$ with $u(0,\cdot)=0$. Then
+    $$
+        ||M^{2/p-1}u(T,\cdot)||_{0,p,\theta}^p
+        + ||u||_{\Hf_{p,\theta}^2(T)}
+        <= N(d,p,\theta,\delta_0)||M(u_t-Lu)||_{\Lb_{p,\theta}(T)}.
+    $$
+    \proof
+    By \Cref{remark:5.4} and \ref{remark:5.5} we may assume that $u\in
+    C_0^oo([0,T]\times\R_+^d)$. By \Cref{lemma:5.8} we only need to
+    prove\footnote{
+        Since $u\in\Hf_{p,\theta}^2(T)$, by \Cref{remark:5.4} one can take
+        canonical $f^i$ to apply \Cref{lemma:5.8}.
+    }
+    #eq (eq:6.4) {
+        ||M^{2/p-1}u(T,\cdot)||_{0,p,\theta}^p + ||M^{-1}u||_{\Lb_{p,\theta}(T)}
+        <= N(d,p,\theta,\delta_0) ||M(u_t-Lu)||_{\Lb_{p,\theta}(T)}.
+    }
+    Define $f=M(u_t-Lu)$, so that $u_t=Lu + M^{-1}f$, multiply the latter
+    equation by $(x^1)^c|u|^{p-2}u$, where $c=2+\theta-d-p\in(1-p,1)$, and
+    integrate by parts. Then by H\"older's inequality, we first obtain that
+    $$
+        \int_0^oo\int_{\R_+^d}(x^1)^{c-1}|u|^{p-2}ufdxdt
+        <= ||M^{-1}u||_{\Lb_{p,\theta}(T)}^{p-1}||f||_{\Lb_{p,\theta}(T)}.
+    $$
+    Observe that
+    $$
+        ||M^{2/p-1}u(T,\cdot)||_{0,p,\theta}^p
+        = \int_{\R_+^d}(x^1)^{\theta-d+2-p}|u|^p(T,x)dx
+        = \int_0^T\int_{\R_+^d}(x^1)^{c}(|u|^p)_t(t,x)dxdt
+    $$
+    because of \Cref{lemma:2.17}\footnote{
+        $|u|^p(t,x)$ is absolutely continuous in $t$ and $(|u|^p)_t =
+        p|u|^{p-2}uu_t$.
+    } and $u(0,\cdot)=0$. Hence by \Cref{coro:6.2} we find\footnote{
+        By the ellipticity, $-a^{11}<=-\delta_0$. Also, remember that $c-2 =
+        \theta-d-p$.
+    }
+    useenv align* {
+        p^{-1}||M^{2/p-1}u(T,\cdot)||_{0,p,\theta}^p
+        &= \int_0^T\int_{\R_+^d}(x^1)^c|u|^{p-2}uu_tdxdt \\
+        &= \int_0^T\int_{\R_+^d}(x^1)^c|u|^{p-2}u(a^{ij}u_{x^ix^j} +
+        M^{-1}f)dxdt \\
+        &= \int_0^T\int_{\R_+^d}(x^1)^c|u|^{p-2}ua^{ij}u_{x^ix^j}dxdt
+        + \int_0^T\int_{\R_+^d}(x^1)^{c-1}|u|^{p-2}ufdxdt \\
+        &<= -\delta_0\kappa ||M^{-1}u||_{\Lb_{p,\theta}(T)}
+        + ||M^{-1}u||_{\Lb_{p,\theta}(T)}^{p-1}||f||_{\Lb_{p,\theta}(T)}.
+    }
+    This certainly implies \cref{eq:6.4}. The lemma is proved.
+}
+
+#label(lemma:6.4) useenv lemma {
+    For any $u_0\in U_{p,\theta}^2$ the equation $v_t=\Delta v$ with initial
+    data $v(0,\cdot)=u_0$ has a solution $v\in\Hf_{p,\theta}^2(T)$ such that
+    $$
+        ||v||_{\Hf_{p,\theta}^2(T)} <= N(p,d,\theta)||u_0||_{U_{p,\theta}^2}.
+    $$
+    \proof
+    The proof is rather long, so we will prove this in Appendix.
+}
+
+useenv pf [\Cref{lemma:5.7}] {
+    The uniqueness follows immediate from \Cref{lemma:6.3}.
+    For the existence, first of all, bearing in mind the method of continuity,
+    we see that we can concentrate on the case $L=\Delta$.
+    Then replacing $u$ in \cref{eq:5.1} with $u+v$, where $v$ is taken from
+    \Cref{lemma:6.4}, we reduce the situation to the case $u_0=0$.
+
+    Indeed, let $L$ be given and consider $L_\sigma = (1-\sigma)\Delta + \sigma
+    L$. Also, consider a set $\Sigma\subset [0,1]$ by all collection of $\sigma$
+    such that \Cref{lemma:5.7} is true by replacing $L$ into $L_\sigma$.
+    Later we will prove that $0\in\Sigma$, thus for now, assume that
+    $0\in\Sigma$.
+
+    #def #H {\Hf_{p,\theta}^2(T)}
+    Fix $\sigma_0\in\Sigma$. For $u\in\Hf_{p,\theta}^2(T)$, define
+    $v\in\Hf_{p,\theta}^2(T)$ a solution to
+    $$
+        v_t = L_{\sigma_0}v + D_if^i + (L_{\sigma_0} - L_{\sigma})u.
+    $$
+    By \Cref{remark:5.4}, $M(u_t - L_\nu u)\in\Lb_{p,\theta}(T)$ for
+    every $\nu\in\Sigma$. This shows that
+    $M(L_{\sigma_0}-L_\sigma)u\in\Lb_{p,\theta}(T)$, so the given PDE
+    makes sense, and by the definition of the set $\Sigma$, such $v$ uniquely
+    exists. So we can define a map $R:\Hf_{p,\theta}^2(T)->\Hf_{p,\theta}^2(T)$
+    by $Ru = v$.
+    By \Cref{remark:5.4},\footnote{
+        Since
+        $$
+            M(L-\Delta) = M(\diff_t-\Delta) -
+            M(\diff_t-L),
+        $$
+        by \Cref{remark:5.4}, the operator on the left-hand side is also bounded
+        from $\Hf_{p,\theta}^2(T)$ into $\Lb_{p,\theta}(T)$.
+    } and \Cref{lemma:6.3}, for any $u_1,u_2\in\Hf_{p,\theta}^2(T)$,
+    useenv align* {
+        ||Qu_1-Qu_2||_{#H}
+        &<= N||M(\diff_t-L_{\sigma_0})(Qu_1-Qu_2)||_{\Lb_{p,\theta}(T)} \\
+        &= N||M(L_{\sigma_0}-L_\sigma)(u_1-u_2)||_{\Lb_{p,\theta}(T)} \\
+        &= N|\sigma_0-\sigma| ||M(L-\Delta)(u_1-u_2)||_{\Lb_{p,\theta}(T)} \\
+        &<= N|\sigma_0-\sigma| ||u_1-u_2||_{#H},
+    }
+    where $N$ is a constant independent of $u_1$, $u_2$, $\sigma_0$, and
+    $\sigma$. Therefore, by taking $\sigma$ close enough to $\sigma_0$, one can
+    make $Q$ a contraction, and such distance between $\sigma$ and $\sigma_0$
+    does not depends on $\sigma$ and $\sigma_0$. Hence, if $0\in\Sigma$ is
+    proved, we can obtain $1\in\Sigma$ with a finitly many step, which proves
+    \Cref{lemma:5.7} for the operator $L$.
+    #undef #H
+
+    Now by virtue of \Cref{lemma:6.3} and \Cref{remark:5.5}, as in the proof of
+    \Cref{lemma:4.8} we may assume that $f^i\in C_0^oo(\R_+\times\R_+^d)$ and we
+    continue these functions on $\R_+\times\R_+^d$ to be even function on $x^1$
+    if $i=1$ and odd extension if $i>=2$ $x^1$.\footnote{
+        Then $u$ a solution of \cref{eq:5.1} should be an odd function because
+        we are dealing with $D_1f^1$, which is then an odd function of $x^1$.
+    } Then, say by Theorem 4.10 of \cite{Kry2}, \cref{eq:5.1} considered
+    for all $x\in\R^d$ with zero initial condition has a unique solution $u$
+    such that $u\in\cap_\gamma C([0,T],H_p^\gamma)$. By Sobolev embedding
+    theorem we get that $u\in\cap_{n=0}^oo C([0,T],C^n(\R^d))$. Furthermore, by
+    uniqueness, $u$ is an odd function of $x^1$ so that $u(t,0)=0$ for $t>=0$.
+    In particular, owing to the inequality $|M^{-1}u|<=\sup_x|u_x|$,\footnote{
+        See the proof of \Cref{lemma:4.8}. Indeed, by Lemma 12.10.2 and Theorem
+        13.8.1 in \cite{Kry5}, $H_p^\gamma\subset L_oo$ if $\gamma-d/p > 0$.
+        From this, $u_x$ is bounded.
+    } this implies that $M^{-1}u$ is bounded.
+	
+    Next, in the same way as in the proof of Lemma 4.2 of \cite{half-line},
+    using boundedness of all derivatives of $u$ with respect to $x$, we will
+    prove that 
+    $$
+        M^{-1}u\in\Hb_{p,\theta}^\gamma(T)\quad
+        \forall\gamma>=0,\ \theta\in(d-1,p+d-1).
+    $$
+
+    Since $f$ has a compact support, there exists $r>0$ such that the support of
+    $f$ lies in the domain
+    $$
+        \Omega \defeq (2r,r^{-1}) \times \{x : |x'| < r^{-1}\}.
+    $$
+    First of all, we want to evaluate $||M^{-1}u||_{\Lb_{p,\theta}}$ on the
+    following subregions (actually $III$ and $IV$ are symmetric).
+    useenv figure [ht] {
+    \centering
+    useenv tikzpicture {
+        \draw[thick] (0,0) --! (0,2) node[above] {$x^1$};
+        \fill[black!10] (-1,0) rectangle (1,1);
+        \draw[thick] (-2,0) --! (2,0);
+        \draw[densely dashed] (-2,1) --! (2,1) node[right] {$r$};
+        \draw[densely dashed] (-1,0) node[below] {-$r^{-1}$} --! (-1,1);
+        \draw[densely dashed] (1,0)  node[below] {$r^{-1}$} --! (1,1);
+        \path (1,1.5) node {$I$};
+        \path (0,0.5) node {$II$};
+        \path (1.5,0.5) node {$III$};
+        \path (-1.5,0.5) node {$IV$};
+    }}
+
+    Notice that then $u_t = \Delta u$ outside of $\Omega$ with zero initial and zero
+    boundary value for $x^1 = 0$. If we set $u(t,x)=0$ for $t<0$, then it satisfies
+    the heat equation for all $t<=T$ and $x\in\R_+^d-!\Omega$.
+    Similar method in the proof of Lemma 4.2 of \cite{half-line} gives that
+    for any multiindex $\alpha$,
+    #eq (eq:maximum-principles) {
+        \sup_{0<x^1<r,|x'|<r,t<=T}|D^\alpha u(t,x)|
+        <= {N(\alpha)//r^{|\alpha|}}\sup_{x^1=2r,|x'|=2r,t<=T}|u(t,x)|.
+    }
+    By \cref{eq:maximum-principles},\footnote{
+        In addition, $|M^{-1}u|<=\sup|u_x|$.
+    }
+    useenv align* {
+        \int_0^T\int_{(0,r)\times\{|x'|<r\}}(x^1)^{\theta-d}|M^{-1}u(t,x)|^pdtdx
+        &<= N\sup_{x^1=2r,|x'|=2r,t<=T}|u(t,x)|^p
+        \int_0^T\int_{(0,r)\times\{|x'|<r\}}(x^1)^{\theta-d}dtdx \\
+        &<= NTr^d\sup_{x^1=2r,|x'|=2r,t<=T}|u(t,x)|^p
+        \int_0^1(x^1)^{\theta-d}dx^1.
+    }
+    Since $\theta>d-1$, the right-hand side integral is finite. Upon translating
+    with respect to $x'$, applying same argument, and sum them up shows,
+    therefore, that
+    $$
+        \int_0^T\int_{II}(x^1)^{\theta-d}|M^{-1}u(t,x)|^pdtdx
+        <= NTr^d\sup_{x\in II',t<=T}|u(t,x)| \int_0^1(x^1)^{\theta-d}dx^1
+        <= N(d,\theta,T,f) < oo
+    $$
+    where $II'$ is some subset of $\R_+^d$ containing $II$ and disjoint with
+    $I$.
+    In addition, as $(x^1)^{\theta-d-p}<=1$ if $x^1>=1$, we have
+    useenv align* {
+        \int_0^T\int_{I}(x^1)^{\theta-d}|M^{-1}u(t,x)|^pdtdx
+        <= \int_0^T\int_{I}|u(t,x)|^pdtdx <=
+        T\sup_{t<=T}||u(t,\cdot)||_{L_p}^p < oo,
+    }
+    because $u\in C([0,T],L_p)$.
+
+	To estimate on the region $III$, claim that
+	$$
+	    |u(t,x)| <= N(d,f) e^{-\sqrt{2}|x| + 8t}.
+	$$
+	The proof of which is presented in the appendix.
+	Using that inequality, we obtain
+	useenv align* {
+	    \int_0^T\int_{III} (x^1)^{\theta-d}|M^{-1}u(t,x)|^p dtdx
+	    &= \int_0^T\int_{(0,r)\times\{|x'|>r\}} (x^1)^{\theta-d-p}|u(t,x)|^p dtdx \\
+	}
+	
+    \Cref{remark:5.2} shows that the same inclusions are true for $u_x$ and by
+    \Cref{remark:2.2} they also hold for $Mu_{xx}$. Finally, from \cref{eq:5.1},
+    it follows that $Mu_t\in\Hb_{p,\theta}^\gamma(T)$ for all $\gamma$.
+    Thus $u\in\Hf_{p,\theta}^2(T)$ and applying \Cref{lemma:6.3} we finish the
+    proof of \Cref{lemma:5.7}.
+}
