@@ -1,0 +1,49 @@
+profile home {
+	output eDP-1  {
+        enable
+        mode 3200x2000@165.001007Hz
+        position 503,0
+        scale 2.0
+    }
+	output "BOE Display *" {
+        enable
+        mode 2560x1600@120Hz
+        position 2103,0
+        scale 1.6
+    }
+}
+
+profile office-with-hdmi {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 503,0 scale 2.0
+	output DP-3 enable mode 2560x1600@60.0Hz position 2103,1000 scale 1.6
+	output DP-4 enable mode 2560x1600@60.0Hz position 2103,0 scale 1.6
+	output "Samsung Electric Company S24E450 *" enable mode 1920x1080@60Hz position 3703,100 scale 1.2
+}
+
+profile office {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 503,0 scale 2.0
+	output DP-3 enable mode 2560x1600@60.0Hz position 2103,1000 scale 1.6
+	output DP-4 enable mode 2560x1600@60.0Hz position 2103,0 scale 1.6
+}
+
+profile office2 {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 503,0 scale 2.0
+	output DP-5 enable mode 2560x1600@60.0Hz position 2103,1000 scale 1.6
+	output DP-4 enable mode 2560x1600@60.0Hz position 2103,0 scale 1.6
+}
+
+profile office3 {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 503,0 scale 2.0
+	output DP-6 enable mode 2560x1600@60.0Hz position 2103,1000 scale 1.6
+	output DP-7 enable mode 2560x1600@60.0Hz position 2103,0 scale 1.6
+}
+
+profile office4 {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 503,0 scale 2.0
+	output DP-3 enable mode 2560x1600@60.0Hz position 2103,1000 scale 1.6
+	output DP-5 enable mode 2560x1600@60.0Hz position 2103,0 scale 1.6
+}
+
+profile laptop {
+	output eDP-1 enable mode 3200x2000@165.001007Hz position 0,0 scale 2.0
+}

@@ -138,12 +138,10 @@ void mango_setup(void) {
 
 int main(void) {
     /* Refuse root */
-    if (geteuid() == 0)
-        die("Do not run this script as root.");
+    if (geteuid() == 0) die("Do not run this script as root.");
 
     const char *home = getenv("HOME");
-    if (!home)
-        die("$HOME is not set.");
+    if (!home) die("$HOME is not set.");
 
     /* Verify the script lives inside .almaconf/<something>/ */
     {
@@ -153,13 +151,11 @@ int main(void) {
 
         /* dirname of cwd */
         char *slash = strrchr(cwd, '/');
-        if (!slash)
-            die("Unexpected cwd: %s", cwd);
+        if (!slash) die("Unexpected cwd: %s", cwd);
         *slash = '\0'; /* cwd is now the parent directory */
         const char *grandparent_base = strrchr(cwd, '/');
-        if (!grandparent_base)
-            die("Unexpected cwd after trim: %s", cwd);
-        grandparent_base++; /* skip the '/' */
+        if (!grandparent_base) die("Unexpected cwd after trim: %s", cwd);
+        ++grandparent_base;
 
         if (strcmp(grandparent_base, ".almaconf") != 0)
             die("The directory name which this script is located in must be "
