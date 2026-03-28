@@ -1,0 +1,15 @@
+profile home {
+	output eDP-1  {
+        enable
+        mode 3200x2000@165.001007Hz
+        position 503,0
+        scale 2.0
+    }
+	output "BOE Display *" {
+        enable
+        mode 2560x1600@120Hz
+        position 2103,0
+        scale 1.6
+    }
+}
+

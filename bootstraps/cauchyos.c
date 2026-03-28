@@ -271,14 +271,13 @@ int main(void) {
     run("systemctl --user enable --now pipewire pipewire-pulse wireplumber");
 
     /* ── 8. Hyprland + desktop environment ───────────────────────────────── */
-	switch (wm) {
 #if defined(HYPRLAND)
 		hyprland_setup();
 #elif defined(MANGO)
 		mango_setup();
 #else
 #error "No Window Manager is selected. Use -DHYPRLAND or -DMANGO in compilation"
-#fi
+#endif
 
     /* cursor */
     {
@@ -320,7 +319,7 @@ int main(void) {
         { "wm/hypr",             "hypr"      },
 #elif defined(MANGO)
         { "wm/mango",            "mango"     },
-#fi
+#endif
         { "utils/nvim",          "nvim"      },
         { "shell/fish",          "fish"      },
         { "shell/nushell_linux", "nushell"   },
