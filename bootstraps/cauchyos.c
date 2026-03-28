@@ -19,6 +19,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+#include "packages_cauchyos.h"
+
 #define ARR_LEN(_arr) (sizeof(_arr) / sizeof(_arr[0]))
 
 /* ── helpers ──────────────────────────────────────────────────────────────── */
@@ -117,23 +119,13 @@ static void sudo_append_line_if_missing(const char *line, const char *file) {
 }
 
 void hyprland_setup(void) {
-    run("sudo pacman -S --noconfirm --needed "
-        "hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs "
-        "hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul fcitx5-config-qt "
-        "grim nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd "
-        "vivaldi cliphist grimblast-git wl-clipboard starship zenith");
-
-    run("paru -S --noconfirm --needed vicinae awww-git noctalia-shell mimeo");
+    run("sudo pacman -S --noconfirm --needed " HYPRLAND_PKGS);
+    run("paru -S --noconfirm --needed " NOCTALIA_SHELL);
 }
 
 void mango_setup(void) {
-    run("sudo pacman -S --noconfirm --needed "
-        "mangowc wlr-randr kanshi ghostty tree-sitter tree-sitter-cli neovim nodejs "
-        "hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul fcitx5-config-qt "
-        "grim nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd "
-        "vivaldi cliphist grimblast-git wl-clipboard starship zenith");
-
-    run("paru -S --noconfirm --needed vicinae awww-git noctalia-shell mimeo");
+    run("sudo pacman -S --noconfirm --needed " MANGO_PKGS);
+    run("paru -S --noconfirm --needed " NOCTALIA_SHELL);
 }
 
 int main(void) {
@@ -289,9 +281,7 @@ int main(void) {
     run("mimeo --add application/pdf org.pwmt.zathura-pdf-mupdf.desktop");
 
     /* ── 9. gaming ───────────────────────────────────────────────────────── */
-    run("sudo pacman -S --noconfirm --needed "
-        "cachyos-gaming-meta protonup-qt mangohud lutris gamescope "
-        "steam xdg-desktop-portal-hyprland woff2 webkit2gtk");
+    run("sudo pacman -S --noconfirm --needed " GAMING);
 
     /* ── 10. utilities ───────────────────────────────────────────────────── */
     run("sudo pacman -S --noconfirm --needed "
