@@ -19,6 +19,10 @@ function emptytrash
     rm -rf /home/almagest/.local/share/vifm/Trash
 end
 
+function vv
+    command v $argv
+end
+
 function v
     nvim $argv
 end
@@ -36,7 +40,7 @@ function l
 end
 
 function oldrm
-    /bin/rm $argv
+    /usr/bin/env -S rm $argv
 end
 
 function rm
@@ -55,20 +59,45 @@ function o
     /usr/bin/xdg-open $argv &
 end
 
-function hc
-    herbstclient $argv
+function lsblk_serial
+    lsblk -o NAME,SIZE,MODEL,SERIAL
+end
+
+function lsblk_uuid
+    lsblk -o NAME,SIZE,TYPE,MOUNTPOINTS,UUID
 end
 
 function fishcfg
     nvim  ~/.config/fish/os/linux.fish
 end
 
-function showwifi
-    nmcli d wifi list
+function nixpkg
+    nvim $HOME/.nixos/nix/home/packages.nix
 end
 
-function connectwifi
-    nmcli d wifi connect $argv
+function nixrootpkg
+    nvim $HOME/.nixos/nix/root/packages.nix
+end
+
+function nixnix
+    sudo nixos-rebuild switch --flake ~/.nixos#almanixos
+end
+
+function nixupdate
+    sudo nixos-rebuild switch --upgrade --flake ~/.nixos#almanixos
+end
+
+function flakeupdate
+    cp $HOME/.nixos/flake.lock $HOME/.nixos/flake.lock.old
+    sudo nix flake update
+end
+
+function nixgc
+    nix-collect-garbage
+end
+
+function flatpakgame
+    flatpak --installation=game $argv
 end
 
 alias xclip="/usr/bin/xclip -selection c"
@@ -90,7 +119,7 @@ function reloadfish
 end
 
 function getmusic
-    youtube-dl -x --audio-format flac --output "%(title)s.%(ext)s" $argv
+    yt-dlp -x --audio-format flac --output "%(title)s.%(ext)s" $argv
 end
 
 function gitall
