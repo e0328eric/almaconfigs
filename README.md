@@ -1,7 +1,24 @@
 # Gaming
 ## Steam
+To enable nvidia graphic card, one should use the following command
 ```console
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only VKD3D_CONFIG=dxr11,dxr PROTON_ENABLE_NVAPI=1 %command%
+```
+
+## Twintail Launcher
+Here is the installation script.
+```console
+sudo mount --bind <the-directory> ~/.var/app/app.twintaillauncher.ttl
+flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub app.twintaillauncher.ttl
+```
+
+Notice that one should edit `/etc/fstab` for permanent mount.
+
+Now one can run the program with
+```console
+flatpak run app.twintaillauncher.ttl
+```
 
 ## Troubleshooting
 ### Save git passwords

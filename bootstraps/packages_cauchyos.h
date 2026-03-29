@@ -22,5 +22,5 @@
     "cachyos-gaming-meta protonup-qt mangohud lutris gamescope "  \
     "steam xdg-desktop-portal-hyprland woff2 webkit2gtk "         \
     "libappindicator ayatana-ido libayatana-appindicator "        \
-    "libayatana-indicator"
+    "libayatana-indicator flatpak"
 
