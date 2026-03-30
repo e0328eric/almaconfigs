@@ -19,7 +19,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "packages_cauchyos.h"
+#define CAUCHYOS
+#include "config.h"
 
 #define ARR_LEN(_arr) (sizeof(_arr) / sizeof(_arr[0]))
 

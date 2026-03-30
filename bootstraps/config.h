@@ -1,5 +1,7 @@
 #pragma once
 
+#if defined(CAUCHYOS)
+
 // HYPRLAND macro is already preserved
 #define HYPRLAND_PKGS                                                        \
     "hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs "            \
@@ -24,3 +26,4 @@
     "libappindicator ayatana-ido libayatana-appindicator "        \
     "libayatana-indicator flatpak"
 
+#endif

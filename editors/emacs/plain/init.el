@@ -259,9 +259,9 @@ point reaches the beginning or end of the buffer, stop there."
   :ensure t
   :hook (latex-mode . aas-activate-for-major-mode)
   :hook (tex-mode . aas-activate-for-major-mode)
-  :hook (vesti-mode . aas-activate-for-major-mode)
+  :hook (vesti-ts-mode . aas-activate-for-major-mode)
   :config
-  (aas-set-snippets 'vesti-mode
+  (aas-set-snippets 'vesti-ts-mode
 	"MK"  (lambda () (interactive)
 		    (yas-expand-snippet "\\$$1\\$$0")))
   (aas-set-snippets 'tex-mode

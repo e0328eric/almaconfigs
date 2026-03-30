@@ -1,0 +1,192 @@
+importmod (coprime)
+docclass coprime (geometry,fancy,item,10pt)
+
+\settitle{TF 1 Additional Note (Analysis 1 Prof. Kim)}{Sungbae Jeong}
+\setgeometry{a4paper, margin=2.2cm}
+
+\allocthmcnt{Exercise}
+\crefname{Exercise}{\lowercase{Exercise}}{\lowercase{Exercise}}
+\Crefname{Exercise}{Exercise}{Exercise}
+\maketheorem{exec}{Exercise}{\bfseries Exercise\ \theExercise}
+
+#at_on
+\@namedef{theExercise}{\arabic{section}.\arabic{Exercise}}
+#at_off
+
+defun [r] thefootnote {(\roman{footnote})}
+
+\fancyon
+startdoc
+
+\section{Detailed proof of Exercise 1.31}
+\setcounter{Exercise}{30}
+useenv exec {
+    Define
+    $$
+        \inf\emptyset = oo \quad"and"\quad \sup\emptyset = -oo.
+    $$
+    Show that every subset of $\overline\R$ has a greatest-lower-bound.
+}
+
+useenv pf {
+    By definition, the empty set has the greatest lower bound. Thus it suffices
+    to consider for non-empty sets.
+    Fix $E$ a non-empty subset of $\overline\R$, and let $L$ be a collection of
+    all lower bounds of $E$ at $\overline\R$.
+    We need following facts for the set $L$.
+    #enum ((\roman*)) {
+        \item \fbox{$-oo\in L$. Thus $L$ is not empty.}\break\vskip-11pt
+        This is clear because $-oo$ is the smallest element of $\overline\R$,
+        thus it is indeed a lower bound of $E$.
+
+        \item \fbox{If $a\in L$, then for every $b<=a$, $b\in L$. In other words, if
+        $a\in L$, $[-oo,a] \subset L$.}\break\vskip-11pt
+        Recall that $a\in L$ means that $a$ is a lower bound of $E$, that is,
+        $e>=a$ for every $e\in E$. If $b <= a$, then by the definition of the
+        ordering,\footnote{
+            I taught the term \lq\lq total ordering\rq\rq\ in the class.
+            But as the lecture note does not use that term but use \lq\lq
+            ordering\rq\rq\ instead, I wrote \lq\lq ordering\rq\rq\ also in
+            here.
+        } we have $e >= a >= b$, thus $b$ is also a lower bound of $E$. This
+        gives $b\in L$.
+
+        \item \fbox{If the least-upper-bound of $L$ exists, then $\sup L \in
+        L$.}\break\vskip-11pt
+        Indeed, let $\alpha$ be the least-upper-bound of $L$. If $\alpha\notin
+        L$, that means that $\alpha$ is not a lower bound of $E$.
+        In this case, there exists $e\in E$ such that $e < \alpha$.
+        Since $\alpha$ is the least-upper-bound of $L$, there exists $\beta\in
+        L$ such that $e < \beta <= \alpha$.
+        However, notice that $L$ is a collection of all lower bounds of $E$,
+        $\beta$ is chosen in $L$, but we obtain $e < \beta$, which is a
+        contradiction.
+        Therefore, $\alpha\in L$, and (iii) is now proved.
+
+        \item \fbox{If the least-upper-bound of $L$ exists, then the
+        greatest-lower-bound of $E$ exists, and $\sup L = \inf
+        E$.}\break\vskip-11pt
+        Indeed, by (iii), $\sup L\in L$. This implies that $\sup L$ is also a
+        lower bound of $E$. Now fix any $\gamma\in\overline\R$ such that $\gamma
+        > \sup L$. From (ii), if $\gamma\in L$, then we have
+        $[-oo,\gamma]\subset L$. Especially, $(\sup L,\gamma] \subset L$, and
+        indeed $(\sup L,\gamma]$ is not empty. This contradicts with the fact
+        that $\sup L$ is the least-upper-bound of $L$.
+
+        What we showed is that if $\gamma > \sup L$, then $\gamma\notin L$.
+        This means that $\gamma$ is not a lower bound of $E$, proving that $E$
+        has a greatest-lower-bound, and $\sup L = \inf E$. In fact, we actually
+        proves that $L = [-oo,\sup L]$ if $L$ has the least-upper-bound.
+    }
+
+    From the fact (iv), the proof of exercise is finished if we show that $L$
+    has the least-upper-bound. Because of (i), it suffices to consider following
+    three cases.
+
+    #enum (Case \Roman*.) {
+        \item \fbox{$L = \{-oo\}$}\break\vskip-11pt
+        There is nothing to prove in this case because indeed, $\sup L = -oo$.
+
+        \item \fbox{$oo \in L$}\break\vskip-11pt
+        From the fact (ii), in this case, we actually have $L = [-oo,oo] =
+        \overline\R$. Hence, $L$ has the least-upper-bound, and $\sup L = oo$.
+
+        \item \fbox{There exist two real numbers $p$ and $q$ such that $p < q$,
+        $p\in L$, and $q\notin L$}\break\vskip-11pt
+        In this case, consider $\tilde L = L \cap \R$.
+        Since $p$ is a real number with an element of $E$, $p\in\tilde L$.
+        In other words, $\tilde L$ is not empty.
+        In addition, $q$ is an upper bound of $\tilde L$. Otherwise, there
+        exists $r\in\tilde L$ such that $r > q$.
+        Then by (ii), we have $q \in [-oo,r] \subset L$, which is a
+        contradiction with $q\notin L$.
+
+        What we shown is that $\tilde L$ is a non-empty subset of $\R$ which is
+        bounded above. By the least-upper-bound property of $\R$, $\tilde L$ has
+        the least-upper-bound and (obviously) $\sup\tilde L\in\R$.
+
+        We finaly claim that $\sup\tilde L$ is the least-upper-bound of $L$.
+        To write simply, put $\alpha = \sup\tilde L$.
+        If there exists $\beta\in L$ such that $\beta > \alpha$,
+        first of all, $\beta$ is a real number. Indeed, $\beta$ is larger than
+        $\alpha$, so $\beta$ cannot be $-oo$. In addition, since there is a real
+        number $q$ which does not contained in $L$, $\beta$ also cannot be $oo$.
+        Hence, $\beta\in\tilde L$. But then we directly obtain a contradiction
+        because $\alpha$ is the least-upper-bound of $\tilde L$.
+        Therefore, we proved that $\beta<=\alpha$ for every $\beta\in L$;
+        $\alpha$ is an upper bound of $L$.
+
+        Now fix any $\gamma < \alpha$. If $\gamma = -oo$, we clearly have
+        $\gamma < p <= \alpha$.
+        As $\alpha$ is a real number, $\gamma$ cannot be $oo$, thus we can
+        further assume that $\gamma$ is a real number.
+        But then since $\alpha$ is the least-upper-bound of $\tilde L$, there
+        exists $r\in\tilde L$ such that $\gamma < r <= \alpha$.
+        By the definition of $\tilde L$, $r$ is clearly an element of $L$.
+        Therefore, we proved that $\alpha$ is the least-upper-bound of $L$.
+    }
+    The proof is now finished. \proved
+}
+
+\section{The proof of Exercise 1.27}
+\setcounter{section}{1}
+\setcounter{Exercise}{26}
+useenv exec {
+    Let $F$ and $K$ be ordered fields which have the least-upper-bound
+    property and contain $\Q$. Show that we can identify $F$ and $K$ in a
+    certain sense. In other words, show that $\R$ is the unique ordered field
+    which has the least-upper-bound property and contains $\Q$ in a certain
+    sense.
+}
+
+Before solving this exercise, we should justify what does the \lq\lq certain
+sense\rq\rq\ means mathematically.
+For example, consider two sets: $\Q$, a collection of all rational numbers, and
+a set $Q$ defined by
+$$
+    Q = \{ q\sqrt{2} : q\in\Q \}.
+$$
+We want to define a new addition, multiplication for $Q$ by (to
+distinguish of which in $\Q$, we shall write $\tilde+$, and $\tilde\cdot$
+for an addition, a multiplication on $Q$, respectively)
+#def #add {\mathbin{\tilde+}}
+#def #mul {\mathbin{\tilde\cdot}}
+$$
+    (a\sqrt{2}) #add (b\sqrt{2}) = (a + b)\sqrt{2},\quad
+    (a\sqrt{2}) #mul (b\sqrt{2}) = (ab)\sqrt{2}.
+$$
+It may seem strange because in high school we learn that
+$(a\sqrt{2})\cdot(b\sqrt{2}) = 2ab$. But this is a different mathematical setting.
+The set $Q$ here is being treated with a number system which is different from
+the one we are used to.
+
+In that definiton, the set $Q$ is then just a collection of rational numbers
+with special suffix $\sqrt{2}$. More mathematically, if we define a function $\Phi:\Q->Q$
+by
+$$
+    \Phi(q) = q\sqrt{2},
+$$
+then by definition (and the fact that $\sqrt{2}$ is irrational), $\Phi$ is one-to-one
+and onto function together with
+$$
+    \Phi(x + y) = \Phi(x) #add \Phi(y),\quad \Phi(xy) = \Phi(x) #mul \Phi(y).
+$$
+
+Thus, mathematically, the meaning of \lq\lq certain sense\rq\rq\ is that there exists
+an one-to-one function $\Phi$ from $F$ onto $K$ which \lq\lq preserves\rq\rq\
+the addition, the multiplication, and the order. That is,
+$$
+    \Phi(x +_F y) = \Phi(x) +_K \Phi(y),\quad
+    \Phi(x \cdot_F y) = \Phi(x) \cdot_K \Phi(y),
+$$
+and $x <_F y$ implies $\Phi(x) <_K \Phi(y)$.
+Here, the subscript under $+$, $\cdot$, and $<$ denotes the set where operations
+are performed.
+By the way, such $\Phi$ is called an \it{isomorphism}.
+
+Now we are ready to prove the exercise.
+
+useenv pf {
+  By the above observation, it suffices to find such function $\Phi$.
+  The observation to construct such $\Phi$ 
+}

@@ -68,13 +68,13 @@ profile office2 {
 		position 503,0
 		scale 2.0
 	}
-	output DP-5 {
+	output DP-4 {
         enable
         mode 2560x1600@60.0Hz
         position 2103,1000
         scale 1.6
     }
-	output DP-4 {
+	output DP-5 {
         enable
         mode 2560x1600@60.0Hz
         position 2103,0

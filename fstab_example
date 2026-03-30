@@ -15,4 +15,4 @@ UUID=69c61a27-8187-449b-9aa4-d9e637267e46 /var/tmp       btrfs   subvol=/@tmp,de
 UUID=69c61a27-8187-449b-9aa4-d9e637267e46 /var/log       btrfs   subvol=/@log,defaults,noatime,compress=zstd:1 0 0
 UUID=d756bf8a-22c2-4ddc-87e6-dee995d569f2 /game          ext4    defaults,noatime 0 0
 tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
-/home/almagest/.var/app/app.twintaillauncher.ttl /game/AnimeGames none defaults,bind 0 0
+/game/AnimeGames /home/almagest/.var/app/app.twintaillauncher.ttl none defaults,bind 0 0

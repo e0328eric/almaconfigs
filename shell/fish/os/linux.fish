@@ -14,6 +14,9 @@ set --universal -x GOPATH ~/.go
 set PATH $PATH $GOROOT/bin:$GOPATH/bin
 set GOLSPPATH $GOPATH/src/github.com/ajaymt/golsp
 
+# setting LD_LIBRARY_PATH
+set LD_LIBRARY_PATH $LD_LIBRARY_PATH ~/.local/bin
+
 function emptytrash
     rm -rf /home/almagest/.local/share/Trash
     rm -rf /home/almagest/.local/share/vifm/Trash
