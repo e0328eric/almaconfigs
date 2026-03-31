@@ -31,7 +31,7 @@ c.auto_save.session = True
 
 c.qt.args = [
     "enable-features=UseOzonePlatform",
-    "ozone-platform=wayland",
+    #"ozone-platform=wayland",
 ]
 
 config.set("content.cookies.accept", "all", "chrome-devtools://*")
