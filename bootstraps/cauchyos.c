@@ -332,6 +332,14 @@ int main(void) {
         link_if_missing(wp_src, wp_dst);
     }
 
+    /* scripts */
+    {
+        char script_src[512], script_dst[512];
+        snprintf(script_src, sizeof(script_src), "%s/script",       almaconf);
+        snprintf(script_dst, sizeof(script_dst), "%s/alma-scripts", config);
+        link_if_missing(script_src, script_dst);
+    }
+
     /* ── 12. git global config ───────────────────────────────────────────── */
     run("git config --global user.name  'Sungbae Jeong'");
     run("git config --global user.email 'almagest0328@gmail.com'");
