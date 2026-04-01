@@ -304,16 +304,17 @@ int main(void) {
     /* Helper macro-like struct for the link table */
     struct { const char *rel_src; const char *rel_dst; } links[] = {
 #if defined(HYPRLAND)
-        { "wm/hypr",             "hypr"      },
+        { "wm/hypr",             "hypr"     },
 #elif defined(MANGO)
-        { "wm/mango",            "mango"     },
+        { "wm/mango",            "mango"    },
+        { "utils/kanshi",        "kanshi"   },
 #endif
-        { "utils/nvim",          "nvim"      },
-        { "shell/fish",          "fish"      },
-        { "shell/nushell_linux", "nushell"   },
-        { "terminals/kitty",     "kitty"     },
-        { "terminals/ghostty",   "ghostty"   },
-        { "utils/noctalia",      "noctalia"  },
+        { "utils/nvim",          "nvim"     },
+        { "shell/fish",          "fish"     },
+        { "shell/nushell_linux", "nushell"  },
+        { "terminals/kitty",     "kitty"    },
+        { "terminals/ghostty",   "ghostty"  },
+        { "utils/noctalia",      "noctalia" },
     };
 
     for (size_t i = 0; i < ARR_LEN(links); i++) {

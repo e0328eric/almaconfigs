@@ -18,7 +18,7 @@
     "starship zenith"
 
 #define NOCTALIA_SHELL \
-    "vicinae awww-git noctalia-shell mimeo"
+    "vicinae-git awww-git noctalia-shell mimeo"
 
 #define GAMING                                                    \
     "cachyos-gaming-meta protonup-qt mangohud lutris gamescope "  \

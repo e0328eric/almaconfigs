@@ -216,6 +216,7 @@
         "monitorForColors": "",
         "predefinedScheme": "Monochrome",
         "schedulingMode": "off",
+        "syncGsettings": true,
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -381,6 +382,7 @@
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
         "showSessionButtonsOnLockScreen": true,
+        "smoothScrollEnabled": true,
         "telemetryEnabled": false
     },
     "hooks": {
@@ -424,7 +426,6 @@
         "weatherShowEffects": true
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -588,7 +589,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/almagest/.config/alma-wallpapers",
+        "directory": "/home/almagest/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": true,
         "enabled": false,
         "favorites": [
@@ -596,6 +597,7 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/home/almagest/.config/alma-wallpapers",
