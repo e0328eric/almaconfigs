@@ -7,14 +7,14 @@
     "hyprland ghostty tree-sitter tree-sitter-cli neovim nodejs "            \
     "hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul fcitx5-config-qt " \
     "grim nwg-displays pamixer playerctl nemo ttf-jetbrains-mono-nerd "      \
-    "vivaldi cliphist grimblast-git wl-clipboard starship zenith"
+    "cliphist grimblast-git wl-clipboard starship zenith"
 
 // MANGO macro is already preserved
 #define MANGO_PKGS                                                         \
     "mangowc wlr-randr kanshi ghostty tree-sitter tree-sitter-cli neovim " \
     "nodejs hyprlock hypridle brightnessctl fcitx5 fcitx5-hangul "         \
     "fcitx5-config-qt grim nwg-displays pamixer playerctl nemo "           \
-    "ttf-jetbrains-mono-nerd vivaldi cliphist grimblast-git wl-clipboard " \
+    "ttf-jetbrains-mono-nerd cliphist grimblast-git wl-clipboard " \
     "starship zenith"
 
 #define NOCTALIA_SHELL \
