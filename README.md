@@ -99,3 +99,4 @@ sudo virsh net-start default
 sudo virsh net-autostart default
 ```
 
+In addition, personally, I use onecommander file viewer on windows

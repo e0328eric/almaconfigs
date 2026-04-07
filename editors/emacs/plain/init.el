@@ -1,7 +1,11 @@
+;;(when (eq system-type 'windows-nt)
+;; (setenv "HOME" (concat "C:/Users/" (getenv "USERNAME"))))
+;;(when (memq system-type '(gnu gnu/linux darwin))
+;;  (setenv "HOME" (concat "/home/" (getenv "USER"))))
 (when (eq system-type 'windows-nt)
-  (setenv "HOME" (concat "C:/Users/" (getenv "USERNAME"))))
+  (setenv "HOME" (concat "C:/Users/almag")))
 (when (memq system-type '(gnu gnu/linux darwin))
-  (setenv "HOME" (concat "/home/" (getenv "USER"))))
+  (setenv "HOME" (concat "/home/almagest")))
 
 (setq default-directory (expand-file-name "~/"))
 
@@ -18,9 +22,9 @@
 (defconst my-home-config-dir
   (cond
    ((eq system-type 'windows-nt)
-    (concat (getenv "HOME") "/AppData/Roaming/emacs"))
+    (concat (getenv "HOME") "/AppData/Roaming"))
    ((memq system-type '(gnu gnu/linux darwin))
-    (concat (getenv "HOME") "/.config/emacs"))
+    (concat (getenv "HOME") "/.config/emacs/"))
    (t (getenv "HOME"))))
 
 ;; Derived paths
@@ -36,6 +40,8 @@
 (setq-default display-line-numbers-type 'relative)
 (setq-default visible-bell (eq system-type 'windows-nt))
 (setq-default fill-column 80)
+(setq-default auto-save-default nil) ; disable autosave
+(setq-default scroll-margin 5) ; equivalence of scrolloff in vim
 (global-display-fill-column-indicator-mode 1)
 ;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -53,9 +59,9 @@
 ;; setting fonts
 ;; font_height == pixel * 10
 (defun my/apply-fonts (&optional _frame)
-  (set-face-attribute 'default nil :family "D2CodingLigature Nerd Font" :height 120)
-  (set-face-attribute 'fixed-pitch nil :family "D2CodingLigature Nerd Font" :height 120)
-  (set-face-attribute 'variable-pitch nil :family "D2CodingLigature Nerd Font" :height 120))
+  (set-face-attribute 'default nil :family "IosevkaTerm NFM" :height 120)
+  (set-face-attribute 'fixed-pitch nil :family "IosevkaTerm NFM" :height 120)
+  (set-face-attribute 'variable-pitch nil :family "IosevkaTerm NFM" :height 120))
 
 (if (daemonp)
 	(add-hook 'after-make-frame-functions #'my/apply-fonts)
@@ -157,6 +163,12 @@ point reaches the beginning or end of the buffer, stop there."
 (add-to-list 'auto-mode-alist '("\\.tex\\'" . plain-TeX-mode))
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
+;; vesti mode
+(setq treesit-extra-load-path
+	  (list (expand-file-name ".emacs-tree-sitter" "~/")))
+(use-package lua-mode :ensure t)
+(require 'vesti-ts-mode)
+
 (use-package which-key
   :ensure t
   :config
@@ -188,7 +200,9 @@ point reaches the beginning or end of the buffer, stop there."
   (global-company-mode)
   :config
   (setq company-minimum-prefix-length 1
-		company-idle-delay 0.0))
+		company-idle-delay nil)
+  :bind
+  ("C-x C-a" . company-complete))
 
 ;; alternative for ido mode
 (use-package ivy
@@ -225,33 +239,6 @@ point reaches the beginning or end of the buffer, stop there."
   (yas-reload-all)
   :bind
   ("C-q" . #'yas-expand))
-
-;; pdf-tools
-;; at first, it does not compile. one should fix .emacs.d/elpa/pdf-tools-<version>/build/server/Makefile.am
-;; in there, add -Wno-implicit-function-declaration in libsynctex_a_CFLAGS
-(use-package pdf-tools
-  :ensure t
-  :config
-  ;; Initialize pdf-tools
-  (pdf-tools-install)
-
-  ;; Automatically reload PDF when file changes
-  (add-hook 'pdf-view-mode-hook #'auto-revert-mode)
-
-  ;; Disable incompatible modes like line numbers
-  (add-hook 'pdf-view-mode-hook
-            (lambda ()
-              ;; Disable line numbers
-              (display-line-numbers-mode -1)
-              ;; Optionally disable other visual modes if you use them globally
-              (when (bound-and-true-p hl-line-mode)
-                (hl-line-mode -1))
-              (when (bound-and-true-p visual-line-mode)
-                (visual-line-mode -1))))
-
-  ;; Ensure Emacs doesn't complain about line number mode
-  (with-eval-after-load 'pdf-view
-    (add-to-list 'pdf-view-incompatible-modes 'display-line-numbers-mode)))
 
 ;; another great snippet pcakage
 (require 'texmathp)
@@ -306,10 +293,4 @@ point reaches the beginning or end of the buffer, stop there."
   (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
   :bind
   ("C-x C-/" . 'undo-tree-redo))
-
-;; vesti mode
-(setq treesit-extra-load-path
-	  (list (expand-file-name ".emacs.d/tree-sitter" "~/")))
-(use-package lua-mode :ensure t)
-(require 'vesti-ts-mode)
 

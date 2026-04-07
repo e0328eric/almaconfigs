@@ -332,3 +332,11 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2025-08-25T06:16:03.731749Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-08-25T06:16:03.731898Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
 [2m2025-12-31T05:05:58.627163Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Program path is not valid for command '%ProgramFiles%/WezTerm/wezterm-gui.exe'.
+[2m2026-04-05T05:41:05.797501Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'vivaldi'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-04-05T05:45:27.112719Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'vivaldi'. Make sure the program exists and is accessible from your shell. Error: The operation was canceled by the user. (0x800704C7)
+[2m2026-04-06T05:50:19.905788Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-04-06T05:50:19.910063Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-04-06T05:50:46.459159Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-04-06T05:50:46.459287Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-04-06T05:50:46.459416Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2026-04-06T07:59:16.240175Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed

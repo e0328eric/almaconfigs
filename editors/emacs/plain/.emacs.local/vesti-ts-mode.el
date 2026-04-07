@@ -118,7 +118,8 @@
      ((parent-is "block") parent-bol vesti-ts-mode-indent-offset)
      ((parent-is "environment_block") parent-bol vesti-ts-mode-indent-offset)
      ((parent-is "luacode_block") parent-bol vesti-ts-mode-indent-offset)
-     (no-node parent-bol 0)))
+     (no-node prev-line 0)
+     (catch-all prev-line 0)))
   "Indentation rules for `vesti-ts-mode'.
 Adjust these after inspecting your AST with `treesit-explore-mode'.")
 
@@ -145,6 +146,10 @@ install it with `treesit-install-language-grammar'"))
 
   (treesit-parser-create 'vesti)
 
+  ;; TAB behavior
+  (setq-local indent-tabs-mode nil)
+  (setq-local tab-width 4)
+
   ;; Comments
   (setq-local comment-start "// ")
   (setq-local comment-end "")
@@ -160,6 +165,8 @@ install it with `treesit-install-language-grammar'"))
 
   ;; Indentation
   (setq-local treesit-simple-indent-rules vesti-ts-mode--indent-rules)
+  (setq-local indent-line-function #'treesit-indent)
+  (define-key vesti-ts-mode-map (kbd "RET") #'newline-and-indent)
 
   ;; Navigation
   (setq-local treesit-defun-type-regexp vesti-ts-mode--defun-type-regexp)
