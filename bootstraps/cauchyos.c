@@ -202,7 +202,7 @@ int main(void) {
     /* ── 4. base packages ────────────────────────────────────────────────── */
     run("sudo pacman -S --noconfirm --needed "
         "git cmake make gcc keyd bat lazygit libsecret gnome-keyring ufw "
-        "zip unzip brave-bin blueman kdeconnect");
+        "zip unzip brave-bin blueman kdeconnect gparted");
 
     run("systemctl --user enable gnome-keyring-daemon");
     run("systemctl --user start  gnome-keyring-daemon");

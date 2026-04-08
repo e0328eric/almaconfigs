@@ -30,7 +30,7 @@ c.qt.force_platform = 'wayland'
 c.auto_save.session = True
 
 c.qt.args = [
-    "enable-features=UseOzonePlatform",
+    "enable-features=Vulkan",
     #"ozone-platform=wayland",
 ]
 

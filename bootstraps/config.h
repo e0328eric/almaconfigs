@@ -22,7 +22,7 @@
 
 #define GAMING                                                    \
     "cachyos-gaming-meta protonup-qt mangohud lutris gamescope "  \
-    "steam xdg-desktop-portal-hyprland woff2 webkit2gtk "         \
+    "steam xdg-desktop-portal-hyprland woff2 "                    \
     "libappindicator ayatana-ido libayatana-appindicator "        \
     "libayatana-indicator flatpak"
 

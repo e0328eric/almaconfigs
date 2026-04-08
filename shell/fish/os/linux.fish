@@ -223,4 +223,5 @@ set -gx NNN_PLUG "f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:preview-tui"
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/almagest/.ghcup/bin # ghcup-env
 
-starship init fish | source
+## Oh My Posh Setting
+oh-my-posh init fish --config $HOME/.config/fish/kushal.omp.json | source
