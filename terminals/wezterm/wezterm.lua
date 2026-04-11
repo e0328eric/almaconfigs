@@ -19,13 +19,13 @@ local launch_menu = {}
 --         │                      Font Settings                       │
 --         ╰──────────────────────────────────────────────────────────╯
 config.font = wezterm.font_with_fallback({
-	"IosevkaTerm Nerd Font Mono",
+	"DepartureMono Nerd Font Mono",
 	"FiraCode Nerd Font Mono",
 	"D2CodingLigature Nerd Font Mono",
 	"JetBrainsMono Nerd Font Mono",
 })
 
-config.font_size = 11
+config.font_size = 10
 config.unicode_version = 16
 config.warn_about_missing_glyphs = false
 
@@ -104,7 +104,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 5f0ef8a4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c0f655c4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
 		},
 	},
 	powershell = {
@@ -113,7 +113,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell 5f0ef8a4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c0f655c4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
 		},
 	},
 	msys2 = {

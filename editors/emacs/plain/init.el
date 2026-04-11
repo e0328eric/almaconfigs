@@ -41,7 +41,7 @@
 (setq-default visible-bell (eq system-type 'windows-nt))
 (setq-default fill-column 80)
 (setq-default auto-save-default nil) ; disable autosave
-(setq-default scroll-margin 5) ; equivalence of scrolloff in vim
+(setq-default scroll-margin 3) ; equivalence of scrolloff in vim
 (global-display-fill-column-indicator-mode 1)
 ;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -59,9 +59,9 @@
 ;; setting fonts
 ;; font_height == pixel * 10
 (defun my/apply-fonts (&optional _frame)
-  (set-face-attribute 'default nil :family "IosevkaTerm NFM" :height 120)
-  (set-face-attribute 'fixed-pitch nil :family "IosevkaTerm NFM" :height 120)
-  (set-face-attribute 'variable-pitch nil :family "IosevkaTerm NFM" :height 120))
+  (set-face-attribute 'default nil :family "DepartureMono Nerd Font" :height 100)
+  (set-face-attribute 'fixed-pitch nil :family "DepartureMono Nerd Font" :height 100)
+  (set-face-attribute 'variable-pitch nil :family "DepartureMono Nerd Font" :height 100))
 
 (if (daemonp)
 	(add-hook 'after-make-frame-functions #'my/apply-fonts)
@@ -165,7 +165,7 @@ point reaches the beginning or end of the buffer, stop there."
 
 ;; vesti mode
 (setq treesit-extra-load-path
-	  (list (expand-file-name ".emacs-tree-sitter" "~/")))
+	  (list (expand-file-name ".emacs-tree-sitter" my-home-config-dir)))
 (use-package lua-mode :ensure t)
 (require 'vesti-ts-mode)
 
