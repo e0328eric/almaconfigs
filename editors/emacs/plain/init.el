@@ -12,6 +12,8 @@
 ;; melpa package settings
 (require 'package)
 (add-to-list 'package-archives
+	     '("gnu" . "https://elpa.gnu.org/packages/") t)
+(add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (unless (package-installed-p 'use-package)
@@ -169,6 +171,12 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package lua-mode :ensure t)
 (require 'vesti-ts-mode)
 
+;; rust mode
+(use-package rustic
+  :ensure t
+  :config
+  (setq rustic-format-on-save nil))
+
 (use-package which-key
   :ensure t
   :config
@@ -226,13 +234,14 @@ point reaches the beginning or end of the buffer, stop there."
   (("C-x g" . magit-status)))
 
 ;; yasnippet
+(setq my/yas-snippet-dirs (expand-file-name ".emacs.local/snippets" my-home-config-dir))
 (add-to-list 'load-path
-              "~/.emacs.d/plugins/yasnippet")
+			 (expand-file-name ".emacs.d/plugins/yasnippet" my-home-config-dir))
 (use-package yasnippet
   :ensure t
   :config
   (yas-global-mode 1)
-  (setq yas-snippet-dirs '("~/.emacs.local/snippets"))
+  (setq yas-snippet-dirs (list my/yas-snippet-dirs))
   (define-key yas-minor-mode-map [(tab)] nil)
   (define-key yas-minor-mode-map (kbd "TAB") nil)
   (define-key yas-minor-mode-map (kbd "<tab>") nil)

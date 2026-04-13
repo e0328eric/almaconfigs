@@ -1,3 +1,15 @@
+let _omp_executable: string = (echo "oh-my-posh.exe")
+
+let _omp_executable_is_path = (
+    ($_omp_executable | str contains "/")
+    or ($_omp_executable | str contains "\\")
+    or ($_omp_executable | str starts-with ".")
+    or ($_omp_executable | str starts-with "~")
+)
+
+# Exit early if the oh-my-posh executable is not available
+if not (($_omp_executable_is_path and ($_omp_executable | path exists)) or (which $_omp_executable | is-not-empty)) { return }
+
 # make sure we have the right prompt render correctly
 if ($env.config? | is-not-empty) {
     $env.config = ($env.config | upsert render_right_prompt_on_last_line true)
@@ -5,15 +17,13 @@ if ($env.config? | is-not-empty) {
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
 $env.PROMPT_INDICATOR = ""
-$env.POSH_SESSION_ID = "e19b7cd7-52c5-48b4-9da8-275c60f5bdc7"
+$env.POSH_SESSION_ID = "adf6dc4c-9ef9-4ebc-8f31-0a2d39763242"
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 
 # disable all known python virtual environment prompts
 $env.VIRTUAL_ENV_DISABLE_PROMPT = 1
 $env.PYENV_VIRTUALENV_DISABLE_PROMPT = 1
-
-let _omp_executable: string = (echo "oh-my-posh.exe")
 
 # PROMPTS
 

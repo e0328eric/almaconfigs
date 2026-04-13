@@ -31223,3 +31223,69 @@ cd ../..
 ls
 rm -rp tree-sitter-zig\
 cd Github\almaconfigs\
+winget install expressvpn.expressvpn
+shutdown /s /t 0
+cd Github\chre\
+ls
+v src\main.rs
+cargo install tree-sitter-cli
+cd ..
+git clone --depth 1 https://github.com/GrayJack/tree-sitter-zig.git
+rm -rp tree-sitter-zig\
+git clone --depth 1 https://github.com/tree-sitter/zig-tree-sitter.git
+cd zig-tree-sitter\
+ls
+cd src
+ls
+cd ..
+rm -rp zig-tree-sitter\
+cd
+cd .local\
+ls
+git clone --depth 1 https://github.com/tree-sitter-grammars/tree-sitter-zig.git
+cd tree-sitter-zig\
+ls
+cd src
+ls
+cl /O2 /LD /I. parser.c /Fe:libtree-sitter-zig.dll
+mv libtree-sitter-zig.dll ~/AppData/Roaming/.emacs-tree-sitter
+shutdown /s /t 0
+winget install mpv
+winget install shinchiro.mpv
+cd pCloud\Music\
+ls
+mpv 'Beyond the way - 아이네&징버거&릴파 ｜ COVER [OB0G2hpjYik].flac'
+mpv --loop 'Beyond the way - 아이네&징버거&릴파 ｜ COVER [OB0G2hpjYik].flac'
+mpv '[승리의 여신： 니케 OST] ＂SATELLITES＂ -  cover by LILPA [4ZjDoG0bc5Q].flac'
+cd Github\
+ls
+cd chre\
+ls
+v Cargo.toml
+cd ,,
+cd ..
+ls
+cd chre-zig\
+ls
+v src\commands.rs
+cd ..
+ls
+rm -rp chre\
+cd Github\
+rm -rp chre
+mv chre-zig chre
+cd
+cd .local
+ls
+zig version
+zigup
+ls
+rm -r zig
+mv zig-compiler\zig-x86_64-windows-0.16.0-dev.3146+0606af509 zig
+rm -r zig-compiler
+rm -s
+rm -p
+shutdown /s /t 0
+winget update --all -u
+cd Github\almaconfigs\
+ls
