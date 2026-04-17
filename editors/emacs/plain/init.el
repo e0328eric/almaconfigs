@@ -61,9 +61,9 @@
 ;; setting fonts
 ;; font_height == pixel * 10
 (defun my/apply-fonts (&optional _frame)
-  (set-face-attribute 'default nil :family "DepartureMono Nerd Font" :height 100)
-  (set-face-attribute 'fixed-pitch nil :family "DepartureMono Nerd Font" :height 100)
-  (set-face-attribute 'variable-pitch nil :family "DepartureMono Nerd Font" :height 100))
+  (set-face-attribute 'default nil :family "FiraCode Nerd Font Mono" :height 100)
+  (set-face-attribute 'fixed-pitch nil :family "FiraCode Nerd Font Mono" :height 100)
+  (set-face-attribute 'variable-pitch nil :family "FiraCode Nerd Font Mono" :height 100))
 
 (if (daemonp)
 	(add-hook 'after-make-frame-functions #'my/apply-fonts)
@@ -171,11 +171,50 @@ point reaches the beginning or end of the buffer, stop there."
 (use-package lua-mode :ensure t)
 (require 'vesti-ts-mode)
 
-;; rust mode
-(use-package rustic
+;; lsp
+(use-package lsp-mode
   :ensure t
+  :init
+  ;; set prefix for lsp-command-keymap
+  (setq lsp-keymap-prefix "<escape> l")
+  :hook (
+         ;; Enable lsp-mode automatically when opening Rust and Zig files
+         (rust-mode . lsp)
+         (zig-mode . lsp)
+         ;; Optional: Enables which-key integration if you use the which-key package
+         (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
+
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode
+  :custom
+  (lsp-ui-doc-enable t)
+  (lsp-ui-sideline-enable t))
+
+(use-package company
+  :ensure t
+  :init
+  (global-company-mode 1)
   :config
-  (setq rustic-format-on-save nil))
+  ;;(setq company-minimum-prefix-length 1
+  ;;	company-idle-delay nil)
+  (add-hook 'vesti-ts-mode-hook
+        (lambda () (company-mode -1)))
+  :bind
+  ("C-x C-a" . company-complete))
+
+(use-package rust-mode
+  :ensure t
+  :bind (:map rust-mode-map
+              ;; Optional: Format buffer on save
+              ("C-c C-f" . rust-format-buffer)))
+
+(use-package zig-mode
+  :ensure t
+  :custom
+  ;; Optional: Format buffer on save using 'zig fmt'
+  (zig-format-on-save t))
 
 (use-package which-key
   :ensure t
@@ -190,10 +229,6 @@ point reaches the beginning or end of the buffer, stop there."
    ("M-X" . 'smex-major-mode-commands)
    ("C-c C-c M-x" . 'execute-extended-command)))
 
-;;(use-package timu-caribbean-theme
-;;  :ensure t
-;;  :config
-;;  (load-theme 'timu-caribbean t))
 (use-package doom-themes
   :ensure t
   :custom
@@ -201,16 +236,6 @@ point reaches the beginning or end of the buffer, stop there."
   (doom-themes-enable-italic t)
   :config
   (load-theme 'doom-outrun-electric t))
-
-(use-package company
-  :ensure t
-  :init
-  (global-company-mode)
-  :config
-  (setq company-minimum-prefix-length 1
-		company-idle-delay nil)
-  :bind
-  ("C-x C-a" . company-complete))
 
 ;; alternative for ido mode
 (use-package ivy
