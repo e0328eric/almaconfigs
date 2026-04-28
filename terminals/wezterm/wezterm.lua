@@ -104,7 +104,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c0f655c4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell f6fbfad7 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"}; nu.exe',
 		},
 	},
 	powershell = {
@@ -113,7 +113,7 @@ local launch_menu_windows = {
 			"powershell.exe",
 			"-NoExit",
 			"-Command",
-			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell c0f655c4 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
+			'&{Import-Module "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/Microsoft.VisualStudio.DevShell.dll"; Enter-VsDevShell f6fbfad7 -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"};',
 		},
 	},
 	msys2 = {

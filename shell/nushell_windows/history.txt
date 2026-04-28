@@ -31289,3 +31289,11 @@ shutdown /s /t 0
 winget update --all -u
 cd Github\almaconfigs\
 ls
+cd Github\almaconfigs\shell\nushell_windows\
+cd ..
+ls
+cd ..
+ls
+cd terminals\wezterm\
+ls
+v wezterm.lua
