@@ -31297,3 +31297,136 @@ ls
 cd terminals\wezterm\
 ls
 v wezterm.lua
+lg
+cd Github\vesti\
+ls
+v ode_midterm_result.csv
+cd
+cd Downloads\
+ls
+mv ode_students.csv ~/pCloud/ScoreData/2026-1/
+cd ~/pCloud/ScoreData/2026-1/
+s
+v ode_students.csv
+v ode_midterm_result.csv
+v real_analysis_midterm_result.csv
+start .
+v real_analysis_student.csv
+ㅣㄴ
+ls
+v ode_midterm.csv
+mv ode_midterm.csv ode_midterm_old.csv
+cp 출석부\ode_students.csv ode_midterm.csv
+cd ~/pCloud/ScoreData/2026-1/
+v real_analysis_midterm_result.csv
+v ode_midterm_result.csv
+kindergarten <\n>
+ls
+cd Volume2\
+start kindergarten-vol2.pdf
+v General-Topology\separation-axioms.ves
+vesti compile -W
+cd pCloud\TeX_Documents\Kindergarten\Volume2\
+ls
+start \$Recycle.Bin\
+start kindergarten-vol2.pdf
+vesti compile -W
+v General-Topology\filters.ves
+vesti clear
+vesti compile
+vesti compile -W
+chre wallp --suffle ~/Github/alma-nix/nix/home/wallpapers
+chre wallp --shuffle ~/Github/alma-nix/nix/home/wallpapers
+chre wallp --shuffle ~/Github/almaconfigs/wallpapers/
+chre wallp 1 ~/Github/almaconfigs/wallpapers/luno1.png
+chre wallp 0 ~/Github/almaconfigs/wallpapers/luno1.png
+chre wallp 2 ~/Github/almaconfigs/wallpapers/rupa_and_friends.png
+chre wallp 1 ~/Github/almaconfigs/wallpapers/Cerydra.png
+shutdown /s /t 0
+v Preliminaries\orderings.ves
+chre rm -s
+chre rm -p
+cd Github\vesti\
+ls
+v src\lexer\Token.zign
+v src\lexer\Token.zig\
+zig build
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+seminar
+ls
+cd Doctor\Half_Space\
+ls
+kindergarten 
+ls
+cd Volume2\
+rg "TODO" *
+cargo install ripgrep
+rg "TODO" *
+v Settings\defs.ves
+vesti compile
+ls
+vesti compile
+v src\lexer\Token.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\experimental.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+vesti compile
+vesti clear
+vesti compile
+v .vesti-dummy\@vesti__ebca586c75cacbe8.tex
+v Settings\defs.ves
+cd Measure-Integration\
+ls
+vesti experimental measurable-functions.ves
+v measurable-functions.ves
+v borel-sets.ves
+vesti experimental borel-sets.ves
+v src\parser\Preprocessor.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+v src\parser\Parser.zig
+zig build --prefix-exe-dir ~/.local/bin -Dtarget=x86_64-windows-msvc -Doptimize=ReleaseSafe
+cd ..
+vesti clear
+vesti compile
+start kindergarten-vol2.pdf
+cd
+cd Github\
+git clone --depth 1 https://github.com/e0328eric/vesti-zed.git
+cd vesti-zed\
+ls
+cd languages\vesti\
+ls
+cp ../../../tree-sitter-vesti/queries/vesti/* .
+cd ..
+cd tree-sitter-vesti\
+v grammar.js
+v queries\vesti\highlights.scm
+tree-sitter generate
+cargo install tree-sitter-cli
+winget search tree-sitter
+winget install tree-sitter.tree-sitter-cli
+cd
+cd Github\tree-sitter-vesti\
+tree-sitter generate
+v grammar.js
+tree-sitter generate
+v grammar.js
+winget search node
+winget install OpenJS.NodeJS
+cd
+cd Github\tree-sitter-vesti\
+tree-sitter generate
+lg
+v extension.toml
+cd languages\vesti\
+cp ../../../tree-sitter-vesti/queries/vesti/* .
+v src\parser\Parser.zig
+lg
