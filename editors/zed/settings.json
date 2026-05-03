@@ -29,7 +29,7 @@
   "vim_mode": true,
   "relative_line_numbers": "enabled",
   "ui_font_size": 14,
-  "buffer_font_size": 14,
+  "buffer_font_size": 13.0,
   "buffer_font_family": "DepartureMono Nerd Font Mono",
   "wrap_guides": [80],
   //"disable_ai": true,
@@ -43,7 +43,7 @@
         "args": [
           "-NoExit",
           "-Command",
-          "&{Import-Module \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"; Enter-VsDevShell 8b68ffab -SkipAutomaticLocation -DevCmdArguments \"-arch=x64 -host_arch=x64\"}; nu.exe",
+          "&{Import-Module \"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"; Enter-VsDevShell f6fbfad7 -SkipAutomaticLocation -DevCmdArguments \"-arch=x64 -host_arch=x64\"}; nu.exe",
         ],
       },
     },

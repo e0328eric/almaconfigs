@@ -31430,3 +31430,24 @@ cd languages\vesti\
 cp ../../../tree-sitter-vesti/queries/vesti/* .
 v src\parser\Parser.zig
 lg
+ls
+vesti compile
+cd languages\vesti\
+cd Github\tree-sitter-vesti\
+tree-sitter generate --abi 14
+ls
+cd src
+cd Github\AlmaEmacs\
+ls
+cd plain\tree-sitter\
+ls
+cd
+cd Github\tree-sitter-vesti\
+cd src
+zig cc -shared scanner.c parser.c -Os -o tree_sitter_vesti.dll 
+zig cc -shared scanner.c parser.c -I. -Os -o tree_sitter_vesti.dll 
+mv tree_sitter_vesti.dll ../../AlmaEmacs/plain/tree-sitter/libtree-sitter-vesti.dll
+ls
+rm scanner.lib
+cd Github\
+cd almaconfigs\
