@@ -3,8 +3,8 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-shift-\\": "workspace::ToggleLeftDock",
-      "ctrl-shift-t": "workspace::NewTerminal"
-    }
+      "ctrl-shift-t": "workspace::NewTerminal",
+    },
   },
 
   {
@@ -13,8 +13,8 @@
       "ctrl-up": "editor::AddSelectionAbove",
       "ctrl-down": "editor::AddSelectionBelow",
       "ctrl-shift-t": "workspace::NewTerminal",
-      "ctrl-alt-t": "terminal_panel::ToggleFocus"
-    }
+      "ctrl-alt-t": "terminal_panel::ToggleFocus",
+    },
   },
 
   {
@@ -24,23 +24,23 @@
       "ctrl-shift-h": "outline_panel::ToggleFocus",
       "ctrl-shift-\\": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
-      "tab": "pane::ActivateNextItem"
-    }
+      "tab": "pane::ActivateNextItem",
+    },
   },
 
   {
     "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
       "ctrl-w q": ["pane::CloseActiveItem", { "close_pinned": false }],
-      "ctrl-w ctrl-q": ["pane::CloseActiveItem", { "close_pinned": false }]
-    }
+      "ctrl-w ctrl-q": ["pane::CloseActiveItem", { "close_pinned": false }],
+    },
   },
 
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "ctrl-\\": "vim::InsertLineAbove"
-    }
+      "ctrl-\\": "vim::InsertLineAbove",
+    },
   },
 
   {
@@ -48,13 +48,13 @@
     "bindings": {
       "K": "editor::MoveLineUp",
       "J": "editor::MoveLineDown",
-      "Q": "vim::Rewrap"
-    }
+      "Q": "vim::Rewrap",
+    },
   },
   {
     "bindings": {
-      "ctrl-shift-a ctrl-shift-d": "tab_switcher::ToggleAll"
-    }
+      "ctrl-shift-a ctrl-shift-d": "tab_switcher::ToggleAll",
+    },
   },
   {
     "context": "Workspace",
@@ -62,25 +62,95 @@
       "ctrl-k ctrl-o": [
         "projects::OpenRecent",
         {
-          "create_new_window": false
+          "create_new_window": false,
+        },
+      ],
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-shift-o": "file_finder::Toggle",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-k o": "workspace::Open",
+    },
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "a": "project_panel::NewFile",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-b": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-b": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-b": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-b": "outline_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-n": "workspace::NewWindow"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-n": "workspace::NewWindow"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-n": "workspace::NewFile"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-n": "workspace::NewFile"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-n": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
         }
       ]
     }
   },
   {
-    "bindings": {
-      "ctrl-shift-o": "file_finder::Toggle"
-    }
-  },
-  {
-    "bindings": {
-      "ctrl-k o": "workspace::Open"
-    }
-  },
-  {
-    "context": "(ProjectPanel && not_editing)",
-    "bindings": {
-      "a": "project_panel::NewFile"
+    "context": "Editor",
+    "unbind": {
+      "ctrl-d": [
+        "editor::SelectNext",
+        {
+          "replace_newest": false
+        }
+      ]
     }
   }
 ]
