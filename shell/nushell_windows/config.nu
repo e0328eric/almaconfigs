@@ -789,7 +789,7 @@ def e [...paths: string] {
     }
 }
 
-alias v          = nvim
+alias v          = ae
 alias h          = hx
 alias gm         = gemini
 alias oldrm      = ^rm
