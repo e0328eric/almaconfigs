@@ -13,9 +13,9 @@
 -- ---------- syntax color theme ----------
 -- A flat .toml/.json mapping color names (red, green, blue, purple, yellow,
 -- grey, orange, fg, ...) to "#rrggbb". The editor hands us the config dir in
--- ae.config_dir, so this loads colorscheme.toml sitting next to this file.
+-- ae.config_dir, so this loads colorscheme.json sitting next to this file.
 if ae.config_dir then
-    ae.load_theme(ae.config_dir .. "colorscheme.toml")
+    ae.load_theme(ae.config_dir .. "colorscheme.json")
 end
 
 -- ---------- palette ----------
