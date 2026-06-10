@@ -21,63 +21,14 @@
 -- hover or diagnostics (the log usually explains why).
 -- ======================================================================
 
--- ---------- Rust : rust-analyzer ----------
--- install: rustup component add rust-analyzer   (or your distro package)
 ae.lsp_config("rust", {
     command    = "rust-analyzer",
     args       = {},
     extensions = { "rs" },
 })
 
--- ---------- LaTeX / TeX : texlab ----------
--- install: cargo install texlab   (or download a release / distro package)
-ae.lsp_config("latex", {
-    command    = "texlab",
+ae.lsp_config("zig", {
+    command    = "zls",
     args       = {},
-    extensions = { "tex", "latex", "sty", "cls", "bib" },
+    extensions = { "zig" },
 })
-
--- ---------- Python : pyright (or pylsp) ----------
--- install: npm i -g pyright        -> command "pyright-langserver", {"--stdio"}
---      or: pip install python-lsp-server  -> command "pylsp", {}
--- ae.lsp_config("python", {
---     command    = "pyright-langserver",
---     args       = { "--stdio" },
---     extensions = { "py", "pyi" },
--- })
-
--- ---------- C / C++ : clangd ----------
--- install: your distro's clang/clangd package
--- ae.lsp_config("c", {
---     command    = "clangd",
---     args       = {},
---     extensions = { "c", "h", "cpp", "cc", "cxx", "hpp" },
--- })
-
--- ---------- Go : gopls ----------
--- install: go install golang.org/x/tools/gopls@latest
--- ae.lsp_config("go", {
---     command    = "gopls",
---     args       = {},
---     extensions = { "go" },
--- })
-
--- ---------- TypeScript / JavaScript ----------
--- install: npm i -g typescript typescript-language-server
--- ae.lsp_config("typescript", {
---     command    = "typescript-language-server",
---     args       = { "--stdio" },
---     extensions = { "ts", "tsx", "js", "jsx" },
--- })
-
--- ---------- Lua : lua-language-server ----------
--- install: your distro package, or a release from LuaLS
--- ae.lsp_config("lua", {
---     command    = "lua-language-server",
---     args       = {},
---     extensions = { "lua" },
--- })
-
--- Note: vesti (.ves) has no language server. texlab understands LaTeX, not
--- vesti's docclass/useenv syntax, so pointing it at .ves would mostly report
--- noise; it is intentionally left unconfigured.
