@@ -101,38 +101,11 @@ ae.snippet("cite", [==[\cite{$1}$0]==])
 -- vesti  (.ves) - a LaTeX preprocessor: docclass / startdoc / useenv { }
 -- (triggers prefixed with "v" so they coexist with the LaTeX set)
 -- ----------------------------------------------------------------------
-
--- document skeleton: class with options in (), then startdoc
-ae.snippet("vdoc", [==[
-docclass $1 ($2)
-startdoc
-$0]==])
-
--- environment via useenv:  useenv name [opts] { body }
-ae.snippet("vue", [==[
-useenv $1 {
-    $0
-}]==])
-
--- useenv with optional argument, e.g. a placed figure
-ae.snippet("vueo", [==[
-useenv $1 [$2] {
-    $0
-}]==])
-
-ae.snippet("vfig", [==[
-useenv figure [$1] {
-    \centering
-    $0
-}]==])
-
-ae.snippet("veq", [==[
-useenv equation {
-    $0
-}]==])
-
-ae.snippet("vimp", [==[importpkg $1$0]==])     -- import a package
-ae.snippet("vsec", [==[\section{$1}$0]==])     -- LaTeX commands pass through
+local TEX = "tex,latex,ves"
+ae.snippet("be", [==[\[
+    $1
+\]
+$0]==],                                       TEX)  -- display math
 
 -- ----------------------------------------------------------------------
 -- AUTO-EXPANDING snippets (no <tab>): they fire the instant the trigger is
@@ -142,9 +115,4 @@ ae.snippet("vsec", [==[\section{$1}$0]==])     -- LaTeX commands pass through
 -- not inside a word; symbol triggers (like "//") fire anywhere. NOTE: there
 -- is no math-mode detection, so these expand anywhere in the file.
 -- ----------------------------------------------------------------------
-local TEX = "tex,latex,ves"
 ae.autosnippet("MK",  "$$1$$0",                 TEX)  -- inline math:  MK -> $|$
-ae.autosnippet("dst", [==[\[
-    $1
-\]
-$0]==],                                       TEX)  -- display math
