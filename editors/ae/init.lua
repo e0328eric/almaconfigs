@@ -97,4 +97,4 @@ load_module("lsp.lua")
 
 -- Show the load report so the state is always visible. Once everything reads
 -- "ok" you can replace this with your own message.
-ae.message(table.concat(report, "\n"))
+-- ae.message(table.concat(report, "\n"))

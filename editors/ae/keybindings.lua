@@ -63,7 +63,7 @@ map(",", "normal", function() ae.find_repeat("reverse") end, "repeat find revers
 
 -- ---------- entering insert ----------
 map("i", "normal", function() ae.enter_mode("insert") end, "insert")
-map("a", "normal", function() ae.move_cursor("right", 1); ae.enter_mode("insert") end, "append")
+map("a", "normal", function() ae.append() end, "append after cursor")
 map("A", "normal", function() ae.line_end(); ae.enter_mode("insert") end, "append at end")
 map("I", "normal", function() ae.line_first_nonblank(); ae.enter_mode("insert") end, "insert at start")
 map("o", "normal", function() ae.open_newline("below"); ae.enter_mode("insert") end, "open below")
@@ -78,6 +78,7 @@ map("<right>", "insert", function() ae.move_cursor("right", ae.count()) end, "ri
 
 -- ---------- changes / deletes ----------
 map("x", "normal", function() rep(ae.delete_forward) end, "delete char")
+map("r", "normal", function() ae.replace_char() end, "replace char")
 map("X", "normal", function() rep(function() ae.move_cursor("left", 1); ae.delete_forward() end) end, "delete char before")
 map("dd", "normal", function() rep(ae.delete_line) end, "delete line")
 map("D", "normal", function() ae.delete_to_line_end() end, "delete to end of line")
@@ -100,6 +101,7 @@ map("p", "normal", function() ae.paste(ae.count()) end, "paste")
 map("P", "normal", function() ae.paste_before(ae.count()) end, "paste before")
 map("<space>y", "normal", function() ae.yank_clipboard() end, "yank line to clipboard")
 map("<space>p", "normal", function() ae.paste_clipboard() end, "paste from clipboard")
+map("<space>P", "normal", function() ae.paste_clipboard_above() end, "paste from clipboard above")
 
 -- ---------- visual mode ----------
 map("v", "normal", function() ae.enter_visual("char") end, "visual")
@@ -117,19 +119,25 @@ map("<right>", "visual", function() ae.move_cursor("right", ae.count()) end, "ri
 map("w", "visual", function() rep(ae.word_forward) end, "extend word")
 map("b", "visual", function() rep(ae.word_backward) end, "extend word back")
 map("e", "visual", function() rep(ae.word_end) end, "extend word end")
+map("W", "visual", function() rep(ae.big_word_forward) end, "extend WORD")
+map("B", "visual", function() rep(ae.big_word_backward) end, "extend WORD back")
+map("E", "visual", function() rep(ae.big_word_end) end, "extend WORD end")
 map("0", "visual", function() ae.line_start() end, "extend to col 0")
 map("^", "visual", function() ae.line_first_nonblank() end, "extend to first non-blank")
 map("$", "visual", function() ae.line_end() end, "extend to end")
 map("gg", "visual", function() if ae.has_count() then ae.goto_line(ae.count()) else ae.file_start() end end, "file start / NNgg")
 map("G", "visual", function() if ae.has_count() then ae.goto_line(ae.count()) else ae.file_end() end end, "file end / NNG")
 map("f", "visual", function() ae.find_char("f") end, "extend to char")
+map("F", "visual", function() ae.find_char("F") end, "extend back to char")
 map("t", "visual", function() ae.find_char("t") end, "extend till char")
+map("T", "visual", function() ae.find_char("T") end, "extend back till char")
 map(";", "visual", function() ae.find_repeat("same") end, "repeat find")
 map(",", "visual", function() ae.find_repeat("reverse") end, "repeat find reversed")
 map("y", "visual", function() ae.yank(); ae.enter_mode("normal") end, "yank selection")
 map("<space>y", "visual", function() ae.yank_clipboard(); ae.enter_mode("normal") end, "yank selection to clipboard")
 map("d", "visual", function() ae.delete_selection_yank(); ae.enter_mode("normal") end, "yank + delete selection")
 map("x", "visual", function() ae.delete_selection(); ae.enter_mode("normal") end, "delete selection")
+map("Q", "visual", function() ae.hard_wrap_selection(); ae.enter_mode("normal") end, "hard-wrap selection")
 map("c", "visual", function() ae.delete_selection(); ae.enter_mode("insert") end, "change selection")
 map(">", "visual", function() ae.indent("in"); ae.enter_mode("normal") end, "indent selection")
 map("<", "visual", function() ae.indent("out"); ae.enter_mode("normal") end, "dedent selection")
@@ -170,13 +178,15 @@ map("<C-w>c", "normal", function() ae.close_window() end, "close window")
 
 -- ---------- files, help, palette ----------
 map("<space>e", "normal", function() ae.toggle_filetree() end, "toggle file tree")
+map("<space>ff", "normal", function() ae.find_files() end, "find files")
 map("<space>w", "normal", function() ae.save() end, "save")
 map("<space>q", "normal", function() ae.quit() end, "quit")
-map("ZQ", "normal", function() ae.quit() end, "quit")
-map("ZZ", "normal", function() ae.save(); ae.quit() end, "save and quit")
 map("<space>h", "normal", function() ae.help() end, "show help")
+map("<space>F", "normal", function() ae.format() end, "format buffer (LSP)")
 map("q", "normal", function() ae.close_view() end, "close help / view")
 map(":", "normal", function() ae.command_palette() end, "command palette")
+map("ZQ", "normal", function() ae.quit() end, "quit")
+map("ZZ", "normal", function() ae.save(); ae.quit() end, "save and quit")
 
 -- ---------- buffers ----------
 map("<space>bn", "normal", function() ae.next_buffer() end, "next buffer")
