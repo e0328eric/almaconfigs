@@ -1,4 +1,4 @@
-Set-Alias -Name v -Value nvim
+Set-Alias -Name v -Value ae
 Set-Alias -Name lg -Value lazygit
 Set-Alias -Name touch -Value New-Item
 
@@ -18,6 +18,10 @@ function nvimcfg {
 
 function ln ($path, $symlink) {
     New-Item -Path $symlink -ItemType SymbolicLink -Value $path
+}
+
+function download_video($url) {
+    yt-dlp -S res,ext:mp4:m4a --recode $url
 }
 
 # Import the Chocolatey Profile that contains the necessary code to enable

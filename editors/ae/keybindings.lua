@@ -67,6 +67,7 @@ map(",", "normal", function() ae.find_repeat("reverse") end, "repeat find revers
 
 -- ---------- entering insert ----------
 map("i", "normal", function() ae.enter_mode("insert") end, "insert")
+map("R", "normal", function() ae.enter_mode("replace") end, "replace")
 map("a", "normal", function() ae.move_cursor("right", 1); ae.enter_mode("insert") end, "append")
 map("A", "normal", function() ae.line_end(); ae.enter_mode("insert") end, "append at end")
 map("I", "normal", function() ae.line_first_nonblank(); ae.enter_mode("insert") end, "insert at start")
@@ -103,8 +104,8 @@ map("<C-r>", "normal", function() rep(ae.redo) end, "redo")
 -- ---------- yank / paste ----------
 map("yy", "normal", function() ae.yank() end, "yank line")
 map("Y", "normal", function() ae.yank() end, "yank line")
-map("p", "normal", function() rep(ae.paste) end, "paste")
-map("P", "normal", function() rep(ae.paste_before) end, "paste before")
+map("p", "normal", function() ae.paste(ae.count()) end, "paste")
+map("P", "normal", function() ae.paste_before(ae.count()) end, "paste before")
 map("<space>y", "normal", function() ae.yank_clipboard() end, "yank line to clipboard")
 map("<space>p", "normal", function() ae.paste_clipboard() end, "paste from clipboard")
 map("<space>P", "normal", function() ae.paste_clipboard_above() end, "paste from clipboard above")

@@ -4,17 +4,24 @@
   "while"
   "for"
   "return"
+  "break"
+  "continue"
   "struct"
   "union"
   "enum"
+  "enum_flags"
   "using"
+  "noalias"
   "defer"
   "where"
   "cast"
+  "acast"
+  "typeclass"
+  "instance"
 ] @keyword
 
 [
-  "#run"
+  "#comptime"
   "#import"
   "#load"
   "#private_section"
@@ -29,15 +36,19 @@
   "#soa"
   "#operator"
   "#precedence"
+  "#modify"
   "#expand"
   "#magic"
   "#foreign"
+  "#memory"
   "#c_call"
   "#no_context"
   "#dump"
   "#fallback"
   "#must"
   "#noreturn"
+  "#returns_twice"
+  "#inline"
   "#bytes"
   "#asm"
   "#push_context"
@@ -46,10 +57,15 @@
   "#insert"
   "#compile_error"
   "#pattern"
+  "#minimal"
   "#falling"
   "#meaningful"
   "#code"
   "#string"
+  "#simd"
+  "#enable"
+  "#disable"
+  "#derive"
 ] @attribute
 
 (comment) @comment
@@ -64,9 +80,14 @@
 (context_expression) @constant.builtin
 (context_type) @type.builtin
 
+(named_argument name: (identifier) @variable.parameter)
+(typeclass_parameter name: (identifier) @variable.parameter)
+(lambda_parameter name: (identifier) @variable.parameter)
 (declaration_name) @function
 (function_declaration (parameter_list (parameter name: (binding_list (identifier) @variable.parameter))))
 (parameter name: (binding_list (identifier) @variable.parameter))
+(parameter name: (identifier) @variable.parameter)
+(comptime_parameter name: (binding_list (identifier) @variable.parameter))
 (struct_field name: (identifier) @property)
 (union_field name: (identifier) @property)
 (enum_variant name: (identifier) @constant)
@@ -78,10 +99,28 @@
 (pattern_postfix_expression field: (identifier) @property)
 (postfix_expression function: (identifier) @function)
 (library_modifier) @attribute
+(inline_modifier) @attribute
 (partial_directive) @attribute
 (pattern_rest) @operator
+(matrix_type "Matrix" @type.builtin)
+(simd_type "Simd" @type.builtin)
+(variadic_constraint (identifier) @type)
+(minimal_method (identifier) @function)
+(memory_simple_effect) @attribute
+(memory_parameter_effect_kind) @attribute
+(memory_release_effect "released_by" @attribute)
+(memory_resource_effect ["resource" "released_by"] @attribute)
+(asm_operand_direction) @keyword
+(structured_asm_constraint_kind) @constant.builtin
+(structured_asm_operand_flag) @attribute
+(structured_asm_clobber_kind) @constant.builtin
+(structured_asm_input_operand name: (identifier) @variable.parameter)
+(structured_asm_output_operand name: (identifier) @variable.parameter)
+(import_selector mode: _ @attribute)
+(expand_directive mode: (identifier) @attribute)
 
 (identifier) @variable
+(code_splice_identifier) @variable
 (non_hygienic_identifier) @variable
 (label) @label
 (quoted_operator) @operator
