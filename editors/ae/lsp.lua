@@ -32,3 +32,9 @@ ae.lsp_config("zig", {
     args       = {},
     extensions = { "zig" },
 })
+
+ae.lsp_config("glosso", {
+    command    = "gls",
+    args       = {},
+    extensions = { "glo" },
+})
