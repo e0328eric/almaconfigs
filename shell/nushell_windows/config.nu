@@ -789,12 +789,8 @@ def e [...paths: string] {
     }
 }
 
-alias v          = ae
+alias v          = nvim
 alias h          = hx
-alias gm         = gemini
-alias oldrm      = ^rm
-alias rm         = chre rm
-alias ln         = chre ln
 alias s          = ls
 alias l          = ls -al
 alias lg         = lazygit
