@@ -1,4 +1,4 @@
-Set-Alias -Name v -Value ae
+Set-Alias -Name v -Value nvim
 Set-Alias -Name lg -Value lazygit
 Set-Alias -Name touch -Value New-Item
 
