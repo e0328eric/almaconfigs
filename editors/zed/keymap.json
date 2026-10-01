@@ -1,3 +1,8 @@
+// Neovim mappings from ~/Github/nvim; <leader> is Space.
+// Zed equivalents are used for buffers, Telescope, nvim-tree and LSP actions.
+// Harpoon, license insertion, Lean infoview, LuaSnip expansion/choices, completion
+// documentation scrolling and insert-mode mouse-wheel blocking have no direct
+// keymap equivalent here. Existing Zed window/terminal shortcuts are retained.
 [
   {
     "context": "Workspace",
@@ -10,21 +15,20 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-up": "editor::AddSelectionAbove",
-      "ctrl-down": "editor::AddSelectionBelow",
       "ctrl-shift-t": "workspace::NewTerminal",
       "ctrl-alt-t": "terminal_panel::ToggleFocus",
     },
   },
 
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor && mode == full && vim_mode == normal && !menu",
     "bindings": {
       "ctrl-\\": "vim::InsertLineAbove",
       "ctrl-shift-h": "outline_panel::ToggleFocus",
       "ctrl-shift-\\": "workspace::ToggleLeftDock",
       "ctrl-shift-j": "workspace::ToggleBottomDock",
       "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
     },
   },
 
@@ -37,18 +41,19 @@
   },
 
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Editor && mode == full && vim_mode == insert",
     "bindings": {
-      "ctrl-\\": "vim::InsertLineAbove",
+      "ctrl-\\": ["action::Sequence", ["vim::NormalBefore", "vim::InsertLineAbove"]],
     },
   },
 
   {
-    "context": "Editor && vim_mode == visual",
+    "context": "Editor && mode == full && vim_mode == visual && !menu",
     "bindings": {
-      "K": "editor::MoveLineUp",
-      "J": "editor::MoveLineDown",
-      "Q": "vim::Rewrap",
+      "shift-k": ["action::Sequence", ["editor::MoveLineUp", "editor::AutoIndent"]],
+      "shift-j": ["action::Sequence", ["editor::MoveLineDown", "editor::AutoIndent"]],
+      // Reflow uses Zed's preferred_line_length (including language overrides).
+      "shift-q": "vim::Rewrap",
     },
   },
   {
@@ -75,12 +80,6 @@
   {
     "bindings": {
       "ctrl-k o": "workspace::Open",
-    },
-  },
-  {
-    "context": "(ProjectPanel && not_editing)",
-    "bindings": {
-      "a": "project_panel::NewFile",
     },
   },
   {
@@ -132,8 +131,10 @@
     }
   },
   {
-    "context": "Editor",
+    "context": "Editor && mode == full && (vim_mode == normal || vim_mode == visual) && !menu",
     "bindings": {
+      "ctrl-up": "editor::AddSelectionAbove",
+      "ctrl-down": "editor::AddSelectionBelow",
       "ctrl-n": [
         "editor::SelectNext",
         {
@@ -152,5 +153,160 @@
         }
       ]
     }
-  }
+  },
+
+  {
+    "context": "Editor && mode == full && vim_mode == normal && !menu",
+    // Remove longer built-in gr chords so gr opens references immediately.
+    "unbind": {
+      "g r n": "editor::Rename",
+      "g r r": "editor::FindAllReferences",
+      "g r i": "editor::GoToImplementation",
+      "g r a": "editor::ToggleCodeActions",
+    },
+    "bindings": {
+      // Like :nohlsearch: hide highlights, but Zed remembers the search query.
+      "space space": "buffer_search::Dismiss",
+      "shift-q": null,
+      "ctrl-d": null,
+
+      // Zed tabs are pane-local. Closing the last tab can also close its pane.
+      "space b d": "pane::CloseActiveItem",
+      "space b q": "workspace::CloseItemInAllPanes",
+      "space b [": "pane::ActivatePreviousItem",
+      "space b ]": "pane::ActivateNextItem",
+      "space b b": "tab_switcher::ToggleAll",
+
+      "space e": "project_panel::Toggle",
+      "space f f": "file_finder::Toggle",
+      // Project files respecting ignore rules; not strictly Git-tracked files.
+      "space f g": ["file_finder::Toggle", { "include_ignored": false }],
+      // Recent files appear in a separate history section of the file finder.
+      "space f r": ["file_finder::Toggle", { "separate_history": true }],
+      // Buffer search is Zed's closest equivalent to Telescope's fuzzy search.
+      "space /": "buffer_search::Deploy",
+      "space ? k": "zed::OpenKeymap",
+      "space s h": "zed::OpenDocs",
+      // sw prompts for a literal query in Neovim; edit Zed's prefilled query.
+      "space s w": ["pane::DeploySearch", { "regex": false, "whole_word": false }],
+      "space s g": ["pane::DeploySearch", { "regex": true, "whole_word": false }],
+      "space s d": "diagnostics::Deploy",
+
+      "[ d": "editor::GoToPreviousDiagnostic",
+      "] d": "editor::GoToDiagnostic",
+      "g shift-d": "editor::GoToDeclaration",
+      "g d": "editor::GoToDefinition",
+      "shift-k": "editor::Hover",
+      "g i": "editor::GoToImplementation",
+      "g r": "editor::FindAllReferences",
+      "space l a": "editor::ToggleCodeActions",
+      "space l shift-d": "editor::GoToTypeDefinition",
+      "space l shift-r": "editor::RestartLanguageServer",
+      "space l r": "editor::Rename",
+      "space l f": "editor::Format",
+      "space l w a": "workspace::AddFolderToProject",
+      // Show project roots; remove one with Space l w r in the project panel.
+      "space l w l": "project_panel::ToggleFocus",
+
+      "space c c": ["task::Spawn", { "task_name": "Compile vesti" }],
+    },
+  },
+
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual || vim_mode == insert)",
+    "bindings": {
+      "shift-up": null,
+      "shift-down": null,
+    },
+  },
+  {
+    // Includes search/command inputs and operator-pending mode.
+    "context": "Editor",
+    "bindings": {
+      "pageup": null,
+      "pagedown": null,
+      "shift-pageup": null,
+      "shift-pagedown": null,
+      "ctrl-pageup": null,
+      "ctrl-pagedown": null,
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "pageup": ["terminal::SendText", ""],
+      "pagedown": ["terminal::SendText", ""],
+      "shift-pageup": ["terminal::SendText", ""],
+      "shift-pagedown": ["terminal::SendText", ""],
+      "ctrl-pageup": ["terminal::SendText", ""],
+      "ctrl-pagedown": ["terminal::SendText", ""],
+    },
+  },
+
+  {
+    // Trigger completion without stealing Ctrl-n from normal-mode multi-cursor.
+    "context": "Editor && mode == full && vim_mode == insert && !showing_completions && !showing_code_actions",
+    "bindings": {
+      "ctrl-]": "editor::ShowCompletions",
+      "alt-]": "editor::ShowCompletions",
+      "ctrl-n": "editor::ShowCompletions",
+      "ctrl-p": "editor::ShowCompletions",
+    },
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == insert && showing_completions",
+    "bindings": {
+      "enter": "editor::ConfirmCompletion",
+      "ctrl-space": "editor::ConfirmCompletionInsert",
+      "ctrl-y": "editor::ConfirmCompletion",
+      "ctrl-e": "editor::Cancel",
+      "ctrl-]": "editor::ContextMenuNext",
+      "alt-]": "editor::ContextMenuPrevious",
+      "ctrl-n": "editor::ContextMenuNext",
+      "ctrl-p": "editor::ContextMenuPrevious",
+      // Tab indents or jumps through snippets, instead of accepting completion.
+      "tab": "editor::Tab",
+      "shift-tab": "editor::Backtab",
+    },
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == insert && in_snippet && has_next_tabstop",
+    "bindings": {
+      "tab": "editor::NextSnippetTabstop",
+    },
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == insert && in_snippet && has_previous_tabstop",
+    "bindings": {
+      "shift-tab": "editor::PreviousSnippetTabstop",
+    },
+  },
+
+  {
+    // nvim-tree defaults; single-letter keys stay inactive while renaming.
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "space e": "project_panel::Toggle",
+      "space l w a": "workspace::AddFolderToProject",
+      "space l w r": "project_panel::RemoveFromProject",
+      "enter": "project_panel::OpenPermanent",
+      "o": "project_panel::OpenPermanent",
+      "tab": "project_panel::Open",
+      "backspace": "project_panel::CollapseSelectedEntry",
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "shift-d": "project_panel::Trash",
+      "c": "project_panel::Copy",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste",
+      "shift-y": "workspace::CopyRelativePath",
+      "g y": "workspace::CopyPath",
+      "shift-e": "project_panel::ExpandAllEntries",
+      "shift-w": "project_panel::CollapseAllEntries",
+      "q": "project_panel::Toggle",
+      "ctrl-v": "project_panel::OpenSplitVertical",
+      "ctrl-x": "project_panel::OpenSplitHorizontal",
+    },
+  },
 ]
