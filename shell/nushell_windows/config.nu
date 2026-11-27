@@ -805,6 +805,7 @@ alias notetaking   = cd C:/Users/almag/pCloud/TeX_Documents/NoteTaking
 alias homework     = cd C:/Users/almag/pCloud/TeX_Documents/Homework
 alias teachingf    = cd C:/Users/almag/pCloud/TeX_Documents/TF
 alias seminar      = cd C:/Users/almag/pCloud/TeX_Documents/Seminar
+alias papers       = cd C:/Users/almag/pCloud/TeX_Documents/Papers
 alias kindergarten = cd C:/Users/almag/pCloud/TeX_Documents/Kindergarten
 alias vimconfig    = cd C:/Users/almag/AppData/Local/nvim
 alias flowconfig   = cd C:/Users/almag/AppData/Roaming/flow

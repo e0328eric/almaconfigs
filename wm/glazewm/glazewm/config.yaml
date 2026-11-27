@@ -2,11 +2,12 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ["shell-exec zebar"]
+  # taskbar.ps1 hides the Windows taskbar while GlazeWM runs (-Show brings it back).
+  startup_commands: ["shell-exec YASB", "shell-exec --hide-window powershell -NoProfile -File %USERPROFILE%/.glzr/glazewm/taskbar.ps1"]
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
-  shutdown_commands: ["shell-exec taskkill /IM zebar.exe /F"]
+  shutdown_commands: ["shell-exec taskkill /IM YASB.exe /F", "shell-exec --hide-window powershell -NoProfile -File %USERPROFILE%/.glzr/glazewm/taskbar.ps1 -Show"]
 
   # Commands to run after the WM config is reloaded.
   config_reload_commands: []
@@ -48,7 +49,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "35px"
+    top: "10px"
     right: "5px"
     bottom: "5px"
     left: "5px"
@@ -244,8 +245,8 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  #- commands: ['shell-exec rio']
-  - commands: ["shell-exec wt"]
+  - commands: ['shell-exec wst']
+  #- commands: ["shell-exec wt"]
     #- commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
     bindings: ["lwin+enter"]
   - commands: ["shell-exec brave"]

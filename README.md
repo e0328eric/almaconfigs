@@ -100,3 +100,6 @@ sudo virsh net-autostart default
 ```
 
 In addition, personally, I use onecommander file viewer on windows
+
+### Windows search bar
+use `winget install Flow-Launcher.Flow-Launcher`

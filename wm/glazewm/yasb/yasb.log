@@ -1,0 +1,218 @@
+2026-11-27 15:19:53,696 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:19:53,697 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:19:53,697 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:19:53,752 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:19:53,752 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:19:53,752 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\almag\.config\yasb\styles.css': [Errno 2] No such file or directory: 'C:\\Users\\almag\\.config\\yasb\\styles.css'
+2026-11-27 15:19:53,753 [ERROR] [MainThread] [root/config.py:158]: User stylesheet could not be loaded. Exiting Application.
+2026-11-27 15:20:02,721 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:20:02,722 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:20:02,722 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:20:02,753 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:20:02,753 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:20:02,753 [ERROR] [MainThread] [root/css_processor.py:47]: CSSProcessor Error 'C:\Users\almag\.config\yasb\styles.css': [Errno 2] No such file or directory: 'C:\\Users\\almag\\.config\\yasb\\styles.css'
+2026-11-27 15:20:02,753 [ERROR] [MainThread] [root/config.py:158]: User stylesheet could not be loaded. Exiting Application.
+2026-11-27 15:20:56,385 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:20:56,385 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:20:56,386 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:20:56,415 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:20:56,415 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:20:56,444 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 15:20:56,472 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 15:20:56,551 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'weather
+2026-11-27 15:20:56,557 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:20:56,563 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:20:56,625 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 15:20:56,635 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 15:20:56,665 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 15:20:56,713 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 15:20:57,033 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 15:20:57,036 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 15:20:57,036 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 15:20:57,037 [ERROR] [MainThread] [root/widget_builder.py:104]: Failed to add undefined widget(s)  - The widget "weather" is undefined.
+2026-11-27 15:20:57,045 [INFO] [Dummy-6] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 15:20:57,057 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (48000 Hz, 2 ch, 32-bit float)
+2026-11-27 15:20:57,057 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 15:20:57,057 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 15:21:05,154 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.ConnectionRefusedError. Reconnecting...
+2026-11-27 15:21:05,186 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.ConnectionRefusedError. Reconnecting...
+2026-11-27 15:22:33,786 [WARNING] [MainThread] [wallpaper_engine/engine.py:335]: Could not locate WorkerW. Wallpaper animation skipped. (Windows OS animation must be enabled.)
+2026-11-27 15:22:49,198 [WARNING] [MainThread] [wallpaper_engine/engine.py:335]: Could not locate WorkerW. Wallpaper animation skipped. (Windows OS animation must be enabled.)
+2026-11-27 15:47:02,906 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Speakers (Realtek(R) Audio)' (48000 Hz, 2 ch, 32-bit float)
+2026-11-27 15:49:35,139 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
+2026-11-27 15:53:28,010 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:53:28,011 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:53:28,011 [ERROR] [MainThread] [root/config.py:99]: The config file 'C:\Users\almag\.config\yasb\config.yaml' contains validation errors. Please fix:
+bars:
+  primary-bar:
+    alignment:
+      position:
+      - Input should be 'top' or 'bottom'
+
+2026-11-27 15:53:38,841 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:53:38,842 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:53:38,842 [INFO] [MainThread] [root/controller.py:22]: Reloading Application because of config change.
+2026-11-27 15:53:38,949 [INFO] [MainThread] [cli_server/server.py:76]: Log pipe server stopped
+2026-11-27 15:53:38,963 [INFO] [MainThread] [root/bar_manager.py:96]: Successfully loaded updated config and re-initialised all bars.
+2026-11-27 15:53:39,002 [INFO] [MainThread] [root/bar_manager.py:114]: Stopping HotkeyListener...
+2026-11-27 15:53:39,008 [INFO] [MainThread] [root/bar_manager.py:122]: Stopping WindowsNotificationEventListener...
+2026-11-27 15:53:39,009 [INFO] [Dummy-6] [root/windows_notification.py:122]: Notification service stopped
+2026-11-27 15:53:39,015 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:213]: TaskbarWindowManager stopped
+2026-11-27 15:53:39,029 [INFO] [MainThread] [root/dnd_api.py:130]: Stopping DndService...
+2026-11-27 15:53:40,735 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:53:40,737 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:53:40,738 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:53:40,866 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:53:40,867 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:53:41,077 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 15:53:41,223 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 15:53:41,692 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'weather
+2026-11-27 15:53:41,723 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:53:41,763 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:53:42,053 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 15:53:42,109 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 15:53:42,341 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 15:53:42,724 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 15:53:44,190 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 15:53:44,205 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 15:53:44,205 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 15:53:44,206 [ERROR] [MainThread] [root/widget_builder.py:104]: Failed to add undefined widget(s)  - The widget "weather" is undefined.
+2026-11-27 15:53:44,218 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
+2026-11-27 15:53:44,220 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 15:53:44,220 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 15:53:44,220 [INFO] [Dummy-6] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 15:54:44,513 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:54:44,513 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:54:44,513 [INFO] [MainThread] [root/controller.py:22]: Reloading Application because of config change.
+2026-11-27 15:54:44,614 [INFO] [MainThread] [cli_server/server.py:76]: Log pipe server stopped
+2026-11-27 15:54:44,620 [INFO] [MainThread] [root/bar_manager.py:96]: Successfully loaded updated config and re-initialised all bars.
+2026-11-27 15:54:44,668 [INFO] [MainThread] [root/bar_manager.py:114]: Stopping HotkeyListener...
+2026-11-27 15:54:44,674 [INFO] [MainThread] [root/bar_manager.py:122]: Stopping WindowsNotificationEventListener...
+2026-11-27 15:54:44,675 [INFO] [Dummy-6] [root/windows_notification.py:122]: Notification service stopped
+2026-11-27 15:54:44,681 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:213]: TaskbarWindowManager stopped
+2026-11-27 15:54:44,696 [INFO] [MainThread] [root/dnd_api.py:130]: Stopping DndService...
+2026-11-27 15:54:46,248 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:54:46,250 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:54:46,251 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:54:46,414 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:54:46,414 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:54:46,618 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 15:54:46,795 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 15:54:47,186 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'weather
+2026-11-27 15:54:47,218 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:54:47,243 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:54:47,507 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 15:54:47,561 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 15:54:47,718 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 15:54:48,029 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 15:54:49,434 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 15:54:49,446 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 15:54:49,447 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 15:54:49,447 [ERROR] [MainThread] [root/widget_builder.py:104]: Failed to add undefined widget(s)  - The widget "weather" is undefined.
+2026-11-27 15:54:49,457 [INFO] [Dummy-6] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 15:54:49,459 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 15:54:49,459 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 15:54:49,460 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
+2026-11-27 15:55:40,048 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:55:40,048 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:55:40,049 [INFO] [MainThread] [root/controller.py:22]: Reloading Application because of config change.
+2026-11-27 15:55:40,162 [INFO] [MainThread] [cli_server/server.py:76]: Log pipe server stopped
+2026-11-27 15:55:40,171 [INFO] [MainThread] [root/bar_manager.py:96]: Successfully loaded updated config and re-initialised all bars.
+2026-11-27 15:55:40,218 [INFO] [MainThread] [root/bar_manager.py:114]: Stopping HotkeyListener...
+2026-11-27 15:55:40,229 [INFO] [MainThread] [root/bar_manager.py:122]: Stopping WindowsNotificationEventListener...
+2026-11-27 15:55:40,229 [INFO] [Dummy-6] [root/windows_notification.py:122]: Notification service stopped
+2026-11-27 15:55:40,234 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:213]: TaskbarWindowManager stopped
+2026-11-27 15:55:40,250 [INFO] [MainThread] [root/dnd_api.py:130]: Stopping DndService...
+2026-11-27 15:55:41,694 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:55:41,694 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:55:41,695 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:55:41,888 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:55:41,888 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:55:42,089 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 15:55:42,274 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 15:55:42,799 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] WeatherWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-11-27 15:55:42,801 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'battery
+2026-11-27 15:55:42,820 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:55:42,850 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:55:43,093 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 15:55:43,129 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 15:55:43,310 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 15:55:43,658 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 15:55:45,168 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 15:55:45,185 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 15:55:45,185 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 15:55:45,185 [ERROR] [MainThread] [root/widget_builder.py:104]: Failed to add undefined widget(s)  - The widget "battery" is undefined.
+2026-11-27 15:55:45,198 [INFO] [Dummy-6] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 15:55:45,198 [ERROR] [MainThread] [root/widget_builder.py:118]: Failed to validate widget(s) due to invalid options  - weather
+      location:
+      - Input should be a valid string
+      api_key:
+      - Input should be a valid string
+      
+2026-11-27 15:55:45,199 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
+2026-11-27 15:55:45,204 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 15:55:45,204 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 15:57:24,733 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:57:24,733 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:57:24,733 [INFO] [MainThread] [root/controller.py:22]: Reloading Application because of config change.
+2026-11-27 15:57:24,846 [INFO] [MainThread] [cli_server/server.py:76]: Log pipe server stopped
+2026-11-27 15:57:24,855 [INFO] [MainThread] [root/bar_manager.py:96]: Successfully loaded updated config and re-initialised all bars.
+2026-11-27 15:57:24,889 [INFO] [MainThread] [root/bar_manager.py:114]: Stopping HotkeyListener...
+2026-11-27 15:57:24,897 [INFO] [MainThread] [root/bar_manager.py:122]: Stopping WindowsNotificationEventListener...
+2026-11-27 15:57:24,897 [INFO] [Dummy-6] [root/windows_notification.py:122]: Notification service stopped
+2026-11-27 15:57:24,901 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:213]: TaskbarWindowManager stopped
+2026-11-27 15:57:24,914 [INFO] [MainThread] [root/dnd_api.py:130]: Stopping DndService...
+2026-11-27 15:57:26,563 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 15:57:26,565 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 15:57:26,566 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 15:57:26,754 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 15:57:26,754 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 15:57:26,969 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 15:57:27,162 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 15:57:27,689 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'weather
+2026-11-27 15:57:27,690 [WARNING] [MainThread] [root/widget_builder.py:43]: No widget config could be found for widget 'battery
+2026-11-27 15:57:27,721 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:57:27,763 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 15:57:28,043 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 15:57:28,082 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 15:57:28,226 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 15:57:28,432 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 15:57:29,530 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 15:57:29,545 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 15:57:29,545 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 15:57:29,545 [ERROR] [MainThread] [root/widget_builder.py:104]: Failed to add undefined widget(s)  - The widget "battery" is undefined.
+ - The widget "weather" is undefined.
+2026-11-27 15:57:29,552 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
+2026-11-27 15:57:29,556 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 15:57:29,557 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 15:57:29,565 [INFO] [Dummy-8] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 16:01:47,054 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 16:01:47,054 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 16:01:47,054 [INFO] [MainThread] [root/controller.py:22]: Reloading Application because of config change.
+2026-11-27 16:01:47,158 [INFO] [MainThread] [cli_server/server.py:76]: Log pipe server stopped
+2026-11-27 16:01:47,164 [INFO] [MainThread] [root/bar_manager.py:96]: Successfully loaded updated config and re-initialised all bars.
+2026-11-27 16:01:47,201 [INFO] [MainThread] [root/bar_manager.py:114]: Stopping HotkeyListener...
+2026-11-27 16:01:47,211 [INFO] [MainThread] [root/bar_manager.py:122]: Stopping WindowsNotificationEventListener...
+2026-11-27 16:01:47,212 [INFO] [Dummy-8] [root/windows_notification.py:122]: Notification service stopped
+2026-11-27 16:01:47,218 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:213]: TaskbarWindowManager stopped
+2026-11-27 16:01:47,234 [INFO] [MainThread] [root/dnd_api.py:130]: Stopping DndService...
+2026-11-27 16:01:48,979 [INFO] [MainThread] [root/log.py:106]: YASB v2.0.9
+2026-11-27 16:01:48,981 [INFO] [CLIPipeServer] [cli_server/server.py:178]: CLI server started v1.1.7
+2026-11-27 16:01:48,982 [INFO] [MainThread] [cli_server/server.py:68]: Log pipe server started
+2026-11-27 16:01:49,186 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-11-27 16:01:49,187 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-11-27 16:01:49,402 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-11-27 16:01:49,599 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-11-27 16:01:50,186 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] CpuConfig: 'animation' - Use CSS animations instead.
+2026-11-27 16:01:50,225 [WARNING] [MainThread] [deprecation/deprecation.py:181]: [DEPRECATED] MemoryConfig: 'animation' - Use CSS animations instead.
+2026-11-27 16:01:50,515 [INFO] [MainThread] [root/service.py:216]: BrightnessService started with 1 monitors
+2026-11-27 16:01:50,570 [INFO] [MainThread] [root/service.py:73]: AudioOutputService starting...
+2026-11-27 16:01:50,771 [INFO] [MainThread] [root/service.py:52]: AudioInputService starting...
+2026-11-27 16:01:51,151 [INFO] [MainThread] [root/dnd_api.py:110]: DndService initialized...
+2026-11-27 16:01:52,732 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:186]: TaskbarWindowManager is starting...
+2026-11-27 16:01:52,748 [INFO] [MainThread] [root/bar_manager.py:252]: Starting HotkeyListener...
+2026-11-27 16:01:52,748 [INFO] [MainThread] [root/bar_manager.py:106]: Starting WindowsNotificationEventListener...
+2026-11-27 16:01:52,750 [INFO] [MainThread] [root/watcher.py:67]: Watching directory: c:\users\almag\.config\yasb
+2026-11-27 16:01:52,750 [INFO] [MainThread] [root/watcher.py:108]: Created file watcher
+2026-11-27 16:01:52,760 [INFO] [Dummy-8] [root/windows_notification.py:188]: Notification service started (WNF_SHEL_NOTIFICATION_TOTAL)
+2026-11-27 16:01:52,763 [INFO] [yasb-audio-visualizer] [root/loopback.py:692]: Audio visualizer: loopback capture open on 'Headphones (Almagest’s AirPods Pro)' (44100 Hz, 2 ch, 32-bit float)
